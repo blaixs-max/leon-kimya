@@ -417,3 +417,100 @@ body.dark .map iframe{filter:grayscale(1) invert(.92) contrast(.86)}
   .tile{height:160px}
   .hdr__act .btn--brand{display:none}
 }
+
+
+/* ============ TIKLANABILIR KART ORTUSU ============ */
+/* figure/figcaption semantigini bozmadan tum karti link yapar */
+.certs li,.post{position:relative}
+.lnk-cover{position:absolute;inset:0;z-index:3}
+.lnk-cover>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.post h3 a{color:inherit}
+.post:focus-within,.app:focus-within,.vid:focus-within{outline:2px solid var(--brand);outline-offset:3px}
+
+/* ozellik paneli artik link */
+.feat__i{display:block;color:inherit;border-radius:var(--r);padding:6px;transition:.26s var(--ease)}
+.feat__i:hover{background:color-mix(in srgb,var(--brand) 8%,transparent)}
+
+/* sistem panelindeki buton cifti */
+.sysbtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.apps__more{text-align:center;margin:clamp(24px,3vw,36px) 0 0}
+
+/* mobil cekmece sosyal ikonlari */
+.drw__soc{display:flex;gap:9px;padding-top:6px}
+.drw__soc a{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;
+  background:var(--bg-2);color:var(--ink);transition:.24s var(--ease)}
+.drw__soc a:hover{background:var(--brand);color:var(--brand-on)}
+.drw__soc .i{width:17px;height:17px}
+
+/* footer telefon/e-posta artik link */
+.fcontact a{opacity:1}
+.fcontact a b{transition:.2s}
+.fcontact a:hover b{color:var(--brand-l)}
+
+/* ============ RTL (Arapca) ============ */
+[dir="rtl"] .pk-i,[dir="rtl"] .i{}
+[dir="rtl"] .btn .i,[dir="rtl"] .post em .i,[dir="rtl"] .tile__go .i{transform:scaleX(-1)}
+[dir="rtl"] .btn:hover .i{transform:scaleX(-1) translateX(3px)}
+[dir="rtl"] .post:hover em .i{transform:scaleX(-1) translateX(4px)}
+[dir="rtl"] .sld__nav{left:auto;right:clamp(32px,5vw,76px)}
+[dir="rtl"] .sld__ar{right:auto;left:clamp(20px,3vw,34px)}
+[dir="rtl"] .sld__ar button .i{transform:scaleX(-1)}
+[dir="rtl"] .sld__ar button:first-child .i{transform:scaleX(-1) rotate(180deg)}
+[dir="rtl"] .slide__bg::after{background:
+  linear-gradient(260deg,rgba(var(--shade),.88) 0%,rgba(var(--shade),.64) 42%,rgba(var(--shade),.24) 100%)}
+[dir="rtl"] .tile__go{right:auto;left:16px}
+[dir="rtl"] .about__badge{left:auto;right:22px}
+[dir="rtl"] .dots li{padding-left:0;padding-right:19px}
+[dir="rtl"] .dots li::before{left:auto;right:0}
+[dir="rtl"] .nav>ul>li>a::after{transform-origin:right}
+[dir="rtl"] .sub{left:auto;right:0}
+[dir="rtl"] .sub .sub{left:auto;right:100%}
+[dir="rtl"] .drw{inset:0 auto 0 0;transform:translateX(-100%)}
+[dir="rtl"] .drw.on{transform:none}
+[dir="rtl"] .drw__sub{padding-left:0;padding-right:14px;border-left:0;border-right:2px solid var(--brand-xl)}
+[dir="rtl"] .fab{right:auto;left:20px}
+[dir="rtl"] .fab button .i{transform:rotate(90deg)}
+[dir="rtl"] .vid__hd{background:linear-gradient(rgba(0,0,0,.72),transparent)}
+[dir="rtl"] .brandtrack ul{flex-direction:row-reverse}
+
+
+/* ============ METIN LOGO (gercek logo yokken) ============ */
+.wordmark{display:inline-flex;align-items:baseline;gap:.34em;line-height:1;
+  font-weight:900;letter-spacing:-.03em;font-size:clamp(22px,2.4vw,28px);color:var(--ink);
+  transition:font-size .3s var(--ease)}
+.wordmark b{font-weight:900}
+.wordmark i{font-style:normal;font-weight:500;font-size:.62em;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--brand)}
+.hdr.stuck .wordmark{font-size:clamp(19px,2vw,24px)}
+.ftr .wordmark{color:#fff}
+.ftr .wordmark i{color:var(--ftr-head)}
+.drw__hd .wordmark{font-size:22px}
+
+/* ============ EKSIK BILGI YER TUTUCULARI ============ */
+.todo{color:var(--mut-2);font-style:italic;font-weight:400}
+.map--todo{display:grid;place-items:center;text-align:center;padding:24px;
+  background:var(--bg-2);color:var(--mut-2);font-size:14px;font-style:italic}
+.form__note{margin:14px 0 0;font-size:12.5px;color:var(--mut-2);font-style:italic}
+
+/* ============ DIL SECICI (ust bar) ============ */
+.top__langs,.drw__langs,.ftr__langs{display:flex;gap:4px}
+.top__langs a,.drw__langs a{padding:5px 11px;border-radius:6px;font-size:11.5px;font-weight:700;
+  letter-spacing:.06em;transition:.2s;opacity:.75}
+.top__langs a:hover,.drw__langs a:hover{opacity:1;background:rgba(255,255,255,.14)}
+.top__langs a.on{background:var(--brand);color:var(--brand-on);opacity:1}
+.drw__langs a{background:var(--bg-2);color:var(--ink);opacity:1}
+.drw__langs a.on{background:var(--brand);color:var(--brand-on)}
+.drw__langs{padding-top:6px}
+
+/* video degil, saha gorselleri: oynatma katmani kaldirildi */
+.vid{cursor:pointer}
+.vid::after{content:"";position:absolute;inset:0;background:rgba(var(--shade),.18);transition:.35s}
+.vid:hover::after{background:rgba(var(--shade),.04)}
+.vid__hd{z-index:2}
+
+/* Arapca: kelime logo ve dil secici */
+[dir="rtl"] .wordmark{letter-spacing:0}
+[dir="rtl"] .slide__k,[dir="rtl"] .sechd__t{letter-spacing:.06em}
+[dir="rtl"] .tile h3,[dir="rtl"] .app figcaption span{letter-spacing:0}
+[dir="rtl"] .nav>ul>li>a,[dir="rtl"] .top__langs a{letter-spacing:0}
+[dir="rtl"] .feat__i h3,[dir="rtl"] .cinfo b,[dir="rtl"] .f>span{letter-spacing:0}
