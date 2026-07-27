@@ -1,0 +1,12 @@
+# Bu deploy bir ÖNİZLEME / STAGING ortamıdır.
+# index.html içindeki canonical zaten https://www.polinkimya.com/ adresini işaret ediyor;
+# vercel.app adresinin arama sonuçlarında asıl siteyle yarışmasını engelliyoruz.
+#
+# ---> Gerçek alan adına (polinkimya.com) geçildiğinde bu dosyayı şununla değiştirin:
+#
+#      User-agent: *
+#      Allow: /
+#      Sitemap: https://www.polinkimya.com/sitemap.xml
+
+User-agent: *
+Disallow: /

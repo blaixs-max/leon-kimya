@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($p=\\(Get-Command python -EA SilentlyContinue\\).Source; $n=\\(Get-Command npx -EA SilentlyContinue\\).Source; \"python=$p\"; \"npx=$n\")",
+      "PowerShell(python \"C:\\\\Users\\\\Dell\\\\Desktop\\\\Web Site\\\\assets\\\\build-palettes.py\")",
+      "PowerShell($r=\"C:\\\\Users\\\\Dell\\\\Desktop\\\\Web Site\"; Move-Item \"$r\\\\index.html\" \"$r\\\\tasarim-varyantlari.html\" -Force; Get-ChildItem $r -Name)"
+    ]
+  }
+}

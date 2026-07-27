@@ -1,0 +1,14 @@
+# yerel yedek — elenen tasarım denemeleri, depoya gerek yok
+_arsiv-varyantlar.zip
+
+# vercel
+.vercel
+
+# bagimliliklar / arac ciktilari
+node_modules/
+*.log
+
+# isletim sistemi
+.DS_Store
+Thumbs.db
+desktop.ini
