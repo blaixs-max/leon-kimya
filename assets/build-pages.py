@@ -4,9 +4,22 @@ Leon Kimya — dil sayfası üreteci.
 Tek şablondan tr / en / fr / ar sayfalarını üretir.
 Çalıştır:  python assets/build-pages.py
 """
-import os, io
+import os, io, hashlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+def asset_version():
+    """CSS/JS içeriğinden kısa bir sürüm damgası üretir.
+    Sayfalara ?v=<damga> olarak eklenir; böylece her deploy'da tarayıcı
+    kesinlikle yeni dosyayı çeker, eski sürüm cache'te kalmaz."""
+    h = hashlib.sha256()
+    for name in ("split.css", "split.js", "i18n.js"):
+        p = os.path.join(ROOT, "assets", name)
+        with open(p, "rb") as f:
+            h.update(f.read())
+    return h.hexdigest()[:10]
+
+V = asset_version()
 
 PAGES = [
   dict(file="index.html", lang="tr", dir="ltr", path="/",
@@ -49,7 +62,7 @@ TPL = """<!DOCTYPE html>
 {alternates}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?{font}&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/split.css">
+<link rel="stylesheet" href="assets/split.css?v={v}">
 <style>
 /* =============================================================
    LEON KİMYA — KURUMSAL PALET: KEHRİBAR ÇELİK
@@ -70,8 +83,8 @@ TPL = """<!DOCTYPE html>
 <a class="skip" href="#main">{skip}</a>
 <div id="app"></div>
 <noscript><p style="padding:40px;text-align:center">{noscript}</p></noscript>
-<script src="assets/i18n.js"></script>
-<script src="assets/split.js"></script>
+<script src="assets/i18n.js?v={v}"></script>
+<script src="assets/split.js?v={v}"></script>
 </body>
 </html>
 """
@@ -86,6 +99,7 @@ for p in PAGES:
         skip=p["skip"], noscript=p["noscript"], font=FONTS[p["lang"]],
         alternates=alts,
         extra=ARABIC_FONT_CSS if p["lang"] == "ar" else "",
+        v=V,
     )
     with io.open(os.path.join(ROOT, p["file"]), "w", encoding="utf-8") as f:
         f.write(body)
