@@ -15,3 +15,5 @@ desktop.ini
 
 # Claude Code yerel ayarlari
 .claude/settings.local.json
+.vercel
+.env*

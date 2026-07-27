@@ -5,7 +5,26 @@ tarihçe, referans markalar, sertifikalar, blog başlıkları ve iletişim bilgi
 
 **Seçilen tasarım:** bölünmüş slider hero düzeni · **Kehribar Çelik** paleti.
 
-## Açmak
+## Canlı
+
+| | |
+|---|---|
+| **Site** | https://leon-kimya.vercel.app |
+| **Depo** | https://github.com/blaixs-max/leon-kimya (private) |
+| **Vercel projesi** | `leon-kimya` |
+
+`main` dalına her push **otomatik olarak canlıya çıkar**. Başka bir dala push
+edilirse Vercel ayrı bir önizleme adresi üretir, canlı site etkilenmez.
+
+```bash
+git add -A
+git commit -m "degisiklik aciklamasi"
+git push
+```
+
+Elle deploy gerekirse: `vercel deploy --prod`
+
+## Yerel geliştirme
 
 `index.html` dosyasına çift tıklayarak açılır. Doğru sonuç için yerel sunucu önerilir:
 
@@ -65,9 +84,18 @@ Tüm metinler `assets/data.js` içinde. Orada değiştirmek yeterli — HTML'e d
 Koyu mod istenirse `<body class="dark">` yeterli: logo beyaza döner, marka renkli
 metinler açık tona geçer, harita filtresi ters çevrilir.
 
-## Yayına almadan önce yapılacaklar
+## Gerçek alan adına geçerken
 
-Bu sürümde sayfa istemci tarafında `data.js`'ten render ediliyor. Canlıya çıkmadan:
+Şu an `leon-kimya.vercel.app` bir **staging** adresi. Gerçek alan adına geçince:
+
+1. Vercel → Project → Settings → Domains'ten alan adını ekleyin, DNS kaydını yönlendirin
+2. **`robots.txt`'yi değiştirin** — şu an `Disallow: /` (staging'in arama sonuçlarında
+   asıl siteyle yarışmasını engelliyor). Dosyanın içindeki yorumda hazır sürüm var.
+3. `index.html` içindeki `canonical` ve `og:url` değerlerini yeni alan adına çevirin
+
+## Tamamlanmamış işler
+
+Bu sürümde sayfa istemci tarafında `data.js`'ten render ediliyor:
 
 1. **Statik HTML'e dönüştürme** — arama motorları için gerekli (veya WordPress şablonuna aktarım)
 2. **Form bağlantısı** — iletişim formu şu an gönderim yapmıyor; backend/servis bağlanmalı
