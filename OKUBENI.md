@@ -13,16 +13,29 @@ tarihçe, referans markalar, sertifikalar, blog başlıkları ve iletişim bilgi
 | **Depo** | https://github.com/blaixs-max/leon-kimya (private) |
 | **Vercel projesi** | `leon-kimya` |
 
-`main` dalına her push **otomatik olarak canlıya çıkar**. Başka bir dala push
-edilirse Vercel ayrı bir önizleme adresi üretir, canlı site etkilenmez.
+### Güncelleme
+
+Şu an deploy **elle** yapılıyor:
 
 ```bash
 git add -A
 git commit -m "degisiklik aciklamasi"
 git push
+vercel deploy --prod
 ```
 
-Elle deploy gerekirse: `vercel deploy --prod`
+### Otomatik deploy'u açmak (tek seferlik)
+
+Push'un kendiliğinden canlıya çıkması için Vercel'in GitHub App'inin depoya
+kurulması gerekiyor — bu tarayıcıdan yapılan bir yetkilendirme:
+
+1. https://vercel.com/blaixs-4009s-projects/leon-kimya/settings/git
+2. **Connect Git Repository** → GitHub → `blaixs-max/leon-kimya`
+3. GitHub izin ekranında depoya erişimi onaylayın
+
+Sonrasında `git push` yeterli olur; `vercel deploy --prod` gerekmez.
+Başka bir dala push edilirse Vercel ayrı bir önizleme adresi üretir,
+canlı site etkilenmez.
 
 ## Yerel geliştirme
 
