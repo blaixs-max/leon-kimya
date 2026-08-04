@@ -83,6 +83,8 @@ window.SITE_BASE = {
       { k:"electricalResin", L:"elektrik", children:[] } ] },
     { k:"systems", href:"#sistemler", children:[
       { k:"sportsSys", L:"sporSis" }, { k:"indSys", L:"endSis" }, { k:"waterSys", L:"suSis" } ] },
+    { k:"exportNav", href:"#ihracat", children:[
+      { k:"containers", href:"#konteyner" }, { k:"incoterms", href:"#incoterms" } ] },
     { k:"references", href:"#referanslar" },
     { k:"applications", href:"#uygulamalar" },
     { k:"blog", href:"#blog" },
@@ -175,6 +177,37 @@ window.SITE_BASE = {
       L:["sporSis","endSis","suSis","tarihce","ekip","ik","sertifika"] }
   ],
 
+  /* ---- İHRACAT: konteyner ölçüleri ----
+     ISO standart kuru yük konteynerleri. Değerler GÖSTERGE niteliğindedir;
+     üretici ve taşıyıcıya göre birkaç santim / birkaç yüz kilo değişebilir.
+     L/W/H = iç ölçü (m), dW/dH = kapı açıklığı (m), vol = hacim (m³),
+     tare = boş ağırlık (kg), pay = azami yük (kg),
+     ibc = 1000 L IBC adedi, drum = 200 L varil adedi (paletli, 2 sıra) */
+  containers: [
+    { k:"dv20", L:5.90,  W:2.35, H:2.39, dW:2.34, dH:2.28, vol:33.2, tare:2250, pay:28200, ibc:10, drum:80  },
+    { k:"dv40", L:12.03, W:2.35, H:2.39, dW:2.34, dH:2.28, vol:67.7, tare:3750, pay:26730, ibc:20, drum:160 },
+    { k:"hc40", L:12.03, W:2.35, H:2.70, dW:2.34, dH:2.58, vol:76.4, tare:3900, pay:26580, ibc:20, drum:160 },
+    { k:"hc45", L:13.56, W:2.35, H:2.70, dW:2.34, dH:2.58, vol:86.0, tare:4800, pay:27700, ibc:25, drum:180 }
+  ],
+
+  /* ---- İHRACAT: Incoterms 2020 ----
+     mode: any = tüm taşıma modları, sea = deniz / iç su yolu
+     freight (navlun) ve imp (ithalat gümrüğü): S = satıcı, B = alıcı
+     ins (sigorta): S = satıcı yükümlü, "-" = zorunlu değil */
+  incoterms: [
+    { code:"EXW", mode:"any", freight:"B", ins:"-", imp:"B" },
+    { code:"FCA", mode:"any", freight:"B", ins:"-", imp:"B" },
+    { code:"FAS", mode:"sea", freight:"B", ins:"-", imp:"B" },
+    { code:"FOB", mode:"sea", freight:"B", ins:"-", imp:"B" },
+    { code:"CFR", mode:"sea", freight:"S", ins:"-", imp:"B" },
+    { code:"CIF", mode:"sea", freight:"S", ins:"S", imp:"B" },
+    { code:"CPT", mode:"any", freight:"S", ins:"-", imp:"B" },
+    { code:"CIP", mode:"any", freight:"S", ins:"S", imp:"B" },
+    { code:"DAP", mode:"any", freight:"S", ins:"-", imp:"B" },
+    { code:"DPU", mode:"any", freight:"S", ins:"-", imp:"B" },
+    { code:"DDP", mode:"any", freight:"S", ins:"-", imp:"S" }
+  ],
+
   formFields: [
     { name:"ad",    k:"fName",    type:"text" },
     { name:"firma", k:"fCompany", type:"text" },
@@ -221,6 +254,7 @@ tr: {
     waterproofProd:"Su İzolasyon Ürünleri", electricalResin:"Elektrik İzolasyon Döküm Reçineleri",
     systems:"Sistemler", sportsSys:"Spor Zemin Sistemleri", indSys:"Endüstriyel Zemin Sistemleri",
     waterSys:"Su İzolasyon Sistemi",
+    exportNav:"İhracat", containers:"Konteyner Ölçüleri", incoterms:"Incoterms / Teslim Şekilleri",
     references:"Referanslar", applications:"Uygulamalar", blog:"Blog", contact:"İletişim",
     fProducts:"Ürünler", fSystems:"Sistemler & Kurumsal"
   },
@@ -328,6 +362,37 @@ tr: {
         "EPDM nedir ve nerelerde kullanılır?",
         "Spor zeminlerinde akrilik zemin kaplama"],
 
+  exp:{
+    kicker:"İHRACAT", title:"İhracat Bilgileri",
+    sub:"Yükleme planlaması ve teslim şekli seçimi için ihtiyacınız olan referans bilgiler.",
+    cTitle:"Konteyner Ölçüleri",
+    cSub:"Standart ISO kuru yük konteynerlerinin iç ölçüleri ve yükleme kapasiteleri.",
+    cNote:"Değerler gösterge niteliğindedir; konteyner üreticisine ve taşıyıcıya göre birkaç santimetre ve birkaç yüz kilogram değişebilir. Kesin ölçü ve azami yük için sevkiyat öncesi taşıyıcınızdan teyit alın.",
+    cCols:{ type:"Konteyner", inner:"İç ölçü (U × G × Y)", door:"Kapı açıklığı (G × Y)",
+            vol:"Hacim", tare:"Boş ağırlık", pay:"Azami yük", load:"Yükleme kapasitesi" },
+    cNames:{ dv20:"20' DV — Standart", dv40:"40' DV — Standart", hc40:"40' HC — Yüksek", hc45:"45' HC — Yüksek" },
+    loadIbc:"IBC (1000 L)", loadDrum:"varil (200 L)",
+    iTitle:"Incoterms 2020 — Teslim Şekilleri",
+    iSub:"Satıcı ile alıcı arasında masrafın ve riskin nerede el değiştirdiğini belirleyen uluslararası kurallar.",
+    iNote:"Incoterms®, Milletlerarası Ticaret Odası'nın (ICC) tescilli markasıdır. Tablo özet niteliğindedir; sözleşmede kural adının yanına mutlaka teslim yerini de yazın (örnek: \"FOB İstanbul, Incoterms 2020\").",
+    iCols:{ code:"Kod", name:"Açıklama", mode:"Taşıma modu", freight:"Navlun", ins:"Sigorta", risk:"Riskin devri" },
+    modeAny:"Tüm modlar", modeSea:"Deniz / iç su yolu",
+    seller:"Satıcı", buyer:"Alıcı", none:"Zorunlu değil",
+    terms:{
+      EXW:{ n:"Ex Works — İşyerinde Teslim", risk:"Satıcının tesisinde, mal alıcının emrine hazır edildiğinde" },
+      FCA:{ n:"Free Carrier — Taşıyıcıya Masrafsız", risk:"Belirlenen yerde taşıyıcıya teslim edildiğinde" },
+      FAS:{ n:"Free Alongside Ship — Gemi Doğrultusunda Masrafsız", risk:"Yükleme limanında geminin doğrultusuna konulduğunda" },
+      FOB:{ n:"Free On Board — Gemide Masrafsız", risk:"Mal, yükleme limanında gemiye yüklendiğinde" },
+      CFR:{ n:"Cost and Freight — Masraflar ve Navlun", risk:"Mal, yükleme limanında gemiye yüklendiğinde" },
+      CIF:{ n:"Cost, Insurance and Freight — Masraflar, Sigorta ve Navlun", risk:"Mal, yükleme limanında gemiye yüklendiğinde", ins:"Satıcı — asgari teminat (ICC C)" },
+      CPT:{ n:"Carriage Paid To — Taşıma Ödenmiş Olarak", risk:"Mal, ilk taşıyıcıya teslim edildiğinde" },
+      CIP:{ n:"Carriage and Insurance Paid To — Taşıma ve Sigorta Ödenmiş Olarak", risk:"Mal, ilk taşıyıcıya teslim edildiğinde", ins:"Satıcı — geniş teminat (ICC A)" },
+      DAP:{ n:"Delivered At Place — Belirlenen Yerde Teslim", risk:"Varış yerinde, araç üstünde boşaltılmadan" },
+      DPU:{ n:"Delivered at Place Unloaded — Boşaltılmış Olarak Teslim", risk:"Varış yerinde boşaltma tamamlandığında" },
+      DDP:{ n:"Delivered Duty Paid — Gümrük Resmi Ödenmiş Teslim", risk:"Varış yerinde, araç üstünde boşaltılmadan" }
+    }
+  },
+
   form:{
     title:"Bizimle İletişime Geçin",
     text:"Ürün ve hizmetlerimiz hakkında her türlü istek, soru ve talebinizi formu doldurarak bize iletebilirsiniz.",
@@ -368,6 +433,7 @@ en: {
     waterproofProd:"Waterproofing Products", electricalResin:"Electrical Insulation Casting Resins",
     systems:"Systems", sportsSys:"Sports Flooring Systems", indSys:"Industrial Flooring Systems",
     waterSys:"Waterproofing System",
+    exportNav:"Export", containers:"Container Dimensions", incoterms:"Incoterms / Delivery Terms",
     references:"References", applications:"Applications", blog:"Blog", contact:"Contact",
     fProducts:"Products", fSystems:"Systems & Company"
   },
@@ -475,6 +541,37 @@ en: {
         "What is EPDM and where is it used?",
         "Acrylic floor coating for sports surfaces"],
 
+  exp:{
+    kicker:"EXPORT", title:"Export Information",
+    sub:"Reference data you need for load planning and for choosing the right delivery term.",
+    cTitle:"Container Dimensions",
+    cSub:"Internal dimensions and loading capacities of standard ISO dry cargo containers.",
+    cNote:"Figures are indicative and may vary by a few centimetres and a few hundred kilograms depending on the container manufacturer and the carrier. Confirm exact dimensions and maximum payload with your carrier before shipment.",
+    cCols:{ type:"Container", inner:"Internal (L × W × H)", door:"Door opening (W × H)",
+            vol:"Capacity", tare:"Tare weight", pay:"Max payload", load:"Loading capacity" },
+    cNames:{ dv20:"20' DV — Standard", dv40:"40' DV — Standard", hc40:"40' HC — High Cube", hc45:"45' HC — High Cube" },
+    loadIbc:"IBC (1000 L)", loadDrum:"drums (200 L)",
+    iTitle:"Incoterms 2020 — Delivery Terms",
+    iSub:"The international rules that define where cost and risk pass between seller and buyer.",
+    iNote:"Incoterms® is a registered trademark of the International Chamber of Commerce (ICC). This table is a summary; always state the named place next to the rule in the contract (e.g. \"FOB Istanbul, Incoterms 2020\").",
+    iCols:{ code:"Code", name:"Description", mode:"Transport mode", freight:"Freight", ins:"Insurance", risk:"Risk transfers" },
+    modeAny:"All modes", modeSea:"Sea / inland waterway",
+    seller:"Seller", buyer:"Buyer", none:"Not required",
+    terms:{
+      EXW:{ n:"Ex Works", risk:"At the seller's premises, once goods are placed at the buyer's disposal" },
+      FCA:{ n:"Free Carrier", risk:"On delivery to the carrier at the named place" },
+      FAS:{ n:"Free Alongside Ship", risk:"When placed alongside the vessel at the port of shipment" },
+      FOB:{ n:"Free On Board", risk:"When the goods are on board the vessel at the port of shipment" },
+      CFR:{ n:"Cost and Freight", risk:"When the goods are on board the vessel at the port of shipment" },
+      CIF:{ n:"Cost, Insurance and Freight", risk:"When the goods are on board the vessel at the port of shipment", ins:"Seller — minimum cover (ICC C)" },
+      CPT:{ n:"Carriage Paid To", risk:"On delivery to the first carrier" },
+      CIP:{ n:"Carriage and Insurance Paid To", risk:"On delivery to the first carrier", ins:"Seller — extensive cover (ICC A)" },
+      DAP:{ n:"Delivered At Place", risk:"At the named destination, ready for unloading on the vehicle" },
+      DPU:{ n:"Delivered at Place Unloaded", risk:"At the named destination, once unloading is complete" },
+      DDP:{ n:"Delivered Duty Paid", risk:"At the named destination, ready for unloading on the vehicle" }
+    }
+  },
+
   form:{
     title:"Get in Touch",
     text:"Use the form to send us any request, question or enquiry about our products and services.",
@@ -515,6 +612,7 @@ fr: {
     waterproofProd:"Produits d'étanchéité", electricalResin:"Résines de coulée pour isolation électrique",
     systems:"Systèmes", sportsSys:"Systèmes de sols sportifs", indSys:"Systèmes de sols industriels",
     waterSys:"Système d'étanchéité",
+    exportNav:"Export", containers:"Dimensions des conteneurs", incoterms:"Incoterms / Conditions de livraison",
     references:"Références", applications:"Applications", blog:"Blog", contact:"Contact",
     fProducts:"Produits", fSystems:"Systèmes & entreprise"
   },
@@ -622,6 +720,37 @@ fr: {
         "Qu'est-ce que l'EPDM et où l'utilise-t-on ?",
         "Revêtement acrylique pour sols sportifs"],
 
+  exp:{
+    kicker:"EXPORT", title:"Informations export",
+    sub:"Les données de référence nécessaires à la planification du chargement et au choix de l'incoterm.",
+    cTitle:"Dimensions des conteneurs",
+    cSub:"Dimensions intérieures et capacités de chargement des conteneurs secs ISO standard.",
+    cNote:"Les valeurs sont indicatives et peuvent varier de quelques centimètres et de quelques centaines de kilogrammes selon le fabricant du conteneur et le transporteur. Confirmez les dimensions exactes et la charge utile maximale auprès de votre transporteur avant expédition.",
+    cCols:{ type:"Conteneur", inner:"Intérieur (L × l × H)", door:"Ouverture de porte (l × H)",
+            vol:"Volume", tare:"Tare", pay:"Charge utile max.", load:"Capacité de chargement" },
+    cNames:{ dv20:"20' DV — Standard", dv40:"40' DV — Standard", hc40:"40' HC — High Cube", hc45:"45' HC — High Cube" },
+    loadIbc:"IBC (1000 L)", loadDrum:"fûts (200 L)",
+    iTitle:"Incoterms 2020 — Conditions de livraison",
+    iSub:"Les règles internationales qui définissent où les frais et les risques passent du vendeur à l'acheteur.",
+    iNote:"Incoterms® est une marque déposée de la Chambre de commerce internationale (ICC). Ce tableau est un résumé ; indiquez toujours le lieu convenu à côté de la règle dans le contrat (ex. « FOB Istanbul, Incoterms 2020 »).",
+    iCols:{ code:"Code", name:"Description", mode:"Mode de transport", freight:"Fret", ins:"Assurance", risk:"Transfert du risque" },
+    modeAny:"Tous modes", modeSea:"Maritime / fluvial",
+    seller:"Vendeur", buyer:"Acheteur", none:"Non obligatoire",
+    terms:{
+      EXW:{ n:"Ex Works — À l'usine", risk:"Dans les locaux du vendeur, dès que la marchandise est mise à disposition" },
+      FCA:{ n:"Free Carrier — Franco transporteur", risk:"À la remise au transporteur au lieu convenu" },
+      FAS:{ n:"Free Alongside Ship — Franco le long du navire", risk:"Une fois placée le long du navire au port d'embarquement" },
+      FOB:{ n:"Free On Board — Franco à bord", risk:"Lorsque la marchandise est à bord du navire au port d'embarquement" },
+      CFR:{ n:"Cost and Freight — Coût et fret", risk:"Lorsque la marchandise est à bord du navire au port d'embarquement" },
+      CIF:{ n:"Cost, Insurance and Freight — Coût, assurance et fret", risk:"Lorsque la marchandise est à bord du navire au port d'embarquement", ins:"Vendeur — couverture minimale (ICC C)" },
+      CPT:{ n:"Carriage Paid To — Port payé jusqu'à", risk:"À la remise au premier transporteur" },
+      CIP:{ n:"Carriage and Insurance Paid To — Port payé, assurance comprise", risk:"À la remise au premier transporteur", ins:"Vendeur — couverture étendue (ICC A)" },
+      DAP:{ n:"Delivered At Place — Rendu au lieu de destination", risk:"Au lieu de destination, prêt au déchargement sur le véhicule" },
+      DPU:{ n:"Delivered at Place Unloaded — Rendu déchargé", risk:"Au lieu de destination, une fois le déchargement terminé" },
+      DDP:{ n:"Delivered Duty Paid — Rendu droits acquittés", risk:"Au lieu de destination, prêt au déchargement sur le véhicule" }
+    }
+  },
+
   form:{
     title:"Contactez-nous",
     text:"Utilisez ce formulaire pour nous adresser toute demande ou question concernant nos produits et services.",
@@ -662,6 +791,7 @@ ar: {
     waterproofProd:"منتجات العزل المائي", electricalResin:"راتنجات صب العزل الكهربائي",
     systems:"الأنظمة", sportsSys:"أنظمة الأرضيات الرياضية", indSys:"أنظمة الأرضيات الصناعية",
     waterSys:"نظام العزل المائي",
+    exportNav:"التصدير", containers:"أبعاد الحاويات", incoterms:"إنكوترمز / شروط التسليم",
     references:"مشاريعنا", applications:"التطبيقات", blog:"المدونة", contact:"اتصل بنا",
     fProducts:"المنتجات", fSystems:"الأنظمة والشركة"
   },
@@ -768,6 +898,37 @@ ar: {
         "أرضيات حبيبات EPDM لملاعب الأطفال",
         "ما هو EPDM وأين يُستخدم؟",
         "الطلاء الأكريليكي للأرضيات الرياضية"],
+
+  exp:{
+    kicker:"التصدير", title:"معلومات التصدير",
+    sub:"البيانات المرجعية التي تحتاجها لتخطيط التحميل واختيار شرط التسليم المناسب.",
+    cTitle:"أبعاد الحاويات",
+    cSub:"الأبعاد الداخلية وسعات التحميل للحاويات الجافة القياسية ISO.",
+    cNote:"القيم استرشادية وقد تختلف ببضعة سنتيمترات وبضع مئات من الكيلوغرامات حسب الشركة المصنّعة للحاوية وشركة النقل. تأكّد من الأبعاد الدقيقة والحمولة القصوى مع الناقل قبل الشحن.",
+    cCols:{ type:"الحاوية", inner:"الأبعاد الداخلية (ط × ع × ا)", door:"فتحة الباب (ع × ا)",
+            vol:"الحجم", tare:"الوزن الفارغ", pay:"الحمولة القصوى", load:"سعة التحميل" },
+    cNames:{ dv20:"20' DV — قياسية", dv40:"40' DV — قياسية", hc40:"40' HC — عالية", hc45:"45' HC — عالية" },
+    loadIbc:"حاوية IBC (1000 لتر)", loadDrum:"برميل (200 لتر)",
+    iTitle:"إنكوترمز 2020 — شروط التسليم",
+    iSub:"القواعد الدولية التي تحدّد أين تنتقل التكاليف والمخاطر بين البائع والمشتري.",
+    iNote:"إنكوترمز® علامة تجارية مسجّلة لغرفة التجارة الدولية (ICC). هذا الجدول ملخّص؛ اذكر دائمًا مكان التسليم بجوار القاعدة في العقد (مثال: \"FOB إسطنبول، إنكوترمز 2020\").",
+    iCols:{ code:"الرمز", name:"الوصف", mode:"وسيلة النقل", freight:"أجرة الشحن", ins:"التأمين", risk:"انتقال المخاطر" },
+    modeAny:"جميع الوسائل", modeSea:"بحري / نهري",
+    seller:"البائع", buyer:"المشتري", none:"غير إلزامي",
+    terms:{
+      EXW:{ n:"Ex Works — التسليم في المصنع", risk:"في منشأة البائع، عند وضع البضاعة تحت تصرّف المشتري" },
+      FCA:{ n:"Free Carrier — التسليم إلى الناقل", risk:"عند التسليم إلى الناقل في المكان المتفق عليه" },
+      FAS:{ n:"Free Alongside Ship — التسليم بجانب السفينة", risk:"عند وضع البضاعة بجانب السفينة في ميناء الشحن" },
+      FOB:{ n:"Free On Board — التسليم على ظهر السفينة", risk:"عند تحميل البضاعة على ظهر السفينة في ميناء الشحن" },
+      CFR:{ n:"Cost and Freight — التكلفة وأجرة الشحن", risk:"عند تحميل البضاعة على ظهر السفينة في ميناء الشحن" },
+      CIF:{ n:"Cost, Insurance and Freight — التكلفة والتأمين وأجرة الشحن", risk:"عند تحميل البضاعة على ظهر السفينة في ميناء الشحن", ins:"البائع — تغطية دنيا (ICC C)" },
+      CPT:{ n:"Carriage Paid To — أجرة النقل مدفوعة إلى", risk:"عند التسليم إلى الناقل الأول" },
+      CIP:{ n:"Carriage and Insurance Paid To — أجرة النقل والتأمين مدفوعتان إلى", risk:"عند التسليم إلى الناقل الأول", ins:"البائع — تغطية شاملة (ICC A)" },
+      DAP:{ n:"Delivered At Place — التسليم في المكان المتفق عليه", risk:"في مكان الوصول، جاهزة للتفريغ على وسيلة النقل" },
+      DPU:{ n:"Delivered at Place Unloaded — التسليم بعد التفريغ", risk:"في مكان الوصول، بعد إتمام التفريغ" },
+      DDP:{ n:"Delivered Duty Paid — التسليم مع دفع الرسوم", risk:"في مكان الوصول، جاهزة للتفريغ على وسيلة النقل" }
+    }
+  },
 
   form:{
     title:"تواصل معنا",

@@ -165,6 +165,68 @@ const statsHtml = (B.stats||[]).length ? `<section class="stats"><div class="wra
   ${B.stats.map((s,i)=>`<div><dt data-c="${s.v}">${s.v}${s.s}</dt><dd>${e((T.stats||[])[i]||"")}</dd></div>`).join("")}
 </dl></div></section>` : "";
 
+/* ---- İHRACAT: konteyner ölçüleri + Incoterms 2020 ---- */
+const X = T.exp;
+const party = v => v === "S" ? X.seller : X.buyer;
+/* Arapçada da Latin rakam kullanılır: tablodaki ölçülerle tutarlı kalsın diye */
+const num = n => Number(n).toLocaleString(LANG === "ar" ? "en" : LANG);
+
+const contRows = B.containers.map(c=>`<tr>
+  <th scope="row">${e(X.cNames[c.k])}</th>
+  <td class="nw">${c.L} × ${c.W} × ${c.H} m</td>
+  <td class="nw">${c.dW} × ${c.dH} m</td>
+  <td class="nw">${c.vol} m³</td>
+  <td class="nw">${num(c.tare)} kg</td>
+  <td class="nw"><b>${num(c.pay)} kg</b></td>
+  <td>${c.ibc} × ${e(X.loadIbc)}<br><span class="sub">${c.drum} × ${e(X.loadDrum)}</span></td>
+</tr>`).join("");
+
+const incoRows = B.incoterms.map(t=>{
+  const s = X.terms[t.code] || {};
+  const insTxt = s.ins ? s.ins : (t.ins === "S" ? X.seller : X.none);
+  return `<tr>
+    <th scope="row"><span class="code">${t.code}</span></th>
+    <td>${e(s.n)}</td>
+    <td class="nw"><span class="pill">${e(t.mode === "sea" ? X.modeSea : X.modeAny)}</span></td>
+    <td class="nw"><span class="who who--${t.freight}">${e(party(t.freight))}</span></td>
+    <td>${e(insTxt)}</td>
+    <td class="risk">${e(s.risk)}</td>
+  </tr>`;}).join("");
+
+const exportSec = `<section class="exp" id="ihracat"><div class="wrap">
+  <div class="sechd sechd--onGray"><span class="sechd__t">${e(X.title)}</span>
+    <span class="sechd__s">${e(X.sub)}</span></div>
+
+  <div class="exp__block" id="konteyner">
+    <h3 class="exp__h">${e(X.cTitle)}</h3>
+    <p class="exp__lead">${e(X.cSub)}</p>
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr>
+        <th scope="col">${e(X.cCols.type)}</th><th scope="col">${e(X.cCols.inner)}</th>
+        <th scope="col">${e(X.cCols.door)}</th><th scope="col">${e(X.cCols.vol)}</th>
+        <th scope="col">${e(X.cCols.tare)}</th><th scope="col">${e(X.cCols.pay)}</th>
+        <th scope="col">${e(X.cCols.load)}</th>
+      </tr></thead><tbody>${contRows}</tbody>
+    </table></div>
+    <p class="exp__note">${e(X.cNote)}</p>
+  </div>
+
+  <div class="exp__block" id="incoterms">
+    <h3 class="exp__h">${e(X.iTitle)}</h3>
+    <p class="exp__lead">${e(X.iSub)}</p>
+    <div class="tblwrap"><table class="tbl">
+      <thead><tr>
+        <th scope="col">${e(X.iCols.code)}</th><th scope="col">${e(X.iCols.name)}</th>
+        <th scope="col">${e(X.iCols.mode)}</th><th scope="col">${e(X.iCols.freight)}</th>
+        <th scope="col">${e(X.iCols.ins)}</th><th scope="col">${e(X.iCols.risk)}</th>
+      </tr></thead><tbody>${incoRows}</tbody>
+    </table></div>
+    <p class="exp__note">${e(X.iNote)}</p>
+  </div>
+
+  <p class="exp__cta"><a class="btn btn--brand" href="#iletisim">${e(T.ui.quote)} ${ic("arrow")}</a></p>
+</div></section>`;
+
 const about = `<section class="about" id="kurumsal"><div class="wrap about__in">
   <figure class="about__fig rev"><img src="${B.aboutImage}" alt="${e(T.about.title)}" loading="lazy"></figure>
   <div><p class="about__k">${e(T.ui.corporateKicker)}</p><h2>${e(T.about.title)}</h2>
@@ -262,7 +324,7 @@ document.title = T.meta.title;
 const md = $('meta[name="description"]'); if (md) md.setAttribute("content", T.meta.desc);
 
 document.getElementById("app").innerHTML =
-  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + about + apps + brands + blog + contact + `</main>` + ftr;
+  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + exportSec + about + apps + brands + blog + contact + `</main>` + ftr;
 
 /* ================= DAVRANIŞLAR ================= */
 (function(){
