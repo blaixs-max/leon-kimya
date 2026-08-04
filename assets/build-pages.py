@@ -21,6 +21,25 @@ def asset_version():
 
 V = asset_version()
 
+# =============================================================
+# KURUMSAL PALET — sitenin rengini değiştirmek için TEK NOKTA.
+# Burayı düzenleyip `python assets/build-pages.py` çalıştırmak yeterli.
+# =============================================================
+PALETTE_NAME = "KEHRİBAR ÇELİK"
+BRAND = "#D97706"          # ana marka rengi (theme-color olarak da kullanılır)
+PALETTE = """
+  --brand:{brand}; --brand-d:#B45309; --brand-l:#FCD34D; --brand-xl:#FFFBEB; --brand-on:#FFFFFF;
+  --ink:#1C1917; --ink-2:#3B3733; --mut:#78716C; --mut-2:#A8A29E;
+  --line:#E7E5E4; --bg:#FFFFFF; --bg-2:#FAF9F7; --surface:#FFFFFF;
+  --shade:28,25,23;
+  --top-bg:#1C1917; --top-fg:#E7E5E4;
+  --ftr-bg:#1C1917; --ftr-fg:#D6D3D1; --ftr-head:#FCD34D; --ftr-line:rgba(255,255,255,.12);
+  --play:#B45309; --hero-ink:#FFFFFF;""".format(brand=BRAND)
+
+# Yayına hazır olunca False yapın (kendi görselleriniz + iletişim bilgileri girildikten SONRA).
+# Ayrıca robots.txt dosyasını da güncellemeyi unutmayın.
+NOINDEX = True
+
 PAGES = [
   dict(file="index.html", lang="tr", dir="ltr", path="/",
        title="Leon Kimya | Yapıştırıcı, Bağlayıcı, Zemin Kaplama ve Su İzolasyon Sistemleri",
@@ -57,25 +76,18 @@ TPL = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#D97706">
+{robots}<meta name="theme-color" content="{brand}">
 {alternates}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?{font}&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/split.css?v={v}">
 <style>
 /* =============================================================
-   LEON KİMYA — KURUMSAL PALET: KEHRİBAR ÇELİK
-   Renk revizyonu için yalnızca bu blok yeterlidir.
+   LEON KİMYA — KURUMSAL PALET: {palette_name}
+   Bu blok build-pages.py içindeki PALETTE sabitinden üretilir.
+   Elle düzenlemeyin — orayı düzenleyip betiği yeniden çalıştırın.
    ============================================================= */
-:root{{
-  --brand:#D97706; --brand-d:#B45309; --brand-l:#FCD34D; --brand-xl:#FFFBEB; --brand-on:#FFFFFF;
-  --ink:#1C1917; --ink-2:#3B3733; --mut:#78716C; --mut-2:#A8A29E;
-  --line:#E7E5E4; --bg:#FFFFFF; --bg-2:#FAF9F7; --surface:#FFFFFF;
-  --shade:28,25,23;
-  --top-bg:#1C1917; --top-fg:#E7E5E4;
-  --ftr-bg:#1C1917; --ftr-fg:#D6D3D1; --ftr-head:#FCD34D; --ftr-line:rgba(255,255,255,.12);
-  --play:#B45309; --hero-ink:#FFFFFF;{extra}
+:root{{{palette}{extra}
 }}
 </style>
 </head>
@@ -100,6 +112,10 @@ for p in PAGES:
         alternates=alts,
         extra=ARABIC_FONT_CSS if p["lang"] == "ar" else "",
         v=V,
+        brand=BRAND,
+        palette=PALETTE,
+        palette_name=PALETTE_NAME,
+        robots='<meta name="robots" content="noindex,nofollow">\n' if NOINDEX else "",
     )
     with io.open(os.path.join(ROOT, p["file"]), "w", encoding="utf-8") as f:
         f.write(body)
