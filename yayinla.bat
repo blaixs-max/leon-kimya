@@ -8,11 +8,15 @@ rem    2) vercel deploy --prod (canliya al)
 rem =============================================================
 cd /d "%~dp0"
 echo.
-echo [1/2] GitHub'a gonderiliyor...
+echo [1/3] Uzaktaki degisiklikler aliniyor (varsa otomatik birlestirilir)...
+git pull --rebase origin main
+if errorlevel 1 goto hata
+echo.
+echo [2/3] GitHub'a gonderiliyor...
 git push
 if errorlevel 1 goto hata
 echo.
-echo [2/2] Vercel uretim deploy'u...
+echo [3/3] Vercel uretim deploy'u...
 call vercel deploy --prod
 if errorlevel 1 goto hata
 echo.
