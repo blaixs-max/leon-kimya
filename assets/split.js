@@ -334,12 +334,13 @@ document.getElementById("app").innerHTML =
   const dtlHtml = key => {
     const d = D[key], t = DT[key];
     if (!d || !t) return "";
-    const title = label(d.nav);
+    const title = t.title || label(d.nav);          /* uygulama kayıtları kendi başlığını taşır */
+    const kicker = d.app ? label("applications") : T.ui.productFamily;
     return `<div class="dtl__panel" role="dialog" aria-modal="true" aria-label="${e(title)}">
       <button class="dtl__x" aria-label="${e(T.ui.close)}">&times;</button>
       <figure class="dtl__hero"><img src="${d.img}" alt="${e(title)}"></figure>
       <div class="dtl__body">
-        <p class="about__k">${e(T.ui.productFamily)}</p>
+        <p class="about__k">${e(kicker)}</p>
         <h2>${e(title)}</h2>
         <p class="dtl__lead">${e(t.lead)}</p>
         ${(t.paras||[]).map(p=>`<p class="dtl__p">${e(p)}</p>`).join("")}
