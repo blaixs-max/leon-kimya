@@ -1,12 +1,14 @@
 # Bu deploy bir ÖNİZLEME / STAGING ortamıdır.
-# index.html içindeki canonical zaten https://www.polinkimya.com/ adresini işaret ediyor;
-# vercel.app adresinin arama sonuçlarında asıl siteyle yarışmasını engelliyoruz.
+# Görseller ve bazı içerikler geçici referans malzemesidir; Leon Kimya'nın
+# kendi görselleri ve iletişim bilgileri girilmeden site indekslenmemelidir.
 #
-# ---> Gerçek alan adına (polinkimya.com) geçildiğinde bu dosyayı şununla değiştirin:
+# ---> Yayına hazır olunduğunda (kendi görseller + iletişim bilgileri girildikten
+#      ve build-pages.py içindeki NOINDEX=False yapıldıktan sonra) bu dosyayı
+#      şununla değiştirin (alan adını kendi adresinizle güncelleyin):
 #
 #      User-agent: *
 #      Allow: /
-#      Sitemap: https://www.polinkimya.com/sitemap.xml
+#      Sitemap: https://www.leonkimya.com/sitemap.xml
 
 User-agent: *
 Disallow: /

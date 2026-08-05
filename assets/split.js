@@ -252,12 +252,8 @@ const brands = (B.brands||[]).length ? `<section class="brands" id="referanslar"
   </div>
 </div></section>` : "";
 
-const blog = `<section class="blog" id="blog"><div class="wrap">
-  <div class="blog__hd"><div><span>${e(T.ui.blogKicker)}</span><h2>${e(T.ui.blogTitle)}</h2></div></div>
-  <div class="bloggrid">${B.blog.map((b,i)=>`<article class="post rev"><figure><img src="${b.img}" alt="" loading="lazy"></figure>
-    <div class="post__b"><span class="tag">${e(T.ui.tagBlog)}</span><h3>${e(T.blog[i])}</h3>
-    <em>${e(T.ui.readPost)}</em></div>${cover(b.href,T.blog[i])}</article>`).join("")}</div>
-</div></section>`;
+/* Blog bölümü kullanıcı isteğiyle kaldırıldı (05.08.2026).
+   Geri eklemek gerekirse git geçmişindeki blog bloğuna bakın. */
 
 /* ---- İLETİŞİM ---- */
 const fField = f => {
@@ -324,7 +320,77 @@ document.title = T.meta.title;
 const md = $('meta[name="description"]'); if (md) md.setAttribute("content", T.meta.desc);
 
 document.getElementById("app").innerHTML =
-  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + exportSec + about + apps + brands + blog + contact + `</main>` + ftr;
+  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + exportSec + about + apps + brands + contact + `</main>` + ftr +
+  `<div class="dtl" id="dtl" hidden></div>`;
+
+/* ================= ÜRÜN & SİSTEM DETAY KATMANI =================
+   Bağlantılar "#detay/<anahtar>" biçimindedir (bkz. SITE_BASE.links).
+   İçerik SITE_BASE.details (görseller) + STRINGS.<dil>.details (metin). */
+(function(){
+  const box = $("#dtl");
+  const D = B.details || {};
+  const DT = T.details || {};
+
+  const dtlHtml = key => {
+    const d = D[key], t = DT[key];
+    if (!d || !t) return "";
+    const title = label(d.nav);
+    return `<div class="dtl__panel" role="dialog" aria-modal="true" aria-label="${e(title)}">
+      <button class="dtl__x" aria-label="${e(T.ui.close)}">&times;</button>
+      <figure class="dtl__hero"><img src="${d.img}" alt="${e(title)}"></figure>
+      <div class="dtl__body">
+        <p class="about__k">${e(T.ui.productFamily)}</p>
+        <h2>${e(title)}</h2>
+        <p class="dtl__lead">${e(t.lead)}</p>
+        ${(t.paras||[]).map(p=>`<p class="dtl__p">${e(p)}</p>`).join("")}
+        ${(t.products||[]).length?`<h4>${e(T.ui.productRange)}</h4><div class="dtl__prods">${t.products.map((pr,i)=>{
+          const pi=(d.productImgs||[])[i];
+          return `<article class="dtl__prod">${pi?`<img src="${pi}" alt="${e(pr.t)}" loading="lazy">`:""}<div><h3>${e(pr.t)}</h3><p>${e(pr.d)}</p></div></article>`;
+        }).join("")}</div>`:""}
+        ${(t.areas||[]).length?`<h4>${e(T.ui.applicationAreas)}</h4><ul class="chips">${t.areas.map(a=>`<li>${e(a)}</li>`).join("")}</ul>`:""}
+        ${(t.props||[]).length?`<h4>${e(T.ui.keyFeatures)}</h4><ul class="dots">${t.props.map(p=>`<li>${e(p)}</li>`).join("")}</ul>`:""}
+        ${(d.gallery||[]).length?`<div class="dtl__gal">${d.gallery.map(g=>`<img src="${g}" alt="" loading="lazy">`).join("")}</div>`:""}
+        <div class="sysbtns"><a class="btn btn--brand" href="#iletisim">${e(T.ui.projectQuote)} ${ic("arrow")}</a></div>
+      </div></div>`;
+  };
+
+  const closeDtl = () => {
+    if (box.hidden) return;
+    box.classList.remove("on");
+    document.body.classList.remove("lock");
+    setTimeout(()=>{ box.hidden = true; box.innerHTML = ""; }, 180);
+    if (location.hash.indexOf("#detay/") === 0)
+      history.replaceState(null, "", location.pathname + location.search);
+  };
+
+  const openDtl = key => {
+    const html = dtlHtml(key);
+    if (!html) { closeDtl(); return; }
+    box.innerHTML = html;
+    box.hidden = false;
+    box.scrollTop = 0;
+    requestAnimationFrame(()=>box.classList.add("on"));
+    document.body.classList.add("lock");
+    $(".dtl__x", box).addEventListener("click", closeDtl);
+    /* panel içindeki sayfa-içi bağlantılar (teklif al) katmanı kapatır */
+    $$(".dtl__body a", box).forEach(a=>a.addEventListener("click", closeDtl));
+    /* galeri görseline tıklayınca kapak ile yer değiştirir */
+    const heroImg = $(".dtl__hero img", box);
+    $$(".dtl__gal img", box).forEach(g=>g.addEventListener("click", ()=>{
+      const sw = heroImg.src; heroImg.src = g.src; g.src = sw;
+    }));
+  };
+
+  const onHash = () => {
+    if (location.hash.indexOf("#detay/") === 0)
+      openDtl(decodeURIComponent(location.hash.slice(7)));
+    else closeDtl();
+  };
+  addEventListener("hashchange", onHash);
+  box.addEventListener("click", ev=>{ if (ev.target === box) closeDtl(); });
+  addEventListener("keydown", ev=>{ if (ev.key === "Escape") closeDtl(); });
+  onHash(); /* sayfa doğrudan #detay/... ile açıldıysa */
+})();
 
 /* ================= DAVRANIŞLAR ================= */
 (function(){
@@ -388,7 +454,9 @@ const cio=new IntersectionObserver(es=>es.forEach(x=>{
 $$("[data-c]").forEach(n=>cio.observe(n));
 
 $$('a[href^="#"]').forEach(a=>a.addEventListener("click",ev=>{
-  const id=a.getAttribute("href"); if(id.length<2)return; const t=$(id); if(!t)return;
+  const id=a.getAttribute("href"); if(id.length<2)return;
+  if(id.indexOf("#detay/")===0)return; /* detay bağlantıları hash yönlendirmesiyle açılır */
+  const t=$(id); if(!t)return;
   ev.preventDefault(); scrollTo({top:t.getBoundingClientRect().top+scrollY-72,behavior:"smooth"});
 }));
 

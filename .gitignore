@@ -17,3 +17,6 @@ desktop.ini
 .claude/settings.local.json
 .vercel
 .env*
+
+# Saras Kimya referans arşivi — telifli, git'e girmez
+saraskimya-assets/
