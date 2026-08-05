@@ -320,7 +320,8 @@ document.title = T.meta.title;
 const md = $('meta[name="description"]'); if (md) md.setAttribute("content", T.meta.desc);
 
 document.getElementById("app").innerHTML =
-  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + exportSec + about + apps + brands + contact + `</main>` + ftr +
+  /* İhracat bölümü kullanıcı isteğiyle sayfanın en altına (footer öncesine) taşındı — 05.08.2026 */
+  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + about + apps + brands + contact + exportSec + `</main>` + ftr +
   `<div class="dtl" id="dtl" hidden></div>`;
 
 /* ================= ÜRÜN & SİSTEM DETAY KATMANI =================
