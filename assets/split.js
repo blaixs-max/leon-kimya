@@ -314,7 +314,10 @@ const ftr = `<footer class="ftr"><div class="wrap">
     <div class="ftr__langs">${B.langs.map(l=>`<a href="${l.href}" class="${l.lang===LANG?"on":""}">${l.code}</a>`).join("")}</div>
   </div>
 </div></footer>
-<div class="fab"><button id="toTop" aria-label="${e(T.ui.toTop)}" hidden>${ic("arrow")}</button></div>`;
+<div class="fab">${has(B.contact.whatsapp)
+  ? `<a class="fab__wa" href="${B.contact.whatsapp}?text=${encodeURIComponent(T.ui.waPrefill)}" target="_blank" rel="noopener" aria-label="${e(T.ui.waLabel)}" title="${e(T.ui.waLabel)}">
+      <svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.55 14.9L2.1 21.9l5.14-1.32A9.94 9.94 0 1 0 12 2Zm0 1.67a8.27 8.27 0 1 1-4.2 15.4l-.3-.18-3.05.78.81-2.96-.2-.31A8.27 8.27 0 0 1 12 3.67Zm-3.1 4.35c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.6.12.17 1.74 2.79 4.3 3.8 2.13.84 2.56.67 3.02.63.46-.04 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.17-.48-.29-.25-.13-1.49-.74-1.72-.82-.23-.08-.4-.13-.57.12-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06a6.8 6.8 0 0 1-2-1.23 7.5 7.5 0 0 1-1.39-1.72c-.14-.25-.01-.39.11-.51.11-.11.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.55-1.39-.77-1.9-.2-.49-.4-.42-.55-.43l-.55-.01Z"/></svg>
+    </a>` : ""}<button id="toTop" aria-label="${e(T.ui.toTop)}" hidden>${ic("arrow")}</button></div>`;
 
 document.title = T.meta.title;
 const md = $('meta[name="description"]'); if (md) md.setAttribute("content", T.meta.desc);

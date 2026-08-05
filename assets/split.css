@@ -20,6 +20,7 @@
   --top-bg:var(--brand); --top-fg:#FFFFFF;
   --ftr-bg:#1E293B; --ftr-fg:#CBD5E1; --ftr-head:#8DB4AF; --ftr-line:rgba(255,255,255,.12);
   --play:#DC2626; --hero-ink:#FFFFFF;
+  --wa:#25D366; /* WhatsApp marka yesili — varsayilan; palet dosyasi ezebilir */
   --brand-txt:var(--brand-d);
   /* --- biçim (palette dosyaları dokunmaz) --- */
   --r:14px; --r-lg:20px; --r-xl:26px;
@@ -418,7 +419,8 @@ body.dark .map iframe{filter:grayscale(1) invert(.92) contrast(.86)}
 .fab{position:fixed;right:20px;bottom:20px;z-index:70;display:grid;gap:10px}
 .fab a,.fab button{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;border:0;cursor:pointer;
   box-shadow:0 12px 30px -10px rgba(var(--shade),.5);transition:.28s var(--ease);color:#fff}
-.fab a{background:#25D366}
+.fab a.fab__wa{background:var(--wa);color:var(--brand-on);box-shadow:0 8px 24px rgba(var(--shade),.25)}
+.fab a.fab__wa .i{width:28px;height:28px}
 .fab button{background:var(--ink);color:var(--bg)}
 .fab a:hover,.fab button:hover{transform:translateY(-4px) scale(1.05)}
 .fab .i{width:24px;height:24px}

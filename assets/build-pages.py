@@ -34,7 +34,8 @@ PALETTE = """
   --shade:28,25,23;
   --top-bg:#1C1917; --top-fg:#E7E5E4;
   --ftr-bg:#1C1917; --ftr-fg:#D6D3D1; --ftr-head:#FCD34D; --ftr-line:rgba(255,255,255,.12);
-  --play:#B45309; --hero-ink:#FFFFFF;""".format(brand=BRAND)
+  --play:#B45309; --hero-ink:#FFFFFF;
+  --wa:#25D366;   /* WhatsApp kurumsal yesili (marka rengi, palete bagli degil) */""".format(brand=BRAND)
 
 # Yayına hazır olunca False yapın (kendi görselleriniz + iletişim bilgileri girildikten SONRA).
 # Ayrıca robots.txt dosyasını da güncellemeyi unutmayın.

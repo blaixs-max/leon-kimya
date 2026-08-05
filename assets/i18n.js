@@ -24,7 +24,7 @@ window.SITE_BASE = {
     mobile: "",            // TODO
     tel1: "",              // TODO: "+90..." (boşluksuz)
     tel2: "",              // TODO
-    whatsapp: "",          // TODO: "https://api.whatsapp.com/send?phone=+90..."
+    whatsapp: "https://wa.me/905337040125",   // Leon Kimya WhatsApp hattı
     email: "",             // TODO: "info@leonkimya.com"
     exportEmail: "",       // TODO: "export@leonkimya.com"
     mapLink: "",           // TODO: Google Maps bağlantısı
@@ -321,7 +321,8 @@ tr: {
     mapTitle:"Leon Kimya konum", sinceProduction:"",
     allRights:"Tüm hakları saklıdır.",
     mapTodo:"Konum bilgisi eklendiğinde harita burada görünecek.",
-    close:"Kapat", keyFeatures:"Öne Çıkan Özellikler", productRange:"Ürün Çeşitleri"
+    close:"Kapat", keyFeatures:"Öne Çıkan Özellikler", productRange:"Ürün Çeşitleri",
+    waLabel:"WhatsApp ile yazın", waPrefill:"Merhaba, ürünleriniz hakkında bilgi almak istiyorum."
   },
 
   hero:{
@@ -605,7 +606,8 @@ en: {
     mapTitle:"Leon Kimya location", sinceProduction:"",
     allRights:"All rights reserved.",
     mapTodo:"The map will appear here once the location is added.",
-    close:"Close", keyFeatures:"Key Features", productRange:"Product Range"
+    close:"Close", keyFeatures:"Key Features", productRange:"Product Range",
+    waLabel:"Chat on WhatsApp", waPrefill:"Hello, I would like to get information about your products."
   },
 
   hero:{
@@ -889,7 +891,8 @@ fr: {
     mapTitle:"Localisation Leon Kimya", sinceProduction:"",
     allRights:"Tous droits réservés.",
     mapTodo:"La carte s'affichera ici une fois l'adresse renseignée.",
-    close:"Fermer", keyFeatures:"Caractéristiques clés", productRange:"Gamme de produits"
+    close:"Fermer", keyFeatures:"Caractéristiques clés", productRange:"Gamme de produits",
+    waLabel:"Écrire sur WhatsApp", waPrefill:"Bonjour, je souhaite obtenir des informations sur vos produits."
   },
 
   hero:{
@@ -1173,7 +1176,8 @@ ar: {
     mapTitle:"موقع ليون كيميا", sinceProduction:"",
     allRights:"جميع الحقوق محفوظة.",
     mapTodo:"ستظهر الخريطة هنا بعد إضافة بيانات الموقع.",
-    close:"إغلاق", keyFeatures:"أبرز الخصائص", productRange:"تشكيلة المنتجات"
+    close:"إغلاق", keyFeatures:"أبرز الخصائص", productRange:"تشكيلة المنتجات",
+    waLabel:"تواصل عبر واتساب", waPrefill:"مرحبًا، أودّ الحصول على معلومات عن منتجاتكم."
   },
 
   hero:{
