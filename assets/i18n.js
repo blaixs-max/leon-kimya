@@ -216,6 +216,11 @@ window.SITE_BASE = {
     { name:"mesaj", k:"fMessage", type:"textarea" }
   ],
 
+  /* FormSubmit AJAX ucu (06.08.2026). Alıcı adres değişirse yalnız burayı
+     güncelle. İlk gönderimde FormSubmit alıcı adrese bir aktivasyon e-postası
+     yollar; içindeki bağlantı onaylanmadan mesajlar iletilmez. */
+  formEndpoint: "https://formsubmit.co/ajax/blaixs@gmail.com",
+
   /* ---- ÜRÜN & SİSTEM DETAY KARTLARI ----
      nav: başlık için T.nav anahtarı; img: kapak; gallery: küçük görseller.
      Metinler STRINGS.<dil>.details altında aynı anahtarla tutulur. */
@@ -545,7 +550,11 @@ tr: {
     subjects:["Ürün bilgisi","Sistem / proje teklifi","Bayilik & iş ortaklığı","İhracat","Teknik destek","Diğer"],
     kvkk:"Kişisel verilerimin işlenmesine ilişkin aydınlatma metnini okudum, onaylıyorum.",
     submit:"Mesajı Gönder",
-    notWired:"Form henüz bir gönderim servisine bağlı değildir."
+    sending:"Gönderiliyor…",
+    success:"Mesajınız alındı. En kısa sürede size dönüş yapacağız.",
+    error:"Gönderim başarısız oldu. Lütfen daha sonra tekrar deneyin.",
+    kvkkWarn:"Göndermek için aydınlatma metnini onaylamanız gerekir.",
+    fillWarn:"Lütfen ad, e-posta ve mesaj alanlarını doldurun."
   }
 },
 
@@ -830,7 +839,11 @@ en: {
     subjects:["Product information","System / project quote","Distribution & partnership","Export","Technical support","Other"],
     kvkk:"I have read and accept the personal data protection notice.",
     submit:"Send Message",
-    notWired:"This form is not yet connected to a delivery service."
+    sending:"Sending…",
+    success:"Your message has been received. We will get back to you shortly.",
+    error:"Sending failed. Please try again later.",
+    kvkkWarn:"Please accept the data protection notice before sending.",
+    fillWarn:"Please fill in the name, e-mail and message fields."
   }
 },
 
@@ -1115,7 +1128,11 @@ fr: {
     subjects:["Information produit","Devis système / projet","Distribution & partenariat","Export","Support technique","Autre"],
     kvkk:"J'ai lu et j'accepte la notice relative à la protection des données personnelles.",
     submit:"Envoyer le message",
-    notWired:"Ce formulaire n'est pas encore relié à un service d'envoi."
+    sending:"Envoi en cours…",
+    success:"Votre message a bien été reçu. Nous vous répondrons rapidement.",
+    error:"L'envoi a échoué. Veuillez réessayer plus tard.",
+    kvkkWarn:"Veuillez accepter la notice de protection des données avant d'envoyer.",
+    fillWarn:"Veuillez renseigner le nom, l'e-mail et le message."
   }
 },
 
@@ -1400,7 +1417,11 @@ ar: {
     subjects:["معلومات عن منتج","عرض سعر لنظام أو مشروع","التوزيع والشراكة","التصدير","الدعم الفني","أخرى"],
     kvkk:"لقد قرأت إشعار حماية البيانات الشخصية وأوافق عليه.",
     submit:"إرسال الرسالة",
-    notWired:"هذا النموذج غير مرتبط بعد بخدمة إرسال."
+    sending:"جارٍ الإرسال…",
+    success:"تم استلام رسالتكم وسنعاود التواصل معكم قريبًا.",
+    error:"فشل الإرسال. يرجى المحاولة مرة أخرى لاحقًا.",
+    kvkkWarn:"يرجى الموافقة على إشعار حماية البيانات قبل الإرسال.",
+    fillWarn:"يرجى تعبئة حقول الاسم والبريد الإلكتروني والرسالة."
   }
 }
 

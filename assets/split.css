@@ -534,6 +534,11 @@ body.dark .map iframe{filter:grayscale(1) invert(.92) contrast(.86)}
 .map--todo{display:grid;place-items:center;text-align:center;padding:24px;
   background:var(--bg-2);color:var(--mut-2);font-size:14px;font-style:italic}
 .form__note{margin:14px 0 0;font-size:12.5px;color:var(--mut-2);font-style:italic}
+/* form gönderim durumu + bot tuzağı (06.08.2026) */
+.form__status{margin:14px 0 0;padding:10px 14px;border-radius:var(--r);font-size:14px;
+  background:var(--brand-xl);border:1px solid var(--brand-l);color:var(--ink)}
+.form__status.err{background:var(--bg-2);border-color:var(--line);color:var(--mut)}
+.hp{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden} /* RTL güvenli gizleme — left:-9999 KULLANMA */
 
 /* ============ DIL SECICI (ust bar) ============ */
 .top__langs,.drw__langs,.ftr__langs{display:flex;gap:4px}

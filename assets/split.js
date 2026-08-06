@@ -280,11 +280,12 @@ const contact = `<section class="contact" id="iletisim"><div class="wrap contact
       ? `<div class="map"><iframe title="${e(T.ui.mapTitle)}" loading="lazy" src="${B.contact.mapEmbed}"></iframe></div>`
       : `<div class="map map--todo"><span>${e(T.ui.mapTodo)}</span></div>`}
   </div>
-  <form class="form" onsubmit="return false"><h3>${e(T.form.title)}</h3><p>${e(T.form.text)}</p>
+  <form class="form" novalidate><h3>${e(T.form.title)}</h3><p>${e(T.form.text)}</p>
     <div class="fgrid">${B.formFields.map(fField).join("")}
-      <label class="f f--full f--check"><input type="checkbox"><span>${e(T.form.kvkk)}</span></label></div>
+      <label class="f f--full f--check"><input type="checkbox" name="kvkk"><span>${e(T.form.kvkk)}</span></label></div>
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
     <button class="btn btn--brand" type="submit">${e(T.form.submit)} ${ic("arrow")}</button>
-    <p class="form__note">${e(T.form.notWired)}</p></form>
+    <p class="form__status" hidden></p></form>
 </div></section>`;
 
 /* ---- FOOTER ---- */
@@ -467,4 +468,38 @@ $$('a[href^="#"]').forEach(a=>a.addEventListener("click",ev=>{
 
 /* menüdeki "Anasayfa" etiketi */
 const homeLink = $('.drw__nav a[href="#top"]'); if (homeLink) homeLink.textContent = T.ui.home;
+
+/* --- iletişim formu: FormSubmit AJAX gönderimi (06.08.2026) ---
+   Uç nokta SITE_BASE.formEndpoint'te. İlk gerçek gönderimde FormSubmit
+   alıcı adrese aktivasyon e-postası yollar; onaylanana dek iletim yapılmaz. */
+const cf = $(".form");
+if (cf && has(B.formEndpoint)) {
+  const st  = cf.querySelector(".form__status");
+  const say = (msg, err) => { st.hidden = false; st.textContent = msg; st.classList.toggle("err", !!err); };
+  cf.addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const fd = new FormData(cf);
+    if ((fd.get("_honey") || "").trim() !== "") return;                    // bot tuzağı: dolduran gerçek kullanıcı değil
+    if (!cf.querySelector('input[name="kvkk"]').checked) return say(T.form.kvkkWarn, true);
+    if (!(fd.get("ad") || "").trim() || !(fd.get("email") || "").trim() || !(fd.get("mesaj") || "").trim())
+      return say(T.form.fillWarn, true);
+    const btn = cf.querySelector('button[type="submit"]');
+    btn.disabled = true; say(T.form.sending, false);
+    try {
+      const r = await fetch(B.formEndpoint, {
+        method: "POST",
+        headers: { "Accept": "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: fd.get("ad"), company: fd.get("firma"), email: fd.get("email"),
+          phone: fd.get("tel"), subject: fd.get("konu"), message: fd.get("mesaj"),
+          _subject: "Leon Kimya web formu: " + fd.get("konu"),
+          _template: "table", _captcha: "false"
+        })
+      });
+      if (!r.ok) throw new Error(r.status);
+      cf.reset(); say(T.form.success, false);
+    } catch (_) { say(T.form.error, true); }
+    btn.disabled = false;
+  });
+}
 })();
