@@ -109,7 +109,7 @@ window.SITE_BASE = {
 
   tiles: [
     { img:"assets/img/tile-parquet-v2.jpg",    L:"parke" },
-    { img:"assets/img/tile-rubber-v2.jpg",     L:"kaucuk" },
+    { img:"assets/img/kaucuk-kapak.jpg",     L:"kaucuk" },
     { img:"assets/img/tile-turf-v2.jpg",       L:"kaucuk" },
     { img:"assets/img/tile-binder-v2.jpg",     L:"dokme" },
     { img:"assets/img/tile-water-v2.jpg",      L:"suSis" },
@@ -241,7 +241,7 @@ window.SITE_BASE = {
     "uygDokum": {"app": true, "img": "assets/img/app-resin-v2.jpg", "gallery": ["assets/img/resin-table.jpg", "assets/img/resin-wave.jpg", "assets/img/tile-resin-v2.jpg"]},
     "parke": {"nav": "parquetAdh", "img": "assets/img/cat-parquet-v2.jpg", "gallery": ["assets/img/vid-parquet-v2.jpg", "assets/img/app-parquet-v2.jpg", "assets/img/tile-parquet-v2.jpg"], "productImgs": ["assets/img/prod-parke-01.jpg", "assets/img/prod-parke-02.jpg", "assets/img/prod-parke-03.jpg", "assets/img/prod-parke-04.jpg", "assets/img/prod-parke-05.jpg", "assets/img/prod-parke-06.jpg", "assets/img/app-parquet-v2.jpg"]},
     "pvc": {"nav": "pvcAdh", "img": "assets/img/pvc-apply.jpg", "gallery": ["assets/img/pvc-hall.jpg"], "productImgs": ["assets/img/prod-pvc-01.jpg"]},
-    "kaucuk": {"nav": "rubberTurfAdh", "img": "assets/img/tile-rubber-v2.jpg", "gallery": ["assets/img/rubber-tiles.jpg", "assets/img/app-rubber-v2.jpg", "assets/img/app-turf-v2.jpg", "assets/img/tile-turf-v2.jpg"], "productImgs": ["assets/img/prod-kaucuk-01.jpg", "assets/img/prod-kaucuk-02.jpg", "assets/img/prod-kaucuk-03.jpg", "assets/img/prod-kaucuk-04.jpg", "assets/img/prod-kaucuk-05.jpg", "assets/img/rubber-tiles.jpg", "assets/img/sport-gym.jpg"]},
+    "kaucuk": {"nav": "rubberTurfAdh", "img": "assets/img/kaucuk-kapak.jpg", "gallery": ["assets/img/rubber-tiles.jpg", "assets/img/app-rubber-v2.jpg", "assets/img/app-turf-v2.jpg", "assets/img/tile-turf-v2.jpg"], "productImgs": ["assets/img/prod-kaucuk-01.jpg", "assets/img/prod-kaucuk-02.jpg", "assets/img/prod-kaucuk-03.jpg", "assets/img/prod-kaucuk-04.jpg", "assets/img/prod-kaucuk-05.jpg", "assets/img/rubber-tiles.jpg", "assets/img/sport-gym.jpg"]},
     "filtre": {"nav": "filterAdh", "img": "assets/img/ind-machines.jpg", "gallery": [], "productImgs": ["assets/img/prod-filtre-01.jpg", "assets/img/prod-filtre-02.jpg", "assets/img/prod-filtre-02.jpg", "assets/img/prod-filtre-02.jpg", "assets/img/prod-filtre-02.jpg", "assets/img/prod-filtre-02.jpg"]},
     "endYap": {"nav": "indAdh", "img": "assets/img/ind-hall.jpg", "gallery": ["assets/img/corp-plant-v2.jpg"], "productImgs": ["assets/img/prod-endyap-01.jpg", "assets/img/prod-endyap-02.jpg", "assets/img/prod-endyap-03.jpg"]},
     "dokme": {"nav": "pourBinder", "img": "assets/img/cat-binder-v2.jpg", "gallery": ["assets/img/epdm-insitu.jpg", "assets/img/tile-binder-v2.jpg", "assets/img/app-playground-v2.jpg"], "productImgs": ["assets/img/prod-binder-01.jpg", "assets/img/prod-binder-01.jpg", "assets/img/prod-binder-01.jpg", "assets/img/prod-binder-02.jpg", "assets/img/prod-binder-01.jpg"]},
