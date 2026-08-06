@@ -61,12 +61,13 @@ window.SITE_BASE = {
     { code:"AR", href:"/ar", lang:"ar", dir:"rtl" }
   ],
 
-  /* TODO: Leon Kimya logosu eklenene kadar metin logo (SVG) kullanılır.
-     Logo dosyası hazır olduğunda: logoDark/logoWhite yollarını girin. */
+  /* Logo: aslan+dişli amblemli yatay lockup (06.08.2026, kullanıcının verdiği
+     kurumsal kimlik görselinden çıkarıldı). logoDark açık zeminde (header/menü),
+     logoWhite koyu zeminde (footer) basılır — bkz. split.js wordmark(). */
   brand: {
     name: "LEON KİMYA",
-    logoDark: "",
-    logoWhite: ""
+    logoDark: "assets/img/logo-dark.png",
+    logoWhite: "assets/img/logo-white.png"
   },
 
   nav: [
