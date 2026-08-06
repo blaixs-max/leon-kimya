@@ -67,7 +67,7 @@ window.SITE_BASE = {
   brand: {
     name: "LEON KİMYA",
     logoDark: "assets/img/logo-dark.png",
-    logoWhite: "assets/img/logo-white.png"
+    logoWhite: "assets/img/logo-footer.png"
   },
 
   nav: [
