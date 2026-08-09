@@ -151,8 +151,18 @@ yanlış numaraya link verilmesini önleyen kasıtlı bir emniyet. Bozma.
 
 ## 5. Derleme ve yayın
 
-**Kolay yol:** `yayinla.bat` çift tıkla. Sırayla şunu yapar:
-`git pull --rebase` → `build-pages.py` → `git add/commit/push` → `vercel deploy --prod`
+**Kolay yol:** değişiklikleri commit ettikten sonra `yayinla.bat` çift tıkla.
+Sırayla şunu yapar: çalışma ağacı temiz mi kontrol → `git pull --rebase` →
+`git push` → `vercel deploy --prod`.
+
+> `build-pages.py`'yi betik ÇALIŞTIRMAZ — düzenlemeden sonra elle çalıştırıp
+> commit'e dahil etmek gerekir. Ağaç kirliyse betik en başta durur ve ne
+> yapılacağını yazar (`git pull --rebase` kirli ağaçta çalışmaz).
+
+> Vercel CLI bir kez sürüm yükseltme sorusu sordu, `npm` bulunamadı ve
+> **başarılı deploy'dan sonra** betik hata verdi. Betiğe `NO_UPDATE_NOTIFIER=1`
+> ve `<nul` eklendi; ayrıca deploy adımı hata dönerse çıktıda `Ready`/`Aliased`
+> satırlarına bakılması gerektiğini söyleyen ayrı bir uyarı basılıyor (09.08.2026).
 
 **Elle:**
 ```bash
