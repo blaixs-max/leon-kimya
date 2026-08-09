@@ -320,21 +320,6 @@ li.open>.drw__sub{display:block}
   letter-spacing:.04em;background:linear-gradient(transparent,rgba(var(--shade),.9));display:flex;gap:8px;align-items:flex-end}
 .app figcaption b{color:var(--brand-l);font-size:11px}
 
-/* ============ MARKALAR ============ */
-.brands{padding:clamp(46px,6vw,72px) 0;border-top:1px solid var(--line)}
-.brandrow{display:flex;align-items:center;gap:16px}
-.brandtrack{flex:1;overflow:hidden}
-.brandtrack ul{display:flex;gap:44px;align-items:center;transition:transform .6s var(--ease)}
-.brandtrack li{flex:0 0 auto;width:clamp(120px,14vw,170px)}
-.brandtrack img{width:100%;height:52px;object-fit:contain;filter:grayscale(1);opacity:.5;transition:.35s var(--ease)}
-.brandtrack li:hover img{filter:none;opacity:1;transform:scale(1.06)}
-body.dark .brandtrack img{filter:grayscale(1) invert(1) brightness(1.6)}
-body.dark .brandtrack li:hover img{filter:grayscale(0) invert(1) brightness(1.8);opacity:1}
-.brandnav{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:var(--surface);cursor:pointer;
-  display:grid;place-items:center;color:var(--mut);transition:.24s;flex:none}
-.brandnav:hover{border-color:var(--brand);color:var(--brand-txt)}
-.brandnav .i{width:17px;height:17px}
-.brandnav:first-child .i{transform:rotate(180deg)}
 .certs{display:flex;flex-wrap:wrap;gap:9px;justify-content:center;margin-top:34px}
 .certs li{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;
   padding:8px 16px;font-size:12.8px;font-weight:600;color:var(--mut)}
@@ -514,7 +499,6 @@ body.dark .map iframe{filter:grayscale(1) invert(.92) contrast(.86)}
 [dir="rtl"] .fab{right:auto;left:20px}
 [dir="rtl"] .fab button .i{transform:rotate(90deg)}
 [dir="rtl"] .vid__hd{background:linear-gradient(rgba(0,0,0,.72),transparent)}
-[dir="rtl"] .brandtrack ul{flex-direction:row-reverse}
 
 
 /* ============ METIN LOGO (gercek logo yokken) ============ */

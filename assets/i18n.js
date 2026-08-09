@@ -48,8 +48,8 @@ window.SITE_BASE = {
     uygTas:"#detay/uygTas", uygElastomer:"#detay/uygElastomer", uygSandvic:"#detay/uygSandvic",
     uygElektrik:"#detay/uygElektrik", uygEpdm:"#detay/uygEpdm", uygSu:"#detay/uygSu",
     uygEndustri:"#detay/uygEndustri", uygDokum:"#detay/uygDokum",
-    tarihce:"#kurumsal", politika:"#kurumsal", ekip:"#kurumsal", ik:"#kurumsal",
-    sertifika:"#kurumsal", referans:"#referanslar", uygulama:"#uygulamalar",
+    tarihce:"#kurumsal",
+    uygulama:"#uygulamalar", urunler:"#urunler", sistemler:"#sistemler",
     video:"#uygulamalar",
     catalog:""            // TODO: kendi e-katalog PDF'inizin adresi
   },
@@ -71,9 +71,7 @@ window.SITE_BASE = {
   },
 
   nav: [
-    { k:"corporate", href:"#kurumsal", children:[
-      { k:"history", L:"tarihce" }, { k:"policies", L:"politika" },
-      { k:"team", L:"ekip" }, { k:"hr", L:"ik" }, { k:"certificates", L:"sertifika" } ] },
+    { k:"corporate", href:"#kurumsal" },
     { k:"products", href:"#urunler", mega:true, children:[
       { k:"adhesives", L:"parke", children:[
         { k:"parquetAdh", L:"parke" }, { k:"pvcAdh", L:"pvc" },
@@ -91,7 +89,6 @@ window.SITE_BASE = {
       { k:"sportsSys", L:"sporSis" }, { k:"indSys", L:"endSis" }, { k:"waterSys", L:"suSis" } ] },
     { k:"exportNav", href:"#ihracat", children:[
       { k:"containers", href:"#konteyner" }, { k:"incoterms", href:"#incoterms" } ] },
-    { k:"references", href:"#referanslar" },
     { k:"applications", href:"#uygulamalar" },
     { k:"contact", href:"#iletisim" }
   ],
@@ -125,7 +122,7 @@ window.SITE_BASE = {
     { img:"assets/img/vid-parquet-v2.jpg",  L:"parke" }
   ],
 
-  featLinks: ["ekip", "tarihce", "referans", "sertifika"],
+  featLinks: ["tarihce", "urunler", "uygulama", "sistemler"],
 
   heroImage: "assets/img/ind-apply.jpg",
   aboutImage: "assets/img/corp-plant-v2.jpg",
@@ -162,18 +159,13 @@ window.SITE_BASE = {
     { img:"assets/img/app-resin-v2.jpg",     L:"uygDokum" }
   ],
 
-  /* TODO: Tescilli marka bölümü kaldırıldı (üçüncü tarafa aitti).
-     Leon Kimya'nın kendi markaları eklendiğinde doldurun.
-     Boş olduğu sürece "Markalarımız" karuseli görünmez. */
-  brands: [],
-
   /* Blog bölümü kullanıcı isteğiyle kaldırıldı (05.08.2026). */
 
   footer: [
     { k:"fProducts", items:["parquetAdh","binders","epdmGranule","coatings","primersPutties","waterproofProd","electricalResin"],
       L:["parke","dokme","epdm","puZemin","astar","suUrun","elektrik"] },
-    { k:"fSystems", items:["sportsSys","indSys","waterSys","history","team","hr","certificates"],
-      L:["sporSis","endSis","suSis","tarihce","ekip","ik","sertifika"] }
+    { k:"fSystems", items:["sportsSys","indSys","waterSys","history"],
+      L:["sporSis","endSis","suSis","tarihce"] }
   ],
 
   /* ---- İHRACAT: konteyner ölçüleri ----
@@ -284,8 +276,7 @@ tr: {
   partner:"",
 
   nav:{
-    corporate:"Kurumsal", history:"Hakkımızda", policies:"Politikalarımız", team:"Ekibimiz",
-    hr:"İnsan Kaynakları", certificates:"Sertifikalar",
+    corporate:"Kurumsal", history:"Hakkımızda",
     products:"Ürünler", adhesives:"Yapıştırıcılar", parquetAdh:"Parke Yapıştırıcıları",
     pvcAdh:"PVC & Vinil Zemin Yapıştırıcısı", rubberTurfAdh:"Kauçuk ve Sentetik Çim Yapıştırıcıları",
     filterAdh:"Filtre Yapıştırıcıları", indAdh:"Endüstriyel Yapıştırıcılar",
@@ -298,7 +289,7 @@ tr: {
     systems:"Sistemler", sportsSys:"Spor Zemin Sistemleri", indSys:"Endüstriyel Zemin Sistemleri",
     waterSys:"Su İzolasyon Sistemi",
     exportNav:"İhracat", containers:"Konteyner Ölçüleri", incoterms:"Incoterms / Teslim Şekilleri",
-    references:"Referanslar", applications:"Uygulamalar", blog:"Blog", contact:"İletişim",
+    applications:"Uygulamalar", blog:"Blog", contact:"İletişim",
     fProducts:"Ürünler", fSystems:"Sistemler & Kurumsal"
   },
 
@@ -316,7 +307,7 @@ tr: {
     secAppsSub:"Poliüretan spor zemininden dekoratif taşa, atletizm parkurundan endüstriyel epoksiye.",
     applicationAreas:"Uygulama Alanları", systemProducts:"Sistem Özellikleri",
     systemDetails:"Sistem detayları", projectQuote:"Proje için teklif alın",
-    allApplications:"Tüm uygulamalar", refProjects:"Referans projelerimiz",
+    allApplications:"Tüm uygulamalar",
     corporateKicker:"KURUMSAL", contactKicker:"İLETİŞİM",
     fullHistory:"Hakkımızda",
     blogKicker:"BLOG", blogTitle:"Blog Yazıları", more:"Daha Fazlası",
@@ -573,8 +564,7 @@ en: {
   partner:"",
 
   nav:{
-    corporate:"Company", history:"About Us", policies:"Our Policies", team:"Our Team",
-    hr:"Human Resources", certificates:"Certificates",
+    corporate:"Company", history:"About Us",
     products:"Products", adhesives:"Adhesives", parquetAdh:"Parquet Adhesives",
     pvcAdh:"PVC & Vinyl Flooring Adhesive", rubberTurfAdh:"Rubber & Synthetic Turf Adhesives",
     filterAdh:"Filter Adhesives", indAdh:"Industrial Adhesives",
@@ -587,7 +577,7 @@ en: {
     systems:"Systems", sportsSys:"Sports Flooring Systems", indSys:"Industrial Flooring Systems",
     waterSys:"Waterproofing System",
     exportNav:"Export", containers:"Container Dimensions", incoterms:"Incoterms / Delivery Terms",
-    references:"References", applications:"Applications", blog:"Blog", contact:"Contact",
+    applications:"Applications", blog:"Blog", contact:"Contact",
     fProducts:"Products", fSystems:"Systems & Company"
   },
 
@@ -605,7 +595,7 @@ en: {
     secAppsSub:"From polyurethane sports flooring to decorative stone, from athletics tracks to industrial epoxy.",
     applicationAreas:"Application Areas", systemProducts:"System Features",
     systemDetails:"System details", projectQuote:"Request a project quote",
-    allApplications:"All applications", refProjects:"Our reference projects",
+    allApplications:"All applications",
     corporateKicker:"COMPANY", contactKicker:"CONTACT",
     fullHistory:"About us",
     blogKicker:"BLOG", blogTitle:"Blog Posts", more:"See More",
@@ -862,8 +852,7 @@ fr: {
   partner:"",
 
   nav:{
-    corporate:"Entreprise", history:"À propos", policies:"Nos politiques", team:"Notre équipe",
-    hr:"Ressources humaines", certificates:"Certificats",
+    corporate:"Entreprise", history:"À propos",
     products:"Produits", adhesives:"Adhésifs", parquetAdh:"Adhésifs pour parquet",
     pvcAdh:"Adhésif pour sols PVC & vinyle", rubberTurfAdh:"Adhésifs caoutchouc & gazon synthétique",
     filterAdh:"Adhésifs pour filtres", indAdh:"Adhésifs industriels",
@@ -876,7 +865,7 @@ fr: {
     systems:"Systèmes", sportsSys:"Systèmes de sols sportifs", indSys:"Systèmes de sols industriels",
     waterSys:"Système d'étanchéité",
     exportNav:"Export", containers:"Dimensions des conteneurs", incoterms:"Incoterms / Conditions de livraison",
-    references:"Références", applications:"Applications", blog:"Blog", contact:"Contact",
+    applications:"Applications", blog:"Blog", contact:"Contact",
     fProducts:"Produits", fSystems:"Systèmes & entreprise"
   },
 
@@ -894,7 +883,7 @@ fr: {
     secAppsSub:"Du sol sportif polyuréthane à la pierre décorative, de la piste d'athlétisme à l'époxy industriel.",
     applicationAreas:"Domaines d'application", systemProducts:"Caractéristiques du système",
     systemDetails:"Détails du système", projectQuote:"Devis pour votre projet",
-    allApplications:"Toutes les applications", refProjects:"Nos projets de référence",
+    allApplications:"Toutes les applications",
     corporateKicker:"ENTREPRISE", contactKicker:"CONTACT",
     fullHistory:"À propos",
     blogKicker:"BLOG", blogTitle:"Articles du blog", more:"Voir plus",
@@ -1151,8 +1140,7 @@ ar: {
   partner:"",
 
   nav:{
-    corporate:"عن الشركة", history:"من نحن", policies:"سياساتنا", team:"فريقنا",
-    hr:"الموارد البشرية", certificates:"الشهادات",
+    corporate:"عن الشركة", history:"من نحن",
     products:"المنتجات", adhesives:"المواد اللاصقة", parquetAdh:"لواصق الباركيه",
     pvcAdh:"لاصق أرضيات PVC والفينيل", rubberTurfAdh:"لواصق المطاط والعشب الصناعي",
     filterAdh:"لواصق الفلاتر", indAdh:"اللواصق الصناعية",
@@ -1165,7 +1153,7 @@ ar: {
     systems:"الأنظمة", sportsSys:"أنظمة الأرضيات الرياضية", indSys:"أنظمة الأرضيات الصناعية",
     waterSys:"نظام العزل المائي",
     exportNav:"التصدير", containers:"أبعاد الحاويات", incoterms:"إنكوترمز / شروط التسليم",
-    references:"مشاريعنا", applications:"التطبيقات", blog:"المدونة", contact:"اتصل بنا",
+    applications:"التطبيقات", blog:"المدونة", contact:"اتصل بنا",
     fProducts:"المنتجات", fSystems:"الأنظمة والشركة"
   },
 
@@ -1183,7 +1171,7 @@ ar: {
     secAppsSub:"من الأرضيات الرياضية بالبولي يوريثان إلى الحجر الديكوري، ومن مضامير ألعاب القوى إلى الإيبوكسي الصناعي.",
     applicationAreas:"مجالات التطبيق", systemProducts:"خصائص النظام",
     systemDetails:"تفاصيل النظام", projectQuote:"عرض سعر لمشروعك",
-    allApplications:"جميع التطبيقات", refProjects:"مشاريعنا المرجعية",
+    allApplications:"جميع التطبيقات",
     corporateKicker:"عن الشركة", contactKicker:"اتصل بنا",
     fullHistory:"من نحن",
     blogKicker:"المدونة", blogTitle:"مقالات المدونة", more:"المزيد",

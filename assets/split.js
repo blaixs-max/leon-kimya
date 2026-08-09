@@ -241,17 +241,6 @@ const apps = `<section class="apps" id="uygulamalar"><div class="wrap">
     <figcaption><b>${n2(i)}</b><span>${e(T.applications[i])}</span></figcaption>${cover(h,T.applications[i])}</figure>`;}).join("")}</div>
 </div></section>`;
 
-/* markalar bölümü — kendi markalarımız girilene kadar görünmez */
-const brands = (B.brands||[]).length ? `<section class="brands" id="referanslar"><div class="wrap">
-  <div class="sechd"><span class="sechd__t">${e(T.ui.refProjects)}</span></div>
-  <div class="brandrow">
-    <button class="brandnav" data-b="-1" aria-label="${e(T.ui.prev)}">${ic("arrow")}</button>
-    <div class="brandtrack" id="btrack"><ul>${B.brands.concat(B.brands).map(b=>{const h=link(b.L);
-      return `<li><a href="${h}"${ext(h)}><img src="${b.img}" alt="${e(b.name)}" loading="lazy"></a></li>`;}).join("")}</ul></div>
-    <button class="brandnav" data-b="1" aria-label="${e(T.ui.next)}">${ic("arrow")}</button>
-  </div>
-</div></section>` : "";
-
 /* Blog bölümü kullanıcı isteğiyle kaldırıldı (05.08.2026).
    Geri eklemek gerekirse git geçmişindeki blog bloğuna bakın. */
 
@@ -325,7 +314,7 @@ const md = $('meta[name="description"]'); if (md) md.setAttribute("content", T.m
 
 document.getElementById("app").innerHTML =
   /* İhracat bölümü kullanıcı isteğiyle sayfanın en altına (footer öncesine) taşındı — 05.08.2026 */
-  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + about + apps + brands + contact + exportSec + `</main>` + ftr +
+  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + about + apps + contact + exportSec + `</main>` + ftr +
   `<div class="dtl" id="dtl" hidden></div>`;
 
 /* ================= ÜRÜN & SİSTEM DETAY KATMANI =================
@@ -424,15 +413,6 @@ $$(".syspanel").forEach(p=>{
   const main=$(".syspanel__fig img",p);
   $$(".syspanel__th img",p).forEach(t=>t.addEventListener("click",()=>{const s=main.src;main.src=t.src;t.src=s;}));
 });
-(function(){
-  const tr=$("#btrack"); if(!tr) return; const ul=tr.firstElementChild; let off=0;
-  $$(".brandnav").forEach(b=>b.addEventListener("click",()=>{
-    const step=tr.clientWidth*.6,max=ul.scrollWidth-tr.clientWidth;
-    off=Math.max(0,Math.min(max,off+(+b.dataset.b)*step));
-    ul.style.transform=`translateX(${RTL?off:-off}px)`;
-  }));
-})();
-
 const hdrEl=$("#hdr"), toTop=$("#toTop");
 const onScroll=()=>{const y=scrollY;hdrEl.classList.toggle("stuck",y>30);if(toTop)toTop.hidden=y<600;};
 addEventListener("scroll",onScroll,{passive:true}); onScroll();

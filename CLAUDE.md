@@ -190,17 +190,17 @@ Açmak için: Vercel → Project → Settings → Git → Connect Git Repository
 
 1. Üst bar — dil seçimi
 2. Yapışkan header — wordmark, mega menü, "Teklif Alın"
+   *(Kurumsal artık alt menüsüz; doğrudan `#kurumsal` bölümüne gider)*
 3. **Hero** — 6 ürün ailesini gezen slider + 4'lü özellik paneli
 4. **Ürünler & Sistemler** — 8'li kutucuk ızgarası
 5. **Uygulamalar (video/saha)** — 4 kart
 6. **Sistemler** — 3 sekme (spor / endüstriyel / su izolasyon)
 7. **Kurumsal** — görsel + metin
 8. **Uygulama alanları** — 14 kart, her biri detay katmanı açar
-9. **Markalar** — `SITE_BASE.brands` boşsa hiç basılmaz
-10. **İletişim** — bilgi + form (form backend'e bağlı değil)
-11. **İhracat** — konteyner ölçüleri + Incoterms 2020
+9. **İletişim** — bilgi + form (form backend'e bağlı değil)
+10. **İhracat** — konteyner ölçüleri + Incoterms 2020
     *(kullanıcı isteğiyle 05.08.2026'da sayfa sonuna, footer öncesine taşındı)*
-12. Footer
+11. Footer
 + Yüzen WhatsApp düğmesi · detay katmanı (`#dtl`)
 
 ---
@@ -302,4 +302,10 @@ fotoğrafların birebir kopyası **olmamalı** — amaç zaten bundan kurtulmak.
   sabitlendi, sonra aynı düzen üzerinde 20 palet denendi — adil karşılaştırma.
 - **İhracat bölümü** başta Sistemler'den sonraydı; kullanıcı isteğiyle sayfa
   sonuna alındı (05.08.2026).
+- **Referanslar/Markalar bölümü** ve Kurumsal alt menüsündeki Politikalarımız,
+  Ekibimiz, İnsan Kaynakları, Sertifikalar bağlantıları kullanıcı isteğiyle
+  siteden tamamen kaldırıldı (09.08.2026). Menü, footer, `SITE_BASE.brands`,
+  `ui.refProjects`, karusel JS'i ve `.brand*` CSS'i birlikte silindi. Hero
+  özellik panelinin dört bağlantısı mevcut bölümlere yönlendirildi
+  (`featLinks`). Geri istenirse git geçmişindeki bu commit'e bakın.
 - Elenen 40 deneme `_arsiv-varyantlar.zip` içinde (git'e dahil değil, yerelde).
