@@ -328,4 +328,13 @@ fotoğrafların birebir kopyası **olmamalı** — amaç zaten bundan kurtulmak.
   `prod-parke-01.jpg` referansıyla mor etiketli olarak yeniden üretildi:
   `prod-parke-02-v2.jpg`. Kullanılmayan `prod-parke-02/04/05/06.jpg`
   `_to_delete/parke-eski-gorseller/` altına alındı.
+- **Kauçuk & sentetik çim ambalajları standartlaştırıldı** (09.08.2026). Dört
+  ürün görseli (`prod-kaucuk-01..04-v2.jpg`) parke serisindeki referans kap
+  düzeniyle, ama **beyaz** kova + beyaz şişe olarak yeniden üretildi. Her ürün
+  kendi etiket karakterini korudu; aksan renkleri ayrıştırıldı (lacivert,
+  turkuaz, çim yeşili, kehribar). Etiket metinlerinde uydurma ürün kodları
+  (RUB-X) atıldı, "SENTETİK BOYA" ve "Jelkot" gibi yanlış tanımlar düzeltildi,
+  `prod-kaucuk-04`'teki **"LEON POL A GÜÇ" POL kalıntısı temizlendi**.
+  Üretim: Pixa `nano-banana-2`, 30 kredi/görsel, **iki referanslı** akış
+  (`image_0` = kap, `image_1` = etiket) — ayrıntı proje hafızasında.
 - Elenen 40 deneme `_arsiv-varyantlar.zip` içinde (git'e dahil değil, yerelde).
