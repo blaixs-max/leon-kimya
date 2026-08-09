@@ -318,4 +318,14 @@ fotoğrafların birebir kopyası **olmamalı** — amaç zaten bundan kurtulmak.
   `ui.refProjects`, karusel JS'i ve `.brand*` CSS'i birlikte silindi. Hero
   özellik panelinin dört bağlantısı mevcut bölümlere yönlendirildi
   (`featLinks`). Geri istenirse git geçmişindeki bu commit'e bakın.
+- **Parke Yapıştırıcıları detayı sadeleştirildi** (09.08.2026). Ürün listesi
+  7'den 3'e indi (Standart / Tiksotropik / Elastik 2K PU); Ekstra Elastik,
+  Güçlendirilmiş, 1K STPE Hibrit ve 1K PVAc (D3) dört dilden de silindi.
+  `paras` metinleri buna göre düzeltildi — artık STPE ve PVAc ailelerine atıf
+  yok. Aynı istekle bu detayın `props` dizisi boşaltıldı, böylece **yalnız
+  parke pop-up'ında** "Öne Çıkan Özellikler" bölümü basılmıyor (diğer
+  detaylarda duruyor — bu kasıtlı). Tiksotropik ürününün görseli
+  `prod-parke-01.jpg` referansıyla mor etiketli olarak yeniden üretildi:
+  `prod-parke-02-v2.jpg`. Kullanılmayan `prod-parke-02/04/05/06.jpg`
+  `_to_delete/parke-eski-gorseller/` altına alındı.
 - Elenen 40 deneme `_arsiv-varyantlar.zip` içinde (git'e dahil değil, yerelde).
