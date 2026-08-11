@@ -223,7 +223,7 @@ window.SITE_BASE = {
     "uygTas": {"app": true, "img": "assets/img/app-stone-v2.jpg", "gallery": ["assets/img/stone-sample.jpg"]},
     "uygElastomer": {"app": true, "img": "assets/img/sport-05.jpg", "gallery": ["assets/img/vid-track2-v2.jpg", "assets/img/sys-sport2-v2.jpg"]},
     "uygSandvic": {"app": true, "img": "assets/img/vid-track2-v2.jpg", "gallery": ["assets/img/sys-sport2-v2.jpg"]},
-    "uygPadel": {"app": true, "img": "assets/img/app-padel.jpg", "gallery": ["assets/img/sys-padel.jpg", "assets/img/app-turf-v2.jpg"]},
+    "uygPadel": {"app": true, "img": "assets/img/app-padel.jpg", "gallery": ["assets/img/sys-padel.jpg", "assets/img/app-padel-02.jpg"]},
     "uygEpdm": {"app": true, "img": "assets/img/app-playground-v2.jpg", "gallery": ["assets/img/epdm-insitu.jpg", "assets/img/tile-binder-v2.jpg", "assets/img/cat-binder-v2.jpg"]},
     "uygSu": {"app": true, "img": "assets/img/water-app3.jpg", "gallery": ["assets/img/water-main-v2.jpg", "assets/img/water-app1.jpg", "assets/img/water-app2.jpg", "assets/img/vid-membrane-v2.jpg", "assets/img/tile-water-v2.jpg"]},
     "uygEndustri": {"app": true, "img": "assets/img/ind-hall.jpg", "gallery": ["assets/img/ind-apply.jpg", "assets/img/ind-texture.jpg", "assets/img/ind-roller.jpg", "assets/img/ind-machines.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/ind-service.jpg"]},
