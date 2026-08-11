@@ -337,4 +337,15 @@ fotoğrafların birebir kopyası **olmamalı** — amaç zaten bundan kurtulmak.
   `prod-kaucuk-04`'teki **"LEON POL A GÜÇ" POL kalıntısı temizlendi**.
   Üretim: Pixa `nano-banana-2`, 30 kredi/görsel, **iki referanslı** akış
   (`image_0` = kap, `image_1` = etiket) — ayrıntı proje hafızasında.
+- **Ürün portföyü daraltıldı** (09.08.2026). *Endüstriyel Yapıştırıcılar*
+  (`endYap` / `indAdh`) dört dilden, mega menüden, `links` ve `detailAssets`
+  kayıtlarından tamamen silindi. *Filtre Yapıştırıcıları* 6→3 ürüne indi
+  (kalanlar: Hızlı Kürlenen, Otomatik Dozaj, Tiksotropik/Conta; silinenler:
+  Manuel Döküm, Hızlı Tip, Standart) — `paras` metnindeki "manuel döküm" atfı
+  da düzeltildi. *Dökme Bağlayıcılar* 5→3: "Renkli Dökme Bağlayıcı" →
+  **EPDM Dökme Bağlayıcı**, "Aromatik Dökme Bağlayıcı" → **SBR Dökme
+  Bağlayıcı**; "Aromatik (Düşük Viskozite)" ve "Wet-Pour Sistem Bağlayıcısı"
+  silindi, "Alifatik EPDM (UV Dayanımlı)" kaldı. Her iki grubun `props`
+  dizisi boşaltıldı → bu iki pop-up'ta "Öne Çıkan Özellikler" basılmıyor.
+  `productImgs` dizileri yeni ürün sayısına göre kısaltıldı.
 - Elenen 40 deneme `_arsiv-varyantlar.zip` içinde (git'e dahil değil, yerelde).
