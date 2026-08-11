@@ -41,12 +41,12 @@ window.SITE_BASE = {
     parke:"#detay/parke", pvc:"#detay/pvc", kaucuk:"#detay/kaucuk", filtre:"#detay/filtre",
     dokme:"#detay/dokme", press:"#detay/press", tas:"#detay/tas", epdm:"#detay/epdm",
     puZemin:"#detay/puZemin", akZemin:"#detay/akZemin", epZemin:"#detay/epZemin",
-    astar:"#detay/astar", macun:"#detay/macun", suUrun:"#detay/suUrun", elektrik:"#detay/elektrik",
+    astar:"#detay/astar", macun:"#detay/macun", suUrun:"#detay/suUrun",
     sporSis:"#detay/sporSis", endSis:"#detay/endSis", suSis:"#detay/suSis",
     uygSporPu:"#detay/uygSporPu", uygParke:"#detay/uygParke", uygAkrilik:"#detay/uygAkrilik",
     uygKaucuk:"#detay/uygKaucuk", uygAtletizm:"#detay/uygAtletizm", uygCim:"#detay/uygCim",
     uygTas:"#detay/uygTas", uygElastomer:"#detay/uygElastomer", uygSandvic:"#detay/uygSandvic",
-    uygElektrik:"#detay/uygElektrik", uygEpdm:"#detay/uygEpdm", uygSu:"#detay/uygSu",
+    uygEpdm:"#detay/uygEpdm", uygSu:"#detay/uygSu",
     uygEndustri:"#detay/uygEndustri", uygDokum:"#detay/uygDokum",
     tarihce:"#kurumsal",
     uygulama:"#uygulamalar", urunler:"#urunler", sistemler:"#sistemler",
@@ -83,8 +83,7 @@ window.SITE_BASE = {
         { k:"puCoat", L:"puZemin" }, { k:"acCoat", L:"akZemin" }, { k:"epCoat", L:"epZemin" } ] },
       { k:"primersPutties", L:"astar", children:[
         { k:"primers", L:"astar" }, { k:"putties", L:"macun" } ] },
-      { k:"waterproofProd", L:"suUrun", children:[] },
-      { k:"electricalResin", L:"elektrik", children:[] } ] },
+      { k:"waterproofProd", L:"suUrun", children:[] } ] },
     { k:"systems", href:"#sistemler", children:[
       { k:"sportsSys", L:"sporSis" }, { k:"indSys", L:"endSis" }, { k:"waterSys", L:"suSis" } ] },
     { k:"exportNav", href:"#ihracat", children:[
@@ -100,8 +99,7 @@ window.SITE_BASE = {
     { img:"assets/img/cat-binder-v2.jpg",   L:"dokme" },
     { img:"assets/img/cat-coating-v2.jpg",  L:"puZemin" },
     { img:"assets/img/cat-water-v2.jpg",    L:"suUrun" },
-    { img:"assets/img/cat-primer-v2.jpg",   L:"astar" },
-    { img:"assets/img/ind-01.png",       L:"elektrik" }
+    { img:"assets/img/cat-primer-v2.jpg",   L:"astar" }
   ],
 
   tiles: [
@@ -110,7 +108,6 @@ window.SITE_BASE = {
     { img:"assets/img/tile-turf-v2.jpg",       L:"kaucuk" },
     { img:"assets/img/tile-binder-v2.jpg",     L:"dokme" },
     { img:"assets/img/tile-water-v2.jpg",      L:"suSis" },
-    { img:"assets/img/tile-resin-v2.jpg",      L:"elektrik" },
     { img:"assets/img/tile-industrial-v2.jpg", L:"endSis" },
     { img:"assets/img/tile-sport-v2.jpg",      L:"sporSis" }
   ],
@@ -152,7 +149,6 @@ window.SITE_BASE = {
     { img:"assets/img/app-stone-v2.jpg",     L:"uygTas" },
     { img:"assets/img/sport-05.jpg",      L:"uygElastomer" },
     { img:"assets/img/vid-track2-v2.jpg",    L:"uygSandvic" },
-    { img:"assets/img/ind-01.png",        L:"uygElektrik" },
     { img:"assets/img/app-playground-v2.jpg",L:"uygEpdm" },
     { img:"assets/img/water-app3.jpg",    L:"uygSu" },
     { img:"assets/img/ind-hall.jpg",      L:"uygEndustri" },
@@ -162,8 +158,8 @@ window.SITE_BASE = {
   /* Blog bölümü kullanıcı isteğiyle kaldırıldı (05.08.2026). */
 
   footer: [
-    { k:"fProducts", items:["parquetAdh","binders","epdmGranule","coatings","primersPutties","waterproofProd","electricalResin"],
-      L:["parke","dokme","epdm","puZemin","astar","suUrun","elektrik"] },
+    { k:"fProducts", items:["parquetAdh","binders","epdmGranule","coatings","primersPutties","waterproofProd"],
+      L:["parke","dokme","epdm","puZemin","astar","suUrun"] },
     { k:"fSystems", items:["sportsSys","indSys","waterSys","history"],
       L:["sporSis","endSis","suSis","tarihce"] }
   ],
@@ -226,7 +222,6 @@ window.SITE_BASE = {
     "uygTas": {"app": true, "img": "assets/img/app-stone-v2.jpg", "gallery": ["assets/img/stone-sample.jpg"]},
     "uygElastomer": {"app": true, "img": "assets/img/sport-05.jpg", "gallery": ["assets/img/vid-track2-v2.jpg", "assets/img/sys-sport2-v2.jpg"]},
     "uygSandvic": {"app": true, "img": "assets/img/vid-track2-v2.jpg", "gallery": ["assets/img/sys-sport2-v2.jpg"]},
-    "uygElektrik": {"app": true, "img": "assets/img/ind-01.png", "gallery": ["assets/img/resin-table.jpg", "assets/img/resin-wave.jpg"]},
     "uygEpdm": {"app": true, "img": "assets/img/app-playground-v2.jpg", "gallery": ["assets/img/epdm-insitu.jpg", "assets/img/tile-binder-v2.jpg", "assets/img/cat-binder-v2.jpg"]},
     "uygSu": {"app": true, "img": "assets/img/water-app3.jpg", "gallery": ["assets/img/water-main-v2.jpg", "assets/img/water-app1.jpg", "assets/img/water-app2.jpg", "assets/img/vid-membrane-v2.jpg", "assets/img/tile-water-v2.jpg"]},
     "uygEndustri": {"app": true, "img": "assets/img/ind-hall.jpg", "gallery": ["assets/img/ind-apply.jpg", "assets/img/ind-texture.jpg", "assets/img/ind-roller.jpg", "assets/img/ind-machines.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/ind-service.jpg"]},
@@ -235,9 +230,9 @@ window.SITE_BASE = {
     "pvc": {"nav": "pvcAdh", "img": "assets/img/pvc-apply.jpg", "gallery": ["assets/img/pvc-hall.jpg"], "productImgs": ["assets/img/prod-pvc-01.jpg"]},
     "kaucuk": {"nav": "rubberTurfAdh", "img": "assets/img/kaucuk-kapak.jpg", "gallery": ["assets/img/rubber-tiles.jpg", "assets/img/app-rubber-v2.jpg", "assets/img/app-turf-v2.jpg", "assets/img/tile-turf-v2.jpg"], "productImgs": ["assets/img/prod-kaucuk-01-v2.jpg", "assets/img/prod-kaucuk-02-v2.jpg", "assets/img/prod-kaucuk-03-v2.jpg", "assets/img/prod-kaucuk-04-v2.jpg", "assets/img/prod-kaucuk-05.jpg", "assets/img/rubber-tiles.jpg", "assets/img/sport-gym.jpg"]},
     "filtre": {"nav": "filterAdh", "img": "assets/img/ind-machines.jpg", "gallery": [], "productImgs": ["assets/img/prod-filtre-01.jpg", "assets/img/prod-filtre-02.jpg", "assets/img/prod-filtre-02.jpg"]},
-    "dokme": {"nav": "pourBinder", "img": "assets/img/cat-binder-v2.jpg", "gallery": ["assets/img/epdm-insitu.jpg", "assets/img/tile-binder-v2.jpg", "assets/img/app-playground-v2.jpg"], "productImgs": ["assets/img/prod-binder-01.jpg", "assets/img/prod-binder-01.jpg", "assets/img/prod-binder-02.jpg"]},
-    "press": {"nav": "pressBinder", "img": "assets/img/rubber-tiles.jpg", "gallery": ["assets/img/app-rubber-v2.jpg", "assets/img/sport-gym.jpg"], "productImgs": ["assets/img/prod-binder-01.jpg", "assets/img/prod-binder-02.jpg", "assets/img/rubber-tiles.jpg", "assets/img/app-rubber-v2.jpg"]},
-    "tas": {"nav": "stoneBinder", "img": "assets/img/app-stone-v2.jpg", "gallery": ["assets/img/stone-sample.jpg"], "productImgs": ["assets/img/prod-tas-01.jpg", "assets/img/prod-tas-02.jpg", "assets/img/prod-binder-02.jpg"]},
+    "dokme": {"nav": "pourBinder", "img": "assets/img/cat-binder-v2.jpg", "gallery": ["assets/img/epdm-insitu.jpg", "assets/img/tile-binder-v2.jpg", "assets/img/app-playground-v2.jpg"], "productImgs": ["assets/img/prod-binder-01-v2.jpg", "assets/img/prod-binder-01-v2.jpg", "assets/img/prod-binder-02-v2.jpg"]},
+    "press": {"nav": "pressBinder", "img": "assets/img/rubber-tiles.jpg", "gallery": ["assets/img/app-rubber-v2.jpg", "assets/img/sport-gym.jpg"], "productImgs": ["assets/img/prod-binder-01-v2.jpg", "assets/img/prod-binder-02-v2.jpg", "assets/img/rubber-tiles.jpg", "assets/img/app-rubber-v2.jpg"]},
+    "tas": {"nav": "stoneBinder", "img": "assets/img/app-stone-v2.jpg", "gallery": ["assets/img/stone-sample.jpg"], "productImgs": ["assets/img/prod-tas-01.jpg", "assets/img/prod-tas-02.jpg", "assets/img/prod-binder-02-v2.jpg"]},
     "epdm": {"nav": "epdmGranule", "img": "assets/img/app-playground-v2.jpg", "gallery": ["assets/img/epdm-01.jpg", "assets/img/epdm-02.jpg", "assets/img/epdm-03.jpg", "assets/img/epdm-04.jpg", "assets/img/epdm-05.jpg", "assets/img/epdm-06.jpg", "assets/img/epdm-07.jpg", "assets/img/epdm-08.jpg", "assets/img/epdm-09.jpg", "assets/img/epdm-10.jpg", "assets/img/epdm-11.jpg", "assets/img/epdm-12.jpg", "assets/img/epdm-13.jpg", "assets/img/epdm-14.jpg", "assets/img/epdm-15.jpg", "assets/img/epdm-16.jpg", "assets/img/epdm-17.jpg", "assets/img/epdm-18.jpg", "assets/img/epdm-19.jpg", "assets/img/epdm-20.jpg", "assets/img/epdm-21.jpg", "assets/img/epdm-22.jpg", "assets/img/epdm-23.jpg", "assets/img/epdm-24.jpg"], "productImgs": ["assets/img/app-playground-v2.jpg", "assets/img/epdm-insitu.jpg"]},
     "puZemin": {"nav": "puCoat", "img": "assets/img/cat-coating-v2.jpg", "gallery": ["assets/img/ind-service.jpg", "assets/img/tile-sport-v2.jpg", "assets/img/ind-apply.jpg"], "productImgs": ["assets/img/prod-pu-01.jpg", "assets/img/prod-pu-02.jpg", "assets/img/prod-pu-03.jpg"]},
     "akZemin": {"nav": "acCoat", "img": "assets/img/sport-tennis.jpg", "gallery": ["assets/img/sport-tennis2.jpg"], "productImgs": ["assets/img/prod-ak-01.jpg", "assets/img/prod-ak-02.jpg", "assets/img/prod-ak-02.jpg", "assets/img/prod-ak-03.jpg", "assets/img/prod-ak-04.jpg", "assets/img/prod-ak-05.jpg", "assets/img/prod-ak-06.jpg", "assets/img/prod-ak-06.jpg", "assets/img/prod-ak-07.jpg", "assets/img/prod-ak-08.jpg", "assets/img/prod-ak-09.jpg"]},
@@ -245,7 +240,6 @@ window.SITE_BASE = {
     "astar": {"nav": "primers", "img": "assets/img/cat-primer-v2.jpg", "gallery": ["assets/img/ind-apply.jpg"], "productImgs": ["assets/img/cat-primer-v2.jpg", "assets/img/prod-ak-07.jpg", "assets/img/ind-apply.jpg", "assets/img/prod-astar-01.jpg", "assets/img/prod-astar-01.jpg", "assets/img/prod-astar-01.jpg"]},
     "macun": {"nav": "putties", "img": "assets/img/ind-roller.jpg", "gallery": ["assets/img/ind-texture.jpg"]},
     "suUrun": {"nav": "waterproofProd", "img": "assets/img/water-main-v2.jpg", "gallery": ["assets/img/water-app1.jpg", "assets/img/water-app2.jpg", "assets/img/water-app3.jpg", "assets/img/tile-water-v2.jpg"], "productImgs": ["assets/img/prod-su-01-v3.jpg"]},
-    "elektrik": {"nav": "electricalResin", "img": "assets/img/ind-01.png", "gallery": ["assets/img/resin-table.jpg", "assets/img/resin-wave.jpg"], "productImgs": [null, "assets/img/prod-el-01.jpg", "assets/img/prod-el-02.jpg", "assets/img/prod-el-03.jpg", "assets/img/prod-el-04.jpg", "assets/img/prod-el-05.jpg", "assets/img/prod-el-06.jpg"]},
     "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.jpg", "gallery": ["assets/img/sport-tennis.jpg", "assets/img/tile-sport-v2.jpg", "assets/img/sport-gym.jpg", "assets/img/vid-track2-v2.jpg"]},
     "endSis": {"nav": "indSys", "img": "assets/img/ind-apply.jpg", "gallery": ["assets/img/ind-texture.jpg", "assets/img/ind-machines.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/ind-service.jpg"]},
     "suSis": {"nav": "waterSys", "img": "assets/img/water-main-v2.jpg", "gallery": ["assets/img/water-app1.jpg", "assets/img/water-app3.jpg", "assets/img/vid-membrane-v2.jpg", "assets/img/tile-water-v2.jpg"]}
@@ -284,7 +278,7 @@ tr: {
     coatings:"Zemin Kaplamaları & Boyalar", puCoat:"Poliüretan Zemin Kaplamaları",
     acCoat:"Akrilik Zemin Kaplamaları", epCoat:"Epoksi Zemin Kaplamaları",
     primersPutties:"Astarlar & Macunlar", primers:"Astarlar", putties:"Macunlar",
-    waterproofProd:"Su İzolasyon Ürünleri", electricalResin:"Elektrik İzolasyon Döküm Reçineleri",
+    waterproofProd:"Su İzolasyon Ürünleri",
     systems:"Sistemler", sportsSys:"Spor Zemin Sistemleri", indSys:"Endüstriyel Zemin Sistemleri",
     waterSys:"Su İzolasyon Sistemi",
     exportNav:"İhracat", containers:"Konteyner Ölçüleri", incoterms:"Incoterms / Teslim Şekilleri",
@@ -324,7 +318,7 @@ tr: {
   hero:{
     kicker:"YAPIŞTIRICI • BAĞLAYICI • ZEMİN • SU İZOLASYONU",
     title:"Kimya sektöründe\nileri teknoloji,\nkanıtlanmış kalite.",
-    lead:"Poliüretan, epoksi ve akrilik esaslı üretim prosesleriyle; yapıştırıcıdan spor zeminine, su izolasyonundan elektrik reçinelerine geniş bir ürün yelpazesini tek noktadan sunuyoruz."
+    lead:"Poliüretan, epoksi ve akrilik esaslı üretim prosesleriyle; yapıştırıcıdan spor zeminine, astardan su izolasyonuna geniş bir ürün yelpazesini tek noktadan sunuyoruz."
   },
 
   categories:[
@@ -332,12 +326,11 @@ tr: {
     {title:"RUBBER BINDERS", sub:"BAĞLAYICILAR", desc:"SBR ve EPDM granülleri birbirine bağlayan, nemle kürlenen prepolimer reçineler: dökme (wet-pour), press ve taş halı uygulamaları için aromatik ve sararmayan alifatik seçenekler."},
     {title:"FLOOR COATINGS", sub:"ZEMİN KAPLAMALARI & BOYALAR", desc:"Self-levelling yüzeylerden kaymaz portakal kabuğu tekstürüne; poliüretan, akrilik ve epoksi esaslı kaplama ve boya sistemleri. RAL renk skalası, yüksek mekanik ve kimyasal dayanım."},
     {title:"WATERPROOFING", sub:"SU İZOLASYON ÜRÜNLERİ", desc:"Likit membran esaslı, ek yeri olmayan su yalıtımı: çatı ve terastan temele, ıslak hacimden su deposuna; UV'ye açık yüzeyler için alifatik son katlar."},
-    {title:"PRIMERS & PUTTIES", sub:"ASTARLAR & MACUNLAR", desc:"Emici ve emici olmayan yüzeyler için epoksi, poliüretan ve akrilik astarlar; nem bariyerleri, dolgulu astarlar ile derz ve tamir macunları. Doğru astar, sistemin ömrünü belirler."},
-    {title:"ELECTRICAL RESINS", sub:"ELEKTRİK İZOLASYON REÇİNELERİ", desc:"Trafo, kablo eki ve elektronik devreler için epoksi ve poliüretan döküm reçineleri; boşluksuz izolasyon, titreşim sönümleme ve şeffaf dekoratif döküm uygulamaları."}
+    {title:"PRIMERS & PUTTIES", sub:"ASTARLAR & MACUNLAR", desc:"Emici ve emici olmayan yüzeyler için epoksi, poliüretan ve akrilik astarlar; nem bariyerleri, dolgulu astarlar ile derz ve tamir macunları. Doğru astar, sistemin ömrünü belirler."}
   ],
 
   tiles:["PARKE YAPIŞTIRICILARI","KAUÇUK YAPIŞTIRICILARI","SUNİ ÇİM YAPIŞTIRICILARI","BAĞLAYICILAR",
-         "SU İZOLASYON","EPOKSİ DÖKÜM REÇİNELERİ","ENDÜSTRİYEL ZEMİN SİSTEMLERİ","SPOR ZEMİN SİSTEMLERİ"],
+         "SU İZOLASYON","ENDÜSTRİYEL ZEMİN SİSTEMLERİ","SPOR ZEMİN SİSTEMLERİ"],
 
   videos:[
     {title:"Atletizm parkuru uygulaması", sub:"Spor Zemin Sistemleri"},
@@ -357,7 +350,7 @@ tr: {
     title:"Leon Kimya",
     lead:"Leon Kimya, kimya sektöründe ilgilendiği branşlarda ileri teknolojiyi kullanarak ve kalifiye personel çalıştırarak, müşteri memnuniyetinden taviz vermeden standartlara uygun kalitedeki ürünleri sunmayı ve müşterilerin değişen beklentilerine cevap verebilen bir marka yaratmayı ilke olarak benimsemektedir.",
     paras:[
-      "Poliüretan, epoksi ve akrilik esaslı üretim prosesleriyle; yapıştırıcılar, kauçuk bağlayıcılar, endüstriyel ve spor zemin kaplamaları, elektrik izolasyon reçineleri, su izolasyon sistemleri ile derz dolguları alanlarında çözüm üretiyoruz.",
+      "Poliüretan, epoksi ve akrilik esaslı üretim prosesleriyle; yapıştırıcılar, kauçuk bağlayıcılar, endüstriyel ve spor zemin kaplamaları, su izolasyon sistemleri ile derz dolguları alanlarında çözüm üretiyoruz.",
       "Ürün geliştirme sürecimizde sahadan gelen geri bildirimi esas alıyor; şartnameye, bütçeye ve alt yapıya göre değişen sistem kurguları hazırlıyoruz.",
       "Üretimin yanında ürün geliştirme (AR-GE) ve müşteriye özel uyarlama (ÜR-GE) süreçlerini ayrı disiplinler olarak yürütüyor; ürünün kullanılacağı zemine, iklime ve işletme koşullarına göre formülasyon öneriyoruz. Solvent içermeyen, kullanıcı ve çevre dostu formülasyonları önceliklendiriyor; uygulama tarafında çözüm ortaklarımızla birlikte projeye özel sistem kurguları hazırlıyoruz."
     ]
@@ -389,7 +382,7 @@ tr: {
 
   applications:["POLİÜRETAN SPOR ZEMİNİ","ZEMİN (PARKE) UYGULAMASI","AKRİLİK SPOR ZEMİNLER","KAUÇUK UYGULAMASI",
     "ATLETİZM PARKURU","ÇİM YAPIŞTIRICI UYGULAMALARI","DEKORATİF TAŞ UYGULAMASI","ELASTOMER SANDVİÇ SİSTEM",
-    "SANDVİÇ SPOR ZEMİNİ","ELEKTRİK REÇİNELERİ","EPDM GRANÜL UYGULAMASI","SU GEÇİRMEZ KAPLAMA",
+    "SANDVİÇ SPOR ZEMİNİ","EPDM GRANÜL UYGULAMASI","SU GEÇİRMEZ KAPLAMA",
     "ENDÜSTRİYEL POLİÜRETAN VE EPOKSİ ZEMİNLER","EPOKSİ DÖKÜM UYGULAMALARI"],
 
   details:{
@@ -402,7 +395,6 @@ tr: {
     uygTas:{"title": "Dekoratif Taş Uygulaması", "lead": "Şeffaf bağlayıcıyla doğal taş granüllerinden su geçirgen, dekoratif 'taş halı' yüzeyler.", "paras": ["Granül ve bağlayıcı homojen karıştırılıp mala ile serilir; kürlenince kaymaz, bakım gerektirmeyen ve yağmur suyunu geçiren bir yüzey oluşur. Havuz çevresi ve yürüyüş yollarının tercihidir."]},
     uygElastomer:{"title": "Elastomer Sandviç Sistem", "lead": "Elastik çekirdek, elastomer ve renkli EPDM yüzeyden oluşan çift katmanlı spor zemin kurgusu.", "paras": ["Elastomer katman henüz ıslakken EPDM granül serpilir; enerji geri kazanımı ve deformasyon değerleri profesyonel kullanım standartlarına göre ayarlanır."]},
     uygSandvic:{"title": "Sandviç Spor Zemini", "lead": "Stadyum ve üniversite pistleri için sandviç sistem uygulamaları.", "paras": ["Doğru uygulama ve düzenli bakımla uzun hizmet ömrü sunar; aşınan bölgeler lokal onarımla yenilenir, renk kombinasyonları projeye göre kurgulanır."]},
-    uygElektrik:{"title": "Elektrik Reçineleri", "lead": "Trafo, kablo eki ve elektronik bileşenlerde boşluksuz döküm uygulamaları.", "paras": ["Reçine, bileşeni tamamen saracak akışkanlıkta dökülür; kürlenince şok ve vibrasyona dayanıklı, nem almayan bir izolasyon bloğu oluşur."]},
     uygEpdm:{"title": "EPDM Granül Uygulaması", "lead": "Renkli EPDM granülle çocuk oyun alanları ve spor sahalarında güvenli, desenli zeminler.", "paras": ["SBR alt katman üzerine EPDM-bağlayıcı karışımı serilir ve düzlenir; katman kalınlığı düşme yüksekliğine göre belirlenir, 24 renkle serbest desen kurgulanır."]},
     uygSu:{"title": "Su Geçirmez Kaplama", "lead": "Çatıdan ıslak hacme; likit membranla ek yeri olmayan su yalıtımı uygulamaları.", "paras": ["Köşe ve süzgeç detayları bantlanır, membran katlar hâlinde uygulanır ve su testiyle doğrulanır; UV gören yüzeyler alifatik son katla korunur."]},
     uygEndustri:{"title": "Endüstriyel Poliüretan ve Epoksi Zeminler", "lead": "Fabrika, depo ve otoparklarda hijyenik, yüke dayanıklı derzsiz zemin uygulamaları.", "paras": ["Kumlama ve astar sonrası self-levelling veya tekstürlü kaplama uygulanır; forklift trafiğine, kimyasallara ve yoğun temizliğe dayanıklı tek parça bir yüzey elde edilir."]},
@@ -477,11 +469,6 @@ tr: {
       areas:["Çatı ve teraslar", "Banyo, balkon ve ıslak hacimler", "Temel ve perde betonlar", "Su depoları ve havuzlar", "Gizli dere detayları"],
       props:["1K ve 2K likit membranlar", "Alifatik, UV dayanımlı son katlar", "Düşey yüzeyler için tiksotropik tipler", "Bitüm-poliüretan melez seçenekler"],
       products:[{"t": "Likit Membran Ürün Ailesi", "d": "1K ve 2K poliüretan likit membranlar, astarlar ve alifatik son katlardan oluşan komple yalıtım seti."}] },
-    elektrik:{ lead:"Trafodan kablo ekine, bobinajdan elektronik devrelere; boşluksuz izolasyon ve mekanik koruma sağlayan döküm reçineleri.",
-      paras:["Dört kimyasal aile sunulur: hava kurumalı bobinaj vernikleri; orta ve yüksek gerilim için sert, kimyasala dayanıklı çift komponentli epoksiler; alçak ve orta gerilimde titreşim ve rezonans sesini sönümleyen sert/elastik poliüretanlar; izosiyanat içermeyen, kesilip yeniden doldurulabilen elastik hidrokarbon reçineler.", "Elastik tipler kablonun termal genleşmesine uyum sağlayarak çatlama ve kopmayı önler; hidrofobik yapılarıyla metal parçaları korozyona karşı korur. Şeffaf epoksi döküm reçineleri ise masa, obje ve dekoratif zemin uygulamalarında kullanılır."],
-      areas:["Kuru tip transformatörler", "Kablo ek mufları", "Bobinaj ve motorlar", "Elektronik devre kapatma (potting)", "Dalgıç pompalar", "Dekoratif şeffaf döküm"],
-      props:["Epoksi, poliüretan ve hidrokarbon aileler", "Boşluksuz döküm — şok ve vibrasyon dayanımı", "Elastik tiplerde tamir edilebilirlik", "Hidrofobik, korozyon önleyici yapı", "Şeffaf dekoratif döküm seçenekleri"],
-      products:[{"t": "1K PU Bobinaj Verniği", "d": "Nemle kürlenen, her yüzeye uygulanabilen hava kurumalı vernik."}, {"t": "2K PU Döküm Reçinesi (Sert)", "d": "Alçak ve orta gerilimde boşluksuz izolasyon ve mekanik koruma."}, {"t": "2K PU Döküm Reçinesi (Elastik)", "d": "Titreşimi sönümleyen, termal harekete uyumlu esnek tip."}, {"t": "2K PU Döküm Reçinesi (Dolgulu)", "d": "Yüksek dolgulu, boyutsal kararlılığı artırılmış varyant."}, {"t": "2K Epoksi Döküm Reçinesi", "d": "Orta ve yüksek gerilim için sert, kimyasala dayanıklı reçine."}, {"t": "Hidrokarbon Reçine (Tamir Edilebilir)", "d": "İzosiyanat içermeyen, kesilip yeniden doldurulabilen kablo eki reçinesi."}, {"t": "2K PU Kablo Reçinesi", "d": "Kablo ek muflarında hızlı ve güvenli dolgu."}] },
     sporSis:{ lead:"Astar, elastik çekirdek, macun ve son kattan oluşan; amatör salonlardan profesyonel atletizm pistlerine ölçeklenen katmanlı spor zemin kurguları.",
       paras:["Kapalı salonlarda SBR rulo veya yerinde dökme SBR çekirdek üzerine poliüretan self-levelling kaplama ve UV dayanımlı son kat uygulanır; toplam kalınlık kullanım yoğunluğuna göre kurgulanır. Atletizm tarafında sandviç sistem (dökme SBR çekirdek + elastomer + serbest EPDM yüzey) ve tam dökme sistem; su geçirgen combined ve ekonomik sprey kaplama alternatifleriyle tamamlanır.", "Akrilik sistemler sert kortlarda resurfacer, cushion ve dolgulu son kat ile oyun hızının ayarlanmasına imkân verir. Saha çizgileri en son katman olarak uygulanır; yenileme yalnızca son kat boya ile düşük maliyetle yapılır."],
       areas:["Tenis kortları", "Basketbol ve voleybol", "Kapalı spor salonları", "Atletizm pistleri", "Koşu ve yürüyüş yolları", "Çocuk oyun alanları", "Fitness salonları", "Atış poligonu"],
@@ -567,7 +554,7 @@ en: {
     coatings:"Floor Coatings & Paints", puCoat:"Polyurethane Floor Coatings",
     acCoat:"Acrylic Floor Coatings", epCoat:"Epoxy Floor Coatings",
     primersPutties:"Primers & Putties", primers:"Primers", putties:"Putties",
-    waterproofProd:"Waterproofing Products", electricalResin:"Electrical Insulation Casting Resins",
+    waterproofProd:"Waterproofing Products",
     systems:"Systems", sportsSys:"Sports Flooring Systems", indSys:"Industrial Flooring Systems",
     waterSys:"Waterproofing System",
     exportNav:"Export", containers:"Container Dimensions", incoterms:"Incoterms / Delivery Terms",
@@ -607,7 +594,7 @@ en: {
   hero:{
     kicker:"ADHESIVES • BINDERS • FLOORING • WATERPROOFING",
     title:"Advanced technology,\nproven quality\nin chemistry.",
-    lead:"Through polyurethane, epoxy and acrylic based production processes we supply a broad product range from a single source — from adhesives to sports flooring, from waterproofing to electrical resins."
+    lead:"Through polyurethane, epoxy and acrylic based production processes we supply a broad product range from a single source — from adhesives to sports flooring, from primers to waterproofing."
   },
 
   categories:[
@@ -615,12 +602,11 @@ en: {
     {title:"RUBBER BINDERS", sub:"Pour, press and stone binders", desc:"Moisture-curing prepolymer resins that bond SBR and EPDM granules together: aromatic and non-yellowing aliphatic options for wet-pour, press and stone carpet applications."},
     {title:"FLOOR COATINGS", sub:"Polyurethane, acrylic and epoxy", desc:"From self-levelling surfaces to anti-slip orange-peel texture; polyurethane, acrylic and epoxy based coating and paint systems. Full RAL colour range, high mechanical and chemical resistance."},
     {title:"WATERPROOFING", sub:"Liquid membranes and sealants", desc:"Liquid-membrane based, seamless waterproofing: from roofs and terraces to foundations, wet areas and water tanks; aliphatic top coats for UV-exposed surfaces."},
-    {title:"PRIMERS & PUTTIES", sub:"Surface preparation and filling", desc:"Epoxy, polyurethane and acrylic primers for absorbent and non-absorbent substrates; moisture barriers, filled primers, joint and repair putties. The right primer determines the life of the system."},
-    {title:"ELECTRICAL RESINS", sub:"Casting resins and transformer paints", desc:"Epoxy and polyurethane casting resins for transformers, cable joints and electronic circuits; void-free insulation, vibration damping and clear decorative casting applications."}
+    {title:"PRIMERS & PUTTIES", sub:"Surface preparation and filling", desc:"Epoxy, polyurethane and acrylic primers for absorbent and non-absorbent substrates; moisture barriers, filled primers, joint and repair putties. The right primer determines the life of the system."}
   ],
 
   tiles:["PARQUET ADHESIVES","RUBBER ADHESIVES","SYNTHETIC TURF ADHESIVES","BINDERS",
-         "WATERPROOFING","EPOXY CASTING RESINS","INDUSTRIAL FLOORING SYSTEMS","SPORTS FLOORING SYSTEMS"],
+         "WATERPROOFING","INDUSTRIAL FLOORING SYSTEMS","SPORTS FLOORING SYSTEMS"],
 
   videos:[
     {title:"Athletics track application", sub:"Sports Flooring Systems"},
@@ -640,7 +626,7 @@ en: {
     title:"Leon Kimya",
     lead:"Leon Kimya applies advanced technology and employs qualified people across every branch of chemistry it works in. It has made it a principle to deliver products of standard-compliant quality without compromising on customer satisfaction, and to build a brand that responds to changing customer expectations.",
     paras:[
-      "With polyurethane, epoxy and acrylic based production processes, we deliver solutions in adhesives, rubber binders, industrial and sports floor coatings, electrical insulation resins, waterproofing systems and joint sealants.",
+      "With polyurethane, epoxy and acrylic based production processes, we deliver solutions in adhesives, rubber binders, industrial and sports floor coatings, waterproofing systems and joint sealants.",
       "Our product development is driven by feedback from the field; we build system configurations that vary with the specification, the budget and the substrate.",
       "Alongside production, we run product development (R&D) and customer-specific adaptation as separate disciplines, recommending formulations that match the substrate, the climate and the operating conditions. We prioritise solvent-free, user- and environment-friendly formulations, and together with our application partners we prepare project-specific system build-ups."
     ]
@@ -672,7 +658,7 @@ en: {
 
   applications:["POLYURETHANE SPORTS FLOORING","PARQUET FLOORING APPLICATION","ACRYLIC SPORTS FLOORS","RUBBER APPLICATION",
     "ATHLETICS TRACK","SYNTHETIC TURF ADHESIVE APPLICATIONS","DECORATIVE STONE APPLICATION","ELASTOMER SANDWICH SYSTEM",
-    "SANDWICH SPORTS FLOORING","ELECTRICAL RESINS","EPDM GRANULE APPLICATION","WATERPROOF COATING",
+    "SANDWICH SPORTS FLOORING","EPDM GRANULE APPLICATION","WATERPROOF COATING",
     "INDUSTRIAL POLYURETHANE AND EPOXY FLOORS","EPOXY CASTING APPLICATIONS"],
 
   details:{
@@ -685,7 +671,6 @@ en: {
     uygTas:{"title": "Decorative Stone Application", "lead": "Water-permeable, decorative stone-carpet surfaces from natural granules and clear binder.", "paras": ["Granules and binder are mixed homogeneously and laid by trowel; once cured, the surface is slip-resistant, maintenance-free and rain-permeable. The choice for pool surrounds and walkways."]},
     uygElastomer:{"title": "Elastomer Sandwich System", "lead": "A two-layer sports floor build-up of elastic core, elastomer and coloured EPDM surface.", "paras": ["EPDM granules are broadcast while the elastomer layer is still wet; energy return and deformation values are tuned to professional standards."]},
     uygSandvic:{"title": "Sandwich Sports Flooring", "lead": "Sandwich system applications for stadium and university tracks.", "paras": ["Correct application and regular maintenance give a long service life; worn areas are renewed with local repairs and colour schemes follow the project."]},
-    uygElektrik:{"title": "Electrical Resins", "lead": "Void-free casting applications in transformers, cable joints and electronic components.", "paras": ["The resin is poured at a flow that fully envelops the component; once cured it forms a moisture-proof insulation block resistant to shock and vibration."]},
     uygEpdm:{"title": "EPDM Granule Application", "lead": "Safe, patterned floors for playgrounds and sports fields with coloured EPDM granules.", "paras": ["The EPDM-binder mix is spread and levelled over an SBR base; layer thickness follows fall height, and 24 colours allow free pattern design."]},
     uygSu:{"title": "Waterproof Coating", "lead": "Seamless liquid-membrane waterproofing applications from roofs to wet areas.", "paras": ["Corner and drain details are taped, the membrane is applied in layers and verified with a water test; UV-exposed surfaces are protected with an aliphatic finish."]},
     uygEndustri:{"title": "Industrial Polyurethane and Epoxy Floors", "lead": "Hygienic, load-bearing seamless floor applications in factories, warehouses and car parks.", "paras": ["After blasting and priming, a self-levelling or textured coating is applied; the result is a monolithic surface resistant to forklift traffic, chemicals and intensive cleaning."]},
@@ -760,11 +745,6 @@ en: {
       areas:["Roofs and terraces", "Bathrooms, balconies and wet areas", "Foundations and retaining walls", "Water tanks and pools", "Concealed gutter details"],
       props:["1K and 2K liquid membranes", "Aliphatic, UV-resistant finish coats", "Thixotropic grades for vertical surfaces", "Bitumen-polyurethane hybrid options"],
       products:[{"t": "Liquid Membrane Product Family", "d": "A complete waterproofing set of 1K/2K PU liquid membranes, primers and aliphatic finish coats."}] },
-    elektrik:{ lead:"Casting resins providing void-free insulation and mechanical protection — from transformers and cable joints to windings and electronic circuits.",
-      paras:["Four chemical families are offered: air-drying winding varnishes; hard, chemical-resistant two-component epoxies for medium and high voltage; rigid or elastic polyurethanes that damp vibration and resonance noise at low and medium voltage; and isocyanate-free elastic hydrocarbon resins that can be cut open and refilled.", "Elastic grades follow the thermal expansion of the cable, preventing cracking and separation, and their hydrophobic nature protects metal parts against corrosion. Clear epoxy casting resins also serve tables, objects and decorative floor applications."],
-      areas:["Dry-type transformers", "Cable joints", "Windings and motors", "Electronic potting", "Submersible pumps", "Decorative clear casting"],
-      props:["Epoxy, polyurethane and hydrocarbon families", "Void-free casting — shock and vibration resistance", "Repairability of elastic grades", "Hydrophobic, corrosion-preventing structure", "Clear decorative casting options"],
-      products:[{"t": "1K PU Winding Varnish", "d": "A moisture-curing, air-drying varnish applicable to any surface."}, {"t": "2K PU Casting Resin (Rigid)", "d": "Void-free insulation and mechanical protection at low and medium voltage."}, {"t": "2K PU Casting Resin (Elastic)", "d": "A flexible grade damping vibration and following thermal movement."}, {"t": "2K PU Casting Resin (Filled)", "d": "A highly filled variant with increased dimensional stability."}, {"t": "2K Epoxy Casting Resin", "d": "A hard, chemical-resistant resin for medium and high voltage."}, {"t": "Hydrocarbon Resin (Repairable)", "d": "An isocyanate-free cable-joint resin that can be cut open and refilled."}, {"t": "2K PU Cable Resin", "d": "Fast, safe filling of cable joints."}] },
     sporSis:{ lead:"Layered sports floor build-ups — primer, elastic core, putty and finish — scaling from amateur halls to professional athletics tracks.",
       paras:["Indoors, a polyurethane self-levelling coat and UV-resistant finish are applied over an SBR roll or cast-in-place SBR core; total thickness follows the intensity of use. For athletics, the sandwich system (cast SBR core + elastomer + broadcast EPDM surface) and the full-pour system are complemented by the water-permeable combined build-up and the economical spray coating.", "On hard courts, acrylic systems allow the pace of play to be tuned through resurfacer, cushion layers and a filled top coat. Court markings are always the final layer; renewal takes nothing more than a fresh finish coat."],
       areas:["Tennis courts", "Basketball and volleyball", "Indoor sports halls", "Athletics tracks", "Jogging and walking paths", "Children's playgrounds", "Fitness gyms", "Shooting ranges"],
@@ -850,7 +830,7 @@ fr: {
     coatings:"Revêtements de sol & peintures", puCoat:"Revêtements polyuréthane",
     acCoat:"Revêtements acryliques", epCoat:"Revêtements époxy",
     primersPutties:"Primaires & mastics", primers:"Primaires", putties:"Mastics",
-    waterproofProd:"Produits d'étanchéité", electricalResin:"Résines de coulée pour isolation électrique",
+    waterproofProd:"Produits d'étanchéité",
     systems:"Systèmes", sportsSys:"Systèmes de sols sportifs", indSys:"Systèmes de sols industriels",
     waterSys:"Système d'étanchéité",
     exportNav:"Export", containers:"Dimensions des conteneurs", incoterms:"Incoterms / Conditions de livraison",
@@ -890,7 +870,7 @@ fr: {
   hero:{
     kicker:"ADHÉSIFS • LIANTS • SOLS • ÉTANCHÉITÉ",
     title:"Technologie de pointe,\nqualité éprouvée\nen chimie.",
-    lead:"Grâce à nos procédés à base de polyuréthane, d'époxy et d'acrylique, nous proposons une large gamme depuis une source unique — des adhésifs aux sols sportifs, de l'étanchéité aux résines électriques."
+    lead:"Grâce à nos procédés à base de polyuréthane, d'époxy et d'acrylique, nous proposons une large gamme depuis une source unique — des adhésifs aux sols sportifs, des primaires à l'étanchéité."
   },
 
   categories:[
@@ -898,12 +878,11 @@ fr: {
     {title:"LIANTS", sub:"Liants coulés, pressés et pour pierre", desc:"Résines prépolymères réticulant à l'humidité qui lient les granulés SBR et EPDM : options aromatiques et aliphatiques non jaunissantes pour les applications coulées (wet-pour), pressées et moquette de pierre."},
     {title:"REVÊTEMENTS DE SOL", sub:"Polyuréthane, acrylique et époxy", desc:"Des surfaces autolissantes à la texture antidérapante « peau d'orange » ; systèmes de revêtement et de peinture à base de polyuréthane, d'acrylique et d'époxy. Toute la gamme RAL, haute résistance mécanique et chimique."},
     {title:"ÉTANCHÉITÉ", sub:"Membranes liquides et mastics", desc:"Étanchéité sans joint à base de membrane liquide : des toits et terrasses aux fondations, pièces humides et réservoirs ; finitions aliphatiques pour les surfaces exposées aux UV."},
-    {title:"PRIMAIRES & MASTICS", sub:"Préparation et rebouchage des supports", desc:"Primaires époxy, polyuréthane et acryliques pour supports absorbants ou non ; barrières anti-humidité, primaires chargés, mastics de joint et de réparation. Le bon primaire détermine la durée de vie du système."},
-    {title:"RÉSINES ÉLECTRIQUES", sub:"Résines de coulée et peintures transformateur", desc:"Résines de coulée époxy et polyuréthane pour transformateurs, jonctions de câbles et circuits électroniques ; isolation sans vide, amortissement des vibrations et coulées décoratives transparentes."}
+    {title:"PRIMAIRES & MASTICS", sub:"Préparation et rebouchage des supports", desc:"Primaires époxy, polyuréthane et acryliques pour supports absorbants ou non ; barrières anti-humidité, primaires chargés, mastics de joint et de réparation. Le bon primaire détermine la durée de vie du système."}
   ],
 
   tiles:["ADHÉSIFS PARQUET","ADHÉSIFS CAOUTCHOUC","ADHÉSIFS GAZON SYNTHÉTIQUE","LIANTS",
-         "ÉTANCHÉITÉ","RÉSINES DE COULÉE ÉPOXY","SYSTÈMES DE SOLS INDUSTRIELS","SYSTÈMES DE SOLS SPORTIFS"],
+         "ÉTANCHÉITÉ","SYSTÈMES DE SOLS INDUSTRIELS","SYSTÈMES DE SOLS SPORTIFS"],
 
   videos:[
     {title:"Application de piste d'athlétisme", sub:"Systèmes de sols sportifs"},
@@ -923,7 +902,7 @@ fr: {
     title:"Leon Kimya",
     lead:"Leon Kimya met en œuvre des technologies de pointe et s'appuie sur des collaborateurs qualifiés dans chacune des branches de la chimie où elle intervient. L'entreprise s'est fixé pour principe de livrer des produits conformes aux normes sans transiger sur la satisfaction client, et de bâtir une marque capable de répondre à des attentes en constante évolution.",
     paras:[
-      "Avec des procédés à base de polyuréthane, d'époxy et d'acrylique, nous apportons des solutions en adhésifs, liants caoutchouc, revêtements de sol industriels et sportifs, résines d'isolation électrique, systèmes d'étanchéité et mastics de joint.",
+      "Avec des procédés à base de polyuréthane, d'époxy et d'acrylique, nous apportons des solutions en adhésifs, liants caoutchouc, revêtements de sol industriels et sportifs, systèmes d'étanchéité et mastics de joint.",
       "Notre développement produit s'appuie sur les retours du terrain ; nous concevons des configurations de systèmes qui varient selon le cahier des charges, le budget et le support.",
       "Parallèlement à la production, nous menons le développement produit (R&D) et l'adaptation aux besoins spécifiques des clients comme des disciplines distinctes, en recommandant des formulations adaptées au support, au climat et aux conditions d'exploitation. Nous privilégions des formulations sans solvant, respectueuses de l'utilisateur et de l'environnement, et préparons avec nos partenaires applicateurs des systèmes conçus pour chaque projet."
     ]
@@ -955,7 +934,7 @@ fr: {
 
   applications:["SOL SPORTIF POLYURÉTHANE","APPLICATION DE PARQUET","SOLS SPORTIFS ACRYLIQUES","APPLICATION CAOUTCHOUC",
     "PISTE D'ATHLÉTISME","APPLICATIONS D'ADHÉSIF GAZON","APPLICATION PIERRE DÉCORATIVE","SYSTÈME SANDWICH ÉLASTOMÈRE",
-    "SOL SPORTIF SANDWICH","RÉSINES ÉLECTRIQUES","APPLICATION DE GRANULÉS EPDM","REVÊTEMENT ÉTANCHE",
+    "SOL SPORTIF SANDWICH","APPLICATION DE GRANULÉS EPDM","REVÊTEMENT ÉTANCHE",
     "SOLS INDUSTRIELS POLYURÉTHANE ET ÉPOXY","APPLICATIONS DE COULÉE ÉPOXY"],
 
   details:{
@@ -968,7 +947,6 @@ fr: {
     uygTas:{"title": "Application pierre décorative", "lead": "Surfaces « moquette de pierre » drainantes et décoratives en granulats naturels et liant transparent.", "paras": ["Granulats et liant sont mélangés puis étalés à la spatule ; une fois réticulée, la surface est antidérapante, sans entretien et perméable à la pluie. Le choix des abords de piscine."]},
     uygElastomer:{"title": "Système sandwich élastomère", "lead": "Structure sportive à deux couches : noyau élastique, élastomère et surface EPDM colorée.", "paras": ["Les granulés EPDM sont épandus sur l'élastomère encore humide ; retour d'énergie et déformation sont réglés aux standards professionnels."]},
     uygSandvic:{"title": "Sol sportif sandwich", "lead": "Applications du système sandwich pour pistes de stades et d'universités.", "paras": ["Une pose correcte et un entretien régulier assurent une longue durée de vie ; les zones usées se réparent localement, les couleurs suivent le projet."]},
-    uygElektrik:{"title": "Résines électriques", "lead": "Applications de coulée sans vide dans transformateurs, jonctions de câbles et composants.", "paras": ["La résine est coulée à une fluidité qui enveloppe totalement le composant ; réticulée, elle forme un bloc isolant étanche, résistant aux chocs et vibrations."]},
     uygEpdm:{"title": "Application de granulés EPDM", "lead": "Sols sûrs et à motifs pour aires de jeux et terrains, en granulés EPDM colorés.", "paras": ["Le mélange EPDM-liant est étalé et nivelé sur une sous-couche SBR ; l'épaisseur suit la hauteur de chute, et 24 couleurs permettent des motifs libres."]},
     uygSu:{"title": "Revêtement étanche", "lead": "Applications d'étanchéité liquide sans joint, du toit aux pièces humides.", "paras": ["Angles et évacuations sont renforcés à la bande, la membrane appliquée en couches et vérifiée au test d'eau ; les surfaces exposées aux UV reçoivent une finition aliphatique."]},
     uygEndustri:{"title": "Sols industriels polyuréthane et époxy", "lead": "Applications de sols sans joint, hygiéniques et résistants, en usines, entrepôts et parkings.", "paras": ["Après grenaillage et primaire, un autolissant ou un revêtement texturé est appliqué ; on obtient une surface monolithique résistant aux chariots, aux produits chimiques et au nettoyage intensif."]},
@@ -1043,11 +1021,6 @@ fr: {
       areas:["Toits et terrasses", "Salles de bain, balcons et pièces humides", "Fondations et voiles", "Réservoirs et piscines", "Détails de chéneaux cachés"],
       props:["Membranes liquides 1K et 2K", "Finitions aliphatiques résistantes aux UV", "Types thixotropes pour surfaces verticales", "Options hybrides bitume-polyuréthane"],
       products:[{"t": "Famille membranes liquides", "d": "Un ensemble complet d'étanchéité : membranes PU 1K/2K, primaires et finitions aliphatiques."}] },
-    elektrik:{ lead:"Résines de coulée assurant isolation sans vide et protection mécanique — des transformateurs et jonctions de câbles aux bobinages et circuits électroniques.",
-      paras:["Quatre familles chimiques : vernis de bobinage séchant à l'air ; époxys bicomposants durs et résistants aux produits chimiques pour moyenne et haute tension ; polyuréthanes rigides ou élastiques amortissant vibrations et résonance en basse et moyenne tension ; et résines hydrocarbonées élastiques sans isocyanate, réouvrables et re-remplissables.", "Les grades élastiques suivent la dilatation thermique du câble et évitent fissures et ruptures ; leur nature hydrophobe protège les parties métalliques de la corrosion. Les résines époxy transparentes servent aussi aux tables, objets et sols décoratifs."],
-      areas:["Transformateurs de type sec", "Jonctions de câbles", "Bobinages et moteurs", "Enrobage électronique (potting)", "Pompes immergées", "Coulée décorative transparente"],
-      props:["Familles époxy, polyuréthane et hydrocarbonée", "Coulée sans vide — tenue aux chocs et vibrations", "Réparabilité des grades élastiques", "Structure hydrophobe anticorrosion", "Options de coulée décorative transparente"],
-      products:[{"t": "Vernis de bobinage PU 1K", "d": "Vernis séchant à l'air, réticulant à l'humidité, applicable sur toute surface."}, {"t": "Résine de coulée PU 2K (rigide)", "d": "Isolation sans vide et protection mécanique en basse et moyenne tension."}, {"t": "Résine de coulée PU 2K (élastique)", "d": "Grade souple amortissant les vibrations et suivant les mouvements thermiques."}, {"t": "Résine de coulée PU 2K (chargée)", "d": "Variante fortement chargée à stabilité dimensionnelle accrue."}, {"t": "Résine de coulée époxy 2K", "d": "Résine dure et résistante aux produits chimiques pour moyenne et haute tension."}, {"t": "Résine hydrocarbonée (réparable)", "d": "Résine de jonction sans isocyanate, réouvrable et re-remplissable."}, {"t": "Résine de câble PU 2K", "d": "Remplissage rapide et sûr des jonctions de câbles."}] },
     sporSis:{ lead:"Des structures de sols sportifs en couches — primaire, noyau élastique, mastic et finition — du gymnase amateur à la piste d'athlétisme professionnelle.",
       paras:["En intérieur, un autolissant polyuréthane et une finition UV-stable sont appliqués sur un rouleau SBR ou un noyau SBR coulé en place ; l'épaisseur totale suit l'intensité d'usage. En athlétisme, le système sandwich (noyau SBR coulé + élastomère + EPDM épandu) et le système full-pour sont complétés par la structure drainante « combined » et le revêtement projeté économique.", "Sur courts durs, les systèmes acryliques permettent de régler la vitesse de jeu via resurfaceur, couches cushion et finition chargée. Le traçage est toujours la dernière couche ; le renouvellement ne demande qu'une nouvelle finition."],
       areas:["Courts de tennis", "Basket-ball et volley-ball", "Salles de sport couvertes", "Pistes d'athlétisme", "Parcours de course et de marche", "Aires de jeux pour enfants", "Salles de fitness", "Stands de tir"],
@@ -1133,7 +1106,7 @@ ar: {
     coatings:"أرضيات ودهانات", puCoat:"أرضيات البولي يوريثان",
     acCoat:"أرضيات الأكريليك", epCoat:"أرضيات الإيبوكسي",
     primersPutties:"البرايمرات والمعاجين", primers:"البرايمرات", putties:"المعاجين",
-    waterproofProd:"منتجات العزل المائي", electricalResin:"راتنجات صب العزل الكهربائي",
+    waterproofProd:"منتجات العزل المائي",
     systems:"الأنظمة", sportsSys:"أنظمة الأرضيات الرياضية", indSys:"أنظمة الأرضيات الصناعية",
     waterSys:"نظام العزل المائي",
     exportNav:"التصدير", containers:"أبعاد الحاويات", incoterms:"إنكوترمز / شروط التسليم",
@@ -1173,7 +1146,7 @@ ar: {
   hero:{
     kicker:"مواد لاصقة • روابط • أرضيات • عزل مائي",
     title:"تقنية متقدمة\nوجودة مثبتة\nفي الصناعات الكيميائية.",
-    lead:"عبر عمليات الإنتاج القائمة على البولي يوريثان والإيبوكسي والأكريليك، نوفّر تشكيلة واسعة من مصدر واحد — من المواد اللاصقة إلى الأرضيات الرياضية، ومن العزل المائي إلى راتنجات العزل الكهربائي."
+    lead:"عبر عمليات الإنتاج القائمة على البولي يوريثان والإيبوكسي والأكريليك، نوفّر تشكيلة واسعة من مصدر واحد — من المواد اللاصقة إلى الأرضيات الرياضية، ومن البرايمرات إلى العزل المائي."
   },
 
   categories:[
@@ -1181,12 +1154,11 @@ ar: {
     {title:"المواد الرابطة", sub:"روابط الصب والكبس والحجر", desc:"راتنجات بريبوليمر تتصلّب بالرطوبة وتربط حبيبات SBR وEPDM ببعضها: خيارات أروماتية وأليفاتية لا تصفرّ لتطبيقات الصب (wet-pour) والكبس وسجاد الحجر."},
     {title:"أرضيات الطلاء", sub:"بولي يوريثان وأكريليك وإيبوكسي", desc:"من الأسطح ذاتية التسوية إلى الملمس المانع للانزلاق «قشرة البرتقال»؛ أنظمة طلاء ودهانات على أساس البولي يوريثان والأكريليك والإيبوكسي. كامل تشكيلة ألوان RAL ومقاومة ميكانيكية وكيميائية عالية."},
     {title:"العزل المائي", sub:"أغشية سائلة ومواد مانعة للتسرب", desc:"عزل مائي بلا وصلات على أساس الغشاء السائل: من الأسطح والشرفات إلى الأساسات والمساحات الرطبة وخزانات المياه؛ مع طبقات نهائية أليفاتية للأسطح المعرّضة للأشعة فوق البنفسجية."},
-    {title:"البرايمرات والمعاجين", sub:"تجهيز الأسطح والملء", desc:"برايمرات إيبوكسي وبولي يوريثان وأكريليك للأسطح الماصّة وغير الماصّة؛ حواجز رطوبة وبرايمرات محمّلة ومعاجين فواصل وإصلاح. البرايمر الصحيح يحدّد عمر النظام."},
-    {title:"راتنجات العزل الكهربائي", sub:"راتنجات صب ودهانات محوّلات", desc:"راتنجات صب إيبوكسي وبولي يوريثان للمحوّلات ووصلات الكابلات والدوائر الإلكترونية؛ عزل خالٍ من الفراغات وامتصاص للاهتزازات وتطبيقات صب ديكورية شفافة."}
+    {title:"البرايمرات والمعاجين", sub:"تجهيز الأسطح والملء", desc:"برايمرات إيبوكسي وبولي يوريثان وأكريليك للأسطح الماصّة وغير الماصّة؛ حواجز رطوبة وبرايمرات محمّلة ومعاجين فواصل وإصلاح. البرايمر الصحيح يحدّد عمر النظام."}
   ],
 
   tiles:["لواصق الباركيه","لواصق المطاط","لواصق العشب الصناعي","المواد الرابطة",
-         "العزل المائي","راتنجات صب الإيبوكسي","أنظمة الأرضيات الصناعية","أنظمة الأرضيات الرياضية"],
+         "العزل المائي","أنظمة الأرضيات الصناعية","أنظمة الأرضيات الرياضية"],
 
   videos:[
     {title:"تنفيذ مضمار ألعاب القوى", sub:"أنظمة الأرضيات الرياضية"},
@@ -1206,7 +1178,7 @@ ar: {
     title:"ليون كيميا",
     lead:"تعتمد ليون كيميا التقنيات المتقدمة وتوظّف كوادر مؤهلة في كل فرع من فروع الكيمياء التي تعمل فيها. وقد جعلت من مبادئها تقديم منتجات مطابقة للمعايير دون أي تنازل عن رضا العملاء، وبناء علامة تجارية قادرة على تلبية التوقعات المتغيّرة.",
     paras:[
-      "عبر عمليات الإنتاج القائمة على البولي يوريثان والإيبوكسي والأكريليك، نقدّم حلولًا في المواد اللاصقة وروابط المطاط وأرضيات الطلاء الصناعية والرياضية وراتنجات العزل الكهربائي وأنظمة العزل المائي ومواد ملء الفواصل.",
+      "عبر عمليات الإنتاج القائمة على البولي يوريثان والإيبوكسي والأكريليك، نقدّم حلولًا في المواد اللاصقة وروابط المطاط وأرضيات الطلاء الصناعية والرياضية وأنظمة العزل المائي ومواد ملء الفواصل.",
       "يعتمد تطوير منتجاتنا على ملاحظات الميدان؛ ونُعِدّ تكوينات أنظمة تتغيّر وفق المواصفات والميزانية وطبيعة الأرضية.",
       "إلى جانب الإنتاج، ندير تطوير المنتجات (البحث والتطوير) والتكييف وفق احتياجات كل عميل كتخصصين مستقلين، ونقترح تركيبات تناسب الأرضية والمناخ وظروف التشغيل. نمنح الأولوية للتركيبات الخالية من المذيبات والصديقة للمستخدم والبيئة، ونُعِدّ مع شركائنا في التنفيذ أنظمة مصمّمة لكل مشروع على حدة."
     ]
@@ -1238,7 +1210,7 @@ ar: {
 
   applications:["أرضيات رياضية بالبولي يوريثان","تطبيق أرضيات الباركيه","أرضيات رياضية أكريليك","تطبيق المطاط",
     "مضمار ألعاب القوى","تطبيقات لاصق العشب الصناعي","تطبيق الحجر الديكوري","نظام ساندويتش إيلاستومر",
-    "أرضية رياضية ساندويتش","راتنجات كهربائية","تطبيق حبيبات EPDM","طلاء مانع لتسرب المياه",
+    "أرضية رياضية ساندويتش","تطبيق حبيبات EPDM","طلاء مانع لتسرب المياه",
     "أرضيات صناعية بالبولي يوريثان والإيبوكسي","تطبيقات صب الإيبوكسي"],
 
   details:{
@@ -1251,7 +1223,6 @@ ar: {
     uygTas:{"title": "تطبيق الحجر الديكوري", "lead": "أسطح «سجاد حجر» ديكورية نفوذة للماء من حبيبات طبيعية ورابط شفاف.", "paras": ["تُخلَط الحبيبات مع الرابط وتُفرَش بالمالج؛ وبعد التصلب يصبح السطح مانعًا للانزلاق بلا صيانة ونفوذًا لمياه المطر. خيار محيط المسابح والممرات."]},
     uygElastomer:{"title": "نظام الساندويتش الإيلاستومري", "lead": "تكوين رياضي من طبقتين: نواة مرنة وإيلاستومر وسطح EPDM ملوّن.", "paras": ["تُنثر حبيبات EPDM والإيلاستومر ما يزال رطبًا؛ ويُضبط ارتجاع الطاقة والتشوّه وفق المعايير الاحترافية."]},
     uygSandvic:{"title": "أرضية رياضية ساندويتش", "lead": "تطبيقات نظام الساندويتش لمضامير الملاعب والجامعات.", "paras": ["التطبيق الصحيح والصيانة المنتظمة يمنحان عمرًا طويلًا؛ وتُجدَّد المناطق المتآكلة بإصلاح موضعي وتُكوَّن الألوان وفق المشروع."]},
-    uygElektrik:{"title": "راتنجات كهربائية", "lead": "تطبيقات صب خالٍ من الفراغات في المحوّلات ووصلات الكابلات والمكوّنات الإلكترونية.", "paras": ["يُصَب الراتنج بسيولة تغلّف المكوّن بالكامل؛ وبعد التصلب يشكّل كتلة عزل لا تنفذ منها الرطوبة، مقاومة للصدمات والاهتزاز."]},
     uygEpdm:{"title": "تطبيق حبيبات EPDM", "lead": "أرضيات آمنة ومزخرفة لملاعب الأطفال والملاعب الرياضية بحبيبات EPDM ملوّنة.", "paras": ["يُفرَش خليط EPDM والرابط ويُسوَّى فوق طبقة SBR؛ وتُحدَّد السماكة وفق ارتفاع السقوط، و24 لونًا تتيح زخارف حرة."]},
     uygSu:{"title": "طلاء مانع لتسرب المياه", "lead": "تطبيقات عزل مائي بلا وصلات بالغشاء السائل، من الأسطح إلى المساحات الرطبة.", "paras": ["تُقوّى الزوايا وتفاصيل الصرف بالشريط، ويُطبَّق الغشاء طبقات ويُتحقَّق باختبار الماء؛ وتُحمى الأسطح المشمسة بطبقة أليفاتية."]},
     uygEndustri:{"title": "أرضيات صناعية بالبولي يوريثان والإيبوكسي", "lead": "تطبيقات أرضيات صحية بلا وصلات تتحمّل الأحمال في المصانع والمستودعات والمواقف.", "paras": ["بعد السفع والبرايمر يُطبَّق طلاء ذاتي التسوية أو بملمس؛ فنحصل على سطح متجانس يقاوم حركة الرافعات والكيماويات والتنظيف المكثّف."]},
@@ -1326,11 +1297,6 @@ ar: {
       areas:["الأسطح والشرفات", "الحمامات والبلكونات والمساحات الرطبة", "الأساسات والجدران الساندة", "خزانات المياه والمسابح", "تفاصيل المزاريب المخفية"],
       props:["أغشية سائلة 1K و2K", "طبقات نهائية أليفاتية مقاومة للأشعة", "أنواع ثيكسوتروبية للأسطح الرأسية", "خيارات هجينة بيتومين-بولي يوريثان"],
       products:[{"t": "عائلة الأغشية السائلة", "d": "مجموعة عزل كاملة من أغشية PU سائلة 1K/2K وبرايمرات وطبقات نهائية أليفاتية."}] },
-    elektrik:{ lead:"راتنجات صب توفّر عزلًا خاليًا من الفراغات وحماية ميكانيكية — من المحوّلات ووصلات الكابلات إلى الملفات والدوائر الإلكترونية.",
-      paras:["تُقدَّم أربع عائلات كيميائية: ورنيشات ملفات تجف بالهواء؛ وإيبوكسيات ثنائية صلبة مقاومة للكيماويات للجهدين المتوسط والعالي؛ وبولي يوريثانات صلبة أو مرنة تمتص الاهتزاز وضجيج الرنين في الجهدين المنخفض والمتوسط؛ وراتنجات هيدروكربونية مرنة خالية من الإيزوسيانات يمكن فتحها وإعادة ملئها.", "الأنواع المرنة تساير التمدد الحراري للكابل فتمنع التشقق والانفصال، وطبيعتها الكارهة للماء تحمي الأجزاء المعدنية من التآكل. وتُستخدم راتنجات الإيبوكسي الشفافة أيضًا في الطاولات والقطع والأرضيات الديكورية."],
-      areas:["المحوّلات الجافة", "وصلات الكابلات", "الملفات والمحركات", "تغليف الدوائر الإلكترونية (potting)", "المضخات الغاطسة", "الصب الديكوري الشفاف"],
-      props:["عائلات إيبوكسي وبولي يوريثان وهيدروكربون", "صب بلا فراغات — مقاومة للصدمات والاهتزاز", "قابلية إصلاح الأنواع المرنة", "بنية كارهة للماء مانعة للتآكل", "خيارات صب ديكوري شفاف"],
-      products:[{"t": "ورنيش ملفات PU أحادي", "d": "ورنيش يجف بالهواء ويتصلّب بالرطوبة، قابل للتطبيق على أي سطح."}, {"t": "راتنج صب PU 2K (صلب)", "d": "عزل خالٍ من الفراغات وحماية ميكانيكية للجهدين المنخفض والمتوسط."}, {"t": "راتنج صب PU 2K (مرن)", "d": "درجة مرنة تمتص الاهتزاز وتساير الحركة الحرارية."}, {"t": "راتنج صب PU 2K (محمّل)", "d": "نسخة عالية الحشو بثبات أبعاد معزّز."}, {"t": "راتنج صب إيبوكسي 2K", "d": "راتنج صلب مقاوم للكيماويات للجهدين المتوسط والعالي."}, {"t": "راتنج هيدروكربوني (قابل للإصلاح)", "d": "راتنج وصلات كابلات بلا إيزوسيانات يمكن فتحه وإعادة ملئه."}, {"t": "راتنج كابلات PU 2K", "d": "ملء سريع وآمن لوصلات الكابلات."}] },
     sporSis:{ lead:"تكوينات أرضيات رياضية طبقية — برايمر ونواة مرنة ومعجون وطبقة نهائية — تتدرّج من الصالات الهاوية إلى مضامير ألعاب القوى الاحترافية.",
       paras:["في الصالات المغلقة يُطبَّق طلاء بولي يوريثان ذاتي التسوية وطبقة نهائية مقاومة للأشعة فوق لفائف SBR أو نواة SBR مصبوبة في الموقع؛ وتُحدَّد السماكة الكلية وفق كثافة الاستخدام. وفي ألعاب القوى يتكامل نظام الساندويتش (نواة SBR مصبوبة + إيلاستومر + سطح EPDM منثور) مع نظام الصب الكامل، والتكوين النفوذ للماء «combined» والطلاء الرشّي الاقتصادي.", "على الملاعب الصلبة تتيح الأنظمة الأكريليكية ضبط سرعة اللعب عبر معيد التسوية وطبقات الوسائد والطبقة المحمّلة. وتُرسَم خطوط الملعب دائمًا كآخر طبقة؛ ويتم التجديد بطبقة نهائية جديدة فقط وبتكلفة منخفضة."],
       areas:["ملاعب التنس", "كرة السلة والكرة الطائرة", "الصالات الرياضية المغلقة", "مضامير ألعاب القوى", "مسارات الجري والمشي", "ملاعب الأطفال", "صالات اللياقة", "ميادين الرماية"],
