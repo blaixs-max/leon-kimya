@@ -45,7 +45,7 @@ window.SITE_BASE = {
     sporSis:"#detay/sporSis", endSis:"#detay/endSis", suSis:"#detay/suSis",
     uygSporPu:"#detay/uygSporPu", uygParke:"#detay/uygParke", uygAkrilik:"#detay/uygAkrilik",
     uygKaucuk:"#detay/uygKaucuk", uygAtletizm:"#detay/uygAtletizm", uygCim:"#detay/uygCim",
-    uygTas:"#detay/uygTas", uygElastomer:"#detay/uygElastomer", uygSandvic:"#detay/uygSandvic",
+    uygTas:"#detay/uygTas", uygElastomer:"#detay/uygElastomer", uygSandvic:"#detay/uygSandvic", uygPadel:"#detay/uygPadel",
     uygEpdm:"#detay/uygEpdm", uygSu:"#detay/uygSu",
     uygEndustri:"#detay/uygEndustri", uygDokum:"#detay/uygDokum",
     tarihce:"#kurumsal",
@@ -130,7 +130,7 @@ window.SITE_BASE = {
 
   systems: [
     { id:"spor", L:"sporSis", img:"assets/img/sys-sport2-v2.jpg",
-      gallery:["assets/img/sport-tennis.jpg","assets/img/tile-sport-v2.jpg","assets/img/sport-gym.jpg","assets/img/app-turf-v2.jpg"] },
+      gallery:["assets/img/sport-tennis.jpg","assets/img/sys-padel.jpg","assets/img/tile-sport-v2.jpg","assets/img/sport-gym.jpg","assets/img/app-turf-v2.jpg"] },
     { id:"endustriyel", L:"endSis", img:"assets/img/ind-apply.jpg",
       gallery:["assets/img/ind-texture.jpg","assets/img/ind-roller.jpg","assets/img/ind-machines.jpg","assets/img/tile-industrial-v2.jpg"] },
     { id:"su", L:"suSis", img:"assets/img/water-main-v2.jpg",
@@ -149,6 +149,7 @@ window.SITE_BASE = {
     { img:"assets/img/app-stone-v2.jpg",     L:"uygTas" },
     { img:"assets/img/sport-05.jpg",      L:"uygElastomer" },
     { img:"assets/img/vid-track2-v2.jpg",    L:"uygSandvic" },
+    { img:"assets/img/app-padel.jpg",     L:"uygPadel" },
     { img:"assets/img/app-playground-v2.jpg",L:"uygEpdm" },
     { img:"assets/img/water-app3.jpg",    L:"uygSu" },
     { img:"assets/img/ind-hall.jpg",      L:"uygEndustri" },
@@ -222,6 +223,7 @@ window.SITE_BASE = {
     "uygTas": {"app": true, "img": "assets/img/app-stone-v2.jpg", "gallery": ["assets/img/stone-sample.jpg"]},
     "uygElastomer": {"app": true, "img": "assets/img/sport-05.jpg", "gallery": ["assets/img/vid-track2-v2.jpg", "assets/img/sys-sport2-v2.jpg"]},
     "uygSandvic": {"app": true, "img": "assets/img/vid-track2-v2.jpg", "gallery": ["assets/img/sys-sport2-v2.jpg"]},
+    "uygPadel": {"app": true, "img": "assets/img/app-padel.jpg", "gallery": ["assets/img/sys-padel.jpg", "assets/img/app-turf-v2.jpg"]},
     "uygEpdm": {"app": true, "img": "assets/img/app-playground-v2.jpg", "gallery": ["assets/img/epdm-insitu.jpg", "assets/img/tile-binder-v2.jpg", "assets/img/cat-binder-v2.jpg"]},
     "uygSu": {"app": true, "img": "assets/img/water-app3.jpg", "gallery": ["assets/img/water-main-v2.jpg", "assets/img/water-app1.jpg", "assets/img/water-app2.jpg", "assets/img/vid-membrane-v2.jpg", "assets/img/tile-water-v2.jpg"]},
     "uygEndustri": {"app": true, "img": "assets/img/ind-hall.jpg", "gallery": ["assets/img/ind-apply.jpg", "assets/img/ind-texture.jpg", "assets/img/ind-roller.jpg", "assets/img/ind-machines.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/ind-service.jpg"]},
@@ -240,7 +242,7 @@ window.SITE_BASE = {
     "astar": {"nav": "primers", "img": "assets/img/cat-primer-v2.jpg", "gallery": ["assets/img/ind-apply.jpg"], "productImgs": ["assets/img/cat-primer-v2.jpg", "assets/img/prod-ak-07.jpg", "assets/img/ind-apply.jpg", "assets/img/prod-astar-01.jpg", "assets/img/prod-astar-01.jpg", "assets/img/prod-astar-01.jpg"]},
     "macun": {"nav": "putties", "img": "assets/img/ind-roller.jpg", "gallery": ["assets/img/ind-texture.jpg"]},
     "suUrun": {"nav": "waterproofProd", "img": "assets/img/water-main-v2.jpg", "gallery": ["assets/img/water-app1.jpg", "assets/img/water-app2.jpg", "assets/img/water-app3.jpg", "assets/img/tile-water-v2.jpg"], "productImgs": ["assets/img/prod-su-01-v3.jpg"]},
-    "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.jpg", "gallery": ["assets/img/sport-tennis.jpg", "assets/img/tile-sport-v2.jpg", "assets/img/sport-gym.jpg", "assets/img/vid-track2-v2.jpg"]},
+    "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.jpg", "gallery": ["assets/img/sys-padel.jpg", "assets/img/sport-tennis.jpg", "assets/img/tile-sport-v2.jpg", "assets/img/sport-gym.jpg", "assets/img/vid-track2-v2.jpg"]},
     "endSis": {"nav": "indSys", "img": "assets/img/ind-apply.jpg", "gallery": ["assets/img/ind-texture.jpg", "assets/img/ind-machines.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/ind-service.jpg"]},
     "suSis": {"nav": "waterSys", "img": "assets/img/water-main-v2.jpg", "gallery": ["assets/img/water-app1.jpg", "assets/img/water-app3.jpg", "assets/img/vid-membrane-v2.jpg", "assets/img/tile-water-v2.jpg"]}
   }
@@ -359,7 +361,7 @@ tr: {
   systems:[
     { title:"Spor Zemin Sistemleri",
       desc:"Poliüretan ve akrilik esaslı spor zemin sistemleridir. Açık veya kapalı alanlar için şartnameye, bütçeye ve alt yapıya göre kurgulanır: astar üzerine darbe emici SBR/EPDM elastik çekirdek, gözenekleri kapatan macun katmanı, self-levelling poliüretan kaplama ve UV dayanımlı son kat. Likit uygulandığı için kuruma sonrasında yekpare, derzsiz bir yüzey oluşur; renk ve saha çizgileri yalnızca son kat yenilenerek güncellenebilir.",
-      areas:["Tenis kortları","Basketbol ve voleybol","Kapalı spor salonları","Atletizm pistleri","Koşu ve yürüyüş yolları","Çocuk oyun alanları","Fitness salonları","Atış poligonu"],
+      areas:["Tenis kortları","Basketbol ve voleybol","Kapalı spor salonları","Atletizm pistleri","Padel kortları","Koşu ve yürüyüş yolları","Çocuk oyun alanları","Fitness salonları","Atış poligonu"],
       props:["Astar → elastik çekirdek → macun → son kat katman kurgusu","Darbe emici SBR/EPDM çekirdek ile sporcu güvenliği","Sararmayan, UV dayanımlı alifatik üst kaplamalar","Sandviç ve dökme sistem alternatifleri","Son kat boya ile düşük maliyetli renk yenileme","Açık ve kapalı alan uygulaması"] },
     { title:"Endüstriyel Zemin Sistemleri",
       desc:"Poliüretan ve epoksi esaslı, kullanım amacına göre kurgulanan sistemlerdir. Pürüzsüz self-levelling yüzeylerden kaymaz portakal kabuğu tekstürüne, ince film zemin boyalarından ağır yük alanları için epoksi harca uzanan seçenekler; derzsiz, hijyenik, tozumayan ve yüksek mekanik-kimyasal dayanımlı zeminler sağlar.",
@@ -382,7 +384,7 @@ tr: {
 
   applications:["POLİÜRETAN SPOR ZEMİNİ","ZEMİN (PARKE) UYGULAMASI","AKRİLİK SPOR ZEMİNLER","KAUÇUK UYGULAMASI",
     "ATLETİZM PARKURU","ÇİM YAPIŞTIRICI UYGULAMALARI","DEKORATİF TAŞ UYGULAMASI","ELASTOMER SANDVİÇ SİSTEM",
-    "SANDVİÇ SPOR ZEMİNİ","EPDM GRANÜL UYGULAMASI","SU GEÇİRMEZ KAPLAMA",
+    "SANDVİÇ SPOR ZEMİNİ","PADEL KORT UYGULAMASI","EPDM GRANÜL UYGULAMASI","SU GEÇİRMEZ KAPLAMA",
     "ENDÜSTRİYEL POLİÜRETAN VE EPOKSİ ZEMİNLER","EPOKSİ DÖKÜM UYGULAMALARI"],
 
   details:{
@@ -395,6 +397,7 @@ tr: {
     uygTas:{"title": "Dekoratif Taş Uygulaması", "lead": "Şeffaf bağlayıcıyla doğal taş granüllerinden su geçirgen, dekoratif 'taş halı' yüzeyler.", "paras": ["Granül ve bağlayıcı homojen karıştırılıp mala ile serilir; kürlenince kaymaz, bakım gerektirmeyen ve yağmur suyunu geçiren bir yüzey oluşur. Havuz çevresi ve yürüyüş yollarının tercihidir."]},
     uygElastomer:{"title": "Elastomer Sandviç Sistem", "lead": "Elastik çekirdek, elastomer ve renkli EPDM yüzeyden oluşan çift katmanlı spor zemin kurgusu.", "paras": ["Elastomer katman henüz ıslakken EPDM granül serpilir; enerji geri kazanımı ve deformasyon değerleri profesyonel kullanım standartlarına göre ayarlanır."]},
     uygSandvic:{"title": "Sandviç Spor Zemini", "lead": "Stadyum ve üniversite pistleri için sandviç sistem uygulamaları.", "paras": ["Doğru uygulama ve düzenli bakımla uzun hizmet ömrü sunar; aşınan bölgeler lokal onarımla yenilenir, renk kombinasyonları projeye göre kurgulanır."]},
+    uygPadel:{"title": "Padel Kort Uygulaması", "lead": "20 × 10 m padel kortlarında suni çim serimi, ek bandıyla birleştirme ve silis kumu dolgusu.", "paras": ["Kort tamamen kapalı bir hacimdir: arka duvarlar 4 m temperli cam, yan duvarlar 3 m cam ve devamında tel örgüdür; file ortada 0,88 m, direklerde 0,92 m yüksekliğinde olup servis çizgileri fileye 6,95 m mesafeye çekilir. Zemin betonarme veya gözenekli asfalt üzerine kurulur; %0,5–1 eğim ve çevre drenajı su tahliyesini sağlar.", "Suni çim şeritleri alttan ek bandına iki komponentli poliüretan yapıştırıcı ile birleştirilir, ardından 0,2–0,5 mm silis kumu fırçalanarak dolgulanır — monofilament çimde 17–18 kg/m², dokulu çimde 7–8 kg/m² tipik değerlerdir. Kumun düzgün dağılması top hızını, sekmeyi ve ayak tutuşunu doğrudan belirler."]},
     uygEpdm:{"title": "EPDM Granül Uygulaması", "lead": "Renkli EPDM granülle çocuk oyun alanları ve spor sahalarında güvenli, desenli zeminler.", "paras": ["SBR alt katman üzerine EPDM-bağlayıcı karışımı serilir ve düzlenir; katman kalınlığı düşme yüksekliğine göre belirlenir, 24 renkle serbest desen kurgulanır."]},
     uygSu:{"title": "Su Geçirmez Kaplama", "lead": "Çatıdan ıslak hacme; likit membranla ek yeri olmayan su yalıtımı uygulamaları.", "paras": ["Köşe ve süzgeç detayları bantlanır, membran katlar hâlinde uygulanır ve su testiyle doğrulanır; UV gören yüzeyler alifatik son katla korunur."]},
     uygEndustri:{"title": "Endüstriyel Poliüretan ve Epoksi Zeminler", "lead": "Fabrika, depo ve otoparklarda hijyenik, yüke dayanıklı derzsiz zemin uygulamaları.", "paras": ["Kumlama ve astar sonrası self-levelling veya tekstürlü kaplama uygulanır; forklift trafiğine, kimyasallara ve yoğun temizliğe dayanıklı tek parça bir yüzey elde edilir."]},
@@ -470,8 +473,8 @@ tr: {
       props:["1K ve 2K likit membranlar", "Alifatik, UV dayanımlı son katlar", "Düşey yüzeyler için tiksotropik tipler", "Bitüm-poliüretan melez seçenekler"],
       products:[{"t": "Likit Membran Ürün Ailesi", "d": "1K ve 2K poliüretan likit membranlar, astarlar ve alifatik son katlardan oluşan komple yalıtım seti."}] },
     sporSis:{ lead:"Astar, elastik çekirdek, macun ve son kattan oluşan; amatör salonlardan profesyonel atletizm pistlerine ölçeklenen katmanlı spor zemin kurguları.",
-      paras:["Kapalı salonlarda SBR rulo veya yerinde dökme SBR çekirdek üzerine poliüretan self-levelling kaplama ve UV dayanımlı son kat uygulanır; toplam kalınlık kullanım yoğunluğuna göre kurgulanır. Atletizm tarafında sandviç sistem (dökme SBR çekirdek + elastomer + serbest EPDM yüzey) ve tam dökme sistem; su geçirgen combined ve ekonomik sprey kaplama alternatifleriyle tamamlanır.", "Akrilik sistemler sert kortlarda resurfacer, cushion ve dolgulu son kat ile oyun hızının ayarlanmasına imkân verir. Saha çizgileri en son katman olarak uygulanır; yenileme yalnızca son kat boya ile düşük maliyetle yapılır."],
-      areas:["Tenis kortları", "Basketbol ve voleybol", "Kapalı spor salonları", "Atletizm pistleri", "Koşu ve yürüyüş yolları", "Çocuk oyun alanları", "Fitness salonları", "Atış poligonu"],
+      paras:["Kapalı salonlarda SBR rulo veya yerinde dökme SBR çekirdek üzerine poliüretan self-levelling kaplama ve UV dayanımlı son kat uygulanır; toplam kalınlık kullanım yoğunluğuna göre kurgulanır. Atletizm tarafında sandviç sistem (dökme SBR çekirdek + elastomer + serbest EPDM yüzey) ve tam dökme sistem; su geçirgen combined ve ekonomik sprey kaplama alternatifleriyle tamamlanır.", "Akrilik sistemler sert kortlarda resurfacer, cushion ve dolgulu son kat ile oyun hızının ayarlanmasına imkân verir. Saha çizgileri en son katman olarak uygulanır; yenileme yalnızca son kat boya ile düşük maliyetle yapılır.", "Padel kortlarında oyun yüzeyi 20 × 10 m'lik alanda, betonarme veya gözenekli asfalt alt yapı üzerine kurulur: 10–15 mm hav yüksekliğinde suni çim ve 0,2–0,5 mm silis kumu dolgusu. Çim şeritleri ek bandı ve iki komponentli poliüretan çim yapıştırıcısıyla birleştirilir; alt yapıdaki %0,5–1 eğim ile çevre drenajı suyun yüzeyde birikmesini ve yapışma katmanının zarar görmesini önler."],
+      areas:["Tenis kortları", "Basketbol ve voleybol", "Kapalı spor salonları", "Atletizm pistleri", "Padel kortları", "Koşu ve yürüyüş yolları", "Çocuk oyun alanları", "Fitness salonları", "Atış poligonu"],
       props:["Astar → elastik çekirdek → macun → son kat kurgusu", "Sandviç, tam dökme, combined ve sprey varyantları", "Darbe emici SBR/EPDM çekirdek", "Sararmayan alifatik üst kaplamalar", "Son kat ile ekonomik renk ve çizgi yenileme", "Açık ve kapalı alan uygulaması"] },
     endSis:{ lead:"İnce film boyadan epoksi harca; trafik yüküne, hijyen gereksinimine ve bütçeye göre kurgulanan endüstriyel zemin sistemleri.",
       paras:["Hafif trafik için ekonomik epoksi boya; orta ve ağır hizmet için astar, ara kat ve self-levelling kaplamadan oluşan sistemler; ağır yük ve bozuk zeminlerde şap gibi uygulanan epoksi harç takviyesi. Kaymazlık istenen alanlarda son kat tekstüre edilerek portakal kabuğu dokusu verilir.", "Asma kat, otel ve ofislerde yarı-esnek poliüretan sistemler yürüme sesini azaltır; dekoratif projelerde cips, renkli kum ve baskı ara malzemeleriyle butik yüzeyler üretilir. Hastane tipi alanlarda antibakteriyel ve iletken (ESD) seçenekler devreye girer."],
@@ -635,7 +638,7 @@ en: {
   systems:[
     { title:"Sports Flooring Systems",
       desc:"Polyurethane and acrylic based sports flooring systems, configured for indoor or outdoor use according to the specification, the budget and the substrate: a primer, a shock-absorbing SBR/EPDM elastic core, a pore-sealing putty layer, a self-levelling polyurethane coating and a UV-resistant top coat. Applied as liquids, they cure into a monolithic, seamless surface; colours and court markings can be renewed simply by re-applying the top coat.",
-      areas:["Tennis courts","Basketball and volleyball","Indoor sports halls","Athletics tracks","Jogging and walking paths","Children's playgrounds","Fitness gyms","Shooting ranges"],
+      areas:["Tennis courts","Basketball and volleyball","Indoor sports halls","Athletics tracks","Padel courts","Jogging and walking paths","Children's playgrounds","Fitness gyms","Shooting ranges"],
       props:["Layered build-up: primer → elastic core → putty → top coat","Shock-absorbing SBR/EPDM core for athlete safety","Non-yellowing, UV-resistant aliphatic top coats","Sandwich and wet-pour system alternatives","Low-cost colour renewal with a fresh top coat","Indoor and outdoor application"] },
     { title:"Industrial Flooring Systems",
       desc:"Polyurethane and epoxy based systems configured for the intended use: from smooth self-levelling surfaces to anti-slip orange-peel texture, from thin-film floor paints to epoxy mortar for heavy-load areas. The result is a seamless, hygienic, dust-free floor with high mechanical and chemical resistance.",
@@ -658,7 +661,7 @@ en: {
 
   applications:["POLYURETHANE SPORTS FLOORING","PARQUET FLOORING APPLICATION","ACRYLIC SPORTS FLOORS","RUBBER APPLICATION",
     "ATHLETICS TRACK","SYNTHETIC TURF ADHESIVE APPLICATIONS","DECORATIVE STONE APPLICATION","ELASTOMER SANDWICH SYSTEM",
-    "SANDWICH SPORTS FLOORING","EPDM GRANULE APPLICATION","WATERPROOF COATING",
+    "SANDWICH SPORTS FLOORING","PADEL COURT APPLICATION","EPDM GRANULE APPLICATION","WATERPROOF COATING",
     "INDUSTRIAL POLYURETHANE AND EPOXY FLOORS","EPOXY CASTING APPLICATIONS"],
 
   details:{
@@ -671,6 +674,7 @@ en: {
     uygTas:{"title": "Decorative Stone Application", "lead": "Water-permeable, decorative stone-carpet surfaces from natural granules and clear binder.", "paras": ["Granules and binder are mixed homogeneously and laid by trowel; once cured, the surface is slip-resistant, maintenance-free and rain-permeable. The choice for pool surrounds and walkways."]},
     uygElastomer:{"title": "Elastomer Sandwich System", "lead": "A two-layer sports floor build-up of elastic core, elastomer and coloured EPDM surface.", "paras": ["EPDM granules are broadcast while the elastomer layer is still wet; energy return and deformation values are tuned to professional standards."]},
     uygSandvic:{"title": "Sandwich Sports Flooring", "lead": "Sandwich system applications for stadium and university tracks.", "paras": ["Correct application and regular maintenance give a long service life; worn areas are renewed with local repairs and colour schemes follow the project."]},
+    uygPadel:{"title": "Padel Court Application", "lead": "Laying, seaming and sand-filling the artificial turf surface of a 20 × 10 m padel court.", "paras": ["The court is a fully enclosed volume: 4 m tempered glass back walls and 3 m of glass on the sides continuing into mesh; the net stands 0.88 m high at the centre and 0.92 m at the posts, and the service lines are set 6.95 m from the net. The surface is built over reinforced concrete or porous asphalt, with a 0.5–1% fall and perimeter drainage.", "Turf strips are joined from below onto seaming tape with a two-component polyurethane adhesive, then brushed in with 0.2–0.5 mm silica sand — typically 17–18 kg/m² for monofilament turf and 7–8 kg/m² for textured turf. How evenly that sand is spread decides ball speed, bounce and foot grip."]},
     uygEpdm:{"title": "EPDM Granule Application", "lead": "Safe, patterned floors for playgrounds and sports fields with coloured EPDM granules.", "paras": ["The EPDM-binder mix is spread and levelled over an SBR base; layer thickness follows fall height, and 24 colours allow free pattern design."]},
     uygSu:{"title": "Waterproof Coating", "lead": "Seamless liquid-membrane waterproofing applications from roofs to wet areas.", "paras": ["Corner and drain details are taped, the membrane is applied in layers and verified with a water test; UV-exposed surfaces are protected with an aliphatic finish."]},
     uygEndustri:{"title": "Industrial Polyurethane and Epoxy Floors", "lead": "Hygienic, load-bearing seamless floor applications in factories, warehouses and car parks.", "paras": ["After blasting and priming, a self-levelling or textured coating is applied; the result is a monolithic surface resistant to forklift traffic, chemicals and intensive cleaning."]},
@@ -746,8 +750,8 @@ en: {
       props:["1K and 2K liquid membranes", "Aliphatic, UV-resistant finish coats", "Thixotropic grades for vertical surfaces", "Bitumen-polyurethane hybrid options"],
       products:[{"t": "Liquid Membrane Product Family", "d": "A complete waterproofing set of 1K/2K PU liquid membranes, primers and aliphatic finish coats."}] },
     sporSis:{ lead:"Layered sports floor build-ups — primer, elastic core, putty and finish — scaling from amateur halls to professional athletics tracks.",
-      paras:["Indoors, a polyurethane self-levelling coat and UV-resistant finish are applied over an SBR roll or cast-in-place SBR core; total thickness follows the intensity of use. For athletics, the sandwich system (cast SBR core + elastomer + broadcast EPDM surface) and the full-pour system are complemented by the water-permeable combined build-up and the economical spray coating.", "On hard courts, acrylic systems allow the pace of play to be tuned through resurfacer, cushion layers and a filled top coat. Court markings are always the final layer; renewal takes nothing more than a fresh finish coat."],
-      areas:["Tennis courts", "Basketball and volleyball", "Indoor sports halls", "Athletics tracks", "Jogging and walking paths", "Children's playgrounds", "Fitness gyms", "Shooting ranges"],
+      paras:["Indoors, a polyurethane self-levelling coat and UV-resistant finish are applied over an SBR roll or cast-in-place SBR core; total thickness follows the intensity of use. For athletics, the sandwich system (cast SBR core + elastomer + broadcast EPDM surface) and the full-pour system are complemented by the water-permeable combined build-up and the economical spray coating.", "On hard courts, acrylic systems allow the pace of play to be tuned through resurfacer, cushion layers and a filled top coat. Court markings are always the final layer; renewal takes nothing more than a fresh finish coat.", "On padel courts the playing surface is built on a 20 × 10 m area over a reinforced concrete or porous asphalt base: artificial turf with a 10–15 mm pile, filled with 0.2–0.5 mm silica sand. Turf strips are joined with seaming tape and a two-component polyurethane turf adhesive; a 0.5–1% fall in the base plus perimeter drainage keeps water off the surface and protects the bonded layer."],
+      areas:["Tennis courts", "Basketball and volleyball", "Indoor sports halls", "Athletics tracks", "Padel courts", "Jogging and walking paths", "Children's playgrounds", "Fitness gyms", "Shooting ranges"],
       props:["Primer → elastic core → putty → finish build-up", "Sandwich, full-pour, combined and spray variants", "Shock-absorbing SBR/EPDM core", "Non-yellowing aliphatic top coats", "Economical colour and marking renewal", "Indoor and outdoor application"] },
     endSis:{ lead:"Industrial floor systems configured by traffic load, hygiene requirement and budget — from thin-film paint to epoxy mortar.",
       paras:["Economical epoxy paint for light traffic; primer, body coat and self-levelling systems for medium and heavy duty; and screed-like epoxy mortar reinforcement for heavy loads and damaged substrates. Where slip resistance matters, the finish is textured into an orange-peel skin.", "Semi-flexible polyurethane systems reduce footfall noise on mezzanines, hotels and offices; decorative projects use flakes, coloured quartz and printed interlayers for one-off surfaces. Hospital-grade areas call for the antibacterial and conductive (ESD) options."],
@@ -911,7 +915,7 @@ fr: {
   systems:[
     { title:"Systèmes de sols sportifs",
       desc:"Systèmes de sols sportifs à base de polyuréthane et d'acrylique, configurés pour l'intérieur ou l'extérieur selon le cahier des charges, le budget et le support : un primaire, un cœur élastique SBR/EPDM absorbant les chocs, une couche de mastic obturant les pores, un revêtement polyuréthane autolissant et une finition résistante aux UV. Appliqués à l'état liquide, ils forment après séchage une surface monolithique sans joint ; couleurs et tracés de jeu se renouvellent simplement en refaisant la couche de finition.",
-      areas:["Courts de tennis","Basket-ball et volley-ball","Salles de sport couvertes","Pistes d'athlétisme","Parcours de course et de marche","Aires de jeux pour enfants","Salles de fitness","Stands de tir"],
+      areas:["Courts de tennis","Basket-ball et volley-ball","Salles de sport couvertes","Pistes d'athlétisme","Courts de padel","Parcours de course et de marche","Aires de jeux pour enfants","Salles de fitness","Stands de tir"],
       props:["Structure en couches : primaire → cœur élastique → mastic → finition","Cœur SBR/EPDM absorbant les chocs pour la sécurité des sportifs","Finitions aliphatiques résistantes aux UV, non jaunissantes","Alternatives sandwich et systèmes coulés","Renouvellement des couleurs à faible coût par la finition","Usage intérieur et extérieur"] },
     { title:"Systèmes de sols industriels",
       desc:"Systèmes à base de polyuréthane et d'époxy configurés selon l'usage prévu : des surfaces autolissantes lisses à la texture antidérapante « peau d'orange », des peintures de sol en film mince au mortier époxy pour les zones à fortes charges. Résultat : un sol sans joint, hygiénique, sans poussière, à haute résistance mécanique et chimique.",
@@ -934,7 +938,7 @@ fr: {
 
   applications:["SOL SPORTIF POLYURÉTHANE","APPLICATION DE PARQUET","SOLS SPORTIFS ACRYLIQUES","APPLICATION CAOUTCHOUC",
     "PISTE D'ATHLÉTISME","APPLICATIONS D'ADHÉSIF GAZON","APPLICATION PIERRE DÉCORATIVE","SYSTÈME SANDWICH ÉLASTOMÈRE",
-    "SOL SPORTIF SANDWICH","APPLICATION DE GRANULÉS EPDM","REVÊTEMENT ÉTANCHE",
+    "SOL SPORTIF SANDWICH","APPLICATION DE COURT DE PADEL","APPLICATION DE GRANULÉS EPDM","REVÊTEMENT ÉTANCHE",
     "SOLS INDUSTRIELS POLYURÉTHANE ET ÉPOXY","APPLICATIONS DE COULÉE ÉPOXY"],
 
   details:{
@@ -947,6 +951,7 @@ fr: {
     uygTas:{"title": "Application pierre décorative", "lead": "Surfaces « moquette de pierre » drainantes et décoratives en granulats naturels et liant transparent.", "paras": ["Granulats et liant sont mélangés puis étalés à la spatule ; une fois réticulée, la surface est antidérapante, sans entretien et perméable à la pluie. Le choix des abords de piscine."]},
     uygElastomer:{"title": "Système sandwich élastomère", "lead": "Structure sportive à deux couches : noyau élastique, élastomère et surface EPDM colorée.", "paras": ["Les granulés EPDM sont épandus sur l'élastomère encore humide ; retour d'énergie et déformation sont réglés aux standards professionnels."]},
     uygSandvic:{"title": "Sol sportif sandwich", "lead": "Applications du système sandwich pour pistes de stades et d'universités.", "paras": ["Une pose correcte et un entretien régulier assurent une longue durée de vie ; les zones usées se réparent localement, les couleurs suivent le projet."]},
+    uygPadel:{"title": "Application de court de padel", "lead": "Pose, jonction et sablage du gazon synthétique d'un court de padel de 20 × 10 m.", "paras": ["Le court est un volume entièrement clos : fonds en verre trempé de 4 m, côtés en verre sur 3 m prolongés par un grillage ; le filet mesure 0,88 m au centre et 0,92 m aux poteaux, et les lignes de service sont tracées à 6,95 m du filet. La surface repose sur une dalle béton armé ou un enrobé drainant, avec une pente de 0,5 à 1 % et un drainage périphérique.", "Les lés de gazon sont réunis par dessous sur une bande de jonction avec un adhésif polyuréthane bicomposant, puis garnis au balai de sable de silice 0,2–0,5 mm — environ 17–18 kg/m² pour un gazon monofilament et 7–8 kg/m² pour un gazon texturé. La régularité du sablage détermine la vitesse de balle, le rebond et l'accroche."]},
     uygEpdm:{"title": "Application de granulés EPDM", "lead": "Sols sûrs et à motifs pour aires de jeux et terrains, en granulés EPDM colorés.", "paras": ["Le mélange EPDM-liant est étalé et nivelé sur une sous-couche SBR ; l'épaisseur suit la hauteur de chute, et 24 couleurs permettent des motifs libres."]},
     uygSu:{"title": "Revêtement étanche", "lead": "Applications d'étanchéité liquide sans joint, du toit aux pièces humides.", "paras": ["Angles et évacuations sont renforcés à la bande, la membrane appliquée en couches et vérifiée au test d'eau ; les surfaces exposées aux UV reçoivent une finition aliphatique."]},
     uygEndustri:{"title": "Sols industriels polyuréthane et époxy", "lead": "Applications de sols sans joint, hygiéniques et résistants, en usines, entrepôts et parkings.", "paras": ["Après grenaillage et primaire, un autolissant ou un revêtement texturé est appliqué ; on obtient une surface monolithique résistant aux chariots, aux produits chimiques et au nettoyage intensif."]},
@@ -1022,8 +1027,8 @@ fr: {
       props:["Membranes liquides 1K et 2K", "Finitions aliphatiques résistantes aux UV", "Types thixotropes pour surfaces verticales", "Options hybrides bitume-polyuréthane"],
       products:[{"t": "Famille membranes liquides", "d": "Un ensemble complet d'étanchéité : membranes PU 1K/2K, primaires et finitions aliphatiques."}] },
     sporSis:{ lead:"Des structures de sols sportifs en couches — primaire, noyau élastique, mastic et finition — du gymnase amateur à la piste d'athlétisme professionnelle.",
-      paras:["En intérieur, un autolissant polyuréthane et une finition UV-stable sont appliqués sur un rouleau SBR ou un noyau SBR coulé en place ; l'épaisseur totale suit l'intensité d'usage. En athlétisme, le système sandwich (noyau SBR coulé + élastomère + EPDM épandu) et le système full-pour sont complétés par la structure drainante « combined » et le revêtement projeté économique.", "Sur courts durs, les systèmes acryliques permettent de régler la vitesse de jeu via resurfaceur, couches cushion et finition chargée. Le traçage est toujours la dernière couche ; le renouvellement ne demande qu'une nouvelle finition."],
-      areas:["Courts de tennis", "Basket-ball et volley-ball", "Salles de sport couvertes", "Pistes d'athlétisme", "Parcours de course et de marche", "Aires de jeux pour enfants", "Salles de fitness", "Stands de tir"],
+      paras:["En intérieur, un autolissant polyuréthane et une finition UV-stable sont appliqués sur un rouleau SBR ou un noyau SBR coulé en place ; l'épaisseur totale suit l'intensité d'usage. En athlétisme, le système sandwich (noyau SBR coulé + élastomère + EPDM épandu) et le système full-pour sont complétés par la structure drainante « combined » et le revêtement projeté économique.", "Sur courts durs, les systèmes acryliques permettent de régler la vitesse de jeu via resurfaceur, couches cushion et finition chargée. Le traçage est toujours la dernière couche ; le renouvellement ne demande qu'une nouvelle finition.", "Sur les courts de padel, la surface de jeu se construit sur 20 × 10 m au-dessus d'une dalle béton armé ou d'un enrobé drainant : gazon synthétique de 10 à 15 mm de hauteur de fibre, garni de sable de silice 0,2–0,5 mm. Les lés sont réunis par bande de jonction et adhésif polyuréthane bicomposant ; une pente de 0,5 à 1 % et un drainage périphérique évitent la stagnation d'eau et protègent la couche de collage."],
+      areas:["Courts de tennis", "Basket-ball et volley-ball", "Salles de sport couvertes", "Pistes d'athlétisme", "Courts de padel", "Parcours de course et de marche", "Aires de jeux pour enfants", "Salles de fitness", "Stands de tir"],
       props:["Structure primaire → noyau élastique → mastic → finition", "Variantes sandwich, full-pour, combined et projetée", "Noyau SBR/EPDM absorbant les chocs", "Finitions aliphatiques non jaunissantes", "Renouvellement économique des couleurs et tracés", "Usage intérieur et extérieur"] },
     endSis:{ lead:"Systèmes de sols industriels configurés selon le trafic, l'hygiène et le budget — de la peinture en film mince au mortier époxy.",
       paras:["Peinture époxy économique pour trafic léger ; systèmes primaire + couche intermédiaire + autolissant pour service moyen et intensif ; renfort en mortier époxy appliqué comme une chape pour fortes charges et supports dégradés. Où l'antidérapance compte, la finition est texturée en peau d'orange.", "Les systèmes polyuréthane semi-souples réduisent le bruit de pas en mezzanines, hôtels et bureaux ; les projets décoratifs utilisent paillettes, quartz coloré et interlayers imprimés. Les zones de type hospitalier appellent les options antibactériennes et conductrices (ESD)."],
@@ -1187,7 +1192,7 @@ ar: {
   systems:[
     { title:"أنظمة الأرضيات الرياضية",
       desc:"أنظمة أرضيات رياضية على أساس البولي يوريثان والأكريليك، تُكوَّن للمساحات المفتوحة أو المغلقة وفق المواصفات والميزانية وطبيعة الأرضية: برايمر، ثم نواة مرنة من حبيبات SBR/EPDM ممتصة للصدمات، ثم طبقة معجون تسدّ المسام، ثم طلاء بولي يوريثان ذاتي التسوية وطبقة نهائية مقاومة للأشعة فوق البنفسجية. ولأنها تُطبَّق سائلة، تتصلّب في سطح متجانس بلا وصلات؛ وتُجدَّد الألوان وخطوط الملعب بإعادة الطبقة النهائية فقط.",
-      areas:["ملاعب التنس","كرة السلة والكرة الطائرة","الصالات الرياضية المغلقة","مضامير ألعاب القوى","مسارات الجري والمشي","ملاعب الأطفال","صالات اللياقة","ميادين الرماية"],
+      areas:["ملاعب التنس","كرة السلة والكرة الطائرة","الصالات الرياضية المغلقة","مضامير ألعاب القوى","ملاعب البادل","مسارات الجري والمشي","ملاعب الأطفال","صالات اللياقة","ميادين الرماية"],
       props:["تكوين طبقي: برايمر ← نواة مرنة ← معجون ← طبقة نهائية","نواة SBR/EPDM ممتصة للصدمات لسلامة الرياضيين","طبقات نهائية أليفاتية لا تصفرّ ومقاومة للأشعة","بدائل نظام الساندويتش وأنظمة الصب","تجديد الألوان بتكلفة منخفضة عبر الطبقة النهائية","للاستخدام الداخلي والخارجي"] },
     { title:"أنظمة الأرضيات الصناعية",
       desc:"أنظمة على أساس البولي يوريثان والإيبوكسي تُكوَّن وفق الغرض من الاستخدام: من الأسطح ذاتية التسوية الملساء إلى الملمس المانع للانزلاق «قشرة البرتقال»، ومن دهانات الأرضيات رقيقة الطبقة إلى مونة الإيبوكسي لمناطق الأحمال الثقيلة. والنتيجة أرضية بلا وصلات، صحية، لا يتصاعد منها الغبار، وذات مقاومة ميكانيكية وكيميائية عالية.",
@@ -1210,7 +1215,7 @@ ar: {
 
   applications:["أرضيات رياضية بالبولي يوريثان","تطبيق أرضيات الباركيه","أرضيات رياضية أكريليك","تطبيق المطاط",
     "مضمار ألعاب القوى","تطبيقات لاصق العشب الصناعي","تطبيق الحجر الديكوري","نظام ساندويتش إيلاستومر",
-    "أرضية رياضية ساندويتش","تطبيق حبيبات EPDM","طلاء مانع لتسرب المياه",
+    "أرضية رياضية ساندويتش","تطبيق ملعب البادل","تطبيق حبيبات EPDM","طلاء مانع لتسرب المياه",
     "أرضيات صناعية بالبولي يوريثان والإيبوكسي","تطبيقات صب الإيبوكسي"],
 
   details:{
@@ -1223,6 +1228,7 @@ ar: {
     uygTas:{"title": "تطبيق الحجر الديكوري", "lead": "أسطح «سجاد حجر» ديكورية نفوذة للماء من حبيبات طبيعية ورابط شفاف.", "paras": ["تُخلَط الحبيبات مع الرابط وتُفرَش بالمالج؛ وبعد التصلب يصبح السطح مانعًا للانزلاق بلا صيانة ونفوذًا لمياه المطر. خيار محيط المسابح والممرات."]},
     uygElastomer:{"title": "نظام الساندويتش الإيلاستومري", "lead": "تكوين رياضي من طبقتين: نواة مرنة وإيلاستومر وسطح EPDM ملوّن.", "paras": ["تُنثر حبيبات EPDM والإيلاستومر ما يزال رطبًا؛ ويُضبط ارتجاع الطاقة والتشوّه وفق المعايير الاحترافية."]},
     uygSandvic:{"title": "أرضية رياضية ساندويتش", "lead": "تطبيقات نظام الساندويتش لمضامير الملاعب والجامعات.", "paras": ["التطبيق الصحيح والصيانة المنتظمة يمنحان عمرًا طويلًا؛ وتُجدَّد المناطق المتآكلة بإصلاح موضعي وتُكوَّن الألوان وفق المشروع."]},
+    uygPadel:{"title": "تطبيق ملعب البادل", "lead": "فرش العشب الصناعي ووصله وملؤه بالرمل في ملعب بادل بمقاس 20 × 10 م.", "paras": ["الملعب حيّز مغلق بالكامل: جدران خلفية من الزجاج المقسّى بارتفاع 4 م، وجوانب زجاجية بارتفاع 3 م تتبعها شبكة معدنية؛ وارتفاع الشبكة 0.88 م في الوسط و0.92 م عند القوائم، وتُرسم خطوط الإرسال على بعد 6.95 م من الشبكة. ويُنشأ السطح فوق خرسانة مسلّحة أو أسفلت نفوذ بميل 0.5–1٪ مع تصريف محيطي.", "تُوصل شرائح العشب من الأسفل على شريط وصل بلاصق بولي يوريثان ثنائي المكوّن، ثم تُملأ بالفرشاة برمل سيليكا 0.2–0.5 مم — نحو 17–18 كغ/م² للعشب المونوفيلامنت و7–8 كغ/م² للعشب المزخرف. وانتظام توزيع الرمل يحدّد سرعة الكرة وارتدادها وثبات القدم."]},
     uygEpdm:{"title": "تطبيق حبيبات EPDM", "lead": "أرضيات آمنة ومزخرفة لملاعب الأطفال والملاعب الرياضية بحبيبات EPDM ملوّنة.", "paras": ["يُفرَش خليط EPDM والرابط ويُسوَّى فوق طبقة SBR؛ وتُحدَّد السماكة وفق ارتفاع السقوط، و24 لونًا تتيح زخارف حرة."]},
     uygSu:{"title": "طلاء مانع لتسرب المياه", "lead": "تطبيقات عزل مائي بلا وصلات بالغشاء السائل، من الأسطح إلى المساحات الرطبة.", "paras": ["تُقوّى الزوايا وتفاصيل الصرف بالشريط، ويُطبَّق الغشاء طبقات ويُتحقَّق باختبار الماء؛ وتُحمى الأسطح المشمسة بطبقة أليفاتية."]},
     uygEndustri:{"title": "أرضيات صناعية بالبولي يوريثان والإيبوكسي", "lead": "تطبيقات أرضيات صحية بلا وصلات تتحمّل الأحمال في المصانع والمستودعات والمواقف.", "paras": ["بعد السفع والبرايمر يُطبَّق طلاء ذاتي التسوية أو بملمس؛ فنحصل على سطح متجانس يقاوم حركة الرافعات والكيماويات والتنظيف المكثّف."]},
@@ -1298,8 +1304,8 @@ ar: {
       props:["أغشية سائلة 1K و2K", "طبقات نهائية أليفاتية مقاومة للأشعة", "أنواع ثيكسوتروبية للأسطح الرأسية", "خيارات هجينة بيتومين-بولي يوريثان"],
       products:[{"t": "عائلة الأغشية السائلة", "d": "مجموعة عزل كاملة من أغشية PU سائلة 1K/2K وبرايمرات وطبقات نهائية أليفاتية."}] },
     sporSis:{ lead:"تكوينات أرضيات رياضية طبقية — برايمر ونواة مرنة ومعجون وطبقة نهائية — تتدرّج من الصالات الهاوية إلى مضامير ألعاب القوى الاحترافية.",
-      paras:["في الصالات المغلقة يُطبَّق طلاء بولي يوريثان ذاتي التسوية وطبقة نهائية مقاومة للأشعة فوق لفائف SBR أو نواة SBR مصبوبة في الموقع؛ وتُحدَّد السماكة الكلية وفق كثافة الاستخدام. وفي ألعاب القوى يتكامل نظام الساندويتش (نواة SBR مصبوبة + إيلاستومر + سطح EPDM منثور) مع نظام الصب الكامل، والتكوين النفوذ للماء «combined» والطلاء الرشّي الاقتصادي.", "على الملاعب الصلبة تتيح الأنظمة الأكريليكية ضبط سرعة اللعب عبر معيد التسوية وطبقات الوسائد والطبقة المحمّلة. وتُرسَم خطوط الملعب دائمًا كآخر طبقة؛ ويتم التجديد بطبقة نهائية جديدة فقط وبتكلفة منخفضة."],
-      areas:["ملاعب التنس", "كرة السلة والكرة الطائرة", "الصالات الرياضية المغلقة", "مضامير ألعاب القوى", "مسارات الجري والمشي", "ملاعب الأطفال", "صالات اللياقة", "ميادين الرماية"],
+      paras:["في الصالات المغلقة يُطبَّق طلاء بولي يوريثان ذاتي التسوية وطبقة نهائية مقاومة للأشعة فوق لفائف SBR أو نواة SBR مصبوبة في الموقع؛ وتُحدَّد السماكة الكلية وفق كثافة الاستخدام. وفي ألعاب القوى يتكامل نظام الساندويتش (نواة SBR مصبوبة + إيلاستومر + سطح EPDM منثور) مع نظام الصب الكامل، والتكوين النفوذ للماء «combined» والطلاء الرشّي الاقتصادي.", "على الملاعب الصلبة تتيح الأنظمة الأكريليكية ضبط سرعة اللعب عبر معيد التسوية وطبقات الوسائد والطبقة المحمّلة. وتُرسَم خطوط الملعب دائمًا كآخر طبقة؛ ويتم التجديد بطبقة نهائية جديدة فقط وبتكلفة منخفضة.", "أما في ملاعب البادل فيُنشأ سطح اللعب على مساحة 20 × 10 م فوق أساس من الخرسانة المسلّحة أو الأسفلت النفوذ: عشب صناعي بارتفاع وبر 10–15 مم يُملأ برمل سيليكا 0.2–0.5 مم. وتُوصل شرائح العشب بشريط وصل ولاصق بولي يوريثان ثنائي المكوّن؛ ويمنع ميل 0.5–1٪ في الأساس مع تصريف محيطي تجمّع المياه ويحمي طبقة اللصق."],
+      areas:["ملاعب التنس", "كرة السلة والكرة الطائرة", "الصالات الرياضية المغلقة", "مضامير ألعاب القوى", "ملاعب البادل", "مسارات الجري والمشي", "ملاعب الأطفال", "صالات اللياقة", "ميادين الرماية"],
       props:["تكوين برايمر ← نواة مرنة ← معجون ← طبقة نهائية", "بدائل الساندويتش والصب الكامل وcombined والرش", "نواة SBR/EPDM ممتصة للصدمات", "طبقات أليفاتية لا تصفرّ", "تجديد اقتصادي للألوان والخطوط", "للاستخدام الداخلي والخارجي"] },
     endSis:{ lead:"أنظمة أرضيات صناعية تُكوَّن وفق حمل الحركة ومتطلبات النظافة والميزانية — من الدهان رقيق الطبقة إلى مونة الإيبوكسي.",
       paras:["دهان إيبوكسي اقتصادي للحركة الخفيفة؛ وأنظمة من برايمر وطبقة وسطى وطلاء ذاتي التسوية للخدمة المتوسطة والشاقة؛ وتدعيم بمونة إيبوكسي تُطبَّق كطبقة تسوية لمناطق الأحمال الثقيلة والأرضيات المتضررة. وحيث يلزم منع الانزلاق، تُمنَح الطبقة النهائية ملمس قشرة البرتقال.", "الأنظمة البولي يوريثانية شبه المرنة تخفض صوت الخطوات في الطوابق المعلّقة والفنادق والمكاتب؛ وتستخدم المشاريع الديكورية رقائق ورمالًا ملوّنة وطبقات مطبوعة لأسطح فريدة. وفي المناطق ذات الطابع الطبي تُفعَّل الخيارات المضادة للبكتيريا والموصلة (ESD)."],
