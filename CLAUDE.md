@@ -13,7 +13,9 @@ kuralları ve açık işleri buradan öğren.
 
 Leon Kimya (kimya sanayi: yapıştırıcı, bağlayıcı, zemin kaplama, su izolasyonu,
 elektrik izolasyon reçineleri) için **tek sayfalık, dört dilli, statik** kurumsal
-web sitesi. Derleme adımı yok — tarayıcıda çalışan sade HTML/CSS/JS.
+web sitesi. Framework yok — sade HTML/CSS/JS.
+**Derleme adımı var:** `build-pages.py` sayfaları üretir ve içeriği
+Node ile önceden render eder (bkz. bölüm 5 ve 9).
 
 | | |
 |---|---|
@@ -56,7 +58,8 @@ Bu yüzden aşağıdaki kurallar "iyi olur"dan ibaret değil; **ihlal edilmemeli
 
 ### ✅ ÇÖZÜLDÜ — görseller
 
-`assets/img/` altındaki **119 görselin tamamı AI ile yeniden üretildi**
+`assets/img/` altındaki **görsellerin tamamı AI ile yeniden üretildi**
+(120 dosya: 116 WebP + favicon/og görseli)
 (kullanıcı onayı, 06.08.2026). Üçüncü taraf fotoğrafı kalmadı, telif riski
 kapandı. **Yeni görsel gelmeyecek**, bu iş bitti.
 
@@ -90,12 +93,16 @@ Bu yüzden: `robots.txt` → `Disallow: /` ve `build-pages.py` → `NOINDEX = Tr
 
 ```
 index.html / en.html / fr.html / ar.html   ← build-pages.py ÜRETİR, elle düzenleme
+sitemap.xml                               ← build-pages.py ÜRETİR
 assets/
-  i18n.js        İÇERİK. SITE_BASE (dilden bağımsız) + STRINGS (tr/en/fr/ar)
-  split.css      TÜM STİL. Renkler token; hiçbir yerde sabit renk yok
-  split.js       RENDER + davranış (slider, sekme, detay katmanı, mobil menü)
-  build-pages.py 4 dil sayfasını üretir + cache-busting sürüm damgası
-  img/           119 görsel (AI ile üretildi, telif sorunu yok)
+  i18n.js             İÇERİK. SITE_BASE (dilden bağımsız) + STRINGS (tr/en/fr/ar)
+  split.css           TÜM STİL. Renkler token; hiçbir yerde sabit renk yok
+  split.js            buildMarkup() + davranışlar — İKİ MODLU (bkz. bölüm 9)
+  prerender.js        Node: derleme anında markup üretir
+  img-sizes.js        OTOMATİK ÜRETİLİR — görsel ölçüleri (CLS için)
+  build-pages.py      4 dil sayfası + sitemap.xml + sürüm damgası
+  build-img-sizes.py  img-sizes.js'i üretir
+  img/                120 görsel (116 WebP + favicon/og), AI ile üretildi
 yayinla.bat            Tek tık yayın (pull --rebase → build → commit → push → deploy)
 WHATSAPP-KURULUM.md    WhatsApp Business şablon kurulum rehberi
 robots.txt             Şu an Disallow: /
@@ -159,55 +166,41 @@ yanlış numaraya link verilmesini önleyen kasıtlı bir emniyet. Bozma.
 ### ⚠️ YAYINI ASİSTAN YAPAR — kullanıcıya bırakma
 
 Kullanıcı yayın adımlarını elle çalıştırmak istemiyor. Onay aldıktan sonra
-**baştan sona sen yürüt**: `build-pages.py` → commit → `yayinla.bat`.
+**baştan sona sen yürüt**.
 
 ```bash
-python assets/build-pages.py                    # sayfaları üret
-git add -A && git commit -F <mesaj-dosyasi>     # commit
-cmd /c yayinla.bat < nul                        # pull --rebase + push + deploy
+python assets/build-img-sizes.py    # görsel ölçü haritası (görsel eklendiyse)
+python assets/build-pages.py        # 4 sayfa + sitemap.xml (ZORUNLU)
+git add -A && git commit -F <mesaj-dosyasi>
+cmd /c "<tam-yol>\yayinla.bat" < nul
 ```
 
-İki tuzak:
+**Gereksinimler:** Python 3 + Pillow (ölçü okuma) ve **Node.js** (prerender).
+Node yoksa `build-pages.py` hata verip DURUR — sessizce boş gövde üretmez.
+
+### Üç tuzak — hepsi yaşandı
 
 1. **Commit mesajını `-m` ile çok satırlı verme.** PowerShell satır başındaki
    `-` işaretlerini ayrı argüman sanıyor, commit sessizce oluşmuyor.
-   Mesajı bir dosyaya yazıp `git commit -F dosya.txt` kullan. *(yaşandı)*
-2. **`yayinla.bat` sonunda `pause` var.** Etkileşimsiz kabuktan çalıştırırken
-   `< nul` ile besle, yoksa bekler.
+   Mesajı dosyaya yazıp `git commit -F dosya.txt` kullan.
+2. **`yayinla.bat`'ı tam yolla ve `< nul` ile çağır.** Sonunda `pause` var;
+   ayrıca `cmd /c yayinla.bat` çalışma dizinini aktarmıyor.
+3. **`yayinla.bat` başarılı deploy'da bile sıfırdan farklı kod dönebilir.**
+   Çıktıda `Ready` / `Aliased` satırları varsa deploy BAŞARILIDIR; hata
+   Vercel CLI'nin kendi adımına aittir. Betik bunu ekrana da yazıyor.
 
-`yayinla.bat` sırayla: çalışma ağacı temiz mi kontrol → `git pull --rebase` →
-`git push` → `vercel deploy --prod`.
-
-**`pull --rebase` adımını atlama.** Elle `commit → push → deploy` yapıp bu
-adımı atlarsan, başka bir oturumdan commit gelmişse push reddedilir. Betiği
-kullanmak bunu kendiliğinden halleder.
-
-> `build-pages.py`'yi betik ÇALIŞTIRMAZ — düzenlemeden sonra elle çalıştırıp
-> commit'e dahil etmek gerekir. Ağaç kirliyse betik en başta durur ve ne
-> yapılacağını yazar (`git pull --rebase` kirli ağaçta çalışmaz).
-
-> Vercel CLI bir kez sürüm yükseltme sorusu sordu, `npm` bulunamadı ve
-> **başarılı deploy'dan sonra** betik hata verdi. Betiğe `NO_UPDATE_NOTIFIER=1`
-> ve `<nul` eklendi; ayrıca deploy adımı hata dönerse çıktıda `Ready`/`Aliased`
-> satırlarına bakılması gerektiğini söyleyen ayrı bir uyarı basılıyor (09.08.2026).
-
-**Elle:**
-```bash
-git pull --rebase                # once uzaktakini al (yayinla.bat bunu yapar)
-python assets/build-pages.py     # 4 dil sayfasını üretir (ZORUNLU)
-python -m http.server 5173       # yerel önizleme → http://localhost:5173
-git add -A && git commit -m "..." && git push
-vercel deploy --prod             # yayına al
-```
+`yayinla.bat` sırayla: ağaç temiz mi → `git pull --rebase` → `git push` →
+`vercel deploy --prod`. **`pull --rebase` adımını atlama** — başka bir
+oturumdan commit gelmişse push reddedilir.
 
 ### ⚠️ `build-pages.py` çalıştırmayı unutma — nedeni
 
-HTML sayfaları elle düzenlenmez. Ayrıca bu betik `split.css + split.js + i18n.js`
+HTML sayfaları elle düzenlenmez. Betik ayrıca `split.css + split.js + i18n.js`
 içeriğinden SHA-256 alıp `?v=<damga>` üretir. Bu damga **cache-busting** içindir:
 
 Bir kez şu yaşandı → `vercel.json`'da CSS/JS için `max-age=3600` vardı.
 Deploy sonrası **yeni HTML + eski JS** birleşti; eski JS silinmiş bir global'i
-arayıp hata verdi ve **sayfa bembeyaz açıldı.** Daha önce siteyi hiç açmamış
+arayıp hata verdi ve **sayfa bembeyaz açıldı.** Siteyi hiç açmamış
 kullanıcılarda sorun yoktu — bu yüzden teşhis zorlaştı.
 
 Çözüm iki katmanlı, ikisi de yerinde kalmalı:
@@ -217,9 +210,8 @@ kullanıcılarda sorun yoktu — bu yüzden teşhis zorlaştı.
 **Beyaz sayfa görürsen ilk bakacağın yer budur.**
 
 ### Otomatik deploy AKTİF DEĞİL
-Vercel'in GitHub App'i depoya kurulu olmadığı için `git push` tek başına yayına
-almaz; `vercel deploy --prod` gerekir.
-Açmak için: Vercel → Project → Settings → Git → Connect Git Repository.
+Vercel'in GitHub App'i depoya kurulu olmadığı için `git push` tek başına
+yayına almaz. Açmak için: Vercel → Settings → Git → Connect Git Repository.
 
 ---
 
@@ -288,73 +280,83 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - [ ] `SITE_BASE.contact` doldurulması (telefon, e-posta, adres)
       → sonra `contactReady: true`
 - [ ] Yeni alan adı + hosting'e taşınması
-- [ ] `canonical` / `og:url` yeni alan adına çevrilmesi
-- [ ] Aramaya açılması: `build-pages.py` → `NOINDEX = False` **ve** `robots.txt`
-      *(yalnızca yukarıdaki üçü tamamlandıktan sonra)*
+- [ ] `build-pages.py` → `SITE_URL` yeni alan adına çevrilmesi
+      *(canonical, og:url, hreflang, sitemap ve JSON-LD hepsi bundan türer —
+      başka hiçbir yeri elle düzeltmeye gerek yok)*
+- [ ] Aramaya açılması: `NOINDEX = False` **ve** `robots.txt`
+      *(yalnızca yukarıdakiler tamamlandıktan sonra)*
+- [ ] Google Search Console'a `sitemap.xml` tanıtılması
 
 **İçerik**
 - [ ] "Kurumsal" metnindeki `TODO` — kuruluş hikâyesi, kapasite, hedef pazarlar
 - [ ] `SITE_BASE.stats` — gerçek rakamlar (boş olduğu için bant gizli)
 - [ ] Sosyal medya hesapları → `SITE_BASE.social` (boşsa satır hiç görünmez)
+- [ ] JSON-LD'ye telefon/adres eklenmesi → `build-pages.py` içinde `jsonld()`
+      fonksiyonunda TODO olarak hazır. Adres girilince `@type` `Organization`'dan
+      `LocalBusiness`'a yükseltilebilir (Google Haritalar görünürlüğü).
 
 **Teknik**
-- [ ] **Statik HTML'e dönüştürme** — SEO için gerekli, bkz. bölüm 9
-- [ ] Görsel optimizasyonu (WebP + `srcset`)
 - [ ] KVKK aydınlatma metni + çerez bildirimi
 - [ ] Vercel GitHub App bağlantısı (otomatik deploy)
 
 **Kapanmış olanlar** *(tekrar açma)*
-- [x] Görseller — 119'unun tamamı AI ile üretildi, yeni görsel gelmeyecek
-- [x] Logo — `assets/img/logo-dark.png`
+- [x] Görseller — tamamı AI ile üretildi, yeni görsel gelmeyecek
+- [x] Logo — `assets/img/logo-dark.webp`
 - [x] İletişim formu — `formsubmit.co` üzerinden çalışıyor
-- [x] E-katalog — **üretilmeyecek**, karar verildi. `links.catalog` boş kalır,
-      boş olduğu için katalog butonları hiç basılmaz.
+- [x] E-katalog — **üretilmeyecek**, karar verildi
 - [x] Blog — bölüm sayfadan kaldırıldı, yazı üretilmeyecek
+- [x] **Statik HTML / prerender** — bkz. bölüm 9
+- [x] **og / twitter etiketleri + canonical** — dört dilde, `SITE_URL`'den türer
+- [x] **WebP** — 116 dosya, 8.58 MB → 4.74 MB (%47)
+- [x] **Görsel width/height (CLS)** — `img-sizes.js` otomatik üretiliyor
+- [x] **JSON-LD** — Organization şeması, dört dilde
+- [x] **sitemap.xml** — `build-pages.py` üretiyor, 4 adres + hreflang
+- [x] **Temiz URL** — `vercel.json` `cleanUrls`; `.htaccess` Apache'ye ait,
+      Vercel'de geçersiz
 
 ---
 
-## 9. Statik HTML'e dönüştürme (sıradaki teknik iş)
+## 9. Prerender — nasıl çalışıyor
 
-### Sorun
+Sayfa gövdesi artık HTML'de hazır geliyor. Öncesinde ham HTML'de yalnızca
+68 karakter metin vardı ("JavaScript gerektirir"); arama motorları ve link
+önizlemesi yapan botlar (WhatsApp, LinkedIn) sayfayı boş görüyordu.
+Şimdi ~12.000 karakter.
 
-`index.html` ve kardeşleri neredeyse boş: içlerinde `<div id="app"></div>` var,
-gövde içeriğini tarayıcı `split.js`'i çalıştırınca kuruyor. Sonuçları:
-
-- Google JS'i çalıştırıyor ama iki aşamada; render kuyruğu günler sürebilir
-- Bing/Yandex çok daha zayıf render eder
-- WhatsApp / LinkedIn / X link önizlemesi JS **hiç** çalıştırmaz
-- JS yavaşlar veya hata verirse sayfa bomboş kalır
-  *(bu fiilen yaşandı — bkz. bölüm 5, cache/beyaz sayfa olayı)*
-
-`<title>`, `description` ve `hreflang` zaten statik (`build-pages.py` yazıyor);
-eksik olan yalnızca gövde.
-
-### Çözüm ve neyi bozmadığı
-
-Derleme anında JS bir kez çalıştırılır, ürettiği markup HTML'e yazılır.
-
-- **CSS hiç değişmez** — görünüm, renk, yuvarlatma aynı kalır
-- **Animasyonlar çalışmaya devam eder** — slider, sekmeler, reveal, sayaçlar,
-  detay katmanı hepsi tarayıcıda çalışmaya devam eder
-- **Görseller aynı dosyalar** — dokunulmaz
-- Tek fark: içerik JS yüklenmeden önce de görünür
-
-### Gerekli refactor
-
-`split.js` şu an hem markup üretiyor hem davranış bağlıyor. İkisi ayrılmalı:
+### `split.js` iki modlu
 
 ```
-assets/render-markup.js   → yalnızca HTML string üretir (derlemede çalışır)
-assets/behaviors.js       → DOM'a olay bağlar (tarayıcıda çalışır)
+buildMarkup(B, T, LANG, RTL)   → saf fonksiyon, DOM'a dokunmaz, HTML döndürür
+                                  Node'da da çalışır
+[Node ise burada biter: module.exports]
+tarayıcı kısmı                 → #app doluysa markup TEKRAR ÜRETİLMEZ,
+                                  yalnızca davranış bağlanır
 ```
 
-Ayrılmazsa hem derlemede hem tarayıcıda render edilir ve **içerik iki kez basılır.**
+**Neden tek dosya?** Detay katmanı (`#dtl`) çalışma anında HTML üretiyor ve
+`e()`, `ic()`, `label()` yardımcılarını kullanıyor. Dosyayı ikiye bölmek bu
+yardımcıları çoğaltmak demekti.
 
-`build-pages.py` markup üretimini Node ile çağırıp (`node render-markup.js tr`)
-çıktıyı `<div id="app">…</div>` içine gömer. Dört dil için ayrı ayrı.
+### Zincir
 
-> Bu işi **yeni alan adına taşırken** yapmak mantıklı — ikisi de `canonical`
-> ve indeksleme ile ilgili, tek seferde bitirilir.
+```
+build-pages.py → node assets/prerender.js <dil> → markup → <div id="app">…</div>
+```
+
+`prerender.js` `i18n.js` ve `img-sizes.js`'i sahte bir global bağlamda
+yükler (ikisi de `window.` yazıyor, Node'da window yok).
+
+### İki emniyet
+
+1. **Derleme durur:** Node yoksa veya çıktı 5.000 karakterden kısaysa
+   `build-pages.py` hata verip çıkar. Sessizce boş gövde üretmektense
+   hata vermek doğru.
+2. **Tarayıcı emniyet ağı:** prerender bir şekilde oluşmazsa tarayıcı
+   markup'ı kendisi kurar. Boş `#app` ile test edildi, çalışıyor.
+
+### Bozmadıkları
+CSS, animasyonlar (slider, sekme, reveal, sayaç, detay katmanı), görseller —
+hiçbiri değişmedi. Tek fark: içerik JS yüklenmeden önce de görünür.
 
 ---
 
@@ -406,3 +408,15 @@ Ayrılmazsa hem derlemede hem tarayıcıda render edilir ve **içerik iki kez ba
   dizisi boşaltıldı → bu iki pop-up'ta "Öne Çıkan Özellikler" basılmıyor.
   `productImgs` dizileri yeni ürün sayısına göre kısaltıldı.
 - Elenen 40 deneme `_arsiv-varyantlar.zip` içinde (git'e dahil değil, yerelde).
+- **Framework kullanılmadı** (07.08.2026). Astro/Next.js/Tailwind değerlendirildi;
+  tek sayfa × 4 dil için karmaşıklığı gereksiz bulundu. Next.js'in çözdüğü üç şey
+  (prerender, og etiketleri, görsel optimizasyonu) mevcut yapıda ~%90 oranında
+  karşılandı. Eşik: gerçek blog, ürün detay sayfalarının kendi URL'leri, CMS
+  veya sayfa sayısının 15-20'yi geçmesi.
+- **`ChemicalSupplier` şeması kullanılmadı** — schema.org'da böyle bir tip yok;
+  geçersiz tip yazılsaydı Google şemayı tümden yok sayardı. `Organization` seçildi.
+- **Prerender için tek dosya korundu** — `split.js` ikiye bölünmedi, iki modlu
+  yapıldı. Detay katmanı `e()`/`ic()`/`label()` yardımcılarını çalışma anında
+  kullandığı için bölmek çoğaltma anlamına gelirdi.
+- **Bazı görsellerde `alt=""` bilinçli** — slider arka planı ve ürün kutucukları.
+  Yanlarında aynı metin zaten yazılı; WCAG H67 bu durumda boş alt ister.

@@ -1,7 +1,7 @@
 # Leon Kimya — Web Sitesi
 
-Dört dilli (TR / EN / FR / AR), tek sayfalık statik kurumsal site.
-Derleme aracı yok; sade HTML + CSS + JavaScript.
+Dört dilli (TR / EN / FR / AR), tek sayfalık kurumsal site.
+Framework yok — sade HTML + CSS + JavaScript.
 
 | | |
 |---|---|
@@ -10,19 +10,20 @@ Derleme aracı yok; sade HTML + CSS + JavaScript.
 | **Vercel projesi** | `leon-kimya` |
 | **Diller** | TR `/` · EN `/en` · FR `/fr` · AR `/ar` (sağdan sola) |
 
-> ⚠️ **Site şu an aramaya kapalı** (`noindex`). Sebebi ve ne zaman açılacağı
-> için aşağıdaki "Yayına almadan önce" bölümüne bakın.
+> ⚠️ **Site şu an aramaya kapalı.** Sebebi ve ne zaman açılacağı için
+> aşağıdaki "Yayına almadan önce" bölümüne bakın.
 
 ---
 
-## Hızlı başlangıç
+## Açmak
+
+`index.html` dosyasına çift tıklayarak açılır. Doğru sonuç için yerel sunucu:
 
 ```bash
-python assets/build-pages.py
 python -m http.server 5173
 ```
 
-Sonra tarayıcıda `http://localhost:5173/`
+Sonra `http://localhost:5173/`
 
 ---
 
@@ -30,20 +31,22 @@ Sonra tarayıcıda `http://localhost:5173/`
 
 ```
 index.html  en.html  fr.html  ar.html   ← ÜRETİLİR, elle düzenlemeyin
+sitemap.xml                             ← ÜRETİLİR
 assets/
-  i18n.js          Tüm içerik: veriler + dört dilde metinler
-  split.css        Tüm stil (renkler token güdümlü)
-  split.js         Sayfayı oluşturan ve çalıştıran kod
-  build-pages.py   Dil sayfalarını üretir
-  img/             34 görsel
-CLAUDE.md          Yapay zekâ asistanı için proje notları
-robots.txt         Şu an aramaya kapalı
-vercel.json        Önbellek + güvenlik başlıkları
+  i18n.js             Tüm içerik: veriler + dört dilde metinler
+  split.css           Tüm stil
+  split.js            Sayfayı oluşturan ve çalıştıran kod
+  prerender.js        Derleme anında içeriği HTML'e gömer
+  img-sizes.js        ÜRETİLİR — görsel ölçüleri
+  build-pages.py      Dil sayfalarını ve sitemap'i üretir
+  build-img-sizes.py  Görsel ölçü haritasını üretir
+  img/                120 görsel (WebP)
+yayinla.bat           Tek tık yayın
 ```
 
-**Altın kural:** `index.html`, `en.html`, `fr.html`, `ar.html` dosyalarını elle
-düzenlemeyin. Bunlar `build-pages.py` tarafından üretilir; elle yaptığınız
-değişiklik bir sonraki üretimde silinir.
+**Altın kural:** `index.html`, `en.html`, `fr.html`, `ar.html` ve `sitemap.xml`
+dosyalarını elle düzenlemeyin. Bunlar üretilir; elle yaptığınız değişiklik
+bir sonraki üretimde silinir.
 
 ---
 
@@ -51,8 +54,8 @@ değişiklik bir sonraki üretimde silinir.
 
 ### Bir metni değiştirmek
 
-`assets/i18n.js` dosyasını açın → `STRINGS` bölümü → ilgili dil (`tr`, `en`,
-`fr`, `ar`). Metni değiştirip kaydedin, sonra:
+`assets/i18n.js` → `STRINGS` bölümü → ilgili dil (`tr`, `en`, `fr`, `ar`).
+Kaydedin, sonra:
 
 ```bash
 python assets/build-pages.py
@@ -60,27 +63,31 @@ python assets/build-pages.py
 
 ### Sitenin rengini değiştirmek
 
-`assets/build-pages.py` içindeki **`PALETTE`** bloğu tek noktadır. Oradaki
-renkleri değiştirip betiği çalıştırın — tüm site ve dört dil birden değişir.
-
+`assets/build-pages.py` içindeki **`PALETTE`** bloğu tek noktadır.
 Şu anki palet: **Kehribar Çelik** — ana renk `#D97706`
 
 ### Telefon / e-posta / adres eklemek
 
-`assets/i18n.js` → en üstteki `SITE_BASE.contact` bloğu. `TODO` yazan alanları
-doldurun, ardından hemen üstteki satırı değiştirin:
+`assets/i18n.js` → `SITE_BASE.contact`. `TODO` yazan alanları doldurun,
+ardından hemen üstteki satırı değiştirin:
 
 ```js
 contactReady: true,
 ```
 
 > Bu bayrak `false` olduğu sürece site hiçbir telefon/e-posta bağlantısı
-> üretmez — yanlışlıkla eksik veya hatalı numaraya bağlantı verilmesini önler.
+> üretmez — yanlışlıkla eksik numaraya bağlantı verilmesini önler.
 
-### Sosyal medya hesapları eklemek
+### Yeni görsel eklemek
 
-`assets/i18n.js` → `SITE_BASE.social` dizisi. Boş olduğu sürece sosyal medya
-satırı sitede hiç görünmez.
+Görseli `assets/img/` içine koyup şunu çalıştırın:
+
+```bash
+python assets/build-img-sizes.py
+python assets/build-pages.py
+```
+
+İlk betik görselin ölçüsünü okur; bu sayede sayfa görsel yüklenirken zıplamaz.
 
 ---
 
@@ -88,63 +95,70 @@ satırı sitede hiç görünmez.
 
 1. Üst bar — dil seçimi
 2. Yapışkan menü — logo, ürün mega menüsü, "Teklif Alın"
-3. **Hero** — 6 ürün ailesini gezen slider + 4'lü özellik paneli
-4. **Ürünler & Sistemler** — 8'li kutucuk
+3. **Hero** — ürün ailelerini gezen slider + 4'lü özellik paneli
+4. **Ürünler & Sistemler** — kutucuk ızgarası
 5. **Uygulamalar** — 4 kart
 6. **Sistemler** — spor / endüstriyel / su izolasyon sekmeleri
-7. **İhracat** — konteyner ölçüleri + Incoterms 2020 tabloları
-8. **Kurumsal**
-9. **Uygulama alanları** — 14 başlık
-10. **Blog** — 4 kart
-11. **İletişim** — bilgiler + form
-12. Footer
+7. **Kurumsal**
+8. **Uygulama alanları** — 14 başlık, tıklayınca detay açılır
+9. **İletişim** — bilgiler + form (form çalışıyor, e-postaya düşüyor)
+10. **İhracat** — konteyner ölçüleri + Incoterms 2020
+11. Footer
 
 ---
 
 ## Yayına alma
 
+Yayını asistan yürütür. Kendiniz yapmak isterseniz:
+
 ```bash
+python assets/build-img-sizes.py
 python assets/build-pages.py
 git add -A
 git commit -m "değişiklik açıklaması"
-git push
-vercel deploy --prod
 ```
 
-**Otomatik deploy henüz açık değil** — `git push` tek başına siteyi
-güncellemez, `vercel deploy --prod` komutu gerekir.
+Sonra **`yayinla.bat`** dosyasına çift tıklayın.
 
-Açmak isterseniz (tek seferlik): Vercel → Project → Settings → Git →
-**Connect Git Repository** → `blaixs-max/leon-kimya`. Sonrasında sadece
-`git push` yeterli olur.
+**Gereksinim:** Python 3 (+ Pillow) ve Node.js. Node yoksa derleme durur.
+
+> `git push` tek başına siteyi güncellemez — otomatik deploy henüz açık değil.
+> Açmak için: Vercel → Project → Settings → Git → Connect Git Repository.
 
 ---
 
 ## Yayına almadan önce — zorunlu adımlar
 
-Bu şablon başlangıçta başka bir firmanın sitesinden alınan içerikle kurulmuştu.
-İletişim bilgileri, logo, marka adları ve sertifika iddiaları **kaldırıldı**;
-ancak **`assets/img/` altındaki 34 görsel hâlâ o siteye ait**.
+1. **İletişim bilgilerini girin** — `SITE_BASE.contact` + `contactReady: true`
+2. **Alan adını bağlayın** — Vercel → Settings → Domains
+3. **`SITE_URL` değiştirin** — `assets/build-pages.py` içinde.
+   Canonical, og:url, hreflang, sitemap ve yapısal veri hepsi bundan türer;
+   başka hiçbir yeri düzeltmeye gerek yok.
+4. **Aramaya açın** — `NOINDEX = False` + `robots.txt` (hazır sürüm içinde)
+5. **Search Console'a sitemap tanıtın** — `https://alanadi/sitemap.xml`
 
-Bu yüzden site şu an arama motorlarına kapalı. Sırasıyla:
+Şu an kapalı olmasının sebebi: iletişim bilgileri eksik ve alan adı henüz
+kesinleşmedi. Yanlış adres indekslenirse taşıma sonrası düzeltme maliyeti çıkar.
 
-1. **Görselleri değiştirin** — kendi saha ve ürün fotoğraflarınızla
-2. **İletişim bilgilerini girin** — `SITE_BASE.contact` + `contactReady: true`
-3. **Logoyu ekleyin** — `SITE_BASE.brand.logoDark` / `logoWhite`
-4. **Aramaya açın:**
-   - `assets/build-pages.py` → `NOINDEX = False`
-   - `robots.txt` → içindeki hazır sürümle değiştirin
-5. **Alan adını bağlayın** — Vercel → Settings → Domains
+---
+
+## Yapılmış SEO işleri
+
+- Her sayfada özgün başlık, açıklama, canonical
+- Open Graph + Twitter etiketleri (WhatsApp/LinkedIn önizlemesi)
+- Yapısal veri (schema.org Organization)
+- `sitemap.xml` — 4 adres, dört dilin hreflang karşılığıyla
+- Görseller WebP (8.58 MB → 4.74 MB)
+- Tüm görsellerde `width`/`height` — sayfa kayması (CLS) önlendi
+- İçerik HTML'de hazır geliyor (prerender) — arama motorları JS beklemiyor
+- Temiz URL (`/en`, `/en.html` değil)
 
 ---
 
 ## Henüz tamamlanmamış
 
-- İletişim formu bir gönderim servisine bağlı değil
-- Blog yazıları yok (kartlar "Yakında" durumunda)
+- Telefon, e-posta, adres girilmedi
+- İstatistik bandı boş (rakamlar verilmedi, o yüzden gizli)
+- Sosyal medya hesapları girilmedi
 - "Kurumsal" metninde kuruluş hikâyesi bekliyor
-- İstatistik bandı boş (rakamlar girilmedi, o yüzden gizli)
-- Sayfa istemci tarafında oluşturuluyor — SEO için statik HTML'e
-  dönüştürülmesi gerekir
-- Görsel optimizasyonu (WebP + `srcset`)
 - KVKK aydınlatma metni ve çerez bildirimi
