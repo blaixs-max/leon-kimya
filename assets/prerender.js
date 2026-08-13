@@ -33,9 +33,24 @@ if (!kutu.SITE_BASE || !kutu.STRINGS) {
 }
 
 /* split.js Node modunda buildMarkup'ı module.exports'a koyar.
-   `window` tanımlı olduğu için NODE bayrağını ayrıca zorluyoruz. */
+   Bu bağlamda `window` TANIMSIZ bırakılmalı — split.js NODE modunu
+   ondan anlıyor. */
 const splitKutu = { console, module: { exports: {} }, require };
 vm.createContext(splitKutu);
+
+/* Görsel ölçü haritası: dosya `window.IMG_SIZES = {...}` yazıyor ama burada
+   window yok; bare global'e çeviriyoruz ki split.js'in wh() yardımcısı
+   bulabilsin. Bulamazsa width/height yazılmaz — sayfa çalışır ama
+   görsel yüklenirken zıplar. */
+const olcuKod = fs
+  .readFileSync(path.join(ASSETS, "img-sizes.js"), "utf8")
+  .replace("window.IMG_SIZES", "var IMG_SIZES");
+vm.runInContext(olcuKod, splitKutu, { filename: "img-sizes.js" });
+if (!splitKutu.IMG_SIZES) {
+  console.error("HATA: img-sizes.js yüklenemedi (önce build-img-sizes.py çalıştırın)");
+  process.exit(1);
+}
+
 vm.runInContext(fs.readFileSync(path.join(ASSETS, "split.js"), "utf8"), splitKutu, {
   filename: "split.js",
 });

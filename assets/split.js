@@ -21,6 +21,16 @@ const $=(s,r)=>(r||document).querySelector(s), $$=(s,r)=>[...(r||document).query
 const e = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 const n2 = i => String(i+1).padStart(2,"0");
 const has = v => !!(v && String(v).trim());
+
+/* Gorselin gercek olcusunu <img>'e yazar: tarayici yeri onceden ayirir,
+   sayfa gorsel yuklenince ZIPLAMAZ (CLS). Harita otomatik uretilir:
+   assets/build-img-sizes.py -> assets/img-sizes.js */
+const SIZES = (typeof window !== "undefined" && window.IMG_SIZES)
+            || (typeof IMG_SIZES !== "undefined" ? IMG_SIZES : {});
+const wh = src => {
+  const d = SIZES[String(src||"").split("?")[0]];
+  return d ? ` width="${d[0]}" height="${d[1]}"` : "";
+};
 const isExt = h => /^https?:\/\//i.test(h||"");
 const ext   = h => isExt(h) ? ' target="_blank" rel="noopener"' : "";
 const cover = (h,label) => has(h) ? `<a class="lnk-cover" href="${h}"${ext(h)}><span>${e(label)}</span></a>` : "";
@@ -47,7 +57,7 @@ function buildMarkup(B, T, LANG, RTL){
 const link  = (h) => B.links[h] || "#";
 /* --- metin logo: gerçek logo dosyası yoksa kullanılır --- */
 const wordmark = (cls) => has(B.brand.logoDark)
-  ? `<img class="${cls}" src="${cls==="lw"?B.brand.logoWhite:B.brand.logoDark}" alt="${e(B.brand.name)}">`
+  ? `<img class="${cls}" src="${cls==="lw"?B.brand.logoWhite:B.brand.logoDark}"${wh(cls==="lw"?B.brand.logoWhite:B.brand.logoDark)} alt="${e(B.brand.name)}">`
   : `<span class="wordmark ${cls}"><b>LEON</b><i>KİMYA</i></span>`;
 
 /* ---- ÜST BAR — yalnızca gösterilecek bir şey varsa ---- */
@@ -110,7 +120,7 @@ const catBtn = c => {
 const slides = B.categories.map((c,i)=>{
   const s = T.categories[i]||{};
   return `<article class="slide${i===0?" on":""}">
-  <div class="slide__bg"><img src="${c.img}" alt=""></div>
+  <div class="slide__bg"><img src="${c.img}"${wh(c.img)} alt=""></div>
   <div class="slide__in">
     <span class="slide__k">${n2(i)} — ${e(T.ui.productFamily)}</span>
     <h2>${e(s.title)}</h2><h3>${e(s.sub)}</h3><p>${e(s.desc)}</p>
@@ -137,7 +147,7 @@ const tiles = `<section class="tiles" id="urunler"><div class="wrap">
   <div class="sechd sechd--onGray"><h2 class="sechd__t">${e(T.ui.secProducts)}</h2>
     <span class="sechd__s">${e(T.ui.secProductsSub)}</span></div>
   <div class="tilegrid">${B.tiles.map((t,i)=>{const h=link(t.L);
-    return `<a class="tile rev" href="${h}"${ext(h)}><img src="${t.img}" alt="">
+    return `<a class="tile rev" href="${h}"${ext(h)}><img src="${t.img}"${wh(t.img)} alt="">
       <h3>${e(T.tiles[i])}</h3><span class="tile__go">${ic("arrow")}</span></a>`;}).join("")}</div>
 </div></section>`;
 
@@ -145,7 +155,7 @@ const tiles = `<section class="tiles" id="urunler"><div class="wrap">
 const vids = `<section class="vids"><div class="wrap">
   <div class="sechd"><h2 class="sechd__t">${e(T.ui.secVideo)}</h2><span class="sechd__s">${e(T.ui.secVideoSub)}</span></div>
   <div class="vidgrid">${B.videos.map((v,i)=>{const s=T.videos[i]||{};const h=link(v.L);
-    return `<figure class="vid rev"><img src="${v.img}" alt="${e(s.title)}" loading="lazy">
+    return `<figure class="vid rev"><img src="${v.img}"${wh(v.img)} alt="${e(s.title)}" loading="lazy">
     <div class="vid__hd"><b>${e(s.title)}</b><span>${e(s.sub)}</span></div>
     ${cover(h,s.title)}</figure>`;}).join("")}</div>
 </div></section>`;
@@ -156,8 +166,8 @@ const sys = `<section class="sys" id="sistemler"><div class="wrap">
   <div class="systabs">${B.systems.map((s,i)=>`<button class="${i===0?"on":""}" data-t="${s.id}"><b>${n2(i)}</b>${e(T.systems[i].title)}</button>`).join("")}</div>
   ${B.systems.map((s,i)=>{const t=T.systems[i];
     return `<div class="syspanel${i===0?" on":""}" data-p="${s.id}">
-    <div><figure class="syspanel__fig"><img src="${s.img}" alt="${e(t.title)}" loading="lazy"></figure>
-      <div class="syspanel__th">${s.gallery.map(g=>`<img src="${g}" alt="" loading="lazy">`).join("")}</div></div>
+    <div><figure class="syspanel__fig"><img src="${s.img}"${wh(s.img)} alt="${e(t.title)}" loading="lazy"></figure>
+      <div class="syspanel__th">${s.gallery.map(g=>`<img src="${g}"${wh(g)} alt="${e(t.title)}" loading="lazy">`).join("")}</div></div>
     <div><h3>${e(t.title)}</h3><p>${e(t.desc)}</p>
       <h4>${e(T.ui.applicationAreas)}</h4><ul class="chips">${t.areas.map(a=>`<li>${e(a)}</li>`).join("")}</ul>
       <h4>${e(T.ui.systemProducts)}</h4><ul class="dots">${t.props.map(p=>`<li>${e(p)}</li>`).join("")}</ul>
@@ -232,7 +242,7 @@ const exportSec = `<section class="exp" id="ihracat"><div class="wrap">
 </div></section>`;
 
 const about = `<section class="about" id="kurumsal"><div class="wrap about__in">
-  <figure class="about__fig rev"><img src="${B.aboutImage}" alt="${e(T.about.title)}" loading="lazy"></figure>
+  <figure class="about__fig rev"><img src="${B.aboutImage}"${wh(B.aboutImage)} alt="${e(T.about.title)}" loading="lazy"></figure>
   <div><p class="about__k">${e(T.ui.corporateKicker)}</p><h2>${e(T.about.title)}</h2>
     <p>${e(T.about.lead)}</p>${T.about.paras.map(p=>`<p>${e(p)}</p>`).join("")}</div>
 </div></section>` + statsHtml;
@@ -241,7 +251,7 @@ const apps = `<section class="apps" id="uygulamalar"><div class="wrap">
   <div class="sechd sechd--onGray"><h2 class="sechd__t">${e(T.ui.secApps)}</h2>
     <span class="sechd__s">${e(T.ui.secAppsSub)}</span></div>
   <div class="appgrid">${B.applications.map((a,i)=>{const h=link(a.L);
-    return `<figure class="app rev"><img src="${a.img}" alt="${e(T.applications[i])}" loading="lazy">
+    return `<figure class="app rev"><img src="${a.img}"${wh(a.img)} alt="${e(T.applications[i])}" loading="lazy">
     <figcaption><b>${n2(i)}</b><span>${e(T.applications[i])}</span></figcaption>${cover(h,T.applications[i])}</figure>`;}).join("")}</div>
 </div></section>`;
 
@@ -348,7 +358,7 @@ if (!app.firstElementChild) app.innerHTML = buildMarkup(B, T, LANG, RTL);
     const kicker = d.app ? label("applications") : T.ui.productFamily;
     return `<div class="dtl__panel" role="dialog" aria-modal="true" aria-label="${e(title)}">
       <button class="dtl__x" aria-label="${e(T.ui.close)}">&times;</button>
-      <figure class="dtl__hero"><img src="${d.img}" alt="${e(title)}"></figure>
+      <figure class="dtl__hero"><img src="${d.img}"${wh(d.img)} alt="${e(title)}"></figure>
       <div class="dtl__body">
         <p class="about__k">${e(kicker)}</p>
         <h2>${e(title)}</h2>
@@ -356,11 +366,11 @@ if (!app.firstElementChild) app.innerHTML = buildMarkup(B, T, LANG, RTL);
         ${(t.paras||[]).map(p=>`<p class="dtl__p">${e(p)}</p>`).join("")}
         ${(t.products||[]).length?`<h4>${e(T.ui.productRange)}</h4><div class="dtl__prods">${t.products.map((pr,i)=>{
           const pi=(d.productImgs||[])[i];
-          return `<article class="dtl__prod">${pi?`<img src="${pi}" alt="${e(pr.t)}" loading="lazy">`:""}<div><h3>${e(pr.t)}</h3><p>${e(pr.d)}</p></div></article>`;
+          return `<article class="dtl__prod">${pi?`<img src="${pi}"${wh(pi)} alt="${e(pr.t)}" loading="lazy">`:""}<div><h3>${e(pr.t)}</h3><p>${e(pr.d)}</p></div></article>`;
         }).join("")}</div>`:""}
         ${(t.areas||[]).length?`<h4>${e(T.ui.applicationAreas)}</h4><ul class="chips">${t.areas.map(a=>`<li>${e(a)}</li>`).join("")}</ul>`:""}
         ${(t.props||[]).length?`<h4>${e(T.ui.keyFeatures)}</h4><ul class="dots">${t.props.map(p=>`<li>${e(p)}</li>`).join("")}</ul>`:""}
-        ${(d.gallery||[]).length?`<div class="dtl__gal">${d.gallery.map(g=>`<img src="${g}" alt="" loading="lazy">`).join("")}</div>`:""}
+        ${(d.gallery||[]).length?`<div class="dtl__gal">${d.gallery.map(g=>`<img src="${g}"${wh(g)} alt="${e(title)}" loading="lazy">`).join("")}</div>`:""}
         <div class="sysbtns"><a class="btn btn--brand" href="#iletisim">${e(T.ui.projectQuote)} ${ic("arrow")}</a></div>
       </div></div>`;
   };

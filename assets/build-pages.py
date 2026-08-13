@@ -72,6 +72,62 @@ OG_IMAGE = "/assets/img/og-image.jpg"      # 1200x630, paylaşım kartı
 # Ayrıca robots.txt dosyasını da güncellemeyi unutmayın.
 NOINDEX = True
 
+def jsonld(p):
+    """Organization semasi.
+
+    NOT: schema.org'da "ChemicalSupplier" diye bir tip YOKTUR; gecersiz tip
+    yazilirsa Google semayi tumden yok sayar. Gecerli olan "Organization".
+    Adres girildiginde LocalBusiness'a yukseltilebilir (Haritalar icin).
+    Telefon/adres bos oldugu surece o alanlar semaya EKLENMEZ — bos veya
+    uydurma iletisim bilgisi yayinlamak yanlis beyandir."""
+    import json as _json
+    d = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Leon Kimya",
+        "url": SITE_URL + ("/" if p["path"] == "/" else p["path"]),
+        "logo": SITE_URL + "/assets/img/logo-dark.webp",
+        "image": SITE_URL + OG_IMAGE,
+        "description": p["desc"],
+        "knowsLanguage": [q["lang"] for q in PAGES],
+    }
+    # TODO: iletisim bilgileri girilince asagidakiler acilacak
+    # d["telephone"] = "+90..."
+    # d["email"] = "info@leonkimya.com"
+    # d["address"] = {"@type": "PostalAddress", "streetAddress": "...",
+    #                 "addressLocality": "...", "addressCountry": "TR"}
+    return _json.dumps(d, ensure_ascii=False, indent=2)
+
+
+def sitemap_yaz():
+    """sitemap.xml uretir. Duz HTML'de otomatik uretilmez; bu yuzden
+    sayfa eklendiginde PAGES listesine yazmak yeterli olsun diye
+    derlemeye baglandi."""
+    satir = []
+    for q in PAGES:
+        loc = SITE_URL + ("/" if q["path"] == "/" else q["path"])
+        alt = "\n".join(
+            '    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>'
+            % (r["lang"], SITE_URL + ("/" if r["path"] == "/" else r["path"]))
+            for r in PAGES
+        )
+        satir.append(
+            "  <url>\n    <loc>%s</loc>\n%s\n"
+            "    <changefreq>monthly</changefreq>\n"
+            "    <priority>%s</priority>\n  </url>" % (loc, alt, "1.0" if q["path"] == "/" else "0.8")
+        )
+    xml = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+        '        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+        + "\n".join(satir)
+        + "\n</urlset>\n"
+    )
+    with io.open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write(xml)
+    return len(PAGES)
+
+
 PAGES = [
   dict(file="index.html", lang="tr", og_locale="tr_TR", dir="ltr", path="/",
        title="Leon Kimya | Yapıştırıcı, Bağlayıcı, Zemin Kaplama ve Su İzolasyon Sistemleri",
@@ -133,6 +189,10 @@ TPL = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?{font}&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/split.css?v={v}">
+
+<script type="application/ld+json">
+{jsonld}
+</script>
 <style>
 /* =============================================================
    LEON KİMYA — KURUMSAL PALET: {palette_name}
@@ -147,6 +207,7 @@ TPL = """<!DOCTYPE html>
 <a class="skip" href="#main">{skip}</a>
 <div id="app">{app}</div>
 <noscript><p style="padding:40px;text-align:center">{noscript}</p></noscript>
+<script src="assets/img-sizes.js?v={v}"></script>
 <script src="assets/i18n.js?v={v}"></script>
 <script src="assets/split.js?v={v}"></script>
 </body>
@@ -173,9 +234,12 @@ for p in PAGES:
         og_locale=p["og_locale"],
         og_image=SITE_URL + OG_IMAGE,
         app=prerender(p["lang"]),
+        jsonld=jsonld(p),
     )
     with io.open(os.path.join(ROOT, p["file"]), "w", encoding="utf-8") as f:
         f.write(body)
     print("yazildi:", p["file"], "(", p["lang"], p["dir"], ")")
 
+n = sitemap_yaz()
+print("sitemap.xml yazildi:", n, "adres")
 print("toplam:", len(PAGES))
