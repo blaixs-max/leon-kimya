@@ -78,8 +78,9 @@ TPL = """<!DOCTYPE html>
 <title>{title}</title>
 <meta name="description" content="{desc}">
 {robots}<meta name="theme-color" content="{brand}">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png?v={v}">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v={v}">
-<link rel="apple-touch-icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png?v={v}">
 {alternates}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?{font}&display=swap" rel="stylesheet">
