@@ -151,9 +151,31 @@ yanlış numaraya link verilmesini önleyen kasıtlı bir emniyet. Bozma.
 
 ## 5. Derleme ve yayın
 
-**Kolay yol:** değişiklikleri commit ettikten sonra `yayinla.bat` çift tıkla.
-Sırayla şunu yapar: çalışma ağacı temiz mi kontrol → `git pull --rebase` →
+### ⚠️ YAYINI ASİSTAN YAPAR — kullanıcıya bırakma
+
+Kullanıcı yayın adımlarını elle çalıştırmak istemiyor. Onay aldıktan sonra
+**baştan sona sen yürüt**: `build-pages.py` → commit → `yayinla.bat`.
+
+```bash
+python assets/build-pages.py                    # sayfaları üret
+git add -A && git commit -F <mesaj-dosyasi>     # commit
+cmd /c yayinla.bat < nul                        # pull --rebase + push + deploy
+```
+
+İki tuzak:
+
+1. **Commit mesajını `-m` ile çok satırlı verme.** PowerShell satır başındaki
+   `-` işaretlerini ayrı argüman sanıyor, commit sessizce oluşmuyor.
+   Mesajı bir dosyaya yazıp `git commit -F dosya.txt` kullan. *(yaşandı)*
+2. **`yayinla.bat` sonunda `pause` var.** Etkileşimsiz kabuktan çalıştırırken
+   `< nul` ile besle, yoksa bekler.
+
+`yayinla.bat` sırayla: çalışma ağacı temiz mi kontrol → `git pull --rebase` →
 `git push` → `vercel deploy --prod`.
+
+**`pull --rebase` adımını atlama.** Elle `commit → push → deploy` yapıp bu
+adımı atlarsan, başka bir oturumdan commit gelmişse push reddedilir. Betiği
+kullanmak bunu kendiliğinden halleder.
 
 > `build-pages.py`'yi betik ÇALIŞTIRMAZ — düzenlemeden sonra elle çalıştırıp
 > commit'e dahil etmek gerekir. Ağaç kirliyse betik en başta durur ve ne
