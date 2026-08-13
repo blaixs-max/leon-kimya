@@ -1,0 +1,56 @@
+/* =============================================================
+   LEON KİMYA — derleme zamanı markup üreteci
+   Kullanım:  node assets/prerender.js <dil>
+   Çıktı   :  #app içine gömülecek HTML (stdout)
+
+   build-pages.py bunu her dil için çağırır. Amaç: sayfanın gövdesi
+   HTML'de hazır gelsin — arama motorları ve link önizlemesi yapan
+   botlar JavaScript çalıştırmadığı için aksi hâlde boş sayfa görürler.
+   ============================================================= */
+const fs = require("fs");
+const path = require("path");
+const vm = require("vm");
+
+const dil = (process.argv[2] || "tr").slice(0, 2);
+const ASSETS = __dirname;
+
+/* i18n.js tarayıcı için yazıldı: window.SITE_BASE / window.STRINGS atar.
+   Node'da window yok, o yüzden sahte bir global veriyoruz. */
+const kutu = { console, module: { exports: {} } };
+kutu.window = kutu;
+vm.createContext(kutu);
+
+function calistir(dosya) {
+  const kod = fs.readFileSync(path.join(ASSETS, dosya), "utf8");
+  vm.runInContext(kod, kutu, { filename: dosya });
+}
+
+calistir("i18n.js");
+
+if (!kutu.SITE_BASE || !kutu.STRINGS) {
+  console.error("HATA: i18n.js SITE_BASE/STRINGS tanımlamadı");
+  process.exit(1);
+}
+
+/* split.js Node modunda buildMarkup'ı module.exports'a koyar.
+   `window` tanımlı olduğu için NODE bayrağını ayrıca zorluyoruz. */
+const splitKutu = { console, module: { exports: {} }, require };
+vm.createContext(splitKutu);
+vm.runInContext(fs.readFileSync(path.join(ASSETS, "split.js"), "utf8"), splitKutu, {
+  filename: "split.js",
+});
+
+const buildMarkup = splitKutu.module.exports.buildMarkup;
+if (typeof buildMarkup !== "function") {
+  console.error("HATA: split.js buildMarkup'ı dışarı vermedi");
+  process.exit(1);
+}
+
+const T = kutu.STRINGS[dil];
+if (!T) {
+  console.error("HATA: bilinmeyen dil: " + dil);
+  process.exit(1);
+}
+
+const RTL = (kutu.SITE_BASE.langs.find((l) => l.lang === dil) || {}).dir === "rtl";
+process.stdout.write(buildMarkup(kutu.SITE_BASE, T, dil, RTL));

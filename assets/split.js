@@ -9,22 +9,21 @@
    boşsa ilgili buton veya bölüm hiç basılmaz.
    ============================================================= */
 (function(){
-const B = window.SITE_BASE;
-const LANG = (document.documentElement.lang || "tr").slice(0,2);
-const T = window.STRINGS[LANG] || window.STRINGS.tr;
-const RTL = document.documentElement.dir === "rtl";
+"use strict";
+/* Bu dosya IKI ortamda calisir:
+   - Node (derleme): buildMarkup() disari verilir, build-pages.py cagirir
+   - Tarayici: markup zaten HTML'de varsa TEKRAR URETMEZ, sadece davranis baglar
+   Prerender bir sebeple uretilmezse tarayici markup'i kendisi kurar (emniyet agi). */
+const NODE = (typeof window === "undefined");
 
+/* ---- saf yardimcilar: hem markup hem davranis tarafi kullanir ---- */
 const $=(s,r)=>(r||document).querySelector(s), $$=(s,r)=>[...(r||document).querySelectorAll(s)];
 const e = s => String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 const n2 = i => String(i+1).padStart(2,"0");
 const has = v => !!(v && String(v).trim());
-
 const isExt = h => /^https?:\/\//i.test(h||"");
 const ext   = h => isExt(h) ? ' target="_blank" rel="noopener"' : "";
-const link  = (h) => B.links[h] || "#";
-/* boş href verilirse bağlantı üretmez */
 const cover = (h,label) => has(h) ? `<a class="lnk-cover" href="${h}"${ext(h)}><span>${e(label)}</span></a>` : "";
-
 const P = {
   phone:'<path d="M4 5c0-1 .8-2 1.8-2h2c.8 0 1.5.6 1.7 1.4l.7 2.8c.2.7-.1 1.4-.7 1.8l-1.4.9a12 12 0 0 0 5 5l.9-1.4c.4-.6 1.1-.9 1.8-.7l2.8.7c.8.2 1.4.9 1.4 1.7v2c0 1-1 1.8-2 1.8C10.6 19 4 12.4 4 5z"/>',
   mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/>',
@@ -41,6 +40,11 @@ const P = {
 };
 const ic=(k,w)=>`<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${w||1.7}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[k]||""}</svg>`;
 
+/* ================= MARKUP URETICI =================
+   Saf fonksiyon: DOM'a dokunmaz, yalnizca HTML string dondurur.
+   Bu sayede Node tarafinda da calisabiliyor. */
+function buildMarkup(B, T, LANG, RTL){
+const link  = (h) => B.links[h] || "#";
 /* --- metin logo: gerçek logo dosyası yoksa kullanılır --- */
 const wordmark = (cls) => has(B.brand.logoDark)
   ? `<img class="${cls}" src="${cls==="lw"?B.brand.logoWhite:B.brand.logoDark}" alt="${e(B.brand.name)}">`
@@ -309,13 +313,25 @@ const ftr = `<footer class="ftr"><div class="wrap">
       <svg class="i" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.55 14.9L2.1 21.9l5.14-1.32A9.94 9.94 0 1 0 12 2Zm0 1.67a8.27 8.27 0 1 1-4.2 15.4l-.3-.18-3.05.78.81-2.96-.2-.31A8.27 8.27 0 0 1 12 3.67Zm-3.1 4.35c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.6.12.17 1.74 2.79 4.3 3.8 2.13.84 2.56.67 3.02.63.46-.04 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.17-.48-.29-.25-.13-1.49-.74-1.72-.82-.23-.08-.4-.13-.57.12-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06a6.8 6.8 0 0 1-2-1.23 7.5 7.5 0 0 1-1.39-1.72c-.14-.25-.01-.39.11-.51.11-.11.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.55-1.39-.77-1.9-.2-.49-.4-.42-.55-.43l-.55-.01Z"/></svg>
     </a>` : ""}<button id="toTop" aria-label="${e(T.ui.toTop)}" hidden>${ic("arrow")}</button></div>`;
 
-document.title = T.meta.title;
-const md = $('meta[name="description"]'); if (md) md.setAttribute("content", T.meta.desc);
+  /* Ihracat bolumu kullanici isteğiyle sayfa sonuna (footer oncesine) alindi */
+  return top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + about + apps + contact + exportSec + `</main>` + ftr +
+    `<div class="dtl" id="dtl" hidden></div>`;
+}
 
-document.getElementById("app").innerHTML =
-  /* İhracat bölümü kullanıcı isteğiyle sayfanın en altına (footer öncesine) taşındı — 05.08.2026 */
-  top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + about + apps + contact + exportSec + `</main>` + ftr +
-  `<div class="dtl" id="dtl" hidden></div>`;
+/* Node ise burada biter: build-pages.py yalnizca markup ister */
+if (NODE) { module.exports = { buildMarkup }; return; }
+
+/* ================= TARAYICI =================
+   Markup prerender edildiyse #app zaten dolu gelir; o zaman uretmeyiz. */
+const B = window.SITE_BASE;
+const LANG = (document.documentElement.lang || "tr").slice(0,2);
+const T = window.STRINGS[LANG] || window.STRINGS.tr;
+const RTL = document.documentElement.dir === "rtl";
+const link  = (h) => B.links[h] || "#";
+const label = k => (T.nav && T.nav[k]) || k;
+
+const app = document.getElementById("app");
+if (!app.firstElementChild) app.innerHTML = buildMarkup(B, T, LANG, RTL);
 
 /* ================= ÜRÜN & SİSTEM DETAY KATMANI =================
    Bağlantılar "#detay/<anahtar>" biçimindedir (bkz. SITE_BASE.links).

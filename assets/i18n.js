@@ -66,8 +66,8 @@ window.SITE_BASE = {
      logoWhite koyu zeminde (footer) basılır — bkz. split.js wordmark(). */
   brand: {
     name: "LEON KİMYA",
-    logoDark: "assets/img/logo-dark.png",
-    logoWhite: "assets/img/logo-footer.png"
+    logoDark: "assets/img/logo-dark.webp",
+    logoWhite: "assets/img/logo-footer.webp"
   },
 
   nav: [
@@ -95,65 +95,65 @@ window.SITE_BASE = {
   /* TODO: Tüm görseller GEÇİCİ yer tutucudur ve referans siteden gelmektedir.
      Leon Kimya'nın kendi saha fotoğraflarıyla değiştirilmeden yayına almayın. */
   categories: [
-    { img:"assets/img/cat-parquet-v2.jpg",  L:"parke" },
-    { img:"assets/img/cat-binder-v2.jpg",   L:"dokme" },
-    { img:"assets/img/cat-coating-v2.jpg",  L:"puZemin" },
-    { img:"assets/img/cat-water-v2.jpg",    L:"suUrun" },
-    { img:"assets/img/cat-primer-v2.jpg",   L:"astar" }
+    { img:"assets/img/cat-parquet-v2.webp",  L:"parke" },
+    { img:"assets/img/cat-binder-v2.webp",   L:"dokme" },
+    { img:"assets/img/cat-coating-v2.webp",  L:"puZemin" },
+    { img:"assets/img/cat-water-v2.webp",    L:"suUrun" },
+    { img:"assets/img/cat-primer-v2.webp",   L:"astar" }
   ],
 
   tiles: [
-    { img:"assets/img/tile-parquet-v2.jpg",    L:"parke" },
-    { img:"assets/img/kaucuk-kapak.jpg",     L:"kaucuk" },
-    { img:"assets/img/tile-turf-v2.jpg",       L:"kaucuk" },
-    { img:"assets/img/tile-binder-v2.jpg",     L:"dokme" },
-    { img:"assets/img/tile-water-v2.jpg",      L:"suSis" },
-    { img:"assets/img/tile-industrial-v2.jpg", L:"endSis" },
-    { img:"assets/img/tile-sport-v2.jpg",      L:"sporSis" }
+    { img:"assets/img/tile-parquet-v2.webp",    L:"parke" },
+    { img:"assets/img/kaucuk-kapak.webp",     L:"kaucuk" },
+    { img:"assets/img/tile-turf-v2.webp",       L:"kaucuk" },
+    { img:"assets/img/tile-binder-v2.webp",     L:"dokme" },
+    { img:"assets/img/tile-water-v2.webp",      L:"suSis" },
+    { img:"assets/img/tile-industrial-v2.webp", L:"endSis" },
+    { img:"assets/img/tile-sport-v2.webp",      L:"sporSis" }
   ],
 
   videos: [
-    { img:"assets/img/sys-sport2-v2.jpg",   L:"uygulama" },
-    { img:"assets/img/ind-service.jpg",  L:"endSis" },
-    { img:"assets/img/vid-membrane-v2.jpg", L:"suSis" },
-    { img:"assets/img/vid-parquet-v2.jpg",  L:"parke" }
+    { img:"assets/img/sys-sport2-v2.webp",   L:"uygulama" },
+    { img:"assets/img/ind-service.webp",  L:"endSis" },
+    { img:"assets/img/vid-membrane-v2.webp", L:"suSis" },
+    { img:"assets/img/vid-parquet-v2.webp",  L:"parke" }
   ],
 
   featLinks: ["tarihce", "urunler", "uygulama", "sistemler"],
 
-  heroImage: "assets/img/ind-apply.jpg",
-  aboutImage: "assets/img/corp-plant-v2.jpg",
+  heroImage: "assets/img/ind-apply.webp",
+  aboutImage: "assets/img/corp-plant-v2.webp",
 
   /* TODO: Leon Kimya'nın gerçek rakamları girilene kadar boş.
      Boş olduğu sürece istatistik bandı görünmez. */
   stats: [],
 
   systems: [
-    { id:"spor", L:"sporSis", img:"assets/img/sys-sport2-v2.jpg",
-      gallery:["assets/img/sport-tennis.jpg","assets/img/sys-padel.jpg","assets/img/tile-sport-v2.jpg","assets/img/sport-gym.jpg","assets/img/app-turf-v2.jpg"] },
-    { id:"endustriyel", L:"endSis", img:"assets/img/ind-apply.jpg",
-      gallery:["assets/img/ind-texture.jpg","assets/img/ind-roller.jpg","assets/img/ind-machines.jpg","assets/img/tile-industrial-v2.jpg"] },
-    { id:"su", L:"suSis", img:"assets/img/water-main-v2.jpg",
-      gallery:["assets/img/water-app1.jpg","assets/img/water-app2.jpg","assets/img/water-app3.jpg","assets/img/vid-membrane-v2.jpg"] }
+    { id:"spor", L:"sporSis", img:"assets/img/sys-sport2-v2.webp",
+      gallery:["assets/img/sport-tennis.webp","assets/img/sys-padel.webp","assets/img/tile-sport-v2.webp","assets/img/sport-gym.webp","assets/img/app-turf-v2.webp"] },
+    { id:"endustriyel", L:"endSis", img:"assets/img/ind-apply.webp",
+      gallery:["assets/img/ind-texture.webp","assets/img/ind-roller.webp","assets/img/ind-machines.webp","assets/img/tile-industrial-v2.webp"] },
+    { id:"su", L:"suSis", img:"assets/img/water-main-v2.webp",
+      gallery:["assets/img/water-app1.webp","assets/img/water-app2.webp","assets/img/water-app3.webp","assets/img/vid-membrane-v2.webp"] }
   ],
 
   why: [ {icon:"star"},{icon:"chip"},{icon:"factory"},{icon:"users"},{icon:"truck"},{icon:"shield"} ],
 
   applications: [
-    { img:"assets/img/sport-gym.jpg",     L:"uygSporPu" },
-    { img:"assets/img/app-parquet-v2.jpg",   L:"uygParke" },
-    { img:"assets/img/sport-tennis2.jpg", L:"uygAkrilik" },
-    { img:"assets/img/app-rubber-v2.jpg",    L:"uygKaucuk" },
-    { img:"assets/img/sys-sport2-v2.jpg",    L:"uygAtletizm" },
-    { img:"assets/img/app-turf-v2.jpg",      L:"uygCim" },
-    { img:"assets/img/app-stone-v2.jpg",     L:"uygTas" },
-    { img:"assets/img/sport-05.jpg",      L:"uygElastomer" },
-    { img:"assets/img/vid-track2-v2.jpg",    L:"uygSandvic" },
-    { img:"assets/img/app-padel.jpg",     L:"uygPadel" },
-    { img:"assets/img/app-playground-v2.jpg",L:"uygEpdm" },
-    { img:"assets/img/water-app3.jpg",    L:"uygSu" },
-    { img:"assets/img/ind-hall.jpg",      L:"uygEndustri" },
-    { img:"assets/img/app-resin-v2.jpg",     L:"uygDokum" }
+    { img:"assets/img/sport-gym.webp",     L:"uygSporPu" },
+    { img:"assets/img/app-parquet-v2.webp",   L:"uygParke" },
+    { img:"assets/img/sport-tennis2.webp", L:"uygAkrilik" },
+    { img:"assets/img/app-rubber-v2.webp",    L:"uygKaucuk" },
+    { img:"assets/img/sys-sport2-v2.webp",    L:"uygAtletizm" },
+    { img:"assets/img/app-turf-v2.webp",      L:"uygCim" },
+    { img:"assets/img/app-stone-v2.webp",     L:"uygTas" },
+    { img:"assets/img/sport-05.webp",      L:"uygElastomer" },
+    { img:"assets/img/vid-track2-v2.webp",    L:"uygSandvic" },
+    { img:"assets/img/app-padel.webp",     L:"uygPadel" },
+    { img:"assets/img/app-playground-v2.webp",L:"uygEpdm" },
+    { img:"assets/img/water-app3.webp",    L:"uygSu" },
+    { img:"assets/img/ind-hall.webp",      L:"uygEndustri" },
+    { img:"assets/img/app-resin-v2.webp",     L:"uygDokum" }
   ],
 
   /* Blog bölümü kullanıcı isteğiyle kaldırıldı (05.08.2026). */
@@ -214,37 +214,37 @@ window.SITE_BASE = {
      nav: başlık için T.nav anahtarı; img: kapak; gallery: küçük görseller.
      Metinler STRINGS.<dil>.details altında aynı anahtarla tutulur. */
   details: {
-    "uygSporPu": {"app": true, "img": "assets/img/sport-gym.jpg", "gallery": ["assets/img/tile-sport-v2.jpg", "assets/img/sys-sport2-v2.jpg", "assets/img/vid-track2-v2.jpg"]},
-    "uygParke": {"app": true, "img": "assets/img/app-parquet-v2.jpg", "gallery": ["assets/img/vid-parquet-v2.jpg", "assets/img/cat-parquet-v2.jpg", "assets/img/tile-parquet-v2.jpg"]},
-    "uygAkrilik": {"app": true, "img": "assets/img/sport-tennis2.jpg", "gallery": ["assets/img/sport-tennis.jpg"]},
-    "uygKaucuk": {"app": true, "img": "assets/img/app-rubber-v2.jpg", "gallery": ["assets/img/rubber-tiles.jpg", "assets/img/tile-rubber-v2.jpg", "assets/img/sport-gym.jpg"]},
-    "uygAtletizm": {"app": true, "img": "assets/img/sys-sport2-v2.jpg", "gallery": ["assets/img/vid-track2-v2.jpg"]},
-    "uygCim": {"app": true, "img": "assets/img/app-turf-v2.jpg", "gallery": ["assets/img/tile-turf-v2.jpg", "assets/img/prod-kaucuk-05.jpg"]},
-    "uygTas": {"app": true, "img": "assets/img/app-stone-v2.jpg", "gallery": ["assets/img/stone-sample.jpg"]},
-    "uygElastomer": {"app": true, "img": "assets/img/sport-05.jpg", "gallery": ["assets/img/vid-track2-v2.jpg", "assets/img/sys-sport2-v2.jpg"]},
-    "uygSandvic": {"app": true, "img": "assets/img/vid-track2-v2.jpg", "gallery": ["assets/img/sys-sport2-v2.jpg"]},
-    "uygPadel": {"app": true, "img": "assets/img/app-padel.jpg", "gallery": ["assets/img/sys-padel.jpg", "assets/img/app-padel-02.jpg"]},
-    "uygEpdm": {"app": true, "img": "assets/img/app-playground-v2.jpg", "gallery": ["assets/img/epdm-insitu.jpg", "assets/img/tile-binder-v2.jpg", "assets/img/cat-binder-v2.jpg"]},
-    "uygSu": {"app": true, "img": "assets/img/water-app3.jpg", "gallery": ["assets/img/water-main-v2.jpg", "assets/img/water-app1.jpg", "assets/img/water-app2.jpg", "assets/img/vid-membrane-v2.jpg", "assets/img/tile-water-v2.jpg"]},
-    "uygEndustri": {"app": true, "img": "assets/img/ind-hall.jpg", "gallery": ["assets/img/ind-apply.jpg", "assets/img/ind-texture.jpg", "assets/img/ind-roller.jpg", "assets/img/ind-machines.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/ind-service.jpg"]},
-    "uygDokum": {"app": true, "img": "assets/img/app-resin-v2.jpg", "gallery": ["assets/img/resin-table.jpg", "assets/img/resin-wave.jpg", "assets/img/tile-resin-v2.jpg"]},
-    "parke": {"nav": "parquetAdh", "img": "assets/img/cat-parquet-v2.jpg", "gallery": ["assets/img/vid-parquet-v2.jpg", "assets/img/app-parquet-v2.jpg", "assets/img/tile-parquet-v2.jpg"], "productImgs": ["assets/img/prod-parke-01.jpg", "assets/img/prod-parke-02-v2.jpg", "assets/img/prod-parke-03.jpg"]},
-    "pvc": {"nav": "pvcAdh", "img": "assets/img/pvc-apply.jpg", "gallery": ["assets/img/pvc-hall.jpg"], "productImgs": ["assets/img/prod-pvc-01-v2.jpg"]},
-    "kaucuk": {"nav": "rubberTurfAdh", "img": "assets/img/kaucuk-kapak.jpg", "gallery": ["assets/img/rubber-tiles.jpg", "assets/img/app-rubber-v2.jpg", "assets/img/app-turf-v2.jpg", "assets/img/tile-turf-v2.jpg"], "productImgs": ["assets/img/prod-kaucuk-01-v2.jpg", "assets/img/prod-kaucuk-02-v2.jpg", "assets/img/prod-kaucuk-03-v2.jpg", "assets/img/prod-kaucuk-04-v2.jpg", "assets/img/prod-kaucuk-05.jpg", "assets/img/rubber-tiles.jpg", "assets/img/sport-gym.jpg"]},
-    "filtre": {"nav": "filterAdh", "img": "assets/img/ind-machines.jpg", "gallery": [], "productImgs": ["assets/img/prod-filtre-01-v2.jpg", "assets/img/prod-filtre-02-v2.jpg", "assets/img/prod-filtre-02-v2.jpg"]},
-    "dokme": {"nav": "pourBinder", "img": "assets/img/cat-binder-v2.jpg", "gallery": ["assets/img/epdm-insitu.jpg", "assets/img/tile-binder-v2.jpg", "assets/img/app-playground-v2.jpg"], "productImgs": ["assets/img/prod-binder-01-v3.jpg", "assets/img/prod-binder-01-v3.jpg", "assets/img/prod-binder-02-v3.jpg"]},
-    "press": {"nav": "pressBinder", "img": "assets/img/rubber-tiles.jpg", "gallery": ["assets/img/app-rubber-v2.jpg", "assets/img/sport-gym.jpg"], "productImgs": ["assets/img/prod-binder-01-v3.jpg", "assets/img/prod-binder-02-v3.jpg", "assets/img/rubber-tiles.jpg", "assets/img/app-rubber-v2.jpg"]},
-    "tas": {"nav": "stoneBinder", "img": "assets/img/app-stone-v2.jpg", "gallery": ["assets/img/stone-sample.jpg"], "productImgs": ["assets/img/prod-tas-01-v2.jpg", "assets/img/prod-tas-02-v2.jpg", "assets/img/prod-binder-02-v3.jpg"]},
-    "epdm": {"nav": "epdmGranule", "img": "assets/img/app-playground-v2.jpg", "gallery": ["assets/img/epdm-01.jpg", "assets/img/epdm-02.jpg", "assets/img/epdm-03.jpg", "assets/img/epdm-04.jpg", "assets/img/epdm-05.jpg", "assets/img/epdm-06.jpg", "assets/img/epdm-07.jpg", "assets/img/epdm-08.jpg", "assets/img/epdm-09.jpg", "assets/img/epdm-10.jpg", "assets/img/epdm-11.jpg", "assets/img/epdm-12.jpg", "assets/img/epdm-13.jpg", "assets/img/epdm-14.jpg", "assets/img/epdm-15.jpg", "assets/img/epdm-16.jpg", "assets/img/epdm-17.jpg", "assets/img/epdm-18.jpg", "assets/img/epdm-19.jpg", "assets/img/epdm-20.jpg", "assets/img/epdm-21.jpg", "assets/img/epdm-22.jpg", "assets/img/epdm-23.jpg", "assets/img/epdm-24.jpg"], "productImgs": ["assets/img/app-playground-v2.jpg", "assets/img/epdm-insitu.jpg"]},
-    "puZemin": {"nav": "puCoat", "img": "assets/img/cat-coating-v2.jpg", "gallery": ["assets/img/ind-service.jpg", "assets/img/tile-sport-v2.jpg", "assets/img/ind-apply.jpg"], "productImgs": ["assets/img/prod-pu-01-v2.jpg", "assets/img/prod-pu-02-v2.jpg", "assets/img/prod-pu-03-v2.jpg"]},
-    "akZemin": {"nav": "acCoat", "img": "assets/img/sport-tennis.jpg", "gallery": ["assets/img/sport-tennis2.jpg"], "productImgs": ["assets/img/prod-ak-01-v2.jpg", "assets/img/prod-ak-02-v2.jpg", "assets/img/prod-ak-02-v2.jpg", "assets/img/prod-ak-03-v2.jpg", "assets/img/prod-ak-04-v2.jpg", "assets/img/prod-ak-05-v2.jpg", "assets/img/prod-ak-06-v2.jpg", "assets/img/prod-ak-06-v2.jpg", "assets/img/prod-ak-07.jpg", "assets/img/prod-ak-08.jpg", "assets/img/prod-ak-09.jpg"]},
-    "epZemin": {"nav": "epCoat", "img": "assets/img/ind-apply.jpg", "gallery": ["assets/img/ind-texture.jpg", "assets/img/ind-roller.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/resin-wave.jpg"], "productImgs": ["assets/img/prod-ep-01-v2.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/prod-ep-02-v2.jpg"]},
-    "astar": {"nav": "primers", "img": "assets/img/cat-primer-v2.jpg", "gallery": ["assets/img/ind-apply.jpg"], "productImgs": ["assets/img/cat-primer-v2.jpg", "assets/img/prod-ak-07.jpg", "assets/img/ind-apply.jpg", "assets/img/prod-astar-01-v2.jpg", "assets/img/prod-astar-01-v2.jpg", "assets/img/prod-astar-01-v2.jpg"]},
-    "macun": {"nav": "putties", "img": "assets/img/ind-roller.jpg", "gallery": ["assets/img/ind-texture.jpg"]},
-    "suUrun": {"nav": "waterproofProd", "img": "assets/img/water-main-v2.jpg", "gallery": ["assets/img/water-app1.jpg", "assets/img/water-app2.jpg", "assets/img/water-app3.jpg", "assets/img/tile-water-v2.jpg"], "productImgs": ["assets/img/prod-su-01-v3.jpg"]},
-    "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.jpg", "gallery": ["assets/img/sys-padel.jpg", "assets/img/sport-tennis.jpg", "assets/img/tile-sport-v2.jpg", "assets/img/sport-gym.jpg", "assets/img/vid-track2-v2.jpg"]},
-    "endSis": {"nav": "indSys", "img": "assets/img/ind-apply.jpg", "gallery": ["assets/img/ind-texture.jpg", "assets/img/ind-machines.jpg", "assets/img/tile-industrial-v2.jpg", "assets/img/ind-service.jpg"]},
-    "suSis": {"nav": "waterSys", "img": "assets/img/water-main-v2.jpg", "gallery": ["assets/img/water-app1.jpg", "assets/img/water-app3.jpg", "assets/img/vid-membrane-v2.jpg", "assets/img/tile-water-v2.jpg"]}
+    "uygSporPu": {"app": true, "img": "assets/img/sport-gym.webp", "gallery": ["assets/img/tile-sport-v2.webp", "assets/img/sys-sport2-v2.webp", "assets/img/vid-track2-v2.webp"]},
+    "uygParke": {"app": true, "img": "assets/img/app-parquet-v2.webp", "gallery": ["assets/img/vid-parquet-v2.webp", "assets/img/cat-parquet-v2.webp", "assets/img/tile-parquet-v2.webp"]},
+    "uygAkrilik": {"app": true, "img": "assets/img/sport-tennis2.webp", "gallery": ["assets/img/sport-tennis.webp"]},
+    "uygKaucuk": {"app": true, "img": "assets/img/app-rubber-v2.webp", "gallery": ["assets/img/rubber-tiles.webp", "assets/img/tile-rubber-v2.webp", "assets/img/sport-gym.webp"]},
+    "uygAtletizm": {"app": true, "img": "assets/img/sys-sport2-v2.webp", "gallery": ["assets/img/vid-track2-v2.webp"]},
+    "uygCim": {"app": true, "img": "assets/img/app-turf-v2.webp", "gallery": ["assets/img/tile-turf-v2.webp", "assets/img/prod-kaucuk-05.webp"]},
+    "uygTas": {"app": true, "img": "assets/img/app-stone-v2.webp", "gallery": ["assets/img/stone-sample.webp"]},
+    "uygElastomer": {"app": true, "img": "assets/img/sport-05.webp", "gallery": ["assets/img/vid-track2-v2.webp", "assets/img/sys-sport2-v2.webp"]},
+    "uygSandvic": {"app": true, "img": "assets/img/vid-track2-v2.webp", "gallery": ["assets/img/sys-sport2-v2.webp"]},
+    "uygPadel": {"app": true, "img": "assets/img/app-padel.webp", "gallery": ["assets/img/sys-padel.webp", "assets/img/app-padel-02.webp"]},
+    "uygEpdm": {"app": true, "img": "assets/img/app-playground-v2.webp", "gallery": ["assets/img/epdm-insitu.webp", "assets/img/tile-binder-v2.webp", "assets/img/cat-binder-v2.webp"]},
+    "uygSu": {"app": true, "img": "assets/img/water-app3.webp", "gallery": ["assets/img/water-main-v2.webp", "assets/img/water-app1.webp", "assets/img/water-app2.webp", "assets/img/vid-membrane-v2.webp", "assets/img/tile-water-v2.webp"]},
+    "uygEndustri": {"app": true, "img": "assets/img/ind-hall.webp", "gallery": ["assets/img/ind-apply.webp", "assets/img/ind-texture.webp", "assets/img/ind-roller.webp", "assets/img/ind-machines.webp", "assets/img/tile-industrial-v2.webp", "assets/img/ind-service.webp"]},
+    "uygDokum": {"app": true, "img": "assets/img/app-resin-v2.webp", "gallery": ["assets/img/resin-table.webp", "assets/img/resin-wave.webp", "assets/img/tile-resin-v2.webp"]},
+    "parke": {"nav": "parquetAdh", "img": "assets/img/cat-parquet-v2.webp", "gallery": ["assets/img/vid-parquet-v2.webp", "assets/img/app-parquet-v2.webp", "assets/img/tile-parquet-v2.webp"], "productImgs": ["assets/img/prod-parke-01.webp", "assets/img/prod-parke-02-v2.webp", "assets/img/prod-parke-03.webp"]},
+    "pvc": {"nav": "pvcAdh", "img": "assets/img/pvc-apply.webp", "gallery": ["assets/img/pvc-hall.webp"], "productImgs": ["assets/img/prod-pvc-01-v2.webp"]},
+    "kaucuk": {"nav": "rubberTurfAdh", "img": "assets/img/kaucuk-kapak.webp", "gallery": ["assets/img/rubber-tiles.webp", "assets/img/app-rubber-v2.webp", "assets/img/app-turf-v2.webp", "assets/img/tile-turf-v2.webp"], "productImgs": ["assets/img/prod-kaucuk-01-v2.webp", "assets/img/prod-kaucuk-02-v2.webp", "assets/img/prod-kaucuk-03-v2.webp", "assets/img/prod-kaucuk-04-v2.webp", "assets/img/prod-kaucuk-05.webp", "assets/img/rubber-tiles.webp", "assets/img/sport-gym.webp"]},
+    "filtre": {"nav": "filterAdh", "img": "assets/img/ind-machines.webp", "gallery": [], "productImgs": ["assets/img/prod-filtre-01-v2.webp", "assets/img/prod-filtre-02-v2.webp", "assets/img/prod-filtre-02-v2.webp"]},
+    "dokme": {"nav": "pourBinder", "img": "assets/img/cat-binder-v2.webp", "gallery": ["assets/img/epdm-insitu.webp", "assets/img/tile-binder-v2.webp", "assets/img/app-playground-v2.webp"], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-02-v3.webp"]},
+    "press": {"nav": "pressBinder", "img": "assets/img/rubber-tiles.webp", "gallery": ["assets/img/app-rubber-v2.webp", "assets/img/sport-gym.webp"], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-02-v3.webp", "assets/img/rubber-tiles.webp", "assets/img/app-rubber-v2.webp"]},
+    "tas": {"nav": "stoneBinder", "img": "assets/img/app-stone-v2.webp", "gallery": ["assets/img/stone-sample.webp"], "productImgs": ["assets/img/prod-tas-01-v2.webp", "assets/img/prod-tas-02-v2.webp", "assets/img/prod-binder-02-v3.webp"]},
+    "epdm": {"nav": "epdmGranule", "img": "assets/img/app-playground-v2.webp", "gallery": ["assets/img/epdm-01.webp", "assets/img/epdm-02.webp", "assets/img/epdm-03.webp", "assets/img/epdm-04.webp", "assets/img/epdm-05.webp", "assets/img/epdm-06.webp", "assets/img/epdm-07.webp", "assets/img/epdm-08.webp", "assets/img/epdm-09.webp", "assets/img/epdm-10.webp", "assets/img/epdm-11.webp", "assets/img/epdm-12.webp", "assets/img/epdm-13.webp", "assets/img/epdm-14.webp", "assets/img/epdm-15.webp", "assets/img/epdm-16.webp", "assets/img/epdm-17.webp", "assets/img/epdm-18.webp", "assets/img/epdm-19.webp", "assets/img/epdm-20.webp", "assets/img/epdm-21.webp", "assets/img/epdm-22.webp", "assets/img/epdm-23.webp", "assets/img/epdm-24.webp"], "productImgs": ["assets/img/app-playground-v2.webp", "assets/img/epdm-insitu.webp"]},
+    "puZemin": {"nav": "puCoat", "img": "assets/img/cat-coating-v2.webp", "gallery": ["assets/img/ind-service.webp", "assets/img/tile-sport-v2.webp", "assets/img/ind-apply.webp"], "productImgs": ["assets/img/prod-pu-01-v2.webp", "assets/img/prod-pu-02-v2.webp", "assets/img/prod-pu-03-v2.webp"]},
+    "akZemin": {"nav": "acCoat", "img": "assets/img/sport-tennis.webp", "gallery": ["assets/img/sport-tennis2.webp"], "productImgs": ["assets/img/prod-ak-01-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-03-v2.webp", "assets/img/prod-ak-04-v2.webp", "assets/img/prod-ak-05-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/prod-ak-08.webp", "assets/img/prod-ak-09.webp"]},
+    "epZemin": {"nav": "epCoat", "img": "assets/img/ind-apply.webp", "gallery": ["assets/img/ind-texture.webp", "assets/img/ind-roller.webp", "assets/img/tile-industrial-v2.webp", "assets/img/resin-wave.webp"], "productImgs": ["assets/img/prod-ep-01-v2.webp", "assets/img/tile-industrial-v2.webp", "assets/img/prod-ep-02-v2.webp"]},
+    "astar": {"nav": "primers", "img": "assets/img/cat-primer-v2.webp", "gallery": ["assets/img/ind-apply.webp"], "productImgs": ["assets/img/cat-primer-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/ind-apply.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp"]},
+    "macun": {"nav": "putties", "img": "assets/img/ind-roller.webp", "gallery": ["assets/img/ind-texture.webp"]},
+    "suUrun": {"nav": "waterproofProd", "img": "assets/img/water-main-v2.webp", "gallery": ["assets/img/water-app1.webp", "assets/img/water-app2.webp", "assets/img/water-app3.webp", "assets/img/tile-water-v2.webp"], "productImgs": ["assets/img/prod-su-01-v3.webp"]},
+    "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.webp", "gallery": ["assets/img/sys-padel.webp", "assets/img/sport-tennis.webp", "assets/img/tile-sport-v2.webp", "assets/img/sport-gym.webp", "assets/img/vid-track2-v2.webp"]},
+    "endSis": {"nav": "indSys", "img": "assets/img/ind-apply.webp", "gallery": ["assets/img/ind-texture.webp", "assets/img/ind-machines.webp", "assets/img/tile-industrial-v2.webp", "assets/img/ind-service.webp"]},
+    "suSis": {"nav": "waterSys", "img": "assets/img/water-main-v2.webp", "gallery": ["assets/img/water-app1.webp", "assets/img/water-app3.webp", "assets/img/vid-membrane-v2.webp", "assets/img/tile-water-v2.webp"]}
   }
 };
 
