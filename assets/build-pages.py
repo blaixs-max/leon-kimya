@@ -30,7 +30,7 @@ BRAND = "#D97706"          # ana marka rengi (theme-color olarak da kullanılır
 PALETTE = """
   --brand:{brand}; --brand-d:#B45309; --brand-l:#FCD34D; --brand-xl:#FFFBEB; --brand-on:#FFFFFF;
   --ink:#1C1917; --ink-2:#3B3733; --mut:#78716C; --mut-2:#A8A29E;
-  --line:#E7E5E4; --bg:#FFFFFF; --bg-2:#FAF9F7; --surface:#FFFFFF;
+  --line:#E7E5E4; --bg:#FFFCFA; --bg-2:#FAF8F5; --surface:#FFFFFF;
   --shade:28,25,23;
   --top-bg:#1C1917; --top-fg:#E7E5E4;
   --ftr-bg:#1C1917; --ftr-fg:#D6D3D1; --ftr-head:#FCD34D; --ftr-line:rgba(255,255,255,.12);

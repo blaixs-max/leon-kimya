@@ -85,10 +85,15 @@ body.lock{overflow:hidden}
 .dtl__gal img:hover{transform:scale(1.04)}
 @media (max-width:560px){.dtl{padding:0}.dtl__panel{border-radius:0;min-height:100%}}
 
-/* ---------- bölüm başlığı ---------- */
+/* ---------- bölüm başlığı ----------
+   Orijinal "ince/zarif" düzen: tek yatay çizgi başlığın arkasından geçer,
+   başlığın zemini bölüm zeminiyle aynı boyanarak çizgi kesikmiş gibi görünür.
+   Bu yüzden zemini gri olan bölümlerde --onGray sınıfı gerekir.
+   NOT: başlık artık <h2> (semantik); görünüm birebir aynı. */
 .sechd{text-align:center;margin:0 0 40px;position:relative}
 .sechd__t{display:inline-block;position:relative;padding:0 26px;background:var(--bg);
-  font-size:clamp(18px,2.4vw,24px);font-weight:300;letter-spacing:.28em;text-transform:uppercase;color:var(--mut-2);z-index:1}
+  font-size:clamp(18px,2.4vw,24px);font-weight:300;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--mut-2);z-index:1;margin:0}
 .sechd::before{content:"";position:absolute;left:0;right:0;top:calc(.62em + 2px);height:1px;background:var(--line)}
 .sechd--onGray .sechd__t{background:var(--bg-2)}
 .sechd__s{display:block;margin-top:14px;font-size:15px;letter-spacing:0;text-transform:none;font-weight:400;
@@ -189,8 +194,21 @@ li.open>.drw__sub{display:block}
 .scrim.on{opacity:1}
 
 /* ============ HERO ============ */
-.hero{display:grid;grid-template-columns:minmax(0,1.32fr) minmax(0,1fr);background:var(--bg-2)}
-.slider{position:relative;min-height:min(78vh,600px);overflow:hidden;background:rgb(var(--shade))}
+/* --sld: slider olcek carpani. Tek sayi; slider'in yuksekligi, ic bosluklari
+   ve yazi boyutlari bundan turer. Boyutu degistirmek icin yalnizca burayi
+   duzenleyin. Sutun orani da ayni orana gore hesaplandi:
+   1.32fr = genisligin %56.9'u -> %5 kucuk = %54.05 -> 1.176fr */
+.hero{--sld:.95;--sld-r:clamp(20px,2.6vw,36px);
+  display:grid;grid-template-columns:minmax(0,1.176fr) minmax(0,1fr);background:var(--bg-2)}
+/* Slider köşeleri: overflow:hidden zaten var, bu yüzden slayt görselleri de
+   yuvarlatmayı takip eder. clamp ile dar ekranda kavis küçülür, blok
+   orantısını korur. */
+.slider{position:relative;min-height:min(calc(78vh*var(--sld)),calc(600px*var(--sld)));
+  overflow:hidden;background:rgb(var(--shade));
+  /* dis kenar viewport'a dayandigi icin duz; ic kenar yuvarlak.
+     mantiksal ozellik: RTL'de start/end otomatik yer degistirir */
+  border-start-start-radius:0;border-end-start-radius:0;
+  border-start-end-radius:var(--sld-r);border-end-end-radius:var(--sld-r)}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity .9s var(--ease);display:flex;align-items:center}
 .slide.on{opacity:1}
 .slide__bg{position:absolute;inset:0}
@@ -198,20 +216,20 @@ li.open>.drw__sub{display:block}
 .slide.on .slide__bg img{transform:scale(1)}
 .slide__bg::after{content:"";position:absolute;inset:0;background:
   linear-gradient(100deg,rgba(var(--shade),.88) 0%,rgba(var(--shade),.64) 42%,rgba(var(--shade),.24) 100%)}
-.slide__in{position:relative;z-index:2;padding:clamp(32px,5vw,76px);max-width:660px}
+.slide__in{position:relative;z-index:2;padding:calc(clamp(32px,5vw,76px)*var(--sld));max-width:calc(660px*var(--sld))}
 .slide__k{display:inline-flex;align-items:center;gap:9px;color:var(--brand-on);font-size:12px;font-weight:700;
   letter-spacing:.2em;background:var(--brand);padding:7px 15px;border-radius:999px;margin-bottom:20px}
-.slide h2{font-size:clamp(34px,5vw,64px);font-weight:900;color:var(--hero-ink);letter-spacing:-.035em;line-height:1;
+.slide h2{font-size:calc(clamp(34px,5vw,64px)*var(--sld));font-weight:900;color:var(--hero-ink);letter-spacing:-.035em;line-height:1;
   text-shadow:0 6px 30px rgba(0,0,0,.4)}
-.slide h3{font-size:clamp(18px,2.3vw,32px);font-weight:300;color:color-mix(in srgb,var(--hero-ink) 92%,transparent);
+.slide h3{font-size:calc(clamp(18px,2.3vw,32px)*var(--sld));font-weight:300;color:color-mix(in srgb,var(--hero-ink) 92%,transparent);
   margin:10px 0 20px;letter-spacing:-.01em}
-.slide p{color:color-mix(in srgb,var(--hero-ink) 78%,transparent);font-size:15.5px;max-width:46ch;margin-bottom:26px}
+.slide p{color:color-mix(in srgb,var(--hero-ink) 78%,transparent);font-size:calc(15.5px*var(--sld));max-width:46ch;margin-bottom:calc(26px*var(--sld))}
 .slide__btns{display:flex;gap:12px;flex-wrap:wrap}
-.sld__nav{position:absolute;left:clamp(32px,5vw,76px);bottom:clamp(28px,4vw,44px);z-index:4;display:flex;gap:9px;align-items:center}
+.sld__nav{position:absolute;left:calc(clamp(32px,5vw,76px)*var(--sld));bottom:calc(clamp(28px,4vw,44px)*var(--sld));z-index:4;display:flex;gap:9px;align-items:center}
 .sld__dot{width:30px;height:4px;border-radius:3px;border:0;background:rgba(255,255,255,.32);cursor:pointer;
   transition:.3s var(--ease);padding:0}
 .sld__dot.on{background:var(--brand-l);width:52px}
-.sld__ar{position:absolute;right:clamp(20px,3vw,34px);bottom:clamp(28px,4vw,44px);z-index:4;display:flex;gap:8px}
+.sld__ar{position:absolute;right:calc(clamp(20px,3vw,34px)*var(--sld));bottom:calc(clamp(28px,4vw,44px)*var(--sld));z-index:4;display:flex;gap:8px}
 .sld__ar button{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);
   background:rgba(255,255,255,.08);color:#fff;cursor:pointer;display:grid;place-items:center;
   transition:.26s var(--ease);backdrop-filter:blur(6px)}
@@ -222,7 +240,10 @@ li.open>.drw__sub{display:block}
 /* sağ panel */
 .hpanel{background:var(--bg-2);padding:clamp(26px,3vw,42px) clamp(22px,3vw,40px);
   display:flex;flex-direction:column;gap:26px;justify-content:center}
-.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 18px}
+/* Kartlar hover'da zemin aldığı için boşluk artık kartın PADDING'inde durur,
+   grid gap'inde değil. Negatif yan boşluk, kartın panel kenarına kadar
+   genişlemesini sağlar; metin genişliği eskisiyle aynı kalır. */
+.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-inline:-12px;grid-auto-rows:1fr}
 .feat__i{text-align:center}
 .feat__ic{width:56px;height:56px;margin:0 auto 12px;display:grid;place-items:center;color:var(--brand);
   border-radius:16px;background:var(--surface);box-shadow:var(--sh);transition:.3s var(--ease)}
@@ -456,7 +477,7 @@ body.dark .map iframe{filter:grayscale(1) invert(.92) contrast(.86)}
 .post:focus-within,.app:focus-within,.vid:focus-within{outline:2px solid var(--brand);outline-offset:3px}
 
 /* ozellik paneli artik link */
-.feat__i{display:block;color:inherit;border-radius:var(--r);padding:6px;transition:.26s var(--ease)}
+.feat__i{display:block;color:inherit;border-radius:var(--r-lg);padding:24px 20px;transition:.26s var(--ease)}
 .feat__i:hover{background:color-mix(in srgb,var(--brand) 8%,transparent)}
 
 /* sistem panelindeki buton cifti */
@@ -480,8 +501,8 @@ body.dark .map iframe{filter:grayscale(1) invert(.92) contrast(.86)}
 [dir="rtl"] .btn .i,[dir="rtl"] .post em .i,[dir="rtl"] .tile__go .i{transform:scaleX(-1)}
 [dir="rtl"] .btn:hover .i{transform:scaleX(-1) translateX(3px)}
 [dir="rtl"] .post:hover em .i{transform:scaleX(-1) translateX(4px)}
-[dir="rtl"] .sld__nav{left:auto;right:clamp(32px,5vw,76px)}
-[dir="rtl"] .sld__ar{right:auto;left:clamp(20px,3vw,34px)}
+[dir="rtl"] .sld__nav{left:auto;right:calc(clamp(32px,5vw,76px)*var(--sld))}
+[dir="rtl"] .sld__ar{right:auto;left:calc(clamp(20px,3vw,34px)*var(--sld))}
 [dir="rtl"] .sld__ar button .i{transform:scaleX(-1)}
 [dir="rtl"] .sld__ar button:first-child .i{transform:scaleX(-1) rotate(180deg)}
 [dir="rtl"] .slide__bg::after{background:
@@ -586,4 +607,43 @@ body.dark .map iframe{filter:grayscale(1) invert(.92) contrast(.86)}
 @media (max-width:720px){
   .tbl{font-size:13px;min-width:700px}
   .tbl thead th{position:static}
+}
+
+
+/* ============ STITCH UYARLAMASI ============
+   Kaynak: stitch_leon_kimya_design_system
+   Icerik degismedi; yalnizca yerlesim ve yuzey islemleri. */
+
+/* --- 1) Koyu iletisim bandi + beyaz form karti ---
+   Kose yuvarlatmasi: bant tam genislikte kaldigi icin kose oyuklarindan
+   sayfa zemini gorunur; bu yuzden blok "kesilmis kare" degil, yumusak
+   bir levha gibi durur. Ustteki ve alttaki bolumlerle ayni aileden
+   yuvarlatma kullanildi (--r-xl). */
+.contact{background:var(--ftr-bg);color:var(--ftr-fg);border-radius:var(--r-xl)}
+.contact .about__k{color:var(--brand-l)}
+.contact h2{color:#fff}
+.contact .cinfo b{color:rgba(255,255,255,.5)}
+.contact .cinfo span{color:rgba(255,255,255,.84)}
+.contact .cinfo .i{color:var(--brand)}
+.contact .cinfo a{color:inherit}
+.contact .cinfo a:hover{color:var(--brand-l)}
+.contact .map{border-color:rgba(255,255,255,.14)}
+.contact .map iframe{filter:grayscale(1) invert(.92) contrast(.86)}
+/* form artik koyu zemin uzerinde beyaz kart */
+.contact .form{background:var(--surface);border-color:transparent;box-shadow:var(--sh-lg)}
+
+/* --- 2) Birincil butonda gecen isik seridi --- */
+.btn--brand{position:relative;overflow:hidden}
+.btn--brand::before{content:"";position:absolute;top:0;left:-60%;width:45%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent);
+  transform:skewX(-20deg);transition:transform .6s var(--ease);pointer-events:none}
+.btn--brand:hover::before{transform:skewX(-20deg) translateX(370%)}
+@media (prefers-reduced-motion:reduce){
+  .btn--brand::before{display:none}
+}
+
+/* --- 3) Bolum basligi dar ekranda: harf araligini bir tik daraltip
+       tasmayi onler; ince/zarif karakter korunur --- */
+@media (max-width:600px){
+  .sechd__t{letter-spacing:.18em;padding:0 14px}
 }

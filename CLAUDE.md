@@ -217,6 +217,27 @@ Açmak için: Vercel → Project → Settings → Git → Connect Git Repository
 
 ## 7. Kod kuralları
 
+### ⚠️ DÖRT DİL KURALI — istisnasız
+
+**Yapılan her değişiklik dört dile birden işlemeli.** Bir dilde olup diğerinde
+olmayan hiçbir şey kalmaz: ne stil, ne bölüm, ne metin, ne bağlantı.
+
+Mimari bunu zaten zorluyor — `split.css` ve `split.js` dört dilde ortak,
+`i18n.js` ise dört dilin metnini aynı anahtar yapısında tutuyor. Ama:
+
+1. Yeni bir metin eklerken **dördünü birden** ekle (`tr`, `en`, `fr`, `ar`).
+   Birini atlarsan o dilde anahtar adı ham hâliyle ekrana basılır.
+2. Değişiklikten sonra `python assets/build-pages.py` çalıştır — dört sayfa
+   birden üretilir. Sadece birini elle düzenlemek yanlış.
+3. **Doğrulamayı dört dilde birden yap.** Yalnız TR'ye veya TR+AR'ye bakmak
+   yetmez; Arapça RTL olduğu için farklı davranır, EN/FR metin uzunlukları
+   farklıdır ve taşma yaratabilir.
+
+Değişiklik sonrası kontrol edilecekler: bölüm sayısı, kart/kutucuk sayısı,
+uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
+
+### Diğer kurallar
+
 - Yorumlar **Türkçe**, kısa ve nedene odaklı
 - CSS'te **sabit renk yasak** — her şey `var(--token)`
 - Boş veri = bölüm hiç basılmaz (`has()` yardımcısı). **Bu davranışı bozma.**

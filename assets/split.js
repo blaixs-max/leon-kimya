@@ -130,7 +130,7 @@ const hero = `<section class="hero" id="top">
   </aside></section>`;
 
 const tiles = `<section class="tiles" id="urunler"><div class="wrap">
-  <div class="sechd sechd--onGray"><span class="sechd__t">${e(T.ui.secProducts)}</span>
+  <div class="sechd sechd--onGray"><h2 class="sechd__t">${e(T.ui.secProducts)}</h2>
     <span class="sechd__s">${e(T.ui.secProductsSub)}</span></div>
   <div class="tilegrid">${B.tiles.map((t,i)=>{const h=link(t.L);
     return `<a class="tile rev" href="${h}"${ext(h)}><img src="${t.img}" alt="">
@@ -139,7 +139,7 @@ const tiles = `<section class="tiles" id="urunler"><div class="wrap">
 
 /* video değil, saha görselleri — oynatma ikonu kaldırıldı */
 const vids = `<section class="vids"><div class="wrap">
-  <div class="sechd"><span class="sechd__t">${e(T.ui.secVideo)}</span><span class="sechd__s">${e(T.ui.secVideoSub)}</span></div>
+  <div class="sechd"><h2 class="sechd__t">${e(T.ui.secVideo)}</h2><span class="sechd__s">${e(T.ui.secVideoSub)}</span></div>
   <div class="vidgrid">${B.videos.map((v,i)=>{const s=T.videos[i]||{};const h=link(v.L);
     return `<figure class="vid rev"><img src="${v.img}" alt="${e(s.title)}" loading="lazy">
     <div class="vid__hd"><b>${e(s.title)}</b><span>${e(s.sub)}</span></div>
@@ -147,7 +147,7 @@ const vids = `<section class="vids"><div class="wrap">
 </div></section>`;
 
 const sys = `<section class="sys" id="sistemler"><div class="wrap">
-  <div class="sechd sechd--onGray"><span class="sechd__t">${e(T.ui.secSystems)}</span>
+  <div class="sechd sechd--onGray"><h2 class="sechd__t">${e(T.ui.secSystems)}</h2>
     <span class="sechd__s">${e(T.ui.secSystemsSub)}</span></div>
   <div class="systabs">${B.systems.map((s,i)=>`<button class="${i===0?"on":""}" data-t="${s.id}"><b>${n2(i)}</b>${e(T.systems[i].title)}</button>`).join("")}</div>
   ${B.systems.map((s,i)=>{const t=T.systems[i];
@@ -194,7 +194,7 @@ const incoRows = B.incoterms.map(t=>{
   </tr>`;}).join("");
 
 const exportSec = `<section class="exp" id="ihracat"><div class="wrap">
-  <div class="sechd sechd--onGray"><span class="sechd__t">${e(X.title)}</span>
+  <div class="sechd sechd--onGray"><h2 class="sechd__t">${e(X.title)}</h2>
     <span class="sechd__s">${e(X.sub)}</span></div>
 
   <div class="exp__block" id="konteyner">
@@ -234,7 +234,7 @@ const about = `<section class="about" id="kurumsal"><div class="wrap about__in">
 </div></section>` + statsHtml;
 
 const apps = `<section class="apps" id="uygulamalar"><div class="wrap">
-  <div class="sechd sechd--onGray"><span class="sechd__t">${e(T.ui.secApps)}</span>
+  <div class="sechd sechd--onGray"><h2 class="sechd__t">${e(T.ui.secApps)}</h2>
     <span class="sechd__s">${e(T.ui.secAppsSub)}</span></div>
   <div class="appgrid">${B.applications.map((a,i)=>{const h=link(a.L);
     return `<figure class="app rev"><img src="${a.img}" alt="${e(T.applications[i])}" loading="lazy">
