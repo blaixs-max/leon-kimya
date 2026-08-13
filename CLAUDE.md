@@ -25,7 +25,7 @@ web sitesi. Derleme adımı yok — tarayıcıda çalışan sade HTML/CSS/JS.
 
 ---
 
-## 2. ⚠️ ÖNCE BUNU OKU — üçüncü taraf içerik riski
+## 2. ⚠️ ÖNCE BUNU OKU — devralınan içerik ve indeksleme
 
 ### Neden bu kadar sert kurallar var
 
@@ -54,27 +54,32 @@ Bu yüzden aşağıdaki kurallar "iyi olur"dan ibaret değil; **ihlal edilmemeli
 - ❌ Ürün kodları (POLİNFLEX, POLIN EP HW vb.) → jenerik adlarla değiştirildi
 - ❌ polinkimya.com'a giden tüm bağlantılar → sayfa içi çapalara çevrildi
 
-### ⚠️ HÂLÂ AÇIK OLAN RİSK — görseller
+### ✅ ÇÖZÜLDÜ — görseller
 
-`assets/img/` altındaki **145 görselin tamamı üçüncü taraf kaynaklıdır.**
-Kaynak zamanla değişti; bugünkü durum:
+`assets/img/` altındaki **119 görselin tamamı AI ile yeniden üretildi**
+(kullanıcı onayı, 06.08.2026). Üçüncü taraf fotoğrafı kalmadı, telif riski
+kapandı. **Yeni görsel gelmeyecek**, bu iş bitti.
 
-- Görsellerin çoğu `saraskimya-assets/` arşivinden seçildi
-  (529 dosya, **gitignore'da** — "telifli, git'e girmez")
-- Seçilenler `assets/img/` altında **git'e commit edilmiş** durumda
-- Yani risk çözülmedi, yalnızca **kaynağı değişti**
+`saraskimya-assets/` klasörü diskte duruyor (529 dosya) ama **gitignore'da**
+ve artık kullanılmıyor — yalnızca eski referans arşivi.
 
-Bu yüzden site şu an aramaya kapalı:
+### Site neden hâlâ aramaya kapalı
 
-- `robots.txt` → `Disallow: /`
-- `build-pages.py` → `NOINDEX = True` → tüm sayfalarda `noindex,nofollow`
+Görsel sorunu bitti ama iki gerekçe daha var:
+
+- **İletişim bilgileri eksik** — telefon, e-posta, adres boş; `contactReady:false`
+- **Alan adı taşınacak** — yeni domain + hosting planlanıyor; `canonical`
+  ve `og:url` kesinleşmeden indekslenmesi yanlış adresi kaydettirir
+
+Bu yüzden: `robots.txt` → `Disallow: /` ve `build-pages.py` → `NOINDEX = True`.
 
 ### KURALLAR — asla aykırı davranma
 
 1. Üçüncü tarafa ait telefon / e-posta / WhatsApp / adres / logo / marka /
    sertifika bilgisini **hiçbir gerekçeyle geri ekleme.**
-2. **Kendi görselleri gelmeden `robots.txt` ve `NOINDEX` kaldırılmaz.**
-   Kullanıcı isterse bile önce bu riski hatırlat, sonra kararına uy.
+2. **Aramaya açmadan önce** iletişim bilgileri girilmiş, `contactReady:true`
+   yapılmış ve alan adı kesinleşmiş olmalı. Üçü tamamlanmadan `NOINDEX`
+   ve `robots.txt` değiştirilmez.
 3. Şirket hakkında **doğrulanmamış sayısal iddia üretme** (kuruluş yılı, ihracat
    ülkesi sayısı, ürün adedi, sertifika). Kullanıcı vermeden yazma.
 4. `saraskimya-assets/` ve `_to_delete/` **git'e girmez** — gitignore'u bozma.
@@ -90,7 +95,7 @@ assets/
   split.css      TÜM STİL. Renkler token; hiçbir yerde sabit renk yok
   split.js       RENDER + davranış (slider, sekme, detay katmanı, mobil menü)
   build-pages.py 4 dil sayfasını üretir + cache-busting sürüm damgası
-  img/           145 görsel (GEÇİCİ — bkz. bölüm 2)
+  img/           119 görsel (AI ile üretildi, telif sorunu yok)
 yayinla.bat            Tek tık yayın (pull --rebase → build → commit → push → deploy)
 WHATSAPP-KURULUM.md    WhatsApp Business şablon kurulum rehberi
 robots.txt             Şu an Disallow: /
@@ -229,11 +234,17 @@ Açmak için: Vercel → Project → Settings → Git → Connect Git Repository
 6. **Sistemler** — 3 sekme (spor / endüstriyel / su izolasyon)
 7. **Kurumsal** — görsel + metin
 8. **Uygulama alanları** — 14 kart, her biri detay katmanı açar
-9. **İletişim** — bilgi + form (form backend'e bağlı değil)
+9. **İletişim** — bilgi + form. Koyu kömür bandı, 26px yuvarlak köşe,
+   form beyaz kart. Form **çalışıyor**: `SITE_BASE.formEndpoint` →
+   `formsubmit.co` üzerinden e-postaya düşüyor.
 10. **İhracat** — konteyner ölçüleri + Incoterms 2020
     *(kullanıcı isteğiyle 05.08.2026'da sayfa sonuna, footer öncesine taşındı)*
 11. Footer
 + Yüzen WhatsApp düğmesi · detay katmanı (`#dtl`)
+
+**Kaldırılan bölümler:** Blog ve Markalar sayfadan tamamen çıkarıldı
+(`split.js` içinde artık `const blog` / `const brands` yok). Menüdeki Blog
+bağlantısı da kalkmalıysa `SITE_BASE.nav` üzerinden düzenlenir.
 
 ---
 
@@ -274,73 +285,76 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 ## 8. Açık işler
 
 **Yayın öncesi zorunlu**
-- [ ] **145 görselin kendi fotoğraflarıyla değiştirilmesi** ← tek gerçek engel
-- [ ] `SITE_BASE.contact` doldurulması → sonra `contactReady: true`
-- [ ] Leon Kimya logosu → `SITE_BASE.brand.logoDark/logoWhite`
+- [ ] `SITE_BASE.contact` doldurulması (telefon, e-posta, adres)
+      → sonra `contactReady: true`
+- [ ] Yeni alan adı + hosting'e taşınması
+- [ ] `canonical` / `og:url` yeni alan adına çevrilmesi
 - [ ] Aramaya açılması: `build-pages.py` → `NOINDEX = False` **ve** `robots.txt`
-- [ ] `canonical` / `og:url` gerçek alan adına çevrilmesi
+      *(yalnızca yukarıdaki üçü tamamlandıktan sonra)*
 
 **İçerik**
 - [ ] "Kurumsal" metnindeki `TODO` — kuruluş hikâyesi, kapasite, hedef pazarlar
 - [ ] `SITE_BASE.stats` — gerçek rakamlar (boş olduğu için bant gizli)
 - [ ] Sosyal medya hesapları → `SITE_BASE.social` (boşsa satır hiç görünmez)
-- [ ] E-katalog PDF → `SITE_BASE.links.catalog`
-- [ ] Blog yazıları
 
 **Teknik**
-- [ ] İletişim formu backend'i (şu an gönderim yapmıyor)
-- [ ] Statik HTML'e dönüştürme veya SSR — SEO için gerekli
+- [ ] **Statik HTML'e dönüştürme** — SEO için gerekli, bkz. bölüm 9
 - [ ] Görsel optimizasyonu (WebP + `srcset`)
 - [ ] KVKK aydınlatma metni + çerez bildirimi
 - [ ] Vercel GitHub App bağlantısı (otomatik deploy)
 
+**Kapanmış olanlar** *(tekrar açma)*
+- [x] Görseller — 119'unun tamamı AI ile üretildi, yeni görsel gelmeyecek
+- [x] Logo — `assets/img/logo-dark.png`
+- [x] İletişim formu — `formsubmit.co` üzerinden çalışıyor
+- [x] E-katalog — **üretilmeyecek**, karar verildi. `links.catalog` boş kalır,
+      boş olduğu için katalog butonları hiç basılmaz.
+- [x] Blog — bölüm sayfadan kaldırıldı, yazı üretilmeyecek
+
 ---
 
-## 9. Görsel üretim planı (sıradaki iş)
+## 9. Statik HTML'e dönüştürme (sıradaki teknik iş)
 
-145 görselin yerine **22 orijinal görsel** yeterli — mevcut tüm slotları
-karşılar (hero, kategori, kutucuk, sistem, galeri, uygulama, blog).
-Tema ve renk dünyası mevcut tasarımla uyumlu tutulmalı; referans
-fotoğrafların birebir kopyası **olmamalı** — amaç zaten bundan kurtulmak.
+### Sorun
 
-**Spor zemin (4)**
-1. Atletizm parkuru — kırmızı poliüretan, kulvar çizgileri, geniş açı
-2. Akrilik saha — açık hava basketbol/tenis, canlı renk ayrımı
-3. EPDM granül oyun alanı — renkli, yumuşak zemin, çocuk parkı
-4. Sentetik çim uygulaması — serim ve yapıştırma anı
+`index.html` ve kardeşleri neredeyse boş: içlerinde `<div id="app"></div>` var,
+gövde içeriğini tarayıcı `split.js`'i çalıştırınca kuruyor. Sonuçları:
 
-**Endüstriyel (4)**
-5. Epoksi depo zemini — parlak, geniş, raf sıraları
-6. Otopark / showroom zemini — çizgili, temiz
-7. Dekoratif metalik epoksi — yakın plan doku
-8. Hijyenik gıda/laboratuvar zemini — beyaz, kavisli süpürgelik
+- Google JS'i çalıştırıyor ama iki aşamada; render kuyruğu günler sürebilir
+- Bing/Yandex çok daha zayıf render eder
+- WhatsApp / LinkedIn / X link önizlemesi JS **hiç** çalıştırmaz
+- JS yavaşlar veya hata verirse sayfa bomboş kalır
+  *(bu fiilen yaşandı — bkz. bölüm 5, cache/beyaz sayfa olayı)*
 
-**Su izolasyon (3)**
-9. Likit membran uygulaması — rulo ile teras
-10. Yalıtılmış teras/balkon — bitmiş hâl
-11. Derz/detay çözümü — yakın plan teknik
+`<title>`, `description` ve `hreflang` zaten statik (`build-pages.py` yazıyor);
+eksik olan yalnızca gövde.
 
-**Yapıştırıcı (3)**
-12. Parke yapıştırıcı — taraklı mala ile uygulama
-13. PVC/vinil serim
-14. Kauçuk karo yapıştırma
+### Çözüm ve neyi bozmadığı
 
-**Diğer ürün (4)**
-15. Bağlayıcı dökümü — granülle karıştırma
-16. Dekoratif taş halı yüzey
-17. Elektrik reçinesi — trafo/döküm
-18. Astar uygulaması — beton üzerine
+Derleme anında JS bir kez çalıştırılır, ürettiği markup HTML'e yazılır.
 
-**Kurumsal (4)**
-19. Üretim tesisi — reaktör/tank hattı
-20. Dolum hattı — bidon/varil
-21. AR-GE laboratuvarı — teknisyen, cam malzeme
-22. Hero görseli — geniş, endüstriyel, marka rengiyle uyumlu
+- **CSS hiç değişmez** — görünüm, renk, yuvarlatma aynı kalır
+- **Animasyonlar çalışmaya devam eder** — slider, sekmeler, reveal, sayaçlar,
+  detay katmanı hepsi tarayıcıda çalışmaya devam eder
+- **Görseller aynı dosyalar** — dokunulmaz
+- Tek fark: içerik JS yüklenmeden önce de görünür
 
-> Üretim aracı: Higgsfield MCP (`generate_image` / `generate_image_batch`).
-> Başlamadan **kredi bakiyesini kontrol et ve kullanıcıya maliyeti söyle** —
-> 22 görsel azımsanacak bir tüketim değil. Kullanıcı bir kez "şimdilik dursun,
-> sonra yapacağız" dedi; tekrar sormadan üretime başlama.
+### Gerekli refactor
+
+`split.js` şu an hem markup üretiyor hem davranış bağlıyor. İkisi ayrılmalı:
+
+```
+assets/render-markup.js   → yalnızca HTML string üretir (derlemede çalışır)
+assets/behaviors.js       → DOM'a olay bağlar (tarayıcıda çalışır)
+```
+
+Ayrılmazsa hem derlemede hem tarayıcıda render edilir ve **içerik iki kez basılır.**
+
+`build-pages.py` markup üretimini Node ile çağırıp (`node render-markup.js tr`)
+çıktıyı `<div id="app">…</div>` içine gömer. Dört dil için ayrı ayrı.
+
+> Bu işi **yeni alan adına taşırken** yapmak mantıklı — ikisi de `canonical`
+> ve indeksleme ile ilgili, tek seferde bitirilir.
 
 ---
 
