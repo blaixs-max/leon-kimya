@@ -271,6 +271,14 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - Arapçada sayılar **Latin rakamla** yazılır (tablodaki ölçülerle tutarlılık için)
 - RTL'de gizleme `left:-9999px` ile YAPILMAZ — belgeyi yatayda büyütüp Arapça
   sayfayı boş gösteriyordu. `clip-path:inset(50%)` kullanılır. *(yaşanmış hata)*
+- Temel kuralda **`img{...;height:auto;...}` kaldırılmaz.** `<img>` üzerindeki
+  `width`/`height` öznitelikleri CSS'e "presentational hint" olarak yükseklik
+  dayatır; `aspect-ratio` yalnızca yükseklik `auto` iken çalıştığı için öznitelik
+  eklendiği anda oran devre dışı kalır ve görsel doğal yüksekliğine uzar.
+  Bir görsele CSS'ten sabit yükseklik veriliyorsa (`.drw__hd img{height:44px}`)
+  yanına **`width:auto`** de yazılmalı — yoksa bu kez genişliği öznitelik ezer.
+  *(yaşanmış hata: CLS için öznitelik eklendi, ürün pop-up'ındaki kartlar
+  256×160 yerine 256×500 basıldı)*
 
 ---
 
