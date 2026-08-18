@@ -68,15 +68,16 @@ python assets/build-pages.py
 
 ### Telefon / e-posta / adres eklemek
 
-`assets/i18n.js` → `SITE_BASE.contact`. `TODO` yazan alanları doldurun,
-ardından hemen üstteki satırı değiştirin:
+Bilgiler **girildi**. Değiştirmek için: `assets/i18n.js` → `SITE_BASE.contact`
+(numaralar, e-posta, harita) ve `STRINGS` içindeki her dilin `address` /
+`addressShort` alanları (adres dört dilde ayrı yazılır).
 
-```js
-contactReady: true,
-```
+Numaralar iki biçimde tutulur: `phone1` / `mobile` ekranda görünen hâl,
+`tel1` / `telMobile` tıklanabilir `tel:` bağlantısı için boşluksuz hâl —
+ikisini birlikte güncelleyin. `whatsapp` da cep numarasıyla aynı olmalı.
 
-> Bu bayrak `false` olduğu sürece site hiçbir telefon/e-posta bağlantısı
-> üretmez — yanlışlıkla eksik numaraya bağlantı verilmesini önler.
+> `contactReady: false` yapılırsa site hiçbir telefon/e-posta bağlantısı
+> üretmez ve WhatsApp düğmesi gizlenir — eksik bilgiyle yayına çıkmayı önler.
 
 ### Yeni görsel eklemek
 
@@ -129,7 +130,7 @@ Sonra **`yayinla.bat`** dosyasına çift tıklayın.
 
 ## Yayına almadan önce — zorunlu adımlar
 
-1. **İletişim bilgilerini girin** — `SITE_BASE.contact` + `contactReady: true`
+1. ~~İletişim bilgilerini girin~~ — **tamamlandı 18.08.2026**
 2. **Alan adını bağlayın** — Vercel → Settings → Domains
 3. **`SITE_URL` değiştirin** — `assets/build-pages.py` içinde.
    Canonical, og:url, hreflang, sitemap ve yapısal veri hepsi bundan türer;
@@ -137,8 +138,8 @@ Sonra **`yayinla.bat`** dosyasına çift tıklayın.
 4. **Aramaya açın** — `NOINDEX = False` + `robots.txt` (hazır sürüm içinde)
 5. **Search Console'a sitemap tanıtın** — `https://alanadi/sitemap.xml`
 
-Şu an kapalı olmasının sebebi: iletişim bilgileri eksik ve alan adı henüz
-kesinleşmedi. Yanlış adres indekslenirse taşıma sonrası düzeltme maliyeti çıkar.
+Şu an kapalı olmasının tek sebebi: alan adı henüz kesinleşmedi. Yanlış adres
+indekslenirse taşıma sonrası düzeltme maliyeti çıkar.
 
 ---
 
@@ -157,7 +158,6 @@ kesinleşmedi. Yanlış adres indekslenirse taşıma sonrası düzeltme maliyeti
 
 ## Henüz tamamlanmamış
 
-- Telefon, e-posta, adres girilmedi
 - İstatistik bandı boş (rakamlar verilmedi, o yüzden gizli)
 - Sosyal medya hesapları girilmedi
 - "Kurumsal" metninde kuruluş hikâyesi bekliyor

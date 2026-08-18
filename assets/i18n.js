@@ -16,19 +16,26 @@ window.SITE_BASE = {
   /* contactReady false iken telefon/e-posta/WhatsApp bağlantı OLARAK
      render EDİLMEZ; yalnızca "eklenecek" metni gösterilir.
      Gerçek bilgiler girildikten sonra true yapın. */
-  contactReady: false,
+  contactReady: true,
 
   contact: {
-    phone1: "",            // TODO: "+90 (___) ___ __ __"
-    phone2: "",            // TODO
-    mobile: "",            // TODO
-    tel1: "",              // TODO: "+90..." (boşluksuz)
-    tel2: "",              // TODO
-    whatsapp: "https://wa.me/905337040125",   // Leon Kimya WhatsApp hattı
-    email: "",             // TODO: "info@leonkimya.com"
-    exportEmail: "",       // TODO: "export@leonkimya.com"
-    mapLink: "",           // TODO: Google Maps bağlantısı
-    mapEmbed: ""           // TODO: Google Maps embed bağlantısı
+    phone1: "+90 212 912 52 32",
+    phone2: "",
+    mobile: "+90 530 360 61 43",
+    tel1: "+902129125232",      // boşluksuz — tel: bağlantısı için
+    tel2: "",
+    telMobile: "+905303606143", // boşluksuz
+    /* WhatsApp hattı = cep numarası. Numara değişirse hem burayı hem
+       telMobile'ı güncelleyin; ikisi aynı hattı göstermeli. */
+    whatsapp: "https://wa.me/905303606143",
+    email: "emre@leonairsea.com",
+    exportEmail: "",       // TODO: ayrı dış ticaret adresi olursa
+    mapLink: "https://www.google.com/maps/search/?api=1&query=Giz%202000%20Plaza%20Eski%20B%C3%BCy%C3%BCkdere%20Caddesi%20Maslak%20Sar%C4%B1yer%20%C4%B0stanbul",
+    /* Google'in nihai gomme adresi. maps.google.com/...&output=embed bicimi
+       301 ile buraya yonleniyor ve o yonlendirme X-Frame-Options: SAMEORIGIN
+       tasiyor; dogrudan bu adres kullaniliyor. Daha kesin bir konum pini
+       icin Google Haritalar > Paylas > Haritayi yerlestir ciktisiyla degistirin. */
+    mapEmbed: "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sGiz+2000+Plaza+Eski+B%C3%BCy%C3%BCkdere+Caddesi+Maslak+Sar%C4%B1yer+%C4%B0stanbul"
   },
 
   /* TODO: Leon Kimya'nın gerçek hesapları girilene kadar boş kalsın.
@@ -262,8 +269,8 @@ tr: {
     desc:"Poliüretan, epoksi ve akrilik esaslı yapıştırıcı, bağlayıcı, zemin kaplama ve su izolasyon çözümleri."
   },
   tagline:"Kimya teknolojisinde çözüm ortağınız",
-  address:"",                       // TODO: Leon Kimya adresi
-  addressShort:"",                  // TODO
+  address:"Maslak Mah. Eski Büyükdere Cad. Giz 2000 Plaza No: 7/24, Sarıyer / İstanbul",
+  addressShort:"Sarıyer / İstanbul",
   addressTodo:"Adres bilgisi eklenecek",
   phoneTodo:"Telefon numarası eklenecek",
   emailTodo:"E-posta adresi eklenecek",
@@ -307,7 +314,7 @@ tr: {
     fullHistory:"Hakkımızda",
     blogKicker:"BLOG", blogTitle:"Blog Yazıları", more:"Daha Fazlası",
     readPost:"Yakında", tagBlog:"BLOG",
-    contactInfo:"İletişim Bilgileri", labelAddress:"Adres", labelPhone:"Telefon",
+    contactInfo:"İletişim Bilgileri", labelAddress:"Adres", labelPhone:"Telefon", labelMobile:"Mobil",
     labelEmail:"E-posta", labelExport:"Dış Ticaret",
     labelFactory:"Fabrika", labelGeneral:"Genel",
     mapTitle:"Leon Kimya konum", sinceProduction:"",
@@ -540,7 +547,8 @@ en: {
     desc:"Polyurethane, epoxy and acrylic based adhesives, binders, floor coatings and waterproofing solutions."
   },
   tagline:"Your partner in chemical technology",
-  address:"", addressShort:"",
+  address:"Maslak Mah. Eski Büyükdere Cad. Giz 2000 Plaza No: 7/24, Sarıyer / Istanbul, Türkiye",
+  addressShort:"Sarıyer / Istanbul",
   addressTodo:"Address to be added",
   phoneTodo:"Phone number to be added",
   emailTodo:"E-mail address to be added",
@@ -584,7 +592,7 @@ en: {
     fullHistory:"About us",
     blogKicker:"BLOG", blogTitle:"Blog Posts", more:"See More",
     readPost:"Coming soon", tagBlog:"BLOG",
-    contactInfo:"Contact Details", labelAddress:"Address", labelPhone:"Phone",
+    contactInfo:"Contact Details", labelAddress:"Address", labelPhone:"Phone", labelMobile:"Mobile",
     labelEmail:"E-mail", labelExport:"Export",
     labelFactory:"Factory", labelGeneral:"General",
     mapTitle:"Leon Kimya location", sinceProduction:"",
@@ -817,7 +825,8 @@ fr: {
     desc:"Adhésifs, liants, revêtements de sol et solutions d'étanchéité à base de polyuréthane, d'époxy et d'acrylique."
   },
   tagline:"Votre partenaire en technologie chimique",
-  address:"", addressShort:"",
+  address:"Maslak Mah. Eski Büyükdere Cad. Giz 2000 Plaza No: 7/24, Sarıyer / Istanbul, Turquie",
+  addressShort:"Sarıyer / Istanbul",
   addressTodo:"Adresse à compléter",
   phoneTodo:"Numéro de téléphone à compléter",
   emailTodo:"Adresse e-mail à compléter",
@@ -861,7 +870,7 @@ fr: {
     fullHistory:"À propos",
     blogKicker:"BLOG", blogTitle:"Articles du blog", more:"Voir plus",
     readPost:"Bientôt disponible", tagBlog:"BLOG",
-    contactInfo:"Coordonnées", labelAddress:"Adresse", labelPhone:"Téléphone",
+    contactInfo:"Coordonnées", labelAddress:"Adresse", labelPhone:"Téléphone", labelMobile:"Mobile",
     labelEmail:"E-mail", labelExport:"Export",
     labelFactory:"Usine", labelGeneral:"Général",
     mapTitle:"Localisation Leon Kimya", sinceProduction:"",
@@ -1094,7 +1103,8 @@ ar: {
     desc:"حلول لاصقة ورابطة وأنظمة أرضيات وعزل مائي على أساس البولي يوريثان والإيبوكسي والأكريليك."
   },
   tagline:"شريككم في التقنية الكيميائية",
-  address:"", addressShort:"",
+  address:"حي ماسلاك، شارع إسكي بويوكديره، جيز 2000 بلازا، رقم 7/24، ساريير / إسطنبول، تركيا",
+  addressShort:"ساريير / إسطنبول",
   addressTodo:"سيتم إضافة العنوان",
   phoneTodo:"سيتم إضافة رقم الهاتف",
   emailTodo:"سيتم إضافة البريد الإلكتروني",
@@ -1138,7 +1148,7 @@ ar: {
     fullHistory:"من نحن",
     blogKicker:"المدونة", blogTitle:"مقالات المدونة", more:"المزيد",
     readPost:"قريبًا", tagBlog:"مدونة",
-    contactInfo:"بيانات الاتصال", labelAddress:"العنوان", labelPhone:"الهاتف",
+    contactInfo:"بيانات الاتصال", labelAddress:"العنوان", labelPhone:"الهاتف", labelMobile:"الجوال",
     labelEmail:"البريد الإلكتروني", labelExport:"التصدير",
     labelFactory:"المصنع", labelGeneral:"عام",
     mapTitle:"موقع ليون كيميا", sinceProduction:"",

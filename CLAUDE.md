@@ -68,11 +68,12 @@ ve artık kullanılmıyor — yalnızca eski referans arşivi.
 
 ### Site neden hâlâ aramaya kapalı
 
-Görsel sorunu bitti ama iki gerekçe daha var:
+Görsel ve iletişim sorunları bitti; **tek gerekçe kaldı**:
 
-- **İletişim bilgileri eksik** — telefon, e-posta, adres boş; `contactReady:false`
 - **Alan adı taşınacak** — yeni domain + hosting planlanıyor; `canonical`
   ve `og:url` kesinleşmeden indekslenmesi yanlış adresi kaydettirir
+
+*(İletişim bilgileri 18.08.2026'da girildi, `contactReady:true`.)*
 
 Bu yüzden: `robots.txt` → `Disallow: /` ve `build-pages.py` → `NOINDEX = True`.
 
@@ -141,10 +142,18 @@ Galeri görselleri de bu katmandan gelir.
 Değiştir, betiği çalıştır; dört dil birden güncellenir. Şu an **Kehribar Çelik**
 (`--brand:#D97706`). HTML'deki `:root` bloğu bu sabitten üretilir, elle düzenleme.
 
-### İletişim bilgisi eklemek
-`SITE_BASE.contact` alanlarını doldur → sonra `contactReady: true` yap.
-Bu bayrak `false` iken telefon/e-posta **bağlantı olarak basılmaz** — eksik veya
-yanlış numaraya link verilmesini önleyen kasıtlı bir emniyet. Bozma.
+### İletişim bilgisi değiştirmek
+`SITE_BASE.contact` (numaralar, e-posta, harita) + `STRINGS.<dil>.address` ve
+`.addressShort` (adres metni — **dört dilde birden**). Adres `contact` içinde
+DEĞİL, dile bağlı olduğu için `STRINGS` içindedir.
+
+`contactReady` bayrağı `false` iken telefon/e-posta **bağlantı olarak basılmaz**
+ve WhatsApp düğmesi **hiç görünmez** — eksik veya yanlış numaraya link verilmesini
+önleyen kasıtlı bir emniyet. Bozma.
+
+Telefon alanları çift: `phone1`/`mobile` ekranda görünen biçimli hâl,
+`tel1`/`telMobile` ise `tel:` bağlantısı için boşluksuz hâl. **İkisini birlikte**
+güncelleyin; `whatsapp` da `telMobile` ile aynı hattı göstermeli.
 
 ### Yeni dil eklemek
 1. `SITE_BASE.langs` dizisine ekle
@@ -285,8 +294,9 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 ## 8. Açık işler
 
 **Yayın öncesi zorunlu**
-- [ ] `SITE_BASE.contact` doldurulması (telefon, e-posta, adres)
-      → sonra `contactReady: true`
+- [x] `SITE_BASE.contact` doldurulması — **tamamlandı 18.08.2026**
+      (+90 212 912 52 32 · +90 530 360 61 43 · emre@leonairsea.com ·
+      Maslak/Sarıyer İstanbul), `contactReady: true`
 - [ ] Yeni alan adı + hosting'e taşınması
 - [ ] `build-pages.py` → `SITE_URL` yeni alan adına çevrilmesi
       *(canonical, og:url, hreflang, sitemap ve JSON-LD hepsi bundan türer —
@@ -311,7 +321,10 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - [x] Görseller — tamamı AI ile üretildi, yeni görsel gelmeyecek
 - [x] Logo — `assets/img/logo-dark.webp`
 - [x] İletişim formu — `formsubmit.co` üzerinden çalışıyor
-- [x] E-katalog — **üretilmeyecek**, karar verildi
+- [x] **E-katalog — ÜRETİLDİ** (16.08.2026). Eski "üretilmeyecek" kararı
+      geçersiz. `katalog/` klasörü: 55 sayfa, dört dil, A4 PDF. İçerik
+      `i18n.js`'ten okunur, katalog kendi metnini tutmaz. Ayrıntı ve
+      üretim komutları `katalog/OKUBENI.md` dosyasında.
 - [x] Blog — bölüm sayfadan kaldırıldı, yazı üretilmeyecek
 - [x] **Statik HTML / prerender** — bkz. bölüm 9
 - [x] **og / twitter etiketleri + canonical** — dört dilde, `SITE_URL`'den türer
