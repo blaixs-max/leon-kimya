@@ -557,12 +557,12 @@ tr: {
     fName:"Ad Soyad", fCompany:"Firma", fEmail:"E-posta", fPhone:"Telefon",
     fSubject:"Konu", fMessage:"Mesajınız",
     subjects:["Ürün bilgisi","Sistem / proje teklifi","Bayilik & iş ortaklığı","İhracat","Teknik destek","Diğer"],
-    kvkk:"Kişisel verilerimin işlenmesine ilişkin aydınlatma metnini okudum, onaylıyorum.",
+    kvkk:"Bu formdaki bilgilerimin, yalnızca talebime yanıt verilmesi amacıyla işlenmesini kabul ediyorum.",
     submit:"Mesajı Gönder",
     sending:"Gönderiliyor…",
     success:"Mesajınız alındı. En kısa sürede size dönüş yapacağız.",
     error:"Gönderim başarısız oldu. Lütfen daha sonra tekrar deneyin.",
-    kvkkWarn:"Göndermek için aydınlatma metnini onaylamanız gerekir.",
+    kvkkWarn:"Göndermek için onay kutusunu işaretlemeniz gerekir.",
     fillWarn:"Lütfen ad, e-posta ve mesaj alanlarını doldurun."
   }
 },
@@ -836,12 +836,12 @@ en: {
     fName:"Full Name", fCompany:"Company", fEmail:"E-mail", fPhone:"Phone",
     fSubject:"Subject", fMessage:"Your Message",
     subjects:["Product information","System / project quote","Distribution & partnership","Export","Technical support","Other"],
-    kvkk:"I have read and accept the personal data protection notice.",
+    kvkk:"I consent to the details in this form being processed solely to respond to my enquiry.",
     submit:"Send Message",
     sending:"Sending…",
     success:"Your message has been received. We will get back to you shortly.",
     error:"Sending failed. Please try again later.",
-    kvkkWarn:"Please accept the data protection notice before sending.",
+    kvkkWarn:"Please tick the consent box before sending.",
     fillWarn:"Please fill in the name, e-mail and message fields."
   }
 },
@@ -1115,12 +1115,12 @@ fr: {
     fName:"Nom et prénom", fCompany:"Société", fEmail:"E-mail", fPhone:"Téléphone",
     fSubject:"Sujet", fMessage:"Votre message",
     subjects:["Information produit","Devis système / projet","Distribution & partenariat","Export","Support technique","Autre"],
-    kvkk:"J'ai lu et j'accepte la notice relative à la protection des données personnelles.",
+    kvkk:"J'accepte que les informations de ce formulaire soient traitées uniquement pour répondre à ma demande.",
     submit:"Envoyer le message",
     sending:"Envoi en cours…",
     success:"Votre message a bien été reçu. Nous vous répondrons rapidement.",
     error:"L'envoi a échoué. Veuillez réessayer plus tard.",
-    kvkkWarn:"Veuillez accepter la notice de protection des données avant d'envoyer.",
+    kvkkWarn:"Veuillez cocher la case de consentement avant d'envoyer.",
     fillWarn:"Veuillez renseigner le nom, l'e-mail et le message."
   }
 },
@@ -1394,12 +1394,12 @@ ar: {
     fName:"الاسم الكامل", fCompany:"الشركة", fEmail:"البريد الإلكتروني", fPhone:"الهاتف",
     fSubject:"الموضوع", fMessage:"رسالتك",
     subjects:["معلومات عن منتج","عرض سعر لنظام أو مشروع","التوزيع والشراكة","التصدير","الدعم الفني","أخرى"],
-    kvkk:"لقد قرأت إشعار حماية البيانات الشخصية وأوافق عليه.",
+    kvkk:"أوافق على معالجة البيانات الواردة في هذا النموذج لغرض الرد على طلبي فقط.",
     submit:"إرسال الرسالة",
     sending:"جارٍ الإرسال…",
     success:"تم استلام رسالتكم وسنعاود التواصل معكم قريبًا.",
     error:"فشل الإرسال. يرجى المحاولة مرة أخرى لاحقًا.",
-    kvkkWarn:"يرجى الموافقة على إشعار حماية البيانات قبل الإرسال.",
+    kvkkWarn:"يرجى تحديد مربع الموافقة قبل الإرسال.",
     fillWarn:"يرجى تعبئة حقول الاسم والبريد الإلكتروني والرسالة."
   }
 }

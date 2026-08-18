@@ -18,7 +18,15 @@ Site artık halka açık ve iletişim formu kişisel veri topluyor.
 | # | İş | Kim | Not |
 |---|---|---|---|
 | A1 | **KVKK aydınlatma metni** | Siz + Ben | Taslağı ben yazarım, **hukuki onay sizde**. Formun altına ve ayrı bir bölüme konur. |
-| A2 | **Çerez bildirimi** | Ben | Site şu an çerez kullanmıyor ama Google Maps gömülü ve Search Console eklenecek. Basit bir bildirim yeterli. |
+| A2 | **Çerez bildirimi** | Ben | Site kendi çerezini kullanmıyor ama Google Maps gömülü — ziyaretçinin IP'si Google'a gidiyor. |
+| A3 | **Yurt dışına aktarım bildirimi** | A1'in içinde | Form verisi `formsubmit.co` üzerinden geçiyor (üçüncü taraf, yurt dışı). Aydınlatma metninde açıkça yazılmalı. |
+
+> **18.08.2026 — ara düzeltme yapıldı.** Onay kutusu ve uyarı metni dört dilde
+> "aydınlatma metnini okudum" diyordu; **öyle bir metin yoktu**. Ziyaretçiye var
+> olmayan bir belgeyi okuduğunu beyan ettiriyorduk ve kutu zorunluydu. Metinler
+> gerçeği söyleyecek şekilde değiştirildi ("bilgilerimin yalnızca talebime yanıt
+> verilmesi amacıyla işlenmesini kabul ediyorum"). **Yanlış beyan kalktı, ama
+> A1 hâlâ açık** — bu düzeltme KVKK'yı karşılamıyor, yalnızca yanlışı gideriyor.
 
 **A1 için sizden gereken:** veri sorumlusu unvanı (tam ticari ünvan), verilerin
 saklama süresi, varsa KVKK irtibat kişisi. Bunlar olmadan metin yazamam —
