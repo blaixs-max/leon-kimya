@@ -38,7 +38,7 @@ call vercel deploy --prod <nul
 if errorlevel 1 goto deploySupheli
 
 echo.
-echo TAMAM - site yayinda: https://leon-kimya.vercel.app
+echo TAMAM - site yayinda: https://leonkimya.com
 pause
 exit /b 0
 

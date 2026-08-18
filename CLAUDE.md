@@ -116,6 +116,7 @@ assets/
 yayinla.bat            Tek tık yayın (pull --rebase → build → commit → push → deploy)
 WHATSAPP-KURULUM.md    WhatsApp Business şablon kurulum rehberi
 robots.txt             Allow: / + Sitemap satırı (site aramaya açık)
+YAPILACAKLAR.md        AÇIK İŞLERİN TEK LİSTESİ — bölüm 8 buraya devretti
 vercel.json            Önbellek + güvenlik başlıkları + www→kök yönlendirmesi
 .vercelignore          Vercel'e YÜKLENMEYECEKLER — katalog/kartvizit burada
 .env.local             GITIGNORE — sırlar burada, asla commit etme
@@ -332,34 +333,10 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 
 ## 8. Açık işler
 
-**Yayın öncesi zorunlu — TAMAMLANDI (18.08.2026)**
-- [x] `SITE_BASE.contact` + `contactReady: true`
-- [x] Alan adı `leonkimya.com`'a taşındı, `SITE_URL` çevrildi
-- [x] `NOINDEX = False` + `robots.txt` → `Allow: /`
-
-**Taşıma sonrası kalanlar**
-- [ ] **Katalog PDF'lerinin yeniden üretilmesi** — dört PDF'in içinde hâlâ
-      `leon-kimya.vercel.app` yazıyor. `SITE_URL` gibi otomatik türemez;
-      kataloğu üreten araçtan yeniden çıktı alınmalı. Site çalışıyor,
-      yalnızca katalogdaki adres eski.
-- [ ] Google Search Console'a `sitemap.xml` tanıtılması
-      (`https://leonkimya.com/sitemap.xml`) — panel işi, kullanıcı yapacak
-- [ ] Hostinger e-posta kurulumu bitince site e-postasının
-      `@leonkimya.com`'a çevrilmesi (`SITE_BASE.contact.email` +
-      `formEndpoint`) — ikisi de tek satır
-
-**İçerik**
-- [ ] "Kurumsal" metnindeki `TODO` — kuruluş hikâyesi, kapasite, hedef pazarlar
-- [ ] `SITE_BASE.stats` — gerçek rakamlar (boş olduğu için bant gizli)
-- [ ] Sosyal medya hesapları → `SITE_BASE.social` (boşsa satır hiç görünmez)
-- [x] JSON-LD'ye telefon/adres eklenmesi — **tamamlandı 18.08.2026**.
-      `@type` bilinçli olarak `Organization` kaldı; `LocalBusiness` Google'ın
-      ek alanlarını (çalışma saatleri, `geo`) beklediği için erken yükseltme
-      şemayı zayıflatırdı. Posta kodu bilinmediğinden **basılmıyor**.
-
-**Teknik**
-- [ ] KVKK aydınlatma metni + çerez bildirimi
-- [ ] Vercel GitHub App bağlantısı (otomatik deploy)
+**Açık işlerin tek listesi `YAPILACAKLAR.md` dosyasındadır.** Buraya ikinci bir
+liste yazma — iki liste tutulduğunda biri güncellenip diğeri unutuluyor
+*(bu projede yaşandı)*. Bir iş bitince `YAPILACAKLAR.md`'den sil; kalıcı
+kaydedilmesi gereken bir karar varsa aşağıdaki listeye taşı.
 
 **Kapanmış olanlar** *(tekrar açma)*
 - [x] Görseller — tamamı AI ile üretildi, yeni görsel gelmeyecek

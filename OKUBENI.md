@@ -42,6 +42,7 @@ assets/
   img/                120 görsel (WebP)
   katalog/            E-katalog PDF'leri (dört dil, 69 sayfa)
 yayinla.bat           Tek tık yayın
+YAPILACAKLAR.md       Açık işler listesi
 ```
 
 **Altın kural:** `index.html`, `en.html`, `fr.html`, `ar.html` ve `sitemap.xml`
@@ -191,9 +192,15 @@ e-posta Hostinger'da — ikisi birbirine karışmıyor.
 
 ---
 
-## Henüz tamamlanmamış
+## Yapılacaklar
 
-- İstatistik bandı boş (rakamlar verilmedi, o yüzden gizli)
-- Sosyal medya hesapları girilmedi
-- "Kurumsal" metninde kuruluş hikâyesi bekliyor
-- KVKK aydınlatma metni ve çerez bildirimi
+Açık işlerin tamamı **`YAPILACAKLAR.md`** dosyasında — öncelik sırasına
+dizilmiş, her işin yanında kimin yapacağı yazılı.
+
+En öncelikli olanlar:
+
+- **KVKK aydınlatma metni ve çerez bildirimi** — site artık halka açık ve
+  form kişisel veri topluyor
+- **Search Console'a sitemap tanıtmak** — `https://leonkimya.com/sitemap.xml`
+- **Hostinger e-posta kurulumunu bitirmek** — sonra site e-postası
+  `@leonkimya.com`'a geçer
