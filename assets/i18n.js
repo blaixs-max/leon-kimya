@@ -29,6 +29,16 @@ window.SITE_BASE = {
        telMobile'ı güncelleyin; ikisi aynı hattı göstermeli. */
     whatsapp: "https://wa.me/905303606143",
     email: "emre@leonairsea.com",
+    /* JSON-LD (schema.org PostalAddress) icin adresin parcali hali.
+       Ekranda gorunen serbest metin STRINGS.<dil>.address'te; burasi
+       yalnizca yapisal veri. Posta kodu BILINMIYOR — uydurulmaz, bos kalir. */
+    postal: {
+      street:   "Maslak Mah. Eski Büyükdere Cad. Giz 2000 Plaza No: 7/24",
+      locality: "Sarıyer",
+      region:   "İstanbul",
+      postcode: "",
+      country:  "TR"
+    },
     exportEmail: "",       // TODO: ayrı dış ticaret adresi olursa
     mapLink: "https://www.google.com/maps/search/?api=1&query=Giz%202000%20Plaza%20Eski%20B%C3%BCy%C3%BCkdere%20Caddesi%20Maslak%20Sar%C4%B1yer%20%C4%B0stanbul",
     /* Google'in nihai gomme adresi. maps.google.com/...&output=embed bicimi

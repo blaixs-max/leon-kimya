@@ -61,6 +61,21 @@ if (typeof buildMarkup !== "function") {
   process.exit(1);
 }
 
+/* --veri modu: build-pages.py JSON-LD'yi doldurmak icin iletisim verisini
+   buradan okur. Amac i18n.js'i TEK KAYNAK tutmak — ayni bilgiyi bir de
+   Python tarafina yazmak, birini guncelleyip digerini unutma riski demek. */
+if (dil === "--" || process.argv[2] === "--veri") {
+  const c = kutu.SITE_BASE.contact || {};
+  process.stdout.write(JSON.stringify({
+    contactReady: !!kutu.SITE_BASE.contactReady,
+    telephone: c.tel1 || "",
+    mobile: c.telMobile || "",
+    email: c.email || "",
+    postal: c.postal || null
+  }));
+  process.exit(0);
+}
+
 const T = kutu.STRINGS[dil];
 if (!T) {
   console.error("HATA: bilinmeyen dil: " + dil);

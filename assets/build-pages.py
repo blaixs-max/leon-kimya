@@ -4,7 +4,7 @@ Leon Kimya — dil sayfası üreteci.
 Tek şablondan tr / en / fr / ar sayfalarını üretir.
 Çalıştır:  python assets/build-pages.py
 """
-import os, io, hashlib, subprocess, sys
+import os, io, json, hashlib, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -45,6 +45,27 @@ def prerender(lang):
         sys.exit("HATA: prerender ciktisi supheli kisa (%s): %d karakter" % (lang, len(html)))
     return html
 
+_SITE_VERI = None
+
+
+def site_verisi():
+    """i18n.js icindeki iletisim verisini Node uzerinden okur.
+
+    JSON-LD'yi doldurmak icin gerekli. Ayni bilgiyi buraya elle kopyalamak
+    yerine tek kaynaktan okunuyor; boylece i18n.js guncellenince sema da
+    kendiliginden guncellenir."""
+    global _SITE_VERI
+    if _SITE_VERI is None:
+        r = subprocess.run(
+            ["node", os.path.join(ROOT, "assets", "prerender.js"), "--veri"],
+            capture_output=True, timeout=60)
+        if r.returncode != 0:
+            sys.exit("HATA: iletisim verisi okunamadi: "
+                     + r.stderr.decode("utf-8", "replace"))
+        _SITE_VERI = json.loads(r.stdout.decode("utf-8"))
+    return _SITE_VERI
+
+
 # =============================================================
 # KURUMSAL PALET — sitenin rengini değiştirmek için TEK NOKTA.
 # Burayı düzenleyip `python assets/build-pages.py` çalıştırmak yeterli.
@@ -77,10 +98,13 @@ def jsonld(p):
 
     NOT: schema.org'da "ChemicalSupplier" diye bir tip YOKTUR; gecersiz tip
     yazilirsa Google semayi tumden yok sayar. Gecerli olan "Organization".
-    Adres girildiginde LocalBusiness'a yukseltilebilir (Haritalar icin).
+    Adres girildiginde LocalBusiness'a yukseltilebilir (Haritalar icin);
+    LocalBusiness Google'in ek alanlarini (calisma saatleri, geo) bekledigi
+    icin simdilik Organization'da kalindi.
+
     Telefon/adres bos oldugu surece o alanlar semaya EKLENMEZ — bos veya
-    uydurma iletisim bilgisi yayinlamak yanlis beyandir."""
-    import json as _json
+    uydurma iletisim bilgisi yayinlamak yanlis beyandir. Bu yuzden asagidaki
+    alanlar contactReady bayragina ve degerin dolu olmasina bagli."""
     d = {
         "@context": "https://schema.org",
         "@type": "Organization",
@@ -91,12 +115,29 @@ def jsonld(p):
         "description": p["desc"],
         "knowsLanguage": [q["lang"] for q in PAGES],
     }
-    # TODO: iletisim bilgileri girilince asagidakiler acilacak
-    # d["telephone"] = "+90..."
-    # d["email"] = "info@leonkimya.com"
-    # d["address"] = {"@type": "PostalAddress", "streetAddress": "...",
-    #                 "addressLocality": "...", "addressCountry": "TR"}
-    return _json.dumps(d, ensure_ascii=False, indent=2)
+    v = site_verisi()
+    if v.get("contactReady"):
+        tel = [t for t in (v.get("telephone"), v.get("mobile")) if t]
+        if tel:
+            d["telephone"] = tel[0]
+            if len(tel) > 1:
+                d["contactPoint"] = [{
+                    "@type": "ContactPoint", "telephone": t,
+                    "contactType": "sales", "availableLanguage":
+                        [q["lang"] for q in PAGES]} for t in tel]
+        if v.get("email"):
+            d["email"] = v["email"]
+        pa = v.get("postal") or {}
+        if pa.get("street"):
+            adr = {"@type": "PostalAddress",
+                   "streetAddress": pa["street"],
+                   "addressLocality": pa.get("locality", ""),
+                   "addressRegion": pa.get("region", ""),
+                   "addressCountry": pa.get("country", "TR")}
+            if pa.get("postcode"):
+                adr["postalCode"] = pa["postcode"]
+            d["address"] = {k: val for k, val in adr.items() if val}
+    return json.dumps(d, ensure_ascii=False, indent=2)
 
 
 def sitemap_yaz():

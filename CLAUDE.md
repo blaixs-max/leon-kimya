@@ -105,6 +105,8 @@ assets/
   split.css           TÜM STİL. Renkler token; hiçbir yerde sabit renk yok
   split.js            buildMarkup() + davranışlar — İKİ MODLU (bkz. bölüm 9)
   prerender.js        Node: derleme anında markup üretir
+                      `--veri` argümanıyla iletişim verisini JSON basar
+                      (JSON-LD bunu okur; i18n.js tek kaynak kalsın diye)
   img-sizes.js        OTOMATİK ÜRETİLİR — görsel ölçüleri (CLS için)
   build-pages.py      4 dil sayfası + sitemap.xml + sürüm damgası
   build-img-sizes.py  img-sizes.js'i üretir
@@ -315,9 +317,10 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - [ ] "Kurumsal" metnindeki `TODO` — kuruluş hikâyesi, kapasite, hedef pazarlar
 - [ ] `SITE_BASE.stats` — gerçek rakamlar (boş olduğu için bant gizli)
 - [ ] Sosyal medya hesapları → `SITE_BASE.social` (boşsa satır hiç görünmez)
-- [ ] JSON-LD'ye telefon/adres eklenmesi → `build-pages.py` içinde `jsonld()`
-      fonksiyonunda TODO olarak hazır. Adres girilince `@type` `Organization`'dan
-      `LocalBusiness`'a yükseltilebilir (Google Haritalar görünürlüğü).
+- [x] JSON-LD'ye telefon/adres eklenmesi — **tamamlandı 18.08.2026**.
+      `@type` bilinçli olarak `Organization` kaldı; `LocalBusiness` Google'ın
+      ek alanlarını (çalışma saatleri, `geo`) beklediği için erken yükseltme
+      şemayı zayıflatırdı. Posta kodu bilinmediğinden **basılmıyor**.
 
 **Teknik**
 - [ ] KVKK aydınlatma metni + çerez bildirimi
