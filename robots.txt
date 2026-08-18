@@ -1,14 +1,7 @@
-# Bu deploy bir ÖNİZLEME / STAGING ortamıdır.
-# Görseller ve bazı içerikler geçici referans malzemesidir; Leon Kimya'nın
-# kendi görselleri ve iletişim bilgileri girilmeden site indekslenmemelidir.
-#
-# ---> Yayına hazır olunduğunda (kendi görseller + iletişim bilgileri girildikten
-#      ve build-pages.py içindeki NOINDEX=False yapıldıktan sonra) bu dosyayı
-#      şununla değiştirin (alan adını kendi adresinizle güncelleyin):
-#
-#      User-agent: *
-#      Allow: /
-#      Sitemap: https://www.leonkimya.com/sitemap.xml
+# Leon Kimya — https://leonkimya.com
+# 18.08.2026: site aramaya açıldı.
 
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://leonkimya.com/sitemap.xml

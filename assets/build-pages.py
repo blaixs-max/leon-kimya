@@ -104,15 +104,16 @@ PALETTE = """
   --wa:#25D366;   /* WhatsApp kurumsal yesili (marka rengi, palete bagli degil) */""".format(brand=BRAND)
 
 # Sitenin genel adresi. Sonda "/" YOK.
-# TODO: yeni alan adına geçince yalnızca burayı değiştirin — canonical,
-# og:url, og:image ve hreflang bu sabitten üretilir.
-SITE_URL = "https://leon-kimya.vercel.app"
+# canonical, og:url, og:image, hreflang, sitemap ve JSON-LD bu sabitten üretilir.
+# Alan adı 18.08.2026'da leonkimya.com'a taşındı. www -> kök yönlendirmesi
+# vercel.json içinde; canonical her zaman ÇIPLAK adresi gösterir.
+SITE_URL = "https://leonkimya.com"
 OG_IMAGE = "/assets/img/og-image.jpg"      # 1200x630, paylaşım kartı
 
-# Aramaya açmak için False yapın. ÖNCE şunlar tamamlanmalı:
-# iletişim bilgileri girilmiş + contactReady:true + alan adı kesinleşmiş.
-# Ayrıca robots.txt dosyasını da güncellemeyi unutmayın.
-NOINDEX = True
+# 18.08.2026: aramaya AÇILDI. Üç ön koşul da tamamlandı —
+# iletişim bilgileri girildi, contactReady:true, alan adı leonkimya.com'a
+# taşındı ve yayında. robots.txt de birlikte güncellendi.
+NOINDEX = False
 
 def jsonld(p):
     """Organization semasi.
