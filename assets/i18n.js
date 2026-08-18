@@ -55,7 +55,7 @@ window.SITE_BASE = {
      NOT: kök dizindeki katalog/ klasörü taslak arşividir ve .vercelignore'da;
      yayına çıkan dosyalar assets/katalog/ altındadır. */
   catalog: {
-    ready: false,
+    ready: true,
     files: {
       tr: "assets/katalog/leon-kimya-katalog-tr.pdf",
       en: "assets/katalog/leon-kimya-katalog-en.pdf",
