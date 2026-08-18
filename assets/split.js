@@ -39,6 +39,7 @@ const P = {
   mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/>',
   pin:'<path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/>',
   arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>',
+  download:'<path d="M12 3.5v10.5"/><path d="m7.6 10.2 4.4 4.4 4.4-4.4"/><path d="M4.5 20.5h15"/>',
   users:'<circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.5a3.2 3.2 0 0 1 0 6.4"/><path d="M17.5 14.4A6.5 6.5 0 0 1 21.5 20"/>',
   factory:'<path d="M3 21V10l6 4V10l6 4V6l6 3v12z"/><path d="M7 21v-4M12 21v-4M17 21v-4"/>',
   globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/>',
@@ -87,6 +88,18 @@ const subTree = items => `<ul class="sub">${items.map(i=>{
 }).join("")}</ul>`;
 const flat = it => it.mega ? it.children.map(c=>({k:c.k,L:c.L,children:c.children||[]})) : it.children;
 
+/* E-Katalog indirme düğmesi. Dil başına ayrı PDF; dosya yoksa veya
+   catalog.ready false ise HİÇ basılmaz — var olmayan dosyaya indirme
+   bağlantısı vermeyelim diye (contactReady ile aynı emniyet mantığı).
+   `download` özniteliği tarayıcıyı sekmede açmak yerine indirmeye zorlar. */
+const katalogBtn = boyut => {
+  const c = B.catalog || {};
+  const f = c.ready && c.files ? c.files[LANG] : "";
+  if (!has(f)) return "";
+  return `<a class="btn btn--cat${boyut}" href="${f}" download title="${e(T.ui.catalogTitle)}">`
+       + `${ic("download")}<span>${e(T.ui.catalog)}</span><span class="btn__tag">PDF</span></a>`;
+};
+
 const hdr = `<header class="hdr" id="hdr"><div class="wrap hdr__in">
   <a class="logo" href="#top" aria-label="${e(B.brand.name)}">${wordmark("ld")}</a>
   <nav class="nav" aria-label="${e(T.ui.menu)}"><ul>
@@ -94,6 +107,7 @@ const hdr = `<header class="hdr" id="hdr"><div class="wrap hdr__in">
     ${B.nav.map(it=>`<li><a href="${it.href}">${e(label(it.k))}${it.children?'<i class="caret"></i>':""}</a>${it.children?subTree(flat(it)):""}</li>`).join("")}
   </ul></nav>
   <div class="hdr__act">
+    ${katalogBtn(" btn--sm")}
     <a class="btn btn--brand btn--sm" href="#iletisim">${e(T.ui.quote)}</a>
     <button class="burger" aria-label="${e(T.ui.menu)}" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
@@ -108,6 +122,7 @@ const drw = `<div class="drw" id="drw">
   <div class="drw__hd">${wordmark("ld")}<button class="drw__x" aria-label="${e(T.ui.closeMenu)}">&times;</button></div>
   <nav class="drw__nav">${drwTree([{k:"__home",href:"#top"}].concat(B.nav.map(i=>({k:i.k,href:i.href,children:i.mega?flat(i):i.children}))))}</nav>
   <div class="drw__ft">
+    ${katalogBtn("")}
     <a class="btn btn--brand" href="#iletisim">${e(T.ui.quote)} ${ic("arrow")}</a>
     <div class="drw__langs">${B.langs.map(l=>`<a href="${l.href}" class="${l.lang===LANG?"on":""}">${l.code}</a>`).join("")}</div>
   </div></div><div class="scrim" id="scrim" hidden></div>`;

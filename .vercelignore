@@ -8,5 +8,9 @@ _arsiv-varyantlar.zip
 # takip EDILMIYOR ama .gitignore'da da degil; Vercel calisma dizininden
 # alip yayinladigi icin buraya yazilmalari sart.
 # Katalog hazir olunca: bu iki satiri sil + siteye indirme baglantisi ekle.
-katalog
-kartvizit
+#
+# Basindaki "/" SART. Anchorsuz "katalog" deseni HER seviyedeki katalog
+# klasorunu eslerdi; yayina cikan nihai PDF'ler assets/katalog/ altinda
+# duruyor ve o klasor de disarida kalirdi.
+/katalog
+/kartvizit

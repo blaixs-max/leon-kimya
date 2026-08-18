@@ -45,6 +45,27 @@ def prerender(lang):
         sys.exit("HATA: prerender ciktisi supheli kisa (%s): %d karakter" % (lang, len(html)))
     return html
 
+def katalog_denetle():
+    """catalog.ready true ise dort dilin PDF'i gercekten var mi diye bakar.
+
+    Neden derlemeyi durduruyor: eksik dosya, sitede 404 donen bir indirme
+    dugmesi demek. Kullanici tiklar, hicbir sey inmez. Sessizce yayinlamaktansa
+    burada patlamak dogru (prerender'daki emniyetin ayni mantigi)."""
+    v = site_verisi()
+    if not v.get("catalogReady"):
+        return
+    eksik = []
+    for dil, yol in (v.get("catalogFiles") or {}).items():
+        if not os.path.isfile(os.path.join(ROOT, yol.replace("/", os.sep))):
+            eksik.append("%s -> %s" % (dil, yol))
+    if eksik:
+        satirlar = ["HATA: catalog.ready true ama PDF bulunamadi:"]
+        satirlar += ["  " + x for x in eksik]
+        satirlar.append("Dosyalari koyun ya da i18n.js'te catalog.ready"
+                        " degerini false yapin.")
+        sys.exit(os.linesep.join(satirlar))
+
+
 _SITE_VERI = None
 
 
@@ -254,6 +275,8 @@ TPL = """<!DOCTYPE html>
 </body>
 </html>
 """
+
+katalog_denetle()
 
 for p in PAGES:
     alts = "\n".join(

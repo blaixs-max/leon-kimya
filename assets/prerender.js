@@ -71,7 +71,9 @@ if (dil === "--" || process.argv[2] === "--veri") {
     telephone: c.tel1 || "",
     mobile: c.telMobile || "",
     email: c.email || "",
-    postal: c.postal || null
+    postal: c.postal || null,
+    catalogReady: !!(kutu.SITE_BASE.catalog || {}).ready,
+    catalogFiles: (kutu.SITE_BASE.catalog || {}).files || {}
   }));
   process.exit(0);
 }

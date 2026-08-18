@@ -48,6 +48,22 @@ window.SITE_BASE = {
     mapEmbed: "https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sGiz+2000+Plaza+Eski+B%C3%BCy%C3%BCkdere+Caddesi+Maslak+Sar%C4%B1yer+%C4%B0stanbul"
   },
 
+  /* E-KATALOG — dört dilde PDF.
+     ready:false iken düğme HİÇ basılmaz (contactReady ile aynı mantık:
+     var olmayan dosyaya indirme bağlantısı verilmesin). PDF'ler
+     assets/katalog/ altına konup ready:true yapılınca dört dilde birden açılır.
+     NOT: kök dizindeki katalog/ klasörü taslak arşividir ve .vercelignore'da;
+     yayına çıkan dosyalar assets/katalog/ altındadır. */
+  catalog: {
+    ready: false,
+    files: {
+      tr: "assets/katalog/leon-kimya-katalog-tr.pdf",
+      en: "assets/katalog/leon-kimya-katalog-en.pdf",
+      fr: "assets/katalog/leon-kimya-katalog-fr.pdf",
+      ar: "assets/katalog/leon-kimya-katalog-ar.pdf"
+    }
+  },
+
   /* TODO: Leon Kimya'nın gerçek hesapları girilene kadar boş kalsın.
      Boş olduğu sürece sosyal medya satırı hiç görünmez. */
   social: [],
@@ -325,6 +341,7 @@ tr: {
     blogKicker:"BLOG", blogTitle:"Blog Yazıları", more:"Daha Fazlası",
     readPost:"Yakında", tagBlog:"BLOG",
     contactInfo:"İletişim Bilgileri", labelAddress:"Adres", labelPhone:"Telefon", labelMobile:"Mobil",
+    catalog:"E-Katalog", catalogTitle:"E-Katalog'u PDF olarak indir",
     labelEmail:"E-posta", labelExport:"Dış Ticaret",
     labelFactory:"Fabrika", labelGeneral:"Genel",
     mapTitle:"Leon Kimya konum", sinceProduction:"",
@@ -603,6 +620,7 @@ en: {
     blogKicker:"BLOG", blogTitle:"Blog Posts", more:"See More",
     readPost:"Coming soon", tagBlog:"BLOG",
     contactInfo:"Contact Details", labelAddress:"Address", labelPhone:"Phone", labelMobile:"Mobile",
+    catalog:"E-Catalogue", catalogTitle:"Download the e-catalogue (PDF)",
     labelEmail:"E-mail", labelExport:"Export",
     labelFactory:"Factory", labelGeneral:"General",
     mapTitle:"Leon Kimya location", sinceProduction:"",
@@ -881,6 +899,7 @@ fr: {
     blogKicker:"BLOG", blogTitle:"Articles du blog", more:"Voir plus",
     readPost:"Bientôt disponible", tagBlog:"BLOG",
     contactInfo:"Coordonnées", labelAddress:"Adresse", labelPhone:"Téléphone", labelMobile:"Mobile",
+    catalog:"E-Catalogue", catalogTitle:"Télécharger l'e-catalogue (PDF)",
     labelEmail:"E-mail", labelExport:"Export",
     labelFactory:"Usine", labelGeneral:"Général",
     mapTitle:"Localisation Leon Kimya", sinceProduction:"",
@@ -1159,6 +1178,7 @@ ar: {
     blogKicker:"المدونة", blogTitle:"مقالات المدونة", more:"المزيد",
     readPost:"قريبًا", tagBlog:"مدونة",
     contactInfo:"بيانات الاتصال", labelAddress:"العنوان", labelPhone:"الهاتف", labelMobile:"الجوال",
+    catalog:"الكتالوج", catalogTitle:"تحميل الكتالوج الإلكتروني (PDF)",
     labelEmail:"البريد الإلكتروني", labelExport:"التصدير",
     labelFactory:"المصنع", labelGeneral:"عام",
     mapTitle:"موقع ليون كيميا", sinceProduction:"",

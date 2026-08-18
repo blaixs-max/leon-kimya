@@ -79,6 +79,29 @@ ikisini birlikte güncelleyin. `whatsapp` da cep numarasıyla aynı olmalı.
 > `contactReady: false` yapılırsa site hiçbir telefon/e-posta bağlantısı
 > üretmez ve WhatsApp düğmesi gizlenir — eksik bilgiyle yayına çıkmayı önler.
 
+### E-Katalog'u yayına açmak
+
+Dört dilin PDF'ini `assets/katalog/` klasörüne koyun:
+
+```
+leon-kimya-katalog-tr.pdf
+leon-kimya-katalog-en.pdf
+leon-kimya-katalog-fr.pdf
+leon-kimya-katalog-ar.pdf
+```
+
+Sonra `assets/i18n.js` içinde `catalog` bloğundaki satırı değiştirin:
+
+```js
+ready: true,
+```
+
+ve `python assets/build-pages.py` çalıştırın. Menüde "Teklif Alın"ın solunda
+indirme düğmesi belirir; her dil kendi PDF'ini indirir.
+
+> Dosyalar eksikken `ready: true` yaparsanız derleme durur ve hangi dosyanın
+> eksik olduğunu söyler — ziyaretçiye boşa çıkan indirme düğmesi göstermemek için.
+
 ### Yeni görsel eklemek
 
 Görseli `assets/img/` içine koyup şunu çalıştırın:

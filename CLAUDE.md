@@ -111,6 +111,8 @@ assets/
   build-pages.py      4 dil sayfası + sitemap.xml + sürüm damgası
   build-img-sizes.py  img-sizes.js'i üretir
   img/                120 görsel (116 WebP + favicon/og), AI ile üretildi
+  katalog/            YAYINA ÇIKAN e-katalog PDF'leri (dört dil)
+                      kökteki katalog/ ile KARIŞTIRMA — o taslak arşivi
 yayinla.bat            Tek tık yayın (pull --rebase → build → commit → push → deploy)
 WHATSAPP-KURULUM.md    WhatsApp Business şablon kurulum rehberi
 robots.txt             Şu an Disallow: /
@@ -162,6 +164,20 @@ ve WhatsApp düğmesi **hiç görünmez** — eksik veya yanlış numaraya link 
 Telefon alanları çift: `phone1`/`mobile` ekranda görünen biçimli hâl,
 `tel1`/`telMobile` ise `tel:` bağlantısı için boşluksuz hâl. **İkisini birlikte**
 güncelleyin; `whatsapp` da `telMobile` ile aynı hattı göstermeli.
+
+### E-Katalog düğmesini açmak
+1. Dört PDF'i `assets/katalog/` altına koy (adlar `SITE_BASE.catalog.files`'ta yazılı)
+2. `SITE_BASE.catalog.ready` → `true`
+3. `python assets/build-pages.py`
+
+`ready:false` iken düğme **hiç basılmaz**. `ready:true` yapılıp PDF konmazsa
+`build-pages.py` **hata verip durur** (`katalog_denetle()`) — sitede 404 dönen
+indirme düğmesi yayınlanmasın diye.
+
+Düğme header'da yalnızca ~1320px üstünde görünür; 1181–1319 bandında menü
+açık olduğu için yer yok, çekmecede duruyor. 1180 altında menü hamburger'a
+döndüğünden header'da yeniden görünür. `PDF` rozeti header'da gizli,
+çekmecede görünür.
 
 ### Yeni dil eklemek
 1. `SITE_BASE.langs` dizisine ekle
@@ -288,6 +304,17 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - Arapçada sayılar **Latin rakamla** yazılır (tablodaki ölçülerle tutarlılık için)
 - RTL'de gizleme `left:-9999px` ile YAPILMAZ — belgeyi yatayda büyütüp Arapça
   sayfayı boş gösteriyordu. `clip-path:inset(50%)` kullanılır. *(yaşanmış hata)*
+- **Header dolu — yeni öğe eklemeden önce ölç.** `--wrap` 1280px'de sabit,
+  yani başlık taşması ekran genişliğinden bağımsızdır; en dar durum
+  **Fransızca** menüdür (en uzun etiketler). Bir düğme eklerken dört dilde
+  birden `hdr__in` genişliğini ölçün. *(yaşanmış: E-Katalog düğmesi FR'de
+  72px taşma yarattı)*
+- **Menü kırılma noktası 1180px** (1024 değil). 1024'teyken 1025–1180
+  bandında logo+menü+düğme sığmıyordu ve "Teklif Alın" sayfa dışına
+  itiliyordu — canlıda ölçüldü: FR 108px, TR/EN ~55px.
+- Medya sorgusu bandı yazarken **`max-width:N` ile `min-width:N+1` kullanma.**
+  Kesirli viewport genişliğinde (kaydırma çubuğu + DPR) ikisi de eşleşmez ve
+  arada delik kalır. `min-width:N.02px` kullanılır. *(yaşanmış hata)*
 - Temel kuralda **`img{...;height:auto;...}` kaldırılmaz.** `<img>` üzerindeki
   `width`/`height` öznitelikleri CSS'e "presentational hint" olarak yükseklik
   dayatır; `aspect-ratio` yalnızca yükseklik `auto` iken çalıştığı için öznitelik
@@ -314,6 +341,9 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - [ ] Google Search Console'a `sitemap.xml` tanıtılması
 
 **İçerik**
+- [ ] **E-Katalog PDF'leri bekleniyor** — düğme, dört dil metni, indirme
+      mekanizması ve derleme denetimi hazır; `assets/katalog/` boş olduğu için
+      `catalog.ready:false`. PDF'ler gelince yukarıdaki üç adım yeterli.
 - [ ] "Kurumsal" metnindeki `TODO` — kuruluş hikâyesi, kapasite, hedef pazarlar
 - [ ] `SITE_BASE.stats` — gerçek rakamlar (boş olduğu için bant gizli)
 - [ ] Sosyal medya hesapları → `SITE_BASE.social` (boşsa satır hiç görünmez)
