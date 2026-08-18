@@ -1,3 +1,12 @@
 .claude
 OKUBENI.md
 _arsiv-varyantlar.zip
+
+# Katalog ve kartvizit — GECICI.
+# Yeni katalog hala tasarlaniyor; taslak hali yayinda herkese acik
+# indirilebilir durmasin diye disarida tutuluyor. Bu klasorler git'te
+# takip EDILMIYOR ama .gitignore'da da degil; Vercel calisma dizininden
+# alip yayinladigi icin buraya yazilmalari sart.
+# Katalog hazir olunca: bu iki satiri sil + siteye indirme baglantisi ekle.
+katalog
+kartvizit

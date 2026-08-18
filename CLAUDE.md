@@ -87,6 +87,11 @@ Bu yüzden: `robots.txt` → `Disallow: /` ve `build-pages.py` → `NOINDEX = Tr
 3. Şirket hakkında **doğrulanmamış sayısal iddia üretme** (kuruluş yılı, ihracat
    ülkesi sayısı, ürün adedi, sertifika). Kullanıcı vermeden yazma.
 4. `saraskimya-assets/` ve `_to_delete/` **git'e girmez** — gitignore'u bozma.
+5. `katalog/` ve `kartvizit/` **`.vercelignore`'dan çıkarılmaz** (katalog hazır
+   olana dek). Bu klasörler `.gitignore`'da DEĞİL, yalnızca takip edilmiyorlar —
+   Vercel çalışma dizininden aldığı için bir kez yayına çıktılar ve 11.8 MB'lık
+   taslak PDF'ler adresi bilene açıktı. **Ayrıca `git add -A` bunları depoya
+   sokar (14 dosya / 49 MB)** — commit'lerde dosya yollarını açıkça yazın.
 
 ---
 
@@ -108,6 +113,7 @@ yayinla.bat            Tek tık yayın (pull --rebase → build → commit → p
 WHATSAPP-KURULUM.md    WhatsApp Business şablon kurulum rehberi
 robots.txt             Şu an Disallow: /
 vercel.json            Önbellek + güvenlik başlıkları
+.vercelignore          Vercel'e YÜKLENMEYECEKLER — katalog/kartvizit burada
 .env.local             GITIGNORE — sırlar burada, asla commit etme
 saraskimya-assets/     GITIGNORE — telifli referans arşivi (529 dosya)
 _to_delete/            GITIGNORE — geçici
