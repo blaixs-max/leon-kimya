@@ -4,6 +4,17 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.leonkimya.com"
+        }
+      ],
+      "destination": "https://leonkimya.com/",
+      "permanent": true
+    },
+    {
       "source": "/:yol*",
       "has": [
         {
