@@ -5,13 +5,12 @@ Framework yok — sade HTML + CSS + JavaScript.
 
 | | |
 |---|---|
-| **Canlı** | https://leon-kimya.vercel.app |
+| **Canlı** | https://leonkimya.com |
 | **Depo** | https://github.com/blaixs-max/leon-kimya (private) |
 | **Vercel projesi** | `leon-kimya` |
 | **Diller** | TR `/` · EN `/en` · FR `/fr` · AR `/ar` (sağdan sola) |
 
-> ⚠️ **Site şu an aramaya kapalı.** Sebebi ve ne zaman açılacağı için
-> aşağıdaki "Yayına almadan önce" bölümüne bakın.
+> ✅ **Site yayında ve aramaya açık** (18.08.2026).
 
 ---
 
@@ -152,18 +151,30 @@ Sonra **`yayinla.bat`** dosyasına çift tıklayın.
 
 ---
 
-## Yayına almadan önce — zorunlu adımlar
+## Yayın durumu — tamamlandı (18.08.2026)
 
-1. ~~İletişim bilgilerini girin~~ — **tamamlandı 18.08.2026**
-2. **Alan adını bağlayın** — Vercel → Settings → Domains
-3. **`SITE_URL` değiştirin** — `assets/build-pages.py` içinde.
-   Canonical, og:url, hreflang, sitemap ve yapısal veri hepsi bundan türer;
-   başka hiçbir yeri düzeltmeye gerek yok.
-4. **Aramaya açın** — `NOINDEX = False` + `robots.txt` (hazır sürüm içinde)
-5. **Search Console'a sitemap tanıtın** — `https://alanadi/sitemap.xml`
+1. ~~İletişim bilgileri girildi~~ ✅
+2. ~~Alan adı bağlandı~~ ✅ `leonkimya.com` (www otomatik köke yönleniyor)
+3. ~~`SITE_URL` çevrildi~~ ✅
+4. ~~Aramaya açıldı~~ ✅ `NOINDEX = False` + `robots.txt`
 
-Şu an kapalı olmasının tek sebebi: alan adı henüz kesinleşmedi. Yanlış adres
-indekslenirse taşıma sonrası düzeltme maliyeti çıkar.
+**Kalan tek panel işi:** Google Search Console'a sitemap tanıtmak —
+`https://leonkimya.com/sitemap.xml`
+
+### DNS hakkında — önemli
+
+Alan adı Hostinger'da, DNS kayıtları da orada duruyor. Vercel'e yalnızca
+iki `A` kaydı çevrildi:
+
+```
+A  @    76.76.21.21
+A  www  76.76.21.21
+```
+
+**Nameserver'ları Vercel'e çevirmeyin.** Alan adında kurulmayı bekleyen bir
+Hostinger e-posta planı var; nameserver'lar taşınırsa e-posta kayıtları
+(`MX`, `SPF`, `DKIM`) yazılamaz ve posta çalışmaz. Bu hâliyle web Vercel'de,
+e-posta Hostinger'da — ikisi birbirine karışmıyor.
 
 ---
 

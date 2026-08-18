@@ -19,7 +19,8 @@ Node ile önceden render eder (bkz. bölüm 5 ve 9).
 
 | | |
 |---|---|
-| **Canlı** | https://leon-kimya.vercel.app |
+| **Canlı** | https://leonkimya.com  *(www → köke 308)* |
+| **Yedek** | https://leon-kimya.vercel.app — hâlâ çalışıyor |
 | **Depo** | https://github.com/blaixs-max/leon-kimya (private) |
 | **Vercel projesi** | `leon-kimya` (hesap: `blaixs-4009`) |
 | **Yerel** | `C:\Users\Dell\Desktop\Web Site` |
@@ -66,24 +67,23 @@ kapandı. **Yeni görsel gelmeyecek**, bu iş bitti.
 `saraskimya-assets/` klasörü diskte duruyor (529 dosya) ama **gitignore'da**
 ve artık kullanılmıyor — yalnızca eski referans arşivi.
 
-### Site neden hâlâ aramaya kapalı
+### ✅ ÇÖZÜLDÜ — site aramaya AÇIK (18.08.2026)
 
-Görsel ve iletişim sorunları bitti; **tek gerekçe kaldı**:
+Üç ön koşulun üçü de tamamlandı: iletişim bilgileri girildi
+(`contactReady:true`), alan adı `leonkimya.com`'a taşındı ve yayına girdi.
+`NOINDEX = False`, `robots.txt` → `Allow: /`.
 
-- **Alan adı taşınacak** — yeni domain + hosting planlanıyor; `canonical`
-  ve `og:url` kesinleşmeden indekslenmesi yanlış adresi kaydettirir
-
-*(İletişim bilgileri 18.08.2026'da girildi, `contactReady:true`.)*
-
-Bu yüzden: `robots.txt` → `Disallow: /` ve `build-pages.py` → `NOINDEX = True`.
+**DNS kurulumu — nameserver'lara DOKUNMA.** Kayıtlar Hostinger'da,
+yalnızca `A` kayıtları Vercel'e (`76.76.21.21`) çevrildi. Alan adında
+kurulmayı bekleyen bir Hostinger e-posta planı var; nameserver'lar Vercel'e
+verilirse `MX`/`SPF`/`DKIM` kayıtları yazılamaz ve posta çalışmaz.
 
 ### KURALLAR — asla aykırı davranma
 
 1. Üçüncü tarafa ait telefon / e-posta / WhatsApp / adres / logo / marka /
    sertifika bilgisini **hiçbir gerekçeyle geri ekleme.**
-2. **Aramaya açmadan önce** iletişim bilgileri girilmiş, `contactReady:true`
-   yapılmış ve alan adı kesinleşmiş olmalı. Üçü tamamlanmadan `NOINDEX`
-   ve `robots.txt` değiştirilmez.
+2. Site **aramaya açık**. `NOINDEX`/`robots.txt` yeniden kapatılacaksa
+   ikisi birlikte değiştirilir; biri açık biri kapalı bırakılmaz.
 3. Şirket hakkında **doğrulanmamış sayısal iddia üretme** (kuruluş yılı, ihracat
    ülkesi sayısı, ürün adedi, sertifika). Kullanıcı vermeden yazma.
 4. `saraskimya-assets/` ve `_to_delete/` **git'e girmez** — gitignore'u bozma.
@@ -115,8 +115,8 @@ assets/
                       kökteki katalog/ ile KARIŞTIRMA — o taslak arşivi
 yayinla.bat            Tek tık yayın (pull --rebase → build → commit → push → deploy)
 WHATSAPP-KURULUM.md    WhatsApp Business şablon kurulum rehberi
-robots.txt             Şu an Disallow: /
-vercel.json            Önbellek + güvenlik başlıkları
+robots.txt             Allow: / + Sitemap satırı (site aramaya açık)
+vercel.json            Önbellek + güvenlik başlıkları + www→kök yönlendirmesi
 .vercelignore          Vercel'e YÜKLENMEYECEKLER — katalog/kartvizit burada
 .env.local             GITIGNORE — sırlar burada, asla commit etme
 saraskimya-assets/     GITIGNORE — telifli referans arşivi (529 dosya)
@@ -332,21 +332,21 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 
 ## 8. Açık işler
 
-**Yayın öncesi zorunlu**
-- [x] `SITE_BASE.contact` doldurulması — **tamamlandı 18.08.2026**
-      (+90 212 912 52 32 · +90 530 360 61 43 · emre@leonairsea.com ·
-      Maslak/Sarıyer İstanbul), `contactReady: true`
-- [ ] Yeni alan adı + hosting'e taşınması
-- [ ] `build-pages.py` → `SITE_URL` yeni alan adına çevrilmesi
-      *(canonical, og:url, hreflang, sitemap ve JSON-LD hepsi bundan türer —
-      başka hiçbir yeri elle düzeltmeye gerek yok)*
-- [ ] **Katalog PDF'lerinin yeniden üretilmesi** — dört PDF'in içinde
-      `leon-kimya.vercel.app` yazıyor; alan adı değişince eski adres
-      dosyalarda kalır. `SITE_URL` gibi otomatik türemez, kataloğu üreten
-      araçtan yeniden çıktı almak gerekir.
-- [ ] Aramaya açılması: `NOINDEX = False` **ve** `robots.txt`
-      *(yalnızca yukarıdakiler tamamlandıktan sonra)*
+**Yayın öncesi zorunlu — TAMAMLANDI (18.08.2026)**
+- [x] `SITE_BASE.contact` + `contactReady: true`
+- [x] Alan adı `leonkimya.com`'a taşındı, `SITE_URL` çevrildi
+- [x] `NOINDEX = False` + `robots.txt` → `Allow: /`
+
+**Taşıma sonrası kalanlar**
+- [ ] **Katalog PDF'lerinin yeniden üretilmesi** — dört PDF'in içinde hâlâ
+      `leon-kimya.vercel.app` yazıyor. `SITE_URL` gibi otomatik türemez;
+      kataloğu üreten araçtan yeniden çıktı alınmalı. Site çalışıyor,
+      yalnızca katalogdaki adres eski.
 - [ ] Google Search Console'a `sitemap.xml` tanıtılması
+      (`https://leonkimya.com/sitemap.xml`) — panel işi, kullanıcı yapacak
+- [ ] Hostinger e-posta kurulumu bitince site e-postasının
+      `@leonkimya.com`'a çevrilmesi (`SITE_BASE.contact.email` +
+      `formEndpoint`) — ikisi de tek satır
 
 **İçerik**
 - [ ] "Kurumsal" metnindeki `TODO` — kuruluş hikâyesi, kapasite, hedef pazarlar
