@@ -165,11 +165,14 @@ Telefon alanları çift: `phone1`/`mobile` ekranda görünen biçimli hâl,
 `tel1`/`telMobile` ise `tel:` bağlantısı için boşluksuz hâl. **İkisini birlikte**
 güncelleyin; `whatsapp` da `telMobile` ile aynı hattı göstermeli.
 
-### E-Katalog düğmesini açmak
-1. Dört PDF'i `assets/katalog/` altına koy (adlar `SITE_BASE.catalog.files`'ta yazılı)
-2. `SITE_BASE.catalog.ready` → `true`
-3. `python assets/build-pages.py`
+### E-Katalog'u değiştirmek
+**Katalog 18.08.2026'dan beri CANLI** — dört dil, 69 sayfa, ~13 MB/dosya.
+Dosyalar `assets/katalog/` altında, `catalog.ready:true`.
 
+Yeni sürüm gelince: dosyaları aynı adlarla üzerine yaz →
+`python assets/build-pages.py` → yayınla. Başka değişiklik gerekmez.
+
+Kapatmak gerekirse `SITE_BASE.catalog.ready` → `false`;
 `ready:false` iken düğme **hiç basılmaz**. `ready:true` yapılıp PDF konmazsa
 `build-pages.py` **hata verip durur** (`katalog_denetle()`) — sitede 404 dönen
 indirme düğmesi yayınlanmasın diye.
@@ -251,7 +254,8 @@ yayına almaz. Açmak için: Vercel → Settings → Git → Connect Git Reposit
 ## 6. Sayfa yapısı (güncel sıra)
 
 1. Üst bar — dil seçimi
-2. Yapışkan header — wordmark, mega menü, "Teklif Alın"
+2. Yapışkan header — wordmark, mega menü, **E-Katalog indirme düğmesi**,
+   "Teklif Alın"
    *(Kurumsal artık alt menüsüz; doğrudan `#kurumsal` bölümüne gider)*
 3. **Hero** — 6 ürün ailesini gezen slider + 4'lü özellik paneli
 4. **Ürünler & Sistemler** — 8'li kutucuk ızgarası
@@ -336,14 +340,15 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - [ ] `build-pages.py` → `SITE_URL` yeni alan adına çevrilmesi
       *(canonical, og:url, hreflang, sitemap ve JSON-LD hepsi bundan türer —
       başka hiçbir yeri elle düzeltmeye gerek yok)*
+- [ ] **Katalog PDF'lerinin yeniden üretilmesi** — dört PDF'in içinde
+      `leon-kimya.vercel.app` yazıyor; alan adı değişince eski adres
+      dosyalarda kalır. `SITE_URL` gibi otomatik türemez, kataloğu üreten
+      araçtan yeniden çıktı almak gerekir.
 - [ ] Aramaya açılması: `NOINDEX = False` **ve** `robots.txt`
       *(yalnızca yukarıdakiler tamamlandıktan sonra)*
 - [ ] Google Search Console'a `sitemap.xml` tanıtılması
 
 **İçerik**
-- [ ] **E-Katalog PDF'leri bekleniyor** — düğme, dört dil metni, indirme
-      mekanizması ve derleme denetimi hazır; `assets/katalog/` boş olduğu için
-      `catalog.ready:false`. PDF'ler gelince yukarıdaki üç adım yeterli.
 - [ ] "Kurumsal" metnindeki `TODO` — kuruluş hikâyesi, kapasite, hedef pazarlar
 - [ ] `SITE_BASE.stats` — gerçek rakamlar (boş olduğu için bant gizli)
 - [ ] Sosyal medya hesapları → `SITE_BASE.social` (boşsa satır hiç görünmez)
@@ -360,10 +365,11 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - [x] Görseller — tamamı AI ile üretildi, yeni görsel gelmeyecek
 - [x] Logo — `assets/img/logo-dark.webp`
 - [x] İletişim formu — `formsubmit.co` üzerinden çalışıyor
-- [x] **E-katalog — ÜRETİLDİ** (16.08.2026). Eski "üretilmeyecek" kararı
-      geçersiz. `katalog/` klasörü: 55 sayfa, dört dil, A4 PDF. İçerik
-      `i18n.js`'ten okunur, katalog kendi metnini tutmaz. Ayrıntı ve
-      üretim komutları `katalog/OKUBENI.md` dosyasında.
+- [x] **E-katalog — YAYINDA** (18.08.2026). Eski "üretilmeyecek" kararı
+      geçersiz. Dört dil × **69 sayfa**, `assets/katalog/` altında,
+      indirme düğmesi header ve çekmecede. Her dosya ~13 MB.
+      *(Kökteki `katalog/` KLASÖRÜ AYRI ŞEY: 16.08 taslak arşivi,
+      `.vercelignore`'da, yayına çıkmıyor. Karıştırma.)*
 - [x] Blog — bölüm sayfadan kaldırıldı, yazı üretilmeyecek
 - [x] **Statik HTML / prerender** — bkz. bölüm 9
 - [x] **og / twitter etiketleri + canonical** — dört dilde, `SITE_URL`'den türer

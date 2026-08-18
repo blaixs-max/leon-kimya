@@ -41,6 +41,7 @@ assets/
   build-pages.py      Dil sayfalarını ve sitemap'i üretir
   build-img-sizes.py  Görsel ölçü haritasını üretir
   img/                120 görsel (WebP)
+  katalog/            E-katalog PDF'leri (dört dil, 69 sayfa)
 yayinla.bat           Tek tık yayın
 ```
 
@@ -79,9 +80,13 @@ ikisini birlikte güncelleyin. `whatsapp` da cep numarasıyla aynı olmalı.
 > `contactReady: false` yapılırsa site hiçbir telefon/e-posta bağlantısı
 > üretmez ve WhatsApp düğmesi gizlenir — eksik bilgiyle yayına çıkmayı önler.
 
-### E-Katalog'u yayına açmak
+### E-Katalog'u güncellemek
 
-Dört dilin PDF'ini `assets/katalog/` klasörüne koyun:
+**Katalog yayında** (18.08.2026'dan beri): dört dil, 69 sayfa. Ziyaretçi
+menüdeki indirme düğmesinden kendi dilindeki PDF'i indiriyor.
+
+Yeni sürüm için dosyaları **aynı adlarla** `assets/katalog/` klasörüne
+kopyalayın (üzerine yazın):
 
 ```
 leon-kimya-katalog-tr.pdf
@@ -90,16 +95,11 @@ leon-kimya-katalog-fr.pdf
 leon-kimya-katalog-ar.pdf
 ```
 
-Sonra `assets/i18n.js` içinde `catalog` bloğundaki satırı değiştirin:
+Sonra `python assets/build-pages.py` çalıştırın. `i18n.js`'te bir şey
+değiştirmeniz gerekmez — düğme zaten açık.
 
-```js
-ready: true,
-```
-
-ve `python assets/build-pages.py` çalıştırın. Menüde "Teklif Alın"ın solunda
-indirme düğmesi belirir; her dil kendi PDF'ini indirir.
-
-> Dosyalar eksikken `ready: true` yaparsanız derleme durur ve hangi dosyanın
+> Katalog düğmesini geçici olarak kaldırmak isterseniz `ready: false` yapın.
+> Dosyalar eksikken `ready: true` bırakırsanız derleme durur ve hangi dosyanın
 > eksik olduğunu söyler — ziyaretçiye boşa çıkan indirme düğmesi göstermemek için.
 
 ### Yeni görsel eklemek
@@ -118,7 +118,8 @@ python assets/build-pages.py
 ## Sayfa bölümleri
 
 1. Üst bar — dil seçimi
-2. Yapışkan menü — logo, ürün mega menüsü, "Teklif Alın"
+2. Yapışkan menü — logo, ürün mega menüsü, **E-Katalog indirme düğmesi**,
+   "Teklif Alın"
 3. **Hero** — ürün ailelerini gezen slider + 4'lü özellik paneli
 4. **Ürünler & Sistemler** — kutucuk ızgarası
 5. **Uygulamalar** — 4 kart
