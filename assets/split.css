@@ -48,6 +48,13 @@ body.lock{overflow:hidden}
 /* Yön güvenli gizleme: left:-9999px RTL sayfada belgeyi yatayda ~10bin px
    genişletip görünümü boş alana kaydırıyordu (Arapça sayfa bembeyaz görünüyordu).
    clip-path yöntemi kaydırma alanını hiç büyütmez. */
+/* Görsel olarak gizli, ekran okuyucu ve arama motoru için okunur.
+   Sayfanın tek <h1>'i bunu kullanıyor: hero bir slider ve içindeki altı
+   başlık dönüyor, hiçbiri sabit sayfa başlığı olamazdı.
+   RTL NOTU: left:-9999px KULLANILMAZ — Arapça sayfada belgeyi yatayda
+   büyütüp içeriği boş gösteriyordu. clip-path kaydırma alanını büyütmez. */
+.vh{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;
+  clip-path:inset(50%);overflow:hidden;white-space:nowrap}
 .skip{position:absolute;inset-inline-start:0;top:0;clip-path:inset(50%);overflow:hidden;white-space:nowrap;
   background:var(--brand);color:var(--brand-on);padding:12px 18px;z-index:999}
 .skip:focus{clip-path:none;inset-inline-start:12px;top:12px}

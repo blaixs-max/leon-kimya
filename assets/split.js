@@ -341,7 +341,7 @@ const ftr = `<footer class="ftr"><div class="wrap">
     </a>` : ""}<button id="toTop" aria-label="${e(T.ui.toTop)}" hidden>${ic("arrow")}</button></div>`;
 
   /* Ihracat bolumu kullanici isteğiyle sayfa sonuna (footer oncesine) alindi */
-  return top + hdr + drw + `<main id="main">` + hero + tiles + vids + sys + about + apps + contact + exportSec + `</main>` + ftr +
+  return top + hdr + drw + `<main id="main"><h1 class="vh">${e(T.ui.h1)}</h1>` + hero + tiles + vids + sys + about + apps + contact + exportSec + `</main>` + ftr +
     `<div class="dtl" id="dtl" hidden></div>`;
 }
 
