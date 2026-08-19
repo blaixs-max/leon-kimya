@@ -35,8 +35,26 @@ uydurulacak şeyler değil.
 
 | # | İş | Not |
 |---|---|---|
-| B1 | **Search Console'a sitemap tanıt** | `https://leonkimya.com/sitemap.xml`. Adım adım anlatabilirim. Yapılmadan Google siteyi bulur ama yavaş. |
-| B2 | **Form postaları spam'e düşüyor** | Test mesajı Spam klasörüne indi. FormSubmit kendi sunucusundan gönderdiği için `leonkimya.com` SPF'i bu postaları kapsamıyor. Çözüm: gelen mesajı "spam değil" işaretleyin ve Hostinger'da `formsubmit.co` için izin kuralı ekleyin. |
+| B1 | **Form postaları spam'e düşüyor** | Test mesajı Spam klasörüne indi. FormSubmit kendi sunucusundan gönderdiği için `leonkimya.com` SPF'i bu postaları kapsamıyor. Çözüm: gelen mesajı "spam değil" işaretleyin ve Hostinger'da `formsubmit.co` için izin kuralı ekleyin. |
+| B2 | **Search Console: ikinci doğrulama yöntemi** | İsteğe bağlı sigorta. Şu an tek yöntem DNS TXT kaydı; o kayıt silinirse mülk düşer. Ayarlar → Sahipliği doğrulama → HTML etiketi kodunu verin, dört sayfaya ben eklerim. |
+
+### İzlenecek — Google tarafında, bizde yapılacak bir şey yok
+
+Search Console 19.08.2026'da doğrulandı (alan adı mülkü, DNS TXT). Sitemap
+gönderildi, dört dil için dizine ekleme istendi. **Ana sayfa zaten dizinde.**
+
+İki uyarı var, ikisi de **aynı sebepten**: Google hâlâ dünkü `Disallow: /`
+sürümünü önbellekte tutuyor (robots.txt ~24 saat önbelleklenir).
+
+- Sitemap durumu: "Getirilemedi"
+- URL Denetimi: "Robots.txt tarafından engelleniyor olsa da dizine eklendi"
+
+Canlı `robots.txt` doğru (`Allow: /` + Sitemap satırı), Googlebot ile
+`HTTP 200` dönüyor — sunucu tarafında yapılacak bir şey yok. Google robots'u
+yenileyince ikisi de kendiliğinden düzelir. Hızlandırmak için:
+**Ayarlar → robots.txt → ⋮ → Yeniden tarama iste**
+
+Bir gün sonra hâlâ düzelmediyse gerçek bir sorun var demektir, kazmak gerekir.
 
 > **DNS uyarısı:** nameserver'lar Hostinger'da kalmalı. Vercel'e taşınırsa
 > e-posta kayıtları yazılamaz ve posta çalışmaz. Ayrıntı: `CLAUDE.md` bölüm 2.
