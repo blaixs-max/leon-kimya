@@ -520,6 +520,12 @@ if (cf && has(B.formEndpoint)) {
         })
       });
       if (!r.ok) throw new Error(r.status);
+      /* HTTP 200 tek başına YETMEZ. FormSubmit teslim edemediği durumlarda da
+         200 dönüp gövdeye success:"false" yazıyor (ör. alıcı adres henüz
+         aktive edilmemişse). Yalnız r.ok'a bakmak, mesaj iletilmediği hâlde
+         ziyaretçiye "mesajınız alındı" dedirtiyordu. (yaşanmış hata) */
+      const sonuc = await r.json().catch(() => ({}));
+      if (String(sonuc.success) !== "true") throw new Error(sonuc.message || "gonderilemedi");
       cf.reset(); say(T.form.success, false);
     } catch (_) { say(T.form.error, true); }
     btn.disabled = false;
