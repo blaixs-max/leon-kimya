@@ -28,7 +28,7 @@ window.SITE_BASE = {
     /* WhatsApp hattı = cep numarası. Numara değişirse hem burayı hem
        telMobile'ı güncelleyin; ikisi aynı hattı göstermeli. */
     whatsapp: "https://wa.me/905303606143",
-    email: "emre@leonairsea.com",
+    email: "info@leonkimya.com",
     /* JSON-LD (schema.org PostalAddress) icin adresin parcali hali.
        Ekranda gorunen serbest metin STRINGS.<dil>.address'te; burasi
        yalnizca yapisal veri. Posta kodu BILINMIYOR — uydurulmaz, bos kalir. */
@@ -241,7 +241,7 @@ window.SITE_BASE = {
   /* FormSubmit AJAX ucu (06.08.2026). Alıcı adres değişirse yalnız burayı
      güncelle. İlk gönderimde FormSubmit alıcı adrese bir aktivasyon e-postası
      yollar; içindeki bağlantı onaylanmadan mesajlar iletilmez. */
-  formEndpoint: "https://formsubmit.co/ajax/blaixs@gmail.com",
+  formEndpoint: "https://formsubmit.co/ajax/info@leonkimya.com",
 
   /* ---- ÜRÜN & SİSTEM DETAY KARTLARI ----
      nav: başlık için T.nav anahtarı; img: kapak; gallery: küçük görseller.
