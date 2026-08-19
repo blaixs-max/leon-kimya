@@ -13,7 +13,7 @@ listesine yazılır.
 
 ## A · Hukuki — en öncelikli
 
-Site artık halka açık ve iletişim formu kişisel veri topluyor.
+Site halka açık ve iletişim formu kişisel veri topluyor.
 
 | # | İş | Kim | Not |
 |---|---|---|---|
@@ -21,16 +21,13 @@ Site artık halka açık ve iletişim formu kişisel veri topluyor.
 | A2 | **Çerez bildirimi** | Ben | Site kendi çerezini kullanmıyor ama Google Maps gömülü — ziyaretçinin IP'si Google'a gidiyor. |
 | A3 | **Yurt dışına aktarım bildirimi** | A1'in içinde | Form verisi `formsubmit.co` üzerinden geçiyor (üçüncü taraf, yurt dışı). Aydınlatma metninde açıkça yazılmalı. |
 
-> **18.08.2026 — ara düzeltme yapıldı.** Onay kutusu ve uyarı metni dört dilde
-> "aydınlatma metnini okudum" diyordu; **öyle bir metin yoktu**. Ziyaretçiye var
-> olmayan bir belgeyi okuduğunu beyan ettiriyorduk ve kutu zorunluydu. Metinler
-> gerçeği söyleyecek şekilde değiştirildi ("bilgilerimin yalnızca talebime yanıt
-> verilmesi amacıyla işlenmesini kabul ediyorum"). **Yanlış beyan kalktı, ama
-> A1 hâlâ açık** — bu düzeltme KVKK'yı karşılamıyor, yalnızca yanlışı gideriyor.
-
 **A1 için sizden gereken:** veri sorumlusu unvanı (tam ticari ünvan), verilerin
 saklama süresi, varsa KVKK irtibat kişisi. Bunlar olmadan metin yazamam —
 uydurulacak şeyler değil.
+
+> **18.08.2026 — ara düzeltme yapıldı.** Onay kutusu ve uyarı metni dört dilde
+> "aydınlatma metnini okudum" diyordu; öyle bir metin yoktu. Metinler gerçeği
+> söyleyecek şekilde değiştirildi. **Yanlış beyan kalktı, A1 hâlâ açık.**
 
 ---
 
@@ -38,9 +35,8 @@ uydurulacak şeyler değil.
 
 | # | İş | Not |
 |---|---|---|
-| B1 | **Search Console'a sitemap tanıt** | `https://leonkimya.com/sitemap.xml`. Adım adım anlatabilirim. Bu yapılmadan Google siteyi bulur ama yavaş. |
-| B2 | **Hostinger e-posta kurulumunu tamamla** | Plan alınmış, kurulum yarım (`MX`/`TXT` kaydı yok). Bitince B3 açılır. |
-| B3 | **Yeni e-postayı siteye geçir** | B2 bitince: `SITE_BASE.contact.email` ve `SITE_BASE.formEndpoint` → `@leonkimya.com`. İkisi de tek satır, **Ben** yaparım. |
+| B1 | **Search Console'a sitemap tanıt** | `https://leonkimya.com/sitemap.xml`. Adım adım anlatabilirim. Yapılmadan Google siteyi bulur ama yavaş. |
+| B2 | **Form postaları spam'e düşüyor** | Test mesajı Spam klasörüne indi. FormSubmit kendi sunucusundan gönderdiği için `leonkimya.com` SPF'i bu postaları kapsamıyor. Çözüm: gelen mesajı "spam değil" işaretleyin ve Hostinger'da `formsubmit.co` için izin kuralı ekleyin. |
 
 > **DNS uyarısı:** nameserver'lar Hostinger'da kalmalı. Vercel'e taşınırsa
 > e-posta kayıtları yazılamaz ve posta çalışmaz. Ayrıntı: `CLAUDE.md` bölüm 2.
@@ -63,16 +59,30 @@ Hiçbiri uydurulamaz; siz vermeden yazılmaz *(`CLAUDE.md` kural 3)*.
 
 | # | İş | Kim | Not |
 |---|---|---|---|
-| D1 | **Katalog PDF'lerini yeniden üret** | Siz | Dört dosyanın içinde hâlâ `leon-kimya.vercel.app` yazıyor. `SITE_URL` gibi otomatik türemez. Yeni çıktıyı verin, aynı adlarla değiştiririm. |
-| D2 | **Katalog boyutu** | Siz | Her dosya ~13 MB. Mobilde ağır. Kataloğu üreten araçtan "web için optimize" çıktısı alınırsa %60–70 küçülür. Zorunlu değil. |
-| D3 | **Vercel GitHub App bağlantısı** | Siz | Şu an `git push` tek başına yayına almıyor; `yayinla.bat` deploy ediyor. Bağlanırsa otomatik olur. Vercel → Settings → Git |
-| D4 | **`katalog/` git'te versiyonlansın mı?** | Siz — **karar bekliyor** | Kökteki taslak klasörü `.gitignore`'da değil; `git add -A` çalışırsa 49 MB depoya girer. Şimdilik commit'lerde dosya yolları açıkça yazılarak korunuyor. |
+| D1 | **Katalog boyutu** | Siz | Her dosya ~13 MB. Mobilde ağır. Kataloğu üreten araçtan "web için optimize" çıktısı alınırsa %60–70 küçülür. Zorunlu değil. |
+| D2 | **Vercel GitHub App bağlantısı** | Siz | Şu an `git push` tek başına yayına almıyor; `yayinla.bat` deploy ediyor. Bağlanırsa otomatik olur. Vercel → Settings → Git |
+| D3 | **`katalog/` git'te versiyonlansın mı?** | Siz — **karar bekliyor** | Kökteki taslak klasörü `.gitignore`'da değil; `git add -A` çalışırsa 49 MB depoya girer. Şimdilik commit'lerde dosya yolları açıkça yazılarak korunuyor. |
+
+---
+
+## E · Kayda geçen — kullanıcı kararı verildi
+
+| # | Konu | Durum |
+|---|---|---|
+| E1 | Katalogdaki sertifika sayfası ve `Polinflex` ibaresi | Yayındaki dört PDF'te ISO 9001/14001 tesis beyanı, World Athletics ve ITF belge satırları ve sistem adlarında `Polinflex` geçiyor. Durum kullanıcıya iki kez ayrıntılı bildirildi; **mevcut hâliyle yayınlanmasına kullanıcı karar verdi.** Üretici (`build.js`) tarafında `Polinflex` silindi, dolayısıyla yeniden basım istenirse temiz çıkar (~4 dk). **Talep gelmedikçe bu konu yeniden açılmayacak.** |
 
 ---
 
 ## Kapalı — tekrar açılmayacak
 
 Tam liste ve gerekçeleri `CLAUDE.md` bölüm 8 "Kapanmış olanlar" başlığında.
-Özet: görseller, logo, iletişim formu, e-katalog, blog, prerender, og etiketleri,
-WebP, CLS, JSON-LD, sitemap, temiz URL, iletişim bilgileri, alan adı taşıması,
-aramaya açılma.
+
+**19.08.2026'da kapananlar:** Hostinger e-posta kurulumu (`info@leonkimya.com`,
+MX/SPF/DKIM/DMARC yerinde) · site e-postasının ve form hedefinin yeni adrese
+geçirilmesi · katalog PDF'lerindeki eski alan adı ve e-posta *(alan adı artık
+`build.js` içinde `ALAN_ADI` tek sabitinde — bir daha PDF'lerde eski adres kalmaz)*
+· formun teslim edilmeyen mesaja "alındı" demesi.
+
+**Daha önce:** görseller, logo, iletişim formu, e-katalog, blog, prerender,
+og etiketleri, WebP, CLS, JSON-LD, sitemap, temiz URL, iletişim bilgileri,
+alan adı taşıması, aramaya açılma.
