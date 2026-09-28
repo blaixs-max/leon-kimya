@@ -91,17 +91,28 @@ def site_verisi():
 # KURUMSAL PALET — sitenin rengini değiştirmek için TEK NOKTA.
 # Burayı düzenleyip `python assets/build-pages.py` çalıştırmak yeterli.
 # =============================================================
-PALETTE_NAME = "KEHRİBAR ÇELİK"
-BRAND = "#D97706"          # ana marka rengi (theme-color olarak da kullanılır)
+PALETTE_NAME = "KEHRİBAR ÇELİK · v3"
+BRAND = "#D97706"          # ana marka rengi
+# Tarayıcı çubuğu rengi: üst bar ile aynı koyu ton (mobilde kesintisiz görünsün)
+THEME_COLOR = "#0E0C0B"
+# v3 notları:
+#  - --brand-on KOYU: kehribar üzerinde beyaz yazı 3.2:1 kalıyordu (AA 4.5:1 ister),
+#    koyu yazı 5.5:1. Birincil düğmeler bu yüzden kehribar zemin + koyu yazı.
+#  - --mut koyulaştırıldı (#78716C -> #5E5853): açık gri zeminde 6.4:1.
+#  - --dk*: hero, sistemler ve iletişim kartı gibi koyu yüzeyler.
+#  - --lay-*: sistem katman kesiti renkleri (şematik).
 PALETTE = """
-  --brand:{brand}; --brand-d:#B45309; --brand-l:#FCD34D; --brand-xl:#FFFBEB; --brand-on:#FFFFFF;
-  --ink:#1C1917; --ink-2:#3B3733; --mut:#78716C; --mut-2:#A8A29E;
-  --line:#E7E5E4; --bg:#FFFCFA; --bg-2:#FAF8F5; --surface:#FFFFFF;
-  --shade:28,25,23;
-  --top-bg:#1C1917; --top-fg:#E7E5E4;
-  --ftr-bg:#1C1917; --ftr-fg:#D6D3D1; --ftr-head:#FCD34D; --ftr-line:rgba(255,255,255,.12);
-  --play:#B45309; --hero-ink:#FFFFFF;
-  --wa:#25D366;   /* WhatsApp kurumsal yesili (marka rengi, palete bagli degil) */""".format(brand=BRAND)
+  --brand:{brand}; --brand-d:#B45309; --brand-l:#FBBF24; --brand-xl:#FEF3C7; --brand-xxl:#FFFBEB; --brand-on:#1C1917;
+  --ink:#1C1917; --ink-2:#3B3733; --mut:#5E5853; --mut-2:#A8A29E;
+  --bg:#FFFFFF; --bg-2:#F6F4F1; --bg-3:#ECE8E3; --surface:#FFFFFF; --line:#E7E3DE; --line-2:#D6D1CB;
+  --dk:#161311; --dk-2:#1F1B18; --dk-3:#2A2522; --dk-line:rgba(255,255,255,.1); --dk-fg:#EDEAE6; --dk-mut:#ABA49D;
+  --shade:28,25,23; --wh:255,255,255; --white:#FFFFFF;
+  --top-bg:{theme}; --top-fg:#C9C3BD;
+  --ftr-bg:#110F0D; --ftr-fg:#BDB6AF; --ftr-head:#FFFFFF; --ftr-line:rgba(255,255,255,.1);
+  --lay-sub:#A29B93; --lay-primer:#D9A441; --lay-core:#34302D; --lay-fleck:#C8553D; --lay-sealer:#77716B;
+  --lay-sl:#2F6C9A; --lay-top:#3B84B8; --lay-mortar:#C2AE8A; --lay-mid:#8B949B; --lay-ind:#AEB6BD;
+  --lay-tape:#EFECE6; --lay-mem1:#9AA0A6; --lay-mem2:#737A81; --lay-ali:#E2E5E8; --lay-safety:#F2C230; --lay-line:#F7F5F1;
+  --wa:#25D366;   /* WhatsApp kurumsal yesili (marka rengi, palete bagli degil) */""".format(brand=BRAND, theme=THEME_COLOR)
 
 # Sitenin genel adresi. Sonda "/" YOK.
 # canonical, og:url, og:image, hreflang, sitemap ve JSON-LD bu sabitten üretilir.
@@ -210,15 +221,19 @@ PAGES = [
        skip="تخطَّ إلى المحتوى", noscript="يتطلب هذا الموقع تفعيل JavaScript لعرض المحتوى."),
 ]
 
+# v3: gövde Inter, başlıklar Archivo (endüstriyel grotesk). Kullanılmayan
+# ağırlıklar (300, 900) listeden çıkarıldı — daha az dosya iner.
 FONTS = {
-  "tr":"family=Inter:wght@300;400;500;600;700;800;900",
-  "en":"family=Inter:wght@300;400;500;600;700;800;900",
-  "fr":"family=Inter:wght@300;400;500;600;700;800;900",
-  "ar":"family=Inter:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700",
+  "tr":"family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700",
+  "en":"family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700",
+  "fr":"family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700",
+  "ar":"family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700",
 }
 
+# Arapça: gövde ve başlık aynı aile (Archivo'da Arapça yok)
 ARABIC_FONT_CSS = """
-  --font:"IBM Plex Sans Arabic",Inter,system-ui,"Segoe UI",sans-serif;"""
+  --font:"IBM Plex Sans Arabic",Inter,system-ui,"Segoe UI",sans-serif;
+  --font-h:"IBM Plex Sans Arabic",Inter,system-ui,"Segoe UI",sans-serif;"""
 
 TPL = """<!DOCTYPE html>
 <html lang="{lang}" dir="{dir}">
@@ -227,7 +242,7 @@ TPL = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-{robots}<meta name="theme-color" content="{brand}">
+{robots}<meta name="theme-color" content="{theme}">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png?v={v}">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon.png?v={v}">
 <link rel="apple-touch-icon" href="assets/img/favicon.png?v={v}">
@@ -291,7 +306,7 @@ for p in PAGES:
         alternates=alts,
         extra=ARABIC_FONT_CSS if p["lang"] == "ar" else "",
         v=V,
-        brand=BRAND,
+        theme=THEME_COLOR,
         palette=PALETTE,
         palette_name=PALETTE_NAME,
         robots='<meta name="robots" content="noindex,nofollow">\n' if NOINDEX else "",

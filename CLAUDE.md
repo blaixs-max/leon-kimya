@@ -178,10 +178,10 @@ Kapatmak gerekirse `SITE_BASE.catalog.ready` → `false`;
 `build-pages.py` **hata verip durur** (`katalog_denetle()`) — sitede 404 dönen
 indirme düğmesi yayınlanmasın diye.
 
-Düğme header'da yalnızca ~1320px üstünde görünür; 1181–1319 bandında menü
-açık olduğu için yer yok, çekmecede duruyor. 1180 altında menü hamburger'a
-döndüğünden header'da yeniden görünür. `PDF` rozeti header'da gizli,
-çekmecede görünür.
+Düğme header'da 1400px üstünde görünür (v3); 1181–1400 bandında menü açık
+olduğu için yer yok — hero'daki katalog bağlantısında, ürünler bölümünde,
+E-Katalog bandında ve çekmecede duruyor. 1180 altında menü hamburger'a döner;
+860 altında header'dan tamamen çekilir. v3'te `PDF` rozeti header'da da görünür.
 
 ### Yeni dil eklemek
 1. `SITE_BASE.langs` dizisine ekle
@@ -252,25 +252,34 @@ yayına almaz. Açmak için: Vercel → Settings → Git → Connect Git Reposit
 
 ---
 
-## 6. Sayfa yapısı (güncel sıra)
+## 6. Sayfa yapısı (güncel sıra — v3 "Endüstriyel Kurumsal", 09.2026)
 
-1. Üst bar — dil seçimi
-2. Yapışkan header — wordmark, mega menü, **E-Katalog indirme düğmesi**,
-   "Teklif Alın"
-   *(Kurumsal artık alt menüsüz; doğrudan `#kurumsal` bölümüne gider)*
-3. **Hero** — 6 ürün ailesini gezen slider + 4'lü özellik paneli
-4. **Ürünler & Sistemler** — 8'li kutucuk ızgarası
-5. **Uygulamalar (video/saha)** — 4 kart
-6. **Sistemler** — 3 sekme (spor / endüstriyel / su izolasyon)
-7. **Kurumsal** — görsel + metin
-8. **Uygulama alanları** — 14 kart, her biri detay katmanı açar
-9. **İletişim** — bilgi + form. Koyu kömür bandı, 26px yuvarlak köşe,
-   form beyaz kart. Form **çalışıyor**: `SITE_BASE.formEndpoint` →
-   `formsubmit.co` üzerinden e-postaya düşüyor.
-10. **İhracat** — konteyner ölçüleri + Incoterms 2020
+1. Üst bar — telefon, e-posta, adres, dil seçimi (koyu)
+2. Yapışkan header — logo, menü (**Ürünler = tam genişlik mega menü**,
+   Sistemler/İhracat = açılır liste), E-Katalog, "Teklif Alın".
+   Yükseklik kaydırınca DEĞİŞMEZ (içerik zıplamasın), yalnız gölge eklenir.
+3. **Hero** — bölünmüş: solda sabit mesaj (`STRINGS.hero` — kicker + başlık
+   + açıklama + iki düğme + katalog bağlantısı), sağda ürün ailelerini gezen
+   görsel slider (`SITE_BASE.categories`). Tek `<h1>` burada.
+4. **Değer bandı** — 4'lü özellik (`STRINGS.feat`)
+5. **Ürün aileleri** — 6 kart (`SITE_BASE.families`): ambalaj görseli, açıklama,
+   alt kalem bağlantıları. EPDM ayrı kart (footer'daki ayrımla aynı).
+6. **Sistemler** — koyu bölüm, 3 sekme (WAI-ARIA tabs). Her sekmede görsel +
+   galeri, metin, **katman kesiti** (SVG, `systems[].layers`) ve özellikler.
+7. **Uygulama alanları** — 14 kart, ilk ikisi geniş; her biri detay paneli açar
+8. **Kurumsal** — görsel + metin
+9. **E-Katalog bandı** — kehribar bant (katalog `ready:false` ise hiç basılmaz)
+10. **İletişim** — koyu bilgi kartı + harita, beyaz form kartı. Form
+    **çalışıyor**: `SITE_BASE.formEndpoint` → `formsubmit.co`.
+11. **İhracat** — konteyner ölçüleri + Incoterms 2020
     *(kullanıcı isteğiyle 05.08.2026'da sayfa sonuna, footer öncesine taşındı)*
-11. Footer
-+ Yüzen WhatsApp düğmesi · detay katmanı (`#dtl`)
+12. Footer
++ Yüzen WhatsApp düğmesi · detay paneli (`#dtl`, sağdan açılır; RTL'de soldan)
+
+**v3'te kaldırılanlar:** "Ürünler & Sistemler" kutucuk ızgarası (7 kutucuk) ve
+4'lü "Uygulamalar (saha)" kartları — içerikleri ürün aileleri, sistemler ve
+uygulama alanları bölümlerinde zaten vardı. Metinleri (`tiles`, `videos`)
+`i18n.js`'te duruyor; geri istenirse git geçmişinde v2 `split.js`'e bakın.
 
 **Kaldırılan bölümler:** Blog ve Markalar sayfadan tamamen çıkarıldı
 (`split.js` içinde artık `const blog` / `const brands` yok). Menüdeki Blog
@@ -309,7 +318,7 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - Arapçada sayılar **Latin rakamla** yazılır (tablodaki ölçülerle tutarlılık için)
 - RTL'de gizleme `left:-9999px` ile YAPILMAZ — belgeyi yatayda büyütüp Arapça
   sayfayı boş gösteriyordu. `clip-path:inset(50%)` kullanılır. *(yaşanmış hata)*
-- **Header dolu — yeni öğe eklemeden önce ölç.** `--wrap` 1280px'de sabit,
+- **Header dolu — yeni öğe eklemeden önce ölç.** `--wrap` 1320px'de sabit (v3),
   yani başlık taşması ekran genişliğinden bağımsızdır; en dar durum
   **Fransızca** menüdür (en uzun etiketler). Bir düğme eklerken dört dilde
   birden `hdr__in` genişliğini ölçün. *(yaşanmış: E-Katalog düğmesi FR'de
@@ -463,3 +472,20 @@ hiçbiri değişmedi. Tek fark: içerik JS yüklenmeden önce de görünür.
   kullandığı için bölmek çoğaltma anlamına gelirdi.
 - **Bazı görsellerde `alt=""` bilinçli** — slider arka planı ve ürün kutucukları.
   Yanlarında aynı metin zaten yazılı; WCAG H67 bu durumda boş alt ister.
+- **v3 "Endüstriyel Kurumsal" tasarım** (09.2026, `tasarim-v3-profesyonel`
+  branch'i; kullanıcı isteğiyle **merge edilmedi**, önizleme için hazırlandı).
+  Bölünmüş hero korundu, geri kalan bölümler yeniden kurgulandı (bkz. bölüm 6).
+  - Renk: marka rengi aynı (`#D97706`). Birincil düğme artık **koyu yazılı**
+    (beyaz yazı kehribarda 3.2:1 kalıyordu, AA değil). `--mut` koyulaştırıldı.
+  - Font: başlıklar **Archivo**, gövde Inter; Arapça IBM Plex Sans Arabic.
+  - **Ürün görselleri değişmedi**: `prod-*`, `epdm-*` dosyaları ve
+    `details.*.productImgs` dizileri main ile birebir aynı. Yalnızca gösterim
+    değişti: kırpılmadan (`contain`), beyaz zeminde.
+  - Ürün dışı görseller: yeni dosya yok; konu dışı kalan kart görselleri mevcut
+    görsellerle değiştirildi (liste `SITE_BASE.applications` üstündeki notta).
+    Aynı fotoğrafı kullanan kartlar `pos`/`zoom` ile farklı kadrajlanıyor.
+  - `figure{margin:0}` eklendi — v2'de tarayıcının 40px varsayılan boşluğu
+    uygulama/saha kartlarını ve kurumsal görseli daraltıyordu.
+  - Arapçada telefon/e-posta `dir="ltr"` sarmalında (numara ters görünüyordu).
+  - Sistem katman kesiti şematiktir; katman sırası sistem metinlerinden alındı,
+    kalınlıklar temsilî (sayfada da not düşülüyor).

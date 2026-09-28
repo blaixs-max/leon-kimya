@@ -117,18 +117,20 @@ python assets/build-pages.py
 
 ## Sayfa bölümleri
 
-1. Üst bar — dil seçimi
-2. Yapışkan menü — logo, ürün mega menüsü, **E-Katalog indirme düğmesi**,
-   "Teklif Alın"
-3. **Hero** — ürün ailelerini gezen slider + 4'lü özellik paneli
-4. **Ürünler & Sistemler** — kutucuk ızgarası
-5. **Uygulamalar** — 4 kart
-6. **Sistemler** — spor / endüstriyel / su izolasyon sekmeleri
-7. **Kurumsal**
-8. **Uygulama alanları** — 14 başlık, tıklayınca detay açılır
-9. **İletişim** — bilgiler + form (form çalışıyor, e-postaya düşüyor)
-10. **İhracat** — konteyner ölçüleri + Incoterms 2020
-11. Footer
+*(v3 "Endüstriyel Kurumsal" tasarım, 09.2026)*
+
+1. Üst bar — telefon, e-posta, dil seçimi
+2. Yapışkan menü — logo, **Ürünler mega menüsü**, E-Katalog, "Teklif Alın"
+3. **Hero** — solda ana mesaj, sağda ürün ailelerini gezen görsel slider
+4. **Değer bandı** — 4'lü özellik
+5. **Ürün aileleri** — 6 kart (ambalaj görselleri, alt ürün bağlantıları)
+6. **Sistemler** — spor / endüstriyel / su izolasyon sekmeleri + katman kesiti
+7. **Uygulama alanları** — 14 kart, tıklayınca detay paneli açılır
+8. **Kurumsal**
+9. **E-Katalog bandı**
+10. **İletişim** — bilgiler + harita + form (form çalışıyor, e-postaya düşüyor)
+11. **İhracat** — konteyner ölçüleri + Incoterms 2020
+12. Footer
 
 ---
 

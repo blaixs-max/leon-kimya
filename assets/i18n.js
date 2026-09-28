@@ -125,14 +125,34 @@ window.SITE_BASE = {
     { k:"contact", href:"#iletisim" }
   ],
 
-  /* TODO: Tüm görseller GEÇİCİ yer tutucudur ve referans siteden gelmektedir.
-     Leon Kimya'nın kendi saha fotoğraflarıyla değiştirilmeden yayına almayın. */
+  /* HERO slider'ı: ürün aileleri. Metinler STRINGS.<dil>.categories (aynı sıra).
+     k   = başlık için T.nav anahtarı (ailenin dile göre adı)
+     pos = görselin kadraj odağı (object-position)
+     v3 (09.2026): parke için salon fotoğrafı yerine uygulama anı, zemin
+     kaplamaları için bitmiş endüstriyel zemin seçildi — ikisi de mevcut görseller. */
   categories: [
-    { img:"assets/img/cat-parquet-v2.webp",  L:"parke" },
-    { img:"assets/img/cat-binder-v2.webp",   L:"dokme" },
-    { img:"assets/img/cat-coating-v2.webp",  L:"puZemin" },
-    { img:"assets/img/cat-water-v2.webp",    L:"suUrun" },
-    { img:"assets/img/cat-primer-v2.webp",   L:"astar" }
+    { img:"assets/img/tile-parquet-v2.webp", L:"parke",   k:"adhesives",      pos:"55% 50%" },
+    { img:"assets/img/cat-binder-v2.webp",   L:"dokme",   k:"binders",        pos:"50% 62%" },
+    { img:"assets/img/ind-service.webp",     L:"puZemin", k:"coatings",       pos:"50% 60%" },
+    { img:"assets/img/cat-water-v2.webp",    L:"suUrun",  k:"waterproofProd", pos:"50% 55%" },
+    { img:"assets/img/cat-primer-v2.webp",   L:"astar",   k:"primersPutties", pos:"40% 50%" }
+  ],
+
+  /* ÜRÜN AİLELERİ bölümü (v3). Altı aile — footer'daki ayrımla aynı:
+     EPDM granüller bağlayıcılardan ayrı gösterilir.
+     img/swatches = mevcut ürün görselleri; dosyalar DEĞİŞTİRİLMEDİ, yalnızca
+     burada da kullanılıyor. cat = STRINGS.categories sırası (açıklama),
+     det = açıklama için details anahtarı, skip = listede gösterilmeyen alt kalem,
+     extra = listeye eklenen bağlantı. */
+  families: [
+    { k:"adhesives",      L:"parke",   cat:0, img:"assets/img/prod-parke-01.webp" },
+    { k:"binders",        L:"dokme",   cat:1, img:"assets/img/prod-binder-01-v3.webp", skip:["epdmGranule"] },
+    { k:"epdmGranule",    L:"epdm",    det:"epdm",
+      swatches:["assets/img/epdm-08.webp","assets/img/epdm-12.webp","assets/img/epdm-17.webp",
+                "assets/img/epdm-23.webp","assets/img/epdm-16.webp","assets/img/epdm-19.webp"] },
+    { k:"coatings",       L:"puZemin", cat:2, img:"assets/img/prod-pu-01-v2.webp" },
+    { k:"primersPutties", L:"astar",   cat:4, img:"assets/img/prod-astar-01-v2.webp" },
+    { k:"waterproofProd", L:"suUrun",  cat:3, det:"suUrun", img:"assets/img/prod-su-01-v3.webp", extra:[{k:"waterSys", L:"suSis"}] }
   ],
 
   tiles: [
@@ -161,31 +181,52 @@ window.SITE_BASE = {
      Boş olduğu sürece istatistik bandı görünmez. */
   stats: [],
 
+  /* layers: katman kesiti, ASAGIDAN YUKARIYA (ilk eleman alt zemin, numarasız).
+     k = STRINGS.<dil>.layers anahtarı, c = renk (split.css --lay-*),
+     h = çizimdeki kalınlık (temsilî), t = doku, opt = isteğe bağlı katman,
+     stripe = üst yüzey çizgisi. Katman sırası sistem metinlerinden alındı. */
   systems: [
     { id:"spor", L:"sporSis", img:"assets/img/sys-sport2-v2.webp",
-      gallery:["assets/img/sport-tennis.webp","assets/img/sys-padel.webp","assets/img/tile-sport-v2.webp","assets/img/sport-gym.webp","assets/img/app-turf-v2.webp"] },
+      gallery:["assets/img/sport-tennis.webp","assets/img/sys-padel.webp","assets/img/tile-sport-v2.webp","assets/img/sport-gym.webp","assets/img/app-turf-v2.webp"],
+      layers:[ {k:"substrate",c:"sub",h:54,t:"speck"}, {k:"primer",c:"primer",h:7}, {k:"core",c:"core",h:30,t:"gran"},
+               {k:"sealer",c:"sealer",h:9}, {k:"slPU",c:"sl",h:15}, {k:"topUV",c:"top",h:8,stripe:"line"} ] },
+    /* ind-roller ile ind-texture bayt bayt aynı dosya: galeride bir kez */
     { id:"endustriyel", L:"endSis", img:"assets/img/ind-apply.webp",
-      gallery:["assets/img/ind-texture.webp","assets/img/ind-roller.webp","assets/img/ind-machines.webp","assets/img/tile-industrial-v2.webp"] },
+      gallery:["assets/img/ind-texture.webp","assets/img/ind-machines.webp","assets/img/tile-industrial-v2.webp","assets/img/ind-service.webp"],
+      layers:[ {k:"concrete",c:"sub",h:58,t:"speck"}, {k:"primer",c:"primer",h:7}, {k:"mortar",c:"mortar",h:22,t:"sand",opt:true},
+               {k:"mid",c:"mid",h:12}, {k:"topInd",c:"ind",h:10,stripe:"safety"} ] },
+    /* vid-membrane-v2 ana görselle neredeyse aynı kareydi: yerine çatı görseli */
     { id:"su", L:"suSis", img:"assets/img/water-main-v2.webp",
-      gallery:["assets/img/water-app1.webp","assets/img/water-app2.webp","assets/img/water-app3.webp","assets/img/vid-membrane-v2.webp"] }
+      gallery:["assets/img/water-app1.webp","assets/img/water-app2.webp","assets/img/water-app3.webp","assets/img/tile-water-v2.webp"],
+      layers:[ {k:"surface",c:"sub",h:58,t:"speck"}, {k:"primer",c:"primer",h:7}, {k:"tape",c:"tape",h:7,t:"hatch"},
+               {k:"mem1",c:"mem1",h:13}, {k:"mem2",c:"mem2",h:13}, {k:"topAli",c:"ali",h:8} ] }
   ],
 
   why: [ {icon:"star"},{icon:"chip"},{icon:"factory"},{icon:"users"},{icon:"truck"},{icon:"shield"} ],
 
+  /* v3 (09.2026): konu dışı kalan kart görselleri, mevcut görseller arasından
+     konuya uyanlarla değiştirildi (yeni dosya yok):
+       Poliüretan spor zemini  sport-gym (kauçuk karolu fitness) -> tile-sport-v2 (derzsiz salon zemini)
+       Çim yapıştırıcı         app-turf-v2 (stadyum + top)      -> kaucuk-kapak (çim serimi)
+       Dekoratif taş           app-stone-v2 (müstakil ev)        -> stone-sample (taş halı yakın plan)
+       Elastomer sandviç       sport-05 (491px oyun parkı)       -> pist görseli, yakın kadraj
+       Endüstriyel zeminler    ind-hall (1024x392 panorama)      -> ind-machines (üretim holü zemini)
+     Eski görseller ilgili detay galerisinde duruyor.
+     pos/zoom: aynı pist fotoğrafını kullanan kartlar farklı kadrajla ayrışır. */
   applications: [
-    { img:"assets/img/sport-gym.webp",     L:"uygSporPu" },
+    { img:"assets/img/tile-sport-v2.webp",    L:"uygSporPu" },
     { img:"assets/img/app-parquet-v2.webp",   L:"uygParke" },
-    { img:"assets/img/sport-tennis2.webp", L:"uygAkrilik" },
+    { img:"assets/img/sport-tennis2.webp",    L:"uygAkrilik" },
     { img:"assets/img/app-rubber-v2.webp",    L:"uygKaucuk" },
     { img:"assets/img/sys-sport2-v2.webp",    L:"uygAtletizm" },
-    { img:"assets/img/app-turf-v2.webp",      L:"uygCim" },
-    { img:"assets/img/app-stone-v2.webp",     L:"uygTas" },
-    { img:"assets/img/sport-05.webp",      L:"uygElastomer" },
-    { img:"assets/img/vid-track2-v2.webp",    L:"uygSandvic" },
-    { img:"assets/img/app-padel.webp",     L:"uygPadel" },
+    { img:"assets/img/kaucuk-kapak.webp",     L:"uygCim" },
+    { img:"assets/img/stone-sample.webp",     L:"uygTas" },
+    { img:"assets/img/vid-track2-v2.webp",    L:"uygElastomer", pos:"18% 90%", zoom:1.8 },
+    { img:"assets/img/vid-track2-v2.webp",    L:"uygSandvic",   pos:"85% 12%", zoom:1.35 },
+    { img:"assets/img/app-padel.webp",        L:"uygPadel" },
     { img:"assets/img/app-playground-v2.webp",L:"uygEpdm" },
-    { img:"assets/img/water-app3.webp",    L:"uygSu" },
-    { img:"assets/img/ind-hall.webp",      L:"uygEndustri" },
+    { img:"assets/img/water-app3.webp",       L:"uygSu" },
+    { img:"assets/img/ind-machines.webp",     L:"uygEndustri" },
     { img:"assets/img/app-resin-v2.webp",     L:"uygDokum" }
   ],
 
@@ -247,19 +288,19 @@ window.SITE_BASE = {
      nav: başlık için T.nav anahtarı; img: kapak; gallery: küçük görseller.
      Metinler STRINGS.<dil>.details altında aynı anahtarla tutulur. */
   details: {
-    "uygSporPu": {"app": true, "img": "assets/img/sport-gym.webp", "gallery": ["assets/img/tile-sport-v2.webp", "assets/img/sys-sport2-v2.webp", "assets/img/vid-track2-v2.webp"]},
+    "uygSporPu": {"app": true, "img": "assets/img/tile-sport-v2.webp", "gallery": ["assets/img/sport-gym.webp", "assets/img/sys-sport2-v2.webp"]},
     "uygParke": {"app": true, "img": "assets/img/app-parquet-v2.webp", "gallery": ["assets/img/vid-parquet-v2.webp", "assets/img/cat-parquet-v2.webp", "assets/img/tile-parquet-v2.webp"]},
     "uygAkrilik": {"app": true, "img": "assets/img/sport-tennis2.webp", "gallery": ["assets/img/sport-tennis.webp"]},
     "uygKaucuk": {"app": true, "img": "assets/img/app-rubber-v2.webp", "gallery": ["assets/img/rubber-tiles.webp", "assets/img/tile-rubber-v2.webp", "assets/img/sport-gym.webp"]},
     "uygAtletizm": {"app": true, "img": "assets/img/sys-sport2-v2.webp", "gallery": ["assets/img/vid-track2-v2.webp"]},
-    "uygCim": {"app": true, "img": "assets/img/app-turf-v2.webp", "gallery": ["assets/img/tile-turf-v2.webp", "assets/img/prod-kaucuk-05.webp"]},
-    "uygTas": {"app": true, "img": "assets/img/app-stone-v2.webp", "gallery": ["assets/img/stone-sample.webp"]},
-    "uygElastomer": {"app": true, "img": "assets/img/sport-05.webp", "gallery": ["assets/img/vid-track2-v2.webp", "assets/img/sys-sport2-v2.webp"]},
+    "uygCim": {"app": true, "img": "assets/img/kaucuk-kapak.webp", "gallery": ["assets/img/app-turf-v2.webp", "assets/img/tile-turf-v2.webp", "assets/img/prod-kaucuk-05.webp"]},
+    "uygTas": {"app": true, "img": "assets/img/stone-sample.webp", "gallery": ["assets/img/app-stone-v2.webp"]},
+    "uygElastomer": {"app": true, "img": "assets/img/vid-track2-v2.webp", "gallery": ["assets/img/sport-05.webp"]},
     "uygSandvic": {"app": true, "img": "assets/img/vid-track2-v2.webp", "gallery": ["assets/img/sys-sport2-v2.webp"]},
     "uygPadel": {"app": true, "img": "assets/img/app-padel.webp", "gallery": ["assets/img/sys-padel.webp", "assets/img/app-padel-02.webp"]},
     "uygEpdm": {"app": true, "img": "assets/img/app-playground-v2.webp", "gallery": ["assets/img/epdm-insitu.webp", "assets/img/tile-binder-v2.webp", "assets/img/cat-binder-v2.webp"]},
     "uygSu": {"app": true, "img": "assets/img/water-app3.webp", "gallery": ["assets/img/water-main-v2.webp", "assets/img/water-app1.webp", "assets/img/water-app2.webp", "assets/img/vid-membrane-v2.webp", "assets/img/tile-water-v2.webp"]},
-    "uygEndustri": {"app": true, "img": "assets/img/ind-hall.webp", "gallery": ["assets/img/ind-apply.webp", "assets/img/ind-texture.webp", "assets/img/ind-roller.webp", "assets/img/ind-machines.webp", "assets/img/tile-industrial-v2.webp", "assets/img/ind-service.webp"]},
+    "uygEndustri": {"app": true, "img": "assets/img/ind-machines.webp", "gallery": ["assets/img/ind-hall.webp", "assets/img/ind-apply.webp", "assets/img/ind-texture.webp", "assets/img/tile-industrial-v2.webp", "assets/img/ind-service.webp"]},
     "uygDokum": {"app": true, "img": "assets/img/app-resin-v2.webp", "gallery": ["assets/img/resin-table.webp", "assets/img/resin-wave.webp", "assets/img/tile-resin-v2.webp"]},
     "parke": {"nav": "parquetAdh", "img": "assets/img/cat-parquet-v2.webp", "gallery": ["assets/img/vid-parquet-v2.webp", "assets/img/app-parquet-v2.webp", "assets/img/tile-parquet-v2.webp"], "productImgs": ["assets/img/prod-parke-01.webp", "assets/img/prod-parke-02-v2.webp", "assets/img/prod-parke-03.webp"]},
     "pvc": {"nav": "pvcAdh", "img": "assets/img/pvc-apply.webp", "gallery": ["assets/img/pvc-hall.webp"], "productImgs": ["assets/img/prod-pvc-01-v2.webp"]},
@@ -273,7 +314,7 @@ window.SITE_BASE = {
     "akZemin": {"nav": "acCoat", "img": "assets/img/sport-tennis.webp", "gallery": ["assets/img/sport-tennis2.webp"], "productImgs": ["assets/img/prod-ak-01-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-03-v2.webp", "assets/img/prod-ak-04-v2.webp", "assets/img/prod-ak-05-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/prod-ak-08.webp", "assets/img/prod-ak-09.webp"]},
     "epZemin": {"nav": "epCoat", "img": "assets/img/ind-apply.webp", "gallery": ["assets/img/ind-texture.webp", "assets/img/ind-roller.webp", "assets/img/tile-industrial-v2.webp", "assets/img/resin-wave.webp"], "productImgs": ["assets/img/prod-ep-01-v2.webp", "assets/img/tile-industrial-v2.webp", "assets/img/prod-ep-02-v2.webp"]},
     "astar": {"nav": "primers", "img": "assets/img/cat-primer-v2.webp", "gallery": ["assets/img/ind-apply.webp"], "productImgs": ["assets/img/cat-primer-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/ind-apply.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp"]},
-    "macun": {"nav": "putties", "img": "assets/img/ind-roller.webp", "gallery": ["assets/img/ind-texture.webp"]},
+    "macun": {"nav": "putties", "img": "assets/img/ind-roller.webp", "gallery": ["assets/img/cat-primer-v2.webp"]},
     "suUrun": {"nav": "waterproofProd", "img": "assets/img/water-main-v2.webp", "gallery": ["assets/img/water-app1.webp", "assets/img/water-app2.webp", "assets/img/water-app3.webp", "assets/img/tile-water-v2.webp"], "productImgs": ["assets/img/prod-su-01-v3.webp"]},
     "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.webp", "gallery": ["assets/img/sys-padel.webp", "assets/img/sport-tennis.webp", "assets/img/tile-sport-v2.webp", "assets/img/sport-gym.webp", "assets/img/vid-track2-v2.webp"]},
     "endSis": {"nav": "indSys", "img": "assets/img/ind-apply.webp", "gallery": ["assets/img/ind-texture.webp", "assets/img/ind-machines.webp", "assets/img/tile-industrial-v2.webp", "assets/img/ind-service.webp"]},
@@ -349,7 +390,25 @@ tr: {
     allRights:"Tüm hakları saklıdır.",
     mapTodo:"Konum bilgisi eklendiğinde harita burada görünecek.",
     close:"Kapat", keyFeatures:"Öne Çıkan Özellikler", productRange:"Ürün Çeşitleri",
-    waLabel:"WhatsApp ile yazın", waPrefill:"Merhaba, ürünleriniz hakkında bilgi almak istiyorum."
+    waLabel:"WhatsApp ile yazın", waPrefill:"Merhaba, ürünleriniz hakkında bilgi almak istiyorum.",
+    /* v3 */
+    langLabel:"Dil",
+    layersTitle:"Katman yapısı",
+    layersNote:"Numaralar uygulama sırasını gösterir; kalınlıklar temsilidir.",
+    catBandTitle:"Tüm ürün ve sistemler tek katalogda",
+    catBandText:"Ürün aileleri, sistemler ve uygulama alanları — E-Katalog'u dört dilde PDF olarak indirin."
+  },
+
+  /* v3: sistem katman kesitinin etiketleri (SITE_BASE.systems[].layers[].k) */
+  layers:{
+    substrate:"Beton / asfalt zemin", concrete:"Beton zemin", surface:"Beton yüzey",
+    primer:"Astar", core:"SBR/EPDM elastik çekirdek", sealer:"Gözenek kapatan macun",
+    slPU:"Self-levelling poliüretan kaplama", topUV:"UV dayanımlı son kat ve saha çizgileri",
+    mortar:"Epoksi harç takviyesi (ağır yük alanları)", mid:"Ara kat",
+    topInd:"Self-levelling veya portakal kabuğu son kat",
+    tape:"Güçlendirme bandı (köşe ve süzgeç detayları)",
+    mem1:"Likit membran — 1. kat", mem2:"Likit membran — 2. kat",
+    topAli:"Alifatik son kat (UV'ye açık yüzeyler)"
   },
 
   hero:{
@@ -629,7 +688,25 @@ en: {
     allRights:"All rights reserved.",
     mapTodo:"The map will appear here once the location is added.",
     close:"Close", keyFeatures:"Key Features", productRange:"Product Range",
-    waLabel:"Chat on WhatsApp", waPrefill:"Hello, I would like to get information about your products."
+    waLabel:"Chat on WhatsApp", waPrefill:"Hello, I would like to get information about your products.",
+    /* v3 */
+    langLabel:"Language",
+    layersTitle:"System build-up",
+    layersNote:"Numbers follow the application order; thicknesses are illustrative.",
+    catBandTitle:"All products and systems in one catalogue",
+    catBandText:"Product families, systems and application areas — download the e-catalogue as a PDF, available in four languages."
+  },
+
+  /* v3: system build-up labels (SITE_BASE.systems[].layers[].k) */
+  layers:{
+    substrate:"Concrete / asphalt substrate", concrete:"Concrete substrate", surface:"Concrete surface",
+    primer:"Primer", core:"SBR/EPDM elastic core", sealer:"Pore-sealing putty",
+    slPU:"Self-levelling polyurethane coating", topUV:"UV-resistant top coat and court markings",
+    mortar:"Epoxy mortar reinforcement (heavy-load areas)", mid:"Intermediate coat",
+    topInd:"Self-levelling or orange-peel top coat",
+    tape:"Reinforcement tape (corner and drain details)",
+    mem1:"Liquid membrane — 1st coat", mem2:"Liquid membrane — 2nd coat",
+    topAli:"Aliphatic top coat (UV-exposed surfaces)"
   },
 
   hero:{
@@ -909,7 +986,25 @@ fr: {
     allRights:"Tous droits réservés.",
     mapTodo:"La carte s'affichera ici une fois l'adresse renseignée.",
     close:"Fermer", keyFeatures:"Caractéristiques clés", productRange:"Gamme de produits",
-    waLabel:"Écrire sur WhatsApp", waPrefill:"Bonjour, je souhaite obtenir des informations sur vos produits."
+    waLabel:"Écrire sur WhatsApp", waPrefill:"Bonjour, je souhaite obtenir des informations sur vos produits.",
+    /* v3 */
+    langLabel:"Langue",
+    layersTitle:"Composition du système",
+    layersNote:"La numérotation suit l'ordre d'application ; les épaisseurs sont indicatives.",
+    catBandTitle:"Tous nos produits et systèmes dans un seul catalogue",
+    catBandText:"Familles de produits, systèmes et domaines d'application — téléchargez l'e-catalogue en PDF, disponible en quatre langues."
+  },
+
+  /* v3 : libellés des couches (SITE_BASE.systems[].layers[].k) */
+  layers:{
+    substrate:"Support béton / asphalte", concrete:"Support béton", surface:"Surface béton",
+    primer:"Primaire", core:"Cœur élastique SBR/EPDM", sealer:"Mastic d'obturation des pores",
+    slPU:"Revêtement polyuréthane autolissant", topUV:"Finition résistante aux UV et tracés de jeu",
+    mortar:"Renfort en mortier époxy (zones à fortes charges)", mid:"Couche intermédiaire",
+    topInd:"Finition autolissante ou « peau d'orange »",
+    tape:"Bande de renfort (angles et évacuations)",
+    mem1:"Membrane liquide — 1re couche", mem2:"Membrane liquide — 2e couche",
+    topAli:"Finition aliphatique (surfaces exposées aux UV)"
   },
 
   hero:{
@@ -1189,7 +1284,25 @@ ar: {
     allRights:"جميع الحقوق محفوظة.",
     mapTodo:"ستظهر الخريطة هنا بعد إضافة بيانات الموقع.",
     close:"إغلاق", keyFeatures:"أبرز الخصائص", productRange:"تشكيلة المنتجات",
-    waLabel:"تواصل عبر واتساب", waPrefill:"مرحبًا، أودّ الحصول على معلومات عن منتجاتكم."
+    waLabel:"تواصل عبر واتساب", waPrefill:"مرحبًا، أودّ الحصول على معلومات عن منتجاتكم.",
+    /* v3 */
+    langLabel:"اللغة",
+    layersTitle:"تركيب طبقات النظام",
+    layersNote:"تتبع الأرقام ترتيب التطبيق، والسماكات توضيحية.",
+    catBandTitle:"جميع المنتجات والأنظمة في كتالوج واحد",
+    catBandText:"عائلات المنتجات والأنظمة ومجالات التطبيق — نزّل الكتالوج الإلكتروني بصيغة PDF، وهو متوفر بأربع لغات."
+  },
+
+  /* v3: تسميات طبقات النظام (SITE_BASE.systems[].layers[].k) */
+  layers:{
+    substrate:"أرضية خرسانية / أسفلتية", concrete:"أرضية خرسانية", surface:"سطح خرساني",
+    primer:"برايمر", core:"نواة مرنة من SBR/EPDM", sealer:"معجون سدّ المسام",
+    slPU:"طلاء بولي يوريثان ذاتي التسوية", topUV:"طبقة نهائية مقاومة للأشعة فوق البنفسجية وخطوط الملعب",
+    mortar:"تدعيم بمونة الإيبوكسي (مناطق الأحمال الثقيلة)", mid:"طبقة وسيطة",
+    topInd:"طبقة نهائية ذاتية التسوية أو بملمس «قشرة البرتقال»",
+    tape:"شريط تقوية (تفاصيل الزوايا والصرف)",
+    mem1:"غشاء سائل — الطبقة الأولى", mem2:"غشاء سائل — الطبقة الثانية",
+    topAli:"طبقة نهائية أليفاتية (للأسطح المعرّضة للأشعة فوق البنفسجية)"
   },
 
   hero:{
