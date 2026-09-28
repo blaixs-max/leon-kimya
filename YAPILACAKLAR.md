@@ -80,6 +80,8 @@ Hiçbiri uydurulamaz; siz vermeden yazılmaz *(`CLAUDE.md` kural 3)*.
 | D1 | **Katalog boyutu** | Siz | Yayındaki dosyalar ~13 MB. **v3 dalındaki yeni katalog ~7 MB** (web için sıkıştırılmış, hızlı web görüntüleme açık). Yeni PDF'ler yayına alınınca kapanır. |
 | D2 | **Vercel GitHub App bağlantısı** | Siz | Şu an `git push` tek başına yayına almıyor; `yayinla.bat` deploy ediyor. Bağlanırsa otomatik olur. Vercel → Settings → Git |
 | D3 | **`katalog/` git'te versiyonlansın mı?** | Siz — **karar bekliyor** | Kökteki taslak klasörü `.gitignore`'da değil; `git add -A` çalışırsa 49 MB depoya girer. Şimdilik commit'lerde dosya yolları açıkça yazılarak korunuyor. |
+| D4 | **Görsel yenileme (tekrarlar)** | Siz → Ben | 32 yeni görsel Higgsfield'da hazır; indirilip buraya getirilince site (v3) ve dört katalog güncellenecek. Plan ve eşleme: `GORSEL-YENILEME.md`. |
+| D5 | **İç notlar canlıda açık** | Siz (onay) → Ben | `leonkimya.com/CLAUDE.md`, `/YAPILACAKLAR.md`, `/WHATSAPP-KURULUM.md` herkese açık okunuyor. v3 dalında `.vercelignore`'a eklendi; canlıya yalnız bu satırların alınması onay bekliyor. |
 
 ---
 
