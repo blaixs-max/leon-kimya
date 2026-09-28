@@ -1,0 +1,3385 @@
+{
+ "lang": "tr",
+ "ui": {
+  "tocKicker": "ÜRÜN VE SİSTEM KATALOĞU",
+  "tocTitle": "İçindekiler",
+  "runHead": {
+   "3": "KURUMSAL",
+   "4": "KURUMSAL",
+   "5": "KURUMSAL",
+   "6": "İÇİNDEKİLER",
+   "7": "",
+   "8": "ÜRÜNLER",
+   "9": "ÜRÜNLER",
+   "10": "",
+   "11": "YAPIŞTIRICILAR",
+   "12": "YAPIŞTIRICILAR",
+   "13": "YAPIŞTIRICILAR",
+   "14": "YAPIŞTIRICILAR",
+   "15": "YAPIŞTIRICILAR",
+   "16": "YAPIŞTIRICILAR",
+   "17": "YAPIŞTIRICILAR",
+   "18": "YAPIŞTIRICILAR",
+   "19": "",
+   "20": "BAĞLAYICILAR (BİNDER)",
+   "21": "BAĞLAYICILAR (BİNDER)",
+   "22": "BAĞLAYICILAR (BİNDER)",
+   "23": "BAĞLAYICILAR (BİNDER)",
+   "24": "BAĞLAYICILAR (BİNDER)",
+   "25": "BAĞLAYICILAR (BİNDER)",
+   "26": "BAĞLAYICILAR (BİNDER)",
+   "27": "BAĞLAYICILAR (BİNDER)",
+   "28": "",
+   "29": "ZEMİN KAPLAMALARI & BOYALAR",
+   "30": "ZEMİN KAPLAMALARI & BOYALAR",
+   "31": "ZEMİN KAPLAMALARI & BOYALAR",
+   "32": "ZEMİN KAPLAMALARI & BOYALAR",
+   "33": "ZEMİN KAPLAMALARI & BOYALAR",
+   "34": "ZEMİN KAPLAMALARI & BOYALAR",
+   "35": "ZEMİN KAPLAMALARI & BOYALAR",
+   "36": "",
+   "37": "ASTARLAR & MACUNLAR",
+   "38": "ASTARLAR & MACUNLAR",
+   "39": "ASTARLAR & MACUNLAR",
+   "40": "ASTARLAR & MACUNLAR",
+   "41": "",
+   "42": "SU İZOLASYON ÜRÜNLERİ",
+   "43": "",
+   "44": "SİSTEMLER",
+   "45": "SİSTEMLER",
+   "46": "SİSTEMLER",
+   "47": "SİSTEMLER",
+   "48": "SİSTEMLER",
+   "49": "SİSTEMLER",
+   "50": "SİSTEMLER",
+   "51": "SİSTEMLER",
+   "52": "SİSTEMLER",
+   "53": "SİSTEMLER",
+   "54": "SİSTEMLER",
+   "55": "SİSTEMLER",
+   "56": "SİSTEMLER",
+   "57": "SİSTEMLER",
+   "58": "",
+   "59": "UYGULAMA ALANLARI",
+   "60": "UYGULAMA ALANLARI",
+   "61": "UYGULAMA ALANLARI",
+   "62": "UYGULAMA ALANLARI",
+   "63": "UYGULAMA ALANLARI",
+   "64": "UYGULAMA ALANLARI",
+   "65": "UYGULAMA ALANLARI",
+   "66": "",
+   "67": "İHRACAT",
+   "68": "İHRACAT"
+  }
+ },
+ "cover": {
+  "title": "ÜRÜN VE SİSTEM KATALOĞU",
+  "tagline": "Kimya teknolojisinde çözüm ortağınız",
+  "edition": "Baskı 2026",
+  "site": "leonkimya.com",
+  "imgs": [
+   "6856745d37aa.png",
+   "06e8333d02ce.png",
+   "088520f42e22.png",
+   "b4a69140ca18.png",
+   "d92093cf9718.png",
+   "36482da4dd3b.png",
+   "8e4b364fe2f0.png",
+   "329d0adcc276.png",
+   "508e214cc636.png",
+   "863fb3aef168.png",
+   "34720c1dbb75.png",
+   "cd2b9967b05f.png"
+  ]
+ },
+ "intro": {
+  "tagline": "Kimya teknolojisinde çözüm ortağınız",
+  "disclaimer": "Bu katalogdaki bilgiler genel tanıtım amaçlıdır ve teknik şartname yerine geçmez. Uygulama öncesinde ürünün güncel teknik veri sayfasını (TDS) ve güvenlik bilgi formunu (SDS) talep edin. Ürün özellikleri haber verilmeksizin değiştirilebilir.",
+  "logo": "4a503266b0ed.png"
+ },
+ "corporate": {
+  "kicker": "KURUMSAL",
+  "title": "Leon Kimya",
+  "lead": "Leon Kimya, kimya sektöründe ilgilendiği branşlarda ileri teknolojiyi kullanarak ve kalifiye personel çalıştırarak, müşteri memnuniyetinden taviz vermeden standartlara uygun kalitedeki ürünleri sunmayı ve müşterilerin değişen beklentilerine cevap verebilen bir marka yaratmayı ilke olarak benimsemektedir.",
+  "cols": [
+   [
+    "Poliüretan, epoksi ve akrilik esaslı üretim prosesleriyle; yapıştırıcılar, kauçuk bağlayıcılar, endüstriyel ve spor zemin kaplamaları, su izolasyon sistemleri ile derz dolguları alanlarında çözüm üretiyoruz.",
+    "Ürün geliştirme sürecimizde sahadan gelen geri bildirimi esas alıyor; şartnameye, bütçeye ve alt yapıya göre değişen sistem kurguları hazırlıyoruz."
+   ],
+   [
+    "Üretimin yanında ürün geliştirme (AR-GE) ve müşteriye özel uyarlama (ÜR-GE) süreçlerini ayrı disiplinler olarak yürütüyor; ürünün kullanılacağı zemine, iklime ve işletme koşullarına göre formülasyon öneriyoruz. Solvent içermeyen, kullanıcı ve çevre dostu formülasyonları önceliklendiriyor; uygulama tarafında çözüm ortaklarımızla birlikte projeye özel sistem kurguları hazırlıyoruz."
+   ]
+  ],
+  "img": "cf0041b7b776.jpg",
+  "gallery": [
+   "f08f38f410ea.jpg",
+   "b80ab6c5b632.jpg",
+   "2ca2ee1f38be.jpg"
+  ]
+ },
+ "why": {
+  "kicker": "KURUMSAL",
+  "title": "Neden Leon Kimya",
+  "lead": "Üretimden teslimata kadar her adımda gözettiğimiz altı ilke.",
+  "items": [
+   {
+    "no": "01",
+    "title": "Hizmette Mükemmellik",
+    "text": "Tüm süreçlerimizdeki verimliliği rekabet edebilecek seviyeye yükseltmek için çalışıyoruz."
+   },
+   {
+    "no": "02",
+    "title": "Yüksek Kalite Teknoloji",
+    "text": "Yenilikçi ve yaratıcı yaklaşımları cesaretlendirerek teknolojik kaliteyi artırıyoruz."
+   },
+   {
+    "no": "03",
+    "title": "Üretim Kontrolü",
+    "text": "Üretim süreçlerimizi kendi kontrolümüzde yürütüyor, parti bazında kalite takibi yapıyoruz."
+   },
+   {
+    "no": "04",
+    "title": "Müşteri Odaklı Yaklaşım",
+    "text": "Beklentilerinizi en başından dikkate alıp ön keşif, üretim ve satış sonrası ihtiyaçlarınıza çözüm üretiyoruz."
+   },
+   {
+    "no": "05",
+    "title": "Hızlı ve Kaliteli Teslimat",
+    "text": "Profesyonel üretim ve sevkiyat planlamamız sayesinde ürünleriniz zamanında hazırlanıyor."
+   },
+   {
+    "no": "06",
+    "title": "Müşteri Memnuniyeti",
+    "text": "Tamamladığımız, sürdürdüğümüz veya yeni alacağımız projelerde müşteri memnuniyetini ilk sırada tutuyoruz."
+   }
+  ]
+ },
+ "standards": {
+  "kicker": "KURUMSAL",
+  "title": "Standartlar ve Uygunluk",
+  "lead": "Ürünlerin tasarlandığı referans standartlar, üretim tesisinin belgeleri ve Leon Kimya beyanları.",
+  "sections": [
+   {
+    "title": "Ürün uygunluk standartları",
+    "note": "Ürünler aşağıdaki standartların gereksinimlerine göre tasarlanmış ve test edilmiştir.",
+    "table": {
+     "head": [
+      "Standart",
+      "Kapsam",
+      "Ürün ailesi"
+     ],
+     "rows": [
+      [
+       "EN 14877",
+       "Açık alan sentetik spor zeminleri",
+       "Spor zemin sistemleri"
+      ],
+      [
+       "EN 1177",
+       "Oyun alanı yüzeyleri, kritik düşme yüksekliği",
+       "EPDM granül sistemleri"
+      ],
+      [
+       "EN 13813",
+       "Şap ve zemin kaplama malzemeleri",
+       "Endüstriyel zemin sistemleri"
+      ],
+      [
+       "EN 1504-2",
+       "Beton yüzey koruma sistemleri",
+       "Kaplamalar, su izolasyonu"
+      ],
+      [
+       "EN 13501-1",
+       "Yangına tepki sınıflandırması",
+       "Zemin kaplamaları"
+      ],
+      [
+       "EN 14041",
+       "Elastik zemin kaplamaları, temel özellikler",
+       "PU ve epoksi kaplamalar"
+      ],
+      [
+       "REACH",
+       "Kimyasal madde kayıt ve güvenlik",
+       "Tüm portföy"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Üretim tesisi belgeleri",
+    "note": "Leon Kimya ürünleri ISO 9001 ve ISO 14001 belgeli tesiste üretilmektedir. Belge kopyaları talep üzerine gönderilir."
+   },
+   {
+    "title": "Sistem belgeleri",
+    "note": "Aşağıdaki uluslararası federasyon belgeleri, karşılarında yazan sistem adına düzenlenmiştir.",
+    "table": {
+     "head": [
+      "Belge",
+      "Sistem",
+      "Kapsam"
+     ],
+     "rows": [
+      [
+       "World Athletics Product Certificate",
+       "Leon Sandviç Atletizm Sistemi",
+       "Sandviç · 14 mm"
+      ],
+      [
+       "ITF Court Pace Classification",
+       "Leon Akrilik Sert Kort Sistemi",
+       "Kategori 4 · Orta hız"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Leon Kimya beyanları",
+    "note": "",
+    "table": {
+     "head": [
+      "Belge",
+      "Kapsam"
+     ],
+     "rows": [
+      [
+       "Performans Beyanı (DoP)",
+       "Ürün bazında Leon Kimya adına düzenlenir"
+      ],
+      [
+       "Güvenlik Bilgi Formu (SDS)",
+       "Her ürün için Leon Kimya adı ve iletişim bilgileriyle"
+      ],
+      [
+       "Teknik Veri Sayfası (TDS)",
+       "Her ürün için ayrı düzenlenir"
+      ],
+      [
+       "Parti analiz sertifikası",
+       "Her sevkiyatla birlikte gönderilir"
+      ]
+     ]
+    }
+   }
+  ],
+  "footnote": "Belge kopyaları, test raporları ve performans beyanları talep üzerine gönderilir."
+ },
+ "productList": {
+  "kicker": "ÜRÜNLER",
+  "title": "Ürün Listesi"
+ },
+ "parts": [
+  {
+   "no": "01",
+   "title": "Ürünler",
+   "desc": "Yapıştırıcıdan bağlayıcıya, zemin kaplamasından su izolasyonuna; altı ana ürün ailesi ve üç sistem başlığı.",
+   "img": "b367417ad9ff.jpg",
+   "categories": [
+    {
+     "kicker": "ÜRÜNLER",
+     "title": "Yapıştırıcılar",
+     "items": [
+      "Parke Yapıştırıcıları",
+      "PVC & Vinil Zemin Yapıştırıcısı",
+      "Kauçuk ve Sentetik Çim Yapıştırıcıları",
+      "Filtre Yapıştırıcıları"
+     ],
+     "img": "fa6cf4c4a588.jpg",
+     "families": [
+      {
+       "page": 11,
+       "kicker": "YAPIŞTIRICILAR",
+       "title": "Parke Yapıştırıcıları",
+       "lead": "Masif, lamine ve mühendislik parkeleri şap ve beton yüzeylere kalıcı olarak bağlayan, ağırlıklı poliüretan esaslı yapıştırıcı ailesi.",
+       "paras": [
+        "Portföy, her cins parkede kullanılabilen solventsiz çift komponentli (2K) poliüretan yapıştırıcılar üzerine kuruludur. Doğru seçim; parkenin boyutsal hareketine, şapın emiciliğine ve ihtiyaç duyulan çalışma süresine göre yapılır.",
+        "Tiksotropik yapı düşey kaymayı önler; elastik bağlantı parkenin ses yapmasını ve zamanla ayrılmasını engeller. Ürünler yerden ısıtmalı sistemlerle uyumludur. Uygulama öncesinde zemin nemi ölçülmeli, doğru dişli mala seçilmeli ve açık bekleme süresi aşılmamalıdır."
+       ],
+       "uses": [
+        "Solventsiz, çift komponentli poliüretan esaslı",
+        "Her cins masif, lamine ve mühendislik parkede kullanılır",
+        "Yerden ısıtmalı sistemlerle uyumlu",
+        "Uygulamadan sonraki 48 saat içinde parke yüzeyinden leke bırakmadan temizlenir",
+        "Doğru dişli mala ile sarfiyat kontrol altında tutulur"
+       ],
+       "areas": [
+        "Masif ve lamine parke",
+        "Mühendislik parkesi",
+        "Yerden ısıtmalı zeminler",
+        "Konut ve ofisler",
+        "Otel ve mağazalar",
+        "Spor salonu ahşap zeminleri"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "6140cbd2aca8.jpg",
+       "gallery": [
+        "fa6cf4c4a588.jpg",
+        "9c80fafd0b40.jpg",
+        "d6a62063c06d.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 12,
+         "kicker": "PARKE YAPIŞTIRICILARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-101",
+           "name": "Standart 2K Poliüretan Parke Yapıştırıcısı",
+           "desc": "Her cins parkede güvenle kullanılan, solventsiz çift komponentli poliüretan; yüksek nihai mukavemet ve dengeli çalışma süresi sunar.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "10/1 (ağırlıkça)"
+            },
+            {
+             "l": "Kullanım süresi",
+             "v": "30 – 60 dk"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "1,75 – 2 kg/m²"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "10 kg (A+B) set"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "b3fce0b8e598.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-102",
+           "name": "Tiksotropik 2K Poliüretan Parke Yapıştırıcısı",
+           "desc": "Yüksek kıvamlı yapısıyla mala izini korur, eğimli yüzeylerde akmaz; geniş ebatlı parkelerde kontrollü ve temiz serme sağlar.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "9/1 (ağırlıkça)"
+            },
+            {
+             "l": "Kullanım süresi",
+             "v": "30 – 60 dk"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "1,75 – 2 kg/m²"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "10 kg (A+B) set"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "29b1fa96ffb0.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-103",
+           "name": "Elastik 2K Poliüretan Parke Yapıştırıcısı",
+           "desc": "Ahşabın boyutsal hareketini karşılayan kalıcı elastik bağ; masif ve geniş lamelli parkeler ile yerden ısıtmalı sistemlerin ilk tercihidir.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "6/1 (ağırlıkça)"
+            },
+            {
+             "l": "Kullanım süresi",
+             "v": "45 – 90 dk"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "1 – 1,25 kg/m²"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "7 kg (A+B) set · 10 kg (A+B) set"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "2ac3fb494b4d.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 13,
+       "kicker": "YAPIŞTIRICILAR",
+       "title": "PVC & Vinil Zemin Yapıştırıcısı",
+       "lead": "Esnek PVC, vinil, linolyum, marley ve tabanı kaplı halı türü döşemeleri emici yüzeylere sabitleyen, su bazlı akrilik yapıştırıcı.",
+       "paras": [
+        "Tek komponentli ve solvent içermeyen formülasyon; kokusuz yapısıyla hastane, okul ve konut gibi kapalı alanlarda güvenle çalışılmasına imkân verir. Yüksek ilk yapışma (tack) ve uzun çalışma aralığı, geniş alan uygulamalarında düzeltme payı bırakır.",
+        "Yapıştırıcı dişli mala ile eşit yayılır, kaplama birkaç dakika içinde serilir ve rulo ile bastırılarak tam yüzey teması sağlanır. Yerden ısıtmalı zeminlerde sistem uygulamadan önce kapatılır, döşeme sonrası kademeli olarak açılır. Zemin kaplama yapıştırıcısı, sert PVC boru yapıştırıcısı ile karıştırılmamalıdır."
+       ],
+       "uses": [],
+       "areas": [
+        "Hastane ve laboratuvarlar",
+        "Okul ve kreşler",
+        "Konutlar",
+        "AVM ve mağazalar",
+        "Ofisler",
+        "Homojen ve heterojen PVC zeminler"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-AC-110",
+         "name": "Su Bazlı Akrilik Zemin Kaplama Yapıştırıcısı",
+         "desc": "Tek komponentli, akrilik esaslı ve solvent içermez. Kolay uygulanır; uzun çalışma aralığında yüksek ilk ve nihai yapışma verir. PVC, PU ve lateks yer döşemeleri; marley, marmolyum, linolyum ve tabanı kaplı halıların beton ile şapa yapıştırılmasında kullanılır.",
+         "specs": [],
+         "img": "4fc046744bc8.jpg"
+        }
+       ],
+       "hAreas": "UYGULAMA ALANLARI",
+       "hProducts": "ÜRÜN AİLESİ",
+       "img": "7b23199d6000.jpg",
+       "gallery": [],
+       "productPages": []
+      },
+      {
+       "page": 14,
+       "kicker": "YAPIŞTIRICILAR",
+       "title": "Kauçuk ve Sentetik Çim Yapıştırıcıları",
+       "lead": "Kauçuk karo ve ruloları zemine, sentetik çim şeritlerini birbirine ve ek bandına bağlayan çift komponentli poliüretan yapıştırıcılar.",
+       "paras": [
+        "Solventsiz 2K poliüretan yapı; gün ışığından, sudan ve dış etkenlerden etkilenmeden yapışma gücünü uzun süre korur. Kauçuk karo ve rulolar beton, MDF, sunta ve metal yüzeylere; gerektiğinde seramik, granit ve mermer üzerine uygulanır.",
+        "Sentetik çimde kritik bölge geniş yüzey değil, ek hatları ve kenar dönüşleridir: yapıştırıcı ek bandına eşit yayılır, şeritler merkezlenir ve kür süresi boyunca bağlantı korunur. Yeşil renk seçeneği ek yerlerinin görünmemesini sağlar."
+       ],
+       "uses": [
+        "Solventsiz, çift komponentli poliüretan esaslı",
+        "Kauçuk karo ve ruloların zemine yapıştırılmasında kullanılır",
+        "Sentetik çim ek yerlerinde ve oyun çizgisi montajında kullanılır",
+        "Rutubete, suya ve çoğu kimyasala karşı dayanıklıdır",
+        "Aşınma direnci ve yırtılma mukavemeti yüksektir",
+        "Beton, MDF, sunta ve metal yüzeylerde uygulanır"
+       ],
+       "areas": [
+        "Halı saha ve futbol sahaları",
+        "Kauçuk karo ve rulo zeminler",
+        "Spor salonları",
+        "Çocuk oyun alanları",
+        "Peyzaj ve dekoratif çim",
+        "Havuz çevresi"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "36e594718140.jpg",
+       "gallery": [
+        "11e1364e84e2.jpg",
+        "059d7d765e0f.jpg",
+        "2f32e326ff4a.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 15,
+         "kicker": "KAUÇUK VE SENTETİK ÇİM YAPIŞTIRICILARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-121",
+           "name": "Esnek 2K Poliüretan Kauçuk Yapıştırıcısı",
+           "desc": "Kauçuk karo ve ruloları beton, ahşap ve metal yüzeylere bağlayan solventsiz, esnek çift komponentli sistem.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "9/1 (ağırlıkça)"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "1 kg/m²"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "10 kg (A+B) set · 24 kg (A+B) set"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "d407170db107.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-122",
+           "name": "Ekonomik 2K Poliüretan Kauçuk Yapıştırıcısı",
+           "desc": "Geniş alan uygulamalarında maliyet avantajı sunan, dengeli tutunma profilli çift komponentli varyant.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "7/1 (ağırlıkça)"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "1 kg/m²"
+            },
+            {
+             "l": "Renk",
+             "v": "Krem"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "24 kg (A+B) set"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "639e1b4b06aa.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-123",
+           "name": "2K Poliüretan Sentetik Çim Yapıştırıcısı",
+           "desc": "Sentetik çim şeritlerini ek bandına bağlayan; suya ve dış ortama dayanıklı, yeşil renkli yapıştırıcı.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "7/1 (ağırlıkça)"
+            },
+            {
+             "l": "Renk",
+             "v": "Yeşil"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "11,50 kg kova · 13 kg kova · 24 kg kova · 36 kg kova"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "32e710b6d59a.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-PU-124",
+           "name": "Ekonomik Sentetik Çim Yapıştırıcısı",
+           "desc": "Halı saha ve peyzaj uygulamaları için ekonomik çift komponentli çözüm.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "5,25/1 (ağırlıkça)"
+            },
+            {
+             "l": "Renk",
+             "v": "Yeşil"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "25 kg kova"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "d9c187324e75.jpg"
+          }
+         ],
+         "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
+         "features": [
+          "Çift komponentli, solventsiz poliüretan",
+          "UV, su ve dış ortam dayanımı",
+          "Ek bandı ile tam uyumlu uygulama",
+          "Tiksotropik — eğimli yüzeyde akmaz",
+          "Esnek ve ekonomik varyantlar"
+         ]
+        },
+        {
+         "page": 16,
+         "kicker": "KAUÇUK VE SENTETİK ÇİM YAPIŞTIRICILARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "05",
+           "code": "LK-AK-721",
+           "name": "Derz / Ek Bandı",
+           "desc": "Sentetik çim şeritlerini alttan birleştiren dokuma ek bandı; yapıştırıcı ile birlikte kullanılır.",
+           "specs": [
+            {
+             "l": "Ölçüler",
+             "v": "1 rulo: 140 × 500 m · 5 rulo: 28 × 100 m"
+            }
+           ],
+           "img": "437bbdd89ad6.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-AK-731",
+           "name": "Kauçuk Karo",
+           "desc": "Esnek, aşınmaya dayanıklı hazır zemin karoları; farklı ebat ve kalınlık seçenekleriyle.",
+           "specs": [
+            {
+             "l": "Ölçüler",
+             "v": "40 × 40 × 2 cm · 40 × 40 × 3 cm · 50 × 50 × 2 cm · 50 × 50 × 3 cm"
+            }
+           ],
+           "img": "11e1364e84e2.jpg"
+          },
+          {
+           "no": "07",
+           "code": "LK-AK-741",
+           "name": "SBR Kauçuk Rulo",
+           "desc": "Spor zemin sistemlerinin darbe emici alt katmanı; şap altı ve ses yalıtımında da kullanılır.",
+           "specs": [
+            {
+             "l": "Kaplama kalınlığı",
+             "v": "4 – 10 mm"
+            }
+           ],
+           "img": "cca91130babd.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 17,
+       "kicker": "YAPIŞTIRICILAR",
+       "title": "Filtre Yapıştırıcıları",
+       "lead": "Filtre medyasını, çerçeveyi ve kapağı bir arada tutan; gerektiğinde yerinde conta oluşturan endüstriyel poliüretan sistemler.",
+       "paras": [
+        "İki ayrı görev iki ayrı ürün ailesiyle karşılanır: medya sabitlemede hedef güçlü ve tekrarlanabilir bağlantı; conta ürünlerinde kontrollü dolgu, form kararlılığı ve sızdırmazlıktır. Otomatik dozaj hatları için hızlı kürlenen ve akmayan (tiksotropik) varyantlar mevcuttur.",
+        "Ürün seçiminde dozaj yöntemi, viskozite, çalışma süresi, hizmet sıcaklığı ve temas edilen akışkan belirleyicidir. Medya, çerçeve veya hammadde partisi değiştiğinde seri üretime geçmeden küçük ölçekli deneme önerilir."
+       ],
+       "uses": [
+        "Solventsiz, çift komponentli poliüretan esaslı",
+        "Filtre kâğıdı ile metal veya plastik separatörün yapıştırılmasında kullanılır",
+        "Su, rutubet, aşınma, darbe, asit-alkali ve deniz suyuna dayanıklıdır",
+        "Sıvı sızdırmaz ve antibakteriyeldir",
+        "Kürlendikten sonra hacimsel çekme yapmaz",
+        "Dolum ve kalıp malzemesi olarak da kullanılır"
+       ],
+       "areas": [
+        "Hava filtreleri",
+        "Otomotiv filtreleri",
+        "Endüstriyel filtre kasetleri",
+        "Filtre contaları",
+        "Seri dozaj hatları"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "2ca2ee1f38be.jpg",
+       "gallery": [],
+       "productPages": [
+        {
+         "page": 18,
+         "kicker": "FİLTRE YAPIŞTIRICILARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-131",
+           "name": "Hızlı Kürlenen Filtre Yapıştırıcısı",
+           "desc": "Otomatik dozaj hatlarında kısa çevrim süreleri için geliştirilen poliüretan sistem.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "5/1 (ağırlıkça)"
+            },
+            {
+             "l": "Kullanım süresi",
+             "v": "5 – 10 dk"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "36 kg kova · 300 kg varil (A) · 250 kg varil (B)"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "0ba5cadad49f.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-132",
+           "name": "Otomatik Dozaj Filtre Yapıştırıcısı",
+           "desc": "Seri üretim hatlarında tekrarlanabilir dozaj kararlılığı sağlayan tip.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "30 kg kova · 360 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "6bb3bbe0d3f4.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-133",
+           "name": "Tiksotropik / Conta Tipi",
+           "desc": "Akmadan yerinde conta oluşturan, form kararlılığı yüksek dolgu tipi.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Karışım oranı",
+             "v": "5/1 (ağırlıkça)"
+            },
+            {
+             "l": "Kullanım süresi",
+             "v": "5 – 10 dk"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "36 kg kova · 300 kg varil (A) · 250 kg varil (B)"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "6bb3bbe0d3f4.jpg"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "ÜRÜNLER",
+     "title": "Bağlayıcılar (Binder)",
+     "items": [
+      "Dökme Bağlayıcılar",
+      "Press Bağlayıcılar",
+      "Taş Bağlayıcıları",
+      "EPDM Granüller"
+     ],
+     "img": "11e1364e84e2.jpg",
+     "families": [
+      {
+       "page": 20,
+       "kicker": "BAĞLAYICILAR (BİNDER)",
+       "title": "Dökme Bağlayıcılar",
+       "lead": "SBR ve EPDM granülleri sahada tek parça, esnek bir zemine dönüştüren; nemle kürlenen tek komponentli poliüretan prepolimerler.",
+       "paras": [
+        "Granülle karıştırılıp yüzeye serilen bağlayıcı, kürlendiğinde su geçirgen, darbe emici ve yekpare bir katman oluşturur. Büyük alanlarda finişer makinesiyle, küçük alanlarda elle serilir. Aromatik tipler siyah SBR ve koyu renkli sistemlerde ekonomik çözümdür; renkli EPDM yüzeylerde sararmayan alifatik / UV dayanımlı tipler önerilir.",
+        "Eksik bağlayıcı zayıf bağa, fazlası yüzey sertleşmesine yol açar; karışım oranı ve granül temizliği uygulamanın belirleyicisidir. Yeni granül partisinde küçük bir deneme uygulaması yapılmalıdır."
+       ],
+       "uses": [
+        "Tek komponentli, nemle kürlenen poliüretan bağlayıcı",
+        "EPDM ve SBR granüllerin yerinde dökme uygulamasında kullanılır",
+        "Alifatik tip UV altında sararma yapmaz",
+        "Su geçirgen, gözenekli yüzey oluşturur",
+        "Finisher makinesi veya el ile uygulanabilir"
+       ],
+       "areas": [
+        "Çocuk oyun alanları",
+        "Koşu ve yürüyüş yolları",
+        "Spor zeminleri",
+        "Okul bahçeleri",
+        "Park ve peyzaj alanları",
+        "Dekoratif zeminler"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "b367417ad9ff.jpg",
+       "gallery": [
+        "f291fd638965.jpg",
+        "e09c922f3eb3.jpg",
+        "2b31d9a81b6a.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 21,
+         "kicker": "DÖKME BAĞLAYICILAR",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PP-201",
+           "name": "EPDM Dökme Bağlayıcı",
+           "desc": "Renkli EPDM granül sistemlerinde ton bütünlüğü sağlayan pigmentli bağlayıcı.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Aromatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Şeffaf"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "200 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "9 ay"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PP-202",
+           "name": "SBR Dökme Bağlayıcı",
+           "desc": "Siyah SBR ve koyu renkli sistemler için standart wet-pour bağlayıcısı.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Aromatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Kahverengi – sarı"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "200 kg varil · 220 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "9 ay"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PP-203",
+           "name": "Alifatik EPDM Bağlayıcı (UV Dayanımlı)",
+           "desc": "Renkli EPDM yüzeylerde sararma yapmayan, UV kararlı premium tip.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Alifatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Şeffaf"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "220 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "9 ay"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 22,
+       "kicker": "BAĞLAYICILAR (BİNDER)",
+       "title": "Press Bağlayıcılar",
+       "lead": "Kauçuk karo, bordür ve teknik parçaların kalıpta basınç ve sıcaklık altında üretimi için geliştirilen bağlayıcı reçineler.",
+       "paras": [
+        "Granül-bağlayıcı karışımı kalıpta preslenerek yoğun ve formunu koruyan ürünlere dönüşür. Kalıp sıcaklığı, çevrim süresi ve granül yapısı sonucu belirler; parametrelerin sabit tutulması seri üretimde parça bütünlüğünü garanti eder.",
+        "Dökme ürün ile pres ürünü birbirinin yerine kullanılmamalıdır: çalışma süresi, yüzey kalitesi ve mukavemet iki proseste farklı kurgulanmıştır. Granül kalitesi esnekliği, granül boyutu sarfiyatı belirler."
+       ],
+       "uses": [
+        "Tek komponentli, nemle kürlenen poliüretan bağlayıcı",
+        "Kauçuk karo ve levhaların pres/kalıp üretiminde kullanılır",
+        "Kalıp çevrim süresine göre farklı reaktivitede tipleri vardır",
+        "Kürlenmiş bağ elastik kalır, kırılganlaşmaz",
+        "SBR ve EPDM granüllerle uyumludur"
+       ],
+       "areas": [
+        "Kauçuk karo üretimi",
+        "Kauçuk bordür ve rampalar",
+        "Ahır ve padok zemin plakaları",
+        "Teknik kauçuk parçalar",
+        "Fabrika içi seri üretim"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "11e1364e84e2.jpg",
+       "gallery": [
+        "059d7d765e0f.jpg",
+        "cca91130babd.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 23,
+         "kicker": "PRESS BAĞLAYICILAR",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PP-211",
+           "name": "Standart Press Bağlayıcı",
+           "desc": "Kauçuk karo ve bordür üretiminde dengeli çevrim süresi sunan kalıp bağlayıcısı.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Aromatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Kahverengi – sarı"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "220 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "9 ay"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PP-212",
+           "name": "Hızlı Çevrim Press Bağlayıcı",
+           "desc": "Yüksek kapasiteli üretim hatları için kısaltılmış pres süresi.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Aromatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Kahverengi – sarı"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "220 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "9 ay"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PP-213",
+           "name": "Ekonomik Press Bağlayıcı",
+           "desc": "Standart parçalarda maliyet avantajı sağlayan tip.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Aromatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Açık kahverengi – sarı"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "220 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "9 ay"
+            }
+           ],
+           "img": "11e1364e84e2.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-PP-214",
+           "name": "Yüksek Mukavemet Press Bağlayıcı",
+           "desc": "Yoğun trafiğe maruz teknik parçalar için güçlendirilmiş formül.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Aromatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Açık kahverengi – sarı"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "220 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "9 ay"
+            }
+           ],
+           "img": "059d7d765e0f.jpg"
+          }
+         ],
+         "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
+         "features": [
+          "Kalıp prosesine özel formülasyon",
+          "Düşük sarfiyatla yüksek bağ gücü",
+          "Sabit çevrim parametreleriyle tekrarlanabilirlik",
+          "Yoğun, formunu koruyan ürün yapısı",
+          "SBR ve EPDM granüllerle uyum"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 24,
+       "kicker": "BAĞLAYICILAR (BİNDER)",
+       "title": "Taş Bağlayıcıları",
+       "lead": "Doğal ve renkli taş granülleri şeffaf bir film ile bağlayarak 'taş halı' adı verilen dekoratif, su geçirgen yüzeyler oluşturan reçineler.",
+       "paras": [
+        "Tek komponentli alifatik, çift komponentli alifatik ve çift komponentli epoksi olmak üzere üç varyant sunulur. Alifatik tipler UV altında sararmaz ve dış mekânın ilk tercihidir; epoksi tip, iç mekân ve UV görmeyen alanlarda ekonomik alternatiftir.",
+        "Kürlenen yüzey kaymaz, rüzgârdan etkilenmez, suya ve çoğu kimyasala dayanıklıdır; özel bakım gerektirmeden hafif trafiğe uzun yıllar hizmet eder."
+       ],
+       "uses": [
+        "Doğal ve renkli taş granülleri şeffaf bir film ile bağlar",
+        "Asfalt veya beton üzerine uygulanır",
+        "Kaymaz bir yüzey elde edilmesini sağlar",
+        "Alifatik tipler sararma yapmaz, UV dayanımlıdır",
+        "Rüzgârdan etkilenmez, özel bakım gerektirmez",
+        "Rutubete, suya ve çoğu kimyasala dayanıklıdır"
+       ],
+       "areas": [
+        "Yürüyüş yolları ve geçitler",
+        "Park, bahçe ve botanik alanlar",
+        "Havuz ve gölet çevresi",
+        "Balkon ve teraslar",
+        "Otel ve galeri zeminleri",
+        "Dekoratif iç mekânlar"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "f898b5cef6b4.jpg",
+       "gallery": [
+        "e69ce003efd3.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 25,
+         "kicker": "TAŞ BAĞLAYICILARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-221",
+           "name": "2K Alifatik Taş Bağlayıcısı",
+           "desc": "Sararmayan, şeffaf çift komponentli sistem; dış mekân taş halı uygulamalarının ilk tercihi.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan · Alifatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Şeffaf"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "18 kg (A+B) set"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "ee13891a2d8e.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-EP-222",
+           "name": "2K Epoksi Taş Bağlayıcısı",
+           "desc": "İç mekân ve UV görmeyen alanlar için ekonomik, yüksek mukavemetli tip.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Epoksi"
+            },
+            {
+             "l": "Renk",
+             "v": "Şeffaf"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "16 kg (A+B) set · 352 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "12 ay"
+            }
+           ],
+           "img": "7b859b1c943d.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-223",
+           "name": "1K Alifatik Taş Bağlayıcısı",
+           "desc": "Tek komponentli pratik uygulama; balkon, teras ve yürüyüş yollarında.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Alifatik"
+            },
+            {
+             "l": "Renk",
+             "v": "Şeffaf"
+            },
+            {
+             "l": "Ambalaj",
+             "v": "7 kg kova · 50 kg kova · 220 kg varil"
+            },
+            {
+             "l": "Raf ömrü",
+             "v": "9 ay"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          }
+         ],
+         "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
+         "features": [
+          "Taş dokusunu gösteren şeffaf film",
+          "Alifatik tiplerde sararmazlık",
+          "Su geçirgen, kaymaz yüzey",
+          "1K ve 2K uygulama seçenekleri",
+          "Bakım gerektirmeyen dayanıklılık"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 26,
+       "kicker": "BAĞLAYICILAR (BİNDER)",
+       "title": "EPDM Granüller",
+       "lead": "Sentetik EPDM kauçuğundan üretilen, UV dayanımlı ve canlı renkli granüller; poliüretan bağlayıcı ile esnek ve güvenli zeminlerin ham maddesi.",
+       "paras": [
+        "Homojen tane yapısı ve geniş renk paleti; desenli oyun alanlarından çok renkli spor sahalarına kadar serbest tasarım imkânı verir. Granül boyutu ve katman kalınlığı ayarlanarak farklı düşme güvenliği seviyeleri elde edilir; oyun alanlarında katman kalınlığı EN 1177 kritik düşme yüksekliği yaklaşımına göre belirlenir.",
+        "Geri dönüşümden elde edilen SBR granül, sistemlerin ekonomik elastik alt katmanı olarak EPDM ile birlikte çalışır."
+       ],
+       "uses": [],
+       "areas": [
+        "Çocuk oyun alanları",
+        "Koşu parkurları ve tartan pistler",
+        "Okul bahçeleri",
+        "Spor sahaları",
+        "Havuz kenarları",
+        "Jimnastik ve egzersiz alanları"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-GR-701 / 702",
+         "name": "EPDM Granül — 24 Standart Renk",
+         "desc": "UV dayanımlı, homojen tane yapılı renkli granül; galeriden tüm renk paletini inceleyebilirsiniz.",
+         "specs": [
+          {
+           "l": "Ölçüler",
+           "v": "0,5 – 1,5 mm · 1 – 3,5 mm"
+          }
+         ],
+         "img": "2b31d9a81b6a.jpg"
+        },
+        {
+         "no": "02",
+         "code": "LK-GR-711 / 712",
+         "name": "SBR Granül (Geri Dönüşüm)",
+         "desc": "Sistemlerin ekonomik, darbe emici siyah alt katman granülü.",
+         "specs": [
+          {
+           "l": "Ölçüler",
+           "v": "1 – 3,5 mm · 2,5 – 3,5 mm"
+          }
+         ],
+         "img": "f291fd638965.jpg"
+        }
+       ],
+       "hAreas": "UYGULAMA ALANLARI",
+       "hProducts": "ÜRÜN AİLESİ",
+       "img": "2b31d9a81b6a.jpg",
+       "gallery": [],
+       "productPages": []
+      }
+     ]
+    },
+    {
+     "kicker": "ÜRÜNLER",
+     "title": "Zemin Kaplamaları & Boyalar",
+     "items": [
+      "Poliüretan Zemin Kaplamaları",
+      "Akrilik Zemin Kaplamaları",
+      "Epoksi Zemin Kaplamaları"
+     ],
+     "img": "df1b57e11ccc.jpg",
+     "families": [
+      {
+       "page": 29,
+       "kicker": "ZEMİN KAPLAMALARI & BOYALAR",
+       "title": "Poliüretan Zemin Kaplamaları",
+       "lead": "Elastikiyet, darbe emme ve UV dayanımının belirleyici olduğu zeminler için poliüretan esaslı kaplama ve boya sistemleri.",
+       "paras": [
+        "Sert self-levelling tipler fabrika, depo ve soğuk hava depolarında pürüzsüz ve hijyenik yüzeyler oluşturur; esnek tipler spor salonu, poligon ve kreş gibi alanlarda darbe emerek yaralanma riskini azaltır. Sistem; macun, EPDM son katı ve UV dayanımlı son kat boya ile tamamlanır.",
+        "Poliüretan, epoksinin sert yapısına karşı termal harekete uyum, titreşim sönümleme ve yürüme sesini azaltma avantajı sunar; UV ve dış hava koşullarına dayanımı daha yüksektir."
+       ],
+       "uses": [
+        "0,2 mm – 20 mm arasında istenen kalınlıkta uygulanabilir",
+        "Derzsiz, tozumayan ve kolay temizlenen yüzey oluşturur",
+        "Tüm RAL renklerinde üretilir",
+        "Yüksek mekanik ve kimyasal dayanım sağlar",
+        "İstenirse tam veya yarı iletken (ESD) olarak üretilir",
+        "Zemine logo, yönlendirme ve çizgi uygulanabilir"
+       ],
+       "areas": [
+        "Fabrika ve depolar",
+        "Soğuk hava depoları",
+        "Spor salonları ve poligonlar",
+        "Otopark ve açık alanlar",
+        "Ofis, mağaza ve showroomlar",
+        "Islak hacimler"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "78034a880a05.jpg",
+       "gallery": [
+        "b80ab6c5b632.jpg",
+        "2479247dd997.jpg",
+        "92288cec129c.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 30,
+         "kicker": "POLİÜRETAN ZEMİN KAPLAMALARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-301",
+           "name": "2K Poliüretan Zemin Boyası (UV)",
+           "desc": "Sistemlerin renk ve koruma katmanı; sararmayan son kat boya.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,15 – 0,30 kg/m²"
+            },
+            {
+             "l": "Renk",
+             "v": "Tüm RAL renkleri"
+            }
+           ],
+           "img": "3db33a5619a9.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-302",
+           "name": "2K PU Self-Levelling Kaplama (Sert)",
+           "desc": "Fabrika ve depolar için pürüzsüz, yüksek dayanımlı kaplama.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "2 – 3,50 kg/m²"
+            },
+            {
+             "l": "Renk",
+             "v": "Tüm RAL renkleri"
+            }
+           ],
+           "img": "660fd749a5d4.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-303",
+           "name": "2K PU Self-Levelling Kaplama (Elastik)",
+           "desc": "Spor salonu ve konfor odaklı alanlar için darbe emici tip.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "2 – 2,50 kg/m²"
+            },
+            {
+             "l": "Renk",
+             "v": "Tüm RAL renkleri"
+            }
+           ],
+           "img": "2a2ae552af3a.jpg"
+          }
+         ],
+         "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
+         "features": [
+          "Sert veya esnek sistem kurgusu",
+          "UV dayanımlı, sararmayan son katlar",
+          "Termal gerilmelere uyum",
+          "Yürüme sesini azaltan yüzey",
+          "Antibakteriyel ve alev dayanımlı seçenekler"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 31,
+       "kicker": "ZEMİN KAPLAMALARI & BOYALAR",
+       "title": "Akrilik Zemin Kaplamaları",
+       "lead": "Beton ve asfalt üzerine kat kat uygulanan; su bazlı, solventsiz ve UV'ye son derece dayanıklı akrilik spor zemin kaplamaları.",
+       "paras": [
+        "Sistem; yüzey düzeltici (resurfacer), şok emici cushion katmanları, dolgulu son kat ve saha çizgi boyasından oluşur. Kum içeriği ve katman sayısı ayarlanarak sahanın sürtünme katsayısı — yani oyun hızı — özelleştirilir.",
+        "Don-çözülme döngüsüne dayanımı ve yüksek renk kalıcılığı ile dış mekânda uzun ömür sunar; iç mekânda da amatörden profesyonele her seviyede kullanılır."
+       ],
+       "uses": [],
+       "areas": [
+        "Tenis kortları",
+        "Basketbol ve voleybol sahaları",
+        "Çok amaçlı sahalar",
+        "Koşu ve bisiklet parkurları",
+        "Okul ve belediye tesisleri"
+       ],
+       "products": [],
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "03e1bfc7deb0.jpg",
+       "gallery": [
+        "0bf913225e9d.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 32,
+         "kicker": "AKRİLİK ZEMİN KAPLAMALARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-AC-311",
+           "name": "Akrilik Cila",
+           "desc": "Akrilik yüzeylere parlaklık ve koruma kazandıran son kat.",
+           "specs": [],
+           "img": "639479629f65.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-AC-312",
+           "name": "Akrilik Cushion (Kalın)",
+           "desc": "Kortlarda şok emilimi sağlayan kalın yastık katmanı.",
+           "specs": [],
+           "img": "b52bdb73e6e6.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-AC-313",
+           "name": "Akrilik Cushion (İnce)",
+           "desc": "Hassas hız ayarı için ince yastık katmanı.",
+           "specs": [],
+           "img": "b52bdb73e6e6.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-AC-314",
+           "name": "Premium Akrilik Resurfacer",
+           "desc": "Yüzey hatalarını dolduran, üst katmanlara zemin hazırlayan premium düzeltici.",
+           "specs": [],
+           "img": "ced0a61e0231.jpg"
+          },
+          {
+           "no": "05",
+           "code": "LK-AC-315",
+           "name": "Akrilik Resurfacer",
+           "desc": "Beton ve asfalt üzerinde standart yüzey düzeltme katmanı.",
+           "specs": [],
+           "img": "37c103d17abb.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-AC-316",
+           "name": "Akrilik Dolgulu Son Kat Boya",
+           "desc": "Kum dolgusuyla sürtünme katsayısını belirleyen renkli son kat.",
+           "specs": [],
+           "img": "9f7afa92f415.jpg"
+          }
+         ],
+         "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
+         "features": [
+          "Su bazlı, çevre dostu sistem",
+          "Ayarlanabilir saha hızı (sürtünme katsayısı)",
+          "UV ve don-çözülme dayanımı",
+          "Beton ve asfalta güçlü yapışma",
+          "Düşük bakım maliyeti, geniş renk skalası"
+         ]
+        },
+        {
+         "page": 33,
+         "kicker": "AKRİLİK ZEMİN KAPLAMALARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "07",
+           "code": "LK-AC-317",
+           "name": "Premium Akrilik Konsantre Boya",
+           "desc": "Yüksek pigmentli, uzun ömürlü renk katmanı.",
+           "specs": [],
+           "img": "243fa535203a.jpg"
+          },
+          {
+           "no": "08",
+           "code": "LK-AC-318",
+           "name": "Akrilik Konsantre Boya",
+           "desc": "Saha renklendirmede ekonomik konsantre çözüm.",
+           "specs": [],
+           "img": "243fa535203a.jpg"
+          },
+          {
+           "no": "09",
+           "code": "LK-PU-402",
+           "name": "1K Poliüretan Astar",
+           "desc": "Akrilik sistem öncesi beton yüzey astarı.",
+           "specs": [],
+           "img": "63fa17ae40d9.jpg"
+          },
+          {
+           "no": "10",
+           "code": "LK-AC-407",
+           "name": "Akrilik Astar",
+           "desc": "Akrilik katmanların tutunmasını sağlayan su bazlı astar.",
+           "specs": [],
+           "img": "8cb1222e9e7c.jpg"
+          },
+          {
+           "no": "11",
+           "code": "LK-AC-319",
+           "name": "Akrilik Çizgi Boyası",
+           "desc": "Saha çizgileri için yüksek örtücülüğe sahip boya.",
+           "specs": [],
+           "img": "8279dd7fcc4c.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 34,
+       "kicker": "ZEMİN KAPLAMALARI & BOYALAR",
+       "title": "Epoksi Zemin Kaplamaları",
+       "lead": "İnce film boyadan kendiliğinden yayılan kaplamalara ve epoksi harca; hijyen ve mekanik dayanım odaklı derzsiz zemin sistemleri.",
+       "paras": [
+        "Self-levelling tipler pürüzsüz ve parlak, tekstürlü (portakal kabuğu) tipler kaymaz ve ekonomik yüzeyler oluşturur. Tozumayan ve bakteri barındırmayan yekpare yapı; hastane, gıda ve laboratuvar ortamlarında hijyeni destekler. İstenirse iletken (ESD) olarak üretilebilir.",
+        "Yeni beton üzerinde yaklaşık üç haftalık kür beklenmeli, yüzey astarlanmalı ve nem kontrolü yapılmalıdır. Epoksinin UV dayanımı sınırlı olduğundan güneş gören alanlarda UV dayanımlı son kat boya ile korunur; ağır yük alanlarında sistem epoksi harç ile güçlendirilir."
+       ],
+       "uses": [
+        "Ağır yüke ve yoğun trafiğe dayanıklı yüzey sağlar",
+        "Portakal kabuğu tekstürü ile kaymazlık kazandırılabilir",
+        "Parlak, derzsiz ve hijyenik bir zemin oluşturur",
+        "Kimyasal maddelerden etkilenmez, kolay temizlenir",
+        "Tüm RAL renklerinde üretilir",
+        "Renk yenileme son kat boya ile düşük maliyetle yapılır"
+       ],
+       "areas": [
+        "Fabrika ve üretim tesisleri",
+        "Depo ve antrepolar",
+        "Hastane ve laboratuvarlar",
+        "Gıda ve ilaç tesisleri",
+        "Kapalı otoparklar",
+        "Endüstriyel mutfaklar"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "92288cec129c.jpg",
+       "gallery": [
+        "f08f38f410ea.jpg",
+        "f08f38f410ea.jpg",
+        "a0b0e844a6f2.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 35,
+         "kicker": "EPOKSİ ZEMİN KAPLAMALARI",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-EP-321",
+           "name": "Epoksi Tekstür Kaplama (Portakal Kabuğu)",
+           "desc": "Kaymaz dokulu, ekonomik ve dekoratif son kat kaplama.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Epoksi"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,50 – 0,70 kg/m²"
+            },
+            {
+             "l": "Renk",
+             "v": "Tüm RAL renkleri"
+            }
+           ],
+           "img": "0cafefcaa216.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-EP-322",
+           "name": "Epoksi Zemin Boyası",
+           "desc": "Hafif ve orta trafik için ince film koruyucu boya.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Epoksi"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,40 – 0,50 kg/m²"
+            },
+            {
+             "l": "Renk",
+             "v": "Tüm RAL renkleri"
+            }
+           ],
+           "img": "a0b0e844a6f2.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-EP-323",
+           "name": "Epoksi Self-Levelling Kaplama",
+           "desc": "Pürüzsüz, parlak ve yüksek dayanımlı kendiliğinden yayılan kaplama.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Epoksi"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "2 – 3,50 kg/m²"
+            },
+            {
+             "l": "Renk",
+             "v": "Tüm RAL renkleri"
+            }
+           ],
+           "img": "d555777226f3.jpg"
+          }
+         ],
+         "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
+         "features": [
+          "Self-levelling, boya ve tekstür seçenekleri",
+          "Yüksek mekanik ve kimyasal dayanım",
+          "Hijyenik, tozumayan derzsiz yüzey",
+          "İletken (ESD) üretim imkânı",
+          "Tüm RAL renklerinde uygulama"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "ÜRÜNLER",
+     "title": "Astarlar & Macunlar",
+     "items": [
+      "Astarlar",
+      "Macunlar"
+     ],
+     "img": "f08f38f410ea.jpg",
+     "families": [
+      {
+       "page": 37,
+       "kicker": "ASTARLAR & MACUNLAR",
+       "title": "Astarlar",
+       "lead": "Kaplama ile beton arasında bağ köprüsü kuran; emiciliği dengeleyen, tozumayı kesen ve gerektiğinde nem bariyeri oluşturan ilk katman.",
+       "paras": [
+        "Epoksi astarlar yüksek yapışma ve kimyasal direnç gereken zeminlerde; poliüretan astarlar esnek üst katmanlarla, akrilik astarlar akrilik spor sistemleriyle eşleşir. Dolgulu astarlar yüzey hatalarını doldurarak pürüzsüz bir zemin hazırlar.",
+        "Zemin nemi uygulamanın ilk kontrolüdür: yaklaşık %3'e kadar standart astar yeterlidir, %3–7 aralığında nem bariyerli epoksi astar zorunludur, daha yüksek nemde uygulama yapılmaz. Astar atlanırsa kaplama kısa sürede soyulur ve kabarır."
+       ],
+       "uses": [
+        "Emici ve emici olmayan yüzeyler için ayrı tipleri vardır",
+        "Yüzey ile kaplama arasındaki aderansı belirler",
+        "Epoksi nem bariyeri, yüksek nemli şaplarda kabarmayı önler",
+        "Uygulamadan önce zemin nemi mutlaka ölçülmelidir",
+        "Kuruma süresi tamamlanmadan üst kat uygulanmaz"
+       ],
+       "areas": [
+        "Beton ve şap yüzeyler",
+        "Metal yüzeyler",
+        "Nemli zeminler (bariyerli tip)",
+        "Spor sistem altları",
+        "Kaplama öncesi tüm zeminler"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "1716c16e6d4b.jpg",
+       "gallery": [
+        "92288cec129c.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 38,
+         "kicker": "ASTARLAR",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-401",
+           "name": "Solventsiz PU Astar",
+           "desc": "Kapalı alanlarda güvenle kullanılan, kokusuz poliüretan astar.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan · Solventsiz"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,15 – 0,30 kg/m²"
+            }
+           ],
+           "img": "1716c16e6d4b.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-402",
+           "name": "1K Poliüretan Astar",
+           "desc": "Nemle kürlenen pratik astar; esnek üst katmanlarla uyumlu.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,15 – 0,25 kg/m²"
+            }
+           ],
+           "img": "63fa17ae40d9.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-403",
+           "name": "1K PU Şeffaf Astar",
+           "desc": "Emici yüzeylerde derine nüfuz eden şeffaf tip.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Tek komponentli · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,15 – 0,25 kg/m²"
+            },
+            {
+             "l": "Renk",
+             "v": "Şeffaf"
+            }
+           ],
+           "img": "92288cec129c.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-EP-404",
+           "name": "2K Epoksi Nem Bariyeri",
+           "desc": "Yüksek zemin neminde kaplamayı koruyan bariyer astar.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Epoksi"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,30 – 0,40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          },
+          {
+           "no": "05",
+           "code": "LK-EP-405",
+           "name": "2K Epoksi Astar",
+           "desc": "Yüksek yapışma ve kimyasal direnç gereken zeminlerin standardı.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Epoksi"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,30 – 0,40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-EP-406",
+           "name": "2K Epoksi Astar (Ekonomik)",
+           "desc": "Genel amaçlı beton astarlamada ekonomik çözüm.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Epoksi"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,30 – 0,40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          }
+         ],
+         "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
+         "features": [
+          "Epoksi, poliüretan ve akrilik aileler",
+          "Nem bariyerli seçenekler",
+          "Dolgulu astar ile yüzey düzeltme",
+          "Emici olmayan yüzeyler için özel tipler",
+          "Sistem ömrünü belirleyen kritik katman"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 39,
+       "kicker": "ASTARLAR & MACUNLAR",
+       "title": "Macunlar",
+       "lead": "Derz, çatlak ve gözenekleri dolduran; katmanlar arasında sızdırmaz ve pürüzsüz geçiş sağlayan poliüretan dolgu ürünleri.",
+       "paras": [
+        "Yüksek ve düşük viskoziteli tipler ile elastik varyantlar, zemindeki harekete uyum sağlayarak dolgunun çatlamasını önler. Spor zemin sistemlerinde granül katmanının gözeneklerini kapatan ara katman olarak görev yapar.",
+        "Doğru macun seçimi, üzerine gelen self-levelling katmanın sarfiyatını düşürür ve bitmiş yüzeyin kalitesini doğrudan etkiler."
+       ],
+       "uses": [
+        "Elastik çekirdek üzerindeki gözenekleri kapatır",
+        "Kaplamanın düzgün ve eşit kalınlıkta yayılmasını sağlar",
+        "Farklı viskozite seçenekleriyle her sistem kurgusuna uyar",
+        "Sarfiyat, granül tane boyutuna ve yüzey dokusuna göre değişir",
+        "Poliüretan sistemlerle tam uyumludur"
+       ],
+       "areas": [
+        "Derz ve çatlak dolguları",
+        "Spor zemin ara katmanları",
+        "Kauçuk ve SBR yüzey gözenekleri",
+        "Beton tamiratları",
+        "Kaplama öncesi düzeltmeler"
+       ],
+       "products": [],
+       "hUses": "KULLANIM VE DAYANIM",
+       "hAreas": "UYGULAMA ALANLARI",
+       "img": "f08f38f410ea.jpg",
+       "gallery": [
+        "f08f38f410ea.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 40,
+         "kicker": "MACUNLAR",
+         "title": "Ürün Ailesi",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-501",
+           "name": "PU Sealer",
+           "desc": "Spor sistemlerde granül gözeneklerini kapatan sızdırmazlık katmanı.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,80 – 1 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-502",
+           "name": "Elastik PU Macun",
+           "desc": "Hareketli zeminlerde çatlamadan çalışan elastik dolgu.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "1,50 – 2,50 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-503",
+           "name": "Düşük Viskoziteli PU Macun",
+           "desc": "İnce gözenek ve kılcal boşluklara nüfuz eden akıcı tip.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "0,80 – 1 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "04",
+           "code": "LK-PU-504",
+           "name": "Yüksek Viskoziteli PU Macun",
+           "desc": "Derz ve geniş boşluklarda formunu koruyan yoğun tip.",
+           "specs": [
+            {
+             "l": "Esas",
+             "v": "Çift komponentli (2K) · Poliüretan"
+            },
+            {
+             "l": "Sarfiyat",
+             "v": "2 – 2,50 kg/m²"
+            }
+           ]
+          }
+         ],
+         "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
+         "features": [
+          "Yüksek / düşük viskoziteli ve elastik varyantlar",
+          "Zemin hareketine uyum",
+          "Gözenek kapatma ve sızdırmazlık",
+          "Son kat sarfiyatını azaltır",
+          "Poliüretan sistemlerle tam uyum"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "ÜRÜNLER",
+     "title": "Su İzolasyon Ürünleri",
+     "items": [
+      "Su İzolasyon Ürünleri"
+     ],
+     "img": "db9f0c046d13.jpg",
+     "families": [
+      {
+       "page": 42,
+       "kicker": "SU İZOLASYON ÜRÜNLERİ",
+       "title": "Su İzolasyon Ürünleri",
+       "lead": "Çatıdan temele her detay için likit membranlar ve tamamlayıcı astarlardan oluşan eksiksiz su yalıtım portföyü.",
+       "paras": [
+        "UV'ye açık son katlar için alifatik, kaplama altı için ekonomik tipler; düşey yüzeyler için akmayan (tiksotropik) ve bitüm-poliüretan melez varyantlar sunulur. Emici ve emici olmayan yüzeyler için ayrı astarlar sistemi tamamlar."
+       ],
+       "uses": [],
+       "areas": [
+        "Çatı ve teraslar",
+        "Banyo, balkon ve ıslak hacimler",
+        "Temel ve perde betonlar",
+        "Su depoları ve havuzlar",
+        "Gizli dere detayları"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-WP-601",
+         "name": "Likit Membran Ürün Ailesi",
+         "desc": "1K ve 2K poliüretan likit membranlar, astarlar ve alifatik son katlardan oluşan komple yalıtım seti.",
+         "specs": [],
+         "img": "a5772839c24e.jpg"
+        }
+       ],
+       "hAreas": "UYGULAMA ALANLARI",
+       "hProducts": "ÜRÜN AİLESİ",
+       "img": "db9f0c046d13.jpg",
+       "gallery": [],
+       "productPages": []
+      }
+     ]
+    }
+   ],
+   "colorChart": {
+    "kicker": "EPDM GRANÜLLER",
+    "title": "EPDM Renk Kartelası",
+    "lead": "24 standart granül rengi. Baskı ve ekran koşullarına göre gerçek renkten sapma olabilir; bağlayıcı karar için fiziksel numune isteyin.",
+    "swatches": [
+     {
+      "img": "3a6acc96ec7b.jpg",
+      "label": "Renk 01"
+     },
+     {
+      "img": "972793529a32.jpg",
+      "label": "Renk 02"
+     },
+     {
+      "img": "19fb9563536d.jpg",
+      "label": "Renk 03"
+     },
+     {
+      "img": "db8e9742ec95.jpg",
+      "label": "Renk 04"
+     },
+     {
+      "img": "54a56d7a0379.jpg",
+      "label": "Renk 05"
+     },
+     {
+      "img": "2eaac72e6bd4.jpg",
+      "label": "Renk 06"
+     },
+     {
+      "img": "a24d0c743b48.jpg",
+      "label": "Renk 07"
+     },
+     {
+      "img": "d00a6168ebe0.jpg",
+      "label": "Renk 08"
+     },
+     {
+      "img": "aaa3737d7215.jpg",
+      "label": "Renk 09"
+     },
+     {
+      "img": "0497564f7121.jpg",
+      "label": "Renk 10"
+     },
+     {
+      "img": "4baf1e025d09.jpg",
+      "label": "Renk 11"
+     },
+     {
+      "img": "8f6b3e7972b6.jpg",
+      "label": "Renk 12"
+     },
+     {
+      "img": "7a75818199ee.jpg",
+      "label": "Renk 13"
+     },
+     {
+      "img": "e8a778f24c47.jpg",
+      "label": "Renk 14"
+     },
+     {
+      "img": "53c657b52062.jpg",
+      "label": "Renk 15"
+     },
+     {
+      "img": "9ca3b3bba7aa.jpg",
+      "label": "Renk 16"
+     },
+     {
+      "img": "026b2994e330.jpg",
+      "label": "Renk 17"
+     },
+     {
+      "img": "5555f0704398.jpg",
+      "label": "Renk 18"
+     },
+     {
+      "img": "e74bbff0e3f8.jpg",
+      "label": "Renk 19"
+     },
+     {
+      "img": "af86872c4528.jpg",
+      "label": "Renk 20"
+     },
+     {
+      "img": "6301584010a1.jpg",
+      "label": "Renk 21"
+     },
+     {
+      "img": "b134d7995d33.jpg",
+      "label": "Renk 22"
+     },
+     {
+      "img": "c4ec918e7638.jpg",
+      "label": "Renk 23"
+     },
+     {
+      "img": "fe4ad4259726.jpg",
+      "label": "Renk 24"
+     }
+    ]
+   }
+  },
+  {
+   "no": "02",
+   "title": "Sistemler",
+   "desc": "Şartnameye, bütçeye ve alt yapıya göre kurgulanan sistemler.",
+   "img": "92288cec129c.jpg",
+   "systems": [
+    {
+     "kicker": "SİSTEMLER",
+     "title": "Spor Zemin Sistemleri",
+     "lead": "Astar, elastik çekirdek, macun ve son kattan oluşan; amatör salonlardan profesyonel atletizm pistlerine ölçeklenen katmanlı spor zemin kurguları.",
+     "paras": [
+      "Kapalı salonlarda SBR rulo veya yerinde dökme SBR çekirdek üzerine poliüretan self-levelling kaplama ve UV dayanımlı son kat uygulanır; toplam kalınlık kullanım yoğunluğuna göre kurgulanır. Atletizm tarafında sandviç sistem (dökme SBR çekirdek + elastomer + serbest EPDM yüzey) ve tam dökme sistem; su geçirgen combined ve ekonomik sprey kaplama alternatifleriyle tamamlanır.",
+      "Akrilik sistemler sert kortlarda resurfacer, cushion ve dolgulu son kat ile oyun hızının ayarlanmasına imkân verir. Saha çizgileri en son katman olarak uygulanır; yenileme yalnızca son kat boya ile düşük maliyetle yapılır."
+     ],
+     "hAreas": "UYGULAMA ALANLARI",
+     "areas": [
+      "Tenis kortları",
+      "Basketbol ve voleybol",
+      "Kapalı spor salonları",
+      "Atletizm pistleri",
+      "Padel kortları",
+      "Koşu ve yürüyüş yolları",
+      "Çocuk oyun alanları",
+      "Fitness salonları",
+      "Atış poligonu"
+     ],
+     "img": "f7957c254b4d.jpg",
+     "features": {
+      "kicker": "SPOR ZEMİN SİSTEMLERİ",
+      "title": "Sistem Özellikleri",
+      "features": [
+       "Astar → elastik çekirdek → macun → son kat kurgusu",
+       "Sandviç, tam dökme, combined ve sprey varyantları",
+       "Darbe emici SBR/EPDM çekirdek",
+       "Sararmayan alifatik üst kaplamalar",
+       "Son kat ile ekonomik renk ve çizgi yenileme",
+       "Açık ve kapalı alan uygulaması"
+      ],
+      "paras": [
+       "Padel kortlarında oyun yüzeyi 20 × 10 m'lik alanda, betonarme veya gözenekli asfalt alt yapı üzerine kurulur: 10–15 mm hav yüksekliğinde suni çim ve 0,2–0,5 mm silis kumu dolgusu. Çim şeritleri ek bandı ve iki komponentli poliüretan çim yapıştırıcısıyla birleştirilir; alt yapıdaki %0,5–1 eğim ile çevre drenajı suyun yüzeyde birikmesini ve yapışma katmanının zarar görmesini önler."
+      ],
+      "gallery": [
+       "835906c351e9.jpg",
+       "03e1bfc7deb0.jpg",
+       "2479247dd997.jpg",
+       "cca91130babd.jpg"
+      ]
+     },
+     "sectionPages": [
+      {
+       "kicker": "SPOR ZEMİN SİSTEMLERİ",
+       "title": "Sistem Kesitleri ve Sarfiyat",
+       "sub": "",
+       "sections": [
+        {
+         "name": "Amatör Salon Sistemi — rulo pad ile",
+         "thickness": "Kaplama kalınlığı: ~6 mm",
+         "desc": "Fitness ve antrenman salonları, kapalı tenis kortu, kreş zeminleri",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Kauçuk yapıştırıcı",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "1 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Kauçuk rulo pad",
+           "detail": "4 mm",
+           "code": "LK-AK-741",
+           "amount": "1 m²/m²"
+          },
+          {
+           "no": "04",
+           "name": "Elastik dolgu macunu",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0,80 – 1 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2,50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "UV dayanımlı PU boya",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,15 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        },
+        {
+         "name": "Amatör Salon Sistemi — yerinde dökme",
+         "thickness": "Kaplama kalınlığı: ~6 mm",
+         "desc": "",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "SBR kauçuk granül",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "2,60 – 2,86 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Kauçuk bağlayıcı",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "0,52 – 0,57 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Elastik dolgu macunu",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "2 – 2,50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2,50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "UV dayanımlı PU boya",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,15 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        }
+       ],
+       "footnote": "Değerler ideal kalitede ve düzlükte zemin için verilmiştir; bozuk, hasarlı veya kot farkı olan alanlarda değişir. Bağlayıcı değer için ürünün güncel teknik veri sayfasını (TDS) isteyin."
+      },
+      {
+       "kicker": "SPOR ZEMİN SİSTEMLERİ",
+       "title": "",
+       "sub": "SİSTEM KESİTLERİ VE SARFİYAT",
+       "sections": [
+        {
+         "name": "Profesyonel Salon Sistemi",
+         "thickness": "Kaplama kalınlığı: ~10 mm",
+         "desc": "Basketbol, voleybol, hentbol ve tüm kapalı salon branşları",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Kauçuk yapıştırıcı",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "1 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Kauçuk rulo pad",
+           "detail": "8 mm",
+           "code": "LK-AK-741",
+           "amount": "1 m²/m²"
+          },
+          {
+           "no": "04",
+           "name": "Elastik dolgu macunu",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0,80 – 1 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2,50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "UV dayanımlı PU boya",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,15 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        },
+        {
+         "name": "Koşu ve Yürüyüş Yolu Sistemi",
+         "thickness": "Kaplama kalınlığı: ~18 mm",
+         "desc": "Yürüme yolları, amatör spor ve oyun alanları",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "SBR kauçuk granül",
+           "detail": "2,5 – 3,5 mm",
+           "code": "LK-GR-712",
+           "amount": "7,80 – 8,50 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Kauçuk bağlayıcı",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1,40 – 1,53 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "EPDM granül",
+           "detail": "0,5 – 1,5 mm",
+           "code": "LK-GR-701",
+           "amount": "5 – 5,50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "EPDM bağlayıcı",
+           "detail": "",
+           "code": "LK-PP-201",
+           "amount": "1 – 1,10 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Elastik dolgu macunu",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "1,50 – 2 kg/m²"
+          },
+          {
+           "no": "07",
+           "name": "UV dayanımlı PU boya",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,25 – 0,35 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        }
+       ],
+       "footnote": "Değerler ideal kalitede ve düzlükte zemin için verilmiştir; bozuk, hasarlı veya kot farkı olan alanlarda değişir. Bağlayıcı değer için ürünün güncel teknik veri sayfasını (TDS) isteyin."
+      },
+      {
+       "kicker": "SPOR ZEMİN SİSTEMLERİ",
+       "title": "",
+       "sub": "SİSTEM KESİTLERİ VE SARFİYAT",
+       "sections": [
+        {
+         "name": "Su Geçirgen Combined Sistem",
+         "thickness": "Kaplama kalınlığı: ~8+7 mm",
+         "desc": "Amatör atletizm pistleri, tenis kortu, çocuk oyun alanı",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "SBR kauçuk granül",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "5,20 – 5,72 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Kauçuk bağlayıcı",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1,04 – 1,14 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "EPDM granül",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-702",
+           "amount": "7 – 7,70 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "EPDM bağlayıcı",
+           "detail": "",
+           "code": "LK-PP-201",
+           "amount": "1,40 – 1,54 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        },
+        {
+         "name": "Ekonomik Sprey Kaplama Sistemi",
+         "thickness": "Kaplama kalınlığı: ~13 mm",
+         "desc": "Amatör atletizm pistleri ve yürüme yolları",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Kauçuk bağlayıcı",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1,60 – 1,75 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "SBR kauçuk granül",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "8 – 8,80 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Poliüretan sprey kaplama",
+           "detail": "",
+           "code": "LK-PU-304",
+           "amount": "1,20 – 1,32 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "EPDM granül",
+           "detail": "0,5 – 1,5 mm",
+           "code": "LK-GR-701",
+           "amount": "0,80 – 0,88 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Çizgi boyası",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "0,25 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        }
+       ],
+       "footnote": "Değerler ideal kalitede ve düzlükte zemin için verilmiştir; bozuk, hasarlı veya kot farkı olan alanlarda değişir. Bağlayıcı değer için ürünün güncel teknik veri sayfasını (TDS) isteyin."
+      },
+      {
+       "kicker": "SPOR ZEMİN SİSTEMLERİ",
+       "title": "",
+       "sub": "SİSTEM KESİTLERİ VE SARFİYAT",
+       "sections": [
+        {
+         "name": "Sandviç Atletizm Sistemi",
+         "thickness": "Kaplama kalınlığı: ~14 mm",
+         "desc": "Profesyonel atletizm pistleri ve alanları",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Kauçuk bağlayıcı",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1,30 – 1,45 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "SBR kauçuk granül",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "6,50 – 7,20 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Elastik dolgu macunu",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "1,50 – 2,50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2,20 – 2,45 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "EPDM granül",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-702",
+           "amount": "4 – 4,40 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        },
+        {
+         "name": "Tam Dökme Atletizm Sistemi",
+         "thickness": "Kaplama kalınlığı: ~15 mm",
+         "desc": "Profesyonel atletizm pistleri ve alanları",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "8 – 9 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "SBR kauçuk granül",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "7,30 – 8,30 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "EPDM granül",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-702",
+           "amount": "4 – 5 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Çizgi boyası",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "0,20 – 0,30 kg/m"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        }
+       ],
+       "footnote": "Değerler ideal kalitede ve düzlükte zemin için verilmiştir; bozuk, hasarlı veya kot farkı olan alanlarda değişir. Bağlayıcı değer için ürünün güncel teknik veri sayfasını (TDS) isteyin."
+      },
+      {
+       "kicker": "SPOR ZEMİN SİSTEMLERİ",
+       "title": "",
+       "sub": "SİSTEM KESİTLERİ VE SARFİYAT",
+       "sections": [
+        {
+         "name": "Atış Poligonu Sistemi",
+         "thickness": "Kaplama kalınlığı: ~10 mm",
+         "desc": "Kapalı atış poligonu zeminleri",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Kauçuk yapıştırıcı",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Kauçuk zemin kaplama",
+           "detail": "",
+           "code": "LK-AK-731",
+           "amount": "—"
+          },
+          {
+           "no": "03",
+           "name": "Elastik dolgu macunu",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0,80 – 1 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2,50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        },
+        {
+         "name": "Akrilik Sert Kort Sistemi",
+         "thickness": "Kaplama kalınlığı: ~2–3 mm",
+         "desc": "Tenis, basketbol, voleybol, koşu ve bisiklet parkurları",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Akrilik resurfacer",
+           "detail": "",
+           "code": "LK-AC-315",
+           "amount": "—"
+          },
+          {
+           "no": "03",
+           "name": "Akrilik cushion",
+           "detail": "",
+           "code": "LK-AC-312",
+           "amount": "—"
+          },
+          {
+           "no": "04",
+           "name": "Akrilik son kat",
+           "detail": "",
+           "code": "LK-AC-316",
+           "amount": "—"
+          },
+          {
+           "no": "05",
+           "name": "Akrilik çizgi boyası",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "—"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        }
+       ],
+       "footnote": "Değerler ideal kalitede ve düzlükte zemin için verilmiştir; bozuk, hasarlı veya kot farkı olan alanlarda değişir. Bağlayıcı değer için ürünün güncel teknik veri sayfasını (TDS) isteyin."
+      }
+     ]
+    },
+    {
+     "kicker": "SİSTEMLER",
+     "title": "Endüstriyel Zemin Sistemleri",
+     "lead": "İnce film boyadan epoksi harca; trafik yüküne, hijyen gereksinimine ve bütçeye göre kurgulanan endüstriyel zemin sistemleri.",
+     "paras": [
+      "Hafif trafik için ekonomik epoksi boya; orta ve ağır hizmet için astar, ara kat ve self-levelling kaplamadan oluşan sistemler; ağır yük ve bozuk zeminlerde şap gibi uygulanan epoksi harç takviyesi. Kaymazlık istenen alanlarda son kat tekstüre edilerek portakal kabuğu dokusu verilir.",
+      "Asma kat, otel ve ofislerde yarı-esnek poliüretan sistemler yürüme sesini azaltır; dekoratif projelerde cips, renkli kum ve baskı ara malzemeleriyle butik yüzeyler üretilir. Hastane tipi alanlarda antibakteriyel ve iletken (ESD) seçenekler devreye girer."
+     ],
+     "hAreas": "UYGULAMA ALANLARI",
+     "areas": [
+      "Fabrika zeminleri",
+      "Depo ve antrepo",
+      "Laboratuvar ve soğuk hava deposu",
+      "Gıda ve ilaç tesisleri",
+      "Kapalı otopark",
+      "Uçak hangarı",
+      "Araç servisi ve oto yıkama",
+      "Restoran, kafe ve bar",
+      "Otel oda ve ortak alanları",
+      "Mağaza, ofis ve fuar alanı",
+      "Anaokulu ve kreş"
+     ],
+     "img": "92288cec129c.jpg",
+     "features": {
+      "kicker": "ENDÜSTRİYEL ZEMİN SİSTEMLERİ",
+      "title": "Sistem Özellikleri",
+      "features": [
+       "Boya, self-levelling, tekstür ve harç kademeleri",
+       "Kaymaz portakal kabuğu dokusu seçeneği",
+       "Yürüme sesini azaltan yarı-esnek kurgu",
+       "Dekoratif cips ve renkli kum uygulamaları",
+       "Antibakteriyel ve ESD alternatifleri",
+       "Tüm RAL renklerinde uygulama"
+      ],
+      "paras": [],
+      "gallery": [
+       "f08f38f410ea.jpg",
+       "2ca2ee1f38be.jpg",
+       "a0b0e844a6f2.jpg",
+       "b80ab6c5b632.jpg"
+      ]
+     },
+     "sectionPages": [
+      {
+       "kicker": "ENDÜSTRİYEL ZEMİN SİSTEMLERİ",
+       "title": "Sistem Kesitleri ve Sarfiyat",
+       "sub": "",
+       "sections": [
+        {
+         "name": "Yarı Elastik Sistem",
+         "thickness": "Kaplama kalınlığı: ~2–3 mm",
+         "desc": "Asma katlar, otel, ofis, mağaza, restoran, laboratuvar, yemekhane",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Self-levelling şap",
+           "detail": "",
+           "code": "",
+           "amount": "opsiyonel"
+          },
+          {
+           "no": "02",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2,20 – 3,50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "UV dayanımlı PU boya",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,20 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        },
+        {
+         "name": "Dekoratif Tasarım Sistemi",
+         "thickness": "Kaplama kalınlığı: ~2–3 mm",
+         "desc": "Mağaza, kafe, restoran, satış ofisi, fuar, TV stüdyosu",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Self-levelling şap",
+           "detail": "",
+           "code": "",
+           "amount": "opsiyonel"
+          },
+          {
+           "no": "02",
+           "name": "Astar",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2,20 – 3,50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "UV dayanımlı PU boya",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,20 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        }
+       ],
+       "footnote": "Değerler ideal kalitede ve düzlükte zemin için verilmiştir; bozuk, hasarlı veya kot farkı olan alanlarda değişir. Bağlayıcı değer için ürünün güncel teknik veri sayfasını (TDS) isteyin."
+      },
+      {
+       "kicker": "ENDÜSTRİYEL ZEMİN SİSTEMLERİ",
+       "title": "",
+       "sub": "SİSTEM KESİTLERİ VE SARFİYAT",
+       "sections": [
+        {
+         "name": "Kaymaz Tekstür Sistemi",
+         "thickness": "Kaplama kalınlığı: ~2 mm",
+         "desc": "Kapalı otopark, mutfak, gıda üretim alanı, hafif yük deposu",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Dolgu macunu",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Epoksi astar",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0,30 – 0,40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Epoksi ara kat",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "0,40 – 0,50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Epoksi tekstür boya",
+           "detail": "",
+           "code": "LK-EP-321",
+           "amount": "0,50 – 0,70 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        },
+        {
+         "name": "Orta Yük Self-Levelling Sistem",
+         "thickness": "Kaplama kalınlığı: ~2,5–3 mm",
+         "desc": "Fabrika zemini, mutfak, mağaza, gıda üretim alanı, depo, soğuk hava deposu",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Dolgu macunu",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Epoksi astar",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0,30 – 0,40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Epoksi ara kat",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "0,50 – 0,70 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Epoksi self-levelling kaplama",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "2 – 2,50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        }
+       ],
+       "footnote": "Değerler ideal kalitede ve düzlükte zemin için verilmiştir; bozuk, hasarlı veya kot farkı olan alanlarda değişir. Bağlayıcı değer için ürünün güncel teknik veri sayfasını (TDS) isteyin."
+      },
+      {
+       "kicker": "ENDÜSTRİYEL ZEMİN SİSTEMLERİ",
+       "title": "",
+       "sub": "SİSTEM KESİTLERİ VE SARFİYAT",
+       "sections": [
+        {
+         "name": "Orta Yük Poliüretan Sistem",
+         "thickness": "Kaplama kalınlığı: ~2,5–3 mm",
+         "desc": "",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Dolgu macunu",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Epoksi astar",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0,30 – 0,40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Poliüretan ara kat",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "0,50 – 0,70 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Self-levelling PU kaplama",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2 – 2,50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        },
+        {
+         "name": "Ağır Yük Epoksi Harç Sistemi",
+         "thickness": "Kaplama kalınlığı: ~13 mm",
+         "desc": "Yükleme alanları, ağır üretim alanları, zemin bozukluğu fazla olan alanlar",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Dolgu macunu",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Epoksi astar",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0,30 – 0,40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Epoksi harç",
+           "detail": "10 mm",
+           "code": "LK-EP-324",
+           "amount": "23 – 33 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Epoksi self-levelling kaplama",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "2,50 – 3,50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Katman",
+          "Kullanım miktarı"
+         ]
+        }
+       ],
+       "footnote": "Değerler ideal kalitede ve düzlükte zemin için verilmiştir; bozuk, hasarlı veya kot farkı olan alanlarda değişir. Bağlayıcı değer için ürünün güncel teknik veri sayfasını (TDS) isteyin."
+      }
+     ]
+    },
+    {
+     "kicker": "SİSTEMLER",
+     "title": "Su İzolasyon Sistemi",
+     "lead": "Astar, detay güçlendirme, katlar hâlinde likit membran ve UV korumalı son kattan oluşan yekpare su yalıtım sistemi.",
+     "paras": [
+      "Islak hacimlerde köşe ve süzgeç detayları güçlendirme bandı ile bantlanır, en az iki kat likit membran uygulanır; sistem su testiyle doğrulandıktan sonra üzerine seramik kaplanır. Çatı ve terasta UV dayanımlı membran veya alifatik son kat kullanılır; büyük düz alanlarda rulo membran ile likit detay çözümü birlikte kurgulanabilir.",
+      "Basınçlı sızıntılar ve negatif yön yalıtımı için suyla genleşen enjeksiyon reçineleri sistemin parçasıdır. Su yalıtımı yapı henüz inşa hâlindeyken planlanmalıdır; sonradan müdahale daha zor ve maliyetlidir."
+     ],
+     "hAreas": "UYGULAMA ALANLARI",
+     "areas": [
+      "Çatı ve teras",
+      "Balkon",
+      "Banyo ve ıslak hacim",
+      "Temel ve perde beton",
+      "Su deposu ve havuz",
+      "Otopark döşemesi"
+     ],
+     "img": "db9f0c046d13.jpg",
+     "features": {
+      "kicker": "SU İZOLASYON SİSTEMİ",
+      "title": "Sistem Özellikleri",
+      "features": [
+       "Detay bantlama ve güçlendirme filesi",
+       "Katlar hâlinde kontrollü film kalınlığı",
+       "Su testi ile doğrulama",
+       "UV'ye açık yüzeylerde alifatik son kat",
+       "Rulo membran ile kombine çözüm",
+       "Enjeksiyonla negatif yön yalıtımı"
+      ],
+      "paras": [],
+      "gallery": [
+       "bbf078c011eb.jpg",
+       "47fc880b9248.jpg",
+       "276bdfbd9a27.jpg",
+       "e9ec373c7f25.jpg"
+      ]
+     },
+     "sectionPages": []
+    }
+   ]
+  },
+  {
+   "no": "03",
+   "title": "Uygulama Alanları",
+   "desc": "Poliüretan spor zemininden dekoratif taşa, atletizm parkurundan endüstriyel epoksiye.",
+   "img": "2b31d9a81b6a.jpg",
+   "pages": [
+    {
+     "kicker": "UYGULAMA ALANLARI",
+     "title": "Uygulama Alanları",
+     "items": [
+      {
+       "title": "Poliüretan Spor Zemini",
+       "paras": [
+        "Kapalı salonlardan fitness alanlarına; darbe emici, derzsiz poliüretan spor zeminleri.",
+        "Astar üzerine SBR çekirdek, macun ve self-levelling poliüretan katmanlarıyla kurulan sistem; saha çizgileri ve renk son katla tamamlanır. Basketboldan çok amaçlı salonlara, kullanım yoğunluğuna göre kalınlık seçilir."
+       ],
+       "img": "cca91130babd.jpg"
+      },
+      {
+       "title": "Zemin (Parke) Uygulaması",
+       "paras": [
+        "Masif ve lamine parkelerin elastik poliüretan yapıştırıcılarla derzsiz ve sessiz montajı.",
+        "Zemin nemi ölçülüp uygun astar ve dişli mala seçildikten sonra parke, elastik yapıştırıcı üzerine döşenir; gıcırtı ve ayrılma önlenir, yerden ısıtmalı sistemlerde güvenle çalışılır."
+       ],
+       "img": "9c80fafd0b40.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Akrilik Spor Zeminler",
+       "paras": [
+        "Tenis kortlarından çok amaçlı sahalara; oyun hızı ayarlanabilen akrilik kaplama uygulamaları.",
+        "Resurfacer, cushion katmanları ve dolgulu son kat sırayla uygulanır; kum oranıyla saha hızı belirlenir, çizgi boyasıyla tamamlanır. Don-çözülme dayanımıyla dış mekânda uzun ömür sunar."
+       ],
+       "img": "0bf913225e9d.jpg"
+      },
+      {
+       "title": "Kauçuk Uygulaması",
+       "paras": [
+        "Kauçuk karo ve ruloların spor salonu, kreş ve endüstriyel alanlara montajı.",
+        "Yüzey hazırlığı sonrası çift komponentli poliüretan yapıştırıcı taraklanır, karolar şaşırtmalı yerleştirilir ve rulo ile bastırılır; bağlantı yaklaşık sekiz saatte kürleşir."
+       ],
+       "img": "059d7d765e0f.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Atletizm Parkuru",
+       "paras": [
+        "Sandviç ve tam dökme sistemlerle profesyonel koşu pisti uygulamaları.",
+        "Finişerle serilen SBR-bağlayıcı çekirdek üzerine elastomer ve EPDM yüzey uygulanır; drenajla uyumlu, her hava koşulunda tutuş sağlayan bir pist yüzeyi elde edilir."
+       ],
+       "img": "f7957c254b4d.jpg"
+      },
+      {
+       "title": "Çim Yapıştırıcı Uygulamaları",
+       "paras": [
+        "Halı saha ve peyzaj çimlerinde ek hattı odaklı profesyonel yapıştırma.",
+        "Şeritler ek bandı üzerine merkezlenir, yapıştırıcı bandın tamamına eşit yayılır ve kür süresi boyunca bağlantı korunur; ek yerleri görünmez kalır, saha erken kullanıma açılmaz."
+       ],
+       "img": "2f32e326ff4a.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Dekoratif Taş Uygulaması",
+       "paras": [
+        "Şeffaf bağlayıcıyla doğal taş granüllerinden su geçirgen, dekoratif 'taş halı' yüzeyler.",
+        "Granül ve bağlayıcı homojen karıştırılıp mala ile serilir; kürlenince kaymaz, bakım gerektirmeyen ve yağmur suyunu geçiren bir yüzey oluşur. Havuz çevresi ve yürüyüş yollarının tercihidir."
+       ],
+       "img": "f898b5cef6b4.jpg"
+      },
+      {
+       "title": "Elastomer Sandviç Sistem",
+       "paras": [
+        "Elastik çekirdek, elastomer ve renkli EPDM yüzeyden oluşan çift katmanlı spor zemin kurgusu.",
+        "Elastomer katman henüz ıslakken EPDM granül serpilir; enerji geri kazanımı ve deformasyon değerleri profesyonel kullanım standartlarına göre ayarlanır."
+       ],
+       "img": "37b52a86a06f.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Sandviç Spor Zemini",
+       "paras": [
+        "Stadyum ve üniversite pistleri için sandviç sistem uygulamaları.",
+        "Doğru uygulama ve düzenli bakımla uzun hizmet ömrü sunar; aşınan bölgeler lokal onarımla yenilenir, renk kombinasyonları projeye göre kurgulanır."
+       ],
+       "img": "b9f3880361e1.jpg"
+      },
+      {
+       "title": "Padel Kort Uygulaması",
+       "paras": [
+        "20 × 10 m padel kortlarında suni çim serimi, ek bandıyla birleştirme ve silis kumu dolgusu.",
+        "Kort tamamen kapalı bir hacimdir: arka duvarlar 4 m temperli cam, yan duvarlar 3 m cam ve devamında tel örgüdür; file ortada 0,88 m, direklerde 0,92 m yüksekliğinde olup servis çizgileri fileye 6,95 m mesafeye çekilir. Zemin betonarme veya gözenekli asfalt üzerine kurulur; %0,5–1 eğim ve çevre drenajı su tahliyesini sağlar."
+       ],
+       "img": "0abf7083be32.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "EPDM Granül Uygulaması",
+       "paras": [
+        "Renkli EPDM granülle çocuk oyun alanları ve spor sahalarında güvenli, desenli zeminler.",
+        "SBR alt katman üzerine EPDM-bağlayıcı karışımı serilir ve düzlenir; katman kalınlığı düşme yüksekliğine göre belirlenir, 24 renkle serbest desen kurgulanır."
+       ],
+       "img": "2b31d9a81b6a.jpg"
+      },
+      {
+       "title": "Su Geçirmez Kaplama",
+       "paras": [
+        "Çatıdan ıslak hacme; likit membranla ek yeri olmayan su yalıtımı uygulamaları.",
+        "Köşe ve süzgeç detayları bantlanır, membran katlar hâlinde uygulanır ve su testiyle doğrulanır; UV gören yüzeyler alifatik son katla korunur."
+       ],
+       "img": "47fc880b9248.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Endüstriyel Poliüretan ve Epoksi Zeminler",
+       "paras": [
+        "Fabrika, depo ve otoparklarda hijyenik, yüke dayanıklı derzsiz zemin uygulamaları.",
+        "Kumlama ve astar sonrası self-levelling veya tekstürlü kaplama uygulanır; forklift trafiğine, kimyasallara ve yoğun temizliğe dayanıklı tek parça bir yüzey elde edilir."
+       ],
+       "img": "df1b57e11ccc.jpg"
+      },
+      {
+       "title": "Epoksi Döküm Uygulamaları",
+       "paras": [
+        "Şeffaf epoksi reçineyle masa, obje ve dekoratif yüzey dökümleri.",
+        "Döküm ortadan kenarlara ilerletilir, hava kabarcıkları kendiliğinden atılır; jelleşme sonrası kat kat derinlik verilir, zımpara ve cila ile kristal parlaklık elde edilir."
+       ],
+       "img": "443fa1e42df7.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": "04",
+   "title": "İhracat",
+   "desc": "Yükleme planlaması ve teslim şekli seçimi için ihtiyacınız olan referans bilgiler.",
+   "img": "4fd1859650ff.png",
+   "containers": {
+    "kicker": "İHRACAT",
+    "title": "Konteyner Ölçüleri",
+    "lead": "Standart ISO kuru yük konteynerlerinin iç ölçüleri ve yükleme kapasiteleri.",
+    "table": {
+     "head": [
+      "Konteyner",
+      "İç ölçü (U × G × Y)",
+      "Kapı açıklığı (G × Y)",
+      "Hacim",
+      "Boş ağırlık",
+      "Azami yük",
+      "Yükleme kapasitesi"
+     ],
+     "rows": [
+      [
+       "20' DV — Standart",
+       "5.9 × 2.35 × 2.39 m",
+       "2.34 × 2.28 m",
+       "33.2 m³",
+       "2250 kg",
+       "28200 kg",
+       "10 × IBC (1000 L) · 80 × varil (200 L)"
+      ],
+      [
+       "40' DV — Standart",
+       "12.03 × 2.35 × 2.39 m",
+       "2.34 × 2.28 m",
+       "67.7 m³",
+       "3750 kg",
+       "26730 kg",
+       "20 × IBC (1000 L) · 160 × varil (200 L)"
+      ],
+      [
+       "40' HC — Yüksek",
+       "12.03 × 2.35 × 2.7 m",
+       "2.34 × 2.58 m",
+       "76.4 m³",
+       "3900 kg",
+       "26580 kg",
+       "20 × IBC (1000 L) · 160 × varil (200 L)"
+      ],
+      [
+       "45' HC — Yüksek",
+       "13.56 × 2.35 × 2.7 m",
+       "2.34 × 2.58 m",
+       "86 m³",
+       "4800 kg",
+       "27700 kg",
+       "25 × IBC (1000 L) · 180 × varil (200 L)"
+      ]
+     ]
+    },
+    "footnote": "Değerler gösterge niteliğindedir; konteyner üreticisine ve taşıyıcıya göre birkaç santimetre ve birkaç yüz kilogram değişebilir. Kesin ölçü ve azami yük için sevkiyat öncesi taşıyıcınızdan teyit alın.",
+    "gallery": [
+     "b80ab6c5b632.jpg",
+     "2ca2ee1f38be.jpg"
+    ]
+   },
+   "incoterms": {
+    "kicker": "İHRACAT",
+    "title": "Incoterms 2020 — Teslim Şekilleri",
+    "lead": "Satıcı ile alıcı arasında masrafın ve riskin nerede el değiştirdiğini belirleyen uluslararası kurallar.",
+    "table": {
+     "head": [
+      "Kod",
+      "Açıklama",
+      "Taşıma modu",
+      "Navlun",
+      "Sigorta",
+      "Riskin devri"
+     ],
+     "rows": [
+      [
+       "EXW",
+       "Ex Works — İşyerinde Teslim",
+       "Tüm modlar",
+       "Alıcı",
+       "Zorunlu değil",
+       "Satıcının tesisinde, mal alıcının emrine hazır edildiğinde"
+      ],
+      [
+       "FCA",
+       "Free Carrier — Taşıyıcıya Masrafsız",
+       "Tüm modlar",
+       "Alıcı",
+       "Zorunlu değil",
+       "Belirlenen yerde taşıyıcıya teslim edildiğinde"
+      ],
+      [
+       "FAS",
+       "Free Alongside Ship — Gemi Doğrultusunda Masrafsız",
+       "Deniz / iç su yolu",
+       "Alıcı",
+       "Zorunlu değil",
+       "Yükleme limanında geminin doğrultusuna konulduğunda"
+      ],
+      [
+       "FOB",
+       "Free On Board — Gemide Masrafsız",
+       "Deniz / iç su yolu",
+       "Alıcı",
+       "Zorunlu değil",
+       "Mal, yükleme limanında gemiye yüklendiğinde"
+      ],
+      [
+       "CFR",
+       "Cost and Freight — Masraflar ve Navlun",
+       "Deniz / iç su yolu",
+       "Satıcı",
+       "Zorunlu değil",
+       "Mal, yükleme limanında gemiye yüklendiğinde"
+      ],
+      [
+       "CIF",
+       "Cost, Insurance and Freight — Masraflar, Sigorta ve Navlun",
+       "Deniz / iç su yolu",
+       "Satıcı",
+       "Satıcı — asgari teminat (ICC C)",
+       "Mal, yükleme limanında gemiye yüklendiğinde"
+      ],
+      [
+       "CPT",
+       "Carriage Paid To — Taşıma Ödenmiş Olarak",
+       "Tüm modlar",
+       "Satıcı",
+       "Zorunlu değil",
+       "Mal, ilk taşıyıcıya teslim edildiğinde"
+      ],
+      [
+       "CIP",
+       "Carriage and Insurance Paid To — Taşıma ve Sigorta Ödenmiş Olarak",
+       "Tüm modlar",
+       "Satıcı",
+       "Satıcı — geniş teminat (ICC A)",
+       "Mal, ilk taşıyıcıya teslim edildiğinde"
+      ],
+      [
+       "DAP",
+       "Delivered At Place — Belirlenen Yerde Teslim",
+       "Tüm modlar",
+       "Satıcı",
+       "Zorunlu değil",
+       "Varış yerinde, araç üstünde boşaltılmadan"
+      ],
+      [
+       "DPU",
+       "Delivered at Place Unloaded — Boşaltılmış Olarak Teslim",
+       "Tüm modlar",
+       "Satıcı",
+       "Zorunlu değil",
+       "Varış yerinde boşaltma tamamlandığında"
+      ],
+      [
+       "DDP",
+       "Delivered Duty Paid — Gümrük Resmi Ödenmiş Teslim",
+       "Tüm modlar",
+       "Satıcı",
+       "Zorunlu değil",
+       "Varış yerinde, araç üstünde boşaltılmadan"
+      ]
+     ]
+    },
+    "footnote": "Incoterms®, Milletlerarası Ticaret Odası'nın (ICC) tescilli markasıdır. Tablo özet niteliğindedir; sözleşmede kural adının yanına mutlaka teslim yerini de yazın (örnek: \"FOB İstanbul, Incoterms 2020\")."
+   }
+  }
+ ],
+ "back": {
+  "tagline": "Yapıştırıcı, bağlayıcı, zemin kaplama ve su izolasyonunda çözüm ortağınız.",
+  "contact": [
+   {
+    "label": "ADRES",
+    "value": [
+     "Maslak Mah. Eski Büyükdere Cad. Giz 2000",
+     "Plaza No: 7/24, Sarıyer / İstanbul"
+    ]
+   },
+   {
+    "label": "TELEFON",
+    "value": [
+     "+90 212 912 52 32"
+    ]
+   },
+   {
+    "label": "MOBİL",
+    "value": [
+     "+90 530 360 61 43"
+    ]
+   },
+   {
+    "label": "E-POSTA",
+    "value": [
+     "info@leonkimya.com"
+    ]
+   }
+  ],
+  "disclaimer": "Bu katalogdaki bilgiler genel tanıtım amaçlıdır ve teknik şartname yerine geçmez. Uygulama öncesinde ürünün güncel teknik veri sayfasını (TDS) ve güvenlik bilgi formunu (SDS) talep edin. Ürün özellikleri haber verilmeksizin değiştirilebilir.",
+  "copyright": "Leon Kimya © 2026"
+ },
+ "_productList": [
+  "ÜRÜN LİSTESİ"
+ ]
+}

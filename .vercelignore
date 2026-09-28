@@ -14,3 +14,6 @@ _arsiv-varyantlar.zip
 # duruyor ve o klasor de disarida kalirdi.
 /katalog
 /kartvizit
+
+# Katalog üretici kaynağı yayına çıkmaz; yalnız assets/katalog/ altındaki PDF'ler yayında
+/katalog-uretici

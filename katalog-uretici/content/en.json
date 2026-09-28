@@ -1,0 +1,3385 @@
+{
+ "lang": "en",
+ "ui": {
+  "tocKicker": "PRODUCT AND SYSTEM CATALOGUE",
+  "tocTitle": "Contents",
+  "runHead": {
+   "3": "CORPORATE",
+   "4": "CORPORATE",
+   "5": "CORPORATE",
+   "6": "CONTENTS",
+   "7": "",
+   "8": "PRODUCTS",
+   "9": "PRODUCTS",
+   "10": "",
+   "11": "ADHESIVES",
+   "12": "ADHESIVES",
+   "13": "ADHESIVES",
+   "14": "ADHESIVES",
+   "15": "ADHESIVES",
+   "16": "ADHESIVES",
+   "17": "ADHESIVES",
+   "18": "ADHESIVES",
+   "19": "",
+   "20": "BINDERS",
+   "21": "BINDERS",
+   "22": "BINDERS",
+   "23": "BINDERS",
+   "24": "BINDERS",
+   "25": "BINDERS",
+   "26": "BINDERS",
+   "27": "BINDERS",
+   "28": "",
+   "29": "FLOOR COATINGS & PAINTS",
+   "30": "FLOOR COATINGS & PAINTS",
+   "31": "FLOOR COATINGS & PAINTS",
+   "32": "FLOOR COATINGS & PAINTS",
+   "33": "FLOOR COATINGS & PAINTS",
+   "34": "FLOOR COATINGS & PAINTS",
+   "35": "FLOOR COATINGS & PAINTS",
+   "36": "",
+   "37": "PRIMERS & PUTTIES",
+   "38": "PRIMERS & PUTTIES",
+   "39": "PRIMERS & PUTTIES",
+   "40": "PRIMERS & PUTTIES",
+   "41": "",
+   "42": "WATERPROOFING PRODUCTS",
+   "43": "",
+   "44": "SYSTEMS",
+   "45": "SYSTEMS",
+   "46": "SYSTEMS",
+   "47": "SYSTEMS",
+   "48": "SYSTEMS",
+   "49": "SYSTEMS",
+   "50": "SYSTEMS",
+   "51": "SYSTEMS",
+   "52": "SYSTEMS",
+   "53": "SYSTEMS",
+   "54": "SYSTEMS",
+   "55": "SYSTEMS",
+   "56": "SYSTEMS",
+   "57": "SYSTEMS",
+   "58": "",
+   "59": "APPLICATION AREAS",
+   "60": "APPLICATION AREAS",
+   "61": "APPLICATION AREAS",
+   "62": "APPLICATION AREAS",
+   "63": "APPLICATION AREAS",
+   "64": "APPLICATION AREAS",
+   "65": "APPLICATION AREAS",
+   "66": "",
+   "67": "EXPORT",
+   "68": "EXPORT"
+  }
+ },
+ "cover": {
+  "title": "PRODUCT AND SYSTEM CATALOGUE",
+  "tagline": "Your partner in chemical technology",
+  "edition": "Edition 2026",
+  "site": "leonkimya.com",
+  "imgs": [
+   "6856745d37aa.png",
+   "06e8333d02ce.png",
+   "088520f42e22.png",
+   "b4a69140ca18.png",
+   "d92093cf9718.png",
+   "36482da4dd3b.png",
+   "8e4b364fe2f0.png",
+   "329d0adcc276.png",
+   "508e214cc636.png",
+   "863fb3aef168.png",
+   "34720c1dbb75.png",
+   "cd2b9967b05f.png"
+  ]
+ },
+ "intro": {
+  "tagline": "Your partner in chemical technology",
+  "disclaimer": "The information in this catalogue is for general presentation and does not replace a technical specification. Request the current technical data sheet (TDS) and safety data sheet (SDS) before application. Product properties may change without notice.",
+  "logo": "fb36f4a187a1.png"
+ },
+ "corporate": {
+  "kicker": "COMPANY",
+  "title": "Leon Kimya",
+  "lead": "Leon Kimya applies advanced technology and employs qualified people across every branch of chemistry it works in. It has made it a principle to deliver products of standard-compliant quality without compromising on customer satisfaction, and to build a brand that responds to changing customer expectations.",
+  "cols": [
+   [
+    "With polyurethane, epoxy and acrylic based production processes, we deliver solutions in adhesives, rubber binders, industrial and sports floor coatings, waterproof-ing systems and joint sealants.",
+    "Our product development is driven by feedback from the field; we build system configurations that vary with the specification, the budget and the substrate."
+   ],
+   [
+    "Alongside production, we run product development (R&D) and customer-specific adaptation as separate dis-ciplines, recommending formulations that match the sub-strate, the climate and the operating conditions. We pri-oritise solvent-free, user- and environment-friendly for-mulations, and together with our application partners we prepare project-specific system build-ups."
+   ]
+  ],
+  "img": "cf0041b7b776.jpg",
+  "gallery": [
+   "f08f38f410ea.jpg",
+   "b80ab6c5b632.jpg",
+   "2ca2ee1f38be.jpg"
+  ]
+ },
+ "why": {
+  "kicker": "COMPANY",
+  "title": "Why Leon Kimya",
+  "lead": "Six principles we apply at every step, from production to delivery.",
+  "items": [
+   {
+    "no": "01",
+    "title": "Excellence in Service",
+    "text": "We work to raise efficiency across all our processes to a competitive level."
+   },
+   {
+    "no": "02",
+    "title": "High Quality Technology",
+    "text": "We encourage innovative and creative approaches in order to raise technological quality."
+   },
+   {
+    "no": "03",
+    "title": "Production Control",
+    "text": "We run our production processes under our own control, with batch-level quality tracking."
+   },
+   {
+    "no": "04",
+    "title": "Customer-Focused Approach",
+    "text": "We take your expectations into account from the start and provide solutions across survey, production and after-sales."
+   },
+   {
+    "no": "05",
+    "title": "Fast, Quality Delivery",
+    "text": "Thanks to professional production and dispatch planning, your products are prepared on time."
+   },
+   {
+    "no": "06",
+    "title": "Customer Satisfaction",
+    "text": "In every project we have completed, are running or will take on, customer satisfaction comes first."
+   }
+  ]
+ },
+ "standards": {
+  "kicker": "COMPANY",
+  "title": "Standards and Conformity",
+  "lead": "Reference standards the products are designed to, the production facility's certificates and Leon Kimya declarations.",
+  "sections": [
+   {
+    "title": "Product conformity standards",
+    "note": "Products are designed and tested to the requirements of the following standards.",
+    "table": {
+     "head": [
+      "Standard",
+      "Scope",
+      "Product family"
+     ],
+     "rows": [
+      [
+       "EN 14877",
+       "Synthetic surfaces for outdoor sports areas",
+       "Sports flooring systems"
+      ],
+      [
+       "EN 1177",
+       "Playground surfacing, critical fall height",
+       "EPDM granule systems"
+      ],
+      [
+       "EN 13813",
+       "Screed and floor covering materials",
+       "Industrial flooring systems"
+      ],
+      [
+       "EN 1504-2",
+       "Concrete surface protection systems",
+       "Coatings, waterproofing"
+      ],
+      [
+       "EN 13501-1",
+       "Reaction to fire classification",
+       "Floor coatings"
+      ],
+      [
+       "EN 14041",
+       "Resilient floor coverings, essential characteristics",
+       "PU and epoxy coatings"
+      ],
+      [
+       "REACH",
+       "Chemical registration and safety",
+       "Entire portfolio"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Production facility certificates",
+    "note": "Leon Kimya products are manufactured in an ISO 9001 and ISO 14001 certified facility. Copies of the certificates are provided on request."
+   },
+   {
+    "title": "System certificates",
+    "note": "The international federation certificates below are issued in the name of the system stated alongside.",
+    "table": {
+     "head": [
+      "Document",
+      "System",
+      "Scope"
+     ],
+     "rows": [
+      [
+       "World Athletics Product Certificate",
+       "Leon Sandwich Athletics System",
+       "Sandwich · 14 mm"
+      ],
+      [
+       "ITF Court Pace Classification",
+       "Leon Acrylic Hard Court System",
+       "Category 4 · Medium-fast"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Leon Kimya declarations",
+    "note": "",
+    "table": {
+     "head": [
+      "Document",
+      "Scope"
+     ],
+     "rows": [
+      [
+       "Declaration of Performance (DoP)",
+       "Issued in the name of Leon Kimya, per product"
+      ],
+      [
+       "Safety Data Sheet (SDS)",
+       "For each product, with Leon Kimya name and contact details"
+      ],
+      [
+       "Technical Data Sheet (TDS)",
+       "Issued separately for each product"
+      ],
+      [
+       "Batch analysis certificate",
+       "Supplied with every shipment"
+      ]
+     ]
+    }
+   }
+  ],
+  "footnote": "Certificate copies, test reports and declarations of performance are provided on request."
+ },
+ "productList": {
+  "kicker": "PRODUCTS",
+  "title": "Product List"
+ },
+ "parts": [
+  {
+   "no": "01",
+   "title": "Products",
+   "desc": "From adhesives to binders, from floor coatings to waterproofing: six product families and three system categories.",
+   "img": "b367417ad9ff.jpg",
+   "categories": [
+    {
+     "kicker": "PRODUCTS",
+     "title": "Adhesives",
+     "items": [
+      "Parquet Adhesives",
+      "PVC & Vinyl Flooring Adhesive",
+      "Rubber & Synthetic Turf Adhesives",
+      "Filter Adhesives"
+     ],
+     "img": "fa6cf4c4a588.jpg",
+     "families": [
+      {
+       "page": 11,
+       "kicker": "ADHESIVES",
+       "title": "Parquet Adhesives",
+       "lead": "A predominantly polyurethane based adhesive family that bonds solid, laminate and engineered parquet permanently to screed and concrete substrates.",
+       "paras": [
+        "The portfolio is built on solvent-free two-component (2K) polyurethane adhesives suitable for every parquet type. The right choice depends on the dimensional movement of the wood, the absorbency of the screed and the working time required.",
+        "The thixotropic body prevents vertical slump, while the elastic bond stops creaking and gradual separation of the boards. The products are compatible with underfloor heating. Before applica-tion, substrate moisture must be measured, the correct notched trowel selected and the open time never exceeded."
+       ],
+       "uses": [
+        "Solvent-free, two-component polyurethane based",
+        "Suitable for solid, laminated and engineered parquet",
+        "Compatible with underfloor heating systems",
+        "Cleans off the parquet surface without staining within 48 hours of application",
+        "Consumption stays under control with the correct notched trowel"
+       ],
+       "areas": [
+        "Solid and laminate parquet",
+        "Engineered wood flooring",
+        "Underfloor-heated substrates",
+        "Homes and offices",
+        "Hotels and retail spaces",
+        "Sports hall timber floors"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "6140cbd2aca8.jpg",
+       "gallery": [
+        "fa6cf4c4a588.jpg",
+        "9c80fafd0b40.jpg",
+        "d6a62063c06d.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 12,
+         "kicker": "PARQUET ADHESIVES",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-101",
+           "name": "Standard 2K Polyurethane Parquet Adhesive",
+           "desc": "Solvent-free two-component polyurethane for every parquet type; high final strength with a balanced working time.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "10/1 (by weight)"
+            },
+            {
+             "l": "Pot life",
+             "v": "30 – 60 min"
+            },
+            {
+             "l": "Consumption",
+             "v": "1.75 – 2 kg/m²"
+            },
+            {
+             "l": "Packaging",
+             "v": "10 kg (A+B) kit"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "b3fce0b8e598.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-102",
+           "name": "Thixotropic 2K Polyurethane Parquet Adhesive",
+           "desc": "Its high-body consistency holds the trowel ridges and does not run on slopes; controlled, clean spreading for wide-format parquet.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "9/1 (by weight)"
+            },
+            {
+             "l": "Pot life",
+             "v": "30 – 60 min"
+            },
+            {
+             "l": "Consumption",
+             "v": "1.75 – 2 kg/m²"
+            },
+            {
+             "l": "Packaging",
+             "v": "10 kg (A+B) kit"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "29b1fa96ffb0.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-103",
+           "name": "Flexible 2K Polyurethane Parquet Adhesive",
+           "desc": "A permanently elastic bond that follows the dimensional movement of wood; first choice for solid, wide-plank and underfloor-heated floors.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "6/1 (by weight)"
+            },
+            {
+             "l": "Pot life",
+             "v": "45 – 90 min"
+            },
+            {
+             "l": "Consumption",
+             "v": "1 – 1.25 kg/m²"
+            },
+            {
+             "l": "Packaging",
+             "v": "7 kg (A+B) kit · 10 kg (A+B) kit"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "2ac3fb494b4d.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 13,
+       "kicker": "ADHESIVES",
+       "title": "PVC & Vinyl Flooring Adhesive",
+       "lead": "A water-based acrylic adhesive that fixes flexible PVC, vinyl, linoleum, marley and backed carpet floorings onto absorbent substrates.",
+       "paras": [
+        "The one-component, solvent-free formulation is odourless, allow-ing safe work in enclosed spaces such as hospitals, schools and homes. High initial tack and a long working window leave room for adjustment on large areas.",
+        "The adhesive is spread evenly with a notched trowel, the cover-ing is laid within minutes and pressed with a roller for full surface contact. On underfloor-heated screeds the system is switched off before application and restarted gradually after installation. Floor-covering adhesive must never be confused with rigid PVC pipe cement."
+       ],
+       "uses": [],
+       "areas": [
+        "Hospitals and laboratories",
+        "Schools and nurseries",
+        "Residential buildings",
+        "Malls and shops",
+        "Offices",
+        "Homogeneous and heterogeneous PVC floors"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-AC-110",
+         "name": "Water-Based Acrylic Floor-Covering Adhesive",
+         "desc": "One-component, acrylic based and solvent-free. Easy to apply, with high initial and final adhesion over a long working window. Used to bond PVC, PU and latex floorings, marley, marmoleum, linoleum and backed carpets to concrete and screed.",
+         "specs": [],
+         "img": "4fc046744bc8.jpg"
+        }
+       ],
+       "hAreas": "APPLICATION AREAS",
+       "hProducts": "PRODUCT FAMILY",
+       "img": "7b23199d6000.jpg",
+       "gallery": [],
+       "productPages": []
+      },
+      {
+       "page": 14,
+       "kicker": "ADHESIVES",
+       "title": "Rubber & Synthetic Turf Adhesives",
+       "lead": "Two-component polyurethane adhesives that bond rubber tiles and rolls to the substrate, and synthetic turf strips to each other and to the seaming tape.",
+       "paras": [
+        "The solvent-free 2K polyurethane build keeps its bond strength for years, unaffected by daylight, water or outdoor exposure. Rubber tiles and rolls are bonded to concrete, MDF, chipboard and metal — and where needed to ceramic, granite and marble.",
+        "In synthetic turf the critical zone is not the open field but the seams and edge returns: the adhesive is spread evenly on the seaming tape, the strips are centred and the joint is protected throughout curing. A green colour option keeps the seams invisible."
+       ],
+       "uses": [
+        "Solvent-free, two-component polyurethane based",
+        "Used to bond rubber tiles and rolls to the substrate",
+        "Used at synthetic turf seams and for line marking installation",
+        "Resistant to moisture, water and most chemicals",
+        "High abrasion resistance and tear strength",
+        "Applies over concrete, MDF, chipboard and metal surfaces"
+       ],
+       "areas": [
+        "Artificial turf and football pitches",
+        "Rubber tile and roll floors",
+        "Sports halls",
+        "Children's playgrounds",
+        "Landscape and decorative turf",
+        "Pool surrounds"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "36e594718140.jpg",
+       "gallery": [
+        "11e1364e84e2.jpg",
+        "059d7d765e0f.jpg",
+        "2f32e326ff4a.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 15,
+         "kicker": "RUBBER & SYNTHETIC TURF ADHESIVES",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-121",
+           "name": "Flexible 2K PU Rubber Adhesive",
+           "desc": "A solvent-free, flexible two-component system bonding rubber tiles and rolls to concrete, wood and metal.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "9/1 (by weight)"
+            },
+            {
+             "l": "Consumption",
+             "v": "1 kg/m²"
+            },
+            {
+             "l": "Packaging",
+             "v": "10 kg (A+B) kit · 24 kg (A+B) kit"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "d407170db107.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-122",
+           "name": "Economical 2K PU Rubber Adhesive",
+           "desc": "A balanced-grip two-component variant offering cost advantage on large areas.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "7/1 (by weight)"
+            },
+            {
+             "l": "Consumption",
+             "v": "1 kg/m²"
+            },
+            {
+             "l": "Colour",
+             "v": "Cream"
+            },
+            {
+             "l": "Packaging",
+             "v": "24 kg (A+B) kit"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "639e1b4b06aa.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-123",
+           "name": "2K PU Synthetic Turf Adhesive",
+           "desc": "A green adhesive bonding turf strips to the seaming tape; resistant to water and outdoor exposure.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "7/1 (by weight)"
+            },
+            {
+             "l": "Colour",
+             "v": "Green"
+            },
+            {
+             "l": "Packaging",
+             "v": "11.50 kg pail · 13 kg pail · 24 kg pail · 36 kg pail"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "32e710b6d59a.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-PU-124",
+           "name": "Economical Synthetic Turf Adhesive",
+           "desc": "An economical two-component solution for pitches and landscaping.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "5.25/1 (by weight)"
+            },
+            {
+             "l": "Colour",
+             "v": "Green"
+            },
+            {
+             "l": "Packaging",
+             "v": "25 kg pail"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "d9c187324e75.jpg"
+          }
+         ],
+         "hFeatures": "KEY FEATURES",
+         "features": [
+          "Two-component, solvent-free polyurethane",
+          "UV, water and outdoor resistance",
+          "Fully compatible with seaming tape",
+          "Thixotropic — no run on sloped surfaces",
+          "Flexible and economical variants"
+         ]
+        },
+        {
+         "page": 16,
+         "kicker": "RUBBER & SYNTHETIC TURF ADHESIVES",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "05",
+           "code": "LK-AK-721",
+           "name": "Seaming Tape",
+           "desc": "The woven tape that joins synthetic turf strips from below; used together with the adhesive.",
+           "specs": [
+            {
+             "l": "Dimensions",
+             "v": "1 roll: 140 × 500 m · 5 roll: 28 × 100 m"
+            }
+           ],
+           "img": "437bbdd89ad6.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-AK-731",
+           "name": "Rubber Tiles",
+           "desc": "Flexible, wear-resistant ready floor tiles in various sizes and thicknesses.",
+           "specs": [
+            {
+             "l": "Dimensions",
+             "v": "40 × 40 × 2 cm · 40 × 40 × 3 cm · 50 × 50 × 2 cm · 50 × 50 × 3 cm"
+            }
+           ],
+           "img": "11e1364e84e2.jpg"
+          },
+          {
+           "no": "07",
+           "code": "LK-AK-741",
+           "name": "SBR Rubber Roll",
+           "desc": "The shock-absorbing base layer of sports floors; also used under screed and for acoustics.",
+           "specs": [
+            {
+             "l": "Coating thickness",
+             "v": "4 – 10 mm"
+            }
+           ],
+           "img": "cca91130babd.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 17,
+       "kicker": "ADHESIVES",
+       "title": "Filter Adhesives",
+       "lead": "Industrial polyurethane systems that hold filter media, frame and end caps together — and form gaskets in place where required.",
+       "paras": [
+        "Two distinct jobs are covered by two distinct product families: me-dia potting aims for a strong, repeatable bond, while gasket prod-ucts deliver controlled filling, shape stability and sealing. Fast-cur-ing and non-sag (thixotropic) grades suit automated dosing lines.",
+        "Dosing method, viscosity, working time, service temperature and the fluid in contact drive product selection. Whenever the media, frame or raw-material batch changes, a small-scale trial is recom-mended before series production."
+       ],
+       "uses": [
+        "Solvent-free, two-component polyurethane based",
+        "Bonds filter media to metal or plastic separators",
+        "Resistant to water, moisture, abrasion, impact, acids-alkalis and sea water",
+        "Liquid-tight and antibacterial",
+        "No volumetric shrinkage after curing",
+        "Also used as a potting and moulding compound"
+       ],
+       "areas": [
+        "Air filters",
+        "Automotive filters",
+        "Industrial filter cartridges",
+        "Filter gaskets",
+        "Automated dosing lines"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "2ca2ee1f38be.jpg",
+       "gallery": [],
+       "productPages": [
+        {
+         "page": 18,
+         "kicker": "FILTER ADHESIVES",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-131",
+           "name": "Fast-Curing Filter Adhesive",
+           "desc": "A polyurethane system developed for short cycle times on automated dosing lines.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "5/1 (by weight)"
+            },
+            {
+             "l": "Pot life",
+             "v": "5 – 10 min"
+            },
+            {
+             "l": "Packaging",
+             "v": "36 kg pail · 300 kg drum (A) · 250 kg drum (B)"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "0ba5cadad49f.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-132",
+           "name": "Automated-Dosing Filter Adhesive",
+           "desc": "A grade delivering repeatable dosing stability on production lines.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Packaging",
+             "v": "30 kg pail · 360 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "6bb3bbe0d3f4.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-133",
+           "name": "Thixotropic / Gasket Grade",
+           "desc": "A non-sag filling grade forming gaskets in place with high shape stability.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Solvent-free"
+            },
+            {
+             "l": "Mixing ratio",
+             "v": "5/1 (by weight)"
+            },
+            {
+             "l": "Pot life",
+             "v": "5 – 10 min"
+            },
+            {
+             "l": "Packaging",
+             "v": "36 kg pail · 300 kg drum (A) · 250 kg drum (B)"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "6bb3bbe0d3f4.jpg"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "PRODUCTS",
+     "title": "Binders",
+     "items": [
+      "Pour Binders",
+      "Press Binders",
+      "Stone Binders",
+      "EPDM Granules"
+     ],
+     "img": "11e1364e84e2.jpg",
+     "families": [
+      {
+       "page": 20,
+       "kicker": "BINDERS",
+       "title": "Pour Binders",
+       "lead": "Moisture-curing, one-component polyurethane prepolymers that turn SBR and EPDM granules into a monolithic, flexible floor on site.",
+       "paras": [
+        "Mixed with granules and spread on the surface, the binder cures into a water-permeable, shock-absorbing, seamless layer. Large areas are laid with a paver (finisher); small areas by hand. Aromatic grades are the economical choice for black SBR and dark systems; non-yellowing aliphatic / UV-stable grades are rec-ommended for coloured EPDM.",
+        "Too little binder weakens the bond; too much hardens the sur-face. Mixing ratio and granule cleanliness decide the outcome, and a small trial is advised with every new granule batch."
+       ],
+       "uses": [
+        "One-component, moisture-curing polyurethane binder",
+        "Used for in-situ cast EPDM and SBR granule systems",
+        "The aliphatic grade does not yellow under UV",
+        "Produces a permeable, open-pored surface",
+        "Applied by finisher machine or by hand"
+       ],
+       "areas": [
+        "Children's playgrounds",
+        "Jogging and walking paths",
+        "Sports floors",
+        "Schoolyards",
+        "Parks and landscaping",
+        "Decorative floors"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "b367417ad9ff.jpg",
+       "gallery": [
+        "f291fd638965.jpg",
+        "e09c922f3eb3.jpg",
+        "2b31d9a81b6a.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 21,
+         "kicker": "POUR BINDERS",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PP-201",
+           "name": "EPDM Pour Binder",
+           "desc": "A pigmented binder preserving colour consistency in coloured EPDM granule systems.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Aromatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Clear"
+            },
+            {
+             "l": "Packaging",
+             "v": "200 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "9 months"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PP-202",
+           "name": "SBR Pour Binder",
+           "desc": "The standard wet-pour binder for black SBR and dark systems.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Aromatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Brown – yellow"
+            },
+            {
+             "l": "Packaging",
+             "v": "200 kg drum · 220 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "9 months"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PP-203",
+           "name": "Aliphatic EPDM Binder (UV-Stable)",
+           "desc": "A premium non-yellowing grade for coloured EPDM surfaces.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Aliphatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Clear"
+            },
+            {
+             "l": "Packaging",
+             "v": "220 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "9 months"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 22,
+       "kicker": "BINDERS",
+       "title": "Press Binders",
+       "lead": "Binder resins developed for moulding rubber tiles, kerbs and technical parts under pressure and heat.",
+       "paras": [
+        "The granule-binder mix is pressed in the mould into dense, shape-retaining products. Mould temperature, cycle time and granule structure determine the result; keeping these parameters constant guarantees part integrity in series production.",
+        "Pour and press binders must not be substituted for each other: working time, surface quality and strength are engineered differ-ently for the two processes. Granule quality defines elasticity; granule size defines consumption."
+       ],
+       "uses": [
+        "One-component, moisture-curing polyurethane binder",
+        "Used in press/mould production of rubber tiles and sheets",
+        "Available in different reactivities to match mould cycle time",
+        "The cured bond stays elastic and does not become brittle",
+        "Compatible with SBR and EPDM granules"
+       ],
+       "areas": [
+        "Rubber tile production",
+        "Rubber kerbs and ramps",
+        "Stable and paddock mats",
+        "Technical rubber parts",
+        "In-plant series production"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "11e1364e84e2.jpg",
+       "gallery": [
+        "059d7d765e0f.jpg",
+        "cca91130babd.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 23,
+         "kicker": "PRESS BINDERS",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PP-211",
+           "name": "Standard Press Binder",
+           "desc": "A mould binder with balanced cycle times for rubber tile and kerb production.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Aromatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Brown – yellow"
+            },
+            {
+             "l": "Packaging",
+             "v": "220 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "9 months"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PP-212",
+           "name": "Fast-Cycle Press Binder",
+           "desc": "Shortened press times for high-capacity production lines.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Aromatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Brown – yellow"
+            },
+            {
+             "l": "Packaging",
+             "v": "220 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "9 months"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PP-213",
+           "name": "Economical Press Binder",
+           "desc": "A cost-advantage grade for standard parts.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Aromatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Light brown – yellow"
+            },
+            {
+             "l": "Packaging",
+             "v": "220 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "9 months"
+            }
+           ],
+           "img": "11e1364e84e2.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-PP-214",
+           "name": "High-Strength Press Binder",
+           "desc": "A reinforced formulation for heavy-traffic technical parts.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Aromatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Light brown – yellow"
+            },
+            {
+             "l": "Packaging",
+             "v": "220 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "9 months"
+            }
+           ],
+           "img": "059d7d765e0f.jpg"
+          }
+         ],
+         "hFeatures": "KEY FEATURES",
+         "features": [
+          "Formulated specifically for the moulding process",
+          "High bond strength at low consumption",
+          "Repeatability with constant cycle parameters",
+          "Dense, shape-retaining product structure",
+          "Compatible with SBR and EPDM granules"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 24,
+       "kicker": "BINDERS",
+       "title": "Stone Binders",
+       "lead": "Resins that bind natural and coloured stone granules with a clear film, creating the decorative, water-permeable surfaces known as stone carpet.",
+       "paras": [
+        "Three variants are offered: one-component aliphatic, two-compo-nent aliphatic and two-component epoxy. Aliphatic grades do not yellow under UV and are the first choice outdoors; the epoxy grade is the economical alternative for interiors and UV-free areas.",
+        "The cured surface is slip-resistant, unaffected by wind, resistant to water and most chemicals, and serves light traffic for many years without special maintenance."
+       ],
+       "uses": [
+        "Binds natural and coloured stone granules with a clear film",
+        "Applied over asphalt or concrete",
+        "Produces a non-slip surface",
+        "Aliphatic grades do not yellow and are UV resistant",
+        "Unaffected by wind, requires no special maintenance",
+        "Resistant to moisture, water and most chemicals"
+       ],
+       "areas": [
+        "Walkways and passages",
+        "Parks, gardens and botanical areas",
+        "Pool and pond surrounds",
+        "Balconies and terraces",
+        "Hotel and gallery floors",
+        "Decorative interiors"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "f898b5cef6b4.jpg",
+       "gallery": [
+        "e69ce003efd3.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 25,
+         "kicker": "STONE BINDERS",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-221",
+           "name": "2K Aliphatic Stone Binder",
+           "desc": "A non-yellowing clear two-component system — first choice for outdoor stone carpet.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane · Aliphatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Clear"
+            },
+            {
+             "l": "Packaging",
+             "v": "18 kg (A+B) kit"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "ee13891a2d8e.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-EP-222",
+           "name": "2K Epoxy Stone Binder",
+           "desc": "An economical, high-strength grade for interiors and UV-free areas.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Epoxy"
+            },
+            {
+             "l": "Colour",
+             "v": "Clear"
+            },
+            {
+             "l": "Packaging",
+             "v": "16 kg (A+B) kit · 352 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "12 months"
+            }
+           ],
+           "img": "7b859b1c943d.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-223",
+           "name": "1K Aliphatic Stone Binder",
+           "desc": "Practical one-component application for balconies, terraces and walkways.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Aliphatic"
+            },
+            {
+             "l": "Colour",
+             "v": "Clear"
+            },
+            {
+             "l": "Packaging",
+             "v": "7 kg pail · 50 kg pail · 220 kg drum"
+            },
+            {
+             "l": "Shelf life",
+             "v": "9 months"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          }
+         ],
+         "hFeatures": "KEY FEATURES",
+         "features": [
+          "Clear film that reveals the stone texture",
+          "Non-yellowing aliphatic grades",
+          "Water-permeable, slip-resistant surface",
+          "1K and 2K application options",
+          "Maintenance-free durability"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 26,
+       "kicker": "BINDERS",
+       "title": "EPDM Granules",
+       "lead": "UV-stable, vividly coloured granules produced from synthetic EPDM rubber — the raw material of flexible, safe floors with polyurethane binders.",
+       "paras": [
+        "A homogeneous grain structure and a wide colour palette allow free design, from patterned playgrounds to multicoloured sports fields. Adjusting granule size and layer thickness produces differ-ent fall-protection levels; on playgrounds the thickness follows the EN 1177 critical fall height approach.",
+        "Recycled SBR granules work alongside EPDM as the economical elastic base layer of these systems."
+       ],
+       "uses": [],
+       "areas": [
+        "Children's playgrounds",
+        "Running tracks and tartan surfaces",
+        "Schoolyards",
+        "Sports fields",
+        "Pool surrounds",
+        "Gymnastics and exercise areas"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-GR-701 / 702",
+         "name": "EPDM Granules — 24 Standard Colours",
+         "desc": "UV-stable, homogeneous coloured granules; browse the full palette in the gallery.",
+         "specs": [
+          {
+           "l": "Dimensions",
+           "v": "0.5 – 1.5 mm · 1 – 3.5 mm"
+          }
+         ],
+         "img": "2b31d9a81b6a.jpg"
+        },
+        {
+         "no": "02",
+         "code": "LK-GR-711 / 712",
+         "name": "SBR Granules (Recycled)",
+         "desc": "The economical, shock-absorbing black base-layer granule of the systems.",
+         "specs": [
+          {
+           "l": "Dimensions",
+           "v": "1 – 3.5 mm · 2.5 – 3.5 mm"
+          }
+         ],
+         "img": "f291fd638965.jpg"
+        }
+       ],
+       "hAreas": "APPLICATION AREAS",
+       "hProducts": "PRODUCT FAMILY",
+       "img": "2b31d9a81b6a.jpg",
+       "gallery": [],
+       "productPages": []
+      }
+     ]
+    },
+    {
+     "kicker": "PRODUCTS",
+     "title": "Floor Coatings & Paints",
+     "items": [
+      "Polyurethane Floor Coatings",
+      "Acrylic Floor Coatings",
+      "Epoxy Floor Coatings"
+     ],
+     "img": "df1b57e11ccc.jpg",
+     "families": [
+      {
+       "page": 29,
+       "kicker": "FLOOR COATINGS & PAINTS",
+       "title": "Polyurethane Floor Coatings",
+       "lead": "Polyurethane based coating and paint systems for floors where elasticity, impact absorption and UV resistance are decisive.",
+       "paras": [
+        "Rigid self-levelling grades create smooth, hygienic surfaces in factories, warehouses and cold stores; flexible grades absorb im-pact in sports halls, shooting ranges and nurseries, reducing in-jury risk. The system is completed with putty, an EPDM top layer and a UV-resistant finish coat.",
+        "Compared with the rigid nature of epoxy, polyurethane offers ac-commodation of thermal movement, vibration damping and re-duced footfall noise — with higher resistance to UV and outdoor weathering."
+       ],
+       "uses": [
+        "Can be applied at any thickness between 0.2 mm and 20 mm",
+        "Creates a seamless, dust-free and easy-to-clean surface",
+        "Produced in all RAL colours",
+        "Provides high mechanical and chemical resistance",
+        "Available in fully or semi-conductive (ESD) grades on request",
+        "Logos, wayfinding and lines can be applied to the floor"
+       ],
+       "areas": [
+        "Factories and warehouses",
+        "Cold stores",
+        "Sports halls and shooting ranges",
+        "Car parks and outdoor areas",
+        "Offices, shops and showrooms",
+        "Wet areas"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "78034a880a05.jpg",
+       "gallery": [
+        "b80ab6c5b632.jpg",
+        "2479247dd997.jpg",
+        "92288cec129c.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 30,
+         "kicker": "POLYURETHANE FLOOR COATINGS",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-301",
+           "name": "2K PU Floor Paint (UV)",
+           "desc": "The colour and protection layer of the systems; a non-yellowing finish.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.15 – 0.30 kg/m²"
+            },
+            {
+             "l": "Colour",
+             "v": "All RAL colours"
+            }
+           ],
+           "img": "3db33a5619a9.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-302",
+           "name": "2K PU Self-Levelling Coating (Rigid)",
+           "desc": "A smooth, high-resistance coating for factories and warehouses.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "2 – 3.50 kg/m²"
+            },
+            {
+             "l": "Colour",
+             "v": "All RAL colours"
+            }
+           ],
+           "img": "660fd749a5d4.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-303",
+           "name": "2K PU Self-Levelling Coating (Flexible)",
+           "desc": "A shock-absorbing grade for sports halls and comfort areas.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "2 – 2.50 kg/m²"
+            },
+            {
+             "l": "Colour",
+             "v": "All RAL colours"
+            }
+           ],
+           "img": "2a2ae552af3a.jpg"
+          }
+         ],
+         "hFeatures": "KEY FEATURES",
+         "features": [
+          "Rigid or flexible system build-up",
+          "UV-resistant, non-yellowing finish coats",
+          "Accommodation of thermal stress",
+          "Reduced footfall noise",
+          "Antibacterial and flame-retardant options"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 31,
+       "kicker": "FLOOR COATINGS & PAINTS",
+       "title": "Acrylic Floor Coatings",
+       "lead": "Water-based, solvent-free acrylic sports coatings applied in successive layers over concrete and asphalt, with outstanding UV resistance.",
+       "paras": [
+        "The system consists of a resurfacer, shock-absorbing cushion layers, a filled top coat and line paint. By adjusting sand content and the number of layers, the court's coefficient of friction — its pace — is customised.",
+        "Freeze-thaw resistance and high colour retention give long out-door life; indoors the system serves every level from amateur to professional."
+       ],
+       "uses": [],
+       "areas": [
+        "Tennis courts",
+        "Basketball and volleyball courts",
+        "Multi-purpose courts",
+        "Running and cycling tracks",
+        "School and municipal facilities"
+       ],
+       "products": [],
+       "hAreas": "APPLICATION AREAS",
+       "img": "03e1bfc7deb0.jpg",
+       "gallery": [
+        "0bf913225e9d.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 32,
+         "kicker": "ACRYLIC FLOOR COATINGS",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-AC-311",
+           "name": "Acrylic Finish / Sealer",
+           "desc": "A final coat adding gloss and protection to acrylic surfaces.",
+           "specs": [],
+           "img": "639479629f65.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-AC-312",
+           "name": "Acrylic Cushion (Thick)",
+           "desc": "The thick shock-absorbing cushion layer of courts.",
+           "specs": [],
+           "img": "b52bdb73e6e6.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-AC-313",
+           "name": "Acrylic Cushion (Thin)",
+           "desc": "A thin cushion layer for fine pace tuning.",
+           "specs": [],
+           "img": "b52bdb73e6e6.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-AC-314",
+           "name": "Premium Acrylic Resurfacer",
+           "desc": "A premium leveller filling surface defects and preparing the base.",
+           "specs": [],
+           "img": "ced0a61e0231.jpg"
+          },
+          {
+           "no": "05",
+           "code": "LK-AC-315",
+           "name": "Acrylic Resurfacer",
+           "desc": "The standard surface-correction layer over concrete and asphalt.",
+           "specs": [],
+           "img": "37c103d17abb.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-AC-316",
+           "name": "Acrylic Filled Top Coat",
+           "desc": "The coloured, sand-filled coat that sets the friction coefficient.",
+           "specs": [],
+           "img": "9f7afa92f415.jpg"
+          }
+         ],
+         "hFeatures": "KEY FEATURES",
+         "features": [
+          "Water-based, environmentally friendly system",
+          "Adjustable court pace (friction)",
+          "UV and freeze-thaw resistance",
+          "Strong adhesion to concrete and asphalt",
+          "Low maintenance cost, wide colour range"
+         ]
+        },
+        {
+         "page": 33,
+         "kicker": "ACRYLIC FLOOR COATINGS",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "07",
+           "code": "LK-AC-317",
+           "name": "Premium Acrylic Concentrated Paint",
+           "desc": "A high-pigment, long-life colour layer.",
+           "specs": [],
+           "img": "243fa535203a.jpg"
+          },
+          {
+           "no": "08",
+           "code": "LK-AC-318",
+           "name": "Acrylic Concentrated Paint",
+           "desc": "An economical concentrate for court colouring.",
+           "specs": [],
+           "img": "243fa535203a.jpg"
+          },
+          {
+           "no": "09",
+           "code": "LK-PU-402",
+           "name": "1K PU Primer",
+           "desc": "The concrete primer applied before acrylic systems.",
+           "specs": [],
+           "img": "63fa17ae40d9.jpg"
+          },
+          {
+           "no": "10",
+           "code": "LK-AC-407",
+           "name": "Acrylic Primer",
+           "desc": "A water-based primer securing adhesion of acrylic layers.",
+           "specs": [],
+           "img": "8cb1222e9e7c.jpg"
+          },
+          {
+           "no": "11",
+           "code": "LK-AC-319",
+           "name": "Acrylic Line Paint",
+           "desc": "A high-opacity paint for court markings.",
+           "specs": [],
+           "img": "8279dd7fcc4c.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 34,
+       "kicker": "FLOOR COATINGS & PAINTS",
+       "title": "Epoxy Floor Coatings",
+       "lead": "From thin-film paint to self-levelling coatings and epoxy mortar: seamless floor systems focused on hygiene and mechanical strength.",
+       "paras": [
+        "Self-levelling grades create smooth, glossy floors; textured (or-ange-peel) grades create slip-resistant, economical ones. The dust-free, monolithic structure leaves no room for bacteria, sup-porting hygiene in hospitals, food plants and laboratories. Conductive (ESD) versions can be produced on request.",
+        "New concrete needs roughly three weeks of curing, priming and a moisture check before application. Because epoxy has limited UV resistance, sun-exposed areas are protected with a UV-stable fin-ish coat, and heavy-load areas are reinforced with epoxy mortar."
+       ],
+       "uses": [
+        "Withstands heavy loads and intensive traffic",
+        "An orange-peel texture can be added for slip resistance",
+        "Creates a glossy, seamless and hygienic floor",
+        "Unaffected by chemicals, easy to clean",
+        "Produced in all RAL colours",
+        "Colour renewal is done economically with a fresh top coat"
+       ],
+       "areas": [
+        "Factories and production plants",
+        "Warehouses and bonded stores",
+        "Hospitals and laboratories",
+        "Food and pharmaceutical plants",
+        "Indoor car parks",
+        "Industrial kitchens"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "92288cec129c.jpg",
+       "gallery": [
+        "f08f38f410ea.jpg",
+        "f08f38f410ea.jpg",
+        "a0b0e844a6f2.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 35,
+         "kicker": "EPOXY FLOOR COATINGS",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-EP-321",
+           "name": "Epoxy Textured Coating (Orange Peel)",
+           "desc": "An anti-slip, economical and decorative textured finish.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Epoxy"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.50 – 0.70 kg/m²"
+            },
+            {
+             "l": "Colour",
+             "v": "All RAL colours"
+            }
+           ],
+           "img": "0cafefcaa216.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-EP-322",
+           "name": "Epoxy Floor Paint",
+           "desc": "A thin-film protective paint for light and medium traffic.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Epoxy"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.40 – 0.50 kg/m²"
+            },
+            {
+             "l": "Colour",
+             "v": "All RAL colours"
+            }
+           ],
+           "img": "a0b0e844a6f2.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-EP-323",
+           "name": "Epoxy Self-Levelling Coating",
+           "desc": "A smooth, glossy, high-resistance self-levelling coat.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Epoxy"
+            },
+            {
+             "l": "Consumption",
+             "v": "2 – 3.50 kg/m²"
+            },
+            {
+             "l": "Colour",
+             "v": "All RAL colours"
+            }
+           ],
+           "img": "d555777226f3.jpg"
+          }
+         ],
+         "hFeatures": "KEY FEATURES",
+         "features": [
+          "Self-levelling, paint and textured options",
+          "High mechanical and chemical resistance",
+          "Hygienic, dust-free seamless surface",
+          "Conductive (ESD) versions available",
+          "Application in all RAL colours"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "PRODUCTS",
+     "title": "Primers & Putties",
+     "items": [
+      "Primers",
+      "Putties"
+     ],
+     "img": "f08f38f410ea.jpg",
+     "families": [
+      {
+       "page": 37,
+       "kicker": "PRIMERS & PUTTIES",
+       "title": "Primers",
+       "lead": "The first layer: a bonding bridge between coating and concrete that balances absorbency, stops dusting and forms a moisture barrier where needed.",
+       "paras": [
+        "Epoxy primers suit floors demanding high adhesion and chemical resistance; polyurethane primers pair with flexible top layers, acrylic primers with acrylic sports systems. Filled primers level out surface defects, preparing a smooth base.",
+        "Substrate moisture is the first check: up to about 3% a standard primer suffices, between 3–7% a moisture-barrier epoxy primer is mandatory, and above that no application is made. Skipping the primer leads to early peeling and blistering."
+       ],
+       "uses": [
+        "Separate grades for absorbent and non-absorbent substrates",
+        "Determines the adhesion between substrate and coating",
+        "The epoxy moisture barrier prevents blistering on damp screeds",
+        "Substrate moisture must be measured before application",
+        "The next coat is not applied before drying is complete"
+       ],
+       "areas": [
+        "Concrete and screed surfaces",
+        "Metal surfaces",
+        "Damp substrates (barrier grade)",
+        "Sports system bases",
+        "All floors before coating"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "1716c16e6d4b.jpg",
+       "gallery": [
+        "92288cec129c.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 38,
+         "kicker": "PRIMERS",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-401",
+           "name": "Solvent-Free PU Primer",
+           "desc": "An odourless polyurethane primer safe for enclosed spaces.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane · Solvent- free"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.15 – 0.30 kg/m²"
+            }
+           ],
+           "img": "1716c16e6d4b.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-402",
+           "name": "1K PU Primer",
+           "desc": "A practical moisture-curing primer compatible with flexible top layers.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.15 – 0.25 kg/m²"
+            }
+           ],
+           "img": "63fa17ae40d9.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-403",
+           "name": "1K PU Clear Primer",
+           "desc": "A clear, deep-penetrating grade for absorbent substrates.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "One-component · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.15 – 0.25 kg/m²"
+            },
+            {
+             "l": "Colour",
+             "v": "Clear"
+            }
+           ],
+           "img": "92288cec129c.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-EP-404",
+           "name": "2K Epoxy Moisture Barrier",
+           "desc": "A barrier primer protecting the coating on damp substrates.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Epoxy"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.30 – 0.40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          },
+          {
+           "no": "05",
+           "code": "LK-EP-405",
+           "name": "2K Epoxy Primer",
+           "desc": "The standard for floors demanding high adhesion and chemical resistance.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Epoxy"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.30 – 0.40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-EP-406",
+           "name": "2K Epoxy Primer (Economical)",
+           "desc": "An economical solution for general concrete priming.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Epoxy"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.30 – 0.40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          }
+         ],
+         "hFeatures": "KEY FEATURES",
+         "features": [
+          "Epoxy, polyurethane and acrylic families",
+          "Moisture-barrier options",
+          "Surface correction with filled primer",
+          "Special grades for non-absorbent surfaces",
+          "The critical layer that defines system life"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 39,
+       "kicker": "PRIMERS & PUTTIES",
+       "title": "Putties",
+       "lead": "Polyurethane filling products that close joints, cracks and pores, creating a sealed, smooth transition between layers.",
+       "paras": [
+        "High- and low-viscosity grades and elastic variants follow the movement of the floor, preventing the filling from cracking. In sports floor systems the putty acts as the intermediate layer that seals the pores of the granule core.",
+        "The right putty lowers the consumption of the self-levelling layer above it and directly improves the quality of the finished surface."
+       ],
+       "uses": [
+        "Seals the pores over the elastic core layer",
+        "Lets the coating spread evenly at a uniform thickness",
+        "Viscosity options to suit every system build-up",
+        "Consumption varies with granule size and surface texture",
+        "Fully compatible with polyurethane systems"
+       ],
+       "areas": [
+        "Joint and crack filling",
+        "Sports floor intermediate layers",
+        "Rubber and SBR surface pores",
+        "Concrete repairs",
+        "Pre-coating corrections"
+       ],
+       "products": [],
+       "hUses": "USE AND RESISTANCE",
+       "hAreas": "APPLICATION AREAS",
+       "img": "f08f38f410ea.jpg",
+       "gallery": [
+        "f08f38f410ea.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 40,
+         "kicker": "PUTTIES",
+         "title": "Product Family",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-501",
+           "name": "PU Sealer",
+           "desc": "The sealing layer that closes granule pores in sports systems.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.80 – 1 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-502",
+           "name": "Elastic PU Putty",
+           "desc": "An elastic filler that works without cracking on moving floors.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "1.50 – 2.50 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-503",
+           "name": "Low-Viscosity PU Putty",
+           "desc": "A fluid grade penetrating fine pores and capillaries.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "0.80 – 1 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "04",
+           "code": "LK-PU-504",
+           "name": "High-Viscosity PU Putty",
+           "desc": "A dense grade holding its shape in joints and wide gaps.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Two-component (2K) · Polyurethane"
+            },
+            {
+             "l": "Consumption",
+             "v": "2 – 2.50 kg/m²"
+            }
+           ]
+          }
+         ],
+         "hFeatures": "KEY FEATURES",
+         "features": [
+          "High/low-viscosity and elastic variants",
+          "Accommodation of floor movement",
+          "Pore sealing and watertightness",
+          "Reduces top-coat consumption",
+          "Full compatibility with PU systems"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "PRODUCTS",
+     "title": "Waterproofing Products",
+     "items": [
+      "Waterproofing Products"
+     ],
+     "img": "db9f0c046d13.jpg",
+     "families": [
+      {
+       "page": 42,
+       "kicker": "WATERPROOFING PRODUCTS",
+       "title": "Waterproofing Products",
+       "lead": "A complete waterproofing portfolio of liquid membranes and matching primers for every detail from roof to foundation.",
+       "paras": [
+        "Aliphatic grades serve UV-exposed finish coats and economical grades go under tiling; non-sag (thixotropic) types handle vertical surfaces and bitumen-polyurethane hybrids extend the range. Separate primers for absorbent and non-absorbent substrates complete the system."
+       ],
+       "uses": [],
+       "areas": [
+        "Roofs and terraces",
+        "Bathrooms, balconies and wet areas",
+        "Foundations and retaining walls",
+        "Water tanks and pools",
+        "Concealed gutter details"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-WP-601",
+         "name": "Liquid Membrane Product Family",
+         "desc": "A complete waterproofing set of 1K/2K PU liquid membranes, primers and aliphatic finish coats.",
+         "specs": [],
+         "img": "a5772839c24e.jpg"
+        }
+       ],
+       "hAreas": "APPLICATION AREAS",
+       "hProducts": "PRODUCT FAMILY",
+       "img": "db9f0c046d13.jpg",
+       "gallery": [],
+       "productPages": []
+      }
+     ]
+    }
+   ],
+   "colorChart": {
+    "kicker": "EPDM GRANULES",
+    "title": "EPDM Colour Chart",
+    "lead": "24 standard granule colours. Printing and screen conditions may shift the actual colour; request a physical sample before making a binding decision.",
+    "swatches": [
+     {
+      "img": "3a6acc96ec7b.jpg",
+      "label": "Colour 01"
+     },
+     {
+      "img": "972793529a32.jpg",
+      "label": "Colour 02"
+     },
+     {
+      "img": "19fb9563536d.jpg",
+      "label": "Colour 03"
+     },
+     {
+      "img": "db8e9742ec95.jpg",
+      "label": "Colour 04"
+     },
+     {
+      "img": "54a56d7a0379.jpg",
+      "label": "Colour 05"
+     },
+     {
+      "img": "2eaac72e6bd4.jpg",
+      "label": "Colour 06"
+     },
+     {
+      "img": "a24d0c743b48.jpg",
+      "label": "Colour 07"
+     },
+     {
+      "img": "d00a6168ebe0.jpg",
+      "label": "Colour 08"
+     },
+     {
+      "img": "aaa3737d7215.jpg",
+      "label": "Colour 09"
+     },
+     {
+      "img": "0497564f7121.jpg",
+      "label": "Colour 10"
+     },
+     {
+      "img": "4baf1e025d09.jpg",
+      "label": "Colour 11"
+     },
+     {
+      "img": "8f6b3e7972b6.jpg",
+      "label": "Colour 12"
+     },
+     {
+      "img": "7a75818199ee.jpg",
+      "label": "Colour 13"
+     },
+     {
+      "img": "e8a778f24c47.jpg",
+      "label": "Colour 14"
+     },
+     {
+      "img": "53c657b52062.jpg",
+      "label": "Colour 15"
+     },
+     {
+      "img": "9ca3b3bba7aa.jpg",
+      "label": "Colour 16"
+     },
+     {
+      "img": "026b2994e330.jpg",
+      "label": "Colour 17"
+     },
+     {
+      "img": "5555f0704398.jpg",
+      "label": "Colour 18"
+     },
+     {
+      "img": "e74bbff0e3f8.jpg",
+      "label": "Colour 19"
+     },
+     {
+      "img": "af86872c4528.jpg",
+      "label": "Colour 20"
+     },
+     {
+      "img": "6301584010a1.jpg",
+      "label": "Colour 21"
+     },
+     {
+      "img": "b134d7995d33.jpg",
+      "label": "Colour 22"
+     },
+     {
+      "img": "c4ec918e7638.jpg",
+      "label": "Colour 23"
+     },
+     {
+      "img": "fe4ad4259726.jpg",
+      "label": "Colour 24"
+     }
+    ]
+   }
+  },
+  {
+   "no": "02",
+   "title": "Systems",
+   "desc": "Systems configured to the specification, budget and substrate.",
+   "img": "92288cec129c.jpg",
+   "systems": [
+    {
+     "kicker": "SYSTEMS",
+     "title": "Sports Flooring Systems",
+     "lead": "Layered sports floor build-ups — primer, elastic core, putty and finish — scaling from amateur halls to professional athletics tracks.",
+     "paras": [
+      "Indoors, a polyurethane self-levelling coat and UV-resistant finish are applied over an SBR roll or cast-in-place SBR core; total thickness follows the intensity of use. For athletics, the sandwich system (cast SBR core + elastomer + broadcast EPDM surface) and the full-pour system are complemented by the water-perme-able combined build-up and the economical spray coating.",
+      "On hard courts, acrylic systems allow the pace of play to be tuned through resurfacer, cushion layers and a filled top coat. Court markings are always the final layer; renewal takes nothing more than a fresh finish coat."
+     ],
+     "hAreas": "APPLICATION AREAS",
+     "areas": [
+      "Tennis courts",
+      "Basketball and volleyball",
+      "Indoor sports halls",
+      "Athletics tracks",
+      "Padel courts",
+      "Jogging and walking paths",
+      "Children's playgrounds",
+      "Fitness gyms",
+      "Shooting ranges"
+     ],
+     "img": "f7957c254b4d.jpg",
+     "features": {
+      "kicker": "SPORTS FLOORING SYSTEMS",
+      "title": "System Features",
+      "features": [
+       "Primer → elastic core → putty → finish build-up",
+       "Sandwich, full-pour, combined and spray variants",
+       "Shock-absorbing SBR/EPDM core",
+       "Non-yellowing aliphatic top coats",
+       "Economical colour and marking renewal",
+       "Indoor and outdoor application"
+      ],
+      "paras": [
+       "On padel courts the playing surface is built on a 20 × 10 m area over a reinforced concrete or porous asphalt base: arti-ficial turf with a 10–15 mm pile, filled with 0.2–0.5 mm silica sand. Turf strips are joined with seaming tape and a two-component polyurethane turf adhesive; a 0.5–1% fall in the base plus perimeter drainage keeps water off the surface and protects the bonded layer."
+      ],
+      "gallery": [
+       "835906c351e9.jpg",
+       "03e1bfc7deb0.jpg",
+       "2479247dd997.jpg",
+       "cca91130babd.jpg"
+      ]
+     },
+     "sectionPages": [
+      {
+       "kicker": "SPORTS FLOORING SYSTEMS",
+       "title": "System Build-Ups and Consumption",
+       "sub": "",
+       "sections": [
+        {
+         "name": "Amateur Hall System — with roll pad",
+         "thickness": "Coating thickness: ~6 mm",
+         "desc": "Fitness and training halls, indoor tennis courts, nursery floors",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.15 – 0.25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Rubber adhesive",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "1 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Rubber roll pad",
+           "detail": "4 mm",
+           "code": "LK-AK-741",
+           "amount": "1 m²/m²"
+          },
+          {
+           "no": "04",
+           "name": "Elastic filler putty",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0.80 – 1 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2.50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "UV-resistant PU paint",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0.15 – 0.30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        },
+        {
+         "name": "Amateur Hall System — cast in situ",
+         "thickness": "Coating thickness: ~6 mm",
+         "desc": "",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.15 – 0.25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "SBR rubber granules",
+           "detail": "1 – 3.5 mm",
+           "code": "LK-GR-711",
+           "amount": "2.60 – 2.86 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Rubber binder",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "0.52 – 0.57 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Elastic filler putty",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "2 – 2.50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2.50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "UV-resistant PU paint",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0.15 – 0.30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        }
+       ],
+       "footnote": "Figures assume a substrate of ideal quality and flatness; they change on damaged or uneven surfaces. Request the current technical data sheet (TDS) for binding values."
+      },
+      {
+       "kicker": "SPORTS FLOORING SYSTEMS",
+       "title": "",
+       "sub": "SYSTEM BUILD-UPS AND CONSUMPTION",
+       "sections": [
+        {
+         "name": "Professional Hall System",
+         "thickness": "Coating thickness: ~10 mm",
+         "desc": "Basketball, volleyball, handball and all indoor court sports",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.15 – 0.25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Rubber adhesive",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "1 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Rubber roll pad",
+           "detail": "8 mm",
+           "code": "LK-AK-741",
+           "amount": "1 m²/m²"
+          },
+          {
+           "no": "04",
+           "name": "Elastic filler putty",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0.80 – 1 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2.50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "UV-resistant PU paint",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0.15 – 0.30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        },
+        {
+         "name": "Jogging and Walking Track System",
+         "thickness": "Coating thickness: ~18 mm",
+         "desc": "Walking paths, amateur sports and play areas",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.20 – 0.30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "SBR rubber granules",
+           "detail": "2.5 – 3.5 mm",
+           "code": "LK-GR-712",
+           "amount": "7.80 – 8.50 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Rubber binder",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1.40 – 1.53 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "EPDM granules",
+           "detail": "0.5 – 1.5 mm",
+           "code": "LK-GR-701",
+           "amount": "5 – 5.50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "EPDM binder",
+           "detail": "",
+           "code": "LK-PP-201",
+           "amount": "1 – 1.10 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Elastic filler putty",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "1.50 – 2 kg/m²"
+          },
+          {
+           "no": "07",
+           "name": "UV-resistant PU paint",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0.25 – 0.35 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        }
+       ],
+       "footnote": "Figures assume a substrate of ideal quality and flatness; they change on damaged or uneven surfaces. Request the current technical data sheet (TDS) for binding values."
+      },
+      {
+       "kicker": "SPORTS FLOORING SYSTEMS",
+       "title": "",
+       "sub": "SYSTEM BUILD-UPS AND CONSUMPTION",
+       "sections": [
+        {
+         "name": "Water-Permeable Combined System",
+         "thickness": "Coating thickness: ~8+7 mm",
+         "desc": "Amateur athletics tracks, tennis courts, playgrounds",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.20 – 0.30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "SBR rubber granules",
+           "detail": "1 – 3.5 mm",
+           "code": "LK-GR-711",
+           "amount": "5.20 – 5.72 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Rubber binder",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1.04 – 1.14 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "EPDM granules",
+           "detail": "1 – 3.5 mm",
+           "code": "LK-GR-702",
+           "amount": "7 – 7.70 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "EPDM binder",
+           "detail": "",
+           "code": "LK-PP-201",
+           "amount": "1.40 – 1.54 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        },
+        {
+         "name": "Economical Spray Coating System",
+         "thickness": "Coating thickness: ~13 mm",
+         "desc": "Amateur athletics tracks and walking paths",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.20 – 0.30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Rubber binder",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1.60 – 1.75 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "SBR rubber granules",
+           "detail": "1 – 3.5 mm",
+           "code": "LK-GR-711",
+           "amount": "8 – 8.80 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Polyurethane spray coating",
+           "detail": "",
+           "code": "LK-PU-304",
+           "amount": "1.20 – 1.32 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "EPDM granules",
+           "detail": "0.5 – 1.5 mm",
+           "code": "LK-GR-701",
+           "amount": "0.80 – 0.88 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Line paint",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "0.25 – 0.30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        }
+       ],
+       "footnote": "Figures assume a substrate of ideal quality and flatness; they change on damaged or uneven surfaces. Request the current technical data sheet (TDS) for binding values."
+      },
+      {
+       "kicker": "SPORTS FLOORING SYSTEMS",
+       "title": "",
+       "sub": "SYSTEM BUILD-UPS AND CONSUMPTION",
+       "sections": [
+        {
+         "name": "Sandwich Athletics System",
+         "thickness": "Coating thickness: ~14 mm",
+         "desc": "Professional athletics tracks and field areas",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.20 – 0.30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Rubber binder",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1.30 – 1.45 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "SBR rubber granules",
+           "detail": "1 – 3.5 mm",
+           "code": "LK-GR-711",
+           "amount": "6.50 – 7.20 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Elastic filler putty",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "1.50 – 2.50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2.20 – 2.45 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "EPDM granules",
+           "detail": "1 – 3.5 mm",
+           "code": "LK-GR-702",
+           "amount": "4 – 4.40 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        },
+        {
+         "name": "Full-Pour Athletics System",
+         "thickness": "Coating thickness: ~15 mm",
+         "desc": "Professional athletics tracks and field areas",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.20 – 0.30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "8 – 9 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "SBR rubber granules",
+           "detail": "1 – 3.5 mm",
+           "code": "LK-GR-711",
+           "amount": "7.30 – 8.30 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "EPDM granules",
+           "detail": "1 – 3.5 mm",
+           "code": "LK-GR-702",
+           "amount": "4 – 5 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Line paint",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "0.20 – 0.30 kg/m"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        }
+       ],
+       "footnote": "Figures assume a substrate of ideal quality and flatness; they change on damaged or uneven surfaces. Request the current technical data sheet (TDS) for binding values."
+      },
+      {
+       "kicker": "SPORTS FLOORING SYSTEMS",
+       "title": "",
+       "sub": "SYSTEM BUILD-UPS AND CONSUMPTION",
+       "sections": [
+        {
+         "name": "Shooting Range System",
+         "thickness": "Coating thickness: ~10 mm",
+         "desc": "Indoor shooting range floors",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Rubber adhesive",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Rubber floor covering",
+           "detail": "",
+           "code": "LK-AK-731",
+           "amount": "—"
+          },
+          {
+           "no": "03",
+           "name": "Elastic filler putty",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0.80 – 1 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2.50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        },
+        {
+         "name": "Acrylic Hard-Court System",
+         "thickness": "Coating thickness: ~2–3 mm",
+         "desc": "Tennis, basketball, volleyball, running and cycling tracks",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Acrylic resurfacer",
+           "detail": "",
+           "code": "LK-AC-315",
+           "amount": "—"
+          },
+          {
+           "no": "03",
+           "name": "Acrylic cushion",
+           "detail": "",
+           "code": "LK-AC-312",
+           "amount": "—"
+          },
+          {
+           "no": "04",
+           "name": "Acrylic top coat",
+           "detail": "",
+           "code": "LK-AC-316",
+           "amount": "—"
+          },
+          {
+           "no": "05",
+           "name": "Acrylic line paint",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "—"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        }
+       ],
+       "footnote": "Figures assume a substrate of ideal quality and flatness; they change on damaged or uneven surfaces. Request the current technical data sheet (TDS) for binding values."
+      }
+     ]
+    },
+    {
+     "kicker": "SYSTEMS",
+     "title": "Industrial Flooring Systems",
+     "lead": "Industrial floor systems configured by traffic load, hygiene requirement and budget — from thin-film paint to epoxy mortar.",
+     "paras": [
+      "Economical epoxy paint for light traffic; primer, body coat and self-levelling systems for medium and heavy duty; and screed-like epoxy mortar reinforcement for heavy loads and damaged substrates. Where slip resistance matters, the finish is textured into an orange-peel skin.",
+      "Semi-flexible polyurethane systems reduce footfall noise on mez-zanines, hotels and offices; decorative projects use flakes, coloured quartz and printed interlayers for one-off surfaces. Hospital-grade areas call for the antibacterial and conductive (ESD) options."
+     ],
+     "hAreas": "APPLICATION AREAS",
+     "areas": [
+      "Factory floors",
+      "Warehouses and bonded stores",
+      "Laboratories and cold storage",
+      "Food and pharmaceutical plants",
+      "Indoor car parks",
+      "Aircraft hangars",
+      "Vehicle service and car wash",
+      "Restaurants, cafés and bars",
+      "Hotel rooms and common areas",
+      "Shops, offices and exhibition halls",
+      "Nurseries and kindergartens"
+     ],
+     "img": "92288cec129c.jpg",
+     "features": {
+      "kicker": "INDUSTRIAL FLOORING SYSTEMS",
+      "title": "System Features",
+      "features": [
+       "Paint, self-levelling, texture and mortar tiers",
+       "Slip-resistant orange-peel option",
+       "Semi-flexible build-up that dampens footfall",
+       "Decorative flakes and coloured quartz",
+       "Antibacterial and ESD alternatives",
+       "Application in all RAL colours"
+      ],
+      "paras": [],
+      "gallery": [
+       "f08f38f410ea.jpg",
+       "2ca2ee1f38be.jpg",
+       "a0b0e844a6f2.jpg",
+       "b80ab6c5b632.jpg"
+      ]
+     },
+     "sectionPages": [
+      {
+       "kicker": "INDUSTRIAL FLOORING SYSTEMS",
+       "title": "System Build-Ups and Consumption",
+       "sub": "",
+       "sections": [
+        {
+         "name": "Semi-Flexible System",
+         "thickness": "Coating thickness: ~2–3 mm",
+         "desc": "Mezzanines, hotels, offices, shops, restaurants, laboratories, canteens",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Self-levelling screed",
+           "detail": "",
+           "code": "",
+           "amount": "optional"
+          },
+          {
+           "no": "02",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.15 – 0.25 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2.20 – 3.50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "UV-resistant PU paint",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0.20 – 0.30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        },
+        {
+         "name": "Decorative Design System",
+         "thickness": "Coating thickness: ~2–3 mm",
+         "desc": "Shops, cafés, restaurants, sales offices, fairs, TV studios",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Self-levelling screed",
+           "detail": "",
+           "code": "",
+           "amount": "optional"
+          },
+          {
+           "no": "02",
+           "name": "Primer",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0.15 – 0.25 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2.20 – 3.50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "UV-resistant PU paint",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0.20 – 0.30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        }
+       ],
+       "footnote": "Figures assume a substrate of ideal quality and flatness; they change on damaged or uneven surfaces. Request the current technical data sheet (TDS) for binding values."
+      },
+      {
+       "kicker": "INDUSTRIAL FLOORING SYSTEMS",
+       "title": "",
+       "sub": "SYSTEM BUILD-UPS AND CONSUMPTION",
+       "sections": [
+        {
+         "name": "Anti-Slip Texture System",
+         "thickness": "Coating thickness: ~2 mm",
+         "desc": "Indoor car parks, kitchens, food production areas, light-duty warehouses",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Filler putty",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Epoxy primer",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0.30 – 0.40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Epoxy intermediate coat",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "0.40 – 0.50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Epoxy texture paint",
+           "detail": "",
+           "code": "LK-EP-321",
+           "amount": "0.50 – 0.70 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        },
+        {
+         "name": "Medium-Duty Self-Levelling System",
+         "thickness": "Coating thickness: ~2.5–3 mm",
+         "desc": "Factory floors, kitchens, shops, food production areas, warehouses, cold stores",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Filler putty",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Epoxy primer",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0.30 – 0.40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Epoxy intermediate coat",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "0.50 – 0.70 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Epoxy self-levelling coating",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "2 – 2.50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        }
+       ],
+       "footnote": "Figures assume a substrate of ideal quality and flatness; they change on damaged or uneven surfaces. Request the current technical data sheet (TDS) for binding values."
+      },
+      {
+       "kicker": "INDUSTRIAL FLOORING SYSTEMS",
+       "title": "",
+       "sub": "SYSTEM BUILD-UPS AND CONSUMPTION",
+       "sections": [
+        {
+         "name": "Medium-Duty Polyurethane System",
+         "thickness": "Coating thickness: ~2.5–3 mm",
+         "desc": "",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Filler putty",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Epoxy primer",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0.30 – 0.40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Polyurethane intermediate coat",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "0.50 – 0.70 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Self-levelling PU coating",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2 – 2.50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        },
+        {
+         "name": "Heavy-Duty Epoxy Mortar System",
+         "thickness": "Coating thickness: ~13 mm",
+         "desc": "Loading bays, heavy production areas, badly damaged substrates",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Filler putty",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Epoxy primer",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0.30 – 0.40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Epoxy mortar",
+           "detail": "10 mm",
+           "code": "LK-EP-324",
+           "amount": "23 – 33 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Epoxy self-levelling coating",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "2.50 – 3.50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Layer",
+          "Consumption"
+         ]
+        }
+       ],
+       "footnote": "Figures assume a substrate of ideal quality and flatness; they change on damaged or uneven surfaces. Request the current technical data sheet (TDS) for binding values."
+      }
+     ]
+    },
+    {
+     "kicker": "SYSTEMS",
+     "title": "Waterproofing System",
+     "lead": "A monolithic waterproofing system built from primer, detail reinforcement, layered liquid membrane and a UV-protected finish coat.",
+     "paras": [
+      "In wet areas, corner and drain details are taped with reinforce-ment band and at least two coats of liquid membrane are applied; after verification with a water test, tiling follows. On roofs and ter-races a UV-resistant membrane or aliphatic finish is used, and on large flat areas sheet membrane can be combined with liquid detailing.",
+      "Water-reactive injection resins handle pressurised leaks and neg-ative-side waterproofing. Waterproofing should be planned while the building is still under construction; later intervention is harder and costlier."
+     ],
+     "hAreas": "APPLICATION AREAS",
+     "areas": [
+      "Roofs and terraces",
+      "Balconies",
+      "Bathrooms and wet areas",
+      "Foundations and retaining walls",
+      "Water tanks and pools",
+      "Car park decks"
+     ],
+     "img": "db9f0c046d13.jpg",
+     "features": {
+      "kicker": "WATERPROOFING SYSTEM",
+      "title": "System Features",
+      "features": [
+       "Detail taping and reinforcement mesh",
+       "Controlled film thickness in layers",
+       "Verification by water test",
+       "Aliphatic finish on UV-exposed surfaces",
+       "Combined solution with sheet membrane",
+       "Negative-side waterproofing by injection"
+      ],
+      "paras": [],
+      "gallery": [
+       "bbf078c011eb.jpg",
+       "47fc880b9248.jpg",
+       "276bdfbd9a27.jpg",
+       "e9ec373c7f25.jpg"
+      ]
+     },
+     "sectionPages": []
+    }
+   ]
+  },
+  {
+   "no": "03",
+   "title": "Application Areas",
+   "desc": "From polyurethane sports flooring to decorative stone, from athletics tracks to industrial epoxy.",
+   "img": "2b31d9a81b6a.jpg",
+   "pages": [
+    {
+     "kicker": "APPLICATION AREAS",
+     "title": "Application Areas",
+     "items": [
+      {
+       "title": "Polyurethane Sports Flooring",
+       "paras": [
+        "Shock-absorbing, seamless polyurethane sports floors from indoor halls to fitness areas.",
+        "The system is built with an SBR core, putty and self-levelling polyurethane over a primer; court lines and colour complete it with the finish coat. Thickness follows the intensity of use."
+       ],
+       "img": "cca91130babd.jpg"
+      },
+      {
+       "title": "Parquet Flooring Application",
+       "paras": [
+        "Seamless, silent installation of solid and laminate parquet with elastic polyurethane adhesives.",
+        "After moisture testing and selecting the right primer and notched trowel, the parquet is laid onto elastic adhesive; creaking and separation are prevented, and underfloor heating is safe."
+       ],
+       "img": "9c80fafd0b40.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Acrylic Sports Floors",
+       "paras": [
+        "Acrylic coating applications with adjustable pace, from tennis courts to multi-purpose fields.",
+        "Resurfacer, cushion layers and the filled top coat are applied in sequence; sand content sets the court pace and line paint completes the job. Freeze-thaw resistance gives long outdoor life."
+       ],
+       "img": "0bf913225e9d.jpg"
+      },
+      {
+       "title": "Rubber Application",
+       "paras": [
+        "Installation of rubber tiles and rolls in sports halls, nurseries and industrial areas.",
+        "After surface preparation the two-component polyurethane adhesive is combed on, tiles are laid staggered and pressed with a roller; the bond cures in about eight hours."
+       ],
+       "img": "059d7d765e0f.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Athletics Track",
+       "paras": [
+        "Professional running track applications with sandwich and full-pour systems.",
+        "An elastomer and EPDM surface is applied over a paver-laid SBR-binder core; the result is a drainage-compatible track surface with grip in all weather."
+       ],
+       "img": "f7957c254b4d.jpg"
+      },
+      {
+       "title": "Turf Adhesive Applications",
+       "paras": [
+        "Professional seam-focused bonding for pitches and landscape turf.",
+        "Strips are centred on the seaming tape, adhesive is spread evenly across the tape and the joint is protected throughout curing; seams stay invisible and the field is not opened early."
+       ],
+       "img": "2f32e326ff4a.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Decorative Stone Application",
+       "paras": [
+        "Water-permeable, decorative stone-carpet surfaces from natural granules and clear binder.",
+        "Granules and binder are mixed homogeneously and laid by trowel; once cured, the surface is slip-resistant, maintenance-free and rain-permeable. The choice for pool surrounds and walkways."
+       ],
+       "img": "f898b5cef6b4.jpg"
+      },
+      {
+       "title": "Elastomer Sandwich System",
+       "paras": [
+        "A two-layer sports floor build-up of elastic core, elastomer and coloured EPDM surface.",
+        "EPDM granules are broadcast while the elastomer layer is still wet; energy return and deformation values are tuned to professional standards."
+       ],
+       "img": "37b52a86a06f.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Sandwich Sports Flooring",
+       "paras": [
+        "Sandwich system applications for stadium and university tracks.",
+        "Correct application and regular maintenance give a long service life; worn areas are renewed with local repairs and colour schemes follow the project."
+       ],
+       "img": "b9f3880361e1.jpg"
+      },
+      {
+       "title": "Padel Court Application",
+       "paras": [
+        "Laying, seaming and sand-filling the artificial turf surface of a 20 × 10 m padel court.",
+        "The court is a fully enclosed volume: 4 m tempered glass back walls and 3 m of glass on the sides continuing into mesh; the net stands 0.88 m high at the centre and 0.92 m at the posts, and the service lines are set 6.95 m from the net. The surface is built over reinforced concrete or porous asphalt, with a 0.5–1% fall and perimeter drainage."
+       ],
+       "img": "0abf7083be32.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "EPDM Granule Application",
+       "paras": [
+        "Safe, patterned floors for playgrounds and sports fields with coloured EPDM granules.",
+        "The EPDM-binder mix is spread and levelled over an SBR base; layer thickness follows fall height, and 24 colours allow free pattern design."
+       ],
+       "img": "2b31d9a81b6a.jpg"
+      },
+      {
+       "title": "Waterproof Coating",
+       "paras": [
+        "Seamless liquid-membrane waterproofing applications from roofs to wet areas.",
+        "Corner and drain details are taped, the membrane is applied in layers and verified with a water test; UV-exposed surfaces are protected with an aliphatic finish."
+       ],
+       "img": "47fc880b9248.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Industrial Polyurethane and Epoxy Floors",
+       "paras": [
+        "Hygienic, load-bearing seamless floor applications in factories, warehouses and car parks.",
+        "After blasting and priming, a self-levelling or textured coating is applied; the result is a monolithic surface resistant to forklift traffic, chemicals and intensive cleaning."
+       ],
+       "img": "df1b57e11ccc.jpg"
+      },
+      {
+       "title": "Epoxy Casting Applications",
+       "paras": [
+        "Tables, objects and decorative surface castings with clear epoxy resin.",
+        "The pour is worked from the centre outwards and air bubbles release on their own; depth is built in layers after gelling, and sanding plus polishing bring crystal gloss."
+       ],
+       "img": "443fa1e42df7.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": "04",
+   "title": "Export",
+   "desc": "Reference data you need for load planning and for choosing the right delivery term.",
+   "img": "4fd1859650ff.png",
+   "containers": {
+    "kicker": "EXPORT",
+    "title": "Container Dimensions",
+    "lead": "Internal dimensions and loading capacities of standard ISO dry cargo containers.",
+    "table": {
+     "head": [
+      "Container",
+      "Internal (L × W × H)",
+      "Door opening (W × H)",
+      "Capacity",
+      "Tare weight",
+      "Max payload",
+      "Loading capacity"
+     ],
+     "rows": [
+      [
+       "20' DV — Standard",
+       "5.9 × 2.35 × 2.39 m",
+       "2.34 × 2.28 m",
+       "33.2 m³",
+       "2250 kg",
+       "28200 kg",
+       "10 × IBC (1000 L) · 80 × drums (200 L)"
+      ],
+      [
+       "40' DV — Standard",
+       "12.03 × 2.35 × 2.39 m",
+       "2.34 × 2.28 m",
+       "67.7 m³",
+       "3750 kg",
+       "26730 kg",
+       "20 × IBC (1000 L) · 160 × drums (200 L)"
+      ],
+      [
+       "40' HC — High Cube",
+       "12.03 × 2.35 × 2.7 m",
+       "2.34 × 2.58 m",
+       "76.4 m³",
+       "3900 kg",
+       "26580 kg",
+       "20 × IBC (1000 L) · 160 × drums (200 L)"
+      ],
+      [
+       "45' HC — High Cube",
+       "13.56 × 2.35 × 2.7 m",
+       "2.34 × 2.58 m",
+       "86 m³",
+       "4800 kg",
+       "27700 kg",
+       "25 × IBC (1000 L) · 180 × drums (200 L)"
+      ]
+     ]
+    },
+    "footnote": "Figures are indicative and may vary by a few centimetres and a few hundred kilograms depending on the container manufacturer and the carrier. Confirm exact dimensions and maximum payload with your carrier before shipment.",
+    "gallery": [
+     "b80ab6c5b632.jpg",
+     "2ca2ee1f38be.jpg"
+    ]
+   },
+   "incoterms": {
+    "kicker": "EXPORT",
+    "title": "Incoterms 2020 — Delivery Terms",
+    "lead": "The international rules that define where cost and risk pass between seller and buyer.",
+    "table": {
+     "head": [
+      "Code",
+      "Description",
+      "Transport mode",
+      "Freight",
+      "Insurance",
+      "Risk transfers"
+     ],
+     "rows": [
+      [
+       "EXW",
+       "Ex Works",
+       "All modes",
+       "Buyer",
+       "Not required",
+       "At the seller's premises, once goods are placed at the buyer's disposal"
+      ],
+      [
+       "FCA",
+       "Free Carrier",
+       "All modes",
+       "Buyer",
+       "Not required",
+       "On delivery to the carrier at the named place"
+      ],
+      [
+       "FAS",
+       "Free Alongside Ship",
+       "Sea / inland waterway",
+       "Buyer",
+       "Not required",
+       "When placed alongside the vessel at the port of shipment"
+      ],
+      [
+       "FOB",
+       "Free On Board",
+       "Sea / inland waterway",
+       "Buyer",
+       "Not required",
+       "When the goods are on board the vessel at the port of shipment"
+      ],
+      [
+       "CFR",
+       "Cost and Freight",
+       "Sea / inland waterway",
+       "Seller",
+       "Not required",
+       "When the goods are on board the vessel at the port of shipment"
+      ],
+      [
+       "CIF",
+       "Cost, Insurance and Freight",
+       "Sea / inland waterway",
+       "Seller",
+       "Seller — minimum cover (ICC C)",
+       "When the goods are on board the vessel at the port of shipment"
+      ],
+      [
+       "CPT",
+       "Carriage Paid To",
+       "All modes",
+       "Seller",
+       "Not required",
+       "On delivery to the first carrier"
+      ],
+      [
+       "CIP",
+       "Carriage and Insurance Paid To",
+       "All modes",
+       "Seller",
+       "Seller — extensive cover (ICC A)",
+       "On delivery to the first carrier"
+      ],
+      [
+       "DAP",
+       "Delivered At Place",
+       "All modes",
+       "Seller",
+       "Not required",
+       "At the named destination, ready for unloading on the vehicle"
+      ],
+      [
+       "DPU",
+       "Delivered at Place Unloaded",
+       "All modes",
+       "Seller",
+       "Not required",
+       "At the named destination, once unloading is complete"
+      ],
+      [
+       "DDP",
+       "Delivered Duty Paid",
+       "All modes",
+       "Seller",
+       "Not required",
+       "At the named destination, ready for unloading on the vehicle"
+      ]
+     ]
+    },
+    "footnote": "Incoterms® is a registered trademark of the International Chamber of Commerce (ICC). This table is a summary; always state the named place next to the rule in the contract (e.g. \"FOB Istanbul, Incoterms 2020\")."
+   }
+  }
+ ],
+ "back": {
+  "tagline": "Your solution partner in adhesives, binders, floor coatings and waterproofing.",
+  "contact": [
+   {
+    "label": "ADDRESS",
+    "value": [
+     "Maslak Mah. Eski Büyükdere Cad. Giz 2000",
+     "Plaza No: 7/24, Sarıyer / İstanbul"
+    ]
+   },
+   {
+    "label": "PHONE",
+    "value": [
+     "+90 212 912 52 32"
+    ]
+   },
+   {
+    "label": "MOBILE",
+    "value": [
+     "+90 530 360 61 43"
+    ]
+   },
+   {
+    "label": "E-MAIL",
+    "value": [
+     "info@leonkimya.com"
+    ]
+   }
+  ],
+  "disclaimer": "The information in this catalogue is for general presentation and does not replace a technical specification. Request the current technical data sheet (TDS) and safety data sheet (SDS) before application. Product properties may change without notice.",
+  "copyright": "Leon Kimya © 2026"
+ },
+ "_productList": [
+  "PRODUCT LIST"
+ ]
+}

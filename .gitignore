@@ -22,3 +22,8 @@ desktop.ini
 saraskimya-assets/
 
 _to_delete/
+
+# Katalog üretici — derleme çıktıları (kaynak takip edilir, çıktı edilmez)
+katalog-uretici/build/
+katalog-uretici/out/
+katalog-uretici/content/site-i18n.json

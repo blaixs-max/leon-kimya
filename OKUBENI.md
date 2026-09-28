@@ -40,7 +40,8 @@ assets/
   build-pages.py      Dil sayfalarını ve sitemap'i üretir
   build-img-sizes.py  Görsel ölçü haritasını üretir
   img/                120 görsel (WebP)
-  katalog/            E-katalog PDF'leri (dört dil, 69 sayfa)
+  katalog/            E-katalog PDF'leri (dört dil)
+katalog-uretici/      Katalog PDF'lerinin kaynağı (metinler + şablon) — yayına çıkmaz
 yayinla.bat           Tek tık yayın
 YAPILACAKLAR.md       Açık işler listesi
 ```
@@ -82,8 +83,15 @@ ikisini birlikte güncelleyin. `whatsapp` da cep numarasıyla aynı olmalı.
 
 ### E-Katalog'u güncellemek
 
-**Katalog yayında** (18.08.2026'dan beri): dört dil, 69 sayfa. Ziyaretçi
+**Katalog yayında** (18.08.2026'dan beri): dört dil. Ziyaretçi
 menüdeki indirme düğmesinden kendi dilindeki PDF'i indiriyor.
+
+Yeni tasarımlı katalog (v3, 64–66 sayfa, ~7 MB) `katalog-uretici/` klasöründen
+üretilir — metni değiştirmek için oradaki README'ye bakın:
+
+```bash
+python katalog-uretici/tools/build.py --yayinla
+```
 
 Yeni sürüm için dosyaları **aynı adlarla** `assets/katalog/` klasörüne
 kopyalayın (üzerine yazın):

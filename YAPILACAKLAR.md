@@ -77,7 +77,7 @@ Hiçbiri uydurulamaz; siz vermeden yazılmaz *(`CLAUDE.md` kural 3)*.
 
 | # | İş | Kim | Not |
 |---|---|---|---|
-| D1 | **Katalog boyutu** | Siz | Her dosya ~13 MB. Mobilde ağır. Kataloğu üreten araçtan "web için optimize" çıktısı alınırsa %60–70 küçülür. Zorunlu değil. |
+| D1 | **Katalog boyutu** | Siz | Yayındaki dosyalar ~13 MB. **v3 dalındaki yeni katalog ~7 MB** (web için sıkıştırılmış, hızlı web görüntüleme açık). Yeni PDF'ler yayına alınınca kapanır. |
 | D2 | **Vercel GitHub App bağlantısı** | Siz | Şu an `git push` tek başına yayına almıyor; `yayinla.bat` deploy ediyor. Bağlanırsa otomatik olur. Vercel → Settings → Git |
 | D3 | **`katalog/` git'te versiyonlansın mı?** | Siz — **karar bekliyor** | Kökteki taslak klasörü `.gitignore`'da değil; `git add -A` çalışırsa 49 MB depoya girer. Şimdilik commit'lerde dosya yolları açıkça yazılarak korunuyor. |
 
@@ -87,7 +87,7 @@ Hiçbiri uydurulamaz; siz vermeden yazılmaz *(`CLAUDE.md` kural 3)*.
 
 | # | Konu | Durum |
 |---|---|---|
-| E1 | Katalogdaki sertifika sayfası ve `Polinflex` ibaresi | Yayındaki dört PDF'te ISO 9001/14001 tesis beyanı, World Athletics ve ITF belge satırları ve sistem adlarında `Polinflex` geçiyor. Durum kullanıcıya iki kez ayrıntılı bildirildi; **mevcut hâliyle yayınlanmasına kullanıcı karar verdi.** Üretici (`build.js`) tarafında `Polinflex` silindi, dolayısıyla yeniden basım istenirse temiz çıkar (~4 dk). **Talep gelmedikçe bu konu yeniden açılmayacak.** |
+| E1 | Katalogdaki sertifika sayfası ve `Polinflex` ibaresi | Yayındaki dört PDF'te ISO 9001/14001 tesis beyanı, World Athletics ve ITF belge satırları ve sistem adlarında `Polinflex` geçiyor. Durum kullanıcıya iki kez ayrıntılı bildirildi; **mevcut hâliyle yayınlanmasına kullanıcı karar verdi.** Üretici (`build.js`) tarafında `Polinflex` silindi, dolayısıyla yeniden basım istenirse temiz çıkar (~4 dk). **Talep gelmedikçe bu konu yeniden açılmayacak.** *(09.2026: v3 dalındaki yeni katalogda `Polinflex` yok; sertifika satırları aynen duruyor.)* |
 
 ---
 
