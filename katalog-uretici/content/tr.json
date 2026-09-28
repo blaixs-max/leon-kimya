@@ -785,7 +785,7 @@
              "v": "12 ay"
             }
            ],
-           "img": "6bb3bbe0d3f4.jpg"
+           "img": "prod-lk-pu-133.jpg"
           }
          ]
         }
@@ -887,7 +887,7 @@
              "v": "9 ay"
             }
            ],
-           "img": "1f5fcab9e1ab.jpg"
+           "img": "prod-lk-pp-202.jpg"
           },
           {
            "no": "03",
@@ -975,7 +975,7 @@
              "v": "9 ay"
             }
            ],
-           "img": "1f5fcab9e1ab.jpg"
+           "img": "prod-lk-pp-211.jpg"
           },
           {
            "no": "02",
@@ -1000,7 +1000,7 @@
              "v": "9 ay"
             }
            ],
-           "img": "8fff6f89a293.jpg"
+           "img": "prod-lk-pp-212.jpg"
           },
           {
            "no": "03",
@@ -1025,7 +1025,7 @@
              "v": "9 ay"
             }
            ],
-           "img": "11e1364e84e2.jpg"
+           "img": "prod-lk-pp-213.jpg"
           },
           {
            "no": "04",
@@ -1050,7 +1050,7 @@
              "v": "9 ay"
             }
            ],
-           "img": "059d7d765e0f.jpg"
+           "img": "prod-lk-pp-214.jpg"
           }
          ],
          "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
@@ -1173,7 +1173,7 @@
              "v": "9 ay"
             }
            ],
-           "img": "8fff6f89a293.jpg"
+           "img": "prod-lk-pu-223.jpg"
           }
          ],
          "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
@@ -1217,7 +1217,7 @@
            "v": "0,5 – 1,5 mm · 1 – 3,5 mm"
           }
          ],
-         "img": "2b31d9a81b6a.jpg"
+         "img": "prod-lk-gr-701.jpg"
         },
         {
          "no": "02",
@@ -1230,7 +1230,7 @@
            "v": "1 – 3,5 mm · 2,5 – 3,5 mm"
           }
          ],
-         "img": "f291fd638965.jpg"
+         "img": "prod-lk-gr-711.jpg"
         }
        ],
        "hAreas": "UYGULAMA ALANLARI",
@@ -1411,7 +1411,7 @@
            "name": "Akrilik Cushion (İnce)",
            "desc": "Hassas hız ayarı için ince yastık katmanı.",
            "specs": [],
-           "img": "b52bdb73e6e6.jpg"
+           "img": "prod-lk-ac-313.jpg"
           },
           {
            "no": "04",
@@ -1466,7 +1466,7 @@
            "name": "Akrilik Konsantre Boya",
            "desc": "Saha renklendirmede ekonomik konsantre çözüm.",
            "specs": [],
-           "img": "243fa535203a.jpg"
+           "img": "prod-lk-ac-318.jpg"
           },
           {
            "no": "09",
@@ -1572,7 +1572,7 @@
              "v": "Tüm RAL renkleri"
             }
            ],
-           "img": "a0b0e844a6f2.jpg"
+           "img": "prod-lk-ep-322.jpg"
           },
           {
            "no": "03",
@@ -1667,7 +1667,7 @@
              "v": "0,15 – 0,30 kg/m²"
             }
            ],
-           "img": "1716c16e6d4b.jpg"
+           "img": "prod-lk-pu-401.jpg"
           },
           {
            "no": "02",
@@ -1705,7 +1705,7 @@
              "v": "Şeffaf"
             }
            ],
-           "img": "92288cec129c.jpg"
+           "img": "prod-lk-pu-403.jpg"
           },
           {
            "no": "04",
@@ -1722,7 +1722,7 @@
              "v": "0,30 – 0,40 kg/m²"
             }
            ],
-           "img": "39031ff29f56.jpg"
+           "img": "prod-lk-ep-404.jpg"
           },
           {
            "no": "05",
@@ -1756,7 +1756,7 @@
              "v": "0,30 – 0,40 kg/m²"
             }
            ],
-           "img": "39031ff29f56.jpg"
+           "img": "prod-lk-ep-406.jpg"
           }
          ],
          "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
@@ -1818,7 +1818,8 @@
              "l": "Sarfiyat",
              "v": "0,80 – 1 kg/m²"
             }
-           ]
+           ],
+           "img": "prod-lk-pu-501.jpg"
           },
           {
            "no": "02",
@@ -1834,7 +1835,8 @@
              "l": "Sarfiyat",
              "v": "1,50 – 2,50 kg/m²"
             }
-           ]
+           ],
+           "img": "prod-lk-pu-502.jpg"
           },
           {
            "no": "03",
@@ -1850,7 +1852,8 @@
              "l": "Sarfiyat",
              "v": "0,80 – 1 kg/m²"
             }
-           ]
+           ],
+           "img": "prod-lk-pu-503.jpg"
           },
           {
            "no": "04",
@@ -1866,7 +1869,8 @@
              "l": "Sarfiyat",
              "v": "2 – 2,50 kg/m²"
             }
-           ]
+           ],
+           "img": "prod-lk-pu-504.jpg"
           }
          ],
          "hFeatures": "ÖNE ÇIKAN ÖZELLİKLER",
@@ -1913,7 +1917,7 @@
          "name": "Likit Membran Ürün Ailesi",
          "desc": "1K ve 2K poliüretan likit membranlar, astarlar ve alifatik son katlardan oluşan komple yalıtım seti.",
          "specs": [],
-         "img": "a5772839c24e.jpg"
+         "img": "prod-lk-wp-601.jpg"
         }
        ],
        "hAreas": "UYGULAMA ALANLARI",

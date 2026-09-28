@@ -153,7 +153,7 @@ window.SITE_BASE = {
                 "assets/img/epdm-23.webp","assets/img/epdm-16.webp","assets/img/epdm-19.webp"] },
     { k:"coatings",       L:"puZemin", cat:2, img:"assets/img/prod-pu-01-v2.webp" },
     { k:"primersPutties", L:"astar",   cat:4, img:"assets/img/prod-astar-01-v2.webp" },
-    { k:"waterproofProd", L:"suUrun",  cat:3, det:"suUrun", img:"assets/img/prod-su-01-v3.webp", extra:[{k:"waterSys", L:"suSis"}] }
+    { k:"waterproofProd", L:"suUrun",  cat:3, det:"suUrun", img:"assets/img/prod-lk-wp-601.webp", extra:[{k:"waterSys", L:"suSis"}] }
   ],
 
   tiles: [
@@ -290,8 +290,12 @@ window.SITE_BASE = {
      Kural (09.2026): bir fotoğraf sitede yalnız bir varlığa ait. Kart ile kendi
      paneli aynı görseli paylaşır; galeriye yalnız o panele özgü görsel girer,
      yoksa galeri boş kalır (küçük resim şeridi basılmaz). productImgs = ürün
-     kartları; kullanıcı kararıyla DEĞİŞTİRİLMEDİ, içindeki fotoğraflar başka
-     yerde tekrar kullanılmaz.
+     kartları; içindeki fotoğraflar başka yerde tekrar kullanılmaz.
+     Ambalajlar (09.2026): her varyantın kendi görseli var. Ortak ambalajı olan
+     varyantlar ve uygulama fotoğrafı gösteren ürünler için prod-lk-<kod>.webp
+     üretildi — kap, kapak ve renk ailesinin orijinal görseliyle aynı, yalnız
+     etiket (ürün adı + etiket rengi) farklı. Orijinal ürün görselleri duruyor.
+     Aynı kodlu ürün iki ailede (LK-PU-402) aynı görseli kullanır.
      Metinler STRINGS.<dil>.details altında aynı anahtarla tutulur. */
   details: {
     "uygSporPu": {"app": true, "img": "assets/img/tile-sport-v2.webp", "gallery": []},
@@ -311,17 +315,17 @@ window.SITE_BASE = {
     "parke": {"nav": "parquetAdh", "img": "assets/img/cat-parquet-v2.webp", "gallery": [], "productImgs": ["assets/img/prod-parke-01.webp", "assets/img/prod-parke-02-v2.webp", "assets/img/prod-parke-03.webp"]},
     "pvc": {"nav": "pvcAdh", "img": "assets/img/pvc-apply.webp", "gallery": ["assets/img/pvc-hall.webp"], "productImgs": ["assets/img/prod-pvc-01-v2.webp"]},
     "kaucuk": {"nav": "rubberTurfAdh", "img": "assets/img/app-turf-v2.webp", "gallery": [], "productImgs": ["assets/img/prod-kaucuk-01-v2.webp", "assets/img/prod-kaucuk-02-v2.webp", "assets/img/prod-kaucuk-03-v2.webp", "assets/img/prod-kaucuk-04-v2.webp", "assets/img/prod-kaucuk-05.webp", "assets/img/rubber-tiles.webp", "assets/img/sport-gym.webp"]},
-    "filtre": {"nav": "filterAdh", "img": "assets/img/v3-filtre-dolum.webp", "gallery": [], "productImgs": ["assets/img/prod-filtre-01-v2.webp", "assets/img/prod-filtre-02-v2.webp", "assets/img/prod-filtre-02-v2.webp"]},
-    "dokme": {"nav": "pourBinder", "img": "assets/img/v3-sbr-karistirma.webp", "gallery": [], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-02-v3.webp"]},
-    "press": {"nav": "pressBinder", "img": "assets/img/v3-kaucuk-pres.webp", "gallery": [], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-02-v3.webp", "assets/img/rubber-tiles.webp", "assets/img/app-rubber-v2.webp"]},
-    "tas": {"nav": "stoneBinder", "img": "assets/img/v3-tas-hali-havuz.webp", "gallery": [], "productImgs": ["assets/img/prod-tas-01-v2.webp", "assets/img/prod-tas-02-v2.webp", "assets/img/prod-binder-02-v3.webp"]},
-    "epdm": {"nav": "epdmGranule", "img": "assets/img/v3-epdm-granul.webp", "gallery": ["assets/img/epdm-01.webp", "assets/img/epdm-02.webp", "assets/img/epdm-03.webp", "assets/img/epdm-04.webp", "assets/img/epdm-05.webp", "assets/img/epdm-06.webp", "assets/img/epdm-07.webp", "assets/img/epdm-08.webp", "assets/img/epdm-09.webp", "assets/img/epdm-10.webp", "assets/img/epdm-11.webp", "assets/img/epdm-12.webp", "assets/img/epdm-13.webp", "assets/img/epdm-14.webp", "assets/img/epdm-15.webp", "assets/img/epdm-16.webp", "assets/img/epdm-17.webp", "assets/img/epdm-18.webp", "assets/img/epdm-19.webp", "assets/img/epdm-20.webp", "assets/img/epdm-21.webp", "assets/img/epdm-22.webp", "assets/img/epdm-23.webp", "assets/img/epdm-24.webp"], "productImgs": ["assets/img/app-playground-v2.webp", "assets/img/epdm-insitu.webp"]},
+    "filtre": {"nav": "filterAdh", "img": "assets/img/v3-filtre-dolum.webp", "gallery": [], "productImgs": ["assets/img/prod-filtre-01-v2.webp", "assets/img/prod-filtre-02-v2.webp", "assets/img/prod-lk-pu-133.webp"]},
+    "dokme": {"nav": "pourBinder", "img": "assets/img/v3-sbr-karistirma.webp", "gallery": [], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-lk-pp-202.webp", "assets/img/prod-binder-02-v3.webp"]},
+    "press": {"nav": "pressBinder", "img": "assets/img/v3-kaucuk-pres.webp", "gallery": [], "productImgs": ["assets/img/prod-lk-pp-211.webp", "assets/img/prod-lk-pp-212.webp", "assets/img/prod-lk-pp-213.webp", "assets/img/prod-lk-pp-214.webp"]},
+    "tas": {"nav": "stoneBinder", "img": "assets/img/v3-tas-hali-havuz.webp", "gallery": [], "productImgs": ["assets/img/prod-tas-01-v2.webp", "assets/img/prod-tas-02-v2.webp", "assets/img/prod-lk-pu-223.webp"]},
+    "epdm": {"nav": "epdmGranule", "img": "assets/img/v3-epdm-granul.webp", "gallery": ["assets/img/epdm-01.webp", "assets/img/epdm-02.webp", "assets/img/epdm-03.webp", "assets/img/epdm-04.webp", "assets/img/epdm-05.webp", "assets/img/epdm-06.webp", "assets/img/epdm-07.webp", "assets/img/epdm-08.webp", "assets/img/epdm-09.webp", "assets/img/epdm-10.webp", "assets/img/epdm-11.webp", "assets/img/epdm-12.webp", "assets/img/epdm-13.webp", "assets/img/epdm-14.webp", "assets/img/epdm-15.webp", "assets/img/epdm-16.webp", "assets/img/epdm-17.webp", "assets/img/epdm-18.webp", "assets/img/epdm-19.webp", "assets/img/epdm-20.webp", "assets/img/epdm-21.webp", "assets/img/epdm-22.webp", "assets/img/epdm-23.webp", "assets/img/epdm-24.webp"], "productImgs": ["assets/img/prod-lk-gr-701.webp", "assets/img/prod-lk-gr-711.webp"]},
     "puZemin": {"nav": "puCoat", "img": "assets/img/v3-pu-gida-tesisi.webp", "gallery": [], "productImgs": ["assets/img/prod-pu-01-v2.webp", "assets/img/prod-pu-02-v2.webp", "assets/img/prod-pu-03-v2.webp"]},
-    "akZemin": {"nav": "acCoat", "img": "assets/img/v3-akrilik-kort.webp", "gallery": [], "productImgs": ["assets/img/prod-ak-01-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-03-v2.webp", "assets/img/prod-ak-04-v2.webp", "assets/img/prod-ak-05-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/prod-ak-08.webp", "assets/img/prod-ak-09.webp"]},
-    "epZemin": {"nav": "epCoat", "img": "assets/img/v3-epoksi-dokum.webp", "gallery": [], "productImgs": ["assets/img/prod-ep-01-v2.webp", "assets/img/tile-industrial-v2.webp", "assets/img/prod-ep-02-v2.webp"]},
-    "astar": {"nav": "primers", "img": "assets/img/v3-astar-doseme.webp", "gallery": [], "productImgs": ["assets/img/cat-primer-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/ind-apply.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp"]},
-    "macun": {"nav": "putties", "img": "assets/img/v3-macun-catlak.webp", "gallery": []},
-    "suUrun": {"nav": "waterproofProd", "img": "assets/img/v3-likit-membran.webp", "gallery": [], "productImgs": ["assets/img/prod-su-01-v3.webp"]},
+    "akZemin": {"nav": "acCoat", "img": "assets/img/v3-akrilik-kort.webp", "gallery": [], "productImgs": ["assets/img/prod-ak-01-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-lk-ac-313.webp", "assets/img/prod-ak-03-v2.webp", "assets/img/prod-ak-04-v2.webp", "assets/img/prod-ak-05-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-lk-ac-318.webp", "assets/img/prod-ak-07.webp", "assets/img/prod-ak-08.webp", "assets/img/prod-ak-09.webp"]},
+    "epZemin": {"nav": "epCoat", "img": "assets/img/v3-epoksi-dokum.webp", "gallery": [], "productImgs": ["assets/img/prod-ep-01-v2.webp", "assets/img/prod-lk-ep-322.webp", "assets/img/prod-ep-02-v2.webp"]},
+    "astar": {"nav": "primers", "img": "assets/img/v3-astar-doseme.webp", "gallery": [], "productImgs": ["assets/img/prod-lk-pu-401.webp", "assets/img/prod-ak-07.webp", "assets/img/prod-lk-pu-403.webp", "assets/img/prod-lk-ep-404.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-lk-ep-406.webp"]},
+    "macun": {"nav": "putties", "img": "assets/img/v3-macun-catlak.webp", "gallery": [], "productImgs": ["assets/img/prod-lk-pu-501.webp", "assets/img/prod-lk-pu-502.webp", "assets/img/prod-lk-pu-503.webp", "assets/img/prod-lk-pu-504.webp"]},
+    "suUrun": {"nav": "waterproofProd", "img": "assets/img/v3-likit-membran.webp", "gallery": [], "productImgs": ["assets/img/prod-lk-wp-601.webp"]},
     "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.webp", "gallery": ["assets/img/v3-spor-kompleksi.webp", "assets/img/v3-spor-zemin-kesit.webp"]},
     "endSis": {"nav": "indSys", "img": "assets/img/v3-epoksi-uretim-holu.webp", "gallery": ["assets/img/ind-service.webp", "assets/img/ind-texture.webp"]},
     "suSis": {"nav": "waterSys", "img": "assets/img/water-main-v2.webp", "gallery": ["assets/img/water-app1.webp", "assets/img/tile-water-v2.webp"]}

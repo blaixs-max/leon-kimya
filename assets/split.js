@@ -9,9 +9,10 @@
    boşsa ilgili buton veya bölüm hiç basılmaz.
    -------------------------------------------------------------
    ÜRÜN GÖRSELLERİ
-   details.<anahtar>.productImgs dizileri ve prod-* / epdm-* dosyaları
-   bu tasarımda DEĞİŞTİRİLMEDİ; yalnızca nasıl gösterildikleri değişti
-   (kırpılmadan, beyaz zeminde "contain" ile).
+   Mevcut prod-* / epdm-* dosyaları bu tasarımda DEĞİŞTİRİLMEDİ; yalnızca
+   nasıl gösterildikleri değişti (kırpılmadan, beyaz zeminde "contain" ile).
+   09.2026: aynı ambalajı paylaşan varyantlara ayrı ambalaj görseli eklendi
+   (prod-lk-<kod>.webp; kap aynı, yalnız etiket farklı).
    ============================================================= */
 (function(){
 "use strict";

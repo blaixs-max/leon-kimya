@@ -125,7 +125,7 @@ assets/
   img-sizes.js        OTOMATİK ÜRETİLİR — görsel ölçüleri (CLS için)
   build-pages.py      4 dil sayfası + sitemap.xml + sürüm damgası
   build-img-sizes.py  img-sizes.js'i üretir
-  img/                145 dosya (141 WebP + favicon/og), tamamı AI ile üretildi;
+  img/                166 dosya (162 WebP + favicon/og), tamamı AI ile üretildi;
                       v3-* = 09.2026 Higgsfield (bkz. GORSEL-YENILEME.md)
   katalog/            YAYINA ÇIKAN e-katalog PDF'leri (dört dil)
                       kökteki katalog/ ile KARIŞTIRMA — o taslak arşivi
@@ -338,9 +338,12 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 
 - **Aynı fotoğraf iki yerde kullanılmaz** (site ve katalog ayrı ayrı; 09.2026
   kullanıcı isteği). Kart ile kendi paneli paylaşabilir; galeriye yalnız o
-  varlığa özgü görsel girer. Ürün kartları (`productImgs`, katalog `.pic`) kural
-  dışında — ürün görselleri değiştirilmez — ama içlerindeki fotoğraf başka yerde
-  kullanılmaz. Değişiklikten sonra `python katalog-uretici/tools/gorsel_denetimi.py`.
+  varlığa özgü görsel girer. Ürün kartlarında **her ürünün kendi görseli** var;
+  yalnız aynı kodlu ürün iki ailede listelenince (LK-PU-402) aynı görsel kalır.
+  Yeni varyant ambalajı üretilecekse kap, kapak ve renk ailesinin orijinal
+  görseliyle AYNI kalır, yalnız etiket (ürün adı + etiket rengi) değişir
+  (kullanıcı kuralı, 09.2026). Değişiklikten sonra
+  `python katalog-uretici/tools/gorsel_denetimi.py`.
 - Yorumlar **Türkçe**, kısa ve nedene odaklı
 - CSS'te **sabit renk yasak** — her şey `var(--token)`
 - Boş veri = bölüm hiç basılmaz (`has()` yardımcısı). **Bu davranışı bozma.**
@@ -546,6 +549,11 @@ hiçbiri değişmedi. Tek fark: içerik JS yüklenmeden önce de görünür.
     kontrolde elenip yeniden üretildi. Eşleme ve kural: `GORSEL-YENILEME.md`.
   - Katalog: kapak tek görsel, aile/sistem galerileri kaldırıldı, 63 sayfa,
     ~9 MB (yeni görseller daha ayrıntılı olduğu için 7 MB'tan büyüdü).
-  - Ürün görsellerine dokunulmadı; ürün kartlarındaki ambalaj tekrarları
-    (katalogda 50 kart / 39 görsel) bilinçli olarak duruyor.
+  - Aynı gün ikinci adım: ürün kartlarındaki ambalaj tekrarları da kaldırıldı.
+    21 ambalaj görseli (`prod-lk-<kod>`) orijinal ambalajın kopyası olarak
+    üretildi — kap, kapak, renk aynı; yalnız etiketteki ürün adı ve etiket rengi
+    farklı. Uygulama fotoğrafı gösteren ürünlere (Press 213/214, iki PU astar,
+    Epoksi Zemin Boyası, EPDM/SBR granül, Likit Membran) ailesinin ambalajı,
+    görselsiz dört macuna metal kova + teneke seti verildi (kullanıcı kararı).
+    Katalogda 54 kartın hepsi görselli, 53 farklı görsel (LK-PU-402 iki ailede).
   - Denetim: `python katalog-uretici/tools/gorsel_denetimi.py`.

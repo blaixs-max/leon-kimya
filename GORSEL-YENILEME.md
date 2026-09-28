@@ -10,9 +10,9 @@
   aynı görseli paylaşır. Galeriye yalnız o varlığa özgü görsel girer; yoksa galeri boş.
 - Neredeyse aynı iki kare de tekrar sayılır (`ind-roller`/`ind-texture` bayt bayt aynı,
   `vid-membrane-v2`/`water-main-v2`, katalogda `db9f0c…`/`276bdf…`, `b9f388…`/`f7957c…`).
-- **Ürün kartları kuralın dışında** (sitede `productImgs`, katalogda `.pic`): kullanıcı ürün
-  görsellerinin değişmesini istemedi. Aynı ambalaj birkaç varyantta tekrar ediyor
-  (katalogda 50 kart / 39 görsel). Ürün kartındaki bir fotoğraf başka yerde kullanılmaz.
+- **Ürün kartları:** her ürünün kendi ambalaj görseli var (sitede `productImgs`, katalogda
+  `.pic`). Yalnız aynı kodlu ürün iki ailede listelenince aynı görsel kalır (LK-PU-402).
+  Ürün kartındaki bir fotoğraf başka yerde kullanılmaz.
 
 Denetim (katalog kısmı için önce `build.py`):
 
@@ -77,3 +77,41 @@ Kontrolde elenen iki ilk deneme (N21 eski tip bot, N24 bulanık yüz) yeniden ü
   `f898b5…` konu dışı ev; `835906…`, `bbf078…`, `d6a620…`, `e09c92…` galeri artıkları).
 - Katalogdan aile ve sistem galerileri kaldırıldı — hepsi başka sayfaların tekrarıydı.
   Kapak dört parçalı mozaik yerine tek görsel.
+
+## Varyant ambalajları (aynı gün, ikinci adım)
+
+Kullanıcı kuralı: **kap, kapak ve renk orijinal ürün görseliyle aynı kalır; yalnız etiket
+değişir** (ürün adı + etiket rengi). Her görsel, ailesinin orijinal ambalajı referans
+verilerek düzenlendi (`nano_banana_pro`, 2k → 800×500). Dosyalar: `assets/img/prod-lk-<kod>.webp`
+ve `katalog-uretici/img/prod-lk-<kod>.jpg`. Orijinaller kullanıcının bilgisayarında:
+`İndirilenler\LeonKimya\higgsfield-ambalaj-2026-09-28\`.
+
+| Kod | Ürün | Referans ambalaj | Etiket rengi |
+|---|---|---|---|
+| LK-PP-202 | SBR Dökme Bağlayıcı | mavi çelik varil (`prod-binder-01-v3`) | grafit |
+| LK-PP-211 | Standart Press Bağlayıcı | mavi çelik varil (`prod-binder-01-v3`) | turuncu |
+| LK-PP-212 | Hızlı Çevrim Press Bağlayıcı | mavi çelik varil (`prod-binder-02-v3`) | kırmızı |
+| LK-PP-213 | Ekonomik Press Bağlayıcı | mavi çelik varil (`prod-binder-01-v3`) | yeşil |
+| LK-PP-214 | Yüksek Mukavemet Press Bağlayıcı | mavi çelik varil (`prod-binder-02-v3`) | mor |
+| LK-PU-223 | 1K Alifatik Taş Bağlayıcısı | mavi çelik varil (`prod-binder-02-v3`) | kum beji |
+| LK-PU-133 | Tiksotropik / Conta Tipi | metal kova + teneke (`prod-filtre-02-v2`) | camgöbeği |
+| LK-AC-313 | Akrilik Cushion (İnce) | mavi plastik varil (`prod-ak-02-v2`) | camgöbeği |
+| LK-AC-318 | Akrilik Konsantre Boya | mavi plastik varil (`prod-ak-06-v2`) | yeşil |
+| LK-EP-322 | Epoksi Zemin Boyası | metal kova + gri teneke (`prod-ep-01-v2`) | kırmızı |
+| LK-PU-401 | Solventsiz PU Astar | metal kova + teneke (`prod-astar-01-v2`) | turuncu |
+| LK-PU-403 | 1K PU Şeffaf Astar | metal teneke (`prod-ak-07`) | açık mavi |
+| LK-EP-404 | 2K Epoksi Nem Bariyeri | metal kova + teneke (`prod-astar-01-v2`) | arduvaz gri |
+| LK-EP-406 | 2K Epoksi Astar (Ekonomik) | metal kova + teneke (`prod-astar-01-v2`) | açık yeşil |
+| LK-GR-701/702 | EPDM Granül | beyaz 25 kg dokuma çuval (yeni) | çok renkli |
+| LK-GR-711/712 | SBR Granül | beyaz 25 kg dokuma çuval (yeni) | grafit |
+| LK-WP-601 | Likit Membran | beyaz plastik kova (eski fotoğraftaki kova) | mavi |
+| LK-PU-501 | PU Sealer | metal kova + teneke (`prod-pu-01-v2`) | sarı |
+| LK-PU-502 | Elastik PU Macun | metal kova + teneke (`prod-pu-01-v2`) | yeşil |
+| LK-PU-503 | Düşük Viskoziteli PU Macun | metal kova + teneke (`prod-pu-01-v2`) | mor |
+| LK-PU-504 | Yüksek Viskoziteli PU Macun | metal kova + teneke (`prod-pu-01-v2`) | koyu kırmızı |
+
+Orijinal görseli ilk varyant korudu: 201 (`binder-01`), 203 (`binder-02`), 132 (`filtre-02`),
+312 (`ak-02`), 317 (`ak-06`), 405 (`astar-01`, etiketi zaten "EPOKSİ ASTAR"). Aile kartında
+Su İzolasyon için çatı fotoğrafı yerine yeni kova. Ürün kartından çıkan uygulama
+fotoğrafları (`rubber-tiles` press'ten, `app-rubber-v2`, `app-playground-v2`, `epdm-insitu`,
+`tile-industrial-v2`, `cat-primer-v2`, `ind-apply`, `prod-su-01-v3`) dosya olarak duruyor.

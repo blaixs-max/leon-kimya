@@ -20,7 +20,10 @@ for(const [k,d] of Object.entries(B.details)){
   [d.img,...(k==='epdm'?[]:(d.gallery||[]))].forEach(g=>u.push([g,k]));
   if(k==='epdm')(d.gallery||[]).forEach(x=>p.push(x));
   (d.productImgs||[]).forEach(x=>p.push(x));}
-console.log(JSON.stringify({u,p}));"""
+const T=window.STRINGS.tr, pk=[];
+for(const [k,d] of Object.entries(B.details))(d.productImgs||[]).forEach((x,i)=>{
+  const pr=((T.details[k]||{}).products||[])[i]; pk.push([x,pr?pr.t:k+'#'+i]);});
+console.log(JSON.stringify({u,p,pk}));"""
 r = json.loads(subprocess.run(['node', '-e', js, os.path.join(REPO, 'assets', 'i18n.js')],
                               capture_output=True, text=True, check=True).stdout)
 ent = collections.defaultdict(set)
@@ -29,7 +32,12 @@ urun = set(r['p'])
 for img, ks in sorted(ent.items()):
     if len(ks) > 1: print('SİTE tekrar:', img, sorted(ks)); hata += 1
     if img in urun: print('SİTE ürün kartında da:', img); hata += 1
-print('site: ürün dışı', len(ent), 'görsel')
+# ürün kartları: aynı görsel ancak aynı ürünü (aynı adı) gösterebilir
+urunler = collections.defaultdict(set)
+for img, ad in r['pk']: urunler[img].add(ad)
+for img, ads in sorted(urunler.items()):
+    if len(ads) > 1: print('SİTE ürün kartı iki farklı üründe:', img, sorted(ads)); hata += 1
+print('site: ürün dışı', len(ent), 'görsel;', len(urunler), 'ürün görseli')
 
 for l in ['tr', 'en', 'fr', 'ar']:
     f = os.path.join(ROOT, 'build', f'catalog-{l}.html')
@@ -42,6 +50,11 @@ for l in ['tr', 'en', 'fr', 'ar']:
         d = n - kart.get(img, 0)
         if d > 1: print('KATALOG', l, 'tekrar:', img, d); hata += 1
         if d > 0 and img in kart: print('KATALOG', l, 'ürün kartında da:', img); hata += 1
+    kod = collections.defaultdict(set)
+    for kid, img in re.findall(r'<article class="card[^"]*" id="pr-(.+?)-\d+"><div class="pic"><img src="img/([^"]+)"', h):
+        kod[img].add(kid)
+    for img, ks in kod.items():
+        if len(ks) > 1: print('KATALOG', l, 'ürün kartı iki farklı üründe:', img, sorted(ks)); hata += 1
     print('katalog', l, ': ürün dışı', sum(1 for i, n in hepsi.items() if n - kart.get(i, 0) > 0), 'görsel')
 print('SORUN YOK' if not hata else f'{hata} sorun')
 sys.exit(1 if hata else 0)

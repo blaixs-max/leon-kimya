@@ -39,7 +39,7 @@ assets/
   img-sizes.js        ÜRETİLİR — görsel ölçüleri
   build-pages.py      Dil sayfalarını ve sitemap'i üretir
   build-img-sizes.py  Görsel ölçü haritasını üretir
-  img/                145 görsel (WebP)
+  img/                166 görsel (WebP)
   katalog/            E-katalog PDF'leri (dört dil)
 katalog-uretici/      Katalog PDF'lerinin kaynağı (metinler + şablon) — yayına çıkmaz
 yayinla.bat           Tek tık yayın
