@@ -67,6 +67,13 @@ kapandı. **Yeni görsel gelmeyecek**, bu iş bitti.
 `saraskimya-assets/` klasörü diskte duruyor (529 dosya) ama **gitignore'da**
 ve artık kullanılmıyor — yalnızca eski referans arşivi.
 
+> **28.09.2026 — sızıntı kapatıldı.** `yayinla.bat` içindeki
+> `vercel deploy --prod` yerel klasörü `.gitignore`'a bakmadan yüklüyordu.
+> Canlı sitede `saraskimya-assets/`, `_to_delete/` (eski görseller, zip'ler,
+> git artıkları), `CLAUDE.md`, `YAPILACAKLAR.md`, `WHATSAPP-KURULUM.md` ve
+> `yayinla.bat` herkese açık okunuyordu. Hepsi `.vercelignore`'a eklendi,
+> CLI adımı betikten çıkarıldı; yayın artık yalnız GitHub üzerinden.
+
 ### ✅ ÇÖZÜLDÜ — site aramaya AÇIK (18.08.2026)
 
 Üç ön koşulun üçü de tamamlandı: iletişim bilgileri girildi
@@ -92,6 +99,10 @@ verilirse `MX`/`SPF`/`DKIM` kayıtları yazılamaz ve posta çalışmaz.
    Vercel çalışma dizininden aldığı için bir kez yayına çıktılar ve 11.8 MB'lık
    taslak PDF'ler adresi bilene açıktı. **Ayrıca `git add -A` bunları depoya
    sokar (14 dosya / 49 MB)** — commit'lerde dosya yollarını açıkça yazın.
+6. **Canlıya yalnız GitHub üzerinden çıkılır** (`git push` → Vercel otomatik
+   yayınlar). Yerel klasörden `vercel deploy` ÇALIŞTIRILMAZ ve
+   `.vercelignore`'daki satırlar silinmez — ikisi de 28.09.2026'daki
+   sızıntının sebebi/çözümü.
 
 ---
 
@@ -115,7 +126,7 @@ assets/
                       kökteki katalog/ ile KARIŞTIRMA — o taslak arşivi
 katalog-uretici/       v3 katalog PDF'lerinin KAYNAĞI (metin JSON + şablon +
                        görseller + fontlar). .vercelignore'da; bkz. README
-yayinla.bat            Tek tık yayın (pull --rebase → build → commit → push → deploy)
+yayinla.bat            Tek tık yayın (pull --rebase → push; canlıya GitHub bağlantısı alır)
 WHATSAPP-KURULUM.md    WhatsApp Business şablon kurulum rehberi
 robots.txt             Allow: / + Sitemap satırı (site aramaya açık)
 YAPILACAKLAR.md        AÇIK İŞLERİN TEK LİSTESİ — bölüm 8 buraya devretti
@@ -217,7 +228,7 @@ Kullanıcı yayın adımlarını elle çalıştırmak istemiyor. Onay aldıktan 
 ```bash
 python assets/build-img-sizes.py    # görsel ölçü haritası (görsel eklendiyse)
 python assets/build-pages.py        # 4 sayfa + sitemap.xml (ZORUNLU)
-git add -A && git commit -F <mesaj-dosyasi>
+git add <dosya yolları> && git commit -F <mesaj-dosyasi>   # -A DEĞİL
 cmd /c "<tam-yol>\yayinla.bat" < nul
 ```
 
@@ -231,13 +242,13 @@ Node yoksa `build-pages.py` hata verip DURUR — sessizce boş gövde üretmez.
    Mesajı dosyaya yazıp `git commit -F dosya.txt` kullan.
 2. **`yayinla.bat`'ı tam yolla ve `< nul` ile çağır.** Sonunda `pause` var;
    ayrıca `cmd /c yayinla.bat` çalışma dizinini aktarmıyor.
-3. **`yayinla.bat` başarılı deploy'da bile sıfırdan farklı kod dönebilir.**
-   Çıktıda `Ready` / `Aliased` satırları varsa deploy BAŞARILIDIR; hata
-   Vercel CLI'nin kendi adımına aittir. Betik bunu ekrana da yazıyor.
+3. **`yayinla.bat` artık deploy ETMEZ** (28.09.2026). Eskiden sonunda
+   `vercel deploy --prod` vardı; yerel klasörü olduğu gibi yüklediği için
+   kaldırıldı. Yayını GitHub bağlantısı yapar.
 
-`yayinla.bat` sırayla: ağaç temiz mi → `git pull --rebase` → `git push` →
-`vercel deploy --prod`. **`pull --rebase` adımını atlama** — başka bir
-oturumdan commit gelmişse push reddedilir.
+`yayinla.bat` sırayla: ağaç temiz mi → `git pull --rebase` → `git push`.
+**`pull --rebase` adımını atlama** — başka bir oturumdan commit gelmişse
+push reddedilir.
 
 ### ⚠️ `build-pages.py` çalıştırmayı unutma — nedeni
 
@@ -255,9 +266,10 @@ kullanıcılarda sorun yoktu — bu yüzden teşhis zorlaştı.
 
 **Beyaz sayfa görürsen ilk bakacağın yer budur.**
 
-### Otomatik deploy AKTİF DEĞİL
-Vercel'in GitHub App'i depoya kurulu olmadığı için `git push` tek başına
-yayına almaz. Açmak için: Vercel → Settings → Git → Connect Git Repository.
+### Otomatik deploy AKTİF
+Vercel'in GitHub bağlantısı kurulu: `main`'e gelen her push üretime,
+diğer dallar önizlemeye (`*.vercel.app`, Vercel girişi ister) yayınlanır.
+Yayın durumu: Vercel → leon-kimya → Deployments.
 
 ---
 

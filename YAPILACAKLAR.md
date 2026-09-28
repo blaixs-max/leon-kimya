@@ -78,10 +78,8 @@ Hiçbiri uydurulamaz; siz vermeden yazılmaz *(`CLAUDE.md` kural 3)*.
 | # | İş | Kim | Not |
 |---|---|---|---|
 | D1 | **Katalog boyutu** | Siz | Yayındaki dosyalar ~13 MB. **v3 dalındaki yeni katalog ~7 MB** (web için sıkıştırılmış, hızlı web görüntüleme açık). Yeni PDF'ler yayına alınınca kapanır. |
-| D2 | **Vercel GitHub App bağlantısı** | Siz | Şu an `git push` tek başına yayına almıyor; `yayinla.bat` deploy ediyor. Bağlanırsa otomatik olur. Vercel → Settings → Git |
 | D3 | **`katalog/` git'te versiyonlansın mı?** | Siz — **karar bekliyor** | Kökteki taslak klasörü `.gitignore`'da değil; `git add -A` çalışırsa 49 MB depoya girer. Şimdilik commit'lerde dosya yolları açıkça yazılarak korunuyor. |
 | D4 | **Görsel yenileme (tekrarlar)** | Siz → Ben | 32 yeni görsel Higgsfield'da hazır; indirilip buraya getirilince site (v3) ve dört katalog güncellenecek. Plan ve eşleme: `GORSEL-YENILEME.md`. |
-| D5 | **İç notlar canlıda açık** | Siz (onay) → Ben | `leonkimya.com/CLAUDE.md`, `/YAPILACAKLAR.md`, `/WHATSAPP-KURULUM.md` herkese açık okunuyor. v3 dalında `.vercelignore`'a eklendi; canlıya yalnız bu satırların alınması onay bekliyor. |
 
 ---
 
@@ -102,6 +100,11 @@ MX/SPF/DKIM/DMARC yerinde) · site e-postasının ve form hedefinin yeni adrese
 geçirilmesi · katalog PDF'lerindeki eski alan adı ve e-posta *(alan adı artık
 `build.js` içinde `ALAN_ADI` tek sabitinde — bir daha PDF'lerde eski adres kalmaz)*
 · formun teslim edilmeyen mesaja "alındı" demesi.
+
+**28.09.2026'da kapananlar:** canlı sitede herkese açık kalan `saraskimya-assets/`,
+`_to_delete/` ve proje notları yayından çıkarıldı (`.vercelignore`) ·
+`yayinla.bat`'taki yerel CLI deploy'u kaldırıldı · GitHub bağlantısının zaten
+kurulu olduğu doğrulandı (eski D2).
 
 **Daha önce:** görseller, logo, iletişim formu, e-katalog, blog, prerender,
 og etiketleri, WebP, CLS, JSON-LD, sitemap, temiz URL, iletişim bilgileri,

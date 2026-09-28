@@ -2,14 +2,18 @@
 OKUBENI.md
 _arsiv-varyantlar.zip
 
-# Proje içi notlar yayına çıkmaz. 09.2026'da leonkimya.com/CLAUDE.md,
-# /YAPILACAKLAR.md ve /WHATSAPP-KURULUM.md herkese açık okunabiliyordu;
-# CLAUDE.md sitenin geçmişini ve iç kararları anlatıyor.
+# Proje notları ve yerel çalışma klasörleri yayına çıkmaz (28.09.2026).
+# Vercel CLI yerel klasörü .gitignore'a bakmadan yüklüyor; bu satırlar
+# olmadan buradaki her şey sitede herkese açık oluyor. Silmeyin.
 /CLAUDE.md
 /YAPILACAKLAR.md
 /WHATSAPP-KURULUM.md
 /GORSEL-YENILEME.md
 /yayinla.bat
+/.gitignore
+/_to_delete
+/saraskimya-assets
+/katalog-uretici
 
 # Katalog ve kartvizit — GECICI.
 # Yeni katalog hala tasarlaniyor; taslak hali yayinda herkese acik
@@ -23,6 +27,3 @@ _arsiv-varyantlar.zip
 # duruyor ve o klasor de disarida kalirdi.
 /katalog
 /kartvizit
-
-# Katalog üretici kaynağı yayına çıkmaz; yalnız assets/katalog/ altındaki PDF'ler yayında
-/katalog-uretici
