@@ -10,7 +10,8 @@ Framework yok — sade HTML + CSS + JavaScript.
 | **Vercel projesi** | `leon-kimya` |
 | **Diller** | TR `/` · EN `/en` · FR `/fr` · AR `/ar` (sağdan sola) |
 
-> ✅ **Site yayında ve aramaya açık** (18.08.2026).
+> ✅ **Site yayında ve aramaya açık** (18.08.2026). v3 tasarım ve yeni katalog
+> 28.09.2026'dan beri yayında.
 
 ---
 
@@ -147,18 +148,25 @@ python assets/build-pages.py
 Yayını asistan yürütür. Kendiniz yapmak isterseniz:
 
 ```bash
-python assets/build-img-sizes.py
+python assets/build-img-sizes.py      # yalnız görsel eklendiyse
 python assets/build-pages.py
-git add -A
+git add <değişen dosyalar>             # "git add -A" kullanmayın
 git commit -m "değişiklik açıklaması"
 ```
 
-Sonra **`yayinla.bat`** dosyasına çift tıklayın.
+Sonra **`yayinla.bat`** dosyasına çift tıklayın: GitHub'daki son hâli çeker
+(`pull --rebase`) ve değişikliklerinizi gönderir (`push`).
 
 **Gereksinim:** Python 3 (+ Pillow) ve Node.js. Node yoksa derleme durur.
 
-> `git push` tek başına siteyi güncellemez — otomatik deploy henüz açık değil.
-> Açmak için: Vercel → Project → Settings → Git → Connect Git Repository.
+> **`main`'e gönderilen her değişiklik birkaç dakika içinde canlıya çıkar** —
+> Vercel'in GitHub bağlantısı açık. Denemeleri ayrı bir dalda yapın; diğer
+> dallar yalnız Vercel girişiyle açılan önizleme adresine gider.
+>
+> `git add -A` kökteki `katalog/` ve `kartvizit/` taslaklarını (49 MB) depoya
+> sokar; dosya yollarını tek tek yazın. Yerel klasörden `vercel deploy`
+> çalıştırmayın — klasörü olduğu gibi yükler (28.09.2026'ya kadar proje notları
+> bu yüzden sitede herkese açıktı).
 
 ---
 
@@ -168,9 +176,7 @@ Sonra **`yayinla.bat`** dosyasına çift tıklayın.
 2. ~~Alan adı bağlandı~~ ✅ `leonkimya.com` (www otomatik köke yönleniyor)
 3. ~~`SITE_URL` çevrildi~~ ✅
 4. ~~Aramaya açıldı~~ ✅ `NOINDEX = False` + `robots.txt`
-
-**Kalan tek panel işi:** Google Search Console'a sitemap tanıtmak —
-`https://leonkimya.com/sitemap.xml`
+5. ~~Search Console~~ ✅ doğrulandı, sitemap gönderildi (19.08.2026)
 
 ### DNS hakkında — önemli
 
@@ -182,10 +188,10 @@ A  @    76.76.21.21
 A  www  76.76.21.21
 ```
 
-**Nameserver'ları Vercel'e çevirmeyin.** Alan adında kurulmayı bekleyen bir
-Hostinger e-posta planı var; nameserver'lar taşınırsa e-posta kayıtları
-(`MX`, `SPF`, `DKIM`) yazılamaz ve posta çalışmaz. Bu hâliyle web Vercel'de,
-e-posta Hostinger'da — ikisi birbirine karışmıyor.
+**Nameserver'ları Vercel'e çevirmeyin.** E-posta (`info@leonkimya.com`)
+Hostinger'da çalışıyor; nameserver'lar taşınırsa oradaki e-posta kayıtları
+(`MX`, `SPF`, `DKIM`, `DMARC`) devre dışı kalır ve posta durur. Bu hâliyle web
+Vercel'de, e-posta Hostinger'da — ikisi birbirine karışmıyor.
 
 ---
 
@@ -209,8 +215,7 @@ dizilmiş, her işin yanında kimin yapacağı yazılı.
 
 En öncelikli olanlar:
 
-- **KVKK aydınlatma metni ve çerez bildirimi** — site artık halka açık ve
+- **KVKK aydınlatma metni ve çerez bildirimi** — site halka açık ve
   form kişisel veri topluyor
-- **Search Console'a sitemap tanıtmak** — `https://leonkimya.com/sitemap.xml`
-- **Hostinger e-posta kurulumunu bitirmek** — sonra site e-postası
-  `@leonkimya.com`'a geçer
+- **Form postalarının spam'e düşmesi** — Hostinger'da `formsubmit.co` için
+  izin kuralı
