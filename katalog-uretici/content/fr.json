@@ -1,0 +1,3377 @@
+{
+ "lang": "fr",
+ "ui": {
+  "tocKicker": "CATALOGUE PRODUITS ET SYSTÈMES",
+  "tocTitle": "Sommaire",
+  "runHead": {
+   "3": "ENTREPRISE",
+   "4": "ENTREPRISE",
+   "5": "ENTREPRISE",
+   "6": "SOMMAIRE",
+   "7": "",
+   "8": "PRODUITS",
+   "9": "PRODUITS",
+   "10": "",
+   "11": "ADHÉSIFS",
+   "12": "ADHÉSIFS",
+   "13": "ADHÉSIFS",
+   "14": "ADHÉSIFS",
+   "15": "ADHÉSIFS",
+   "16": "ADHÉSIFS",
+   "17": "ADHÉSIFS",
+   "18": "ADHÉSIFS",
+   "19": "",
+   "20": "LIANTS",
+   "21": "LIANTS",
+   "22": "LIANTS",
+   "23": "LIANTS",
+   "24": "LIANTS",
+   "25": "LIANTS",
+   "26": "LIANTS",
+   "27": "LIANTS",
+   "28": "",
+   "29": "REVÊTEMENTS DE SOL & PEINTURES",
+   "30": "REVÊTEMENTS DE SOL & PEINTURES",
+   "31": "REVÊTEMENTS DE SOL & PEINTURES",
+   "32": "REVÊTEMENTS DE SOL & PEINTURES",
+   "33": "REVÊTEMENTS DE SOL & PEINTURES",
+   "34": "REVÊTEMENTS DE SOL & PEINTURES",
+   "35": "REVÊTEMENTS DE SOL & PEINTURES",
+   "36": "",
+   "37": "PRIMAIRES & MASTICS",
+   "38": "PRIMAIRES & MASTICS",
+   "39": "PRIMAIRES & MASTICS",
+   "40": "PRIMAIRES & MASTICS",
+   "41": "",
+   "42": "PRODUITS D'ÉTANCHÉITÉ",
+   "43": "",
+   "44": "SYSTÈMES",
+   "45": "SYSTÈMES",
+   "46": "SYSTÈMES",
+   "47": "SYSTÈMES",
+   "48": "SYSTÈMES",
+   "49": "SYSTÈMES",
+   "50": "SYSTÈMES",
+   "51": "SYSTÈMES",
+   "52": "SYSTÈMES",
+   "53": "SYSTÈMES",
+   "54": "SYSTÈMES",
+   "55": "SYSTÈMES",
+   "56": "SYSTÈMES",
+   "57": "SYSTÈMES",
+   "58": "",
+   "59": "DOMAINES D'APPLICATION",
+   "60": "DOMAINES D'APPLICATION",
+   "61": "DOMAINES D'APPLICATION",
+   "62": "DOMAINES D'APPLICATION",
+   "63": "DOMAINES D'APPLICATION",
+   "64": "DOMAINES D'APPLICATION",
+   "65": "DOMAINES D'APPLICATION",
+   "66": "",
+   "67": "EXPORTATION",
+   "68": "EXPORTATION"
+  }
+ },
+ "cover": {
+  "title": "CATALOGUE PRODUITS ET SYSTÈMES",
+  "tagline": "Votre partenaire en technologie chimique",
+  "edition": "Édition 2026",
+  "site": "leonkimya.com",
+  "imgs": [
+   "6856745d37aa.png",
+   "06e8333d02ce.png",
+   "088520f42e22.png",
+   "b4a69140ca18.png",
+   "d92093cf9718.png",
+   "36482da4dd3b.png",
+   "8e4b364fe2f0.png",
+   "329d0adcc276.png",
+   "508e214cc636.png",
+   "863fb3aef168.png",
+   "34720c1dbb75.png",
+   "cd2b9967b05f.png"
+  ]
+ },
+ "intro": {
+  "tagline": "Votre partenaire en technologie chimique",
+  "disclaimer": "Les informations de ce catalogue sont fournies à titre de présentation générale et ne remplacent pas une spécification technique. Demandez la fiche technique (FT) et la fiche de données de sécurité (FDS) à jour avant application. Les caractéristiques peuvent être modifiées sans préavis.",
+  "logo": "fb36f4a187a1.png"
+ },
+ "corporate": {
+  "kicker": "ENTREPRISE",
+  "title": "Leon Kimya",
+  "lead": "Leon Kimya met en œuvre des technologies de pointe et s'appuie sur des collaborateurs qualifiés dans chacune des branches de la chimie où elle intervient. L'entreprise s'est fixé pour principe de livrer des produits conformes aux normes sans transiger sur la satisfaction client, et de bâtir une marque capable de répondre à des attentes en constante évolution.",
+  "cols": [
+   [
+    "Avec des procédés à base de polyuréthane, d'époxy et d'acrylique, nous apportons des solutions en adhésifs, liants caoutchouc, revêtements de sol industriels et spor-tifs, systèmes d'étanchéité et mastics de joint.",
+    "Notre développement produit s'appuie sur les retours du terrain ; nous concevons des configurations de systèmes qui varient selon le cahier des charges, le budget et le support."
+   ],
+   [
+    "Parallèlement à la production, nous menons le dévelop-pement produit (R&D) et l'adaptation aux besoins spéci-fiques des clients comme des disciplines distinctes, en recommandant des formulations adaptées au support, au climat et aux conditions d'exploitation. Nous privilé-gions des formulations sans solvant, respectueuses de l'utilisateur et de l'environnement, et préparons avec nos partenaires applicateurs des systèmes conçus pour chaque projet."
+   ]
+  ],
+  "img": "cf0041b7b776.jpg",
+  "gallery": [
+   "f08f38f410ea.jpg",
+   "b80ab6c5b632.jpg",
+   "2ca2ee1f38be.jpg"
+  ]
+ },
+ "why": {
+  "kicker": "ENTREPRISE",
+  "title": "Pourquoi Leon Kimya",
+  "lead": "Six principes appliqués à chaque étape, de la production à la livraison.",
+  "items": [
+   {
+    "no": "01",
+    "title": "Excellence du service",
+    "text": "Nous travaillons à porter l'efficacité de tous nos processus à un niveau compétitif."
+   },
+   {
+    "no": "02",
+    "title": "Technologie de haute qualité",
+    "text": "Nous encourageons les approches innovantes et créatives afin d'élever la qualité technologique."
+   },
+   {
+    "no": "03",
+    "title": "Maîtrise de la production",
+    "text": "Nous conduisons nos procédés sous notre propre contrôle, avec un suivi qualité par lot."
+   },
+   {
+    "no": "04",
+    "title": "Approche centrée client",
+    "text": "Nous prenons en compte vos attentes dès le départ et apportons des solutions du relevé initial à l'après-vente."
+   },
+   {
+    "no": "05",
+    "title": "Livraison rapide et soignée",
+    "text": "Grâce à une planification professionnelle de la production et des expéditions, vos produits sont prêts à temps."
+   },
+   {
+    "no": "06",
+    "title": "Satisfaction client",
+    "text": "Dans chaque projet achevé, en cours ou à venir, la satisfaction du client passe avant tout."
+   }
+  ]
+ },
+ "standards": {
+  "kicker": "ENTREPRISE",
+  "title": "Normes et Conformité",
+  "lead": "Normes de référence selon lesquelles les produits sont conçus, certificats du site de production et déclarations Leon Kimya.",
+  "sections": [
+   {
+    "title": "Normes de conformité produit",
+    "note": "Les produits sont conçus et testés selon les exigences des normes suivantes.",
+    "table": {
+     "head": [
+      "Norme",
+      "Domaine",
+      "Famille de produits"
+     ],
+     "rows": [
+      [
+       "EN 14877",
+       "Sols sportifs synthétiques extérieurs",
+       "Systèmes de sols sportifs"
+      ],
+      [
+       "EN 1177",
+       "Sols d'aires de jeux, hauteur de chute critique",
+       "Systèmes à granulés EPDM"
+      ],
+      [
+       "EN 13813",
+       "Chapes et matériaux de revêtement de sol",
+       "Systèmes de sols industriels"
+      ],
+      [
+       "EN 1504-2",
+       "Systèmes de protection de surface du béton",
+       "Revêtements, étanchéité"
+      ],
+      [
+       "EN 13501-1",
+       "Classement de réaction au feu",
+       "Revêtements de sol"
+      ],
+      [
+       "EN 14041",
+       "Revêtements de sol résilients, caractéristiques essentielles",
+       "Revêtements PU et époxy"
+      ],
+      [
+       "REACH",
+       "Enregistrement et sécurité des substances chimiques",
+       "Ensemble du portefeuille"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Certificats du site de production",
+    "note": "Les produits Leon Kimya sont fabriqués dans un site certifié ISO 9001 et ISO 14001. Les copies des certificats sont fournies sur demande."
+   },
+   {
+    "title": "Certificats de système",
+    "note": "Les certificats de fédération internationale ci-dessous sont délivrés au nom du système indiqué en regard.",
+    "table": {
+     "head": [
+      "Document",
+      "Système",
+      "Domaine"
+     ],
+     "rows": [
+      [
+       "World Athletics Product Certificate",
+       "Système Athlétisme Sandwich Leon",
+       "Sandwich · 14 mm"
+      ],
+      [
+       "ITF Court Pace Classification",
+       "Système Court Dur Acrylique Leon",
+       "Catégorie 4 · Moyennement rapide"
+      ]
+     ]
+    }
+   },
+   {
+    "title": "Déclarations Leon Kimya",
+    "note": "",
+    "table": {
+     "head": [
+      "Document",
+      "Domaine"
+     ],
+     "rows": [
+      [
+       "Déclaration des Performances (DoP)",
+       "Émise au nom de Leon Kimya, par produit"
+      ],
+      [
+       "Fiche de Données de Sécurité (FDS)",
+       "Pour chaque produit, avec le nom et les coordonnées Leon Kimya"
+      ],
+      [
+       "Fiche Technique (FT)",
+       "Émise séparément pour chaque produit"
+      ],
+      [
+       "Certificat d'analyse de lot",
+       "Fourni avec chaque expédition"
+      ]
+     ]
+    }
+   }
+  ],
+  "footnote": ""
+ },
+ "productList": {
+  "kicker": "PRODUITS",
+  "title": "Liste des Produits"
+ },
+ "parts": [
+  {
+   "no": "01",
+   "title": "Produits",
+   "desc": "Des adhésifs aux liants, des revêtements de sol à l'étanchéité : six familles de produits et trois catégories de systèmes.",
+   "img": "b367417ad9ff.jpg",
+   "categories": [
+    {
+     "kicker": "PRODUITS",
+     "title": "Adhésifs",
+     "items": [
+      "Adhésifs pour parquet",
+      "Adhésif pour sols PVC & vinyle",
+      "Adhésifs caoutchouc & gazon synthétique",
+      "Adhésifs pour filtres"
+     ],
+     "img": "fa6cf4c4a588.jpg",
+     "families": [
+      {
+       "page": 11,
+       "kicker": "ADHÉSIFS",
+       "title": "Adhésifs pour parquet",
+       "lead": "Une famille d'adhésifs majoritairement polyuréthane qui lie durablement les parquets massifs, stratifiés et contrecollés aux chapes et supports béton.",
+       "paras": [
+        "Le portefeuille repose sur des adhésifs polyuréthanes bicompo-sants (2K) sans solvant adaptés à tous les parquets. Le bon choix dépend du mouvement dimensionnel du bois, de l'absorp-tion de la chape et du temps de travail requis.",
+        "La consistance thixotrope évite le coulage vertical ; la liaison élastique empêche les grincements et le décollement progressif des lames. Les produits sont compatibles avec le chauffage au sol. Avant application : mesurer l'humidité du support, choisir la bonne spatule crantée et respecter le temps ouvert."
+       ],
+       "uses": [
+        "Sans solvant, à base de polyuréthane bicomposant",
+        "Convient aux parquets massifs, lamellés et contrecollés",
+        "Compatible avec les planchers chauffants",
+        "S'élimine sans tache de la surface du parquet dans les 48 heures suivant la pose",
+        "La consommation reste maîtrisée avec la spatule crantée adaptée"
+       ],
+       "areas": [
+        "Parquet massif et stratifié",
+        "Parquet contrecollé",
+        "Sols chauffants",
+        "Logements et bureaux",
+        "Hôtels et commerces",
+        "Parquets de salles de sport"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "6140cbd2aca8.jpg",
+       "gallery": [
+        "fa6cf4c4a588.jpg",
+        "9c80fafd0b40.jpg",
+        "d6a62063c06d.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 12,
+         "kicker": "ADHÉSIFS POUR PARQUET",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-101",
+           "name": "Adhésif parquet PU 2K standard",
+           "desc": "Polyuréthane bicomposant sans solvant pour tous les parquets ; haute résistance finale et temps de travail équilibré.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "10/1 (en poids)"
+            },
+            {
+             "l": "Durée d'emploi",
+             "v": "30 – 60 min"
+            },
+            {
+             "l": "Consommation",
+             "v": "1,75 – 2 kg/m²"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "10 kg kit (A+B)"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "b3fce0b8e598.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-102",
+           "name": "Adhésif parquet PU 2K thixotrope",
+           "desc": "Sa consistance élevée conserve les sillons de spatule et ne coule pas en pente ; étalement contrôlé et propre pour les grandes lames.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "9/1 (en poids)"
+            },
+            {
+             "l": "Durée d'emploi",
+             "v": "30 – 60 min"
+            },
+            {
+             "l": "Consommation",
+             "v": "1,75 – 2 kg/m²"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "10 kg kit (A+B)"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "29b1fa96ffb0.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-103",
+           "name": "Adhésif parquet PU 2K souple",
+           "desc": "Liaison élastique durable qui suit le mouvement du bois ; premier choix pour massif, larges lames et sols chauffants.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "6/1 (en poids)"
+            },
+            {
+             "l": "Durée d'emploi",
+             "v": "45 – 90 min"
+            },
+            {
+             "l": "Consommation",
+             "v": "1 – 1,25 kg/m²"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "7 kg kit (A+B) · 10 kg kit (A+B)"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "2ac3fb494b4d.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 13,
+       "kicker": "ADHÉSIFS",
+       "title": "Adhésif pour sols PVC & vinyle",
+       "lead": "Un adhésif acrylique en phase aqueuse qui fixe les revêtements souples PVC, vinyle, linoléum et moquettes à dossier sur supports absorbants.",
+       "paras": [
+        "La formulation monocomposante sans solvant est inodore : elle permet de travailler en toute sécurité dans les espaces clos — hôpitaux, écoles, logements. Un tack initial élevé et une longue fenêtre de travail laissent une marge d'ajustement sur les grandes surfaces.",
+        "L'adhésif est étalé uniformément à la spatule crantée, le revête-ment posé en quelques minutes puis marouflé au rouleau. Sur sol chauffant, le système est arrêté avant la pose et relancé pro-gressivement après. Ne pas confondre colle pour revêtement de sol et colle pour tube PVC rigide."
+       ],
+       "uses": [],
+       "areas": [
+        "Hôpitaux et laboratoires",
+        "Écoles et crèches",
+        "Logements",
+        "Centres commerciaux et magasins",
+        "Bureaux",
+        "Sols PVC homogènes et hétérogènes"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-AC-110",
+         "name": "Adhésif acrylique en phase aqueuse pour revêtements de sol",
+         "desc": "Monocomposant, à base acrylique et sans solvant. Facile à appliquer, avec un tack initial et une adhérence finale élevés sur une longue fenêtre de travail. Colle PVC, PU et latex, marley, marmoleum, linoléum et moquettes à dossier sur béton et chape.",
+         "specs": [],
+         "img": "4fc046744bc8.jpg"
+        }
+       ],
+       "hAreas": "DOMAINES D'APPLICATION",
+       "hProducts": "FAMILLE DE PRODUITS",
+       "img": "7b23199d6000.jpg",
+       "gallery": [],
+       "productPages": []
+      },
+      {
+       "page": 14,
+       "kicker": "ADHÉSIFS",
+       "title": "Adhésifs caoutchouc & gazon synthétique",
+       "lead": "Adhésifs polyuréthane bicomposants qui lient dalles et rouleaux caoutchouc au support, et les lés de gazon synthétique entre eux et à la bande de jonction.",
+       "paras": [
+        "La structure PU 2K sans solvant conserve sa force d'adhérence pendant des années, insensible à la lumière, à l'eau et aux intem-péries. Dalles et rouleaux caoutchouc se collent sur béton, MDF, aggloméré et métal — et au besoin sur céramique, granit et marbre.",
+        "Sur gazon synthétique, la zone critique n'est pas la surface mais les jonctions et retours de bord : l'adhésif est étalé uniformément sur la bande, les lés sont centrés et la jonction protégée pendant la réticulation. L'option de couleur verte rend les joints invisibles."
+       ],
+       "uses": [
+        "Sans solvant, à base de polyuréthane bicomposant",
+        "Collage des dalles et rouleaux de caoutchouc sur le support",
+        "Utilisé aux joints du gazon synthétique et pour la pose des lignes de jeu",
+        "Résiste à l'humidité, à l'eau et à la plupart des produits chimiques",
+        "Résistance élevée à l'abrasion et à la déchirure",
+        "S'applique sur béton, MDF, aggloméré et métal"
+       ],
+       "areas": [
+        "Terrains de football et gazon synthétique",
+        "Sols en dalles et rouleaux caoutchouc",
+        "Salles de sport",
+        "Aires de jeux",
+        "Gazon paysager et décoratif",
+        "Abords de piscine"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "36e594718140.jpg",
+       "gallery": [
+        "11e1364e84e2.jpg",
+        "059d7d765e0f.jpg",
+        "2f32e326ff4a.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 15,
+         "kicker": "ADHÉSIFS CAOUTCHOUC & GAZON SYNTHÉTIQUE",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-121",
+           "name": "Adhésif caoutchouc PU 2K souple",
+           "desc": "Système bicomposant souple sans solvant liant dalles et rouleaux caoutchouc au béton, au bois et au métal.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "9/1 (en poids)"
+            },
+            {
+             "l": "Consommation",
+             "v": "1 kg/m²"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "10 kg kit (A+B) · 24 kg kit (A+B)"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "d407170db107.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-122",
+           "name": "Adhésif caoutchouc PU 2K économique",
+           "desc": "Variante bicomposante à accroche équilibrée, avantageuse sur grandes surfaces.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "7/1 (en poids)"
+            },
+            {
+             "l": "Consommation",
+             "v": "1 kg/m²"
+            },
+            {
+             "l": "Couleur",
+             "v": "Crème"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "24 kg kit (A+B)"
+            }
+           ],
+           "img": "639e1b4b06aa.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-123",
+           "name": "Adhésif gazon synthétique PU 2K",
+           "desc": "Adhésif vert liant les lés de gazon à la bande de jonction ; résistant à l'eau et aux intempéries.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "7/1 (en poids)"
+            },
+            {
+             "l": "Couleur",
+             "v": "Vert"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "11,50 kg seau · 13 kg seau · 24 kg seau · 36 kg seau"
+            }
+           ],
+           "img": "32e710b6d59a.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-PU-124",
+           "name": "Adhésif gazon synthétique économique",
+           "desc": "Solution bicomposante économique pour terrains et paysagisme.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "5,25/1 (en poids)"
+            },
+            {
+             "l": "Couleur",
+             "v": "Vert"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "25 kg seau"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "d9c187324e75.jpg"
+          }
+         ],
+         "hFeatures": "CARACTÉRISTIQUES CLÉS",
+         "features": [
+          "Polyuréthane bicomposant sans solvant",
+          "Résistance aux UV, à l'eau et aux intempéries",
+          "Application parfaitement compatible avec la bande de jonction",
+          "Thixotrope — ne coule pas sur surface inclinée",
+          "Variantes souples et économiques"
+         ]
+        },
+        {
+         "page": 16,
+         "kicker": "ADHÉSIFS CAOUTCHOUC & GAZON SYNTHÉTIQUE",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "05",
+           "code": "LK-AK-721",
+           "name": "Bande de jonction",
+           "desc": "La bande tissée qui relie les lés de gazon par dessous ; s'utilise avec l'adhésif.",
+           "specs": [
+            {
+             "l": "Dimensions",
+             "v": "1 rouleau: 140 × 500 m · 5 rouleau: 28 × 100 m"
+            }
+           ],
+           "img": "437bbdd89ad6.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-AK-731",
+           "name": "Dalles caoutchouc",
+           "desc": "Dalles prêtes à poser, souples et résistantes à l'usure, en plusieurs formats.",
+           "specs": [
+            {
+             "l": "Dimensions",
+             "v": "40 × 40 × 2 cm · 40 × 40 × 3 cm · 50 × 50 × 2 cm · 50 × 50 × 3 cm"
+            }
+           ],
+           "img": "11e1364e84e2.jpg"
+          },
+          {
+           "no": "07",
+           "code": "LK-AK-741",
+           "name": "Rouleau caoutchouc SBR",
+           "desc": "La sous-couche amortissante des sols sportifs ; aussi sous chape et en acoustique.",
+           "specs": [
+            {
+             "l": "Épaisseur du revêtement",
+             "v": "4 – 10 mm"
+            }
+           ],
+           "img": "cca91130babd.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 17,
+       "kicker": "ADHÉSIFS",
+       "title": "Adhésifs pour filtres",
+       "lead": "Systèmes polyuréthane industriels qui solidarisent média filtrant, cadre et couvercles — et forment des joints in situ si nécessaire.",
+       "paras": [
+        "Deux missions distinctes, deux familles de produits : la fixation du média vise une liaison forte et répétable ; les produits de joint ap-portent remplissage contrôlé, stabilité de forme et étanchéité. Des grades rapides et non coulants (thixotropes) pour les lignes de dosage automatiques.",
+        "Méthode de dosage, viscosité, temps de travail, température de service et fluide en contact guident la sélection. À chaque chan-gement de média, de cadre ou de lot, un essai à petite échelle est recommandé avant la série."
+       ],
+       "uses": [
+        "Sans solvant, à base de polyuréthane bicomposant",
+        "Colle le média filtrant aux séparateurs métalliques ou plastiques",
+        "Résiste à l'eau, l'humidité, l'abrasion, les chocs, acides-alcalis et l'eau de mer",
+        "Étanche aux liquides et antibactérien",
+        "Aucun retrait volumique après réticulation",
+        "Également utilisé comme matériau d'enrobage et de moulage"
+       ],
+       "areas": [
+        "Filtres à air",
+        "Filtres automobiles",
+        "Cartouches filtrantes industrielles",
+        "Joints de filtres",
+        "Lignes de dosage automatiques"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "2ca2ee1f38be.jpg",
+       "gallery": [],
+       "productPages": [
+        {
+         "page": 18,
+         "kicker": "ADHÉSIFS POUR FILTRES",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-131",
+           "name": "Adhésif filtre à prise rapide",
+           "desc": "Système polyuréthane conçu pour les cycles courts des lignes de dosage automatiques.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "5/1 (en poids)"
+            },
+            {
+             "l": "Durée d'emploi",
+             "v": "5 – 10 min"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "36 kg seau · 300 kg fût (A) · 250 kg fût (B)"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "0ba5cadad49f.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-132",
+           "name": "Adhésif filtre dosage automatique",
+           "desc": "Grade offrant une stabilité de dosage répétable en production.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "30 kg seau · 360 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "6bb3bbe0d3f4.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-133",
+           "name": "Grade thixotrope / joint",
+           "desc": "Grade non coulant formant des joints in situ, à haute stabilité de forme.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Rapport de mélange",
+             "v": "5/1 (en poids)"
+            },
+            {
+             "l": "Durée d'emploi",
+             "v": "5 – 10 min"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "36 kg seau · 300 kg fût (A) · 250 kg fût (B)"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "6bb3bbe0d3f4.jpg"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "PRODUITS",
+     "title": "Liants",
+     "items": [
+      "Liants coulés",
+      "Liants pressés",
+      "Liants pour pierre",
+      "Granulés EPDM"
+     ],
+     "img": "11e1364e84e2.jpg",
+     "families": [
+      {
+       "page": 20,
+       "kicker": "LIANTS",
+       "title": "Liants coulés",
+       "lead": "Prépolymères polyuréthane monocomposants réticulant à l'humidité, qui transforment sur site les granulés SBR et EPDM en un sol souple monolithique.",
+       "paras": [
+        "Mélangé aux granulés puis étalé, le liant réticule en une couche perméable à l'eau, absorbant les chocs et sans joint. Les grandes surfaces se posent au finisseur, les petites à la main. Les grades aromatiques sont le choix économique pour le SBR noir et les systèmes foncés ; pour l'EPDM coloré, on recommande les grades aliphatiques non jaunissants résistants aux UV.",
+        "Trop peu de liant affaiblit la liaison ; trop durcit la surface. Le taux de mélange et la propreté des granulés font le résultat, et un es-sai est conseillé à chaque nouveau lot de granulés."
+       ],
+       "uses": [
+        "Liant polyuréthane monocomposant à durcissement à l'humidité",
+        "Pour les systèmes coulés en place en granulés EPDM et SBR",
+        "La version aliphatique ne jaunit pas sous UV",
+        "Crée une surface poreuse et perméable",
+        "Application au finisseur ou manuelle"
+       ],
+       "areas": [
+        "Aires de jeux",
+        "Parcours de course et de marche",
+        "Sols sportifs",
+        "Cours d'école",
+        "Parcs et paysagisme",
+        "Sols décoratifs"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "b367417ad9ff.jpg",
+       "gallery": [
+        "f291fd638965.jpg",
+        "e09c922f3eb3.jpg",
+        "2b31d9a81b6a.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 21,
+         "kicker": "LIANTS COULÉS",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PP-201",
+           "name": "Liant coulé EPDM",
+           "desc": "Liant pigmenté préservant la cohérence des couleurs dans les systèmes EPDM colorés.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Aromatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Transparent"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "200 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "9 mois"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PP-202",
+           "name": "Liant coulé SBR",
+           "desc": "Le liant wet-pour standard pour SBR noir et systèmes foncés.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Aromatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Brun – jaune"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "200 kg fût · 220 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "9 mois"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PP-203",
+           "name": "Liant EPDM aliphatique (UV)",
+           "desc": "Grade premium non jaunissant pour surfaces EPDM colorées.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Aliphatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Transparent"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "220 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "9 mois"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 22,
+       "kicker": "LIANTS",
+       "title": "Liants pressés",
+       "lead": "Résines liantes développées pour mouler dalles, bordures et pièces techniques en caoutchouc sous pression et chaleur.",
+       "paras": [
+        "Le mélange granulés-liant est pressé dans le moule en produits denses et stables en forme. Température du moule, temps de cycle et structure des granulés déterminent le résultat ; des para-mètres constants garantissent l'intégrité des pièces en série.",
+        "Liants coulés et liants pressés ne sont pas interchangeables : temps de travail, qualité de surface et résistance sont conçus dif-féremment. La qualité du granulé définit l'élasticité, sa taille la consommation."
+       ],
+       "uses": [
+        "Liant polyuréthane monocomposant à durcissement à l'humidité",
+        "Pour la production sous presse/moule de dalles et plaques caoutchouc",
+        "Différentes réactivités selon le temps de cycle du moule",
+        "Le lien réticulé reste élastique et ne devient pas cassant",
+        "Compatible avec les granulés SBR et EPDM"
+       ],
+       "areas": [
+        "Production de dalles caoutchouc",
+        "Bordures et rampes caoutchouc",
+        "Tapis d'écurie et de paddock",
+        "Pièces techniques en caoutchouc",
+        "Production en série en usine"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "11e1364e84e2.jpg",
+       "gallery": [
+        "059d7d765e0f.jpg",
+        "cca91130babd.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 23,
+         "kicker": "LIANTS PRESSÉS",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PP-211",
+           "name": "Liant pressé standard",
+           "desc": "Liant de moule à cycles équilibrés pour dalles et bordures caoutchouc.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Aromatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Brun – jaune"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "220 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "9 mois"
+            }
+           ],
+           "img": "1f5fcab9e1ab.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PP-212",
+           "name": "Liant pressé cycle rapide",
+           "desc": "Temps de presse raccourcis pour lignes à haute capacité.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Aromatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Brun – jaune"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "220 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "9 mois"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PP-213",
+           "name": "Liant pressé économique",
+           "desc": "Grade avantageux pour les pièces standard.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Aromatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Brun clair – jaune"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "220 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "9 mois"
+            }
+           ],
+           "img": "11e1364e84e2.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-PP-214",
+           "name": "Liant pressé haute résistance",
+           "desc": "Formulation renforcée pour pièces techniques à trafic intense.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Aromatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Brun clair – jaune"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "220 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "9 mois"
+            }
+           ],
+           "img": "059d7d765e0f.jpg"
+          }
+         ],
+         "hFeatures": "CARACTÉRISTIQUES CLÉS",
+         "features": [
+          "Formulation dédiée au procédé de moulage",
+          "Forte adhérence à faible consommation",
+          "Répétabilité par paramètres de cycle constants",
+          "Structure dense et stable en forme",
+          "Compatible granulés SBR et EPDM"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 24,
+       "kicker": "LIANTS",
+       "title": "Liants pour pierre",
+       "lead": "Résines qui lient les granulats de pierre naturels et colorés par un film transparent, créant les surfaces décoratives et drainantes dites « moquette de pierre ».",
+       "paras": [
+        "Trois variantes : aliphatique monocomposante, aliphatique bicom-posante et époxy bicomposante. Les grades aliphatiques ne jau-nissent pas aux UV — premier choix en extérieur ; le grade époxy est l'alternative économique en intérieur et zones sans UV.",
+        "La surface réticulée est antidérapante, insensible au vent, résis-tante à l'eau et à la plupart des produits chimiques ; elle sert un trafic léger de longues années sans entretien particulier."
+       ],
+       "uses": [
+        "Lie les granulats de pierre naturelle et colorée par un film transparent",
+        "S'applique sur enrobé ou béton",
+        "Procure une surface antidérapante",
+        "Les versions aliphatiques ne jaunissent pas et résistent aux UV",
+        "Insensible au vent, sans entretien particulier",
+        "Résiste à l'humidité, à l'eau et à la plupart des produits chimiques"
+       ],
+       "areas": [
+        "Allées et passages",
+        "Parcs, jardins et espaces botaniques",
+        "Abords de piscines et bassins",
+        "Balcons et terrasses",
+        "Sols d'hôtels et de galeries",
+        "Intérieurs décoratifs"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "f898b5cef6b4.jpg",
+       "gallery": [
+        "e69ce003efd3.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 25,
+         "kicker": "LIANTS POUR PIERRE",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-221",
+           "name": "Liant pierre aliphatique 2K",
+           "desc": "Système transparent non jaunissant — premier choix de la moquette de pierre extérieure.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane · Aliphatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Transparent"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "18 kg kit (A+B)"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "ee13891a2d8e.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-EP-222",
+           "name": "Liant pierre époxy 2K",
+           "desc": "Grade économique haute résistance pour intérieurs et zones sans UV.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Époxy"
+            },
+            {
+             "l": "Couleur",
+             "v": "Transparent"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "16 kg kit (A+B) · 352 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "12 mois"
+            }
+           ],
+           "img": "7b859b1c943d.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-223",
+           "name": "Liant pierre aliphatique 1K",
+           "desc": "Application monocomposante pratique pour balcons, terrasses et allées.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Aliphatique"
+            },
+            {
+             "l": "Couleur",
+             "v": "Transparent"
+            },
+            {
+             "l": "Conditionnement",
+             "v": "7 kg seau · 50 kg seau · 220 kg fût"
+            },
+            {
+             "l": "Durée de stockage",
+             "v": "9 mois"
+            }
+           ],
+           "img": "8fff6f89a293.jpg"
+          }
+         ],
+         "hFeatures": "CARACTÉRISTIQUES CLÉS",
+         "features": [
+          "Film transparent révélant la texture de la pierre",
+          "Grades aliphatiques non jaunissants",
+          "Surface drainante et antidérapante",
+          "Options d'application 1K et 2K",
+          "Durabilité sans entretien"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 26,
+       "kicker": "LIANTS",
+       "title": "Granulés EPDM",
+       "lead": "Granulés aux couleurs vives et stables aux UV, produits en caoutchouc EPDM synthétique — la matière première des sols souples et sûrs, avec liants polyuréthane.",
+       "paras": [
+        "Une granulométrie homogène et une large palette de couleurs autorisent une conception libre, des aires de jeux à motifs aux terrains multicolores. Taille des granulés et épaisseur de couche se règlent pour obtenir différents niveaux d'amortissement des chutes ; sur les aires de jeux, l'épaisseur suit l'approche de hau-teur de chute critique EN 1177.",
+        "Le granulé SBR recyclé travaille aux côtés de l'EPDM comme sous-couche élastique économique de ces systèmes."
+       ],
+       "uses": [],
+       "areas": [
+        "Aires de jeux",
+        "Pistes de course et surfaces tartan",
+        "Cours d'école",
+        "Terrains de sport",
+        "Abords de piscine",
+        "Espaces de gymnastique"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-GR-701 / 702",
+         "name": "Granulés EPDM — 24 couleurs standard",
+         "desc": "Granulés colorés homogènes et stables aux UV ; parcourez la palette dans la galerie.",
+         "specs": [
+          {
+           "l": "Dimensions",
+           "v": "0,5 – 1,5 mm · 1 – 3,5 mm"
+          }
+         ],
+         "img": "2b31d9a81b6a.jpg"
+        },
+        {
+         "no": "02",
+         "code": "LK-GR-711 / 712",
+         "name": "Granulés SBR (recyclés)",
+         "desc": "Le granulé noir économique et amortissant de la sous-couche des systèmes.",
+         "specs": [
+          {
+           "l": "Dimensions",
+           "v": "1 – 3,5 mm · 2,5 – 3,5 mm"
+          }
+         ],
+         "img": "f291fd638965.jpg"
+        }
+       ],
+       "hAreas": "DOMAINES D'APPLICATION",
+       "hProducts": "FAMILLE DE PRODUITS",
+       "img": "2b31d9a81b6a.jpg",
+       "gallery": [],
+       "productPages": []
+      }
+     ]
+    },
+    {
+     "kicker": "PRODUITS",
+     "title": "Revêtements de sol & peintures",
+     "items": [
+      "Revêtements polyuréthane",
+      "Revêtements acryliques",
+      "Revêtements époxy"
+     ],
+     "img": "df1b57e11ccc.jpg",
+     "families": [
+      {
+       "page": 29,
+       "kicker": "REVÊTEMENTS DE SOL & PEINTURES",
+       "title": "Revêtements polyuréthane",
+       "lead": "Systèmes de revêtement et de peinture polyuréthane pour les sols où élasticité, absorption des chocs et tenue aux UV sont décisives.",
+       "paras": [
+        "Les grades autolissants rigides créent des surfaces lisses et hy-giéniques dans les usines, entrepôts et chambres froides ; les grades souples absorbent les chocs dans les salles de sport, stands de tir et crèches. Le système se complète d'un mastic, d'une couche EPDM et d'une finition résistante aux UV.",
+        "Face à la rigidité de l'époxy, le polyuréthane offre l'accommoda-tion des mouvements thermiques, l'amortissement des vibrations et la réduction du bruit de pas — avec une meilleure tenue aux UV et aux intempéries."
+       ],
+       "uses": [
+        "Applicable en toute épaisseur entre 0,2 mm et 20 mm",
+        "Crée une surface sans joint, non poussiéreuse et facile à nettoyer",
+        "Produit dans toutes les teintes RAL",
+        "Offre une résistance mécanique et chimique élevée",
+        "Versions conductrices ou semi-conductrices (ESD) sur demande",
+        "Logos, signalétique et lignes applicables au sol"
+       ],
+       "areas": [
+        "Usines et entrepôts",
+        "Chambres froides",
+        "Salles de sport et stands de tir",
+        "Parkings et espaces extérieurs",
+        "Bureaux, magasins et showrooms",
+        "Pièces humides"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "78034a880a05.jpg",
+       "gallery": [
+        "b80ab6c5b632.jpg",
+        "2479247dd997.jpg",
+        "92288cec129c.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 30,
+         "kicker": "REVÊTEMENTS POLYURÉTHANE",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-301",
+           "name": "Peinture de sol PU 2K (UV)",
+           "desc": "La couche de couleur et de protection des systèmes ; finition non jaunissante.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,15 – 0,30 kg/m²"
+            },
+            {
+             "l": "Couleur",
+             "v": "Toutes les teintes RAL"
+            }
+           ],
+           "img": "3db33a5619a9.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-302",
+           "name": "Autolissant PU 2K (rigide)",
+           "desc": "Revêtement lisse à haute résistance pour usines et entrepôts.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "2 – 3,50 kg/m²"
+            },
+            {
+             "l": "Couleur",
+             "v": "Toutes les teintes RAL"
+            }
+           ],
+           "img": "660fd749a5d4.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-303",
+           "name": "Autolissant PU 2K (souple)",
+           "desc": "Grade amortissant pour salles de sport et espaces de confort.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "2 – 2,50 kg/m²"
+            },
+            {
+             "l": "Couleur",
+             "v": "Toutes les teintes RAL"
+            }
+           ],
+           "img": "2a2ae552af3a.jpg"
+          }
+         ],
+         "hFeatures": "CARACTÉRISTIQUES CLÉS",
+         "features": [
+          "Configuration rigide ou souple",
+          "Finitions non jaunissantes résistantes aux UV",
+          "Accommodation des contraintes thermiques",
+          "Réduction du bruit de pas",
+          "Options antibactériennes et ignifuges"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 31,
+       "kicker": "REVÊTEMENTS DE SOL & PEINTURES",
+       "title": "Revêtements acryliques",
+       "lead": "Revêtements sportifs acryliques en phase aqueuse, sans solvant, appliqués en couches successives sur béton et asphalte, d'une excellente tenue aux UV.",
+       "paras": [
+        "Le système se compose d'un resurfaceur, de couches amortis-santes « cushion », d'une finition chargée et de la peinture de tra-çage. En réglant la teneur en sable et le nombre de couches, on personnalise le coefficient de friction — la vitesse de jeu — du court.",
+        "La résistance aux cycles gel-dégel et la tenue des couleurs as-surent une longue vie en extérieur ; en intérieur, le système sert tous les niveaux, de l'amateur au professionnel."
+       ],
+       "uses": [],
+       "areas": [
+        "Courts de tennis",
+        "Terrains de basket et volley",
+        "Terrains multisports",
+        "Pistes de course et cyclables",
+        "Équipements scolaires et municipaux"
+       ],
+       "products": [],
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "03e1bfc7deb0.jpg",
+       "gallery": [
+        "0bf913225e9d.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 32,
+         "kicker": "REVÊTEMENTS ACRYLIQUES",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-AC-311",
+           "name": "Vernis acrylique",
+           "desc": "Finition apportant brillance et protection aux surfaces acryliques.",
+           "specs": [],
+           "img": "639479629f65.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-AC-312",
+           "name": "Cushion acrylique (épais)",
+           "desc": "La couche coussin épaisse qui amortit les chocs des courts.",
+           "specs": [],
+           "img": "b52bdb73e6e6.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-AC-313",
+           "name": "Cushion acrylique (fin)",
+           "desc": "Couche coussin fine pour un réglage précis de la vitesse.",
+           "specs": [],
+           "img": "b52bdb73e6e6.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-AC-314",
+           "name": "Resurfaceur acrylique premium",
+           "desc": "Ragréage premium comblant les défauts et préparant la base.",
+           "specs": [],
+           "img": "ced0a61e0231.jpg"
+          },
+          {
+           "no": "05",
+           "code": "LK-AC-315",
+           "name": "Resurfaceur acrylique",
+           "desc": "La couche standard de correction sur béton et asphalte.",
+           "specs": [],
+           "img": "37c103d17abb.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-AC-316",
+           "name": "Finition acrylique chargée",
+           "desc": "La couche colorée chargée en sable qui fixe le coefficient de friction.",
+           "specs": [],
+           "img": "9f7afa92f415.jpg"
+          }
+         ],
+         "hFeatures": "CARACTÉRISTIQUES CLÉS",
+         "features": [
+          "Système en phase aqueuse, écologique",
+          "Vitesse de jeu réglable (friction)",
+          "Résistance aux UV et au gel-dégel",
+          "Forte adhérence sur béton et asphalte",
+          "Entretien économique, large palette de couleurs"
+         ]
+        },
+        {
+         "page": 33,
+         "kicker": "REVÊTEMENTS ACRYLIQUES",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "07",
+           "code": "LK-AC-317",
+           "name": "Peinture concentrée acrylique premium",
+           "desc": "Couche de couleur longue durée à haute teneur en pigments.",
+           "specs": [],
+           "img": "243fa535203a.jpg"
+          },
+          {
+           "no": "08",
+           "code": "LK-AC-318",
+           "name": "Peinture concentrée acrylique",
+           "desc": "Concentré économique pour la mise en couleur des terrains.",
+           "specs": [],
+           "img": "243fa535203a.jpg"
+          },
+          {
+           "no": "09",
+           "code": "LK-PU-402",
+           "name": "Primaire PU 1K",
+           "desc": "Le primaire béton appliqué avant les systèmes acryliques.",
+           "specs": [],
+           "img": "63fa17ae40d9.jpg"
+          },
+          {
+           "no": "10",
+           "code": "LK-AC-407",
+           "name": "Primaire acrylique",
+           "desc": "Primaire en phase aqueuse assurant l'accroche des couches acryliques.",
+           "specs": [],
+           "img": "8cb1222e9e7c.jpg"
+          },
+          {
+           "no": "11",
+           "code": "LK-AC-319",
+           "name": "Peinture de traçage acrylique",
+           "desc": "Peinture à fort pouvoir couvrant pour les lignes de jeu.",
+           "specs": [],
+           "img": "8279dd7fcc4c.jpg"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "page": 34,
+       "kicker": "REVÊTEMENTS DE SOL & PEINTURES",
+       "title": "Revêtements époxy",
+       "lead": "De la peinture en film mince aux revêtements autolissants et au mortier époxy : des systèmes de sol sans joint axés sur l'hygiène et la résistance mécanique.",
+       "paras": [
+        "Les grades autolissants créent des sols lisses et brillants ; les grades texturés « peau d'orange », des sols antidérapants et éco-nomiques. La structure monolithique sans poussière ne laisse au-cune place aux bactéries — un atout pour hôpitaux, agroalimen-taire et laboratoires. Des versions conductrices (ESD) sont possibles.",
+        "Un béton neuf demande environ trois semaines de cure, un pri-maire et un contrôle d'humidité. L'époxy résistant peu aux UV, les zones ensoleillées reçoivent une finition UV-stable, et les zones à fortes charges un renfort en mortier époxy."
+       ],
+       "uses": [
+        "Résiste aux charges lourdes et au trafic intense",
+        "Une texture peau d'orange peut être ajoutée pour l'antidérapance",
+        "Crée un sol brillant, sans joint et hygiénique",
+        "Insensible aux produits chimiques, facile à nettoyer",
+        "Produit dans toutes les teintes RAL",
+        "Le renouvellement de teinte se fait à moindre coût par une couche de finition"
+       ],
+       "areas": [
+        "Usines et sites de production",
+        "Entrepôts et magasins sous douane",
+        "Hôpitaux et laboratoires",
+        "Sites agroalimentaires et pharmaceutiques",
+        "Parkings couverts",
+        "Cuisines industrielles"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "92288cec129c.jpg",
+       "gallery": [
+        "f08f38f410ea.jpg",
+        "f08f38f410ea.jpg",
+        "a0b0e844a6f2.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 35,
+         "kicker": "REVÊTEMENTS ÉPOXY",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-EP-321",
+           "name": "Revêtement époxy texturé (peau d'orange)",
+           "desc": "Finition texturée antidérapante, économique et décorative.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Époxy"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,50 – 0,70 kg/m²"
+            },
+            {
+             "l": "Couleur",
+             "v": "Toutes les teintes RAL"
+            }
+           ],
+           "img": "0cafefcaa216.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-EP-322",
+           "name": "Peinture de sol époxy",
+           "desc": "Peinture protectrice en film mince pour trafic léger et moyen.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Époxy"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,40 – 0,50 kg/m²"
+            },
+            {
+             "l": "Couleur",
+             "v": "Toutes les teintes RAL"
+            }
+           ],
+           "img": "a0b0e844a6f2.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-EP-323",
+           "name": "Autolissant époxy",
+           "desc": "Revêtement autolissant lisse, brillant et très résistant.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Époxy"
+            },
+            {
+             "l": "Consommation",
+             "v": "2 – 3,50 kg/m²"
+            },
+            {
+             "l": "Couleur",
+             "v": "Toutes les teintes RAL"
+            }
+           ],
+           "img": "d555777226f3.jpg"
+          }
+         ],
+         "hFeatures": "CARACTÉRISTIQUES CLÉS",
+         "features": [
+          "Options autolissant, peinture et texturé",
+          "Haute résistance mécanique et chimique",
+          "Surface hygiénique, sans poussière ni joint",
+          "Versions conductrices (ESD) disponibles",
+          "Application dans toutes les teintes RAL"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "PRODUITS",
+     "title": "Primaires & mastics",
+     "items": [
+      "Primaires",
+      "Mastics"
+     ],
+     "img": "f08f38f410ea.jpg",
+     "families": [
+      {
+       "page": 37,
+       "kicker": "PRIMAIRES & MASTICS",
+       "title": "Primaires",
+       "lead": "La première couche : un pont d'adhérence entre revêtement et béton, qui équilibre l'absorption, stoppe le poussiérage et forme au besoin une barrière anti-humidité.",
+       "paras": [
+        "Les primaires époxy conviennent aux sols exigeant adhérence et résistance chimique ; les primaires PU s'accordent aux couches souples, les acryliques aux systèmes sportifs acryliques. Les pri-maires chargés rebouchent les défauts pour préparer une base lisse.",
+        "L'humidité du support est le premier contrôle : jusqu'à 3 % envi-ron, un primaire standard suffit ; entre 3 et 7 %, le primaire époxy barrière anti-humidité est obligatoire ; au-delà, pas d'application. Sauter le primaire mène au décollement et au cloquage précoces."
+       ],
+       "uses": [
+        "Versions distinctes pour supports absorbants et non absorbants",
+        "Détermine l'adhérence entre le support et le revêtement",
+        "La barrière anti-humidité époxy évite le cloquage sur chapes humides",
+        "L'humidité du support doit être mesurée avant application",
+        "La couche suivante n'est pas appliquée avant séchage complet"
+       ],
+       "areas": [
+        "Surfaces béton et chape",
+        "Surfaces métalliques",
+        "Supports humides (grade barrière)",
+        "Sous-couches de systèmes sportifs",
+        "Tous les sols avant revêtement"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "1716c16e6d4b.jpg",
+       "gallery": [
+        "92288cec129c.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 38,
+         "kicker": "PRIMAIRES",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-401",
+           "name": "Primaire PU sans solvant",
+           "desc": "Primaire polyuréthane inodore, sûr en espaces clos.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane · Sans solvant"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,15 – 0,30 kg/m²"
+            }
+           ],
+           "img": "1716c16e6d4b.jpg"
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-402",
+           "name": "Primaire PU 1K",
+           "desc": "Primaire pratique réticulant à l'humidité, compatible couches souples.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,15 – 0,25 kg/m²"
+            }
+           ],
+           "img": "63fa17ae40d9.jpg"
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-403",
+           "name": "Primaire PU 1K transparent",
+           "desc": "Grade transparent pénétrant en profondeur les supports absorbants.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Monocomposant · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,15 – 0,25 kg/m²"
+            },
+            {
+             "l": "Couleur",
+             "v": "Transparent"
+            }
+           ],
+           "img": "92288cec129c.jpg"
+          },
+          {
+           "no": "04",
+           "code": "LK-EP-404",
+           "name": "Barrière anti-humidité époxy 2K",
+           "desc": "Primaire barrière protégeant le revêtement sur supports humides.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Époxy"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,30 – 0,40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          },
+          {
+           "no": "05",
+           "code": "LK-EP-405",
+           "name": "Primaire époxy 2K",
+           "desc": "Le standard des sols exigeant adhérence et résistance chimique élevées.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Époxy"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,30 – 0,40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          },
+          {
+           "no": "06",
+           "code": "LK-EP-406",
+           "name": "Primaire époxy 2K (économique)",
+           "desc": "Solution économique pour l'imprégnation générale du béton.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Époxy"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,30 – 0,40 kg/m²"
+            }
+           ],
+           "img": "39031ff29f56.jpg"
+          }
+         ],
+         "hFeatures": "CARACTÉRISTIQUES CLÉS",
+         "features": [
+          "Familles époxy, polyuréthane et acrylique",
+          "Options barrière anti-humidité",
+          "Correction de surface par primaire chargé",
+          "Grades spéciaux pour supports non absorbants",
+          "La couche critique qui définit la durée de vie"
+         ]
+        }
+       ]
+      },
+      {
+       "page": 39,
+       "kicker": "PRIMAIRES & MASTICS",
+       "title": "Mastics",
+       "lead": "Produits de rebouchage polyuréthane qui comblent joints, fissures et pores, assurant une transition lisse et étanche entre les couches.",
+       "paras": [
+        "Grades à haute et basse viscosité et variantes élastiques suivent les mouvements du sol et empêchent le rebouchage de fissurer. Dans les sols sportifs, le mastic est la couche intermédiaire qui scelle les pores du noyau granulaire.",
+        "Le bon mastic réduit la consommation de la couche autolissante supérieure et améliore directement la qualité de la surface finie."
+       ],
+       "uses": [
+        "Obture les pores de la couche élastique",
+        "Permet au revêtement de s'étaler uniformément",
+        "Plusieurs viscosités pour s'adapter à chaque système",
+        "La consommation varie selon la granulométrie et la texture",
+        "Totalement compatible avec les systèmes polyuréthane"
+       ],
+       "areas": [
+        "Rebouchage de joints et fissures",
+        "Couches intermédiaires de sols sportifs",
+        "Pores des surfaces caoutchouc et SBR",
+        "Réparations de béton",
+        "Corrections avant revêtement"
+       ],
+       "products": [],
+       "hUses": "EMPLOI ET RÉSISTANCE",
+       "hAreas": "DOMAINES D'APPLICATION",
+       "img": "f08f38f410ea.jpg",
+       "gallery": [
+        "f08f38f410ea.jpg"
+       ],
+       "productPages": [
+        {
+         "page": 40,
+         "kicker": "MASTICS",
+         "title": "Famille de Produits",
+         "products": [
+          {
+           "no": "01",
+           "code": "LK-PU-501",
+           "name": "Sealer PU",
+           "desc": "La couche d'étanchéité qui scelle les pores granulaires des systèmes sportifs.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,80 – 1 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "02",
+           "code": "LK-PU-502",
+           "name": "Mastic PU élastique",
+           "desc": "Rebouchage élastique travaillant sans fissurer sur sols en mouvement.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "1,50 – 2,50 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "03",
+           "code": "LK-PU-503",
+           "name": "Mastic PU basse viscosité",
+           "desc": "Grade fluide pénétrant pores fins et capillaires.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "0,80 – 1 kg/m²"
+            }
+           ]
+          },
+          {
+           "no": "04",
+           "code": "LK-PU-504",
+           "name": "Mastic PU haute viscosité",
+           "desc": "Grade dense gardant sa forme dans joints et vides larges.",
+           "specs": [
+            {
+             "l": "Base",
+             "v": "Bicomposant (2K) · Polyuréthane"
+            },
+            {
+             "l": "Consommation",
+             "v": "2 – 2,50 kg/m²"
+            }
+           ]
+          }
+         ],
+         "hFeatures": "CARACTÉRISTIQUES CLÉS",
+         "features": [
+          "Variantes haute/basse viscosité et élastiques",
+          "Accommodation des mouvements du sol",
+          "Scellement des pores et étanchéité",
+          "Réduit la consommation de finition",
+          "Compatibilité totale avec les systèmes PU"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "kicker": "PRODUITS",
+     "title": "Produits d'étanchéité",
+     "items": [
+      "Produits d'étanchéité"
+     ],
+     "img": "db9f0c046d13.jpg",
+     "families": [
+      {
+       "page": 42,
+       "kicker": "PRODUITS D'ÉTANCHÉITÉ",
+       "title": "Produits d'étanchéité",
+       "lead": "Un portefeuille d'étanchéité complet — membranes liquides et primaires adaptés — pour chaque détail, du toit aux fondations.",
+       "paras": [
+        "Grades aliphatiques pour les finitions exposées aux UV, grades économiques sous carrelage ; types non coulants (thixotropes) pour les surfaces verticales et hybrides bitume-polyuréthane en complément. Des primaires distincts pour supports absorbants et non absorbants complètent le système."
+       ],
+       "uses": [],
+       "areas": [
+        "Toits et terrasses",
+        "Salles de bain, balcons et pièces humides",
+        "Fondations et voiles",
+        "Réservoirs et piscines",
+        "Détails de chéneaux cachés"
+       ],
+       "products": [
+        {
+         "no": "01",
+         "code": "LK-WP-601",
+         "name": "Famille membranes liquides",
+         "desc": "Un ensemble complet d'étanchéité : membranes PU 1K/2K, primaires et finitions aliphatiques.",
+         "specs": [],
+         "img": "a5772839c24e.jpg"
+        }
+       ],
+       "hAreas": "DOMAINES D'APPLICATION",
+       "hProducts": "FAMILLE DE PRODUITS",
+       "img": "db9f0c046d13.jpg",
+       "gallery": [],
+       "productPages": []
+      }
+     ]
+    }
+   ],
+   "colorChart": {
+    "kicker": "GRANULÉS EPDM",
+    "title": "Nuancier EPDM",
+    "lead": "24 coloris de granulés standard. L'impression et l'écran peuvent altérer la teinte réelle ; demandez un échantillon physique avant toute décision ferme.",
+    "swatches": [
+     {
+      "img": "3a6acc96ec7b.jpg",
+      "label": "Couleur 01"
+     },
+     {
+      "img": "972793529a32.jpg",
+      "label": "Couleur 02"
+     },
+     {
+      "img": "19fb9563536d.jpg",
+      "label": "Couleur 03"
+     },
+     {
+      "img": "db8e9742ec95.jpg",
+      "label": "Couleur 04"
+     },
+     {
+      "img": "54a56d7a0379.jpg",
+      "label": "Couleur 05"
+     },
+     {
+      "img": "2eaac72e6bd4.jpg",
+      "label": "Couleur 06"
+     },
+     {
+      "img": "a24d0c743b48.jpg",
+      "label": "Couleur 07"
+     },
+     {
+      "img": "d00a6168ebe0.jpg",
+      "label": "Couleur 08"
+     },
+     {
+      "img": "aaa3737d7215.jpg",
+      "label": "Couleur 09"
+     },
+     {
+      "img": "0497564f7121.jpg",
+      "label": "Couleur 10"
+     },
+     {
+      "img": "4baf1e025d09.jpg",
+      "label": "Couleur 11"
+     },
+     {
+      "img": "8f6b3e7972b6.jpg",
+      "label": "Couleur 12"
+     },
+     {
+      "img": "7a75818199ee.jpg",
+      "label": "Couleur 13"
+     },
+     {
+      "img": "e8a778f24c47.jpg",
+      "label": "Couleur 14"
+     },
+     {
+      "img": "53c657b52062.jpg",
+      "label": "Couleur 15"
+     },
+     {
+      "img": "9ca3b3bba7aa.jpg",
+      "label": "Couleur 16"
+     },
+     {
+      "img": "026b2994e330.jpg",
+      "label": "Couleur 17"
+     },
+     {
+      "img": "5555f0704398.jpg",
+      "label": "Couleur 18"
+     },
+     {
+      "img": "e74bbff0e3f8.jpg",
+      "label": "Couleur 19"
+     },
+     {
+      "img": "af86872c4528.jpg",
+      "label": "Couleur 20"
+     },
+     {
+      "img": "6301584010a1.jpg",
+      "label": "Couleur 21"
+     },
+     {
+      "img": "b134d7995d33.jpg",
+      "label": "Couleur 22"
+     },
+     {
+      "img": "c4ec918e7638.jpg",
+      "label": "Couleur 23"
+     },
+     {
+      "img": "fe4ad4259726.jpg",
+      "label": "Couleur 24"
+     }
+    ]
+   }
+  },
+  {
+   "no": "02",
+   "title": "Systèmes",
+   "desc": "Des systèmes conçus selon le cahier des charges, le budget et le support.",
+   "img": "92288cec129c.jpg",
+   "systems": [
+    {
+     "kicker": "SYSTÈMES",
+     "title": "Systèmes de sols sportifs",
+     "lead": "Des structures de sols sportifs en couches — primaire, noyau élastique, mastic et finition — du gymnase amateur à la piste d'athlétisme professionnelle.",
+     "paras": [
+      "En intérieur, un autolissant polyuréthane et une finition UV-stable sont appliqués sur un rouleau SBR ou un noyau SBR coulé en place ; l'épaisseur totale suit l'intensité d'usage. En athlétisme, le système sandwich (noyau SBR coulé + élastomère + EPDM épandu) et le système full-pour sont complétés par la structure drainante « combined » et le revêtement projeté économique.",
+      "Sur courts durs, les systèmes acryliques permettent de régler la vitesse de jeu via resurfaceur, couches cushion et finition char-gée. Le traçage est toujours la dernière couche ; le renouvelle-ment ne demande qu'une nouvelle finition."
+     ],
+     "hAreas": "DOMAINES D'APPLICATION",
+     "areas": [
+      "Courts de tennis",
+      "Basket-ball et volley-ball",
+      "Salles de sport couvertes",
+      "Pistes d'athlétisme",
+      "Courts de padel",
+      "Parcours de course et de marche",
+      "Aires de jeux pour enfants",
+      "Salles de fitness",
+      "Stands de tir"
+     ],
+     "img": "f7957c254b4d.jpg",
+     "features": {
+      "kicker": "SYSTÈMES DE SOLS SPORTIFS",
+      "title": "Caractéristiques du Système",
+      "features": [
+       "Structure primaire → noyau élastique → mastic → finition",
+       "Variantes sandwich, full-pour, combined et projetée",
+       "Noyau SBR/EPDM absorbant les chocs",
+       "Finitions aliphatiques non jaunissantes",
+       "Renouvellement économique des couleurs et tracés",
+       "Usage intérieur et extérieur"
+      ],
+      "paras": [
+       "Sur les courts de padel, la surface de jeu se construit sur 20 × 10 m au-dessus d'une dalle béton armé ou d'un enrobé drainant : gazon synthétique de 10 à 15 mm de hauteur de fibre, garni de sable de silice 0,2–0,5 mm. Les lés sont réunis par bande de jonction et adhésif polyuréthane bicomposant ; une pente de 0,5 à 1 % et un drainage périphérique évitent la stagnation d'eau et protègent la couche de collage."
+      ],
+      "gallery": [
+       "835906c351e9.jpg",
+       "03e1bfc7deb0.jpg",
+       "2479247dd997.jpg",
+       "cca91130babd.jpg"
+      ]
+     },
+     "sectionPages": [
+      {
+       "kicker": "SYSTÈMES DE SOLS SPORTIFS",
+       "title": "Coupes des Systèmes et Consommation",
+       "sub": "",
+       "sections": [
+        {
+         "name": "Système Salle Amateur — avec sous-couche",
+         "thickness": "Épaisseur du revêtement: ~6 mm",
+         "desc": "Salles de fitness et d'entraînement, courts de tennis couverts, crèches",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Colle caoutchouc",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "1 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Sous-couche caoutchouc",
+           "detail": "4 mm",
+           "code": "LK-AK-741",
+           "amount": "1 m²/m²"
+          },
+          {
+           "no": "04",
+           "name": "Mastic élastique",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0,80 – 1 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2,50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Peinture PU anti-UV",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,15 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        },
+        {
+         "name": "Système Salle Amateur — coulé sur place",
+         "thickness": "Épaisseur du revêtement: ~6 mm",
+         "desc": "",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Granulés SBR",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "2,60 – 2,86 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Liant caoutchouc",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "0,52 – 0,57 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Mastic élastique",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "2 – 2,50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2,50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Peinture PU anti-UV",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,15 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        }
+       ],
+       "footnote": "Les valeurs supposent un support de qualité et de planéité idéales ; elles varient sur surfaces dégradées ou irrégulières. Demandez la fiche technique (FT) à jour pour des valeurs contractuelles."
+      },
+      {
+       "kicker": "SYSTÈMES DE SOLS SPORTIFS",
+       "title": "",
+       "sub": "COUPES DES SYSTÈMES ET CONSOMMATION",
+       "sections": [
+        {
+         "name": "Système Salle Professionnelle",
+         "thickness": "Épaisseur du revêtement: ~10 mm",
+         "desc": "Basket-ball, volley-ball, handball et tous sports en salle",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Colle caoutchouc",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "1 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Sous-couche caoutchouc",
+           "detail": "8 mm",
+           "code": "LK-AK-741",
+           "amount": "1 m²/m²"
+          },
+          {
+           "no": "04",
+           "name": "Mastic élastique",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0,80 – 1 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2,50 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Peinture PU anti-UV",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,15 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        },
+        {
+         "name": "Système Piste de Course et de Marche",
+         "thickness": "Épaisseur du revêtement: ~18 mm",
+         "desc": "Voies piétonnes, aires de sport amateur et de jeux",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Granulés SBR",
+           "detail": "2,5 – 3,5 mm",
+           "code": "LK-GR-712",
+           "amount": "7,80 – 8,50 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Liant caoutchouc",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1,40 – 1,53 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Granulés EPDM",
+           "detail": "0,5 – 1,5 mm",
+           "code": "LK-GR-701",
+           "amount": "5 – 5,50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Liant EPDM",
+           "detail": "",
+           "code": "LK-PP-201",
+           "amount": "1 – 1,10 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Mastic élastique",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "1,50 – 2 kg/m²"
+          },
+          {
+           "no": "07",
+           "name": "Peinture PU anti-UV",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,25 – 0,35 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        }
+       ],
+       "footnote": "Les valeurs supposent un support de qualité et de planéité idéales ; elles varient sur surfaces dégradées ou irrégulières. Demandez la fiche technique (FT) à jour pour des valeurs contractuelles."
+      },
+      {
+       "kicker": "SYSTÈMES DE SOLS SPORTIFS",
+       "title": "",
+       "sub": "COUPES DES SYSTÈMES ET CONSOMMATION",
+       "sections": [
+        {
+         "name": "Système Combiné Perméable",
+         "thickness": "Épaisseur du revêtement: ~8+7 mm",
+         "desc": "Pistes d'athlétisme amateur, courts de tennis, aires de jeux",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Granulés SBR",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "5,20 – 5,72 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Liant caoutchouc",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1,04 – 1,14 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Granulés EPDM",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-702",
+           "amount": "7 – 7,70 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Liant EPDM",
+           "detail": "",
+           "code": "LK-PP-201",
+           "amount": "1,40 – 1,54 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        },
+        {
+         "name": "Système Économique par Pulvérisation",
+         "thickness": "Épaisseur du revêtement: ~13 mm",
+         "desc": "Pistes d'athlétisme amateur et voies de marche",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Liant caoutchouc",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1,60 – 1,75 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Granulés SBR",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "8 – 8,80 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Revêtement PU projeté",
+           "detail": "",
+           "code": "LK-PU-304",
+           "amount": "1,20 – 1,32 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Granulés EPDM",
+           "detail": "0,5 – 1,5 mm",
+           "code": "LK-GR-701",
+           "amount": "0,80 – 0,88 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Peinture de lignes",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "0,25 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        }
+       ],
+       "footnote": "Les valeurs supposent un support de qualité et de planéité idéales ; elles varient sur surfaces dégradées ou irrégulières. Demandez la fiche technique (FT) à jour pour des valeurs contractuelles."
+      },
+      {
+       "kicker": "SYSTÈMES DE SOLS SPORTIFS",
+       "title": "",
+       "sub": "COUPES DES SYSTÈMES ET CONSOMMATION",
+       "sections": [
+        {
+         "name": "Système Athlétisme Sandwich",
+         "thickness": "Épaisseur du revêtement: ~14 mm",
+         "desc": "Pistes et aires d'athlétisme professionnelles",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Liant caoutchouc",
+           "detail": "",
+           "code": "LK-PP-202",
+           "amount": "1,30 – 1,45 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Granulés SBR",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "6,50 – 7,20 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Mastic élastique",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "1,50 – 2,50 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2,20 – 2,45 kg/m²"
+          },
+          {
+           "no": "06",
+           "name": "Granulés EPDM",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-702",
+           "amount": "4 – 4,40 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        },
+        {
+         "name": "Système Athlétisme Coulé Intégral",
+         "thickness": "Épaisseur du revêtement: ~15 mm",
+         "desc": "Pistes et aires d'athlétisme professionnelles",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,20 – 0,30 kg/m²"
+          },
+          {
+           "no": "02",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "8 – 9 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Granulés SBR",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-711",
+           "amount": "7,30 – 8,30 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Granulés EPDM",
+           "detail": "1 – 3,5 mm",
+           "code": "LK-GR-702",
+           "amount": "4 – 5 kg/m²"
+          },
+          {
+           "no": "05",
+           "name": "Peinture de lignes",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "0,20 – 0,30 kg/m"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        }
+       ],
+       "footnote": "Les valeurs supposent un support de qualité et de planéité idéales ; elles varient sur surfaces dégradées ou irrégulières. Demandez la fiche technique (FT) à jour pour des valeurs contractuelles."
+      },
+      {
+       "kicker": "SYSTÈMES DE SOLS SPORTIFS",
+       "title": "",
+       "sub": "COUPES DES SYSTÈMES ET CONSOMMATION",
+       "sections": [
+        {
+         "name": "Système Stand de Tir",
+         "thickness": "Épaisseur du revêtement: ~10 mm",
+         "desc": "Sols de stands de tir couverts",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Colle caoutchouc",
+           "detail": "",
+           "code": "LK-PU-121",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Revêtement caoutchouc",
+           "detail": "",
+           "code": "LK-AK-731",
+           "amount": "—"
+          },
+          {
+           "no": "03",
+           "name": "Mastic élastique",
+           "detail": "",
+           "code": "LK-PU-502",
+           "amount": "0,80 – 1 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-303",
+           "amount": "2 – 2,50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        },
+        {
+         "name": "Système Court Dur Acrylique",
+         "thickness": "Épaisseur du revêtement: ~2–3 mm",
+         "desc": "Tennis, basket, volley, pistes de course et cyclables",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Resurfaceur acrylique",
+           "detail": "",
+           "code": "LK-AC-315",
+           "amount": "—"
+          },
+          {
+           "no": "03",
+           "name": "Couche cushion acrylique",
+           "detail": "",
+           "code": "LK-AC-312",
+           "amount": "—"
+          },
+          {
+           "no": "04",
+           "name": "Couche de finition acrylique",
+           "detail": "",
+           "code": "LK-AC-316",
+           "amount": "—"
+          },
+          {
+           "no": "05",
+           "name": "Peinture de lignes acrylique",
+           "detail": "",
+           "code": "LK-AC-319",
+           "amount": "—"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        }
+       ],
+       "footnote": "Les valeurs supposent un support de qualité et de planéité idéales ; elles varient sur surfaces dégradées ou irrégulières. Demandez la fiche technique (FT) à jour pour des valeurs contractuelles."
+      }
+     ]
+    },
+    {
+     "kicker": "SYSTÈMES",
+     "title": "Systèmes de sols industriels",
+     "lead": "Systèmes de sols industriels configurés selon le trafic, l'hygiène et le budget — de la peinture en film mince au mortier époxy.",
+     "paras": [
+      "Peinture époxy économique pour trafic léger ; systèmes primaire + couche intermédiaire + autolissant pour service moyen et inten-sif ; renfort en mortier époxy appliqué comme une chape pour fortes charges et supports dégradés. Où l'antidérapance compte, la finition est texturée en peau d'orange.",
+      "Les systèmes polyuréthane semi-souples réduisent le bruit de pas en mezzanines, hôtels et bureaux ; les projets décoratifs uti-lisent paillettes, quartz coloré et interlayers imprimés. Les zones de type hospitalier appellent les options antibactériennes et conductrices (ESD)."
+     ],
+     "hAreas": "DOMAINES D'APPLICATION",
+     "areas": [
+      "Sols d'usine",
+      "Entrepôts et magasins sous douane",
+      "Laboratoires et chambres froides",
+      "Usines agroalimentaires et pharmaceutiques",
+      "Parkings couverts",
+      "Hangars d'aviation",
+      "Ateliers automobiles et stations de lavage",
+      "Restaurants, cafés et bars",
+      "Chambres et espaces communs d'hôtel",
+      "Magasins, bureaux et halls d'exposition",
+      "Crèches et écoles maternelles"
+     ],
+     "img": "92288cec129c.jpg",
+     "features": {
+      "kicker": "SYSTÈMES DE SOLS INDUSTRIELS",
+      "title": "Caractéristiques du Système",
+      "features": [
+       "Niveaux peinture, autolissant, texturé et mortier",
+       "Option antidérapante peau d'orange",
+       "Structure semi-souple réduisant le bruit de pas",
+       "Paillettes décoratives et quartz coloré",
+       "Alternatives antibactériennes et ESD",
+       "Application dans toutes les teintes RAL"
+      ],
+      "paras": [],
+      "gallery": [
+       "f08f38f410ea.jpg",
+       "2ca2ee1f38be.jpg",
+       "a0b0e844a6f2.jpg",
+       "b80ab6c5b632.jpg"
+      ]
+     },
+     "sectionPages": [
+      {
+       "kicker": "SYSTÈMES DE SOLS INDUSTRIELS",
+       "title": "Coupes des Systèmes et Consommation",
+       "sub": "",
+       "sections": [
+        {
+         "name": "Système Semi-Souple",
+         "thickness": "Épaisseur du revêtement: ~2–3 mm",
+         "desc": "Mezzanines, hôtels, bureaux, magasins, restaurants, laboratoires, cantines",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Chape autolissante",
+           "detail": "",
+           "code": "",
+           "amount": "au choix"
+          },
+          {
+           "no": "02",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2,20 – 3,50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Peinture PU anti-UV",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,20 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        },
+        {
+         "name": "Système Décoratif",
+         "thickness": "Épaisseur du revêtement: ~2–3 mm",
+         "desc": "Magasins, cafés, restaurants, bureaux de vente, salons, studios TV",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Chape autolissante",
+           "detail": "",
+           "code": "",
+           "amount": "au choix"
+          },
+          {
+           "no": "02",
+           "name": "Primaire",
+           "detail": "",
+           "code": "LK-PU-402",
+           "amount": "0,15 – 0,25 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2,20 – 3,50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Peinture PU anti-UV",
+           "detail": "",
+           "code": "LK-PU-301",
+           "amount": "0,20 – 0,30 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        }
+       ],
+       "footnote": "Les valeurs supposent un support de qualité et de planéité idéales ; elles varient sur surfaces dégradées ou irrégulières. Demandez la fiche technique (FT) à jour pour des valeurs contractuelles."
+      },
+      {
+       "kicker": "SYSTÈMES DE SOLS INDUSTRIELS",
+       "title": "",
+       "sub": "COUPES DES SYSTÈMES ET CONSOMMATION",
+       "sections": [
+        {
+         "name": "Système Texturé Antidérapant",
+         "thickness": "Épaisseur du revêtement: ~2 mm",
+         "desc": "Parkings couverts, cuisines, zones de production alimentaire, entrepôts légers",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Mastic de rebouchage",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Primaire époxy",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0,30 – 0,40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Couche intermédiaire époxy",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "0,40 – 0,50 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Peinture époxy texturée",
+           "detail": "",
+           "code": "LK-EP-321",
+           "amount": "0,50 – 0,70 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        },
+        {
+         "name": "Système Autolissant Charge Moyenne",
+         "thickness": "Épaisseur du revêtement: ~2,5–3 mm",
+         "desc": "Sols d'usine, cuisines, magasins, zones alimentaires, entrepôts, chambres froides",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Mastic de rebouchage",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Primaire époxy",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0,30 – 0,40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Couche intermédiaire époxy",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "0,50 – 0,70 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Revêtement époxy autolissant",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "2 – 2,50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        }
+       ],
+       "footnote": "Les valeurs supposent un support de qualité et de planéité idéales ; elles varient sur surfaces dégradées ou irrégulières. Demandez la fiche technique (FT) à jour pour des valeurs contractuelles."
+      },
+      {
+       "kicker": "SYSTÈMES DE SOLS INDUSTRIELS",
+       "title": "",
+       "sub": "COUPES DES SYSTÈMES ET CONSOMMATION",
+       "sections": [
+        {
+         "name": "Système Polyuréthane Charge Moyenne",
+         "thickness": "Épaisseur du revêtement: ~2,5–3 mm",
+         "desc": "",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Mastic de rebouchage",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Primaire époxy",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0,30 – 0,40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Couche intermédiaire PU",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "0,50 – 0,70 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Revêtement PU autolissant",
+           "detail": "",
+           "code": "LK-PU-302",
+           "amount": "2 – 2,50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        },
+        {
+         "name": "Système Mortier Époxy Charge Lourde",
+         "thickness": "Épaisseur du revêtement: ~13 mm",
+         "desc": "Quais de chargement, zones de production lourde, supports très dégradés",
+         "rows": [
+          {
+           "no": "01",
+           "name": "Mastic de rebouchage",
+           "detail": "",
+           "code": "",
+           "amount": "—"
+          },
+          {
+           "no": "02",
+           "name": "Primaire époxy",
+           "detail": "",
+           "code": "LK-EP-405",
+           "amount": "0,30 – 0,40 kg/m²"
+          },
+          {
+           "no": "03",
+           "name": "Mortier époxy",
+           "detail": "10 mm",
+           "code": "LK-EP-324",
+           "amount": "23 – 33 kg/m²"
+          },
+          {
+           "no": "04",
+           "name": "Revêtement époxy autolissant",
+           "detail": "",
+           "code": "LK-EP-323",
+           "amount": "2,50 – 3,50 kg/m²"
+          }
+         ],
+         "head": [
+          "#",
+          "Couche",
+          "Consommation"
+         ]
+        }
+       ],
+       "footnote": "Les valeurs supposent un support de qualité et de planéité idéales ; elles varient sur surfaces dégradées ou irrégulières. Demandez la fiche technique (FT) à jour pour des valeurs contractuelles."
+      }
+     ]
+    },
+    {
+     "kicker": "SYSTÈMES",
+     "title": "Système d'étanchéité",
+     "lead": "Un système d'étanchéité monolithique : primaire, renfort des détails, membrane liquide en couches et finition protégée des UV.",
+     "paras": [
+      "En pièces humides, angles et évacuations sont renforcés à la bande, puis au moins deux couches de membrane liquide sont appliquées ; après vérification par test d'eau, le carrelage suit. En toiture et terrasse, membrane UV-stable ou finition aliphatique ; sur les grandes surfaces planes, la membrane en lés peut se combiner au détail liquide.",
+      "Les résines d'injection réactives à l'eau traitent les fuites sous pression et l'étanchéité côté négatif. L'étanchéité se planifie pen-dant la construction ; intervenir après coup est plus difficile et coûteux."
+     ],
+     "hAreas": "DOMAINES D'APPLICATION",
+     "areas": [
+      "Toitures et terrasses",
+      "Balcons",
+      "Salles de bain et pièces humides",
+      "Fondations et murs de soutènement",
+      "Réservoirs et piscines",
+      "Dalles de parking"
+     ],
+     "img": "db9f0c046d13.jpg",
+     "features": {
+      "kicker": "SYSTÈME D'ÉTANCHÉITÉ",
+      "title": "Caractéristiques du Système",
+      "features": [
+       "Bande de renfort et maille aux détails",
+       "Épaisseur de film contrôlée par couches",
+       "Vérification par test d'eau",
+       "Finition aliphatique sur surfaces exposées aux UV",
+       "Solution combinée avec membrane en lés",
+       "Étanchéité côté négatif par injection"
+      ],
+      "paras": [],
+      "gallery": [
+       "bbf078c011eb.jpg",
+       "47fc880b9248.jpg",
+       "276bdfbd9a27.jpg",
+       "e9ec373c7f25.jpg"
+      ]
+     },
+     "sectionPages": []
+    }
+   ]
+  },
+  {
+   "no": "03",
+   "title": "Domaines d'Application",
+   "desc": "Du sol sportif polyuréthane à la pierre décorative, de la piste d'athlétisme à l'époxy industriel.",
+   "img": "2b31d9a81b6a.jpg",
+   "pages": [
+    {
+     "kicker": "DOMAINES D'APPLICATION",
+     "title": "Domaines d'application",
+     "items": [
+      {
+       "title": "Sol sportif polyuréthane",
+       "paras": [
+        "Sols sportifs polyuréthane amortissants et sans joint, du gymnase à la salle de fitness.",
+        "Le système se monte sur primaire avec noyau SBR, mastic et autolissant polyuréthane ; lignes et couleur arrivent avec la finition. L'épaisseur suit l'intensité d'usage."
+       ],
+       "img": "cca91130babd.jpg"
+      },
+      {
+       "title": "Application de parquet",
+       "paras": [
+        "Pose sans joint et silencieuse de parquets massifs et stratifiés aux adhésifs PU élastiques.",
+        "Après mesure d'humidité et choix du primaire et de la spatule crantée, le parquet est posé sur l'adhésif élastique ; grincements et décollements sont évités, le sol chauffant reste sûr."
+       ],
+       "img": "9c80fafd0b40.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Sols sportifs acryliques",
+       "paras": [
+        "Applications acryliques à vitesse de jeu réglable, du court de tennis au terrain multisport.",
+        "Resurfaceur, couches cushion et finition chargée s'appliquent en séquence ; la teneur en sable fixe la vitesse, le traçage conclut. La tenue gel-dégel assure une longue vie extérieure."
+       ],
+       "img": "0bf913225e9d.jpg"
+      },
+      {
+       "title": "Application caoutchouc",
+       "paras": [
+        "Pose de dalles et rouleaux caoutchouc en salles de sport, crèches et zones industrielles.",
+        "Après préparation du support, l'adhésif PU bicomposant est peigné, les dalles posées en quinconce et marouflées ; la liaison réticule en huit heures environ."
+       ],
+       "img": "059d7d765e0f.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Piste d'athlétisme",
+       "paras": [
+        "Applications de pistes professionnelles en systèmes sandwich et full-pour.",
+        "Une surface élastomère et EPDM est appliquée sur un noyau SBR-liant posé au finisseur ; on obtient une piste compatible drainage, avec du grip par tous les temps."
+       ],
+       "img": "f7957c254b4d.jpg"
+      },
+      {
+       "title": "Applications d'adhésif gazon",
+       "paras": [
+        "Collage professionnel centré sur les jonctions pour terrains et gazon paysager.",
+        "Les lés sont centrés sur la bande, l'adhésif étalé uniformément et la jonction protégée pendant la réticulation ; les joints restent invisibles, le terrain n'ouvre pas trop tôt."
+       ],
+       "img": "2f32e326ff4a.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Application pierre décorative",
+       "paras": [
+        "Surfaces « moquette de pierre » drainantes et décoratives en granulats naturels et liant transparent.",
+        "Granulats et liant sont mélangés puis étalés à la spatule ; une fois réticulée, la surface est antidérapante, sans entretien et perméable à la pluie. Le choix des abords de piscine."
+       ],
+       "img": "f898b5cef6b4.jpg"
+      },
+      {
+       "title": "Système sandwich élastomère",
+       "paras": [
+        "Structure sportive à deux couches : noyau élastique, élastomère et surface EPDM colorée.",
+        "Les granulés EPDM sont épandus sur l'élastomère encore humide ; retour d'énergie et déformation sont réglés aux standards professionnels."
+       ],
+       "img": "37b52a86a06f.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Sol sportif sandwich",
+       "paras": [
+        "Applications du système sandwich pour pistes de stades et d'universités.",
+        "Une pose correcte et un entretien régulier assurent une longue durée de vie ; les zones usées se réparent localement, les couleurs suivent le projet."
+       ],
+       "img": "b9f3880361e1.jpg"
+      },
+      {
+       "title": "Application de court de padel",
+       "paras": [
+        "Pose, jonction et sablage du gazon synthétique d'un court de padel de 20 × 10 m.",
+        "Le court est un volume entièrement clos : fonds en verre trempé de 4 m, côtés en verre sur 3 m prolongés par un grillage ; le filet mesure 0,88 m au centre et 0,92 m aux poteaux, et les lignes de service sont tracées à 6,95 m du filet. La surface repose sur une dalle béton armé ou un enrobé drainant, avec une pente de 0,5 à 1 % et un drainage périphérique."
+       ],
+       "img": "0abf7083be32.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Application de granulés EPDM",
+       "paras": [
+        "Sols sûrs et à motifs pour aires de jeux et terrains, en granulés EPDM colorés.",
+        "Le mélange EPDM-liant est étalé et nivelé sur une sous-couche SBR ; l'épaisseur suit la hauteur de chute, et 24 couleurs permettent des motifs libres."
+       ],
+       "img": "2b31d9a81b6a.jpg"
+      },
+      {
+       "title": "Revêtement étanche",
+       "paras": [
+        "Applications d'étanchéité liquide sans joint, du toit aux pièces humides.",
+        "Angles et évacuations sont renforcés à la bande, la membrane appliquée en couches et vérifiée au test d'eau ; les surfaces exposées aux UV reçoivent une finition aliphatique."
+       ],
+       "img": "47fc880b9248.jpg"
+      }
+     ]
+    },
+    {
+     "kicker": "",
+     "title": "",
+     "items": [
+      {
+       "title": "Sols industriels polyuréthane et époxy",
+       "paras": [
+        "Applications de sols sans joint, hygiéniques et résistants, en usines, entrepôts et parkings.",
+        "Après grenaillage et primaire, un autolissant ou un revêtement texturé est appliqué ; on obtient une surface monolithique résistant aux chariots, aux produits chimiques et au nettoyage intensif."
+       ],
+       "img": "df1b57e11ccc.jpg"
+      },
+      {
+       "title": "Applications de coulée époxy",
+       "paras": [
+        "Coulées de tables, objets et surfaces décoratives en résine époxy transparente.",
+        "La coulée progresse du centre vers les bords, les bulles s'échappent d'elles-mêmes ; la profondeur se construit par couches, ponçage et polissage donnent l'éclat cristal."
+       ],
+       "img": "443fa1e42df7.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "no": "04",
+   "title": "Exportation",
+   "desc": "Les données de référence nécessaires à la planification du chargement et au choix de l'incoterm.",
+   "img": "4fd1859650ff.png",
+   "containers": {
+    "kicker": "EXPORT",
+    "title": "Dimensions des conteneurs",
+    "lead": "Dimensions intérieures et capacités de chargement des conteneurs secs ISO standard.",
+    "table": {
+     "head": [
+      "Conteneur",
+      "Intérieur (L × l × H)",
+      "Ouverture de porte (l × H)",
+      "Volume",
+      "Tare",
+      "Charge utile max.",
+      "Capacité de chargement"
+     ],
+     "rows": [
+      [
+       "20' DV — Standard",
+       "5.9 × 2.35 × 2.39 m",
+       "2.34 × 2.28 m",
+       "33.2 m³",
+       "2250 kg",
+       "28200 kg",
+       "10 × IBC (1000 L) · 80 × fûts (200 L)"
+      ],
+      [
+       "40' DV — Standard",
+       "12.03 × 2.35 × 2.39 m",
+       "2.34 × 2.28 m",
+       "67.7 m³",
+       "3750 kg",
+       "26730 kg",
+       "20 × IBC (1000 L) · 160 × fûts (200 L)"
+      ],
+      [
+       "40' HC — High Cube",
+       "12.03 × 2.35 × 2.7 m",
+       "2.34 × 2.58 m",
+       "76.4 m³",
+       "3900 kg",
+       "26580 kg",
+       "20 × IBC (1000 L) · 160 × fûts (200 L)"
+      ],
+      [
+       "45' HC — High Cube",
+       "13.56 × 2.35 × 2.7 m",
+       "2.34 × 2.58 m",
+       "86 m³",
+       "4800 kg",
+       "27700 kg",
+       "25 × IBC (1000 L) · 180 × fûts (200 L)"
+      ]
+     ]
+    },
+    "footnote": "Les valeurs sont indicatives et peuvent varier de quelques centimètres et de quelques centaines de kilogrammes selon le fabricant du conteneur et le transporteur. Confirmez les dimensions exactes et la charge utile maximale auprès de votre transporteur avant expédition.",
+    "gallery": [
+     "b80ab6c5b632.jpg",
+     "2ca2ee1f38be.jpg"
+    ]
+   },
+   "incoterms": {
+    "kicker": "EXPORT",
+    "title": "Incoterms 2020 — Conditions de livraison",
+    "lead": "Les règles internationales qui définissent où les frais et les risques passent du vendeur à l'acheteur.",
+    "table": {
+     "head": [
+      "Code",
+      "Description",
+      "Mode de transport",
+      "Fret",
+      "Assurance",
+      "Transfert du risque"
+     ],
+     "rows": [
+      [
+       "EXW",
+       "Ex Works — À l'usine",
+       "Tous modes",
+       "Acheteur",
+       "Non obligatoire",
+       "Dans les locaux du vendeur, dès que la marchandise est mise à disposition"
+      ],
+      [
+       "FCA",
+       "Free Carrier — Franco transporteur",
+       "Tous modes",
+       "Acheteur",
+       "Non obligatoire",
+       "À la remise au transporteur au lieu convenu"
+      ],
+      [
+       "FAS",
+       "Free Alongside Ship — Franco le long du navire",
+       "Maritime / fluvial",
+       "Acheteur",
+       "Non obligatoire",
+       "Une fois placée le long du navire au port d'embarquement"
+      ],
+      [
+       "FOB",
+       "Free On Board — Franco à bord",
+       "Maritime / fluvial",
+       "Acheteur",
+       "Non obligatoire",
+       "Lorsque la marchandise est à bord du navire au port d'embarquement"
+      ],
+      [
+       "CFR",
+       "Cost and Freight — Coût et fret",
+       "Maritime / fluvial",
+       "Vendeur",
+       "Non obligatoire",
+       "Lorsque la marchandise est à bord du navire au port d'embarquement"
+      ],
+      [
+       "CIF",
+       "Cost, Insurance and Freight — Coût, assurance et fret",
+       "Maritime / fluvial",
+       "Vendeur",
+       "Vendeur — couverture minimale (ICC C)",
+       "Lorsque la marchandise est à bord du navire au port d'embarquement"
+      ],
+      [
+       "CPT",
+       "Carriage Paid To — Port payé jusqu'à",
+       "Tous modes",
+       "Vendeur",
+       "Non obligatoire",
+       "À la remise au premier transporteur"
+      ],
+      [
+       "CIP",
+       "Carriage and Insurance Paid To — Port payé, assurance comprise",
+       "Tous modes",
+       "Vendeur",
+       "Vendeur — couverture étendue (ICC A)",
+       "À la remise au premier transporteur"
+      ],
+      [
+       "DAP",
+       "Delivered At Place — Rendu au lieu de destination",
+       "Tous modes",
+       "Vendeur",
+       "Non obligatoire",
+       "Au lieu de destination, prêt au déchargement sur le véhicule"
+      ],
+      [
+       "DPU",
+       "Delivered at Place Unloaded — Rendu déchargé",
+       "Tous modes",
+       "Vendeur",
+       "Non obligatoire",
+       "Au lieu de destination, une fois le déchargement terminé"
+      ],
+      [
+       "DDP",
+       "Delivered Duty Paid — Rendu droits acquittés",
+       "Tous modes",
+       "Vendeur",
+       "Non obligatoire",
+       "Au lieu de destination, prêt au déchargement sur le véhicule"
+      ]
+     ]
+    },
+    "footnote": "Incoterms® est une marque déposée de la Chambre de commerce internationale (ICC). Ce tableau est un résumé ; indiquez toujours le lieu convenu à côté de la règle dans le contrat (ex. « FOB Istanbul, Incoterms 2020 »)."
+   }
+  }
+ ],
+ "back": {
+  "tagline": "Votre partenaire en adhésifs, liants, revêtements de sol et étanchéité.",
+  "contact": [
+   {
+    "label": "ADRESSE",
+    "value": [
+     "Maslak Mah. Eski Büyükdere Cad. Giz 2000",
+     "Plaza No: 7/24, Sarıyer / İstanbul"
+    ]
+   },
+   {
+    "label": "TÉLÉPHONE",
+    "value": [
+     "+90 212 912 52 32"
+    ]
+   },
+   {
+    "label": "MOBILE",
+    "value": [
+     "+90 530 360 61 43"
+    ]
+   },
+   {
+    "label": "E-MAIL",
+    "value": [
+     "info@leonkimya.com"
+    ]
+   }
+  ],
+  "disclaimer": "Les informations de ce catalogue sont fournies à titre de présentation générale et ne remplacent pas une spécification technique. Demandez la fiche technique (FT) et la fiche de données de sécurité (FDS) à jour avant application. Les caractéristiques peuvent être modifiées sans préavis.",
+  "copyright": "Leon Kimya © 2026"
+ },
+ "_productList": [
+  "LISTE DES PRODUITS"
+ ]
+}

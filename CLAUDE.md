@@ -62,7 +62,11 @@ Bu yüzden aşağıdaki kurallar "iyi olur"dan ibaret değil; **ihlal edilmemeli
 `assets/img/` altındaki **görsellerin tamamı AI ile yeniden üretildi**
 (120 dosya: 116 WebP + favicon/og görseli)
 (kullanıcı onayı, 06.08.2026). Üçüncü taraf fotoğrafı kalmadı, telif riski
-kapandı. **Yeni görsel gelmeyecek**, bu iş bitti.
+kapandı.
+
+**09.2026 (v3 dalı):** tekrar eden görselleri kaldırmak için Higgsfield ile
+32 yeni görsel üretildi (`assets/img/v3-*.webp`, `katalog-uretici/img/v3-*.jpg`).
+Kural ve eşleme: `GORSEL-YENILEME.md`.
 
 `saraskimya-assets/` klasörü diskte duruyor (529 dosya) ama **gitignore'da**
 ve artık kullanılmıyor — yalnızca eski referans arşivi.
@@ -121,9 +125,12 @@ assets/
   img-sizes.js        OTOMATİK ÜRETİLİR — görsel ölçüleri (CLS için)
   build-pages.py      4 dil sayfası + sitemap.xml + sürüm damgası
   build-img-sizes.py  img-sizes.js'i üretir
-  img/                120 görsel (116 WebP + favicon/og), AI ile üretildi
+  img/                166 dosya (162 WebP + favicon/og), tamamı AI ile üretildi;
+                      v3-* = 09.2026 Higgsfield (bkz. GORSEL-YENILEME.md)
   katalog/            YAYINA ÇIKAN e-katalog PDF'leri (dört dil)
                       kökteki katalog/ ile KARIŞTIRMA — o taslak arşivi
+katalog-uretici/       v3 katalog PDF'lerinin KAYNAĞI (metin JSON + şablon +
+                       görseller + fontlar). .vercelignore'da; bkz. README
 yayinla.bat            Tek tık yayın (pull --rebase → push; canlıya GitHub bağlantısı alır)
 WHATSAPP-KURULUM.md    WhatsApp Business şablon kurulum rehberi
 robots.txt             Allow: / + Sitemap satırı (site aramaya açık)
@@ -178,10 +185,17 @@ Telefon alanları çift: `phone1`/`mobile` ekranda görünen biçimli hâl,
 güncelleyin; `whatsapp` da `telMobile` ile aynı hattı göstermeli.
 
 ### E-Katalog'u değiştirmek
-**Katalog 18.08.2026'dan beri CANLI** — dört dil, 69 sayfa, ~13 MB/dosya.
-Dosyalar `assets/katalog/` altında, `catalog.ready:true`.
+**Katalog 18.08.2026'dan beri CANLI** — dört dil, `assets/katalog/` altında,
+`catalog.ready:true`. v3 dalında katalog da yenilendi (09.2026): 63 sayfa,
+~9 MB/dosya (eski: 69 sayfa, ~13.6 MB).
 
-Yeni sürüm gelince: dosyaları aynı adlarla üzerine yaz →
+v3 kataloğun kaynağı **`katalog-uretici/`** (ayrıntı README'de): metin
+`content/<dil>.json`'da, stil `tools/catalog.css`'te, sayfa kurgusu
+`tools/render.py`'de. Değişiklikten sonra:
+`python katalog-uretici/tools/build.py --yayinla` → `python assets/build-pages.py`
+→ yayınla. Taşma denetimi derlemede yapılır (`taşma 0` görülmeli).
+
+Dışarıdan hazır PDF gelirse: dosyaları aynı adlarla üzerine yaz →
 `python assets/build-pages.py` → yayınla. Başka değişiklik gerekmez.
 
 Kapatmak gerekirse `SITE_BASE.catalog.ready` → `false`;
@@ -189,10 +203,10 @@ Kapatmak gerekirse `SITE_BASE.catalog.ready` → `false`;
 `build-pages.py` **hata verip durur** (`katalog_denetle()`) — sitede 404 dönen
 indirme düğmesi yayınlanmasın diye.
 
-Düğme header'da yalnızca ~1320px üstünde görünür; 1181–1319 bandında menü
-açık olduğu için yer yok, çekmecede duruyor. 1180 altında menü hamburger'a
-döndüğünden header'da yeniden görünür. `PDF` rozeti header'da gizli,
-çekmecede görünür.
+Düğme header'da 1400px üstünde görünür (v3); 1181–1400 bandında menü açık
+olduğu için yer yok — hero'daki katalog bağlantısında, ürünler bölümünde,
+E-Katalog bandında ve çekmecede duruyor. 1180 altında menü hamburger'a döner;
+860 altında header'dan tamamen çekilir. v3'te `PDF` rozeti header'da da görünür.
 
 ### Yeni dil eklemek
 1. `SITE_BASE.langs` dizisine ekle
@@ -264,25 +278,34 @@ Yayın durumu: Vercel → leon-kimya → Deployments.
 
 ---
 
-## 6. Sayfa yapısı (güncel sıra)
+## 6. Sayfa yapısı (güncel sıra — v3 "Endüstriyel Kurumsal", 09.2026)
 
-1. Üst bar — dil seçimi
-2. Yapışkan header — wordmark, mega menü, **E-Katalog indirme düğmesi**,
-   "Teklif Alın"
-   *(Kurumsal artık alt menüsüz; doğrudan `#kurumsal` bölümüne gider)*
-3. **Hero** — 6 ürün ailesini gezen slider + 4'lü özellik paneli
-4. **Ürünler & Sistemler** — 8'li kutucuk ızgarası
-5. **Uygulamalar (video/saha)** — 4 kart
-6. **Sistemler** — 3 sekme (spor / endüstriyel / su izolasyon)
-7. **Kurumsal** — görsel + metin
-8. **Uygulama alanları** — 14 kart, her biri detay katmanı açar
-9. **İletişim** — bilgi + form. Koyu kömür bandı, 26px yuvarlak köşe,
-   form beyaz kart. Form **çalışıyor**: `SITE_BASE.formEndpoint` →
-   `formsubmit.co` üzerinden e-postaya düşüyor.
-10. **İhracat** — konteyner ölçüleri + Incoterms 2020
+1. Üst bar — telefon, e-posta, adres, dil seçimi (koyu)
+2. Yapışkan header — logo, menü (**Ürünler = tam genişlik mega menü**,
+   Sistemler/İhracat = açılır liste), E-Katalog, "Teklif Alın".
+   Yükseklik kaydırınca DEĞİŞMEZ (içerik zıplamasın), yalnız gölge eklenir.
+3. **Hero** — bölünmüş: solda sabit mesaj (`STRINGS.hero` — kicker + başlık
+   + açıklama + iki düğme + katalog bağlantısı), sağda ürün ailelerini gezen
+   görsel slider (`SITE_BASE.categories`). Tek `<h1>` burada.
+4. **Değer bandı** — 4'lü özellik (`STRINGS.feat`)
+5. **Ürün aileleri** — 6 kart (`SITE_BASE.families`): ambalaj görseli, açıklama,
+   alt kalem bağlantıları. EPDM ayrı kart (footer'daki ayrımla aynı).
+6. **Sistemler** — koyu bölüm, 3 sekme (WAI-ARIA tabs). Her sekmede görsel +
+   galeri, metin, **katman kesiti** (SVG, `systems[].layers`) ve özellikler.
+7. **Uygulama alanları** — 14 kart, ilk ikisi geniş; her biri detay paneli açar
+8. **Kurumsal** — görsel + metin
+9. **E-Katalog bandı** — kehribar bant (katalog `ready:false` ise hiç basılmaz)
+10. **İletişim** — koyu bilgi kartı + harita, beyaz form kartı. Form
+    **çalışıyor**: `SITE_BASE.formEndpoint` → `formsubmit.co`.
+11. **İhracat** — konteyner ölçüleri + Incoterms 2020
     *(kullanıcı isteğiyle 05.08.2026'da sayfa sonuna, footer öncesine taşındı)*
-11. Footer
-+ Yüzen WhatsApp düğmesi · detay katmanı (`#dtl`)
+12. Footer
++ Yüzen WhatsApp düğmesi · detay paneli (`#dtl`, sağdan açılır; RTL'de soldan)
+
+**v3'te kaldırılanlar:** "Ürünler & Sistemler" kutucuk ızgarası (7 kutucuk) ve
+4'lü "Uygulamalar (saha)" kartları — içerikleri ürün aileleri, sistemler ve
+uygulama alanları bölümlerinde zaten vardı. Metinleri (`tiles`, `videos`)
+`i18n.js`'te duruyor; geri istenirse git geçmişinde v2 `split.js`'e bakın.
 
 **Kaldırılan bölümler:** Blog ve Markalar sayfadan tamamen çıkarıldı
 (`split.js` içinde artık `const blog` / `const brands` yok). Menüdeki Blog
@@ -313,6 +336,14 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 
 ### Diğer kurallar
 
+- **Aynı fotoğraf iki yerde kullanılmaz** (site ve katalog ayrı ayrı; 09.2026
+  kullanıcı isteği). Kart ile kendi paneli paylaşabilir; galeriye yalnız o
+  varlığa özgü görsel girer. Ürün kartlarında **her ürünün kendi görseli** var;
+  yalnız aynı kodlu ürün iki ailede listelenince (LK-PU-402) aynı görsel kalır.
+  Yeni varyant ambalajı üretilecekse kap, kapak ve renk ailesinin orijinal
+  görseliyle AYNI kalır, yalnız etiket (ürün adı + etiket rengi) değişir
+  (kullanıcı kuralı, 09.2026). Değişiklikten sonra
+  `python katalog-uretici/tools/gorsel_denetimi.py`.
 - Yorumlar **Türkçe**, kısa ve nedene odaklı
 - CSS'te **sabit renk yasak** — her şey `var(--token)`
 - Boş veri = bölüm hiç basılmaz (`has()` yardımcısı). **Bu davranışı bozma.**
@@ -321,7 +352,7 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 - Arapçada sayılar **Latin rakamla** yazılır (tablodaki ölçülerle tutarlılık için)
 - RTL'de gizleme `left:-9999px` ile YAPILMAZ — belgeyi yatayda büyütüp Arapça
   sayfayı boş gösteriyordu. `clip-path:inset(50%)` kullanılır. *(yaşanmış hata)*
-- **Header dolu — yeni öğe eklemeden önce ölç.** `--wrap` 1280px'de sabit,
+- **Header dolu — yeni öğe eklemeden önce ölç.** `--wrap` 1320px'de sabit (v3),
   yani başlık taşması ekran genişliğinden bağımsızdır; en dar durum
   **Fransızca** menüdür (en uzun etiketler). Bir düğme eklerken dört dilde
   birden `hdr__in` genişliğini ölçün. *(yaşanmış: E-Katalog düğmesi FR'de
@@ -357,6 +388,7 @@ kaydedilmesi gereken bir karar varsa aşağıdaki listeye taşı.
 - [x] **E-katalog — YAYINDA** (18.08.2026). Eski "üretilmeyecek" kararı
       geçersiz. Dört dil × **69 sayfa**, `assets/katalog/` altında,
       indirme düğmesi header ve çekmecede. Her dosya ~13 MB.
+      *(v3 dalında yenisi: 63 sayfa, ~9 MB — kaynak `katalog-uretici/`)*
       *(Kökteki `katalog/` KLASÖRÜ AYRI ŞEY: 16.08 taslak arşivi,
       `.vercelignore`'da, yayına çıkmıyor. Karıştırma.)*
 - [x] Blog — bölüm sayfadan kaldırıldı, yazı üretilmeyecek
@@ -475,3 +507,53 @@ hiçbiri değişmedi. Tek fark: içerik JS yüklenmeden önce de görünür.
   kullandığı için bölmek çoğaltma anlamına gelirdi.
 - **Bazı görsellerde `alt=""` bilinçli** — slider arka planı ve ürün kutucukları.
   Yanlarında aynı metin zaten yazılı; WCAG H67 bu durumda boş alt ister.
+- **v3 "Endüstriyel Kurumsal" tasarım** (09.2026, `tasarim-v3-profesyonel`
+  branch'i; kullanıcı isteğiyle **merge edilmedi**, önizleme için hazırlandı).
+  Bölünmüş hero korundu, geri kalan bölümler yeniden kurgulandı (bkz. bölüm 6).
+  - Renk: marka rengi aynı (`#D97706`). Birincil düğme artık **koyu yazılı**
+    (beyaz yazı kehribarda 3.2:1 kalıyordu, AA değil). `--mut` koyulaştırıldı.
+  - Font: başlıklar **Archivo**, gövde Inter; Arapça IBM Plex Sans Arabic.
+  - **Ürün görselleri değişmedi**: `prod-*`, `epdm-*` dosyaları ve
+    `details.*.productImgs` dizileri main ile birebir aynı. Yalnızca gösterim
+    değişti: kırpılmadan (`contain`), beyaz zeminde.
+  - Ürün dışı görseller: yeni dosya yok; konu dışı kalan kart görselleri mevcut
+    görsellerle değiştirildi (liste `SITE_BASE.applications` üstündeki notta).
+    Aynı fotoğrafı kullanan kartlar `pos`/`zoom` ile farklı kadrajlanıyor.
+  - `figure{margin:0}` eklendi — v2'de tarayıcının 40px varsayılan boşluğu
+    uygulama/saha kartlarını ve kurumsal görseli daraltıyordu.
+  - Arapçada telefon/e-posta `dir="ltr"` sarmalında (numara ters görünüyordu).
+  - Sistem katman kesiti şematiktir; katman sırası sistem metinlerinden alındı,
+    kalınlıklar temsilî (sayfada da not düşülüyor).
+- **v3 katalog** (09.2026, aynı dal; merge edilmedi). Kullanıcının kendi
+  üreticisine (`C:\Users\Dell\Desktop\Deneme\leon-katalog`, build.js) erişim
+  olmadığından içerik dört dilin mevcut PDF'lerinden JSON'a taşındı
+  (`katalog-uretici/tools/tasima/`), sonra yeni şablonla basıldı.
+  - Metin ve teknik veri eskisiyle aynı; kelime karşılaştırmasıyla doğrulandı
+    (`tasima/verify.py`). Arapça RTL metin glif sırasından geri kuruldu; 600+
+    dize sitenin i18n.js'indeki Arapçayla birebir eşleşti.
+  - Eski FR/AR PDF'lerinde taşma yüzünden basılmamış satırlar tamamlandı
+    (FR: iki ürünün raf ömrü + Standartlar dipnotu).
+  - **Polinflex** ibaresi yeni PDF'lerde yok (build.js'teki kararla aynı).
+    ISO / World Athletics / ITF satırları kullanıcı kararıyla aynen duruyor (E1).
+  - **Ürün görselleri değişmedi** (yalnız web için yeniden kodlandı). Konu dışı
+    iki fotoğraf mevcut görsellerle değişti: Taş Bağlayıcıları bandı (ev → taş
+    halı dokusu), Su İzolasyonu açılışı (aile bandıyla aynıydı).
+  - Font: TeX Gyre Heros (Helvetica ailesi, **TrueType'a çevrilmiş** — CFF/OTF
+    Chromium'da Type 3 gömülüyordu), Arapça DejaVu Sans. Etiketli PDF, yer
+    imleri, içindekiler ve ürün listesinde tıklanabilir sayfa bağlantıları.
+- **Görsel tekrarları kaldırıldı** (28.09.2026, aynı dal; merge edilmedi).
+  Kullanıcı isteği: "aynı resimler tekrar tekrar kullanılmasın". Sitede 37,
+  katalogda 26 fotoğraf birden çok yerde kullanılıyordu; kullanıcının
+  "başarısız" bulduğu iki görsel (sarı PU uygulaması, oyun alanı) de dahil.
+  - Higgsfield ile 32 görsel üretildi (`nano_banana_pro`, 2k); iki deneme
+    kontrolde elenip yeniden üretildi. Eşleme ve kural: `GORSEL-YENILEME.md`.
+  - Katalog: kapak tek görsel, aile/sistem galerileri kaldırıldı, 63 sayfa,
+    ~9 MB (yeni görseller daha ayrıntılı olduğu için 7 MB'tan büyüdü).
+  - Aynı gün ikinci adım: ürün kartlarındaki ambalaj tekrarları da kaldırıldı.
+    21 ambalaj görseli (`prod-lk-<kod>`) orijinal ambalajın kopyası olarak
+    üretildi — kap, kapak, renk aynı; yalnız etiketteki ürün adı ve etiket rengi
+    farklı. Uygulama fotoğrafı gösteren ürünlere (Press 213/214, iki PU astar,
+    Epoksi Zemin Boyası, EPDM/SBR granül, Likit Membran) ailesinin ambalajı,
+    görselsiz dört macuna metal kova + teneke seti verildi (kullanıcı kararı).
+    Katalogda 54 kartın hepsi görselli, 53 farklı görsel (LK-PU-402 iki ailede).
+  - Denetim: `python katalog-uretici/tools/gorsel_denetimi.py`.
