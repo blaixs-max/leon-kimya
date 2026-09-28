@@ -112,8 +112,8 @@
   ],
   "img": "cf0041b7b776.jpg",
   "gallery": [
-   "f08f38f410ea.jpg",
-   "b80ab6c5b632.jpg",
+   "v3-kalite-lab.jpg",
+   "v3-mamul-depo.jpg",
    "2ca2ee1f38be.jpg"
   ]
  },
@@ -274,7 +274,7 @@
    "no": "01",
    "title": "Ürünler",
    "desc": "Yapıştırıcıdan bağlayıcıya, zemin kaplamasından su izolasyonuna; altı ana ürün ailesi ve üç sistem başlığı.",
-   "img": "b367417ad9ff.jpg",
+   "img": "v3-malzeme-kompozisyon.jpg",
    "categories": [
     {
      "kicker": "ÜRÜNLER",
@@ -315,11 +315,7 @@
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
        "img": "6140cbd2aca8.jpg",
-       "gallery": [
-        "fa6cf4c4a588.jpg",
-        "9c80fafd0b40.jpg",
-        "d6a62063c06d.jpg"
-       ],
+       "gallery": [],
        "productPages": [
         {
          "page": 12,
@@ -492,11 +488,7 @@
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
        "img": "36e594718140.jpg",
-       "gallery": [
-        "11e1364e84e2.jpg",
-        "059d7d765e0f.jpg",
-        "2f32e326ff4a.jpg"
-       ],
+       "gallery": [],
        "productPages": [
         {
          "page": 15,
@@ -708,7 +700,7 @@
        "products": [],
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
-       "img": "2ca2ee1f38be.jpg",
+       "img": "v3-filtre-dolum.jpg",
        "gallery": [],
        "productPages": [
         {
@@ -810,7 +802,7 @@
       "Taş Bağlayıcıları",
       "EPDM Granüller"
      ],
-     "img": "11e1364e84e2.jpg",
+     "img": "v3-sbr-karistirma.jpg",
      "families": [
       {
        "page": 20,
@@ -839,12 +831,8 @@
        "products": [],
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
-       "img": "b367417ad9ff.jpg",
-       "gallery": [
-        "f291fd638965.jpg",
-        "e09c922f3eb3.jpg",
-        "2b31d9a81b6a.jpg"
-       ],
+       "img": "v3-epdm-oyun-alani.jpg",
+       "gallery": [],
        "productPages": [
         {
          "page": 21,
@@ -956,11 +944,8 @@
        "products": [],
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
-       "img": "11e1364e84e2.jpg",
-       "gallery": [
-        "059d7d765e0f.jpg",
-        "cca91130babd.jpg"
-       ],
+       "img": "v3-kaucuk-pres.jpg",
+       "gallery": [],
        "productPages": [
         {
          "page": 23,
@@ -1107,10 +1092,8 @@
        "products": [],
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
-       "img": "f898b5cef6b4.jpg",
-       "gallery": [
-        "e69ce003efd3.jpg"
-       ],
+       "img": "e69ce003efd3.jpg",
+       "gallery": [],
        "productPages": [
         {
          "page": 25,
@@ -1252,7 +1235,7 @@
        ],
        "hAreas": "UYGULAMA ALANLARI",
        "hProducts": "ÜRÜN AİLESİ",
-       "img": "2b31d9a81b6a.jpg",
+       "img": "v3-epdm-granul.jpg",
        "gallery": [],
        "productPages": []
       }
@@ -1266,7 +1249,7 @@
       "Akrilik Zemin Kaplamaları",
       "Epoksi Zemin Kaplamaları"
      ],
-     "img": "df1b57e11ccc.jpg",
+     "img": "v3-epoksi-uretim-holu.jpg",
      "families": [
       {
        "page": 29,
@@ -1296,12 +1279,8 @@
        "products": [],
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
-       "img": "78034a880a05.jpg",
-       "gallery": [
-        "b80ab6c5b632.jpg",
-        "2479247dd997.jpg",
-        "92288cec129c.jpg"
-       ],
+       "img": "v3-pu-gida-tesisi.jpg",
+       "gallery": [],
        "productPages": [
         {
          "page": 30,
@@ -1403,9 +1382,7 @@
        "products": [],
        "hAreas": "UYGULAMA ALANLARI",
        "img": "03e1bfc7deb0.jpg",
-       "gallery": [
-        "0bf913225e9d.jpg"
-       ],
+       "gallery": [],
        "productPages": [
         {
          "page": 32,
@@ -1547,12 +1524,8 @@
        "products": [],
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
-       "img": "92288cec129c.jpg",
-       "gallery": [
-        "f08f38f410ea.jpg",
-        "f08f38f410ea.jpg",
-        "a0b0e844a6f2.jpg"
-       ],
+       "img": "v3-epoksi-dokum.jpg",
+       "gallery": [],
        "productPages": [
         {
          "page": 35,
@@ -1671,10 +1644,8 @@
        "products": [],
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
-       "img": "1716c16e6d4b.jpg",
-       "gallery": [
-        "92288cec129c.jpg"
-       ],
+       "img": "v3-astar-rulo.jpg",
+       "gallery": [],
        "productPages": [
         {
          "page": 38,
@@ -1825,10 +1796,8 @@
        "products": [],
        "hUses": "KULLANIM VE DAYANIM",
        "hAreas": "UYGULAMA ALANLARI",
-       "img": "f08f38f410ea.jpg",
-       "gallery": [
-        "f08f38f410ea.jpg"
-       ],
+       "img": "v3-macun-catlak.jpg",
+       "gallery": [],
        "productPages": [
         {
          "page": 40,
@@ -1919,7 +1888,7 @@
      "items": [
       "Su İzolasyon Ürünleri"
      ],
-     "img": "db9f0c046d13.jpg",
+     "img": "276bdfbd9a27.jpg",
      "families": [
       {
        "page": 42,
@@ -1949,7 +1918,7 @@
        ],
        "hAreas": "UYGULAMA ALANLARI",
        "hProducts": "ÜRÜN AİLESİ",
-       "img": "db9f0c046d13.jpg",
+       "img": "v3-likit-membran.jpg",
        "gallery": [],
        "productPages": []
       }
@@ -2064,7 +2033,7 @@
    "no": "02",
    "title": "Sistemler",
    "desc": "Şartnameye, bütçeye ve alt yapıya göre kurgulanan sistemler.",
-   "img": "92288cec129c.jpg",
+   "img": "v3-spor-zemin-kesit.jpg",
    "systems": [
     {
      "kicker": "SİSTEMLER",
@@ -2101,12 +2070,7 @@
       "paras": [
        "Padel kortlarında oyun yüzeyi 20 × 10 m'lik alanda, betonarme veya gözenekli asfalt alt yapı üzerine kurulur: 10–15 mm hav yüksekliğinde suni çim ve 0,2–0,5 mm silis kumu dolgusu. Çim şeritleri ek bandı ve iki komponentli poliüretan çim yapıştırıcısıyla birleştirilir; alt yapıdaki %0,5–1 eğim ile çevre drenajı suyun yüzeyde birikmesini ve yapışma katmanının zarar görmesini önler."
       ],
-      "gallery": [
-       "835906c351e9.jpg",
-       "03e1bfc7deb0.jpg",
-       "2479247dd997.jpg",
-       "cca91130babd.jpg"
-      ]
+      "gallery": []
      },
      "sectionPages": [
       {
@@ -2685,7 +2649,7 @@
       "Mağaza, ofis ve fuar alanı",
       "Anaokulu ve kreş"
      ],
-     "img": "92288cec129c.jpg",
+     "img": "v3-depo-forklift.jpg",
      "features": {
       "kicker": "ENDÜSTRİYEL ZEMİN SİSTEMLERİ",
       "title": "Sistem Özellikleri",
@@ -2698,12 +2662,7 @@
        "Tüm RAL renklerinde uygulama"
       ],
       "paras": [],
-      "gallery": [
-       "f08f38f410ea.jpg",
-       "2ca2ee1f38be.jpg",
-       "a0b0e844a6f2.jpg",
-       "b80ab6c5b632.jpg"
-      ]
+      "gallery": []
      },
      "sectionPages": [
       {
@@ -2989,7 +2948,7 @@
       "Su deposu ve havuz",
       "Otopark döşemesi"
      ],
-     "img": "db9f0c046d13.jpg",
+     "img": "e9ec373c7f25.jpg",
      "features": {
       "kicker": "SU İZOLASYON SİSTEMİ",
       "title": "Sistem Özellikleri",
@@ -3002,12 +2961,7 @@
        "Enjeksiyonla negatif yön yalıtımı"
       ],
       "paras": [],
-      "gallery": [
-       "bbf078c011eb.jpg",
-       "47fc880b9248.jpg",
-       "276bdfbd9a27.jpg",
-       "e9ec373c7f25.jpg"
-      ]
+      "gallery": []
      },
      "sectionPages": []
     }
@@ -3017,7 +2971,7 @@
    "no": "03",
    "title": "Uygulama Alanları",
    "desc": "Poliüretan spor zemininden dekoratif taşa, atletizm parkurundan endüstriyel epoksiye.",
-   "img": "2b31d9a81b6a.jpg",
+   "img": "v3-spor-kompleksi.jpg",
    "pages": [
     {
      "kicker": "UYGULAMA ALANLARI",
@@ -3029,7 +2983,7 @@
         "Kapalı salonlardan fitness alanlarına; darbe emici, derzsiz poliüretan spor zeminleri.",
         "Astar üzerine SBR çekirdek, macun ve self-levelling poliüretan katmanlarıyla kurulan sistem; saha çizgileri ve renk son katla tamamlanır. Basketboldan çok amaçlı salonlara, kullanım yoğunluğuna göre kalınlık seçilir."
        ],
-       "img": "cca91130babd.jpg"
+       "img": "2479247dd997.jpg"
       },
       {
        "title": "Zemin (Parke) Uygulaması",
@@ -3059,7 +3013,7 @@
         "Kauçuk karo ve ruloların spor salonu, kreş ve endüstriyel alanlara montajı.",
         "Yüzey hazırlığı sonrası çift komponentli poliüretan yapıştırıcı taraklanır, karolar şaşırtmalı yerleştirilir ve rulo ile bastırılır; bağlantı yaklaşık sekiz saatte kürleşir."
        ],
-       "img": "059d7d765e0f.jpg"
+       "img": "v3-kaucuk-spor-salonu.jpg"
       }
      ]
     },
@@ -3073,7 +3027,7 @@
         "Sandviç ve tam dökme sistemlerle profesyonel koşu pisti uygulamaları.",
         "Finişerle serilen SBR-bağlayıcı çekirdek üzerine elastomer ve EPDM yüzey uygulanır; drenajla uyumlu, her hava koşulunda tutuş sağlayan bir pist yüzeyi elde edilir."
        ],
-       "img": "f7957c254b4d.jpg"
+       "img": "v3-stadyum-start.jpg"
       },
       {
        "title": "Çim Yapıştırıcı Uygulamaları",
@@ -3095,7 +3049,7 @@
         "Şeffaf bağlayıcıyla doğal taş granüllerinden su geçirgen, dekoratif 'taş halı' yüzeyler.",
         "Granül ve bağlayıcı homojen karıştırılıp mala ile serilir; kürlenince kaymaz, bakım gerektirmeyen ve yağmur suyunu geçiren bir yüzey oluşur. Havuz çevresi ve yürüyüş yollarının tercihidir."
        ],
-       "img": "f898b5cef6b4.jpg"
+       "img": "v3-tas-hali-havuz.jpg"
       },
       {
        "title": "Elastomer Sandviç Sistem",
@@ -3103,7 +3057,7 @@
         "Elastik çekirdek, elastomer ve renkli EPDM yüzeyden oluşan çift katmanlı spor zemin kurgusu.",
         "Elastomer katman henüz ıslakken EPDM granül serpilir; enerji geri kazanımı ve deformasyon değerleri profesyonel kullanım standartlarına göre ayarlanır."
        ],
-       "img": "37b52a86a06f.jpg"
+       "img": "v3-pist-ayakkabi.jpg"
       }
      ]
     },
@@ -3117,7 +3071,7 @@
         "Stadyum ve üniversite pistleri için sandviç sistem uygulamaları.",
         "Doğru uygulama ve düzenli bakımla uzun hizmet ömrü sunar; aşınan bölgeler lokal onarımla yenilenir, renk kombinasyonları projeye göre kurgulanır."
        ],
-       "img": "b9f3880361e1.jpg"
+       "img": "v3-pist-viraj.jpg"
       },
       {
        "title": "Padel Kort Uygulaması",
@@ -3125,7 +3079,7 @@
         "20 × 10 m padel kortlarında suni çim serimi, ek bandıyla birleştirme ve silis kumu dolgusu.",
         "Kort tamamen kapalı bir hacimdir: arka duvarlar 4 m temperli cam, yan duvarlar 3 m cam ve devamında tel örgüdür; file ortada 0,88 m, direklerde 0,92 m yüksekliğinde olup servis çizgileri fileye 6,95 m mesafeye çekilir. Zemin betonarme veya gözenekli asfalt üzerine kurulur; %0,5–1 eğim ve çevre drenajı su tahliyesini sağlar."
        ],
-       "img": "0abf7083be32.jpg"
+       "img": "v3-padel-kort.jpg"
       }
      ]
     },
@@ -3139,7 +3093,7 @@
         "Renkli EPDM granülle çocuk oyun alanları ve spor sahalarında güvenli, desenli zeminler.",
         "SBR alt katman üzerine EPDM-bağlayıcı karışımı serilir ve düzlenir; katman kalınlığı düşme yüksekliğine göre belirlenir, 24 renkle serbest desen kurgulanır."
        ],
-       "img": "2b31d9a81b6a.jpg"
+       "img": "v3-epdm-mala.jpg"
       },
       {
        "title": "Su Geçirmez Kaplama",
@@ -3161,7 +3115,7 @@
         "Fabrika, depo ve otoparklarda hijyenik, yüke dayanıklı derzsiz zemin uygulamaları.",
         "Kumlama ve astar sonrası self-levelling veya tekstürlü kaplama uygulanır; forklift trafiğine, kimyasallara ve yoğun temizliğe dayanıklı tek parça bir yüzey elde edilir."
        ],
-       "img": "df1b57e11ccc.jpg"
+       "img": "v3-otopark.jpg"
       },
       {
        "title": "Epoksi Döküm Uygulamaları",
@@ -3179,7 +3133,7 @@
    "no": "04",
    "title": "İhracat",
    "desc": "Yükleme planlaması ve teslim şekli seçimi için ihtiyacınız olan referans bilgiler.",
-   "img": "4fd1859650ff.png",
+   "img": "v3-konteyner-limani.jpg",
    "containers": {
     "kicker": "İHRACAT",
     "title": "Konteyner Ölçüleri",
@@ -3235,8 +3189,7 @@
     },
     "footnote": "Değerler gösterge niteliğindedir; konteyner üreticisine ve taşıyıcıya göre birkaç santimetre ve birkaç yüz kilogram değişebilir. Kesin ölçü ve azami yük için sevkiyat öncesi taşıyıcınızdan teyit alın.",
     "gallery": [
-     "b80ab6c5b632.jpg",
-     "2ca2ee1f38be.jpg"
+     "v3-konteyner-yukleme.jpg"
     ]
    },
    "incoterms": {

@@ -249,21 +249,14 @@ cats = parts[0]['categories']; TCATS = TP[0]['categories']
 LOGO_INK = 'img/logo-ink.png'
 SITE_URL = C['site'] or 'leonkimya.com'
 
-# konu dışı veya art arda tekrar eden ürün DIŞI fotoğraflar — ürün görsellerine dokunulmaz
-def swap_images():
-    fam = T['parts'][0]['categories'][1]['families'][2]          # Taş bağlayıcıları: ev fotoğrafı yerine taş halı dokusu
-    if fam.get('img') == 'f898b5cef6b4.jpg':
-        fam['img'] = 'e69ce003efd3.jpg'
-        fam['gallery'] = [g for g in fam.get('gallery', []) if g != 'e69ce003efd3.jpg']
-    cat = T['parts'][0]['categories'][4]                          # Su izolasyonu açılışı: aile bandıyla aynı fotoğraftı
-    if cat.get('img') == 'db9f0c046d13.jpg':
-        cat['img'] = '276bdfbd9a27.jpg'
-swap_images()
-# 1) KAPAK
-mos = ['b9f3880361e1.jpg', '78034a880a05.jpg', 'fa6cf4c4a588.jpg', '2b31d9a81b6a.jpg']
+# GÖRSEL KURALI (09.2026): ürün DIŞI her fotoğraf katalogda yalnız bir yerde
+# kullanılır. Yerleri content/tr.json'da (img alanları) ve aşağıdaki birkaç sabitte;
+# ürün kartlarının görsellerine dokunulmaz, o fotoğraflar başka yerde tekrar edilmez.
+# Aile ve sistem galerileri bu yüzden kaldırıldı — hepsi başka sayfaların tekrarıydı.
+# 1) KAPAK — tek görsel (eski dört parçalı mozaiğin karelerinin hepsi içeride tekrar ediyordu)
 fams_cover = ''.join(f'<span>{e(c["title"])}</span>' for c in cats)
 OUT.append(f'''<section class="flow" data-kind="full"><div class="page full cover">
-<div class="mos">{''.join(img(m) for m in mos)}</div>
+<div class="mos one">{img('v3-pu-uygulama.jpg')}</div>
 <img class="lgc" src="img/logo-white.png" alt="Leon Kimya">
 <div class="yr">{e(C['edition'])}</div>
 <div class="cb"><div class="bar"></div><h1>{e(C['title'])}</h1><div class="tag">{e(C['tagline'])}</div></div>
@@ -307,7 +300,7 @@ flow('std', [band_blk(tcorp['img'], corp['kicker'], corp['title'], 'corp'),
 items = ''.join(f'<div class="why-it"><div class="i">{e(it["no"])}</div><div><h3>{e(it["title"])}</h3><p>{e(it["text"])}</p></div></div>' for it in why['items'])
 flow('std', [ttl_blk(why['kicker'], why['title'], 'why', lead=why['lead']),
              f'<div class="blk why-grid">{items}</div>',
-             '<div class="blk grow">' + img('2ca2ee1f38be.jpg', 'fillimg') + '</div>'],
+             '<div class="blk grow">' + img('v3-yukleme-rampasi.jpg', 'fillimg') + '</div>'],
      run=why['kicker'])
 # 5) STANDARTLAR
 sb = [ttl_blk(std['kicker'], std['title'], 'std', lead=std['lead'])]
@@ -370,9 +363,6 @@ for ci, (c, tc) in enumerate(zip(cats, TCATS)):
             u = f'<div><div class="lbl">{e(f.get("hUses", ""))}</div>{chk(f["uses"])}</div>' if f['uses'] else ''
             a = f'<div><div class="lbl">{e(f.get("hAreas", ""))}</div>{chips(f["areas"])}</div>' if f['areas'] else ''
             bl.append(f'<div class="blk ua{"" if (u and a) else " one"}">{u}{a}</div>')
-        gal = [g for g in (tf.get('gallery') or []) if g != tf.get('img')]
-        if gal:
-            bl.append(f'<div class="blk gal g{min(len(gal), 3)}">' + ''.join(img(g) for g in gal[:3]) + '</div>')
         # ürünler
         groups = []
         if f['products']:
@@ -419,8 +409,6 @@ for si, (s, ts) in enumerate(zip(p1['systems'], tp1['systems'])):
     fb = f'<div class="lbl">{e(ft["title"])}</div>{chk(ft["features"], "c2")}'
     if ft['paras']: fb += '<div style="margin-top:3mm">' + paras(ft['paras']) + '</div>'
     bl.append(sech(ft['kicker'], ft['title']) if False else f'<div class="blk feat">{fb}</div>')
-    if tft['gallery']:
-        bl.append(f'<div class="blk gal g4s">' + ''.join(img(g) for g in tft['gallery'][:4]) + '</div>')
     if s['sectionPages']:
         sp0 = s['sectionPages'][0]
         bl.append(sech(s['title'], sp0['title']))
@@ -500,7 +488,7 @@ def inco_table():
     return f'<table class="t inco"><thead><tr>{th}</tr></thead><tbody>{rows}</tbody></table>'
 eb = [ttl_blk(ct['kicker'], XP['cTitle'], 'cont', lead=XP['cSub']),
       f'<div class="blk">{cont_table()}<p class="note" style="margin-top:2.6mm">{e(XP["cNote"])}</p></div>',
-      '<div class="blk strip s2">' + ''.join(img(g) for g in tp3['containers']['gallery'][:2]) + '</div>',
+      f'<div class="blk strip s{min(len(tp3["containers"]["gallery"]), 2)}">' + ''.join(img(g) for g in tp3['containers']['gallery'][:2]) + '</div>',
       '<div class="blk pb"></div>',
       ttl_blk(it_['kicker'], XP['iTitle'], 'inco', lead=XP['iSub']),
       f'<div class="blk split">{inco_table()}</div>',
@@ -524,7 +512,7 @@ for ci_, cinfo in enumerate(bk['contact']):
         else: vals.append(e(v))
     cells += f'<div><div class="l">{e(cinfo["label"])}</div><div class="v">{"<br>".join(vals)}</div></div>'
 OUT.append(f'''<section class="flow" data-kind="full"><div class="page full back">
-{img('cf0041b7b776.jpg', 'bgt')}<div class="shade"></div>
+{img('v3-kimya-tesisi.jpg', 'bgt')}<div class="shade"></div>
 <div class="inner">
 <img class="lgb" src="img/logo-amber.png" alt="Leon Kimya">
 <div class="tg">{e(bk['tagline'])}</div><div class="bar"></div>

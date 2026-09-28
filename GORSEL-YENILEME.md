@@ -1,88 +1,79 @@
 # Görsel yenileme — tekrarların kaldırılması (09.2026, v3 dalı)
 
-**Durum:** 32 görsel Higgsfield'da üretildi, **indirilmeyi bekliyor.**
-Çalışma alanı Higgsfield dosya sunucusuna (`d8j0ntlcm91z4.cloudfront.net`)
-erişemiyor (403). Dosyalar kullanıcının bilgisayarından (İndirilenler) ya da
-sohbete ek olarak alınacak. Entegrasyon bitince bu dosya "yapıldı" notuyla
-kısaltılır.
+**Durum: tamamlandı** (28.09.2026, `tasarim-v3-profesyonel`, merge edilmedi).
 
-**Kural:** sitede ve her katalogda bir fotoğraf **yalnız bir yerde** kullanılır.
-Kart ile kendi detay paneli aynı görseli paylaşabilir. Galeriye yalnız o
-varlığa özgü görsel girer; yoksa galeri boş kalır. Görsel olarak neredeyse
-aynı iki kare (ör. `vid-membrane-v2` / `water-main-v2`) de tekrar sayılır.
-**Ürün görselleri (`prod-*`, `epdm-*`, `productImgs`, katalog ürün kartları)
-değişmez** — yalnız başka yerlerdeki kopya kullanımları kaldırılır.
+## Kural
 
-Higgsfield projesi: `Leon Kimya — Site ve Katalog Görselleri`
-(`22683b71-aeb5-4573-9f80-eaf2f619c6f3`). Model `nano_banana_pro` (2k).
-İndirilen dosya adı `hf_20260928_<saat>_<iş kimliği>.png` biçiminde; eşleme
-iş kimliğiyle yapılır.
+- Ürün dışı bir fotoğraf **sitede tek bir varlıkta, katalogda tek bir yerde** kullanılır.
+  Site ve katalog ayrı mecralar; aynı fotoğraf ikisinde birer kez olabilir.
+- Kart ile kendi paneli (uygulama kartı + `#detay` paneli, sistem sekmesi + paneli)
+  aynı görseli paylaşır. Galeriye yalnız o varlığa özgü görsel girer; yoksa galeri boş.
+- Neredeyse aynı iki kare de tekrar sayılır (`ind-roller`/`ind-texture` bayt bayt aynı,
+  `vid-membrane-v2`/`water-main-v2`, katalogda `db9f0c…`/`276bdf…`, `b9f388…`/`f7957c…`).
+- **Ürün kartları kuralın dışında** (sitede `productImgs`, katalogda `.pic`): kullanıcı ürün
+  görsellerinin değişmesini istemedi. Aynı ambalaj birkaç varyantta tekrar ediyor
+  (katalogda 50 kart / 39 görsel). Ürün kartındaki bir fotoğraf başka yerde kullanılmaz.
 
-| N | İş kimliği | Konu | Site | Katalog |
-|---|---|---|---|---|
-| 01 | 85d5fb69 | Kehribar PU self-levelling uygulaması (ekteki başarısız görselin yenisi) | Hero: kaplama | Kapak (tek görsel) |
-| 02 | 25732c69 | EPDM dökme oyun alanı (ekteki başarısız görselin yenisi) | Hero: bağlayıcı | Dökme Bağlayıcılar bandı |
-| 03 | 724fd638 | Kalite laboratuvarı, çekme testi | — | Kurumsal şerit |
-| 04 | bcd8af53 | Mamul deposu (kova, varil, IBC) | — | Kurumsal şerit |
-| 05 | a1b11108 | Yükleme rampası, akşam | — | Neden Leon sayfası |
-| 06 | c2a30c2b | Konteyner limanı (4:3) | — | Bölüm 04 açılışı |
-| 07 | 1f5fdb58 | Konteyner içi yükleme | — | Konteyner ölçüleri sayfası |
-| 08 | bd5bdc91 | Malzeme natürmortu (4:3) | — | Bölüm 01 açılışı |
-| 09 | c9176305 | Spor zemini katman kesiti numunesi (4:3) | Spor sistemi galerisi | Bölüm 02 açılışı |
-| 10 | b96e67b3 | Spor kompleksi, havadan (4:3) | Spor sistemi galerisi | Bölüm 03 açılışı |
-| 11 | 7c51c519 | SBR granül + bağlayıcı karıştırma | `dokme` paneli | Bağlayıcılar açılışı |
-| 12 | ea66d086 | Parlak epoksi üretim holü | Endüstriyel sistem (sekme + `endSis`) | Zemin Kaplamaları açılışı |
-| 13 | 4191ba34 | Filtre kapağına PU dolum | `filtre` paneli | Filtre bandı |
-| 14 | f027961b | EPDM yüzeyi mala ile düzleme | `uygEpdm` | EPDM uygulaması |
-| 15 | 6169d775 | Kauçuk karo presi | `press` paneli | Press bandı |
-| 16 | 4390ce8e | EPDM granül makro | `epdm` paneli | EPDM bandı |
-| 17 | 66fab42f | Astar rulosu yakın plan | Hero: astar | Astarlar bandı |
-| 18 | 2413a5da | Çatlağa tamir macunu | `macun` paneli | Macunlar bandı |
-| 19 | 3a2c326e | Spor salonu kauçuk zemin montajı | `uygKaucuk` | Kauçuk uygulaması |
-| 20 | 9e37d067 | Havuz kenarı taş halı | `tas` paneli | Dekoratif Taş uygulaması |
-| 21 | 88ef900b | Pistte çivili ayakkabı (ilk deneme `4dbf66b7` elendi) | `uygElastomer` | Elastomer Sandviç uygulaması |
-| 22 | 9c950dda | Boş stadyum, start blokları | `uygAtletizm` | Atletizm uygulaması |
-| 23 | 028a241a | Kapalı padel kortu | `uygPadel` | Padel uygulaması |
-| 24 | b60fd6c6 | Depoda forklift, arkadan (ilk deneme `0e820b81` elendi) | `uygEndustri` | Endüstriyel sistem bandı |
-| 25 | fe317299 | Kimya üretim tesisi, reaktörler | — | Arka kapak |
-| 26 | 756f2d9e | Gıda tesisi, PU çimento zemin | `puZemin` paneli | PU bandı |
-| 27 | 4839f3ef | Epoksi self-levelling dökümü | `epZemin` paneli | Epoksi bandı |
-| 29 | 4dfb3dda | Pist virajı, yukarıdan | `uygSandvic` | Sandviç uygulaması |
-| 30 | 508b73ca | Akrilik tenis kortu yenileme | `akZemin` paneli | — |
-| 31 | 6402b47d | Terasta likit membran | `suUrun` paneli | — |
-| 32 | 3befd722 | Geniş döşemeye astar | `astar` paneli | — |
-| 33 | ebd22d70 | Otopark katı, PU kaplama | `uygEndustri` galerisi | Endüstriyel uygulaması |
+Denetim (katalog kısmı için önce `build.py`):
 
-## Site — mevcut görsellerin yeni yerleri
+```bash
+python katalog-uretici/tools/gorsel_denetimi.py     # "SORUN YOK" görmelisiniz
+```
 
-- Hero: `tile-parquet-v2` ve `cat-water-v2` yerinde kalır.
-- Spor sistemi: `sys-sport2-v2` (yalnız burada). Su sistemi: `water-main-v2`,
-  galeri `water-app1`, `tile-water-v2`. Endüstriyel galeri: `ind-apply`,
-  `tile-industrial-v2`.
-- Uygulamalar: `uygSporPu` `tile-sport-v2` · `uygParke` `app-parquet-v2` ·
-  `uygAkrilik` `sport-tennis2` · `uygKaucuk` galeri `sport-gym` ·
-  `uygCim` `kaucuk-kapak` + `app-turf-v2` · `uygTas` `stone-sample` +
-  `app-stone-v2` · `uygPadel` galeri `app-padel`, `app-padel-02`, `sys-padel` ·
-  `uygEpdm` galeri `app-playground-v2`, `tile-binder-v2`, `tile-rubber-v2` ·
-  `uygSu` `water-app3` · `uygEndustri` galeri `ind-machines` ·
-  `uygDokum` `app-resin-v2` + `resin-table`, `resin-wave`, `tile-resin-v2`.
-- Paneller: `parke` `cat-parquet-v2` · `pvc` `pvc-apply` + `pvc-hall` ·
-  `kaucuk` `rubber-tiles` + `tile-turf-v2` · `epZemin` galeri `ind-texture` ·
-  `astar` galeri `cat-primer-v2`.
-- Kullanımdan çıkanlar: `cat-coating-v2`, `cat-binder-v2` (ekteki başarısız
-  iki görsel), `app-rubber-v2`, `ind-hall`, `ind-roller`, `ind-service`,
-  `sport-05`, `sport-tennis`, `vid-membrane-v2`, `vid-parquet-v2`,
-  `vid-track2-v2`, `water-app2` — ya tekrar ya da başka bir karenin neredeyse
-  aynısı. Galerilerdeki ürün görseli kopyaları (`prod-kaucuk-05`,
-  `epdm-insitu`) çıkarılır; ürün yuvalarında kalırlar.
+## Yeni görseller
 
-## Katalog — mevcut görsellerin yerleri
+Higgsfield, `nano_banana_pro` (2k), proje `Leon Kimya — Site ve Katalog Görselleri`.
+Orijinal PNG'ler kullanıcının bilgisayarında: `İndirilenler\LeonKimya\higgsfield-gorseller-2026-09-28\`.
+Sitede `assets/img/v3-<ad>.webp` (1600 px), katalogda `katalog-uretici/img/v3-<ad>.jpg`
+(1200 px; kapak 1800, tam sayfa açılışlar ve arka kapak 1500).
 
-İçindekiler `b80ab6c5b632` · Kurumsal bant `cf0041b7b776` + şerit
-`2ca2ee1f38be` · Yapıştırıcılar açılışı `fa6cf4c4a588` · Astarlar & Macunlar
-açılışı `f08f38f410ea` · Su İzolasyon açılışı `276bdfbd9a27` · Bantlar: Parke
-`6140cb…`, PVC `7b2319…`, Kauçuk `36e594…`, Taş `e69ce003efd3`, Akrilik
-`03e1bf…`, Su İzolasyon Ürünleri `db9f0c046d13` · Sistemler: Spor `f7957c254b4d`,
-Su `e9ec37…` · Uygulamalar: PU Spor `247924…`, Parke `9c80fafd0b40`, Akrilik
-`0bf913225e9d`, Çim `2f32e326ff4a`, Su Geçirmez `47fc880b9248`, Epoksi Döküm
-`443fa1e42df7`. Aile ve sistem galerileri kaldırılır.
+| N | Dosya (`v3-…`) | Site | Katalog |
+|---|---|---|---|
+| 01 | pu-uygulama | Hero: zemin kaplamaları | Kapak (tek görsel) |
+| 02 | epdm-oyun-alani | Hero: bağlayıcılar | Dökme Bağlayıcılar bandı |
+| 03 | kalite-lab | — | Kurumsal şerit |
+| 04 | mamul-depo | — | Kurumsal şerit |
+| 05 | yukleme-rampasi | — | Neden Leon Kimya |
+| 06 | konteyner-limani | — | Bölüm 04 açılışı |
+| 07 | konteyner-yukleme | — | Konteyner ölçüleri |
+| 08 | malzeme-kompozisyon | — | Bölüm 01 açılışı |
+| 09 | spor-zemin-kesit | Spor sistemi galerisi | Bölüm 02 açılışı |
+| 10 | spor-kompleksi | Spor sistemi galerisi | Bölüm 03 açılışı |
+| 11 | sbr-karistirma | `dokme` paneli | Bağlayıcılar açılışı |
+| 12 | epoksi-uretim-holu | Endüstriyel sistem | Zemin Kaplamaları açılışı |
+| 13 | filtre-dolum | `filtre` paneli | Filtre bandı |
+| 14 | epdm-mala | `uygEpdm` | EPDM uygulaması |
+| 15 | kaucuk-pres | `press` paneli | Press bandı |
+| 16 | epdm-granul | `epdm` paneli | EPDM bandı |
+| 17 | astar-rulo | Hero: astarlar | Astarlar bandı |
+| 18 | macun-catlak | `macun` paneli | Macunlar bandı |
+| 19 | kaucuk-spor-salonu | `uygKaucuk` | Kauçuk uygulaması |
+| 20 | tas-hali-havuz | `tas` paneli | Dekoratif Taş uygulaması |
+| 21 | pist-ayakkabi | `uygElastomer` | Elastomer Sandviç uygulaması |
+| 22 | stadyum-start | `uygAtletizm` | Atletizm uygulaması |
+| 23 | padel-kort | `uygPadel` | Padel uygulaması |
+| 24 | depo-forklift | `uygEndustri` | Endüstriyel sistem bandı |
+| 25 | kimya-tesisi | — | Arka kapak |
+| 26 | pu-gida-tesisi | `puZemin` paneli | PU bandı |
+| 27 | epoksi-dokum | `epZemin` paneli | Epoksi bandı |
+| 29 | pist-viraj | `uygSandvic` | Sandviç uygulaması |
+| 30 | akrilik-kort | `akZemin` paneli | — |
+| 31 | likit-membran | `suUrun` paneli | Su İzolasyon Ürünleri bandı |
+| 32 | astar-doseme | `astar` paneli | — |
+| 33 | otopark | `uygEndustri` galerisi | Endüstriyel uygulaması |
+
+Kontrolde elenen iki ilk deneme (N21 eski tip bot, N24 bulanık yüz) yeniden üretildi.
+İş kimlikleri Higgsfield projesinde; dosya adları `hf_20260928_<saat>_<iş>.png`.
+
+## Kullanımdan çıkanlar
+
+- **Site:** `cat-coating-v2`, `cat-binder-v2` (kullanıcının "başarısız" dediği iki görsel),
+  `app-rubber-v2`, `ind-hall`, `ind-roller`, `ind-service`'in hero kullanımı, `sport-05`,
+  `sport-tennis`, `vid-membrane-v2`, `vid-parquet-v2`, `vid-track2-v2`, `water-app2`.
+  Dosyalar `assets/img/`'de duruyor (v2'den kalan `tiles`/`videos` verisi hâlâ anıyor).
+- **Katalog:** 13 dosya `katalog-uretici/img/`'den silindi (`78034a…` ve `b367417…` başarısız
+  iki görsel; `4fd185…` düşük çözünürlüklü liman; `df1b57…` 1024×392 panorama;
+  `37b52a…`, `0abf70…` düşük çözünürlük; `b9f388…`, `db9f0c…` neredeyse aynı kareler;
+  `f898b5…` konu dışı ev; `835906…`, `bbf078…`, `d6a620…`, `e09c92…` galeri artıkları).
+- Katalogdan aile ve sistem galerileri kaldırıldı — hepsi başka sayfaların tekrarıydı.
+  Kapak dört parçalı mozaik yerine tek görsel.

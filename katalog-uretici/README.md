@@ -22,7 +22,7 @@ ve Node.js. Fontlar klasörde (sistem fontu gerekmez).
 | `tools/catalog.css` | Tüm stil — renkler `:root` jetonlarında |
 | `tools/catalog.js` | Sayfalama: taşan blok yeni sayfaya geçer, tablolar satır satır bölünür, içindekiler ve ürün listesi sayfa numaraları otomatik |
 | `tools/print.py` | Chromium ile PDF + web için sıkıştırma (nesne akışları, doğrusallaştırma) + taşma denetimi |
-| `img/` | Görseller (web için yeniden kodlanmış; **ürün görsellerinin içeriği eski katalogdakiyle aynı**) |
+| `img/` | Görseller (web için yeniden kodlanmış; **ürün görsellerinin içeriği eski katalogdakiyle aynı**). `v3-*.jpg` 09.2026'da Higgsfield ile üretildi |
 | `fonts/` | TeX Gyre Heros (TrueType'a çevrilmiş) + DejaVu Sans (Arapça) |
 | `tools/tasima/` | Bir kerelik: içeriği eski PDF'lerden JSON'a taşıyan araçlar (kayıt için) |
 
@@ -35,3 +35,8 @@ ve Node.js. Fontlar klasörde (sistem fontu gerekmez).
   TR ile hizalanarak tamamlandı (`render.py → complete_specs`).
 - Polinflex (üçüncü taraf markası) ibaresi içerikte yok — geri eklemeyin (CLAUDE.md kural 1).
 - Derleme sonunda `taşma 0` görmelisiniz; aksi hâlde hangi blokta olduğu yazılır.
+- **Görsel kuralı:** ürün dışı her fotoğraf katalogda bir kez kullanılır. Yerleri
+  `content/tr.json` içindeki `img` alanlarında (dört dil bu yapıyı paylaşır) ve
+  `render.py`'deki kapak / "Neden" / arka kapak sabitlerinde. Aile ve sistem
+  galerileri bu yüzden kaldırıldı. Değişiklikten sonra:
+  `python katalog-uretici/tools/gorsel_denetimi.py` → `SORUN YOK`.

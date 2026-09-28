@@ -39,7 +39,7 @@ assets/
   img-sizes.js        ÜRETİLİR — görsel ölçüleri
   build-pages.py      Dil sayfalarını ve sitemap'i üretir
   build-img-sizes.py  Görsel ölçü haritasını üretir
-  img/                120 görsel (WebP)
+  img/                145 görsel (WebP)
   katalog/            E-katalog PDF'leri (dört dil)
 katalog-uretici/      Katalog PDF'lerinin kaynağı (metinler + şablon) — yayına çıkmaz
 yayinla.bat           Tek tık yayın
@@ -86,7 +86,7 @@ ikisini birlikte güncelleyin. `whatsapp` da cep numarasıyla aynı olmalı.
 **Katalog yayında** (18.08.2026'dan beri): dört dil. Ziyaretçi
 menüdeki indirme düğmesinden kendi dilindeki PDF'i indiriyor.
 
-Yeni tasarımlı katalog (v3, 64–66 sayfa, ~7 MB) `katalog-uretici/` klasöründen
+Yeni tasarımlı katalog (v3, 63 sayfa, ~9 MB) `katalog-uretici/` klasöründen
 üretilir — metni değiştirmek için oradaki README'ye bakın:
 
 ```bash

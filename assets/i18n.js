@@ -128,14 +128,15 @@ window.SITE_BASE = {
   /* HERO slider'ı: ürün aileleri. Metinler STRINGS.<dil>.categories (aynı sıra).
      k   = başlık için T.nav anahtarı (ailenin dile göre adı)
      pos = görselin kadraj odağı (object-position)
-     v3 (09.2026): parke için salon fotoğrafı yerine uygulama anı, zemin
-     kaplamaları için bitmiş endüstriyel zemin seçildi — ikisi de mevcut görseller. */
+     v3 (09.2026): parke için salon fotoğrafı yerine uygulama anı seçildi.
+     Bağlayıcı, zemin kaplaması ve astar slaytları 09.2026'da Higgsfield ile
+     yeniden üretildi (v3-*.webp) — eskileri başka yerlerde de kullanılıyordu. */
   categories: [
-    { img:"assets/img/tile-parquet-v2.webp", L:"parke",   k:"adhesives",      pos:"55% 50%" },
-    { img:"assets/img/cat-binder-v2.webp",   L:"dokme",   k:"binders",        pos:"50% 62%" },
-    { img:"assets/img/ind-service.webp",     L:"puZemin", k:"coatings",       pos:"50% 60%" },
-    { img:"assets/img/cat-water-v2.webp",    L:"suUrun",  k:"waterproofProd", pos:"50% 55%" },
-    { img:"assets/img/cat-primer-v2.webp",   L:"astar",   k:"primersPutties", pos:"40% 50%" }
+    { img:"assets/img/tile-parquet-v2.webp",    L:"parke",   k:"adhesives",      pos:"55% 50%" },
+    { img:"assets/img/v3-epdm-oyun-alani.webp", L:"dokme",   k:"binders",        pos:"50% 60%" },
+    { img:"assets/img/v3-pu-uygulama.webp",     L:"puZemin", k:"coatings",       pos:"60% 50%" },
+    { img:"assets/img/cat-water-v2.webp",       L:"suUrun",  k:"waterproofProd", pos:"50% 55%" },
+    { img:"assets/img/v3-astar-rulo.webp",      L:"astar",   k:"primersPutties", pos:"55% 50%" }
   ],
 
   /* ÜRÜN AİLELERİ bölümü (v3). Altı aile — footer'daki ayrımla aynı:
@@ -186,48 +187,48 @@ window.SITE_BASE = {
      h = çizimdeki kalınlık (temsilî), t = doku, opt = isteğe bağlı katman,
      stripe = üst yüzey çizgisi. Katman sırası sistem metinlerinden alındı. */
   systems: [
+    /* Galerilere yalnız o sisteme ait görsel girer: uygulama kartlarının ve
+       ürün kartlarının görselleri burada tekrar edilmez (09.2026). */
     { id:"spor", L:"sporSis", img:"assets/img/sys-sport2-v2.webp",
-      gallery:["assets/img/sport-tennis.webp","assets/img/sys-padel.webp","assets/img/tile-sport-v2.webp","assets/img/sport-gym.webp","assets/img/app-turf-v2.webp"],
+      gallery:["assets/img/v3-spor-kompleksi.webp","assets/img/v3-spor-zemin-kesit.webp"],
       layers:[ {k:"substrate",c:"sub",h:54,t:"speck"}, {k:"primer",c:"primer",h:7}, {k:"core",c:"core",h:30,t:"gran"},
                {k:"sealer",c:"sealer",h:9}, {k:"slPU",c:"sl",h:15}, {k:"topUV",c:"top",h:8,stripe:"line"} ] },
-    /* ind-roller ile ind-texture bayt bayt aynı dosya: galeride bir kez */
-    { id:"endustriyel", L:"endSis", img:"assets/img/ind-apply.webp",
-      gallery:["assets/img/ind-texture.webp","assets/img/ind-machines.webp","assets/img/tile-industrial-v2.webp","assets/img/ind-service.webp"],
+    /* ind-roller ile ind-texture bayt bayt aynı dosya: yalnız ind-texture kullanılır.
+       ind-apply ve tile-industrial-v2 ürün kartlarında (astar, epoksi) duruyor. */
+    { id:"endustriyel", L:"endSis", img:"assets/img/v3-epoksi-uretim-holu.webp",
+      gallery:["assets/img/ind-service.webp","assets/img/ind-texture.webp"],
       layers:[ {k:"concrete",c:"sub",h:58,t:"speck"}, {k:"primer",c:"primer",h:7}, {k:"mortar",c:"mortar",h:22,t:"sand",opt:true},
                {k:"mid",c:"mid",h:12}, {k:"topInd",c:"ind",h:10,stripe:"safety"} ] },
-    /* vid-membrane-v2 ana görselle neredeyse aynı kareydi: yerine çatı görseli */
+    /* vid-membrane-v2 ana görselle, water-app2 hero'daki cat-water-v2 ile
+       neredeyse aynı kare: ikisi de kullanılmıyor. water-app3 = Su uygulaması kartı. */
     { id:"su", L:"suSis", img:"assets/img/water-main-v2.webp",
-      gallery:["assets/img/water-app1.webp","assets/img/water-app2.webp","assets/img/water-app3.webp","assets/img/tile-water-v2.webp"],
+      gallery:["assets/img/water-app1.webp","assets/img/tile-water-v2.webp"],
       layers:[ {k:"surface",c:"sub",h:58,t:"speck"}, {k:"primer",c:"primer",h:7}, {k:"tape",c:"tape",h:7,t:"hatch"},
                {k:"mem1",c:"mem1",h:13}, {k:"mem2",c:"mem2",h:13}, {k:"topAli",c:"ali",h:8} ] }
   ],
 
   why: [ {icon:"star"},{icon:"chip"},{icon:"factory"},{icon:"users"},{icon:"truck"},{icon:"shield"} ],
 
-  /* v3 (09.2026): konu dışı kalan kart görselleri, mevcut görseller arasından
-     konuya uyanlarla değiştirildi (yeni dosya yok):
-       Poliüretan spor zemini  sport-gym (kauçuk karolu fitness) -> tile-sport-v2 (derzsiz salon zemini)
-       Çim yapıştırıcı         app-turf-v2 (stadyum + top)      -> kaucuk-kapak (çim serimi)
-       Dekoratif taş           app-stone-v2 (müstakil ev)        -> stone-sample (taş halı yakın plan)
-       Elastomer sandviç       sport-05 (491px oyun parkı)       -> pist görseli, yakın kadraj
-       Endüstriyel zeminler    ind-hall (1024x392 panorama)      -> ind-machines (üretim holü zemini)
-     Eski görseller ilgili detay galerisinde duruyor.
-     pos/zoom: aynı pist fotoğrafını kullanan kartlar farklı kadrajla ayrışır. */
+  /* v3 (09.2026): her kartın kendi görseli var; aynı fotoğraf iki kartta
+     ya da bir kart ile başka bir panelde kullanılmaz. Pist kartları, kauçuk,
+     padel, EPDM ve endüstriyel kartları Higgsfield ile yeniden üretildi
+     (v3-*.webp). Eskiden pist kartları aynı fotoğrafı farklı kadrajla
+     kullanıyordu; kauçuk ve EPDM kartlarının görselleri ürün kartlarında da vardı. */
   applications: [
-    { img:"assets/img/tile-sport-v2.webp",    L:"uygSporPu" },
-    { img:"assets/img/app-parquet-v2.webp",   L:"uygParke" },
-    { img:"assets/img/sport-tennis2.webp",    L:"uygAkrilik" },
-    { img:"assets/img/app-rubber-v2.webp",    L:"uygKaucuk" },
-    { img:"assets/img/sys-sport2-v2.webp",    L:"uygAtletizm" },
-    { img:"assets/img/kaucuk-kapak.webp",     L:"uygCim" },
-    { img:"assets/img/stone-sample.webp",     L:"uygTas" },
-    { img:"assets/img/vid-track2-v2.webp",    L:"uygElastomer", pos:"18% 90%", zoom:1.8 },
-    { img:"assets/img/vid-track2-v2.webp",    L:"uygSandvic",   pos:"85% 12%", zoom:1.35 },
-    { img:"assets/img/app-padel.webp",        L:"uygPadel" },
-    { img:"assets/img/app-playground-v2.webp",L:"uygEpdm" },
-    { img:"assets/img/water-app3.webp",       L:"uygSu" },
-    { img:"assets/img/ind-machines.webp",     L:"uygEndustri" },
-    { img:"assets/img/app-resin-v2.webp",     L:"uygDokum" }
+    { img:"assets/img/tile-sport-v2.webp",          L:"uygSporPu" },
+    { img:"assets/img/app-parquet-v2.webp",         L:"uygParke" },
+    { img:"assets/img/sport-tennis2.webp",          L:"uygAkrilik" },
+    { img:"assets/img/v3-kaucuk-spor-salonu.webp",  L:"uygKaucuk" },
+    { img:"assets/img/v3-stadyum-start.webp",       L:"uygAtletizm" },
+    { img:"assets/img/kaucuk-kapak.webp",           L:"uygCim" },
+    { img:"assets/img/stone-sample.webp",           L:"uygTas" },
+    { img:"assets/img/v3-pist-ayakkabi.webp",       L:"uygElastomer" },
+    { img:"assets/img/v3-pist-viraj.webp",          L:"uygSandvic" },
+    { img:"assets/img/v3-padel-kort.webp",          L:"uygPadel" },
+    { img:"assets/img/v3-epdm-mala.webp",           L:"uygEpdm" },
+    { img:"assets/img/water-app3.webp",             L:"uygSu" },
+    { img:"assets/img/v3-depo-forklift.webp",       L:"uygEndustri" },
+    { img:"assets/img/app-resin-v2.webp",           L:"uygDokum" }
   ],
 
   /* Blog bölümü kullanıcı isteğiyle kaldırıldı (05.08.2026). */
@@ -286,39 +287,44 @@ window.SITE_BASE = {
 
   /* ---- ÜRÜN & SİSTEM DETAY KARTLARI ----
      nav: başlık için T.nav anahtarı; img: kapak; gallery: küçük görseller.
+     Kural (09.2026): bir fotoğraf sitede yalnız bir varlığa ait. Kart ile kendi
+     paneli aynı görseli paylaşır; galeriye yalnız o panele özgü görsel girer,
+     yoksa galeri boş kalır (küçük resim şeridi basılmaz). productImgs = ürün
+     kartları; kullanıcı kararıyla DEĞİŞTİRİLMEDİ, içindeki fotoğraflar başka
+     yerde tekrar kullanılmaz.
      Metinler STRINGS.<dil>.details altında aynı anahtarla tutulur. */
   details: {
-    "uygSporPu": {"app": true, "img": "assets/img/tile-sport-v2.webp", "gallery": ["assets/img/sport-gym.webp", "assets/img/sys-sport2-v2.webp"]},
-    "uygParke": {"app": true, "img": "assets/img/app-parquet-v2.webp", "gallery": ["assets/img/vid-parquet-v2.webp", "assets/img/cat-parquet-v2.webp", "assets/img/tile-parquet-v2.webp"]},
-    "uygAkrilik": {"app": true, "img": "assets/img/sport-tennis2.webp", "gallery": ["assets/img/sport-tennis.webp"]},
-    "uygKaucuk": {"app": true, "img": "assets/img/app-rubber-v2.webp", "gallery": ["assets/img/rubber-tiles.webp", "assets/img/tile-rubber-v2.webp", "assets/img/sport-gym.webp"]},
-    "uygAtletizm": {"app": true, "img": "assets/img/sys-sport2-v2.webp", "gallery": ["assets/img/vid-track2-v2.webp"]},
-    "uygCim": {"app": true, "img": "assets/img/kaucuk-kapak.webp", "gallery": ["assets/img/app-turf-v2.webp", "assets/img/tile-turf-v2.webp", "assets/img/prod-kaucuk-05.webp"]},
+    "uygSporPu": {"app": true, "img": "assets/img/tile-sport-v2.webp", "gallery": []},
+    "uygParke": {"app": true, "img": "assets/img/app-parquet-v2.webp", "gallery": []},
+    "uygAkrilik": {"app": true, "img": "assets/img/sport-tennis2.webp", "gallery": []},
+    "uygKaucuk": {"app": true, "img": "assets/img/v3-kaucuk-spor-salonu.webp", "gallery": []},
+    "uygAtletizm": {"app": true, "img": "assets/img/v3-stadyum-start.webp", "gallery": []},
+    "uygCim": {"app": true, "img": "assets/img/kaucuk-kapak.webp", "gallery": ["assets/img/tile-turf-v2.webp"]},
     "uygTas": {"app": true, "img": "assets/img/stone-sample.webp", "gallery": ["assets/img/app-stone-v2.webp"]},
-    "uygElastomer": {"app": true, "img": "assets/img/vid-track2-v2.webp", "gallery": ["assets/img/sport-05.webp"]},
-    "uygSandvic": {"app": true, "img": "assets/img/vid-track2-v2.webp", "gallery": ["assets/img/sys-sport2-v2.webp"]},
-    "uygPadel": {"app": true, "img": "assets/img/app-padel.webp", "gallery": ["assets/img/sys-padel.webp", "assets/img/app-padel-02.webp"]},
-    "uygEpdm": {"app": true, "img": "assets/img/app-playground-v2.webp", "gallery": ["assets/img/epdm-insitu.webp", "assets/img/tile-binder-v2.webp", "assets/img/cat-binder-v2.webp"]},
-    "uygSu": {"app": true, "img": "assets/img/water-app3.webp", "gallery": ["assets/img/water-main-v2.webp", "assets/img/water-app1.webp", "assets/img/water-app2.webp", "assets/img/vid-membrane-v2.webp", "assets/img/tile-water-v2.webp"]},
-    "uygEndustri": {"app": true, "img": "assets/img/ind-machines.webp", "gallery": ["assets/img/ind-hall.webp", "assets/img/ind-apply.webp", "assets/img/ind-texture.webp", "assets/img/tile-industrial-v2.webp", "assets/img/ind-service.webp"]},
+    "uygElastomer": {"app": true, "img": "assets/img/v3-pist-ayakkabi.webp", "gallery": []},
+    "uygSandvic": {"app": true, "img": "assets/img/v3-pist-viraj.webp", "gallery": []},
+    "uygPadel": {"app": true, "img": "assets/img/v3-padel-kort.webp", "gallery": ["assets/img/app-padel.webp", "assets/img/app-padel-02.webp", "assets/img/sys-padel.webp"]},
+    "uygEpdm": {"app": true, "img": "assets/img/v3-epdm-mala.webp", "gallery": ["assets/img/tile-binder-v2.webp"]},
+    "uygSu": {"app": true, "img": "assets/img/water-app3.webp", "gallery": []},
+    "uygEndustri": {"app": true, "img": "assets/img/v3-depo-forklift.webp", "gallery": ["assets/img/ind-machines.webp", "assets/img/v3-otopark.webp"]},
     "uygDokum": {"app": true, "img": "assets/img/app-resin-v2.webp", "gallery": ["assets/img/resin-table.webp", "assets/img/resin-wave.webp", "assets/img/tile-resin-v2.webp"]},
-    "parke": {"nav": "parquetAdh", "img": "assets/img/cat-parquet-v2.webp", "gallery": ["assets/img/vid-parquet-v2.webp", "assets/img/app-parquet-v2.webp", "assets/img/tile-parquet-v2.webp"], "productImgs": ["assets/img/prod-parke-01.webp", "assets/img/prod-parke-02-v2.webp", "assets/img/prod-parke-03.webp"]},
+    "parke": {"nav": "parquetAdh", "img": "assets/img/cat-parquet-v2.webp", "gallery": [], "productImgs": ["assets/img/prod-parke-01.webp", "assets/img/prod-parke-02-v2.webp", "assets/img/prod-parke-03.webp"]},
     "pvc": {"nav": "pvcAdh", "img": "assets/img/pvc-apply.webp", "gallery": ["assets/img/pvc-hall.webp"], "productImgs": ["assets/img/prod-pvc-01-v2.webp"]},
-    "kaucuk": {"nav": "rubberTurfAdh", "img": "assets/img/kaucuk-kapak.webp", "gallery": ["assets/img/rubber-tiles.webp", "assets/img/app-rubber-v2.webp", "assets/img/app-turf-v2.webp", "assets/img/tile-turf-v2.webp"], "productImgs": ["assets/img/prod-kaucuk-01-v2.webp", "assets/img/prod-kaucuk-02-v2.webp", "assets/img/prod-kaucuk-03-v2.webp", "assets/img/prod-kaucuk-04-v2.webp", "assets/img/prod-kaucuk-05.webp", "assets/img/rubber-tiles.webp", "assets/img/sport-gym.webp"]},
-    "filtre": {"nav": "filterAdh", "img": "assets/img/ind-machines.webp", "gallery": [], "productImgs": ["assets/img/prod-filtre-01-v2.webp", "assets/img/prod-filtre-02-v2.webp", "assets/img/prod-filtre-02-v2.webp"]},
-    "dokme": {"nav": "pourBinder", "img": "assets/img/cat-binder-v2.webp", "gallery": ["assets/img/epdm-insitu.webp", "assets/img/tile-binder-v2.webp", "assets/img/app-playground-v2.webp"], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-02-v3.webp"]},
-    "press": {"nav": "pressBinder", "img": "assets/img/rubber-tiles.webp", "gallery": ["assets/img/app-rubber-v2.webp", "assets/img/sport-gym.webp"], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-02-v3.webp", "assets/img/rubber-tiles.webp", "assets/img/app-rubber-v2.webp"]},
-    "tas": {"nav": "stoneBinder", "img": "assets/img/app-stone-v2.webp", "gallery": ["assets/img/stone-sample.webp"], "productImgs": ["assets/img/prod-tas-01-v2.webp", "assets/img/prod-tas-02-v2.webp", "assets/img/prod-binder-02-v3.webp"]},
-    "epdm": {"nav": "epdmGranule", "img": "assets/img/app-playground-v2.webp", "gallery": ["assets/img/epdm-01.webp", "assets/img/epdm-02.webp", "assets/img/epdm-03.webp", "assets/img/epdm-04.webp", "assets/img/epdm-05.webp", "assets/img/epdm-06.webp", "assets/img/epdm-07.webp", "assets/img/epdm-08.webp", "assets/img/epdm-09.webp", "assets/img/epdm-10.webp", "assets/img/epdm-11.webp", "assets/img/epdm-12.webp", "assets/img/epdm-13.webp", "assets/img/epdm-14.webp", "assets/img/epdm-15.webp", "assets/img/epdm-16.webp", "assets/img/epdm-17.webp", "assets/img/epdm-18.webp", "assets/img/epdm-19.webp", "assets/img/epdm-20.webp", "assets/img/epdm-21.webp", "assets/img/epdm-22.webp", "assets/img/epdm-23.webp", "assets/img/epdm-24.webp"], "productImgs": ["assets/img/app-playground-v2.webp", "assets/img/epdm-insitu.webp"]},
-    "puZemin": {"nav": "puCoat", "img": "assets/img/cat-coating-v2.webp", "gallery": ["assets/img/ind-service.webp", "assets/img/tile-sport-v2.webp", "assets/img/ind-apply.webp"], "productImgs": ["assets/img/prod-pu-01-v2.webp", "assets/img/prod-pu-02-v2.webp", "assets/img/prod-pu-03-v2.webp"]},
-    "akZemin": {"nav": "acCoat", "img": "assets/img/sport-tennis.webp", "gallery": ["assets/img/sport-tennis2.webp"], "productImgs": ["assets/img/prod-ak-01-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-03-v2.webp", "assets/img/prod-ak-04-v2.webp", "assets/img/prod-ak-05-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/prod-ak-08.webp", "assets/img/prod-ak-09.webp"]},
-    "epZemin": {"nav": "epCoat", "img": "assets/img/ind-apply.webp", "gallery": ["assets/img/ind-texture.webp", "assets/img/ind-roller.webp", "assets/img/tile-industrial-v2.webp", "assets/img/resin-wave.webp"], "productImgs": ["assets/img/prod-ep-01-v2.webp", "assets/img/tile-industrial-v2.webp", "assets/img/prod-ep-02-v2.webp"]},
-    "astar": {"nav": "primers", "img": "assets/img/cat-primer-v2.webp", "gallery": ["assets/img/ind-apply.webp"], "productImgs": ["assets/img/cat-primer-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/ind-apply.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp"]},
-    "macun": {"nav": "putties", "img": "assets/img/ind-roller.webp", "gallery": ["assets/img/cat-primer-v2.webp"]},
-    "suUrun": {"nav": "waterproofProd", "img": "assets/img/water-main-v2.webp", "gallery": ["assets/img/water-app1.webp", "assets/img/water-app2.webp", "assets/img/water-app3.webp", "assets/img/tile-water-v2.webp"], "productImgs": ["assets/img/prod-su-01-v3.webp"]},
-    "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.webp", "gallery": ["assets/img/sys-padel.webp", "assets/img/sport-tennis.webp", "assets/img/tile-sport-v2.webp", "assets/img/sport-gym.webp", "assets/img/vid-track2-v2.webp"]},
-    "endSis": {"nav": "indSys", "img": "assets/img/ind-apply.webp", "gallery": ["assets/img/ind-texture.webp", "assets/img/ind-machines.webp", "assets/img/tile-industrial-v2.webp", "assets/img/ind-service.webp"]},
-    "suSis": {"nav": "waterSys", "img": "assets/img/water-main-v2.webp", "gallery": ["assets/img/water-app1.webp", "assets/img/water-app3.webp", "assets/img/vid-membrane-v2.webp", "assets/img/tile-water-v2.webp"]}
+    "kaucuk": {"nav": "rubberTurfAdh", "img": "assets/img/app-turf-v2.webp", "gallery": [], "productImgs": ["assets/img/prod-kaucuk-01-v2.webp", "assets/img/prod-kaucuk-02-v2.webp", "assets/img/prod-kaucuk-03-v2.webp", "assets/img/prod-kaucuk-04-v2.webp", "assets/img/prod-kaucuk-05.webp", "assets/img/rubber-tiles.webp", "assets/img/sport-gym.webp"]},
+    "filtre": {"nav": "filterAdh", "img": "assets/img/v3-filtre-dolum.webp", "gallery": [], "productImgs": ["assets/img/prod-filtre-01-v2.webp", "assets/img/prod-filtre-02-v2.webp", "assets/img/prod-filtre-02-v2.webp"]},
+    "dokme": {"nav": "pourBinder", "img": "assets/img/v3-sbr-karistirma.webp", "gallery": [], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-02-v3.webp"]},
+    "press": {"nav": "pressBinder", "img": "assets/img/v3-kaucuk-pres.webp", "gallery": [], "productImgs": ["assets/img/prod-binder-01-v3.webp", "assets/img/prod-binder-02-v3.webp", "assets/img/rubber-tiles.webp", "assets/img/app-rubber-v2.webp"]},
+    "tas": {"nav": "stoneBinder", "img": "assets/img/v3-tas-hali-havuz.webp", "gallery": [], "productImgs": ["assets/img/prod-tas-01-v2.webp", "assets/img/prod-tas-02-v2.webp", "assets/img/prod-binder-02-v3.webp"]},
+    "epdm": {"nav": "epdmGranule", "img": "assets/img/v3-epdm-granul.webp", "gallery": ["assets/img/epdm-01.webp", "assets/img/epdm-02.webp", "assets/img/epdm-03.webp", "assets/img/epdm-04.webp", "assets/img/epdm-05.webp", "assets/img/epdm-06.webp", "assets/img/epdm-07.webp", "assets/img/epdm-08.webp", "assets/img/epdm-09.webp", "assets/img/epdm-10.webp", "assets/img/epdm-11.webp", "assets/img/epdm-12.webp", "assets/img/epdm-13.webp", "assets/img/epdm-14.webp", "assets/img/epdm-15.webp", "assets/img/epdm-16.webp", "assets/img/epdm-17.webp", "assets/img/epdm-18.webp", "assets/img/epdm-19.webp", "assets/img/epdm-20.webp", "assets/img/epdm-21.webp", "assets/img/epdm-22.webp", "assets/img/epdm-23.webp", "assets/img/epdm-24.webp"], "productImgs": ["assets/img/app-playground-v2.webp", "assets/img/epdm-insitu.webp"]},
+    "puZemin": {"nav": "puCoat", "img": "assets/img/v3-pu-gida-tesisi.webp", "gallery": [], "productImgs": ["assets/img/prod-pu-01-v2.webp", "assets/img/prod-pu-02-v2.webp", "assets/img/prod-pu-03-v2.webp"]},
+    "akZemin": {"nav": "acCoat", "img": "assets/img/v3-akrilik-kort.webp", "gallery": [], "productImgs": ["assets/img/prod-ak-01-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-02-v2.webp", "assets/img/prod-ak-03-v2.webp", "assets/img/prod-ak-04-v2.webp", "assets/img/prod-ak-05-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-06-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/prod-ak-08.webp", "assets/img/prod-ak-09.webp"]},
+    "epZemin": {"nav": "epCoat", "img": "assets/img/v3-epoksi-dokum.webp", "gallery": [], "productImgs": ["assets/img/prod-ep-01-v2.webp", "assets/img/tile-industrial-v2.webp", "assets/img/prod-ep-02-v2.webp"]},
+    "astar": {"nav": "primers", "img": "assets/img/v3-astar-doseme.webp", "gallery": [], "productImgs": ["assets/img/cat-primer-v2.webp", "assets/img/prod-ak-07.webp", "assets/img/ind-apply.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp", "assets/img/prod-astar-01-v2.webp"]},
+    "macun": {"nav": "putties", "img": "assets/img/v3-macun-catlak.webp", "gallery": []},
+    "suUrun": {"nav": "waterproofProd", "img": "assets/img/v3-likit-membran.webp", "gallery": [], "productImgs": ["assets/img/prod-su-01-v3.webp"]},
+    "sporSis": {"nav": "sportsSys", "img": "assets/img/sys-sport2-v2.webp", "gallery": ["assets/img/v3-spor-kompleksi.webp", "assets/img/v3-spor-zemin-kesit.webp"]},
+    "endSis": {"nav": "indSys", "img": "assets/img/v3-epoksi-uretim-holu.webp", "gallery": ["assets/img/ind-service.webp", "assets/img/ind-texture.webp"]},
+    "suSis": {"nav": "waterSys", "img": "assets/img/water-main-v2.webp", "gallery": ["assets/img/water-app1.webp", "assets/img/tile-water-v2.webp"]}
   }
 };
 

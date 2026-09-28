@@ -77,9 +77,8 @@ Hiçbiri uydurulamaz; siz vermeden yazılmaz *(`CLAUDE.md` kural 3)*.
 
 | # | İş | Kim | Not |
 |---|---|---|---|
-| D1 | **Katalog boyutu** | Siz | Yayındaki dosyalar ~13 MB. **v3 dalındaki yeni katalog ~7 MB** (web için sıkıştırılmış, hızlı web görüntüleme açık). Yeni PDF'ler yayına alınınca kapanır. |
+| D1 | **Katalog boyutu** | Siz | Yayındaki dosyalar ~13 MB. **v3 dalındaki yeni katalog ~9 MB, 63 sayfa** (web için sıkıştırılmış, hızlı web görüntüleme açık). Yeni PDF'ler yayına alınınca kapanır. |
 | D3 | **`katalog/` git'te versiyonlansın mı?** | Siz — **karar bekliyor** | Kökteki taslak klasörü `.gitignore`'da değil; `git add -A` çalışırsa 49 MB depoya girer. Şimdilik commit'lerde dosya yolları açıkça yazılarak korunuyor. |
-| D4 | **Görsel yenileme (tekrarlar)** | Siz → Ben | 32 yeni görsel Higgsfield'da hazır; indirilip buraya getirilince site (v3) ve dört katalog güncellenecek. Plan ve eşleme: `GORSEL-YENILEME.md`. |
 
 ---
 
@@ -105,6 +104,8 @@ geçirilmesi · katalog PDF'lerindeki eski alan adı ve e-posta *(alan adı art�
 `_to_delete/` ve proje notları yayından çıkarıldı (`.vercelignore`) ·
 `yayinla.bat`'taki yerel CLI deploy'u kaldırıldı · GitHub bağlantısının zaten
 kurulu olduğu doğrulandı (eski D2).
+· site (v3) ve dört katalogdaki tekrar eden görseller kaldırıldı; 32 yeni görsel
+Higgsfield ile üretildi (eski D4, ayrıntı `GORSEL-YENILEME.md`).
 
 **Daha önce:** görseller, logo, iletişim formu, e-katalog, blog, prerender,
 og etiketleri, WebP, CLS, JSON-LD, sitemap, temiz URL, iletişim bilgileri,

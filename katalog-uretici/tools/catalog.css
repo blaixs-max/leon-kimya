@@ -227,6 +227,8 @@ table.t{width:100%;border-collapse:collapse;font-size:7.7pt;line-height:1.38}
 .cover{background:var(--dk)}
 .cover .mos{position:absolute;inset:0 0 auto 0;height:168mm;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:1.2mm}
 .cover .mos img{width:100%;height:100%;object-fit:cover}
+.cover .mos.one{grid-template-columns:1fr;grid-template-rows:1fr}
+.cover .mos.one img{object-position:62% 50%}
 .cover .mos::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(var(--shade),.45) 0%,rgba(var(--shade),0) 22%,rgba(var(--shade),0) 62%,rgba(var(--shade),.9) 100%)}
 .cover .lgc{position:absolute;top:13mm;inset-inline-start:18mm;height:13mm;z-index:2}
 .cover .yr{position:absolute;top:17mm;inset-inline-end:18mm;z-index:2;font:700 7pt/1 var(--f);letter-spacing:.22em;color:#fff;text-transform:uppercase}
@@ -274,6 +276,8 @@ table.t{width:100%;border-collapse:collapse;font-size:7.7pt;line-height:1.38}
 .strip img{width:100%;height:46mm;object-fit:cover;border-radius:1.2mm}
 .strip.s2{grid-template-columns:1fr 1fr}
 .strip.s2 img{height:58mm}
+.strip.s1{grid-template-columns:1fr}
+.strip.s1 img{height:58mm}
 
 /* ihracat */
 .exp-img{width:100%;height:66mm;object-fit:cover;border-radius:1.6mm}

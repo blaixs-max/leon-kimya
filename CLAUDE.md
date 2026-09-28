@@ -62,7 +62,11 @@ Bu yüzden aşağıdaki kurallar "iyi olur"dan ibaret değil; **ihlal edilmemeli
 `assets/img/` altındaki **görsellerin tamamı AI ile yeniden üretildi**
 (120 dosya: 116 WebP + favicon/og görseli)
 (kullanıcı onayı, 06.08.2026). Üçüncü taraf fotoğrafı kalmadı, telif riski
-kapandı. **Yeni görsel gelmeyecek**, bu iş bitti.
+kapandı.
+
+**09.2026 (v3 dalı):** tekrar eden görselleri kaldırmak için Higgsfield ile
+32 yeni görsel üretildi (`assets/img/v3-*.webp`, `katalog-uretici/img/v3-*.jpg`).
+Kural ve eşleme: `GORSEL-YENILEME.md`.
 
 `saraskimya-assets/` klasörü diskte duruyor (529 dosya) ama **gitignore'da**
 ve artık kullanılmıyor — yalnızca eski referans arşivi.
@@ -121,7 +125,8 @@ assets/
   img-sizes.js        OTOMATİK ÜRETİLİR — görsel ölçüleri (CLS için)
   build-pages.py      4 dil sayfası + sitemap.xml + sürüm damgası
   build-img-sizes.py  img-sizes.js'i üretir
-  img/                120 görsel (116 WebP + favicon/og), AI ile üretildi
+  img/                145 dosya (141 WebP + favicon/og), tamamı AI ile üretildi;
+                      v3-* = 09.2026 Higgsfield (bkz. GORSEL-YENILEME.md)
   katalog/            YAYINA ÇIKAN e-katalog PDF'leri (dört dil)
                       kökteki katalog/ ile KARIŞTIRMA — o taslak arşivi
 katalog-uretici/       v3 katalog PDF'lerinin KAYNAĞI (metin JSON + şablon +
@@ -181,8 +186,8 @@ güncelleyin; `whatsapp` da `telMobile` ile aynı hattı göstermeli.
 
 ### E-Katalog'u değiştirmek
 **Katalog 18.08.2026'dan beri CANLI** — dört dil, `assets/katalog/` altında,
-`catalog.ready:true`. v3 dalında katalog da yenilendi (09.2026): 64–66 sayfa,
-~7 MB/dosya (eski: 69 sayfa, ~13.6 MB).
+`catalog.ready:true`. v3 dalında katalog da yenilendi (09.2026): 63 sayfa,
+~9 MB/dosya (eski: 69 sayfa, ~13.6 MB).
 
 v3 kataloğun kaynağı **`katalog-uretici/`** (ayrıntı README'de): metin
 `content/<dil>.json`'da, stil `tools/catalog.css`'te, sayfa kurgusu
@@ -331,6 +336,11 @@ uygulanan stil değerleri, yatay taşma, RTL'de yön duyarlı özellikler.
 
 ### Diğer kurallar
 
+- **Aynı fotoğraf iki yerde kullanılmaz** (site ve katalog ayrı ayrı; 09.2026
+  kullanıcı isteği). Kart ile kendi paneli paylaşabilir; galeriye yalnız o
+  varlığa özgü görsel girer. Ürün kartları (`productImgs`, katalog `.pic`) kural
+  dışında — ürün görselleri değiştirilmez — ama içlerindeki fotoğraf başka yerde
+  kullanılmaz. Değişiklikten sonra `python katalog-uretici/tools/gorsel_denetimi.py`.
 - Yorumlar **Türkçe**, kısa ve nedene odaklı
 - CSS'te **sabit renk yasak** — her şey `var(--token)`
 - Boş veri = bölüm hiç basılmaz (`has()` yardımcısı). **Bu davranışı bozma.**
@@ -375,7 +385,7 @@ kaydedilmesi gereken bir karar varsa aşağıdaki listeye taşı.
 - [x] **E-katalog — YAYINDA** (18.08.2026). Eski "üretilmeyecek" kararı
       geçersiz. Dört dil × **69 sayfa**, `assets/katalog/` altında,
       indirme düğmesi header ve çekmecede. Her dosya ~13 MB.
-      *(v3 dalında yenisi: 64–66 sayfa, ~7 MB — kaynak `katalog-uretici/`)*
+      *(v3 dalında yenisi: 63 sayfa, ~9 MB — kaynak `katalog-uretici/`)*
       *(Kökteki `katalog/` KLASÖRÜ AYRI ŞEY: 16.08 taslak arşivi,
       `.vercelignore`'da, yayına çıkmıyor. Karıştırma.)*
 - [x] Blog — bölüm sayfadan kaldırıldı, yazı üretilmeyecek
@@ -528,3 +538,14 @@ hiçbiri değişmedi. Tek fark: içerik JS yüklenmeden önce de görünür.
   - Font: TeX Gyre Heros (Helvetica ailesi, **TrueType'a çevrilmiş** — CFF/OTF
     Chromium'da Type 3 gömülüyordu), Arapça DejaVu Sans. Etiketli PDF, yer
     imleri, içindekiler ve ürün listesinde tıklanabilir sayfa bağlantıları.
+- **Görsel tekrarları kaldırıldı** (28.09.2026, aynı dal; merge edilmedi).
+  Kullanıcı isteği: "aynı resimler tekrar tekrar kullanılmasın". Sitede 37,
+  katalogda 26 fotoğraf birden çok yerde kullanılıyordu; kullanıcının
+  "başarısız" bulduğu iki görsel (sarı PU uygulaması, oyun alanı) de dahil.
+  - Higgsfield ile 32 görsel üretildi (`nano_banana_pro`, 2k); iki deneme
+    kontrolde elenip yeniden üretildi. Eşleme ve kural: `GORSEL-YENILEME.md`.
+  - Katalog: kapak tek görsel, aile/sistem galerileri kaldırıldı, 63 sayfa,
+    ~9 MB (yeni görseller daha ayrıntılı olduğu için 7 MB'tan büyüdü).
+  - Ürün görsellerine dokunulmadı; ürün kartlarındaki ambalaj tekrarları
+    (katalogda 50 kart / 39 görsel) bilinçli olarak duruyor.
+  - Denetim: `python katalog-uretici/tools/gorsel_denetimi.py`.
