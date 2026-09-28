@@ -186,7 +186,7 @@ güncelleyin; `whatsapp` da `telMobile` ile aynı hattı göstermeli.
 
 ### E-Katalog'u değiştirmek
 **Katalog 18.08.2026'dan beri CANLI** — dört dil, `assets/katalog/` altında,
-`catalog.ready:true`. v3 dalında katalog da yenilendi (09.2026): 63 sayfa,
+`catalog.ready:true`. v3 ile katalog da yenilendi (28.09.2026'dan beri yayında): 63 sayfa,
 ~9 MB/dosya (eski: 69 sayfa, ~13.6 MB).
 
 v3 kataloğun kaynağı **`katalog-uretici/`** (ayrıntı README'de): metin
@@ -388,7 +388,7 @@ kaydedilmesi gereken bir karar varsa aşağıdaki listeye taşı.
 - [x] **E-katalog — YAYINDA** (18.08.2026). Eski "üretilmeyecek" kararı
       geçersiz. Dört dil × **69 sayfa**, `assets/katalog/` altında,
       indirme düğmesi header ve çekmecede. Her dosya ~13 MB.
-      *(v3 dalında yenisi: 63 sayfa, ~9 MB — kaynak `katalog-uretici/`)*
+      *(28.09.2026'dan beri yayındaki v3: 63 sayfa, ~9 MB — kaynak `katalog-uretici/`)*
       *(Kökteki `katalog/` KLASÖRÜ AYRI ŞEY: 16.08 taslak arşivi,
       `.vercelignore`'da, yayına çıkmıyor. Karıştırma.)*
 - [x] Blog — bölüm sayfadan kaldırıldı, yazı üretilmeyecek
@@ -508,7 +508,8 @@ hiçbiri değişmedi. Tek fark: içerik JS yüklenmeden önce de görünür.
 - **Bazı görsellerde `alt=""` bilinçli** — slider arka planı ve ürün kutucukları.
   Yanlarında aynı metin zaten yazılı; WCAG H67 bu durumda boş alt ister.
 - **v3 "Endüstriyel Kurumsal" tasarım** (09.2026, `tasarim-v3-profesyonel`
-  branch'i; kullanıcı isteğiyle **merge edilmedi**, önizleme için hazırlandı).
+  branch'i; önce önizleme olarak hazırlandı, 28.09.2026'da kullanıcı isteğiyle
+  `main`'e merge edilip yayına alındı).
   Bölünmüş hero korundu, geri kalan bölümler yeniden kurgulandı (bkz. bölüm 6).
   - Renk: marka rengi aynı (`#D97706`). Birincil düğme artık **koyu yazılı**
     (beyaz yazı kehribarda 3.2:1 kalıyordu, AA değil). `--mut` koyulaştırıldı.
@@ -524,7 +525,7 @@ hiçbiri değişmedi. Tek fark: içerik JS yüklenmeden önce de görünür.
   - Arapçada telefon/e-posta `dir="ltr"` sarmalında (numara ters görünüyordu).
   - Sistem katman kesiti şematiktir; katman sırası sistem metinlerinden alındı,
     kalınlıklar temsilî (sayfada da not düşülüyor).
-- **v3 katalog** (09.2026, aynı dal; merge edilmedi). Kullanıcının kendi
+- **v3 katalog** (09.2026, aynı dal; 28.09.2026'da yayında). Kullanıcının kendi
   üreticisine (`C:\Users\Dell\Desktop\Deneme\leon-katalog`, build.js) erişim
   olmadığından içerik dört dilin mevcut PDF'lerinden JSON'a taşındı
   (`katalog-uretici/tools/tasima/`), sonra yeni şablonla basıldı.
@@ -541,7 +542,7 @@ hiçbiri değişmedi. Tek fark: içerik JS yüklenmeden önce de görünür.
   - Font: TeX Gyre Heros (Helvetica ailesi, **TrueType'a çevrilmiş** — CFF/OTF
     Chromium'da Type 3 gömülüyordu), Arapça DejaVu Sans. Etiketli PDF, yer
     imleri, içindekiler ve ürün listesinde tıklanabilir sayfa bağlantıları.
-- **Görsel tekrarları kaldırıldı** (28.09.2026, aynı dal; merge edilmedi).
+- **Görsel tekrarları kaldırıldı** (28.09.2026, aynı dal; aynı gün yayında).
   Kullanıcı isteği: "aynı resimler tekrar tekrar kullanılmasın". Sitede 37,
   katalogda 26 fotoğraf birden çok yerde kullanılıyordu; kullanıcının
   "başarısız" bulduğu iki görsel (sarı PU uygulaması, oyun alanı) de dahil.

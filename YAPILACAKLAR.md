@@ -77,7 +77,6 @@ Hiçbiri uydurulamaz; siz vermeden yazılmaz *(`CLAUDE.md` kural 3)*.
 
 | # | İş | Kim | Not |
 |---|---|---|---|
-| D1 | **Katalog boyutu** | Siz | Yayındaki dosyalar ~13 MB. **v3 dalındaki yeni katalog ~9 MB, 63 sayfa** (web için sıkıştırılmış, hızlı web görüntüleme açık). Yeni PDF'ler yayına alınınca kapanır. |
 | D3 | **`katalog/` git'te versiyonlansın mı?** | Siz — **karar bekliyor** | Kökteki taslak klasörü `.gitignore`'da değil; `git add -A` çalışırsa 49 MB depoya girer. Şimdilik commit'lerde dosya yolları açıkça yazılarak korunuyor. |
 
 ---
@@ -86,7 +85,7 @@ Hiçbiri uydurulamaz; siz vermeden yazılmaz *(`CLAUDE.md` kural 3)*.
 
 | # | Konu | Durum |
 |---|---|---|
-| E1 | Katalogdaki sertifika sayfası ve `Polinflex` ibaresi | Yayındaki dört PDF'te ISO 9001/14001 tesis beyanı, World Athletics ve ITF belge satırları ve sistem adlarında `Polinflex` geçiyor. Durum kullanıcıya iki kez ayrıntılı bildirildi; **mevcut hâliyle yayınlanmasına kullanıcı karar verdi.** Üretici (`build.js`) tarafında `Polinflex` silindi, dolayısıyla yeniden basım istenirse temiz çıkar (~4 dk). **Talep gelmedikçe bu konu yeniden açılmayacak.** *(09.2026: v3 dalındaki yeni katalogda `Polinflex` yok; sertifika satırları aynen duruyor.)* |
+| E1 | Katalogdaki sertifika sayfası ve `Polinflex` ibaresi | Yayındaki dört PDF'te ISO 9001/14001 tesis beyanı, World Athletics ve ITF belge satırları ve sistem adlarında `Polinflex` geçiyor. Durum kullanıcıya iki kez ayrıntılı bildirildi; **mevcut hâliyle yayınlanmasına kullanıcı karar verdi.** Üretici (`build.js`) tarafında `Polinflex` silindi, dolayısıyla yeniden basım istenirse temiz çıkar (~4 dk). **Talep gelmedikçe bu konu yeniden açılmayacak.** *(28.09.2026'dan beri yayındaki v3 katalogda `Polinflex` yok; sertifika satırları aynen duruyor.)* |
 
 ---
 
@@ -106,6 +105,8 @@ geçirilmesi · katalog PDF'lerindeki eski alan adı ve e-posta *(alan adı art�
 kurulu olduğu doğrulandı (eski D2).
 · site (v3) ve dört katalogdaki tekrar eden görseller kaldırıldı; 32 yeni görsel
 Higgsfield ile üretildi (eski D4, ayrıntı `GORSEL-YENILEME.md`).
+· v3 tasarım ve v3 katalog main'e merge edilip yayına alındı; katalog 13.6 MB'tan
+~9 MB'a indi (eski D1).
 
 **Daha önce:** görseller, logo, iletişim formu, e-katalog, blog, prerender,
 og etiketleri, WebP, CLS, JSON-LD, sitemap, temiz URL, iletişim bilgileri,

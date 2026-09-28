@@ -1,6 +1,6 @@
 # Görsel yenileme — tekrarların kaldırılması (09.2026, v3 dalı)
 
-**Durum: tamamlandı** (28.09.2026, `tasarim-v3-profesyonel`, merge edilmedi).
+**Durum: tamamlandı ve yayında** (28.09.2026; `tasarim-v3-profesyonel` aynı gün `main`'e merge edildi).
 
 ## Kural
 
