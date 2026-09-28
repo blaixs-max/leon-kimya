@@ -2,6 +2,19 @@
 OKUBENI.md
 _arsiv-varyantlar.zip
 
+# Proje notları ve yerel çalışma klasörleri yayına çıkmaz (28.09.2026).
+# Vercel CLI yerel klasörü .gitignore'a bakmadan yüklüyor; bu satırlar
+# olmadan buradaki her şey sitede herkese açık oluyor. Silmeyin.
+/CLAUDE.md
+/YAPILACAKLAR.md
+/WHATSAPP-KURULUM.md
+/GORSEL-YENILEME.md
+/yayinla.bat
+/.gitignore
+/_to_delete
+/saraskimya-assets
+/katalog-uretici
+
 # Katalog ve kartvizit — GECICI.
 # Yeni katalog hala tasarlaniyor; taslak hali yayinda herkese acik
 # indirilebilir durmasin diye disarida tutuluyor. Bu klasorler git'te
